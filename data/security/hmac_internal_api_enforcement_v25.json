@@ -1,0 +1,49 @@
+{
+  "version": "v25",
+  "mode": "enforce_internal_routes_after_staging_pass",
+  "phases": [
+    {
+      "phase": "observe",
+      "duration": "1 deploy",
+      "behavior": "log missing/invalid signatures but allow in staging"
+    },
+    {
+      "phase": "shadow_block",
+      "duration": "1 deploy",
+      "behavior": "return warning headers in staging; block in production canary"
+    },
+    {
+      "phase": "enforce",
+      "duration": "permanent",
+      "behavior": "block invalid API key, timestamp skew, reused nonce, invalid signature"
+    }
+  ],
+  "signed_headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "signature_base": "METHOD\\nPATH_WITH_QUERY\\nTIMESTAMP\\nNONCE\\nSHA256_BODY",
+  "routes_enforced": [
+    "/api/internal/main-site/knowledge/bundle",
+    "/api/internal/main-site/knowledge/delta",
+    "/api/internal/ai-article/client-draft/validate",
+    "/api/internal/ai-article/client-draft/submit-review",
+    "/api/internal/ai-article/v24/client-draft/validate",
+    "/api/internal/ai-article/v24/client-draft/submit-review",
+    "/api/internal/articles/v24/schedule",
+    "/api/internal/security/v25/verify-hmac",
+    "/api/internal/corpus/v25/acceptance-report",
+    "/api/internal/articles/v25/publish-seo-check"
+  ],
+  "failure_events": [
+    "missing_header",
+    "timestamp_skew",
+    "nonce_reused",
+    "invalid_signature",
+    "unknown_client",
+    "api_key_mismatch"
+  ]
+}

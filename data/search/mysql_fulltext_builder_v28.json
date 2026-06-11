@@ -1,0 +1,45 @@
+{
+  "version": "v28",
+  "adapter": "mysql_fulltext",
+  "tables": {
+    "source": [
+      "content_items",
+      "kb_facts",
+      "puyuma_corpus_entries",
+      "puyuma_pronunciation_assets_v16",
+      "article_review_transactions_v26"
+    ],
+    "target": "search_index_documents_v27",
+    "job_table": "search_index_build_runs_v28"
+  },
+  "index_fields": [
+    "title",
+    "body_text",
+    "tags_json",
+    "language_code",
+    "release_channel"
+  ],
+  "required_blocklist": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "ranking_notes": [
+    "exact title match",
+    "community alias match",
+    "vocabulary form match",
+    "source-grounded claim confidence",
+    "public release channel only"
+  ],
+  "rebuild_triggers": [
+    "full corpus import passed",
+    "source claim promoted",
+    "article approved",
+    "pronunciation asset promoted",
+    "release channel changed"
+  ]
+}

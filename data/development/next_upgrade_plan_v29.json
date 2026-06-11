@@ -1,0 +1,42 @@
+{
+  "version": "v29",
+  "title": "Live VPS Execution + Admin Wiring",
+  "priorities": [
+    {
+      "priority": "P0",
+      "item": "Run v28 full corpus on actual VPS staging",
+      "deliverable": ">=1000 acceptance report or explicit failure report from VPS"
+    },
+    {
+      "priority": "P0",
+      "item": "Wire admin UI to live backend",
+      "deliverable": "login, review queue, corpus acceptance, search index status, HMAC failures visible in admin pages"
+    },
+    {
+      "priority": "P0",
+      "item": "Enforce production fallback middleware in all DB-backed routes",
+      "deliverable": "no silent static fallback in production"
+    },
+    {
+      "priority": "P1",
+      "item": "Search index actual DB build",
+      "deliverable": "search_index_documents_v27 populated from DB and searchable"
+    },
+    {
+      "priority": "P1",
+      "item": "Backup restore drill on VPS staging",
+      "deliverable": "row-count and checksum report"
+    },
+    {
+      "priority": "P2",
+      "item": "Source candidate review UI",
+      "deliverable": "human review workflow for TIPP/Culture/Taitung/museum candidates"
+    }
+  ],
+  "non_negotiable_rules": [
+    "No Beinan archaeological site relation",
+    "No public synthetic TTS as real voice",
+    "No AI provider keys in browser",
+    "No source-free public claims"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "v25",
+  "publish_pipeline": [
+    "draft_submitted",
+    "citation_check",
+    "duplicate_check",
+    "forbidden_relation_check",
+    "sensitivity_check",
+    "seo_check",
+    "cooldown_check",
+    "admin_approval",
+    "schedule",
+    "publish",
+    "sitemap_update"
+  ],
+  "seo_requirements": {
+    "title_max_length": 64,
+    "description_max_length": 155,
+    "canonical_required": true,
+    "og_image_required": true,
+    "source_claim_ids_required": true,
+    "no_index_until_approved": true
+  },
+  "cooldown": {
+    "same_topic_days": 10,
+    "same_claim_set_days": 30,
+    "same_title_similarity_threshold": 0.92
+  },
+  "forbidden_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Beinan Site",
+    "Peinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

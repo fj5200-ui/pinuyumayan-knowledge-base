@@ -1,0 +1,56 @@
+{
+  "version": "v27",
+  "name": "Admin UI integration checklist for v26/v27 API",
+  "required_pages": [
+    {
+      "route": "/admin/login",
+      "api": [
+        "POST /api/admin/auth/v26/login",
+        "GET /api/admin/auth/v26/me"
+      ]
+    },
+    {
+      "route": "/admin/articles/review",
+      "api": [
+        "GET /api/admin/articles/v26/review-transactions",
+        "POST /api/admin/articles/v26/review-action"
+      ]
+    },
+    {
+      "route": "/admin/security/hmac",
+      "api": [
+        "GET /api/ops/security/v26/hmac-failures",
+        "POST /api/internal/security/v26/verify-hmac"
+      ]
+    },
+    {
+      "route": "/admin/corpus/acceptance",
+      "api": [
+        "GET /api/admin/corpus/v27/acceptance-latest",
+        "POST /api/internal/corpus/v27/acceptance-report"
+      ]
+    },
+    {
+      "route": "/admin/search/ops",
+      "api": [
+        "GET /api/ops/search/v27/index-status",
+        "POST /api/internal/search/v27/rebuild"
+      ]
+    }
+  ],
+  "rbac_scopes": [
+    "admin:auth",
+    "article:review",
+    "article:schedule",
+    "security:hmac:read",
+    "corpus:acceptance:read",
+    "corpus:acceptance:write",
+    "search:ops"
+  ],
+  "ui_guardrails": [
+    "Show forbidden relation findings before approve/schedule actions.",
+    "Show source_ids and claim_ids; do not approve drafts without citations.",
+    "Display full corpus preview warning when entry_count < 1000.",
+    "Display database mode and production fallback status on dashboard."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "version": "v28",
+  "title": "Live admin dashboard API wiring",
+  "pages": [
+    {
+      "path": "/admin/login",
+      "apis": [
+        "POST /api/admin/auth/v26/login",
+        "GET /api/admin/auth/v26/me"
+      ]
+    },
+    {
+      "path": "/admin/articles/review",
+      "apis": [
+        "GET /api/admin/articles/v28/live-queue",
+        "POST /api/admin/articles/v26/review-action"
+      ]
+    },
+    {
+      "path": "/admin/corpus/acceptance",
+      "apis": [
+        "GET /api/admin/corpus/v28/acceptance-latest",
+        "POST /api/internal/corpus/v28/acceptance-report"
+      ]
+    },
+    {
+      "path": "/admin/search/index",
+      "apis": [
+        "GET /api/ops/search/v28/index-status",
+        "POST /api/internal/search/v28/rebuild"
+      ]
+    },
+    {
+      "path": "/admin/security/hmac",
+      "apis": [
+        "GET /api/ops/security/v28/hmac-failures"
+      ]
+    },
+    {
+      "path": "/admin/vps/backup",
+      "apis": [
+        "GET /api/ops/vps-db/v28/restore-drills",
+        "POST /api/internal/vps-db/v28/restore-drill-report"
+      ]
+    }
+  ],
+  "must_display": [
+    "data mode",
+    "DB fallback blocked count",
+    "full corpus entry count",
+    "audio coverage",
+    "PHON coverage",
+    "forbidden relation findings",
+    "HMAC failure count"
+  ],
+  "rbac_scopes": [
+    "admin:read",
+    "article:review",
+    "corpus:acceptance:read",
+    "search:rebuild",
+    "security:hmac:read",
+    "vps:backup:read"
+  ]
+}

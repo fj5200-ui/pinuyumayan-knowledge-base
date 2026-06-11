@@ -1,0 +1,34 @@
+{
+  "version": "v27",
+  "name": "Production data mode and fallback policy",
+  "modes": {
+    "development": {
+      "static_fallback": "allowed",
+      "alert_required": false
+    },
+    "staging": {
+      "static_fallback": "allowed_with_warning",
+      "alert_required": true
+    },
+    "production": {
+      "static_fallback": "forbidden_for_db_backed_routes",
+      "alert_required": true
+    }
+  },
+  "rules": [
+    "If NODE_ENV=production and KNOWLEDGE_DATA_MODE=db, DB-backed routes must return DB_UNAVAILABLE instead of silently serving stale JSON.",
+    "Static JSON may remain for public static bundles and development fixtures, not as hidden production failover.",
+    "Every DB fallback attempt must write db_fallback_events_v27."
+  ],
+  "affected_route_groups": [
+    "/api/public/knowledge/*",
+    "/api/public/content/*",
+    "/api/internal/*",
+    "/api/admin/*"
+  ],
+  "recommended_env": {
+    "KNOWLEDGE_DATA_MODE": "db",
+    "DISABLE_PRODUCTION_STATIC_FALLBACK": "true",
+    "NODE_ENV": "production"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": "v27",
+  "default_adapter": "mysql_fulltext",
+  "adapters": [
+    {
+      "key": "mysql_fulltext",
+      "status": "ready_for_vps",
+      "notes": "Uses MySQL/MariaDB FULLTEXT indexes for knowledge cards, source-grounded claims, vocabulary, and article titles."
+    },
+    {
+      "key": "meilisearch",
+      "status": "optional_future",
+      "notes": "Better typo tolerance and ranking, requires extra VPS service."
+    },
+    {
+      "key": "typesense",
+      "status": "optional_future",
+      "notes": "Good low-latency search, requires extra VPS service."
+    }
+  ],
+  "must_block_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "index_groups": [
+    "public_knowledge_cards",
+    "source_grounded_claims",
+    "puyuma_vocabulary",
+    "pronunciation_assets",
+    "article_publication_records"
+  ],
+  "zero_result_logging": "search_zero_result_logs_v27",
+  "rebuild_policy": "rebuild after full corpus import, source claim promotion, or article publish approval"
+}

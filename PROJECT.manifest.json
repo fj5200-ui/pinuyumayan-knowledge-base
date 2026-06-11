@@ -1,7 +1,7 @@
 {
   "project": "pinuyumayan-backend-database",
   "project_key": "pinuyumayan-backend-database",
-  "version": "v23",
+  "version": "v28",
   "generated_at": "2026-06-11T15:21:47+00:00",
   "status": "backend_database_project_not_skill_package",
   "target_stack": [
@@ -162,7 +162,15 @@
         "connection checks",
         "v24 roadmap"
       ]
-    }
+    },
+    {
+      "version": "v24",
+      "name": "Main Site Runtime Bridge",
+      "summary": "server-side AI composer, HMAC client, review workbench, SEO publication checks, full corpus acceptance plan",
+      "openapi_paths": 102
+    },
+    "v25 main-site deployable bridge: review API, HMAC, SEO, corpus acceptance",
+    "v28_vps_live_ops_search_fallback"
   ],
   "v11_data_delivery_governance": {
     "migration": "database/migrations/0007_data_delivery_governance.sql",
@@ -221,5 +229,34 @@
     "zip": "pinuyumayan-backend-database-frontend-ai-composer-security-v22.zip",
     "next_plan": "data/development/next_upgrade_plan_v23.json"
   },
-  "artifact": "pinuyumayan-backend-database-main-site-integration-v23.zip"
+  "artifact": "pinuyumayan-backend-database-main-site-deployable-v25.zip",
+  "openapi_paths": 112,
+  "latest_version": "v27",
+  "v26": "VPS DB Production Core: DB-backed admin auth, HMAC nonce, article review transactions, VPS database deployment.",
+  "important_files_v26": [
+    "database/migrations/0023_vps_db_production_core_v26.sql",
+    "backend/src/rest/adminAuthDbV26Routes.ts",
+    "backend/src/security/internalHmacV26.ts",
+    "backend/src/rest/articleReviewDbV26Routes.ts",
+    "docs/vps_database_deployment_v26.md",
+    "data/development/next_upgrade_plan_v27.json"
+  ],
+  "v27": {
+    "name": "VPS staging full corpus/search/fallback runtime",
+    "zip": "pinuyumayan-backend-database-vps-staging-runtime-v27.zip",
+    "notes": [
+      "VPS DB remains default",
+      "full corpus acceptance report is evidence-based",
+      "production static fallback is forbidden by policy",
+      "search index and backup restore drill layers added"
+    ]
+  },
+  "important_status": {
+    "full_corpus": "embedded preview subset remains 80; run v28 VPS staging flow for >=1000 actual import"
+  },
+  "v28_added_files": [
+    "deploy/vps-full-corpus-staging-v28.sh",
+    "scripts/build_vps_full_corpus_acceptance_v28.py",
+    "backend/src/rest/vpsLiveOpsV28Routes.ts"
+  ]
 }

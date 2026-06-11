@@ -1,0 +1,20 @@
+{
+  "version": "v25",
+  "package": "pinuyumayan-backend-database-main-site-deployable-v25",
+  "required_backend_migrations": [
+    "0021_main_site_connection_v23.sql",
+    "0022_main_site_runtime_bridge_v24.sql",
+    "0023_review_hmac_seo_v25.sql"
+  ],
+  "required_main_site_files": [
+    "src/lib/kbHmacClient.ts",
+    "app/api/ai/compose/route.ts"
+  ],
+  "optional_main_site_files": [
+    "app/api/admin/articles/review-action/route.ts",
+    "components/admin/AdminArticleReviewWorkbench.tsx",
+    "components/admin/MainSiteKbConnectionPanel.tsx"
+  ],
+  "security_mode": "api_key_plus_hmac_nonce_required_for_internal_routes",
+  "public_safe_mode": "public endpoints expose approved source packets only"
+}

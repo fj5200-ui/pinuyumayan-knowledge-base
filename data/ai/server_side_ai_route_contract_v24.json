@@ -1,0 +1,27 @@
+{
+  "version": "v24",
+  "route": "POST /api/ai/compose",
+  "host": "main_site_server_runtime",
+  "provider_adapters": [
+    "openai_responses",
+    "kimi_chat_completions",
+    "mock_dev"
+  ],
+  "request_schema": {
+    "blueprintId": "string",
+    "userIdea": "string",
+    "sourcePacketIds": "string[] optional",
+    "tone": "plain|formal|youth|announcement optional",
+    "targetAudience": "public|students|tribe_members|visitors optional"
+  },
+  "response_schema": {
+    "draft": "{title, summary, sections, citations, warnings}",
+    "validation": "KB validation result",
+    "canSubmitReview": "boolean"
+  },
+  "security_notes": [
+    "AI API key must not appear in browser bundle",
+    "source packets must be fetched by server route or public browser-safe endpoint",
+    "draft validation must call KB internal endpoint with signed HMAC request"
+  ]
+}

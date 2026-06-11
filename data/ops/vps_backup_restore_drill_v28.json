@@ -1,0 +1,24 @@
+{
+  "version": "v28",
+  "frequency": "before major migrations and monthly",
+  "commands": [
+    "./deploy/vps-db-backup-v26.sh",
+    "./deploy/vps-restore-drill-v28.sh --backup /var/backups/pinuyumayan/latest.sql.gz --target-db pinuyumayan_kb_restore"
+  ],
+  "pass_criteria": {
+    "restore_completed": true,
+    "critical_row_counts_match": true,
+    "checksum_report_generated": true,
+    "production_db_not_overwritten": true
+  },
+  "critical_tables": [
+    "admin_users",
+    "admin_sessions",
+    "kb_facts",
+    "puyuma_corpus_entries",
+    "content_items",
+    "search_index_documents_v27",
+    "article_review_transactions_v26"
+  ],
+  "report_file": "data/database/vps_restore_drill_report_v28.generated.json"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "v28-preview-generated",
+  "generated_at": "2026-06-11T17:14:17.663200Z",
+  "input": "embedded preview subset",
+  "total_entries": 80,
+  "required_min_entries": 1000,
+  "audio_asset_count": 0,
+  "audio_coverage_ratio": 0.0,
+  "source_phon_count": 80,
+  "source_phon_coverage_ratio": 1.0,
+  "dialects": {
+    "unknown": 80
+  },
+  "duplicate_count": 0,
+  "license_blocker_count": 0,
+  "forbidden_relation_hits": 0,
+  "status": "failed",
+  "reason": "entry_count 80 is below required 1000"
+}

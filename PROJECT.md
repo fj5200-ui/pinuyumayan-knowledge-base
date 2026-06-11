@@ -297,3 +297,58 @@ New source-grounded claims: 27. New AI article blueprints: 6. Public auto-publis
 - Article generation remains on the main site server route. The knowledge backend provides source packets, validation, deduplication, forbidden Beinan/Peinan archaeology relation checks, review and publishing governance.
 - Main site must configure `NEXT_PUBLIC_KB_API_URL`, `PINUYUMAYAN_KB_API_URL`, `PINUYUMAYAN_MAIN_SITE_API_KEY`, `PINUYUMAYAN_HMAC_SECRET`, `AI_PROVIDER`, and server-only AI provider key.
 - See `docs/main_site_connection_v23.md` and `webapp/env.example`.
+
+
+## v24 Main Site Runtime Bridge
+
+v24 新增主站可搬用的 server-side AI Composer、HMAC internal client、連線檢查、文章審核工作台範例、SEO 發布檢查與 full corpus 驗收規格。文章正文仍由主站 server route 呼叫 AI provider；後端知識庫只做史料包、引用、去重、敏感、授權、禁止關聯與審核治理。
+
+新增主要文件：
+
+- `docs/main_site_runtime_bridge_v24.md`
+- `docs/hmac_internal_api_enforcement_v24.md`
+- `docs/full_corpus_acceptance_v24.md`
+- `docs/next_upgrade_plan_v25.md`
+
+新增主站可搬檔案：
+
+- `webapp/lib/kbHmacClient.v24.ts`
+- `webapp/app/api/ai/compose-v24/route.ts`
+- `webapp/app/api/kb/connection-check/route.ts`
+- `webapp/components/ArticleComposerV24.tsx`
+- `webapp/components/AdminArticleReviewWorkbenchV24.tsx`
+
+## v25 Main-site deployable bridge
+
+v25 turns the v24 connection kit into a more deployable main-site bridge: copyable server-side AI route, HMAC client, article review action API, HMAC verification endpoint, SEO publish check, full-corpus acceptance report schema, and a v26 upgrade plan. Article body generation remains on the main-site server route; the knowledge backend only provides source packets, validation, deduplication, forbidden-relation checks, review governance, and publication controls.
+
+
+## v26 VPS DB Production Core
+
+資料庫預設部署在使用者 VPS。v26 新增 DB-backed admin auth、internal API HMAC + nonce 防重放、文章審核 DB transaction、VPS DB 狀態/備份紀錄、以及 v27 下一步方案。文章仍由主站 server-side AI route 生成，後端知識庫只做史料、引用、去重、安全、審核與發布治理。
+
+
+## v27 VPS staging / full corpus / search / fallback upgrade
+
+- DB remains VPS-first: MySQL/MariaDB on localhost/private LAN.
+- Adds VPS staging full-corpus acceptance evidence; current embedded preview report honestly fails the >=1000 gate until the pipeline is run on VPS staging.
+- Adds production DB/static fallback policy: production DB-backed routes must not silently serve stale JSON.
+- Adds MySQL FULLTEXT-oriented search index tables and ops endpoints.
+- Adds backup restore drill evidence tables and report endpoint.
+- Adds admin UI integration checklist for login/review/corpus/search/security dashboards.
+- Forbidden relation remains enforced: 卑南文化遺址 / Beinan Site / Peinan Site must not become Pinuyumayan cultural knowledge source.
+
+
+## v28 VPS Live Ops / Search / Fallback Upgrade
+
+v28 continues the VPS DB architecture and adds an executable staging flow for full corpus acceptance, production DB fallback enforcement, MySQL FULLTEXT index building, live admin ops dashboard wiring, VPS restore drills, and source candidate review policy. The embedded package still contains only the 80-entry preview subset; the >=1000 full corpus must be executed on the user VPS staging environment and must pass acceptance before promotion.
+
+Key files:
+- `deploy/vps-full-corpus-staging-v28.sh`
+- `scripts/build_vps_full_corpus_acceptance_v28.py`
+- `scripts/build_mysql_fulltext_index_v28.py`
+- `backend/src/rest/vpsLiveOpsV28Routes.ts`
+- `backend/src/lib/productionDbFallbackV28.ts`
+- `database/migrations/0025_vps_live_ops_search_fallback_v28.sql`
+- `docs/vps_live_ops_v28.md`
+- `data/development/next_upgrade_plan_v29.json`

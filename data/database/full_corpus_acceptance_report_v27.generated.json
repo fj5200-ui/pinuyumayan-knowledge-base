@@ -1,0 +1,32 @@
+{
+  "version": "v27",
+  "input": "data/web/puyuma_vocabulary_audio_entries.json",
+  "input_version": "2026-06-11-full-vocab-audio-tts-g2p-ipa-v1",
+  "required_min_entries": 1000,
+  "total_entries": 80,
+  "dialect_counts": {
+    "Nanwang_Puyuma": 20,
+    "Zhiben_Puyuma": 20,
+    "Xiqun_Puyuma": 20,
+    "Jianhe_Puyuma": 20
+  },
+  "required_dialects": [
+    "Nanwang_Puyuma",
+    "Zhiben_Puyuma",
+    "Xiqun_Puyuma",
+    "Jianhe_Puyuma"
+  ],
+  "missing_required_dialects": [],
+  "audio_asset_count": 80,
+  "audio_coverage_ratio": 1.0,
+  "source_phon_count": 0,
+  "source_phon_coverage_ratio": 0.0,
+  "duplicate_count": 0,
+  "license_blocker_count": 0,
+  "public_candidate_count": 80,
+  "status": "failed",
+  "findings": [
+    "entry_count 80 is below required 1000"
+  ],
+  "honesty_note": "If this report fails because only 80 preview entries exist, run the full corpus download/import pipeline on VPS staging before promotion."
+}

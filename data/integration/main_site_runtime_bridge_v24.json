@@ -1,0 +1,101 @@
+{
+  "version": "v24",
+  "name": "Main Site Runtime Bridge",
+  "goal": "讓主站可直接搬用 server-side AI composer、HMAC internal client、後台審核 UI、文章排程與 KB 健康檢查。",
+  "hard_rules": [
+    "AI provider key must stay on the main-site server runtime, never in browser JavaScript.",
+    "Knowledge backend does not generate article body; it only provides grounded source packets and validation governance.",
+    "Beinan/Peinan archaeological site terms are forbidden as Pinuyumayan cultural sources, synonyms, tags, related content, or article evidence.",
+    "Public endpoints must never return restricted/rejected/blocked_license/admin_only claims.",
+    "Internal endpoints must require API key + HMAC timestamp + nonce + signature in production."
+  ],
+  "copy_to_main_site": [
+    {
+      "from": "webapp/lib/kbHmacClient.v24.ts",
+      "to": "src/lib/kbHmacClient.ts",
+      "purpose": "主站 server route 對知識庫 internal API 簽章。"
+    },
+    {
+      "from": "webapp/app/api/ai/compose-v24/route.ts",
+      "to": "app/api/ai/compose/route.ts",
+      "purpose": "主站 server-side AI 作文入口。"
+    },
+    {
+      "from": "webapp/app/api/kb/connection-check/route.ts",
+      "to": "app/api/kb/connection-check/route.ts",
+      "purpose": "主站檢查後端知識庫連線與 HMAC。"
+    },
+    {
+      "from": "webapp/components/AdminArticleReviewWorkbenchV24.tsx",
+      "to": "components/admin/AdminArticleReviewWorkbench.tsx",
+      "purpose": "後台審核工作台範例。"
+    },
+    {
+      "from": "webapp/components/ArticleComposerV24.tsx",
+      "to": "components/articles/ArticleComposer.tsx",
+      "purpose": "前端輸入想法 + 選史料包。"
+    }
+  ],
+  "required_main_site_env": [
+    {
+      "name": "NEXT_PUBLIC_KB_API_URL",
+      "visibility": "browser",
+      "required": true
+    },
+    {
+      "name": "PINUYUMAYAN_KB_API_URL",
+      "visibility": "server",
+      "required": true
+    },
+    {
+      "name": "PINUYUMAYAN_MAIN_SITE_CLIENT_ID",
+      "visibility": "server",
+      "required": true
+    },
+    {
+      "name": "PINUYUMAYAN_MAIN_SITE_API_KEY",
+      "visibility": "secret",
+      "required": true
+    },
+    {
+      "name": "PINUYUMAYAN_HMAC_SECRET",
+      "visibility": "secret",
+      "required": true
+    },
+    {
+      "name": "PINUYUMAYAN_HMAC_ENABLED",
+      "visibility": "server",
+      "required": true
+    },
+    {
+      "name": "AI_PROVIDER",
+      "visibility": "server",
+      "required": true
+    },
+    {
+      "name": "OPENAI_API_KEY",
+      "visibility": "secret",
+      "required": false
+    },
+    {
+      "name": "KIMI_API_KEY",
+      "visibility": "secret",
+      "required": false
+    },
+    {
+      "name": "NEXT_PUBLIC_SITE_URL",
+      "visibility": "browser",
+      "required": true
+    }
+  ],
+  "runtime_flow": [
+    "main-site browser loads composer config and source packet list from public KB endpoints",
+    "main-site user selects topic/blueprint and writes idea",
+    "main-site browser POSTs to its own /api/ai/compose",
+    "main-site server route resolves source packets and calls AI provider",
+    "main-site server route sends draft to KB validation endpoint with HMAC",
+    "KB returns citation, duplicate, forbidden relation, sensitivity, and license findings",
+    "if clean or reviewable, main-site submits to KB review queue",
+    "admin review workbench approves/schedules/publishes according to policy"
+  ]
+}

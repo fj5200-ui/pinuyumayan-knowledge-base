@@ -1,0 +1,60 @@
+{
+  "version": "v26",
+  "title": "主站實際搬移 + 審核流程接資料庫 + 千筆語料實測匯入",
+  "priorities": [
+    {
+      "priority": 1,
+      "area": "主站搬移",
+      "tasks": [
+        "把 v25 webapp routes/lib/components 搬進實際主站",
+        "接 pinuyumayan.tw 環境變數與部署 secret",
+        "用 /api/kb/connection-check 驗證 public + internal API"
+      ]
+    },
+    {
+      "priority": 2,
+      "area": "審核資料庫落地",
+      "tasks": [
+        "review_action 寫入 article_review_events",
+        "審核狀態改成資料庫交易",
+        "審核者 RBAC scope 檢查"
+      ]
+    },
+    {
+      "priority": 3,
+      "area": "HMAC 全面套用",
+      "tasks": [
+        "Express middleware 套全部 /api/internal",
+        "nonce 寫 DB 或 Redis",
+        "安全失敗 dashboard"
+      ]
+    },
+    {
+      "priority": 4,
+      "area": "千筆語料實測",
+      "tasks": [
+        "跑 full corpus import",
+        "產出 v25 acceptance report",
+        "把通過 rows 推到 full_corpus_candidate"
+      ]
+    },
+    {
+      "priority": 5,
+      "area": "多來源候選蒐集",
+      "tasks": [
+        "實作 adapter crawler 的候選輸出",
+        "先放 candidate_needs_human_review",
+        "卑南遺址誤判全部進 negative disambiguation"
+      ]
+    },
+    {
+      "priority": 6,
+      "area": "SEO 發布治理",
+      "tasks": [
+        "接 sitemap/OG/canonical",
+        "文章發布排程",
+        "同主題 cooldown dashboard"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "version": "v25",
+  "name": "Main Site Deployable Integration Kit",
+  "goal": "把 v24 的主站對接從範例升級成可搬移清單、安裝 manifest、路由對照、環境檢查與回滾方案。",
+  "non_goals": [
+    "不在後端知識庫生成文章正文",
+    "不把卑南文化遺址/Beinan Site 當成卑南族文化來源",
+    "不把候選來源自動公開"
+  ],
+  "copy_plan": [
+    {
+      "from": "webapp/lib/kbHmacClient.v25.ts",
+      "to": "src/lib/kbHmacClient.ts",
+      "required": true
+    },
+    {
+      "from": "webapp/app/api/ai/compose-v25/route.ts",
+      "to": "app/api/ai/compose/route.ts",
+      "required": true
+    },
+    {
+      "from": "webapp/app/api/admin/articles/review-action/route.ts",
+      "to": "app/api/admin/articles/review-action/route.ts",
+      "required": false
+    },
+    {
+      "from": "webapp/components/AdminArticleReviewWorkbenchV25.tsx",
+      "to": "components/admin/AdminArticleReviewWorkbench.tsx",
+      "required": false
+    },
+    {
+      "from": "webapp/components/MainSiteKbConnectionPanelV24.tsx",
+      "to": "components/admin/MainSiteKbConnectionPanel.tsx",
+      "required": false
+    }
+  ],
+  "main_site_routes": [
+    {
+      "route": "GET /api/kb/connection-check",
+      "purpose": "檢查 KB public + internal HMAC 連線"
+    },
+    {
+      "route": "POST /api/ai/compose",
+      "purpose": "主站 server-side AI provider adapter；不得在 browser 暴露 AI key"
+    },
+    {
+      "route": "POST /api/ai/validate-draft",
+      "purpose": "把 AI 草稿送 KB 做引用/去重/禁止關聯/敏感檢查"
+    },
+    {
+      "route": "POST /api/ai/submit-review",
+      "purpose": "通過基本檢查後送 KB review queue"
+    },
+    {
+      "route": "POST /api/admin/articles/review-action",
+      "purpose": "主站後台對 KB 審核動作代理"
+    }
+  ],
+  "required_env": {
+    "browser": [
+      "NEXT_PUBLIC_KB_API_URL",
+      "NEXT_PUBLIC_SITE_URL"
+    ],
+    "server": [
+      "PINUYUMAYAN_KB_API_URL",
+      "PINUYUMAYAN_MAIN_SITE_CLIENT_ID",
+      "PINUYUMAYAN_HMAC_ENABLED",
+      "AI_PROVIDER"
+    ],
+    "secrets": [
+      "PINUYUMAYAN_MAIN_SITE_API_KEY",
+      "PINUYUMAYAN_HMAC_SECRET",
+      "OPENAI_API_KEY or KIMI_API_KEY"
+    ]
+  },
+  "readiness_checks": [
+    "GET /api/public/version returns 200",
+    "GET /api/public/ai-article/frontend-composer-config returns 200",
+    "POST /api/internal/security/v25/verify-hmac returns signature_valid=true from server runtime",
+    "POST /api/internal/ai-article/v24/client-draft/validate rejects forbidden Beinan/Peinan archaeology relation",
+    "Admin review action endpoint writes audit event"
+  ],
+  "rollback": [
+    "keep old main-site /api/ai/compose route under /api/ai/compose-legacy for one deploy window",
+    "toggle PINUYUMAYAN_HMAC_ENABLED=false only in staging if emergency debugging is needed",
+    "do not delete old article drafts; mark superseded_by_v25 in review metadata"
+  ]
+}

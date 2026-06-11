@@ -1,0 +1,39 @@
+{
+  "version": "v26",
+  "name": "VPS database runtime",
+  "assumption": "Primary database is hosted on the user's VPS.",
+  "supported_engines": [
+    "mysql8",
+    "mariadb10_11"
+  ],
+  "recommended_default": "mysql8",
+  "database_url_examples": {
+    "local_socket": "mysql://pinuyumayan:<password>@localhost:3306/pinuyumayan_kb",
+    "private_lan": "mysql://pinuyumayan:<password>@10.0.0.5:3306/pinuyumayan_kb"
+  },
+  "hard_rules": [
+    "Do not expose MySQL port 3306 to the public internet unless protected by VPN/firewall allowlist.",
+    "Run migrations from the backend host or SSH session, not from browser clients.",
+    "Production must not silently fall back to static JSON when DATABASE_URL is configured but unreachable.",
+    "Daily logical backup is mandatory before full-corpus import jobs."
+  ],
+  "vps_services": [
+    "mysql-server or mariadb-server",
+    "nodejs runtime",
+    "nginx reverse proxy",
+    "systemd backend service",
+    "backup cron/systemd timer"
+  ],
+  "required_env": [
+    "DATABASE_URL",
+    "MAIN_SITE_API_KEY",
+    "PINUYUMAYAN_HMAC_SECRET",
+    "ALLOWED_ORIGINS",
+    "ADMIN_SESSION_SECRET"
+  ],
+  "ports": {
+    "backend_api": 8787,
+    "nginx_https": 443,
+    "mysql": "127.0.0.1:3306 or private network only"
+  }
+}

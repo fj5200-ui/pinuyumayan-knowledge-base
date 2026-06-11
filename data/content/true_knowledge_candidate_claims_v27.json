@@ -1,0 +1,56 @@
+{
+  "version": "v27",
+  "status": "candidate_needs_human_review",
+  "public_auto_publish": false,
+  "count": 6,
+  "items": [
+    {
+      "candidate_key": "v27-candidate-source-adapter-001",
+      "topic": "多來源蒐集",
+      "claim_text": "TIPP、文化部、臺東縣與博物館來源應先進候選區，經人工審核後才可轉為公開知識。",
+      "review_status": "candidate_needs_human_review",
+      "source_adapter": "system_policy",
+      "sensitivity": "normal"
+    },
+    {
+      "candidate_key": "v27-candidate-forbidden-001",
+      "topic": "禁止關聯",
+      "claim_text": "卑南文化遺址、Peinan Site、Beinan Site 類詞不得被匯入為卑南族文化來源。",
+      "review_status": "policy_verified",
+      "source_adapter": "forbidden_relation_policy_v21",
+      "sensitivity": "normal"
+    },
+    {
+      "candidate_key": "v27-candidate-corpus-001",
+      "topic": "族語語料",
+      "claim_text": "千筆語料匯入前必須產生音檔覆蓋率、source PHON 覆蓋率、授權風險與重複資料報告。",
+      "review_status": "policy_verified",
+      "source_adapter": "full_corpus_policy",
+      "sensitivity": "normal"
+    },
+    {
+      "candidate_key": "v27-candidate-audio-001",
+      "topic": "真人發音",
+      "claim_text": "公開發音應優先使用真人音檔；未審核合成 TTS 不可標示為真人發音。",
+      "review_status": "policy_verified",
+      "source_adapter": "pronunciation_policy_v16_v17",
+      "sensitivity": "normal"
+    },
+    {
+      "candidate_key": "v27-candidate-security-001",
+      "topic": "安全",
+      "claim_text": "主站呼叫 internal API 應使用 HMAC、timestamp 與 nonce 防重放。",
+      "review_status": "policy_verified",
+      "source_adapter": "security_policy_v22_v26",
+      "sensitivity": "normal"
+    },
+    {
+      "candidate_key": "v27-candidate-vps-001",
+      "topic": "VPS DB",
+      "claim_text": "正式資料庫位於 VPS 時，MySQL/MariaDB 不應公開 3306 至網際網路。",
+      "review_status": "policy_verified",
+      "source_adapter": "vps_db_policy_v26",
+      "sensitivity": "normal"
+    }
+  ]
+}

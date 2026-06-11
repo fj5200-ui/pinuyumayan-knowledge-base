@@ -1,0 +1,47 @@
+{
+  "version": "v24",
+  "mode": "candidate_only_not_public",
+  "candidate_adapters": [
+    {
+      "id": "cip_pinuyumayan_official",
+      "status": "verified_source_existing",
+      "public_auto_publish": false
+    },
+    {
+      "id": "tipp_candidate",
+      "status": "candidate_adapter",
+      "public_auto_publish": false
+    },
+    {
+      "id": "culture_memory_candidate",
+      "status": "candidate_adapter",
+      "public_auto_publish": false
+    },
+    {
+      "id": "taitung_local_candidate",
+      "status": "candidate_adapter",
+      "public_auto_publish": false
+    },
+    {
+      "id": "museum_candidate",
+      "status": "candidate_adapter",
+      "public_auto_publish": false
+    }
+  ],
+  "blocklist": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南文化公園",
+    "Beinan Site",
+    "Peinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "ingestion_steps": [
+    "fetch candidate metadata",
+    "classify entity type",
+    "reject archaeology-only Beinan/Peinan sources",
+    "extract claims as candidate",
+    "dedupe against v18-v23 claims",
+    "assign review_status=candidate_needs_review"
+  ]
+}

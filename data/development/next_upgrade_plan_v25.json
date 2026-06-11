@@ -1,0 +1,60 @@
+{
+  "version": "v25",
+  "title": "主站實裝 + 後台審核工作流 + full corpus 實測匯入",
+  "priorities": [
+    {
+      "priority": 1,
+      "name": "搬移主站 routes",
+      "tasks": [
+        "把 v24 webapp/app/api/* 搬到主站",
+        "設定 env secrets",
+        "在主站部署環境跑 connection-check"
+      ]
+    },
+    {
+      "priority": 2,
+      "name": "後台審核 API 實作落地",
+      "tasks": [
+        "review queue CRUD",
+        "approve/reject/request revision",
+        "審核紀錄 audit log"
+      ]
+    },
+    {
+      "priority": 3,
+      "name": "HMAC 套用全部 internal routes",
+      "tasks": [
+        "middleware 強制簽章",
+        "nonce 儲存與過期清理",
+        "安全失敗 dashboard"
+      ]
+    },
+    {
+      "priority": 4,
+      "name": "千筆語料實測匯入",
+      "tasks": [
+        "下載 FormosanBank/ePark 語料",
+        "輸出音檔覆蓋率與 PHON 覆蓋率",
+        "匯入 candidate channel"
+      ]
+    },
+    {
+      "priority": 5,
+      "name": "多來源候選蒐集",
+      "tasks": [
+        "TIPP/文化部/臺東地方來源候選 adapter",
+        "卑南遺址類詞自動拒絕",
+        "人工審核後再進 public"
+      ]
+    },
+    {
+      "priority": 6,
+      "name": "SEO 發布排程",
+      "tasks": [
+        "sitemap/OG/canonical",
+        "同主題冷卻",
+        "文章發布歷史去重 dashboard"
+      ]
+    }
+  ]
+}

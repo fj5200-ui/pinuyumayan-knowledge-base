@@ -1,0 +1,41 @@
+{
+  "version": "v28",
+  "title": "Production Search + Admin Workflow Implementation",
+  "goals": [
+    {
+      "priority": "P0",
+      "item": "Run v27 full corpus acceptance on actual VPS staging DB",
+      "result": "generated report with >=1000 entries or explicit failure evidence"
+    },
+    {
+      "priority": "P0",
+      "item": "Wire admin UI pages to live v26/v27 API",
+      "result": "login, article review, corpus acceptance, HMAC failures visible in browser"
+    },
+    {
+      "priority": "P1",
+      "item": "MySQL FULLTEXT migration and index builder",
+      "result": "search index populated from public knowledge/vocabulary/pronunciation assets"
+    },
+    {
+      "priority": "P1",
+      "item": "Backup restore drill script executes against staging restore DB",
+      "result": "restore report with row counts and checksum"
+    },
+    {
+      "priority": "P1",
+      "item": "Production fallback enforcement middleware",
+      "result": "DB-backed routes cannot silently serve static JSON in production"
+    },
+    {
+      "priority": "P2",
+      "item": "Source candidate ingestion UI",
+      "result": "human review queue for TIPP/Culture/Taitung/museum candidates"
+    }
+  ],
+  "do_not_do": [
+    "Do not connect Beinan archaeological site content to Pinuyumayan ethnic culture.",
+    "Do not publish synthetic TTS as real voice.",
+    "Do not store AI provider keys in browser-exposed env."
+  ]
+}

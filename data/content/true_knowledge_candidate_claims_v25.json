@@ -1,0 +1,151 @@
+[
+  {
+    "id": "claim-v25-001",
+    "slug": "v25-candidate-age_grade_public_life",
+    "topic": "age_grade_public_life",
+    "claim_zh": "卑南族社會有嚴謹的年齡階級組織與會所制度，可作為主站介紹公共生活與教育制度的公開摘要素材。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "4b87c9f6705246373999425c",
+    "dedupe_key": "v25:age_grade_public_life:4b87c9f6705246373999425c"
+  },
+  {
+    "id": "claim-v25-002",
+    "slug": "v25-candidate-annual_ritual_scale",
+    "topic": "annual_ritual_scale",
+    "claim_zh": "原民會中文摘要指出卑南族現存年度慶典包含小米鋤草完工慶、小米收穫祭、少年年祭與年祭，其中年祭規模最大。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "66c6f59c38432330d80796f0",
+    "dedupe_key": "v25:annual_ritual_scale:66c6f59c38432330d80796f0"
+  },
+  {
+    "id": "claim-v25-003",
+    "slug": "v25-candidate-ritual_month_calendar_summary",
+    "topic": "ritual_month_calendar_summary",
+    "claim_zh": "原民會英文頁列出三月 Mugamut、四月 Ruvuwa’an、七月 Masarut、十二月 Vasivas/Mangayau 的公開月曆摘要。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "0071f0f1efba9721be010ee6",
+    "dedupe_key": "v25:ritual_month_calendar_summary:0071f0f1efba9721be010ee6"
+  },
+  {
+    "id": "claim-v25-004",
+    "slug": "v25-candidate-public_knowledge_sensitivity",
+    "topic": "public_knowledge_sensitivity",
+    "claim_zh": "祭儀內容只應提供公開摘要與文化脈絡，不能轉成操作步驟或儀式教學。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "25792c035f015b13a9ef9107",
+    "dedupe_key": "v25:public_knowledge_sensitivity:25792c035f015b13a9ef9107"
+  },
+  {
+    "id": "claim-v25-005",
+    "slug": "v25-candidate-population_versioning",
+    "topic": "population_versioning",
+    "claim_zh": "人口數應保留來源版本與擷取時間，避免中文頁現況數字與英文頁舊數字混用。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "fd3d000c692c7510b33b319f",
+    "dedupe_key": "v25:population_versioning:fd3d000c692c7510b33b319f"
+  },
+  {
+    "id": "claim-v25-006",
+    "slug": "v25-candidate-front_end_idea_boundary",
+    "topic": "front_end_idea_boundary",
+    "claim_zh": "主站 AI 發文時，使用者想法只能作為觀點或編輯方向，不能被系統標記為史料來源。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "71488491cc49c382a875ac43",
+    "dedupe_key": "v25:front_end_idea_boundary:71488491cc49c382a875ac43"
+  },
+  {
+    "id": "claim-v25-007",
+    "slug": "v25-candidate-beinan_site_disambiguation",
+    "topic": "beinan_site_disambiguation",
+    "claim_zh": "卑南文化遺址相關詞只可作負向辨析，不可作卑南族文化知識來源。",
+    "source_ids": [
+      "forbidden_relation_policy_v21"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "1d8b67a0d110e39999617dcf",
+    "dedupe_key": "v25:beinan_site_disambiguation:1d8b67a0d110e39999617dcf"
+  },
+  {
+    "id": "claim-v25-008",
+    "slug": "v25-candidate-audio_first_pronunciation",
+    "topic": "audio_first_pronunciation",
+    "claim_zh": "卑南語發音公開端應優先使用真實來源音檔；未審核合成 TTS 不公開。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "a9c0cda0891df3583df56139",
+    "dedupe_key": "v25:audio_first_pronunciation:a9c0cda0891df3583df56139"
+  },
+  {
+    "id": "claim-v25-009",
+    "slug": "v25-candidate-source_packet_citation",
+    "topic": "source_packet_citation",
+    "claim_zh": "前端 AI Composer 必須保留 source_ids 與 claim_ids，讓後台能檢查引用覆蓋率。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "021e3ff36b5b34342ac3c195",
+    "dedupe_key": "v25:source_packet_citation:021e3ff36b5b34342ac3c195"
+  },
+  {
+    "id": "claim-v25-010",
+    "slug": "v25-candidate-same_topic_cooldown",
+    "topic": "same_topic_cooldown",
+    "claim_zh": "同主題文章應設冷卻期與 fingerprint 檢查，避免主站重複發布相同內容。",
+    "source_ids": [
+      "cip_official_pinuyumayan_zh",
+      "cip_official_pinuyumayan_en"
+    ],
+    "review_status": "candidate_needs_human_review",
+    "public_use": "not_public_until_reviewed",
+    "sensitivity": "public_summary_only",
+    "canonical_fingerprint": "7fa4eb42afc78bce3a2877da",
+    "dedupe_key": "v25:same_topic_cooldown:7fa4eb42afc78bce3a2877da"
+  }
+]

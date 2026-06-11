@@ -1,0 +1,96 @@
+{
+  "version": "v25",
+  "review_states": [
+    "draft_submitted",
+    "needs_revision",
+    "duplicate_blocked",
+    "citation_fix_required",
+    "sensitivity_review",
+    "approved_for_schedule",
+    "scheduled",
+    "published",
+    "rejected"
+  ],
+  "actions": [
+    {
+      "action": "approve",
+      "from": [
+        "draft_submitted",
+        "sensitivity_review",
+        "citation_fix_required"
+      ],
+      "to": "approved_for_schedule",
+      "requires": [
+        "citation_check_passed",
+        "duplicate_check_passed",
+        "forbidden_relation_check_passed"
+      ]
+    },
+    {
+      "action": "reject",
+      "from": [
+        "draft_submitted",
+        "needs_revision",
+        "sensitivity_review"
+      ],
+      "to": "rejected",
+      "requires": [
+        "reviewer_reason"
+      ]
+    },
+    {
+      "action": "request_revision",
+      "from": [
+        "draft_submitted",
+        "sensitivity_review",
+        "citation_fix_required"
+      ],
+      "to": "needs_revision",
+      "requires": [
+        "reviewer_notes"
+      ]
+    },
+    {
+      "action": "schedule",
+      "from": [
+        "approved_for_schedule"
+      ],
+      "to": "scheduled",
+      "requires": [
+        "publish_at",
+        "seo_check_passed",
+        "topic_cooldown_passed"
+      ]
+    },
+    {
+      "action": "merge_duplicate",
+      "from": [
+        "duplicate_blocked"
+      ],
+      "to": "rejected",
+      "requires": [
+        "existing_article_id"
+      ]
+    }
+  ],
+  "audit_fields": [
+    "actor_id",
+    "actor_role",
+    "action",
+    "draft_id",
+    "previous_state",
+    "next_state",
+    "reason",
+    "request_id",
+    "ip_hash",
+    "created_at"
+  ],
+  "blockers": [
+    "卑南文化遺址/Beinan Site forbidden relation",
+    "same_slug",
+    "same_fingerprint",
+    "missing_citations",
+    "restricted_claim",
+    "sensitive_ritual_instruction"
+  ]
+}

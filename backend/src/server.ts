@@ -1,4 +1,11 @@
 import { registerFrontendAiArticleRoutes } from './rest/frontendAiArticleRoutes';
+
+import { registerAdminAuthDbV26Routes } from "./rest/adminAuthDbV26Routes";
+import { registerInternalSecurityV26Routes } from "./rest/internalSecurityV26Routes";
+import { registerArticleReviewDbV26Routes } from "./rest/articleReviewDbV26Routes";
+import { registerVpsDatabaseV26Routes } from "./rest/vpsDatabaseV26Routes";
+import { registerVpsStagingV27Routes } from "./rest/vpsStagingV27Routes";
+import { registerVpsLiveOpsV28Routes } from "./rest/vpsLiveOpsV28Routes";
 import "dotenv/config";
 import express from "express";
 import helmet from "helmet";
@@ -26,6 +33,9 @@ import { registerSecurityOpsRoutes } from "./rest/securityOpsRoutes";
 import { registerPronunciationRoutes } from "./rest/pronunciationRoutes";
 import { registerAudioRoutes } from "./rest/audioRoutes";
 import { registerAiArticleRoutes } from "./rest/aiArticleRoutes";
+import { registerMainSiteRuntimeBridgeV24Routes } from "./rest/mainSiteRuntimeBridgeV24Routes";
+import { registerArticleReviewV25Routes } from "./rest/articleReviewV25Routes";
+import { registerMainSiteMigrationV25Routes } from "./rest/mainSiteMigrationV25Routes";
 import { requestIdMiddleware } from "./lib/requestId";
 import { createMemoryRateLimit, cleanupRateLimitBuckets } from "./security/rateLimit";
 import { env, assertProductionEnv } from "./lib/env";
@@ -65,6 +75,15 @@ registerSecurityOpsRoutes(app);
 registerPronunciationRoutes(app);
 registerAudioRoutes(app);
 registerAiArticleRoutes(app);
+registerMainSiteRuntimeBridgeV24Routes(app);
+registerArticleReviewV25Routes(app);
+registerMainSiteMigrationV25Routes(app);
+registerAdminAuthDbV26Routes(app);
+registerInternalSecurityV26Routes(app);
+registerArticleReviewDbV26Routes(app);
+registerVpsDatabaseV26Routes(app);
+registerVpsStagingV27Routes(app);
+registerVpsLiveOpsV28Routes(app);
 
 app.use("/trpc", createExpressMiddleware({ router: appRouter, createContext }));
 

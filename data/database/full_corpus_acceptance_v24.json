@@ -1,0 +1,38 @@
+{
+  "version": "v24",
+  "status": "acceptance_plan_not_full_import_result",
+  "minimum_entries_required": 1000,
+  "source_candidates_known": 66,
+  "embedded_preview_subset": 80,
+  "acceptance_metrics": [
+    {
+      "name": "entry_count",
+      "pass": ">=1000"
+    },
+    {
+      "name": "all_dialects_present",
+      "pass": "Nanwang, Zhiben, Xiqun, Jianhe present"
+    },
+    {
+      "name": "audio_url_coverage",
+      "pass": "report percentage; public pronunciation only when source audio exists"
+    },
+    {
+      "name": "source_phon_coverage",
+      "pass": "report XML/CSV PHON availability"
+    },
+    {
+      "name": "license_blockers",
+      "pass": "0 public blocked_license rows"
+    },
+    {
+      "name": "dedupe_rate",
+      "pass": "duplicates quarantined, not published"
+    }
+  ],
+  "commands": [
+    "python3 scripts/build_full_puyuma_web_vocabulary.py --download --min-entries 1000",
+    "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+    "python3 scripts/build_puyuma_sql_seed.py"
+  ]
+}

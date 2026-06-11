@@ -1,0 +1,47 @@
+{
+  "version": "v24",
+  "enforcement_mode": "required_in_production",
+  "required_headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "signature_base": "METHOD\\nPATH_WITH_QUERY\\nTIMESTAMP\\nNONCE\\nSHA256_BODY",
+  "routes": [
+    {
+      "path": "/api/internal/ai-article/client-draft/validate",
+      "hmac": "required",
+      "audit_on_fail": true
+    },
+    {
+      "path": "/api/internal/ai-article/client-draft/submit-review",
+      "hmac": "required",
+      "audit_on_fail": true
+    },
+    {
+      "path": "/api/internal/main-site/knowledge/delta",
+      "hmac": "required",
+      "audit_on_fail": true
+    },
+    {
+      "path": "/api/internal/main-site/knowledge/bundle",
+      "hmac": "required",
+      "audit_on_fail": true
+    },
+    {
+      "path": "/api/internal/articles/v24/schedule",
+      "hmac": "required",
+      "audit_on_fail": true
+    },
+    {
+      "path": "/api/internal/corpus/reconcile/enqueue",
+      "hmac": "required",
+      "audit_on_fail": true
+    }
+  ],
+  "nonce_ttl_seconds": 300,
+  "clock_skew_seconds": 300,
+  "replay_handling": "reject and log internal_hmac_nonce_failures_v24"
+}

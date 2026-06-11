@@ -1,0 +1,41 @@
+{
+  "version": "v28",
+  "mode": "candidate_only",
+  "candidate_sources": [
+    "CIP official",
+    "TIPP candidate",
+    "Culture memory candidate",
+    "Taitung county candidate",
+    "Museum candidate"
+  ],
+  "review_steps": [
+    "source identity",
+    "license status",
+    "claim extraction",
+    "forbidden relation screening",
+    "duplicate claim screening",
+    "sensitivity tagging",
+    "human approval"
+  ],
+  "forbidden_relation_policy": {
+    "terms": [
+      "卑南文化遺址",
+      "卑南遺址",
+      "卑南考古遺址",
+      "卑南文化公園",
+      "Peinan Site",
+      "Beinan Site",
+      "Peinan Archaeological Site"
+    ],
+    "allowed_use": [
+      "negative_disambiguation",
+      "admin_blocklist_audit"
+    ],
+    "blocked_use": [
+      "knowledge source",
+      "AI source packet",
+      "related content",
+      "search synonym"
+    ]
+  }
+}

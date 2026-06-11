@@ -42,7 +42,16 @@
     "ci:all:v16": "npm run typecheck && cd .. && python3 scripts/validate_pronunciation_tts_v16.py && python3 scripts/validate_reliability_governance_v15.py && python3 scripts/validate_openapi_contract.py",
     "validate:v17-audio": "cd .. && python3 scripts/validate_pronunciation_audio_delivery_v17.py",
     "ci:all:v17": "npm run typecheck && cd .. && python3 scripts/validate_pronunciation_audio_delivery_v17.py && python3 scripts/validate_pronunciation_tts_v16.py && python3 scripts/validate_reliability_governance_v15.py && python3 scripts/validate_openapi_contract.py",
-    "validate:ai-article:v18": "cd .. && python3 scripts/validate_ai_article_grounding_v18.py"
+    "validate:ai-article:v18": "cd .. && python3 scripts/validate_ai_article_grounding_v18.py",
+    "validate:v26": "cd .. && python3 scripts/validate_vps_db_core_v26.py",
+    "db:vps:print-sql": "cd .. && ./deploy/vps-db-install-v26.sh --print-only",
+    "db:vps:backup": "cd .. && ./deploy/vps-db-backup-v26.sh",
+    "ci:all:v26": "npm run typecheck && cd .. && python3 scripts/validate_vps_db_core_v26.py && python3 scripts/validate_openapi_contract.py",
+    "validate:v27": "cd .. && python3 scripts/validate_vps_staging_runtime_v27.py",
+    "full-corpus:acceptance:v27": "cd .. && python3 scripts/build_vps_full_corpus_acceptance_v27.py --input data/web/puyuma_vocabulary_audio_entries.json --out data/database/full_corpus_acceptance_report_v27.generated.json",
+    "ci:all:v27": "npm run typecheck && cd .. && python3 scripts/validate_vps_db_core_v26.py && python3 scripts/validate_vps_staging_runtime_v27.py && python3 scripts/validate_openapi_contract.py",
+    "validate:v28": "cd .. && python3 scripts/validate_vps_live_ops_v28.py",
+    "search:build:v28": "cd .. && python3 scripts/build_mysql_fulltext_index_v28.py"
   },
   "dependencies": {
     "@trpc/server": "latest",

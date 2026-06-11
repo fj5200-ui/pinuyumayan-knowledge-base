@@ -1,0 +1,36 @@
+{
+  "version": "v24",
+  "queues": [
+    "needs_citation_fix",
+    "duplicate_review",
+    "forbidden_relation_review",
+    "sensitivity_review",
+    "ready_to_schedule",
+    "scheduled"
+  ],
+  "checks_displayed": [
+    "citation_coverage_percent",
+    "missing_claim_ids",
+    "duplicate_score",
+    "canonical_fingerprint",
+    "forbidden_relation_terms",
+    "sensitivity_labels",
+    "license_status",
+    "topic_cooldown_until"
+  ],
+  "actions": [
+    "request_revision",
+    "approve_for_schedule",
+    "reject",
+    "merge_with_existing_article",
+    "mark_as_negative_disambiguation"
+  ],
+  "publish_blockers": [
+    "same_slug_exists",
+    "same_canonical_fingerprint_exists",
+    "forbidden_beinan_archaeology_relation_detected",
+    "missing_source_claims",
+    "restricted_or_blocked_license_claim_used",
+    "sensitive_ritual_instruction_detected"
+  ]
+}

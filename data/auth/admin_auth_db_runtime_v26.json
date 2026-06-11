@@ -1,0 +1,29 @@
+{
+  "version": "v26",
+  "status": "db_backed_implementation",
+  "routes": [
+    "POST /api/admin/auth/v26/login",
+    "GET /api/admin/auth/v26/me",
+    "POST /api/admin/auth/v26/change-password",
+    "POST /api/admin/auth/v26/logout"
+  ],
+  "tables_used": [
+    "admin_users",
+    "admin_sessions",
+    "admin_login_attempts",
+    "admin_auth_audit_logs",
+    "admin_user_roles"
+  ],
+  "session": "Bearer token; only SHA-256 token hash stored in DB",
+  "password_hash": "scrypt encoded by backend/src/security/passwordHash.ts",
+  "lockout_policy": {
+    "max_failed_attempts": 10,
+    "window_minutes": 15,
+    "action": "manual_review_or_future_lock"
+  },
+  "security_notes": [
+    "No plaintext password seed is committed.",
+    "Bootstrap superadmin must use env/secret manager.",
+    "must_change_password is enforced by API response and should be enforced by admin UI."
+  ]
+}

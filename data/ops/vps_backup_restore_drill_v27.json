@@ -1,0 +1,38 @@
+{
+  "version": "v27",
+  "name": "VPS backup and restore fire-drill",
+  "frequency": "monthly; also before full corpus import and major migration",
+  "required_evidence": [
+    "backup_key",
+    "sha256",
+    "size_bytes",
+    "started_at",
+    "completed_at",
+    "restore_started_at",
+    "restore_finished_at",
+    "restore_target",
+    "row_count_checks",
+    "checksum_checks",
+    "operator"
+  ],
+  "pass_criteria": {
+    "backup_status": "completed",
+    "restore_status": "verified",
+    "checksum_match": true,
+    "critical_tables_checked": [
+      "admin_users",
+      "kb_facts",
+      "puyuma_corpus_entries",
+      "content_items",
+      "article_review_transactions_v26"
+    ]
+  },
+  "tables": [
+    "vps_database_backups_v26",
+    "vps_backup_restore_drills_v27"
+  ],
+  "commands": [
+    "./deploy/vps-db-backup-v26.sh",
+    "./deploy/vps-db-restore-drill-v27.sh --backup <backup.sql.gz> --target staging_restore"
+  ]
+}

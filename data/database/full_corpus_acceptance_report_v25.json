@@ -1,0 +1,29 @@
+{
+  "version": "v25",
+  "report_type": "acceptance_result_schema",
+  "note": "此檔是驗收報表結構；實際千筆匯入需在可連 GitHub/FormosanBank 的部署環境執行。",
+  "minimum_entries": 1000,
+  "known_source_candidates": 66,
+  "preview_subset_embedded": 80,
+  "required_sections": [
+    "source_inventory",
+    "entry_count",
+    "dialect_distribution",
+    "audio_coverage",
+    "phon_coverage",
+    "license_review",
+    "dedupe_summary",
+    "blocked_rows",
+    "public_release_recommendation"
+  ],
+  "public_release_rules": [
+    "only rows with approved source, approved license, and public-safe fields can enter public vocabulary API",
+    "rows without real source audio must not be exposed as public pronunciation audio",
+    "synthetic TTS remains disabled unless model is reviewed and approved"
+  ],
+  "commands": [
+    "python3 scripts/build_full_puyuma_web_vocabulary.py --download --min-entries 1000",
+    "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+    "python3 scripts/build_full_corpus_acceptance_report_v25.py data/web/puyuma_vocabulary_audio_entries.json"
+  ]
+}

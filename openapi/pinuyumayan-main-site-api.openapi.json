@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Pinuyumayan Main Site API v22 - Frontend AI Composer + Security + True Knowledge",
-    "version": "v23",
-    "description": "Public-safe and internal sync API for the 卑南族文化綜合平台主站. Public endpoints return approved/verified knowledge only; internal endpoints require x-pinuyumayan-main-site-key. v10 adds readiness, job queue operations, and a stable error response contract. v11 adds API versioning, export bundle artifacts, scoped internal APIs, and sync replay. v12 adds release channels, multi-site scoped delivery, governance dashboard and search export readiness. v13 adds admin login bootstrap, main-site superadmin sync, and content collection delivery endpoints. v14 adds search suggestions/facets, cache invalidation, quality gate run hooks, admin security sessions and MFA scaffold. v15 adds delivery SLOs, contract-test runs, full corpus reconciliation, payload snapshots, search index versions and scoped admin permission grants. v18 adds source-grounded AI article planning, duplicate prevention, and human-review publication governance. v20 adds true source collection, no-duplicate frontend AI article memory, source packet delivery, and a built-in next-upgrade roadmap. v22 adds frontend AI provider adapters, client draft validation, citation/duplicate cooldown checks, HMAC nonce policy, candidate source adapters and admin review dashboard."
+    "title": "Pinuyumayan Main Site API v25 - Deployable Main Site Bridge + Review/HMAC/SEO Governance",
+    "version": "v28",
+    "description": "Public-safe and internal sync API for the 卑南族文化綜合平台主站. Public endpoints return approved/verified knowledge only; internal endpoints require x-pinuyumayan-main-site-key. v10 adds readiness, job queue operations, and a stable error response contract. v11 adds API versioning, export bundle artifacts, scoped internal APIs, and sync replay. v12 adds release channels, multi-site scoped delivery, governance dashboard and search export readiness. v13 adds admin login bootstrap, main-site superadmin sync, and content collection delivery endpoints. v14 adds search suggestions/facets, cache invalidation, quality gate run hooks, admin security sessions and MFA scaffold. v15 adds delivery SLOs, contract-test runs, full corpus reconciliation, payload snapshots, search index versions and scoped admin permission grants. v18 adds source-grounded AI article planning, duplicate prevention, and human-review publication governance. v20 adds true source collection, no-duplicate frontend AI article memory, source packet delivery, and a built-in next-upgrade roadmap. v22 adds frontend AI provider adapters, client draft validation, citation/duplicate cooldown checks, HMAC nonce policy, candidate source adapters and admin review dashboard. v25 adds deployable main-site migration manifest, article review action API, HMAC verification endpoint, SEO publish checks, full corpus acceptance reporting, and v26 roadmap."
   },
   "servers": [
     {
@@ -1802,6 +1802,694 @@
           }
         }
       }
+    },
+    "/api/ops/main-site/v24/connection-check": {
+      "get": {
+        "summary": "v24 main-site KB runtime connection check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/v24/verify-hmac": {
+      "post": {
+        "summary": "v24 verify main-site HMAC signature",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v24/client-draft/validate": {
+      "post": {
+        "summary": "v24 validate client-generated AI draft",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v24/client-draft/submit-review": {
+      "post": {
+        "summary": "v24 submit client-generated AI draft to review",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v24/review-workbench": {
+      "get": {
+        "summary": "v24 admin article review workbench data",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v24/review-action": {
+      "post": {
+        "summary": "v24 admin article review action",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/articles/v24/schedule": {
+      "post": {
+        "summary": "v24 schedule approved article publication",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v25": {
+      "get": {
+        "summary": "v25 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/main-site/v25/install-manifest": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Main-site install manifest for v25",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/main-site/v25/migration-readiness": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Main-site migration readiness checks for v25",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v25/review-workbench": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Article review workbench model for v25",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v25/review-action": {
+      "post": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Apply article review action: approve, reject, request revision, schedule, merge duplicate",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/security/v25/verify-hmac": {
+      "post": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Verify HMAC/nonce signed request",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/security/v25/hmac-failures": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Internal HMAC failure dashboard feed",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/v25/acceptance-report": {
+      "post": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Receive full corpus acceptance report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/v25/acceptance-latest": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Latest full corpus acceptance report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/articles/v25/publish-seo-check": {
+      "post": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Run article SEO/canonical/cooldown publish check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v26": {
+      "get": {
+        "tags": [
+          "v25"
+        ],
+        "summary": "Next v26 upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/v26/login": {
+      "post": {
+        "summary": "DB-backed admin login v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/v26/me": {
+      "get": {
+        "summary": "Current admin session v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/v26/change-password": {
+      "post": {
+        "summary": "Change admin password v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/v26/logout": {
+      "post": {
+        "summary": "Logout admin session v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/v26/bootstrap-status": {
+      "get": {
+        "summary": "Superadmin bootstrap status v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/internal/security/v26/verify-hmac": {
+      "post": {
+        "summary": "Verify HMAC nonce signature v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/security/v26/hmac-failures": {
+      "get": {
+        "summary": "HMAC failure summary v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v26/review-action": {
+      "post": {
+        "summary": "Persist article review action v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/articles/v26/review-transactions": {
+      "get": {
+        "summary": "List article review transactions v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/vps-db/v26/status": {
+      "get": {
+        "summary": "VPS database status v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/internal/vps-db/v26/backup-report": {
+      "post": {
+        "summary": "Record VPS DB backup report v26",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v27": {
+      "get": {
+        "summary": "Next upgrade plan v27",
+        "tags": [
+          "v26"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/data-mode/v27/status": {
+      "get": {
+        "summary": "Get production data mode and static fallback policy status",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/db-fallback/v27/events": {
+      "get": {
+        "summary": "List database fallback attempts and blocked production fallback events",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/v27/acceptance-latest": {
+      "get": {
+        "summary": "Get latest VPS staging full corpus acceptance report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/v27/acceptance-report": {
+      "post": {
+        "summary": "Record full corpus acceptance report from VPS staging",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/search/v27/index-status": {
+      "get": {
+        "summary": "Get v27 search index status",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/v27/rebuild": {
+      "post": {
+        "summary": "Queue v27 search index rebuild",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/vps-db/v27/restore-drills": {
+      "get": {
+        "summary": "List VPS backup restore drill reports",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/vps-db/v27/restore-drill-report": {
+      "post": {
+        "summary": "Record VPS backup restore drill report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/source-candidates/v27/ingestion-runs": {
+      "get": {
+        "summary": "List candidate source ingestion runs",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v28": {
+      "get": {
+        "summary": "Get v28 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/data-mode/v28/status": {
+      "get": {
+        "summary": "Get production data mode and static fallback status",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/db-fallback/v28/events": {
+      "get": {
+        "summary": "List DB fallback events",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/v28/acceptance-latest": {
+      "get": {
+        "summary": "Get latest full corpus acceptance report",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/v28/acceptance-report": {
+      "post": {
+        "summary": "Submit full corpus acceptance report",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/ops/search/v28/index-status": {
+      "get": {
+        "summary": "Get MySQL FULLTEXT search index status",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/v28/rebuild": {
+      "post": {
+        "summary": "Queue or dry-run search index rebuild",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/admin/articles/v28/live-queue": {
+      "get": {
+        "summary": "Get live article review queue",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/security/v28/hmac-failures": {
+      "get": {
+        "summary": "List HMAC failure events",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/vps-db/v28/restore-drills": {
+      "get": {
+        "summary": "List VPS restore drill reports",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/vps-db/v28/restore-drill-report": {
+      "post": {
+        "summary": "Submit VPS restore drill report",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/ops/source-candidates/v28/review-items": {
+      "get": {
+        "summary": "List source candidate review items",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v29": {
+      "get": {
+        "summary": "Get v29 upgrade plan",
+        "tags": [
+          "v28 VPS Live Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1815,6 +2503,11 @@
         "type": "apiKey",
         "in": "header",
         "name": "x-pinuyumayan-main-site-key"
+      },
+      "MainSiteHmac": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-pinuyumayan-signature"
       }
     },
     "schemas": {

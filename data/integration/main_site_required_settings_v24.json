@@ -1,0 +1,42 @@
+{
+  "version": "v24",
+  "main_site_settings_checklist": [
+    {
+      "group": "environment",
+      "items": [
+        "Set NEXT_PUBLIC_KB_API_URL for browser-safe public API calls",
+        "Set PINUYUMAYAN_KB_API_URL for server-side internal API calls",
+        "Set PINUYUMAYAN_MAIN_SITE_API_KEY and PINUYUMAYAN_HMAC_SECRET as deployment secrets",
+        "Set AI_PROVIDER=openai|kimi|mock; production must not use mock",
+        "Set OPENAI_API_KEY or KIMI_API_KEY only in server runtime"
+      ]
+    },
+    {
+      "group": "routes",
+      "items": [
+        "Install app/api/kb/connection-check/route.ts",
+        "Install app/api/ai/compose/route.ts",
+        "Install app/api/ai/validate-draft/route.ts",
+        "Install app/api/ai/submit-review/route.ts"
+      ]
+    },
+    {
+      "group": "security",
+      "items": [
+        "Do not expose PINUYUMAYAN_* secret vars through NEXT_PUBLIC_*",
+        "Enable HMAC + nonce on all internal KB calls",
+        "Block Beinan/Peinan archaeological terms from AI source packets and article evidence",
+        "Keep admin review routes protected by main-site auth/RBAC"
+      ]
+    },
+    {
+      "group": "content",
+      "items": [
+        "Use source packets only as cited historical/cultural facts",
+        "Use user idea only as opinion/reflection, never as source fact",
+        "Run duplicate/citation/sensitivity/license checks before review",
+        "Apply topic cooldown before publish"
+      ]
+    }
+  ]
+}

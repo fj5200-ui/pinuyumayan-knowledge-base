@@ -1,0 +1,23 @@
+{
+  "version": "v26",
+  "mode": "enforce_by_default",
+  "applies_to": "/api/internal/*",
+  "headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "timestamp_skew_seconds": 300,
+  "nonce_ttl_seconds": 600,
+  "nonce_store": "internal_api_nonces_v26 table; Redis may replace it later",
+  "allowlist_without_hmac": [
+    "/api/internal/security/v26/verify-hmac"
+  ],
+  "audit_tables": [
+    "internal_hmac_failures_v26",
+    "security_audit_events_v15"
+  ],
+  "failure_policy": "401 for missing/invalid signature, 409 for nonce replay, 403 for key/scope mismatch"
+}

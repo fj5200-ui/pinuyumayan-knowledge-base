@@ -1,0 +1,29 @@
+{
+  "version": "v24",
+  "publication_controls": {
+    "same_topic_cooldown_days": 10,
+    "require_unique_slug": true,
+    "require_canonical_fingerprint": true,
+    "require_og_metadata": true,
+    "require_citations": true,
+    "sitemap_mode": "append after review approved and scheduled",
+    "robots": "index only after approved public release"
+  },
+  "metadata_fields": [
+    "title",
+    "description",
+    "canonicalUrl",
+    "ogTitle",
+    "ogDescription",
+    "ogImage",
+    "sourceClaimIds",
+    "reviewStatus",
+    "publishAt"
+  ],
+  "forbidden_seo_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Beinan Site",
+    "Peinan Site"
+  ]
+}

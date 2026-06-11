@@ -1,0 +1,47 @@
+{
+  "version": "v25",
+  "policy": "candidate_only_until_manual_review",
+  "adapters": [
+    {
+      "id": "cip_official_pinuyumayan",
+      "trust": "verified",
+      "auto_public": "allowed_after_dedupe_and_sensitivity_check"
+    },
+    {
+      "id": "tipp_candidate",
+      "trust": "candidate",
+      "auto_public": false,
+      "review_needed": "source authority + licensing + entity matching"
+    },
+    {
+      "id": "culture_memory_bank_candidate",
+      "trust": "candidate",
+      "auto_public": false,
+      "review_needed": "avoid Beinan archaeology false positive"
+    },
+    {
+      "id": "taitung_county_candidate",
+      "trust": "candidate",
+      "auto_public": false,
+      "review_needed": "event date recency and official organizer"
+    },
+    {
+      "id": "museum_collection_candidate",
+      "trust": "candidate",
+      "auto_public": false,
+      "review_needed": "object provenance and usage rights"
+    }
+  ],
+  "negative_entity_filters": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南文化公園",
+    "Beinan Site",
+    "Peinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "entity_match_rules": [
+    "Pinuyumayan/Puyuma people and communities are allowed only when the source explicitly concerns the ethnic group, community, language, ritual, social organization, material culture, or public cultural activity.",
+    "Archaeological site-only sources must be routed to negative_disambiguation, not cultural fact claims."
+  ]
+}

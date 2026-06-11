@@ -1,0 +1,37 @@
+{
+  "version": "v27",
+  "name": "VPS staging full corpus acceptance runbook",
+  "database_assumption": "MySQL/MariaDB database runs on the user's VPS or private VPS LAN.",
+  "important_status": "The package still embeds only the 80-entry preview subset. The >=1000 full corpus must be downloaded/imported on the user's VPS staging environment with internet access.",
+  "required_steps": [
+    "Run VPS DB backup before import.",
+    "Run full corpus builder with --download --min-entries 1000 on staging.",
+    "Validate entry count, dialect coverage, source PHON coverage, audio URL coverage, duplicate count, and license blockers.",
+    "Generate SQL seed or direct DB import.",
+    "Run acceptance report and only promote to full_corpus_verified after review."
+  ],
+  "commands": [
+    "./deploy/vps-db-backup-v26.sh",
+    "python3 scripts/build_full_puyuma_web_vocabulary.py --download --min-entries 1000",
+    "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+    "python3 scripts/build_puyuma_sql_seed.py",
+    "python3 scripts/build_vps_full_corpus_acceptance_v27.py --input data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --out data/database/full_corpus_acceptance_report_v27.generated.json"
+  ],
+  "promotion_gate": {
+    "min_entries": 1000,
+    "required_dialects": [
+      "Nanwang_Puyuma",
+      "Zhiben_Puyuma",
+      "Xiqun_Puyuma",
+      "Jianhe_Puyuma"
+    ],
+    "audio_coverage_min": 0.5,
+    "source_phon_coverage_min": 0.5,
+    "license_blockers_must_be_zero_for_public": true
+  },
+  "never_do": [
+    "Do not import directly into production before staging report passes.",
+    "Do not publish blocked-license rows.",
+    "Do not expose synthetic TTS as real pronunciation."
+  ]
+}

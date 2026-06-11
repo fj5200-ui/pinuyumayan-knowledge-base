@@ -1,0 +1,36 @@
+{
+  "version": "v27",
+  "title": "Production UI + Corpus Import Evidence",
+  "goals": [
+    {
+      "priority": "P0",
+      "item": "Run real full-corpus import on VPS staging DB",
+      "result": "actual row counts, audio coverage, PHON coverage, license blockers"
+    },
+    {
+      "priority": "P0",
+      "item": "Admin UI connects to v26 DB-backed auth and review transaction APIs",
+      "result": "login, review, schedule, audit log visible"
+    },
+    {
+      "priority": "P1",
+      "item": "Replace remaining static fallback read routes in production mode",
+      "result": "DB-first service with explicit error/alert on DB failure"
+    },
+    {
+      "priority": "P1",
+      "item": "Search index builder for MySQL FULLTEXT or Meilisearch/Typesense adapter",
+      "result": "fast public search and zero-result logs"
+    },
+    {
+      "priority": "P1",
+      "item": "VPS backup restore fire-drill",
+      "result": "restore time and backup validity report"
+    },
+    {
+      "priority": "P2",
+      "item": "More true-source candidates from TIPP/Culture/County sources",
+      "result": "candidate-only claims with human review queue"
+    }
+  ]
+}
