@@ -1,0 +1,1431 @@
+{
+  "version": "v21",
+  "generated_at": "2026-06-11T15:11:19+00:00",
+  "count": 50,
+  "documents": [
+    {
+      "document_id": "doc_kg21_intro_age_hall_core",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁將年齡階級組織與會所制度列為卑南族維持傳統文化的重要特徵。",
+      "body_zh": "原民會英文頁將年齡階級組織與會所制度列為卑南族維持傳統文化的重要特徵。",
+      "claim_ids": [
+        "kg21_intro_age_hall_core"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "年齡階級",
+        "會所制度",
+        "族群簡介"
+      ],
+      "category": "族群簡介",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_59e73fb7f7f17c73",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_rituals_existing_list",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出現存卑南族祭儀包含 Mugamut、Masarut、Vasivas 與 Mang",
+      "body_zh": "原民會英文頁列出現存卑南族祭儀包含 Mugamut、Masarut、Vasivas 與 Mangayau，其中 Mangayau／年祭規模最大。",
+      "claim_ids": [
+        "kg21_rituals_existing_list"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Mugamut",
+        "Masarut",
+        "Vasivas",
+        "Mangayau",
+        "年祭"
+      ],
+      "category": "歲時祭儀",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_c4c1c999d44cb7db",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_name_distinguish_group_vs_village",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明 Pinuyumayan 一詞源自南王部落名稱，並提到為區分族群稱呼與特定部落，",
+      "body_zh": "原民會英文頁說明 Pinuyumayan 一詞源自南王部落名稱，並提到為區分族群稱呼與特定部落，部分族人建議使用 Pinuyumayan 作為族群名稱。",
+      "claim_ids": [
+        "kg21_name_distinguish_group_vs_village"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Pinuyumayan",
+        "Puyuma",
+        "南王",
+        "族稱治理"
+      ],
+      "category": "族稱治理",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_c11e5770c16220b1",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_origin_narratives_two_sources",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁以公開摘要列出卑南族起源敘事有「竹生」與「石生」兩種來源，但平台不得將其擴寫成未經授",
+      "body_zh": "原民會英文頁以公開摘要列出卑南族起源敘事有「竹生」與「石生」兩種來源，但平台不得將其擴寫成未經授權的神話細節。",
+      "claim_ids": [
+        "kg21_origin_narratives_two_sources"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "竹生",
+        "石生",
+        "起源敘事"
+      ],
+      "category": "歷史敘事邊界",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_e0d1986218a7d6fc",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_pinadray_period_public_note",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到卑南族在 17 世紀以前曾是具有影響力的族群，並在 Pinadray 時期達到高",
+      "body_zh": "原民會英文頁提到卑南族在 17 世紀以前曾是具有影響力的族群，並在 Pinadray 時期達到高峰；平台僅保留公開摘要。",
+      "claim_ids": [
+        "kg21_pinadray_period_public_note"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Pinadray",
+        "歷史摘要"
+      ],
+      "category": "歷史敘事邊界",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_52fa19a6a29044d1",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_sakuban_leadership_public_summary",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁以公開摘要描述 Sakuban 曾被各部落尊崇為領導者，相關敘述需標示來源並避免自行",
+      "body_zh": "原民會英文頁以公開摘要描述 Sakuban 曾被各部落尊崇為領導者，相關敘述需標示來源並避免自行延伸為細節史論。",
+      "claim_ids": [
+        "kg21_sakuban_leadership_public_summary"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Sakuban",
+        "歷史摘要"
+      ],
+      "category": "歷史敘事邊界",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_341b6ed7c464e88f",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_sukaro_migration_summary",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到 18 世紀部分氏族遷往恆春半島，並稱此遷徙為 sukaro；平台應以公開摘要處",
+      "body_zh": "原民會英文頁提到 18 世紀部分氏族遷往恆春半島，並稱此遷徙為 sukaro；平台應以公開摘要處理。",
+      "claim_ids": [
+        "kg21_sukaro_migration_summary"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "sukaro",
+        "遷徙",
+        "恆春半島"
+      ],
+      "category": "歷史遷移",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_1658660a36654c19",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_japanese_eight_tribe_label",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明日治時期因八社而以「八社番」等分類稱呼；平台需以歷史分類處理，不可覆蓋現行十社資",
+      "body_zh": "原民會英文頁說明日治時期因八社而以「八社番」等分類稱呼；平台需以歷史分類處理，不可覆蓋現行十社資料模型。",
+      "claim_ids": [
+        "kg21_japanese_eight_tribe_label"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "八社",
+        "十社",
+        "日治",
+        "資料模型"
+      ],
+      "category": "名稱與分類",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_d0951aecc6e763d5",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_today_taitung_beinan_center",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明今日臺東市與卑南鄉的臺東平原是卑南族中心區域。",
+      "body_zh": "原民會英文頁說明今日臺東市與卑南鄉的臺東平原是卑南族中心區域。",
+      "claim_ids": [
+        "kg21_today_taitung_beinan_center"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "臺東市",
+        "卑南鄉",
+        "臺東平原"
+      ],
+      "category": "地理分布",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_151fd0b4db8f0de3",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_additional_settlements_chenggong_taimali",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到也有卑南族人定居於成功鎮與太麻里鄉。",
+      "body_zh": "原民會英文頁提到也有卑南族人定居於成功鎮與太麻里鄉。",
+      "claim_ids": [
+        "kg21_additional_settlements_chenggong_taimali"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "成功鎮",
+        "太麻里鄉",
+        "地理分布"
+      ],
+      "category": "地理分布",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_45bcd66c5d397809",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_major_tribes_taitung_city",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出臺東市相關主要部落包含知本、建和、南王與寶桑。",
+      "body_zh": "原民會英文頁列出臺東市相關主要部落包含知本、建和、南王與寶桑。",
+      "claim_ids": [
+        "kg21_major_tribes_taitung_city"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "知本",
+        "建和",
+        "南王",
+        "寶桑",
+        "臺東市"
+      ],
+      "category": "卑南族十社",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_bd5aff8b807f1fcf",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_major_tribes_beinan_township",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出卑南鄉相關主要部落包含利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等。",
+      "body_zh": "原民會英文頁列出卑南鄉相關主要部落包含利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等。",
+      "claim_ids": [
+        "kg21_major_tribes_beinan_township"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "利嘉",
+        "泰安",
+        "上賓朗",
+        "下賓朗",
+        "初鹿",
+        "龍過脈",
+        "卑南鄉"
+      ],
+      "category": "卑南族十社",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_8d00990e436ab139",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_urban_migration_note",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到許多卑南族人已離開東部到城市發展，並在不同領域活躍。",
+      "body_zh": "原民會英文頁提到許多卑南族人已離開東部到城市發展，並在不同領域活躍。",
+      "claim_ids": [
+        "kg21_urban_migration_note"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "都市發展",
+        "當代生活"
+      ],
+      "category": "當代生活",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_93b8b8c11de60a97",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_foxtail_millet_agriculture",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南族農業以小米開始，後來也種植其他作物。",
+      "body_zh": "原民會英文頁說明卑南族農業以小米開始，後來也種植其他作物。",
+      "claim_ids": [
+        "kg21_foxtail_millet_agriculture"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "小米",
+        "農業",
+        "生業"
+      ],
+      "category": "生業",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_45f6254a60777c66",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_rice_agriculture_pinadray",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到 Pinadray 引入稻作技術與設備，帶動農業生產與技術發展；平台需保留來源語",
+      "body_zh": "原民會英文頁提到 Pinadray 引入稻作技術與設備，帶動農業生產與技術發展；平台需保留來源語境。",
+      "claim_ids": [
+        "kg21_rice_agriculture_pinadray"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "稻作",
+        "Pinadray",
+        "農業"
+      ],
+      "category": "生業",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_b10765429fcc131c",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_cash_crop_shift_1960s",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出 1960 年代以後部分作物轉向釋迦與檳榔等經濟作物。",
+      "body_zh": "原民會英文頁指出 1960 年代以後部分作物轉向釋迦與檳榔等經濟作物。",
+      "claim_ids": [
+        "kg21_cash_crop_shift_1960s"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "釋迦",
+        "檳榔",
+        "經濟作物"
+      ],
+      "category": "生業",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_c0974d3df58fe68c",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_staple_foods",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出傳統主食包含小米、陸稻、甘薯與芋頭。",
+      "body_zh": "原民會英文頁列出傳統主食包含小米、陸稻、甘薯與芋頭。",
+      "claim_ids": [
+        "kg21_staple_foods"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "小米",
+        "陸稻",
+        "甘薯",
+        "芋頭",
+        "飲食"
+      ],
+      "category": "飲食",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_276646da43b947d2",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_protein_sources",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明狩獵所得肉類，以及漁撈取得的魚與貝類，是傳統蛋白質來源。",
+      "body_zh": "原民會英文頁說明狩獵所得肉類，以及漁撈取得的魚與貝類，是傳統蛋白質來源。",
+      "claim_ids": [
+        "kg21_protein_sources"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "狩獵",
+        "漁撈",
+        "蛋白質",
+        "飲食"
+      ],
+      "category": "飲食",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_06c0eef78475da69",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_shellflower_dumpling",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到節慶時以月桃葉包糯米與鹹豬肉製作傳統食物。",
+      "body_zh": "原民會英文頁提到節慶時以月桃葉包糯米與鹹豬肉製作傳統食物。",
+      "claim_ids": [
+        "kg21_shellflower_dumpling"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "月桃葉",
+        "糯米",
+        "鹹豬肉",
+        "傳統食物"
+      ],
+      "category": "飲食",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_694e374a5e78681e",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_betel_daily_ritual_offering",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明檳榔在卑南族日常生活中不可或缺，也作為祭儀重要供品。",
+      "body_zh": "原民會英文頁說明檳榔在卑南族日常生活中不可或缺，也作為祭儀重要供品。",
+      "claim_ids": [
+        "kg21_betel_daily_ritual_offering"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "檳榔",
+        "供品",
+        "日常生活"
+      ],
+      "category": "飲食與祭儀",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_c6c23a4ab0193c34",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_clothing_colors",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出傳統服飾色彩包含紅、黃、綠，並搭配黑白菱形紋與十字繡等裝飾。",
+      "body_zh": "原民會英文頁指出傳統服飾色彩包含紅、黃、綠，並搭配黑白菱形紋與十字繡等裝飾。",
+      "claim_ids": [
+        "kg21_clothing_colors"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "紅",
+        "黃",
+        "綠",
+        "服飾",
+        "菱形紋"
+      ],
+      "category": "服飾",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_ca266de62011d8ef",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_clothing_age_gender_identity",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南族可透過服飾辨識性別與年齡階級，服飾也呈現族內社會關係。",
+      "body_zh": "原民會英文頁說明卑南族可透過服飾辨識性別與年齡階級，服飾也呈現族內社會關係。",
+      "claim_ids": [
+        "kg21_clothing_age_gender_identity"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "服飾",
+        "年齡階級",
+        "性別",
+        "社會辨識"
+      ],
+      "category": "服飾與社會辨識",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_a731bb54752401cc",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_wreath_social_relation",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到祭儀時族人會製作花環，收到越多花環可呈現其與社群的友誼與關係。",
+      "body_zh": "原民會英文頁提到祭儀時族人會製作花環，收到越多花環可呈現其與社群的友誼與關係。",
+      "claim_ids": [
+        "kg21_wreath_social_relation"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "花環",
+        "祭儀",
+        "社群關係"
+      ],
+      "category": "服飾與人際關係",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_9147fc9b1c60199d",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_rattan_bamboo_weaving",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出卑南族擅長以藤或竹編織日常工具。",
+      "body_zh": "原民會英文頁指出卑南族擅長以藤或竹編織日常工具。",
+      "claim_ids": [
+        "kg21_rattan_bamboo_weaving"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "藤編",
+        "竹編",
+        "工藝"
+      ],
+      "category": "工藝",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_bdf9b1532e5d41b9",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_weaving_techniques",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出編織技法包含 entrelac、herringbone 與 hexagonal ",
+      "body_zh": "原民會英文頁列出編織技法包含 entrelac、herringbone 與 hexagonal weaving，平台可保留為工藝索引詞。",
+      "claim_ids": [
+        "kg21_weaving_techniques"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "編織技法",
+        "藤竹編",
+        "工藝"
+      ],
+      "category": "工藝",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_9b534318fe1eb3aa",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_shellflower_mat",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到以月桃葉編成的蓆子具有夏涼冬暖的日常使用特性。",
+      "body_zh": "原民會英文頁提到以月桃葉編成的蓆子具有夏涼冬暖的日常使用特性。",
+      "claim_ids": [
+        "kg21_shellflower_mat"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "月桃葉",
+        "蓆子",
+        "日常工具"
+      ],
+      "category": "工藝與日常生活",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_f545e7d732534fe0",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_bamboo_tools",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到竹材常用於製作竹杯、菸斗、漁具與獸陷等工具。",
+      "body_zh": "原民會英文頁提到竹材常用於製作竹杯、菸斗、漁具與獸陷等工具。",
+      "claim_ids": [
+        "kg21_bamboo_tools"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "竹杯",
+        "菸斗",
+        "漁具",
+        "獸陷"
+      ],
+      "category": "工藝與日常生活",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_20c31a2f338fbc64",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_architecture_public_private",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁將傳統建築分為公共與私人建築，公共建築包含會所、祖靈屋與瞭望臺。",
+      "body_zh": "原民會英文頁將傳統建築分為公共與私人建築，公共建築包含會所、祖靈屋與瞭望臺。",
+      "claim_ids": [
+        "kg21_architecture_public_private"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "建築",
+        "公共建築",
+        "私人建築"
+      ],
+      "category": "建築",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_be2e7476bd4fe1f6",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_family_house_layout",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁描述傳統家屋為長方形竹壁茅頂建築，室內包含沿牆編床與石灶等配置。",
+      "body_zh": "原民會英文頁描述傳統家屋為長方形竹壁茅頂建築，室內包含沿牆編床與石灶等配置。",
+      "claim_ids": [
+        "kg21_family_house_layout"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "家屋",
+        "竹壁",
+        "茅頂",
+        "石灶"
+      ],
+      "category": "建築",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_5eea54c85d076f73",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_house_size_status",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明傳統家屋大小可反映屋主社會地位。",
+      "body_zh": "原民會英文頁說明傳統家屋大小可反映屋主社會地位。",
+      "claim_ids": [
+        "kg21_house_size_status"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "家屋",
+        "社會地位"
+      ],
+      "category": "建築與社會",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_7eb23da22a02c3eb",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_assembly_hall_age_system",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南族會所依年齡階級分為少年會所 Dakuvan 與成年會所 Palakuan。",
+      "body_zh": "原民會英文頁說明卑南族會所依年齡階級分為少年會所 Dakuvan 與成年會所 Palakuan。",
+      "claim_ids": [
+        "kg21_assembly_hall_age_system"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Dakuvan",
+        "Palakuan",
+        "會所制度"
+      ],
+      "category": "會所制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_2c9d6690c84fb575",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_dakuvan_structure",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁描述 Dakuvan 為有樓梯的兩層建築，生活空間有傘形茅頂與中央火塘。",
+      "body_zh": "原民會英文頁描述 Dakuvan 為有樓梯的兩層建築，生活空間有傘形茅頂與中央火塘。",
+      "claim_ids": [
+        "kg21_dakuvan_structure"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Dakuvan",
+        "少年會所",
+        "火塘"
+      ],
+      "category": "會所制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_d8e137758559fa4e",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_palakuan_structure",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁描述 Palakuan 座落於長方形基礎上，呈橢圓形，有茅頂、竹壁、竹床與中央火塘。",
+      "body_zh": "原民會英文頁描述 Palakuan 座落於長方形基礎上，呈橢圓形，有茅頂、竹壁、竹床與中央火塘。",
+      "claim_ids": [
+        "kg21_palakuan_structure"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Palakuan",
+        "成年會所",
+        "火塘"
+      ],
+      "category": "會所制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_8416fb2a7e8c2277",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_music_story_poetic",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南族音樂優雅、節奏清楚，歌詞多敘述不同故事而具詩性。",
+      "body_zh": "原民會英文頁說明卑南族音樂優雅、節奏清楚，歌詞多敘述不同故事而具詩性。",
+      "claim_ids": [
+        "kg21_music_story_poetic"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "音樂",
+        "歌謠",
+        "詩性"
+      ],
+      "category": "音樂",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_6424752f19dd3aa8",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_ritual_song_classification",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明祭儀歌謠依人們在社群中的工作與身分分類，平台只能做公開摘要。",
+      "body_zh": "原民會英文頁說明祭儀歌謠依人們在社群中的工作與身分分類，平台只能做公開摘要。",
+      "claim_ids": [
+        "kg21_ritual_song_classification"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "祭儀歌謠",
+        "身分",
+        "工作"
+      ],
+      "category": "音樂與祭儀",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_62914213e49a83dd",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_modern_music_artists",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出現代卑南族音樂仍活躍，並列舉多位在流行音樂領域具影響力的族人。",
+      "body_zh": "原民會英文頁指出現代卑南族音樂仍活躍，並列舉多位在流行音樂領域具影響力的族人。",
+      "claim_ids": [
+        "kg21_modern_music_artists"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "現代音樂",
+        "流行音樂",
+        "歌手"
+      ],
+      "category": "音樂與當代文化",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_32002295ce099eac",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_dance_gender_age_status",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南族舞蹈反映性別與年齡差異，舞步需依社會身分而行。",
+      "body_zh": "原民會英文頁說明卑南族舞蹈反映性別與年齡差異，舞步需依社會身分而行。",
+      "claim_ids": [
+        "kg21_dance_gender_age_status"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "舞蹈",
+        "性別",
+        "年齡",
+        "社會身分"
+      ],
+      "category": "舞蹈",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_60ff49daed8b06fd",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_language_dialect_variation",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明卑南語因部落與地點影響而有些微差異。",
+      "body_zh": "原民會英文頁說明卑南語因部落與地點影響而有些微差異。",
+      "claim_ids": [
+        "kg21_language_dialect_variation"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "卑南語",
+        "方言差異",
+        "部落"
+      ],
+      "category": "語言",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_0b7c35841e846890",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_language_contact_south_north",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到南部知本一帶受排灣、魯凱語音影響較強，北部則受阿美語音影響；需以公開摘要呈現。",
+      "body_zh": "原民會英文頁提到南部知本一帶受排灣、魯凱語音影響較強，北部則受阿美語音影響；需以公開摘要呈現。",
+      "claim_ids": [
+        "kg21_language_contact_south_north"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "語言接觸",
+        "知本",
+        "排灣",
+        "魯凱",
+        "阿美"
+      ],
+      "category": "語言接觸",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_c9fce597ee01c892",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_social_roles_leader_priest_witch",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁說明政治領袖、祭師與巫師在政治、祭儀、醫療等日常需求中各有專業角色。",
+      "body_zh": "原民會英文頁說明政治領袖、祭師與巫師在政治、祭儀、醫療等日常需求中各有專業角色。",
+      "claim_ids": [
+        "kg21_social_roles_leader_priest_witch"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "政治領袖",
+        "祭師",
+        "巫師",
+        "社會制度"
+      ],
+      "category": "社會制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_4f357949e1eb732c",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_matrilineality_transformation",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出卑南族具有母系傳統，但在現代社會接觸影響下，親屬觀念已有轉變。",
+      "body_zh": "原民會英文頁指出卑南族具有母系傳統，但在現代社會接觸影響下，親屬觀念已有轉變。",
+      "claim_ids": [
+        "kg21_matrilineality_transformation"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "母系",
+        "親屬制度",
+        "現代變遷"
+      ],
+      "category": "親屬制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_c3ac44bfe173d0d4",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_kinship_lineage_terms",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁以公開摘要說明同祖先與同家名者形成 lineage，並區分大宗族、小宗族與分支家庭等",
+      "body_zh": "原民會英文頁以公開摘要說明同祖先與同家名者形成 lineage，並區分大宗族、小宗族與分支家庭等層級。",
+      "claim_ids": [
+        "kg21_kinship_lineage_terms"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "家名",
+        "宗族",
+        "親屬制度"
+      ],
+      "category": "親屬制度",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_a7628b544b59bcbc",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_age_training_physical_knowledge",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁指出少年約 12 至 13 歲進入 Dakuvan，接受體能與知識訓練。",
+      "body_zh": "原民會英文頁指出少年約 12 至 13 歲進入 Dakuvan，接受體能與知識訓練。",
+      "claim_ids": [
+        "kg21_age_training_physical_knowledge"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Dakuvan",
+        "體能訓練",
+        "知識訓練"
+      ],
+      "category": "年齡階級",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_67c61a64007832cb",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_age_training_skill_stages",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到約 17 至 18 歲進入 Palakuan，接受更進一步技能訓練並分階段進行。",
+      "body_zh": "原民會英文頁提到約 17 至 18 歲進入 Palakuan，接受更進一步技能訓練並分階段進行。",
+      "claim_ids": [
+        "kg21_age_training_skill_stages"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "Palakuan",
+        "技能訓練",
+        "年齡階級"
+      ],
+      "category": "年齡階級",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_0976d27ce5ad4cf0",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_1991_cultural_revitalization",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到 1991 年知本、初鹿、南王等地建立會所、青年會與文化協會，推動尋根與母語復振",
+      "body_zh": "原民會英文頁提到 1991 年知本、初鹿、南王等地建立會所、青年會與文化協會，推動尋根與母語復振。",
+      "claim_ids": [
+        "kg21_1991_cultural_revitalization"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "1991",
+        "文化復振",
+        "母語復振",
+        "青年會"
+      ],
+      "category": "文化復振",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_fd3324a95087d884",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_ritual_calendar_summary",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁列出公開歲時祭儀月份摘要：三月 Mugamut、四月 Ruvuwa’an、七月 Ma",
+      "body_zh": "原民會英文頁列出公開歲時祭儀月份摘要：三月 Mugamut、四月 Ruvuwa’an、七月 Masarut、十二月年祭。",
+      "claim_ids": [
+        "kg21_ritual_calendar_summary"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "祭儀月曆",
+        "Mugamut",
+        "Ruvuwa’an",
+        "Masarut",
+        "年祭"
+      ],
+      "category": "歲時祭儀",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_db57a1e675aab4ab",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_mangayaw_joint_1982",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會英文頁提到 1982 年開始出現聯合年祭形式，由不同部落輪流舉辦，成為凝聚族群意識的重要活",
+      "body_zh": "原民會英文頁提到 1982 年開始出現聯合年祭形式，由不同部落輪流舉辦，成為凝聚族群意識的重要活動。",
+      "claim_ids": [
+        "kg21_mangayaw_joint_1982"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "keywords": [
+        "聯合年祭",
+        "1982",
+        "族群意識"
+      ],
+      "category": "歲時祭儀",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_bbdc808ffc7bddcf",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_chinese_population_current",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會中文頁目前顯示卑南族總人口為 16,734，此數字應標記為中文頁目前版本資料。",
+      "body_zh": "原民會中文頁目前顯示卑南族總人口為 16,734，此數字應標記為中文頁目前版本資料。",
+      "claim_ids": [
+        "kg21_chinese_population_current"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "keywords": [
+        "人口",
+        "原民會中文頁",
+        "版本治理"
+      ],
+      "category": "人口資料治理",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_2c2f9f1f3773a622",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_chinese_summary_age_hall",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會中文頁摘要指出卑南族社會有嚴謹年齡階級組織與會所制度。",
+      "body_zh": "原民會中文頁摘要指出卑南族社會有嚴謹年齡階級組織與會所制度。",
+      "claim_ids": [
+        "kg21_chinese_summary_age_hall"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "keywords": [
+        "中文摘要",
+        "年齡階級",
+        "會所制度"
+      ],
+      "category": "中文摘要",
+      "public_use": "public",
+      "sensitivity": "low",
+      "canonical_fingerprint": "claim_c26f73bdb220bccc",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "document_id": "doc_kg21_chinese_ritual_names",
+      "type": "source_grounded_claim",
+      "title_zh": "原民會中文頁列出卑南族現存年度慶典名稱，包括小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "body_zh": "原民會中文頁列出卑南族現存年度慶典名稱，包括小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "claim_ids": [
+        "kg21_chinese_ritual_names"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "keywords": [
+        "中文摘要",
+        "小米鋤草完工慶",
+        "小米收穫祭",
+        "少年年祭",
+        "年祭"
+      ],
+      "category": "中文摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "canonical_fingerprint": "claim_83fe8369629f0b24",
+      "exclude_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    }
+  ]
+}

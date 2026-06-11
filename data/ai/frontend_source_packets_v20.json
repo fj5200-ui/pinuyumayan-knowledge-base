@@ -1,0 +1,109 @@
+{
+  "version": "v20",
+  "generated_at": "2026-06-11T14:58:00+08:00",
+  "description_zh": "前端 AI Composer 用史料包。前端可以拿 packet + 使用者想法組稿；後端只負責來源、去重、敏感與發布檢查。",
+  "packets": [
+    {
+      "packet_id": "sp_v20_population_source_versioning",
+      "title_zh": "人口資料與來源版本控管",
+      "claim_ids": [
+        "kg20_population_current_zh_official",
+        "kg20_population_2020_en_historical",
+        "kg20_bilingual_source_discrepancy_policy"
+      ],
+      "allowed_article_angles": [
+        "官方資料怎麼更新人口數",
+        "為什麼文化平台不能混用舊人口與新人口"
+      ],
+      "required_user_idea_slots": [
+        "文章目的",
+        "要不要提目前人口數",
+        "要不要提醒資料更新日期"
+      ],
+      "forbidden": [
+        "把 2020 數字當最新",
+        "自行推估人口",
+        "不標來源日期"
+      ]
+    },
+    {
+      "packet_id": "sp_v20_community_alias_governance",
+      "title_zh": "十社、八社與部落別名治理",
+      "claim_ids": [
+        "kg20_japanese_period_eight_tribes_label",
+        "kg20_platform_eight_tribes_vs_ten_communities",
+        "kg20_zhiben_katratripulr_spelling_variant",
+        "kg20_jianhe_kasavakan_spelling_variant",
+        "kg20_baosang_apapolo_spelling_variant",
+        "kg20_lijia_ligavon_spelling_variant",
+        "kg20_shangbinlang_alripay_variant",
+        "kg20_shabinlang_pinaski_variant",
+        "kg20_chulu_ulivelivek_variant"
+      ],
+      "allowed_article_angles": [
+        "主站為什麼用卑南族十社",
+        "部落中文名與羅馬拼寫怎麼共存"
+      ],
+      "required_user_idea_slots": [
+        "想強調歷史還是主站資料結構",
+        "是否加入地圖頁連結"
+      ],
+      "forbidden": [
+        "把八社和十社混為同一層級",
+        "刪除歷史名",
+        "自己改拼寫"
+      ]
+    },
+    {
+      "packet_id": "sp_v20_sensitive_ritual_boundary",
+      "title_zh": "祭儀與敏感內容邊界",
+      "claim_ids": [
+        "kg20_official_summary_mentions_witchcraft_as_reputation",
+        "kg20_ancestral_shrine_sensitive_boundary",
+        "kg20_music_irairao_sensitive_title_only",
+        "kg20_dance_spirit_dance_title_caution",
+        "kg20_masarut_dream_divination_sensitive",
+        "kg20_vasivas_charcoal_banana_leaf_sensitive",
+        "kg20_mangayau_survival_training_elder_teaching"
+      ],
+      "allowed_article_angles": [
+        "文化平台如何尊重公開摘要與禁忌邊界",
+        "AI 發文為什麼不能寫祭儀教學"
+      ],
+      "required_user_idea_slots": [
+        "想提醒使用者的語氣",
+        "是否需要後台審核說明"
+      ],
+      "forbidden": [
+        "儀式步驟",
+        "咒語/療法",
+        "喪葬/祖靈細節",
+        "狩獵或驅邪教學"
+      ]
+    },
+    {
+      "packet_id": "sp_v20_material_life_and_design",
+      "title_zh": "飲食、植物、服飾與工藝素材",
+      "claim_ids": [
+        "kg20_farming_foxtail_millet_taxonomy",
+        "kg20_shellflower_alpinia_zerumbet_taxonomy",
+        "kg20_clothing_cross_stitch_counted_thread",
+        "kg20_weaving_material_index",
+        "kg20_family_house_barn_tools"
+      ],
+      "allowed_article_angles": [
+        "從材料看卑南族日常文化",
+        "主站設計如何引用紅黃綠與工藝元素但不冒用圖紋"
+      ],
+      "required_user_idea_slots": [
+        "主站設計目標",
+        "是否用於文章或 UI 靈感"
+      ],
+      "forbidden": [
+        "宣稱特定圖紋授權",
+        "把食物寫成標準食譜",
+        "使用未授權圖片"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "2026-06-11",
+  "public_routes": [
+    {
+      "route": "/language/puyuma",
+      "purpose": "卑南語學習首頁"
+    },
+    {
+      "route": "/language/puyuma/vocabulary",
+      "purpose": "語詞／句型列表，可依方言、主題、音檔篩選"
+    },
+    {
+      "route": "/language/puyuma/audio/[id]",
+      "purpose": "單筆語句語音播放頁"
+    },
+    {
+      "route": "/communities/[community]/language",
+      "purpose": "部落頁內嵌對應方言學習區"
+    }
+  ],
+  "data_files": [
+    "data/web/puyuma_vocabulary_audio_entries.json",
+    "data/web/puyuma_vocabulary_categories.json",
+    "data/web/puyuma_vocabulary_schema.json"
+  ]
+}

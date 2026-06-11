@@ -1,0 +1,58 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "widgets": [
+    {
+      "widget_id": "draft_queue",
+      "title_zh": "AI 草稿審核佇列",
+      "metrics": [
+        "pending",
+        "approved",
+        "rejected",
+        "needs_citation_fix"
+      ]
+    },
+    {
+      "widget_id": "citation_integrity",
+      "title_zh": "引用完整性",
+      "metrics": [
+        "missing_claim_ids",
+        "source_packet_mismatch",
+        "unverified_claim_use"
+      ]
+    },
+    {
+      "widget_id": "duplicate_cooldown",
+      "title_zh": "去重與冷卻",
+      "metrics": [
+        "same_slug",
+        "same_fingerprint",
+        "same_topic_10_days"
+      ]
+    },
+    {
+      "widget_id": "forbidden_relation",
+      "title_zh": "卑南遺址禁止關聯命中",
+      "metrics": [
+        "blocked_terms",
+        "false_positive_review",
+        "published_zero_tolerance"
+      ]
+    },
+    {
+      "widget_id": "sensitivity_gate",
+      "title_zh": "敏感內容門檻",
+      "metrics": [
+        "high_sensitivity_pending_admin",
+        "restricted_summary_only",
+        "license_blocker"
+      ]
+    }
+  ],
+  "routes": [
+    "/admin/ai-articles/review",
+    "/admin/ai-articles/:draftId",
+    "/admin/security/signature-audit",
+    "/admin/knowledge/forbidden-relations"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "4.0.0",
+  "scope": [
+    "knowledge_database",
+    "corpus_entries",
+    "audio_asset_metadata",
+    "review_tasks",
+    "search_index_documents"
+  ],
+  "backup_schedule": [
+    {
+      "target": "mysql_tidb",
+      "frequency": "daily",
+      "retention_days": 30
+    },
+    {
+      "target": "object_storage_audio_manifest",
+      "frequency": "daily",
+      "retention_days": 30
+    },
+    {
+      "target": "json_seed_bundle",
+      "frequency": "on_release",
+      "retention_releases": 10
+    }
+  ],
+  "restore_drills": [
+    {
+      "id": "restore_knowledge_only",
+      "steps": [
+        "restore kb_sources",
+        "restore kb_facts",
+        "rebuild search index"
+      ]
+    },
+    {
+      "id": "restore_corpus_only",
+      "steps": [
+        "restore puyuma_corpus_entries",
+        "restore puyuma_audio_assets metadata",
+        "validate audio URLs"
+      ]
+    },
+    {
+      "id": "restore_full",
+      "steps": [
+        "restore DB snapshot",
+        "run validation scripts",
+        "switch read traffic after checks"
+      ]
+    }
+  ],
+  "privacy_notes_zh": "本知識庫不應存放個人隱私、家族內部未公開知識或未授權祭儀細節。"
+}

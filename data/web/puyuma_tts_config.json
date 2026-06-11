@@ -1,0 +1,37 @@
+{
+  "version": "2026-06-11",
+  "tts_policy": "human_audio_first",
+  "public_tts_enabled_by_default": false,
+  "reason_zh": "卑南語語音屬文化與語言資產；網站應優先播放來源音檔。TTS 僅可作無音檔輔助或後台實驗，需授權、審核與標示。",
+  "allowed_modes": [
+    {
+      "mode": "existing_audio_playback",
+      "enabled": true,
+      "description_zh": "播放 FormosanBank/ePark 索引之公開音檔 URL。"
+    },
+    {
+      "mode": "browser_tts_fallback",
+      "enabled": false,
+      "description_zh": "瀏覽器 TTS 不一定支援卑南語，不可預設開啟。"
+    },
+    {
+      "mode": "server_tts_experiment",
+      "enabled": false,
+      "description_zh": "僅限後台實驗，輸出不得公開，需語言教師審核。"
+    }
+  ],
+  "prohibited": [
+    "voice cloning without explicit consent",
+    "synthetic ritual chanting",
+    "synthetic elder/community member voice",
+    "using TTS as authoritative pronunciation"
+  ],
+  "entry_fields": [
+    "tts.tts_text",
+    "tts.status",
+    "tts.enabled_for_public_ui",
+    "tts.allowed_use",
+    "tts.blocked_use",
+    "tts.review_required"
+  ]
+}

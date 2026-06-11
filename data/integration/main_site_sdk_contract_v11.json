@@ -1,0 +1,19 @@
+{
+  "version": "v11",
+  "sdk_file": "frontend-sdk/pinuyumayanKnowledgeClient.v11.ts",
+  "methods": [
+    "version",
+    "bootstrap",
+    "search",
+    "vocabulary",
+    "latestExport",
+    "replaySync",
+    "enqueueFullCorpusImport"
+  ],
+  "required_behaviors": [
+    "request_id_passthrough",
+    "etag_support",
+    "cursor_pagination",
+    "internal_scope_errors"
+  ]
+}

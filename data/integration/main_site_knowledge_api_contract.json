@@ -1,0 +1,102 @@
+{
+  "id": "main_site_knowledge_api_contract_v6",
+  "project": "卑南族文化綜合平台後端資料庫",
+  "version": "0.6.0",
+  "purpose": "讓主站可以安全拉取卑南族相關知識、十社、祭儀摘要、語音語料、搜尋與相關內容。",
+  "access_tiers": [
+    {
+      "tier": "public_read",
+      "auth": "none or same-origin",
+      "description": "只回傳 approved / verified_public / public_summary_only 資料。"
+    },
+    {
+      "tier": "main_site_internal",
+      "auth": "x-pinuyumayan-main-site-key",
+      "description": "主站後端同步、delta、bundle、cache warmup 用，不回傳 admin_only/restricted。"
+    },
+    {
+      "tier": "admin",
+      "auth": "future RBAC/JWT",
+      "description": "後台審核、匯入與管理，不給前台主站直接使用。"
+    }
+  ],
+  "rest_endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/public/knowledge/bootstrap",
+      "cache": "s-maxage=300, stale-while-revalidate=86400",
+      "description": "主站首頁/全站初始資料：十社、核心 facts、祭儀摘要、語詞統計。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/knowledge/search?q=...",
+      "cache": "s-maxage=120",
+      "description": "公開站內知識搜尋。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/knowledge/related?entityType=...&entityId=...",
+      "cache": "s-maxage=300",
+      "description": "主站文章/頁面旁邊顯示相關知識。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/knowledge/communities/:communityKey",
+      "cache": "s-maxage=600",
+      "description": "十社頁拉取社群/部落公開資料。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/knowledge/vocabulary",
+      "cache": "s-maxage=300",
+      "description": "語詞/句型/音檔 URL 查詢。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/internal/main-site/knowledge/bundle",
+      "auth": "x-pinuyumayan-main-site-key",
+      "cache": "private, no-store",
+      "description": "主站後端批次拉取知識 bundle。"
+    },
+    {
+      "method": "GET",
+      "path": "/api/internal/main-site/knowledge/delta?since=...",
+      "auth": "x-pinuyumayan-main-site-key",
+      "cache": "private, no-store",
+      "description": "主站後端增量同步。"
+    }
+  ],
+  "trpc_router": "mainSiteKnowledge",
+  "trpc_methods": [
+    "bootstrap",
+    "search",
+    "related",
+    "community",
+    "vocabulary",
+    "bundle",
+    "delta"
+  ],
+  "public_filters": {
+    "kb_facts": "verification_status='verified_public' AND visibility IN ('public','public_summary_only') AND sensitivity IN ('low','medium')",
+    "pinuyumayan_communities": "review_status='approved'",
+    "pinuyumayan_rituals": "review_status='approved' AND visibility IN ('public','public_summary_only')",
+    "puyuma_corpus_entries": "review_status='approved_for_public_learning' AND sensitivity='public'",
+    "puyuma_audio_assets": "playback_enabled=TRUE"
+  },
+  "never_return": [
+    "admin_only",
+    "restricted",
+    "rejected",
+    "archived",
+    "blocked_license",
+    "raw_payload_json",
+    "internal review notes"
+  ],
+  "main_site_usage": [
+    "首頁：bootstrap 拉十社、facts、祭儀摘要與語詞統計。",
+    "文章頁：related 用 entityType/entityId 拉關聯 facts、語詞與祭儀摘要。",
+    "族語頁：vocabulary 拉語詞、IPA、source_phon、音檔 URL。",
+    "搜尋頁：search 拉 kb_search_documents 與 fallback facts/vocabulary。",
+    "SSR/ISR：bundle 或 delta 由主站後端定期拉取並快取。"
+  ]
+}

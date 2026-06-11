@@ -1,0 +1,63 @@
+{
+  "version": "2026-06-11",
+  "description": "常見衝突、異寫與 AI 生成時的決策表。",
+  "rules": [
+    {
+      "id": "conflict_puyuma_ethnonym",
+      "issue": "Puyuma 被用來代稱整個卑南族",
+      "decision": "中文正式族群名用卑南族；英文品牌/整體用 Pinuyumayan；Puyuma 僅在南王部落或 Puyuma language 語境使用。",
+      "severity": "P0",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "conflict_eight_vs_ten",
+      "issue": "八社與十社並存",
+      "decision": "平台正式分類固定為卑南族十社；八社、八社蕃只可用於歷史/文獻脈絡。",
+      "severity": "P0",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "conflict_katratripulr_variants",
+      "issue": "知本拼法 Katratripulr / Katratripul / Katipul 等混用",
+      "decision": "平台主用 Katratripulr；其他拼法納入 aliases，引用來源原文時可保留並標示。",
+      "severity": "P1",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ]
+    },
+    {
+      "id": "conflict_ulivelivek_mulivelivek",
+      "issue": "初鹿/西群拼法 Ulivelivek / Mulivelivek",
+      "decision": "平台十社主用 Ulivelivek；FormosanBank 西群 Xiqun_Puyuma 可對應語料分支，來源例句若出現 Mulivelivek 保留原文並標示為來源拼法。",
+      "severity": "P1",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ]
+    },
+    {
+      "id": "conflict_ritual_dates",
+      "issue": "祭儀固定日期與部落實際公告可能不同",
+      "decision": "知識庫只列公開月份與大致脈絡；前台活動頁必須串接公告或人工審核日期。",
+      "severity": "P0",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "conflict_audio_url_guessing",
+      "issue": "依檔名規則推測音檔 URL",
+      "decision": "禁止推測；音檔必須來自 FormosanBank CSV/XML、Google Drive 實際掃描或已驗證 manifest。",
+      "severity": "P0",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ]
+    }
+  ]
+}

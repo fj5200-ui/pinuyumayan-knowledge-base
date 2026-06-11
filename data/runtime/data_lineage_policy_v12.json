@@ -1,0 +1,35 @@
+{
+  "version": "v12",
+  "lineage_required_for": [
+    "kb_facts",
+    "pinuyumayan_communities",
+    "pinuyumayan_rituals",
+    "puyuma_corpus_entries",
+    "puyuma_audio_assets",
+    "puyuma_ipa_annotations",
+    "kb_search_documents"
+  ],
+  "lineage_fields": [
+    "source_id",
+    "source_url",
+    "source_path",
+    "source_row",
+    "source_hash",
+    "import_run_id",
+    "release_batch_id",
+    "review_status"
+  ],
+  "corpus_lineage": {
+    "csv": "source_path + source_row + source_hash + parsed_columns",
+    "xml": "source_path + TEXT id + S id + AUDIO url + PHON preservation flag",
+    "manual_curated": "curator_id + review_task_id + source_id"
+  },
+  "quality_blockers": [
+    "missing_source",
+    "ambiguous_dialect",
+    "blocked_license",
+    "missing_public_review",
+    "source_phon_lost_when_available",
+    "audio_url_invalid_without_reason"
+  ]
+}

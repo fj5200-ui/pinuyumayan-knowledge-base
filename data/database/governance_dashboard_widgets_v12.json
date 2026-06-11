@@ -1,0 +1,68 @@
+{
+  "version": "v12",
+  "widgets": [
+    {
+      "id": "release_channel_counts",
+      "title": "Release channel counts",
+      "query_key": "release_channel_counts",
+      "audience": [
+        "admin",
+        "editor"
+      ]
+    },
+    {
+      "id": "full_corpus_import_progress",
+      "title": "Full corpus import progress",
+      "query_key": "corpus_import_progress",
+      "audience": [
+        "admin",
+        "engineer"
+      ]
+    },
+    {
+      "id": "main_site_sync_health",
+      "title": "Main site sync health",
+      "query_key": "main_site_sync_health",
+      "audience": [
+        "admin",
+        "engineer"
+      ]
+    },
+    {
+      "id": "quality_blockers",
+      "title": "Data quality blockers",
+      "query_key": "quality_blockers",
+      "audience": [
+        "admin",
+        "reviewer"
+      ]
+    },
+    {
+      "id": "public_api_slo",
+      "title": "Public API SLO",
+      "query_key": "api_slo_summary",
+      "audience": [
+        "admin",
+        "engineer"
+      ]
+    },
+    {
+      "id": "license_risk_queue",
+      "title": "License risk queue",
+      "query_key": "license_risk_queue",
+      "audience": [
+        "admin",
+        "reviewer"
+      ]
+    },
+    {
+      "id": "search_export_status",
+      "title": "Search export status",
+      "query_key": "search_export_status",
+      "audience": [
+        "admin",
+        "engineer"
+      ]
+    }
+  ]
+}

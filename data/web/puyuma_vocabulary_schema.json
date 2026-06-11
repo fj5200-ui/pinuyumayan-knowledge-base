@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PuyumaWebsiteAudioVocabularyEntryWithTtsG2pIpa",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "language",
+    "category",
+    "text",
+    "audio",
+    "g2p",
+    "ipa",
+    "tts",
+    "source",
+    "website",
+    "sensitivity",
+    "review_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "sentence_audio"
+    },
+    "language": {
+      "type": "object",
+      "required": [
+        "ethnic_group_zh",
+        "language_zh",
+        "dialect_code",
+        "dialect_name",
+        "dialect_zh",
+        "platform_key"
+      ]
+    },
+    "category": {
+      "type": "object",
+      "required": [
+        "source_category",
+        "website_category_key",
+        "website_category_label_zh"
+      ]
+    },
+    "text": {
+      "type": "object",
+      "required": [
+        "puyuma_form",
+        "zh_tw"
+      ]
+    },
+    "audio": {
+      "type": "object",
+      "required": [
+        "url",
+        "mime_type",
+        "storage_mode",
+        "local_file_included",
+        "local_mirror"
+      ]
+    },
+    "g2p": {
+      "type": "object",
+      "required": [
+        "status",
+        "engine",
+        "orthography",
+        "phoneme_sequence"
+      ]
+    },
+    "ipa": {
+      "type": "object",
+      "required": [
+        "status",
+        "value",
+        "format"
+      ]
+    },
+    "tts": {
+      "type": "object",
+      "required": [
+        "tts_text",
+        "status",
+        "enabled_for_public_ui",
+        "review_required"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "repository",
+        "commit",
+        "source_path",
+        "verification_status"
+      ]
+    },
+    "website": {
+      "type": "object",
+      "required": [
+        "status",
+        "route",
+        "filters"
+      ]
+    },
+    "sensitivity": {
+      "enum": [
+        "public",
+        "medium",
+        "high"
+      ]
+    },
+    "review_status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

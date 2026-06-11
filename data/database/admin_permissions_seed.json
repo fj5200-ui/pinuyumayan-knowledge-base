@@ -1,0 +1,80 @@
+{
+  "version": "3.0.0",
+  "roles": [
+    {
+      "role": "super_admin",
+      "label_zh": "最高管理員",
+      "permissions": [
+        "*"
+      ]
+    },
+    {
+      "role": "knowledge_admin",
+      "label_zh": "知識庫管理員",
+      "permissions": [
+        "kb:read",
+        "kb:create",
+        "kb:update",
+        "kb:review",
+        "kb:publish",
+        "source:manage"
+      ]
+    },
+    {
+      "role": "language_editor",
+      "label_zh": "族語編輯",
+      "permissions": [
+        "vocab:read",
+        "vocab:update",
+        "ipa:review",
+        "g2p:run",
+        "tts:review"
+      ]
+    },
+    {
+      "role": "cultural_reviewer",
+      "label_zh": "文化審核",
+      "permissions": [
+        "kb:read",
+        "sensitive:review",
+        "publication:block",
+        "ritual:review"
+      ]
+    },
+    {
+      "role": "audio_manager",
+      "label_zh": "音檔管理",
+      "permissions": [
+        "audio:read",
+        "audio:check",
+        "audio:mirror:request",
+        "license:review"
+      ]
+    },
+    {
+      "role": "content_editor",
+      "label_zh": "內容編輯",
+      "permissions": [
+        "kb:read",
+        "content:create",
+        "content:update",
+        "content:submit_review"
+      ]
+    },
+    {
+      "role": "public_user",
+      "label_zh": "一般使用者",
+      "permissions": [
+        "public:read",
+        "audio:stream_public"
+      ]
+    }
+  ],
+  "default_rule": "預設角色可見可編輯不可刪除；刪除需 super_admin 或資料治理流程核准。",
+  "sensitive_permissions": [
+    "sensitive:review",
+    "publication:block",
+    "tts:review",
+    "audio:mirror:approve"
+  ]
+}

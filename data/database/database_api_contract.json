@@ -1,0 +1,89 @@
+{
+  "version": "3.0.0",
+  "base_namespace": "database",
+  "routes": [
+    {
+      "name": "knowledge.fact.list",
+      "method": "query",
+      "input": {
+        "category": "string?",
+        "sensitivity": "public|medium|high?",
+        "q": "string?",
+        "limit": "number?"
+      },
+      "output": "Fact[]",
+      "public": true
+    },
+    {
+      "name": "knowledge.fact.get",
+      "method": "query",
+      "input": {
+        "factId": "string"
+      },
+      "output": "Fact",
+      "public": true
+    },
+    {
+      "name": "language.puyuma.search",
+      "method": "query",
+      "input": {
+        "q": "string?",
+        "dialectCode": "38|39|40|41?",
+        "hasAudio": "boolean?",
+        "limit": "number?"
+      },
+      "output": "PuyumaCorpusEntry[]",
+      "public": true
+    },
+    {
+      "name": "language.puyuma.getAudio",
+      "method": "query",
+      "input": {
+        "entryId": "string"
+      },
+      "output": "PuyumaCorpusEntryWithAudio",
+      "public": true
+    },
+    {
+      "name": "admin.importRuns.list",
+      "method": "query",
+      "input": {
+        "pipelineName": "string?",
+        "status": "string?"
+      },
+      "output": "ImportRun[]",
+      "public": false
+    },
+    {
+      "name": "admin.reviewTasks.list",
+      "method": "query",
+      "input": {
+        "status": "string?",
+        "reviewType": "string?"
+      },
+      "output": "ReviewTask[]",
+      "public": false
+    },
+    {
+      "name": "admin.reviewTask.update",
+      "method": "mutation",
+      "input": {
+        "taskId": "string",
+        "status": "string",
+        "notes": "string?"
+      },
+      "output": "ReviewTask",
+      "public": false
+    },
+    {
+      "name": "admin.audio.requestMirror",
+      "method": "mutation",
+      "input": {
+        "audioAssetId": "string"
+      },
+      "output": "ReviewTask",
+      "public": false
+    }
+  ],
+  "public_safety_rule": "Public API must not return restricted/high sensitive details; it may return safe summaries only."
+}

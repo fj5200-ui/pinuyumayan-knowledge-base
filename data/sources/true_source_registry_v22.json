@@ -1,0 +1,65 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "description_zh": "v22 保留 v21 已驗證原民會官方來源，新增多來源蒐集候選 adapter。候選來源不得自動公開，必須先通過來源可靠度、卑南遺址禁止關聯、授權與敏感內容檢查。",
+  "verified_sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021_lines_113_216",
+      "title_zh": "原住民族委員會英文卑南族 Pinuyumayan 介紹頁",
+      "publisher": "Council of Indigenous Peoples",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "source_type": "official_public_webpage",
+      "language": "en",
+      "reliability": "official_high",
+      "allowed_use": "public_summary_with_citation"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_zh_current_lines_587_590",
+      "title_zh": "原住民族委員會中文 16 族簡介：卑南族",
+      "publisher": "原住民族委員會",
+      "url": "https://www.cip.gov.tw/zh-tw/index.html?cumid=367871808397303F4493DBDF516DA24A",
+      "source_type": "official_public_webpage",
+      "language": "zh-TW",
+      "reliability": "official_high",
+      "allowed_use": "public_summary_with_citation"
+    }
+  ],
+  "candidate_adapters": [
+    {
+      "adapter_id": "candidate_tipp_pinuyumayan",
+      "display_name_zh": "臺灣原住民族資訊資源網候選來源",
+      "status": "candidate_only_not_public",
+      "requires_manual_url_verification": true,
+      "notes_zh": "只進候選區；需人工確認頁面來源、授權、是否為卑南族而非卑南遺址。"
+    },
+    {
+      "adapter_id": "candidate_moc_memory_pinuyumayan",
+      "display_name_zh": "文化部／國家文化記憶庫候選來源",
+      "status": "candidate_only_not_public",
+      "requires_manual_url_verification": true,
+      "notes_zh": "只抓候選 metadata；不得自動發布為 claim。"
+    },
+    {
+      "adapter_id": "candidate_taitung_local_government",
+      "display_name_zh": "臺東縣地方政府候選來源",
+      "status": "candidate_only_not_public",
+      "requires_manual_url_verification": true,
+      "notes_zh": "適合蒐集活動、部落、觀光/文化公告；需避免把卑南文化遺址納入卑南族文化知識。"
+    },
+    {
+      "adapter_id": "blocked_beinan_archaeological_terms",
+      "display_name_zh": "卑南文化遺址禁止關聯詞",
+      "status": "blocked_relation_guard",
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "notes_zh": "只能作為 disambiguation / negative relation，不得作為卑南族文化來源。"
+    }
+  ]
+}

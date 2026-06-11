@@ -1,0 +1,59 @@
+{
+  "version": "2026-06-11-full-vocab-audio-tts-g2p-ipa",
+  "base_path": "/api/puyuma",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/vocabulary",
+      "query": [
+        "dialect?",
+        "category?",
+        "hasAudio?",
+        "hasIpa?",
+        "hasG2p?",
+        "q?",
+        "limit?",
+        "cursor?"
+      ],
+      "response": "Paginated<PuyumaAudioVocabularyEntryWithTtsG2pIpa>"
+    },
+    {
+      "method": "GET",
+      "path": "/vocabulary/:id",
+      "response": "PuyumaAudioVocabularyEntryWithTtsG2pIpa"
+    },
+    {
+      "method": "GET",
+      "path": "/vocabulary/categories",
+      "response": "PuyumaVocabularyCategories"
+    },
+    {
+      "method": "GET",
+      "path": "/audio/manifest",
+      "response": "Audio URL manifest and optional local mirror paths"
+    },
+    {
+      "method": "POST",
+      "path": "/admin/vocabulary/rebuild",
+      "body": [
+        "sourceManifestPath",
+        "downloadSources?",
+        "buildIpa?"
+      ],
+      "response": "Build report; admin only"
+    }
+  ],
+  "fields_added": [
+    "audio.local_mirror",
+    "g2p.phoneme_sequence",
+    "ipa.value",
+    "tts.tts_text",
+    "tts.enabled_for_public_ui"
+  ],
+  "rules": [
+    "Only return approved public entries.",
+    "Use human audio URL first.",
+    "TTS must stay disabled for public UI until language/cultural review.",
+    "Display IPA as draft unless reviewed."
+  ]
+}

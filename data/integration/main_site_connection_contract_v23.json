@@ -1,0 +1,102 @@
+{
+  "version": "v23",
+  "name": "Main Site Connection Contract",
+  "principle": "主站負責前端顯示與 AI provider 調用；後端知識庫只提供真實史料包、發音音檔、引用/去重/敏感內容/禁止關聯/發布前檢查。",
+  "required_main_site_env": [
+    {
+      "name": "NEXT_PUBLIC_KB_API_URL",
+      "scope": "browser_public",
+      "example": "https://kb.pinuyumayan.tw",
+      "description": "主站瀏覽器可呼叫的知識庫公開 API base URL。只用於 public endpoints。"
+    },
+    {
+      "name": "PINUYUMAYAN_KB_API_URL",
+      "scope": "server_only",
+      "example": "https://kb.pinuyumayan.tw",
+      "description": "主站 server route 呼叫 internal API 的 base URL。"
+    },
+    {
+      "name": "PINUYUMAYAN_MAIN_SITE_CLIENT_ID",
+      "scope": "server_only",
+      "example": "main-site-production",
+      "description": "主站在知識庫註冊的 client id。"
+    },
+    {
+      "name": "PINUYUMAYAN_MAIN_SITE_API_KEY",
+      "scope": "server_only_secret",
+      "example": "change-me",
+      "description": "主站呼叫 internal API 的 shared secret。不可放入瀏覽器。"
+    },
+    {
+      "name": "PINUYUMAYAN_HMAC_SECRET",
+      "scope": "server_only_secret",
+      "example": "change-me-hmac-secret",
+      "description": "internal API HMAC 簽章密鑰。可與 API key 分開輪替。"
+    },
+    {
+      "name": "PINUYUMAYAN_HMAC_ENABLED",
+      "scope": "server_only",
+      "example": "true",
+      "description": "正式站建議啟用 HMAC + nonce 防重放。"
+    },
+    {
+      "name": "AI_PROVIDER",
+      "scope": "server_only",
+      "example": "openai|kimi|mock",
+      "description": "主站 server-side AI composer 使用的 provider。"
+    },
+    {
+      "name": "OPENAI_API_KEY",
+      "scope": "server_only_secret",
+      "example": "sk-proj-...",
+      "description": "OpenAI provider key；只放主站 server runtime。"
+    },
+    {
+      "name": "KIMI_API_KEY",
+      "scope": "server_only_secret",
+      "example": "...",
+      "description": "Kimi provider key；只放主站 server runtime。"
+    },
+    {
+      "name": "NEXT_PUBLIC_SITE_URL",
+      "scope": "browser_public",
+      "example": "https://pinuyumayan.tw",
+      "description": "主站正式網址，用於 callback、canonical、OG 與審核連結。"
+    }
+  ],
+  "required_backend_env": [
+    "MAIN_SITE_API_KEY",
+    "PINUYUMAYAN_HMAC_SECRET",
+    "ALLOWED_ORIGINS=https://pinuyumayan.tw,https://www.pinuyumayan.tw",
+    "PUBLIC_KNOWLEDGE_BASE_URL=https://kb.pinuyumayan.tw"
+  ],
+  "browser_safe_endpoints": [
+    "GET /api/public/knowledge/bootstrap",
+    "GET /api/public/knowledge/search",
+    "GET /api/public/knowledge/vocabulary",
+    "GET /api/public/audio/manifest",
+    "GET /api/public/pronunciation/search",
+    "GET /api/public/ai-article/frontend-composer-config",
+    "GET /api/public/ai-article/v21/source-packets",
+    "GET /api/public/true-knowledge/v21/cards",
+    "GET /api/public/knowledge/forbidden-relations/v21"
+  ],
+  "server_only_endpoints": [
+    "POST /api/internal/ai-article/client-draft/validate",
+    "POST /api/internal/ai-article/client-draft/submit-review",
+    "POST /api/internal/ai-article/v21/blocked-relation-check",
+    "POST /api/internal/contracts/run",
+    "POST /api/internal/cache/invalidate",
+    "GET /api/internal/main-site/knowledge/delta",
+    "GET /api/internal/main-site/knowledge/bundle"
+  ],
+  "forbidden_relation_rule": "Beinan/Peinan archaeological site terms must never become Pinuyumayan/Puyuma cultural source packets, tags, synonyms, or related content.",
+  "article_flow": [
+    "Main site server route resolves source packets from knowledge backend",
+    "Main site server route calls OpenAI/Kimi/local provider",
+    "Draft is sent back to knowledge backend for validation",
+    "Backend checks citations, duplicate fingerprint, forbidden relations, sensitivity and license",
+    "Draft enters admin review queue",
+    "Only reviewed content is published"
+  ]
+}

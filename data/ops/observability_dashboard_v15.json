@@ -1,0 +1,45 @@
+{
+  "version": "v15",
+  "dashboards": [
+    {
+      "id": "main_site_delivery",
+      "widgets": [
+        "bootstrap_p95",
+        "vocabulary_p95",
+        "delta_sync_lag",
+        "export_artifact_age",
+        "contract_test_status"
+      ]
+    },
+    {
+      "id": "full_corpus_import",
+      "widgets": [
+        "source_watermarks",
+        "entries_imported",
+        "audio_coverage",
+        "source_phon_coverage",
+        "reconciliation_status"
+      ]
+    },
+    {
+      "id": "security_ops",
+      "widgets": [
+        "failed_admin_login_rate",
+        "critical_security_events",
+        "expired_permission_grants",
+        "api_scope_denials"
+      ]
+    },
+    {
+      "id": "search_quality",
+      "widgets": [
+        "query_zero_results",
+        "top_queries",
+        "search_eval_score",
+        "search_index_version"
+      ]
+    }
+  ],
+  "export_format": "json",
+  "suggested_retention_days": 90
+}

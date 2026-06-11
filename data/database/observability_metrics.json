@@ -1,0 +1,61 @@
+{
+  "version": "4.0.0",
+  "metrics": [
+    {
+      "key": "kb_public_fact_count",
+      "type": "gauge",
+      "source": "kb_facts",
+      "target_min": 100
+    },
+    {
+      "key": "puyuma_preview_entry_count",
+      "type": "gauge",
+      "source": "puyuma_corpus_entries",
+      "target_min": 80
+    },
+    {
+      "key": "puyuma_full_entry_count",
+      "type": "gauge",
+      "source": "puyuma_corpus_entries",
+      "target_min": 1000,
+      "applies_after_full_import": true
+    },
+    {
+      "key": "audio_url_success_ratio",
+      "type": "ratio",
+      "source": "puyuma_audio_assets",
+      "target_min": 0.9
+    },
+    {
+      "key": "pending_high_sensitivity_reviews",
+      "type": "gauge",
+      "source": "kb_review_tasks",
+      "target_max": 0,
+      "release_blocking": true
+    },
+    {
+      "key": "search_index_freshness_minutes",
+      "type": "gauge",
+      "source": "kb_search_documents",
+      "target_max": 60
+    },
+    {
+      "key": "api_p95_latency_ms",
+      "type": "histogram",
+      "source": "application_metrics",
+      "target_max": 500
+    }
+  ],
+  "logs": [
+    "import_run_log",
+    "review_action_log",
+    "audio_mirror_log",
+    "search_index_log",
+    "api_access_log"
+  ],
+  "release_blockers": [
+    "validation_error_count > 0",
+    "pending_high_sensitivity_reviews > 0",
+    "unknown_source_license_count > 0"
+  ]
+}

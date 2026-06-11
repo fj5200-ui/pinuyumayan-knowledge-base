@@ -1,0 +1,111 @@
+{
+  "version": "2026-06-11-web-rich-knowledge",
+  "notes": [
+    "本 registry 僅記錄來源與可查核依據；平台正文應使用原創摘要，不可大量複製來源原文。",
+    "涉及部落傳統、祭儀禁忌、家族或人物故事時，須交由部落/族人複核後再公開。",
+    "本版新增網站知識應用層：FAQ、topic pages、timeline、learning paths、search index、API contract。"
+  ],
+  "sources": [
+    {
+      "id": "cip_puyuma_profile",
+      "title": "原住民族委員會：卑南族簡介",
+      "type": "official_profile",
+      "url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "coverage": [
+        "族群簡介",
+        "十社/部落脈絡",
+        "生活圖像",
+        "祭儀",
+        "年齡階級",
+        "會所",
+        "歌謠舞蹈"
+      ],
+      "use_level": "primary_public_reference",
+      "publisher": "原住民族委員會",
+      "language": "zh-TW",
+      "accessed_at": "2026-06-11",
+      "reliability_tier": "official_primary_public",
+      "allowed_use": [
+        "public_summary",
+        "taxonomy",
+        "content_cards",
+        "source-backed_ai_answer"
+      ],
+      "line_hint": "web.open lines 226-313 in current verification pass"
+    },
+    {
+      "id": "cip_population_2024_06",
+      "title": "原住民族委員會：2024年6月原住民族人口數統計資料",
+      "type": "official_statistics",
+      "url": "https://www.cip.gov.tw/zh-tw/news/data-list/812FFAB0BCD92D1A/EDBA26F819210681F3827C43BE19244F-info.html",
+      "coverage": [
+        "人口統計下載入口"
+      ],
+      "use_level": "statistics_reference"
+    },
+    {
+      "id": "formosanbank_epark_readme",
+      "title": "FormosanBank ePark Data README",
+      "type": "open_repository_documentation",
+      "url": "https://github.com/FormosanBank/FormosanBank/blob/main/Corpora/ePark/README.md",
+      "coverage": [
+        "ePark 資料結構",
+        "XML 格式",
+        "方言 mapping",
+        "音檔清理流程"
+      ],
+      "use_level": "language_audio_primary_reference",
+      "publisher": "FormosanBank GitHub organization",
+      "language": "en",
+      "accessed_at": "2026-06-11",
+      "reliability_tier": "open_research_data_documentation",
+      "allowed_use": [
+        "language_audio_metadata",
+        "corpus_processing_notes"
+      ]
+    },
+    {
+      "id": "formosanbank_dialects_csv",
+      "title": "FormosanBank ePark dialects.csv",
+      "type": "open_repository_data",
+      "url": "https://github.com/FormosanBank/FormosanBank/blob/main/Corpora/ePark/CodeAndDocs/dialects.csv",
+      "coverage": [
+        "38 Nanwang_Puyuma",
+        "39 Zhiben_Puyuma",
+        "40 Xiqun_Puyuma",
+        "41 Jianhe_Puyuma"
+      ],
+      "use_level": "language_audio_primary_reference",
+      "publisher": "FormosanBank GitHub organization",
+      "language": "csv",
+      "accessed_at": "2026-06-11",
+      "reliability_tier": "open_research_data",
+      "allowed_use": [
+        "dialect_mapping",
+        "audio_manifest_mapping"
+      ]
+    },
+    {
+      "id": "verification_pass_2026_06_11",
+      "title": "2026-06-11 卑南族內容查核與資料擴充規則",
+      "type": "internal_verification_protocol",
+      "publisher": "卑南族文化綜合平台知識包",
+      "url": "local:references/verified_source_protocol.md",
+      "coverage": [
+        "來源分級",
+        "內容審核",
+        "AI 生成限制",
+        "資料欄位規則"
+      ],
+      "use_level": "governance_reference",
+      "reliability_tier": "internal_rule_not_primary_source",
+      "accessed_at": "2026-06-11"
+    }
+  ],
+  "verification_policy": {
+    "default_rule": "平台內容只可使用可追溯來源；沒有 source_id 的資料不得進入公開內容。",
+    "public_content_rule": "公開頁面只使用 verification_status=verified_public 或 community_reviewed 的資料。",
+    "restricted_content_rule": "祭儀禁忌、家族譜系、巫師知識、未公開儀式細節，一律設為 restricted 或 review_required。",
+    "uncertain_rule": "如果來源間互相衝突或只有口耳相傳，標為 disputed_or_uncertain，不可寫成定論。"
+  }
+}

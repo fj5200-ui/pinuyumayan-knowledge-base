@@ -1,0 +1,121 @@
+{
+  "version": "2026-06-11",
+  "purpose": "給前台、CMS、AI 回答、SEO 頁面引用來源使用。line_range 來自本次查核時 web.open 取得的公開頁行號，來源網頁改版時可能變動。",
+  "citations": [
+    {
+      "id": "cip_profile_overview",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "226-232",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "族群簡介",
+        "Pinuyumayan/Puyuma 正名",
+        "竹生/石生",
+        "部落脈絡",
+        "移居都市"
+      ],
+      "public_note_zh": "族群簡介與歷史脈絡可用，但傳說需標示為傳說或公開敘事。"
+    },
+    {
+      "id": "cip_life_food_clothing_weaving",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "236-248",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "產業",
+        "飲食",
+        "服飾",
+        "花環",
+        "藤竹編",
+        "月桃葉"
+      ],
+      "public_note_zh": "適合前台生活文化頁、工藝頁、服飾頁。"
+    },
+    {
+      "id": "cip_architecture_house_mens_house",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "249-256",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "住屋",
+        "會所",
+        "少年會所",
+        "成年會所",
+        "祖靈屋"
+      ],
+      "public_note_zh": "祖靈屋與巫師相關內容一律摘要。"
+    },
+    {
+      "id": "cip_music_dance_language",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "258-273",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "歌謠",
+        "舞蹈",
+        "語言差異",
+        "公開人物列名"
+      ],
+      "public_note_zh": "人物僅可列名，詳細傳記需另查個別來源。"
+    },
+    {
+      "id": "cip_social_organization",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "277-283",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "親屬制度",
+        "部落制度",
+        "祭司",
+        "巫師",
+        "年齡階級",
+        "會所訓練"
+      ],
+      "public_note_zh": "不得公開特定家族、氏族、訓練細節或儀式操作。"
+    },
+    {
+      "id": "cip_belief_rituals_calendar",
+      "source_id": "cip_puyuma_profile",
+      "line_range": "287-313",
+      "source_url": "https://www.cip.gov.tw/zh-tw/tribe/grid-list/913F9B9D35D49AC3D0636733C6861689/info.html?cumid=8F19BF08AE220D65",
+      "covers": [
+        "biruwa",
+        "信仰",
+        "歲時祭儀",
+        "婦女除草完工慶",
+        "小米收穫祭",
+        "年祭",
+        "猴祭",
+        "大獵祭",
+        "聯合年祭"
+      ],
+      "public_note_zh": "祭儀只作公開摘要，實際日期以部落公告為準。"
+    },
+    {
+      "id": "formosanbank_epark_corpus",
+      "source_id": "formosanbank_epark_readme",
+      "line_range": "3-17, 135-147",
+      "source_url": "https://github.com/FormosanBank/FormosanBank/blob/main/Corpora/ePark/README.md",
+      "covers": [
+        "ePark 資料結構",
+        "XML",
+        "音檔處理",
+        "正字法"
+      ],
+      "public_note_zh": "語料與音檔 metadata 可用；商業使用需授權複核。"
+    },
+    {
+      "id": "formosanbank_puyuma_dialects",
+      "source_id": "formosanbank_dialects_csv",
+      "line_range": "40-43",
+      "source_url": "https://github.com/FormosanBank/FormosanBank/blob/main/Corpora/ePark/CodeAndDocs/dialects.csv",
+      "covers": [
+        "38 Nanwang_Puyuma",
+        "39 Zhiben_Puyuma",
+        "40 Xiqun_Puyuma",
+        "41 Jianhe_Puyuma"
+      ],
+      "public_note_zh": "網站方言篩選依此 mapping。"
+    }
+  ]
+}

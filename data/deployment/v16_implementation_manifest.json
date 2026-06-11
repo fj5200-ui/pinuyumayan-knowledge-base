@@ -1,0 +1,19 @@
+{
+  "version": "v16",
+  "generated_at": "2026-06-11T14:20:00+08:00",
+  "implemented_layers": [
+    "static JSON repository fallback",
+    "REST route wiring",
+    "content collections implementation",
+    "search index seed",
+    "learning sets",
+    "DB seed SQL"
+  ],
+  "counts": {
+    "cards": 206,
+    "collections": 4,
+    "search_docs": 206,
+    "learning_sets": 9
+  },
+  "full_corpus_status": "preview subset remains 80; full corpus pipeline remains post-deploy import."
+}

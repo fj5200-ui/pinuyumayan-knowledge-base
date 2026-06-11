@@ -1,0 +1,62 @@
+{
+  "version": "v12",
+  "tenancy_model": "logical client tenancy; one shared knowledge database, scoped API clients and release channels",
+  "api_clients": [
+    {
+      "client": "main_site",
+      "scopes": [
+        "knowledge:read",
+        "vocabulary:read",
+        "export:read"
+      ],
+      "channels": [
+        "public",
+        "preview"
+      ],
+      "can_enqueue_jobs": false
+    },
+    {
+      "client": "admin_console",
+      "scopes": [
+        "knowledge:read",
+        "review:read",
+        "review:write",
+        "lineage:read",
+        "quality:read"
+      ],
+      "channels": [
+        "public",
+        "preview",
+        "internal_review"
+      ],
+      "can_enqueue_jobs": true
+    },
+    {
+      "client": "search_worker",
+      "scopes": [
+        "search:read",
+        "export:read",
+        "export:write"
+      ],
+      "channels": [
+        "public",
+        "preview"
+      ],
+      "can_enqueue_jobs": true
+    },
+    {
+      "client": "corpus_worker",
+      "scopes": [
+        "corpus:import",
+        "lineage:write",
+        "quality:write",
+        "jobs:write"
+      ],
+      "channels": [
+        "full_corpus_candidate",
+        "full_corpus_verified"
+      ],
+      "can_enqueue_jobs": true
+    }
+  ]
+}

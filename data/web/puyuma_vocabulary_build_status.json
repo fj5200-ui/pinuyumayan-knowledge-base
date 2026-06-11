@@ -1,0 +1,30 @@
+{
+  "version": "2026-06-11-full-corpus-pipeline-v2-source-phon-preserved",
+  "status_zh": "已更正：ZIP 目前內嵌的是網站預覽/可直接上線的子集，不是 FormosanBank/ePark 全量千筆語料。",
+  "embedded_entry_count": 80,
+  "embedded_entry_role": "public_preview_seed_with_audio_g2p_ipa_tts_metadata",
+  "declared_source_candidates": 66,
+  "declared_csv_sources": 22,
+  "declared_xml_sources": 44,
+  "full_corpus_actual_entry_count": null,
+  "full_corpus_actual_entry_count_note_zh": "需要在可連線到 GitHub raw.githubusercontent.com 的環境執行 scripts/build_full_puyuma_web_vocabulary.py --download 後產生；本 ZIP 內沒有偽造千筆資料。",
+  "audio_url_included": true,
+  "mp3_binary_included": false,
+  "g2p_included": true,
+  "ipa_included": true,
+  "tts_metadata_included": true,
+  "public_tts_enabled": false,
+  "required_full_import_commands": [
+    "pip install -r requirements.txt",
+    "python3 scripts/build_full_puyuma_web_vocabulary.py --download",
+    "python3 scripts/audit_puyuma_corpus_sources.py --source-dir external/formosanbank_puyuma",
+    "python3 scripts/validate_tts_g2p_ipa.py",
+    "python3 scripts/validate_web_vocabulary.py"
+  ],
+  "do_not_claim_zh": "未執行全量下載與驗收前，不得在網站或交付報告宣稱已內嵌千筆語料。",
+  "pipeline_v2_added": true,
+  "source_phon_preservation": "XML <PHON> values are now preserved in entries[].ipa.source_phon and used as IPA display value when available.",
+  "full_corpus_output_schema": "data/web/puyuma_full_corpus_output_schema.json",
+  "full_corpus_build_runbook": "references/full_corpus_build_runbook.md",
+  "strict_output_validator": "scripts/validate_full_puyuma_corpus_output.py"
+}

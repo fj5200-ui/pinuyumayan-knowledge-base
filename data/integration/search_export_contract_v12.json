@@ -1,0 +1,71 @@
+{
+  "version": "v12",
+  "exports": [
+    {
+      "artifact": "public_search_documents.jsonl",
+      "source": "kb_search_documents",
+      "filters": [
+        "public_safe",
+        "published_channel"
+      ],
+      "target": [
+        "Meilisearch",
+        "Typesense",
+        "Algolia",
+        "local_lunr"
+      ]
+    },
+    {
+      "artifact": "public_knowledge_bundle.json",
+      "source": "public_safe_views",
+      "filters": [
+        "approved",
+        "verified_public"
+      ],
+      "target": [
+        "main_site_ssr",
+        "cloudflare_kv",
+        "edge_cache"
+      ]
+    },
+    {
+      "artifact": "puyuma_vocabulary_public.jsonl",
+      "source": "puyuma_corpus_entries + puyuma_audio_assets + puyuma_ipa_annotations",
+      "filters": [
+        "approved_for_public_learning",
+        "audio_license_ok"
+      ],
+      "target": [
+        "language_page",
+        "audio_player",
+        "offline_cache"
+      ]
+    }
+  ],
+  "search_document_schema": {
+    "id": "string",
+    "type": "fact|community|ritual|vocabulary|topic|faq",
+    "title": "string",
+    "body": "string",
+    "keywords": "string[]",
+    "community_key": "string|null",
+    "dialect_code": "string|null",
+    "source_ids": "string[]",
+    "release_channel": "string",
+    "updated_at": "datetime"
+  },
+  "index_weights": {
+    "title": 5,
+    "keywords": 4,
+    "community_name": 4,
+    "romanization_alias": 3,
+    "zh_tw": 3,
+    "form_text": 3,
+    "body": 1
+  },
+  "rebuild_strategy": {
+    "full": "nightly or after major import",
+    "delta": "after publish batch or vocabulary promotion",
+    "rollback": "delete by release batch id"
+  }
+}

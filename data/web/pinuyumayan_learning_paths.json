@@ -1,0 +1,347 @@
+{
+  "version": "2026-06-11",
+  "purpose": "網站學習中心與首頁推薦模組使用；每個單元都以公開來源與安全摘要為界線。",
+  "paths": [
+    {
+      "id": "path-beginner-identity",
+      "title_zh": "入門：認識卑南族／Pinuyumayan",
+      "level": "beginner",
+      "summary_zh": "從正名、主要地理分布、起源敘事與十社開始，建立不混用 Puyuma 與 Pinuyumayan 的基礎。",
+      "units": [
+        "unit-name-rule",
+        "unit-core-area",
+        "unit-origin-stories",
+        "unit-ten-communities"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "estimated_minutes": 20,
+      "sensitivity": "low"
+    },
+    {
+      "id": "path-culture-life",
+      "title_zh": "生活文化：飲食、服飾、工藝與建築",
+      "level": "beginner",
+      "summary_zh": "將飲食、花環、藤竹編、住屋與會所轉為網站圖文內容。",
+      "units": [
+        "unit-food",
+        "unit-clothing-wreath",
+        "unit-weaving",
+        "unit-architecture"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "estimated_minutes": 35,
+      "sensitivity": "medium"
+    },
+    {
+      "id": "path-ritual-overview",
+      "title_zh": "祭儀概覽：只做公開摘要",
+      "level": "intermediate",
+      "summary_zh": "理解歲時祭儀與生命禮俗的公開分類，並學會不生成流程、禁忌或日期臆測。",
+      "units": [
+        "unit-ritual-calendar",
+        "unit-millet-harvest",
+        "unit-annual-festival",
+        "unit-sensitive-boundary"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "verification_pass_2026_06_11"
+      ],
+      "estimated_minutes": 40,
+      "sensitivity": "high"
+    },
+    {
+      "id": "path-society",
+      "title_zh": "社會制度：年齡階級、會所與親屬",
+      "level": "intermediate",
+      "summary_zh": "從年齡階級、少年/成年會所、ayawan、rahan 與母系親屬概念建立制度理解。",
+      "units": [
+        "unit-age-grade",
+        "unit-mens-house",
+        "unit-leadership",
+        "unit-kinship"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "estimated_minutes": 45,
+      "sensitivity": "high"
+    },
+    {
+      "id": "path-language-audio",
+      "title_zh": "卑南語與語音學習",
+      "level": "beginner",
+      "summary_zh": "使用已驗證音檔 URL 練習南王、知本、西群、建和卑南語句型，並理解資料來源。",
+      "units": [
+        "unit-dialects",
+        "unit-audio-card",
+        "unit-safe-audio-use"
+      ],
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "estimated_minutes": 30,
+      "sensitivity": "low"
+    },
+    {
+      "id": "path-editorial-governance",
+      "title_zh": "編輯治理：來源、審核與 AI 安全",
+      "level": "editor",
+      "summary_zh": "教編輯與 AI Agent 如何使用 source_id、sensitivity、review_status，避免公開不應公開的內容。",
+      "units": [
+        "unit-source-id",
+        "unit-sensitive-content",
+        "unit-cms-review",
+        "unit-conflict-resolution"
+      ],
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "estimated_minutes": 25,
+      "sensitivity": "medium"
+    }
+  ],
+  "units": [
+    {
+      "id": "unit-name-rule",
+      "title_zh": "族名與正名",
+      "objectives_zh": [
+        "分辨卑南族、Pinuyumayan、Puyuma 的使用情境"
+      ],
+      "required_facts": [
+        "name_puyuma_pinuyumayan_distinction",
+        "name_historical_transliterations_public"
+      ]
+    },
+    {
+      "id": "unit-core-area",
+      "title_zh": "核心地理與現代分布",
+      "objectives_zh": [
+        "認識臺東市、卑南鄉及都市移居脈絡"
+      ],
+      "required_facts": [
+        "settlement_core_area",
+        "diaspora_urban_development_public"
+      ]
+    },
+    {
+      "id": "unit-origin-stories",
+      "title_zh": "竹生與石生",
+      "objectives_zh": [
+        "用起源敘事而非唯一史實的方式介紹內容"
+      ],
+      "required_facts": [
+        "origin_bamboo_stone"
+      ]
+    },
+    {
+      "id": "unit-ten-communities",
+      "title_zh": "卑南族十社",
+      "objectives_zh": [
+        "建立十社入口頁並避免八社作主分類"
+      ],
+      "required_facts": [
+        "community_list_public"
+      ]
+    },
+    {
+      "id": "unit-food",
+      "title_zh": "飲食與作物",
+      "objectives_zh": [
+        "介紹小米、旱稻、月桃與檳榔的公開文化脈絡"
+      ],
+      "required_facts": [
+        "traditional_food_staples",
+        "food_festival_betel_and_shell_ginger_public"
+      ]
+    },
+    {
+      "id": "unit-clothing-wreath",
+      "title_zh": "服飾與花環",
+      "objectives_zh": [
+        "理解服飾、色彩、花環與身分脈絡"
+      ],
+      "required_facts": [
+        "clothing_colors_patterns",
+        "wreath_social_meaning"
+      ]
+    },
+    {
+      "id": "unit-weaving",
+      "title_zh": "藤竹編與月桃葉",
+      "objectives_zh": [
+        "介紹編織技法與日常器物"
+      ],
+      "required_facts": [
+        "weaving_technique_names_public",
+        "weaving_daily_objects_public"
+      ]
+    },
+    {
+      "id": "unit-architecture",
+      "title_zh": "住屋、會所與祖靈屋",
+      "objectives_zh": [
+        "區分公開建築介紹與高敏感儀式空間"
+      ],
+      "required_facts": [
+        "architecture_categories",
+        "ancestral_house_ritual_space_public_sensitive"
+      ]
+    },
+    {
+      "id": "unit-ritual-calendar",
+      "title_zh": "祭儀月份脈絡",
+      "objectives_zh": [
+        "只引用月份，不臆測日期"
+      ],
+      "required_facts": [
+        "ritual_calendar_months_public"
+      ]
+    },
+    {
+      "id": "unit-millet-harvest",
+      "title_zh": "小米收穫祭",
+      "objectives_zh": [
+        "公開摘要，不寫操作流程"
+      ],
+      "required_facts": [
+        "millet_harvest_family_unit_public"
+      ]
+    },
+    {
+      "id": "unit-annual-festival",
+      "title_zh": "年祭、猴祭與大獵祭",
+      "objectives_zh": [
+        "辨識年祭作為總稱及現代草猴脈絡"
+      ],
+      "required_facts": [
+        "annual_festival_three_weeks",
+        "monkey_rite_grass_monkey_public",
+        "hunting_rite_three_day_public"
+      ]
+    },
+    {
+      "id": "unit-sensitive-boundary",
+      "title_zh": "祭儀敏感界線",
+      "objectives_zh": [
+        "避免仿作、流程化或禁忌公開"
+      ],
+      "required_facts": [
+        "annual_festival_roadblocks_altars_public_sensitive"
+      ]
+    },
+    {
+      "id": "unit-age-grade",
+      "title_zh": "年齡階級",
+      "objectives_zh": [
+        "概述制度，不寫訓練手冊"
+      ],
+      "required_facts": [
+        "age_grade_training_stages",
+        "age_grade_training_skills_public"
+      ]
+    },
+    {
+      "id": "unit-mens-house",
+      "title_zh": "少年與成年會所",
+      "objectives_zh": [
+        "認識建築與制度脈絡"
+      ],
+      "required_facts": [
+        "mens_house_two_types",
+        "mens_house_youth_architecture_public",
+        "mens_house_adult_architecture_public"
+      ]
+    },
+    {
+      "id": "unit-leadership",
+      "title_zh": "ayawan、rahan 與 na temaramaw",
+      "objectives_zh": [
+        "角色摘要，不指名個人或產生儀式指令"
+      ],
+      "required_facts": [
+        "leadership_ayawan_rahan",
+        "rahan_calendar_weather_history_public",
+        "shaman_role_public_summary"
+      ]
+    },
+    {
+      "id": "unit-kinship",
+      "title_zh": "親屬與母系脈絡",
+      "objectives_zh": [
+        "介紹概念，不收集特定家族資料"
+      ],
+      "required_facts": [
+        "kinship_matrilineal_summary",
+        "clan_house_categories_public"
+      ]
+    },
+    {
+      "id": "unit-dialects",
+      "title_zh": "四種卑南語資料分支",
+      "objectives_zh": [
+        "理解 38–41 對應"
+      ],
+      "required_facts": [
+        "formosanbank_puyuma_dialects"
+      ]
+    },
+    {
+      "id": "unit-audio-card",
+      "title_zh": "音檔卡片使用",
+      "objectives_zh": [
+        "只播放 manifest 內已驗證 URL"
+      ],
+      "required_facts": [
+        "formosanbank_epark_structure"
+      ]
+    },
+    {
+      "id": "unit-safe-audio-use",
+      "title_zh": "音檔授權與串流",
+      "objectives_zh": [
+        "理解商業使用前需授權審核"
+      ],
+      "required_facts": [
+        "formosanbank_epark_audio_failed_handling"
+      ]
+    },
+    {
+      "id": "unit-source-id",
+      "title_zh": "source_id 規則",
+      "objectives_zh": [
+        "所有公開內容都帶來源"
+      ],
+      "required_facts": []
+    },
+    {
+      "id": "unit-sensitive-content",
+      "title_zh": "敏感內容分級",
+      "objectives_zh": [
+        "區分 public、medium、high"
+      ],
+      "required_facts": []
+    },
+    {
+      "id": "unit-cms-review",
+      "title_zh": "CMS 發布檢查",
+      "objectives_zh": [
+        "發布前檢查名稱、來源、敏感度、審核狀態"
+      ],
+      "required_facts": []
+    },
+    {
+      "id": "unit-conflict-resolution",
+      "title_zh": "衝突處理",
+      "objectives_zh": [
+        "八社/十社、拼音、日期衝突處理"
+      ],
+      "required_facts": []
+    }
+  ]
+}

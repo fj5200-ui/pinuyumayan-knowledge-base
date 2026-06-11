@@ -1,0 +1,21 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "workflow": [
+    "GET /api/public/ai-article/frontend-composer-config",
+    "GET /api/public/ai-article/v21/source-packets 或 /api/public/ai-article/v22/source-packets",
+    "前端/主站 server route 選 provider adapter 生成草稿",
+    "POST /api/internal/ai-article/client-draft/validate",
+    "POST /api/internal/ai-article/v22/citation-check",
+    "POST /api/internal/ai-article/v22/duplicate-cooldown-check",
+    "POST /api/internal/ai-article/v21/blocked-relation-check",
+    "POST /api/internal/ai-article/client-draft/submit-review",
+    "後台審核通過後才發布"
+  ],
+  "never_do": [
+    "後端知識庫直接生成文章正文",
+    "AI 將使用者想法寫成史實",
+    "用卑南文化遺址作為卑南族文化來源",
+    "未審核高敏感祭儀內容公開"
+  ]
+}

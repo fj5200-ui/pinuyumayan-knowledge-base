@@ -1,0 +1,75 @@
+{
+  "version": "2026-06-11",
+  "title": "Puyuma full corpus import plan for website",
+  "goal_zh": "把 FormosanBank/ePark 卑南語 CSV/XML 全量匯入網站語詞庫，保留音檔 URL、G2P、IPA 與 TTS metadata。",
+  "input_manifest": "data/web/puyuma_vocabulary_full_source_manifest.json",
+  "candidate_sources": {
+    "csv": 22,
+    "xml": 44,
+    "total": 66
+  },
+  "pipeline": [
+    {
+      "step": 1,
+      "command": "python3 scripts/build_full_puyuma_web_vocabulary.py --download",
+      "output": "data/web/puyuma_vocabulary_audio_entries.json",
+      "description_zh": "下載來源並產生完整網站資料。"
+    },
+    {
+      "step": 2,
+      "command": "python3 scripts/audit_puyuma_corpus_sources.py --source-dir external/formosanbank_puyuma",
+      "output": "data/web/puyuma_corpus_source_audit.generated.json",
+      "description_zh": "計算每個來源檔的列數、含音檔列數、方言與分類統計。"
+    },
+    {
+      "step": 3,
+      "command": "python3 scripts/validate_tts_g2p_ipa.py && python3 scripts/validate_web_vocabulary.py",
+      "output": "validation OK",
+      "description_zh": "確認每筆資料含音檔 URL、G2P、IPA、TTS metadata。"
+    },
+    {
+      "step": 4,
+      "command": "python3 scripts/mirror_puyuma_audio_files.py",
+      "output": "external/puyuma_audio_mirror/*.mp3",
+      "description_zh": "選用：把遠端 MP3 鏡像到自己的儲存空間。"
+    }
+  ],
+  "website_integration": {
+    "database_table": "puyuma_vocabulary",
+    "frontend_routes": [
+      "/language/puyuma/vocabulary",
+      "/language/puyuma/audio/[id]"
+    ],
+    "required_indexes": [
+      "dialect_code",
+      "website_category_key",
+      "has_audio",
+      "source_id",
+      "search_text"
+    ]
+  },
+  "warnings_zh": [
+    "MP3 本體未隨 ZIP 內附。",
+    "商用或大量鏡像音檔前需確認授權。",
+    "IPA/G2P 為輔助草稿，不可當作權威發音教學。",
+    "TTS 不可用來仿作長者、祭儀或特定人物聲音。"
+  ],
+  "pipeline_v2": [
+    {
+      "step": "download",
+      "command": "python3 scripts/build_full_puyuma_web_vocabulary.py --download --min-entries 1000",
+      "output": "data/web/puyuma_vocabulary_audio_entries.json"
+    },
+    {
+      "step": "validate_full_output",
+      "command": "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+      "output": "pass/fail"
+    },
+    {
+      "step": "sql_export",
+      "command": "python3 scripts/build_puyuma_sql_seed.py",
+      "output": "data/web/puyuma_vocabulary_seed.sql"
+    }
+  ],
+  "source_phon_rule_zh": "XML 來源若有 <PHON>，必須保存到 ipa.source_phon；CSV 沒有 PHON 時才用規則式 G2P/IPA 草稿。"
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pinuyumayan.tw/schemas/public-knowledge-payload-v6.json",
+  "title": "Pinuyumayan Public Knowledge Payload",
+  "type": "object",
+  "required": [
+    "meta",
+    "items"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "version",
+        "generatedAt",
+        "visibility"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "generatedAt": {
+          "type": "string"
+        },
+        "visibility": {
+          "enum": [
+            "public",
+            "main_site_internal"
+          ]
+        },
+        "cacheTtlSeconds": {
+          "type": "integer"
+        },
+        "sourcePolicy": {
+          "type": "string"
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

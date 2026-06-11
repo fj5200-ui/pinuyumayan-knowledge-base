@@ -1,0 +1,47 @@
+{
+  "version": "4.0.0",
+  "release_name": "database-ops-v4",
+  "checks": [
+    {
+      "id": "validate_package",
+      "command": "python3 scripts/validate_package.py",
+      "blocking": true
+    },
+    {
+      "id": "validate_database_layer",
+      "command": "python3 scripts/validate_database_layer.py",
+      "blocking": true
+    },
+    {
+      "id": "validate_operational_layer",
+      "command": "python3 scripts/validate_operational_database_layer.py",
+      "blocking": true
+    },
+    {
+      "id": "validate_web_vocabulary",
+      "command": "python3 scripts/validate_web_vocabulary.py",
+      "blocking": true
+    },
+    {
+      "id": "validate_full_pipeline",
+      "command": "python3 scripts/validate_full_corpus_pipeline.py",
+      "blocking": true
+    },
+    {
+      "id": "compile_scripts",
+      "command": "python3 -m py_compile scripts/*.py",
+      "blocking": true
+    },
+    {
+      "id": "zip_integrity",
+      "command": "unzip -t pinuyumayan-expert-database-ops-v4.zip",
+      "blocking": true
+    }
+  ],
+  "manual_checks_zh": [
+    "確認高敏感內容沒有直接公開完整流程。",
+    "確認音檔鏡像未在授權審核前啟用。",
+    "確認 TTS 未公開啟用。",
+    "確認 80 筆 preview 與千筆 full corpus 狀態在 UI 清楚分開。"
+  ]
+}

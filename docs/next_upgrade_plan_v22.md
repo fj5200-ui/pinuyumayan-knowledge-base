@@ -1,0 +1,26 @@
+# 下一次完善＆開發＆升級＆優化方案：v22
+
+## 1. 前端 AI Composer 實作深化
+- 接入 OpenAI/Kimi provider adapter
+- 前端可選 source packet + 輸入你的想法
+- 草稿送後端 validate，不由後端生成
+## 2. 後台審核 UI
+- 建立草稿審核列表
+- 顯示 claim/source 引用完整性
+- 顯示 forbidden relation findings
+- 支援退回修改與核准發布
+## 3. 多來源 adapter
+- 新增 TIPP / 國家文化記憶庫 / 臺東縣政府 / 博物館來源候選 adapter
+- 所有來源先入候選區，不自動公開
+## 4. 千筆語料實測匯入
+- 實際跑 full corpus pipeline
+- 產出音檔覆蓋率與 PHON 覆蓋率
+- 把 80 preview 與 full corpus 清楚分離
+## 5. 安全落地
+- HMAC signature middleware 接 route
+- nonce 存 DB 防重放
+- RBAC scope guard 套用 internal API
+## 6. 搜尋與重複發布冷卻
+- 同題 10 日冷卻
+- 文章 fingerprint dashboard
+- source packet 使用次數統計

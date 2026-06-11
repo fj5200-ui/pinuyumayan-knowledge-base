@@ -1,0 +1,14 @@
+{
+  "version": "v16-pronunciation-runtime",
+  "generated_at": "2026-06-11T14:30:00+08:00",
+  "real_pronunciation_strategy": "verified_source_audio_first",
+  "preview_pronunciation_assets": 80,
+  "synthetic_tts_public_enabled": false,
+  "new_openapi_paths": [
+    "/api/public/pronunciation/{entryId}",
+    "/api/public/tts/pronounce",
+    "/api/admin/tts/models",
+    "/api/internal/tts/synthesize"
+  ],
+  "notes_zh": "v16 不宣稱已有真人等級任意文字 TTS；已有音檔的詞句直接播放真人音檔，沒有音檔的文字需訓練/審核後才可公開。"
+}

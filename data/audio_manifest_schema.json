@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pinuyumayan Puyuma Audio Manifest Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "dialect_code",
+    "dialect",
+    "dialect_zh",
+    "category",
+    "form",
+    "chinese",
+    "audio_url",
+    "source_path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "dialect_code": {
+      "type": "string",
+      "enum": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ]
+    },
+    "dialect": {
+      "type": "string"
+    },
+    "dialect_zh": {
+      "type": "string"
+    },
+    "community_key": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "form": {
+      "type": "string"
+    },
+    "english": {
+      "type": "string"
+    },
+    "chinese": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "local_audio_path": {
+      "type": "string"
+    },
+    "source_path": {
+      "type": "string"
+    },
+    "source_row": {
+      "type": "integer"
+    },
+    "license_note": {
+      "type": "string"
+    }
+  }
+}

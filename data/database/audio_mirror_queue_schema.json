@@ -1,0 +1,80 @@
+{
+  "version": "4.0.0",
+  "description": "音檔鏡像佇列資料規格；預設不下載音檔，只有授權審核後才可鏡像到 R2/S3/CDN。",
+  "states": [
+    "pending_license_review",
+    "approved_for_mirror",
+    "mirroring",
+    "mirrored",
+    "failed",
+    "blocked_by_license"
+  ],
+  "fields": [
+    {
+      "name": "queue_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "corpus_entry_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "source_audio_url",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "source_license_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "target_provider",
+      "type": "enum",
+      "values": [
+        "cloudflare_r2",
+        "s3",
+        "local",
+        "none"
+      ]
+    },
+    {
+      "name": "target_key",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "values": [
+        "pending_license_review",
+        "approved_for_mirror",
+        "mirroring",
+        "mirrored",
+        "failed",
+        "blocked_by_license"
+      ]
+    },
+    {
+      "name": "checksum_sha256",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "last_error",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "policy": {
+    "default_status": "pending_license_review",
+    "public_playback_priority": [
+      "local_mirror_if_licensed",
+      "remote_source_url",
+      "disabled"
+    ],
+    "commercial_use_note_zh": "正式商用前需逐一確認來源授權與標示方式。"
+  }
+}

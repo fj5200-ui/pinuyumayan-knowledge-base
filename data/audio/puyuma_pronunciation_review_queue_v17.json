@@ -1,0 +1,1368 @@
+{
+  "version": "v17",
+  "generated_at": "2026-06-11T14:40:00+08:00",
+  "description_zh": "發音審核佇列。不是否定來源音檔，而是把正式教材使用前的族語/授權審核明確化。",
+  "count": 80,
+  "items": [
+    {
+      "task_id": "pron_review_24b9d5acf6cf3456",
+      "asset_id": "pron-a93b397f4a7a5a9b",
+      "entry_id": "puyuma-audio-3273c95775ad",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_213cfd203aafa8b1",
+      "asset_id": "pron-661fec2aadaf53ad",
+      "entry_id": "puyuma-audio-7d98a0571a64",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7492aad8e91c5317",
+      "asset_id": "pron-da228ff74f512091",
+      "entry_id": "puyuma-audio-95ddd1e52a8c",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_24eda7ddfe857025",
+      "asset_id": "pron-19a25c368eeb0fc5",
+      "entry_id": "puyuma-audio-658c87facd71",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_cd8eacef73571a5f",
+      "asset_id": "pron-cd95e42661f81187",
+      "entry_id": "puyuma-audio-b04e215f3e73",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7ff24de994c17a50",
+      "asset_id": "pron-9744f1ace8b30e6c",
+      "entry_id": "puyuma-audio-3459f9d2c9ba",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_55a39113253dac46",
+      "asset_id": "pron-37e8831304bf3008",
+      "entry_id": "puyuma-audio-c906ef49ba1a",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_0b2fc8362e4be606",
+      "asset_id": "pron-98c4e8bd254a4c6b",
+      "entry_id": "puyuma-audio-f9f0a43ba400",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_026bc0cea94ab397",
+      "asset_id": "pron-66944aec0c0ee7d8",
+      "entry_id": "puyuma-audio-8f66055d0da1",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_d7cd703c4873f5d4",
+      "asset_id": "pron-7c9be2bc4d215fe0",
+      "entry_id": "puyuma-audio-f47948944915",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_4b8671ab35ae760e",
+      "asset_id": "pron-885c6f1718ce5a8f",
+      "entry_id": "puyuma-audio-8ec78ce2da04",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7dc5bac7f62b1370",
+      "asset_id": "pron-33ec2205b8296ba1",
+      "entry_id": "puyuma-audio-ef6059f7c2a9",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_ea5852da8e9615ee",
+      "asset_id": "pron-4d10004a1bcd6592",
+      "entry_id": "puyuma-audio-24d9088a2fe3",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_23ff97fff0405da0",
+      "asset_id": "pron-58977d35305e36e5",
+      "entry_id": "puyuma-audio-d261d50e56e0",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_0f48bf0894744006",
+      "asset_id": "pron-d5cad637d9cfd28c",
+      "entry_id": "puyuma-audio-b2abad192f8b",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_16e2e53c509b4c79",
+      "asset_id": "pron-2ff003babc0ee518",
+      "entry_id": "puyuma-audio-0df27f692e48",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_707e4298a536cd7f",
+      "asset_id": "pron-b876d33aa5e17c61",
+      "entry_id": "puyuma-audio-7b7185613f33",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_36a15445497e920a",
+      "asset_id": "pron-fe3cf5d7b809522b",
+      "entry_id": "puyuma-audio-3c05e63b6315",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_65a0b8b5b94fc49c",
+      "asset_id": "pron-e860a1d27728b6b2",
+      "entry_id": "puyuma-audio-38e4d63b1e3e",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_4f26b3e8a3b00a29",
+      "asset_id": "pron-93640b8654f9b32b",
+      "entry_id": "puyuma-audio-17126d46fe53",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_099e4c0359f56c88",
+      "asset_id": "pron-3b6038afe3564bcd",
+      "entry_id": "puyuma-audio-5c9375318083",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_299b3c4bac6d8772",
+      "asset_id": "pron-f3e7e709f3f91b56",
+      "entry_id": "puyuma-audio-e393a3d0412b",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_31af9b3cc1289b5e",
+      "asset_id": "pron-9971f63b73a9d058",
+      "entry_id": "puyuma-audio-ebf64aa99678",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_a2922993e8d15911",
+      "asset_id": "pron-55a52094b5c394c2",
+      "entry_id": "puyuma-audio-ecd06c07e0fd",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_f2aa0d91686b4215",
+      "asset_id": "pron-8cfb0b4863c40d7a",
+      "entry_id": "puyuma-audio-45dc39676f0e",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_d02bafa89cc6c9bd",
+      "asset_id": "pron-234aff26e31f2c5b",
+      "entry_id": "puyuma-audio-d8bf21308421",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_48f031624bb0e2da",
+      "asset_id": "pron-62bd239c30b8aa21",
+      "entry_id": "puyuma-audio-94508008f8a6",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_056a782ea4a0e1d1",
+      "asset_id": "pron-6dd78319e862303e",
+      "entry_id": "puyuma-audio-de7a5ff6d36d",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_59389b44db2c590f",
+      "asset_id": "pron-cc019b3818defc08",
+      "entry_id": "puyuma-audio-2d0099983af8",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_27b34826f8c0cbc8",
+      "asset_id": "pron-5503ae16a5e7814e",
+      "entry_id": "puyuma-audio-1cdcfb554bb2",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_5db5b1551d7c8d61",
+      "asset_id": "pron-dcad769f726bf930",
+      "entry_id": "puyuma-audio-dd1bff32ef72",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_5385b38b311a69a0",
+      "asset_id": "pron-0ed2d8980e9a3581",
+      "entry_id": "puyuma-audio-23c2fbbf4341",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_b3a3bf8a17cc001f",
+      "asset_id": "pron-3acf36938fa297d5",
+      "entry_id": "puyuma-audio-7a6d8fcc6929",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_3d4434d79503232d",
+      "asset_id": "pron-0f6569097b5c4d91",
+      "entry_id": "puyuma-audio-27ad7b13ee68",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_fdcabf325f6f4f5c",
+      "asset_id": "pron-7f2adadbfcbdc5a0",
+      "entry_id": "puyuma-audio-96aa43762826",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_34371a1ca618213b",
+      "asset_id": "pron-3361557e7000469a",
+      "entry_id": "puyuma-audio-fba7d6ccb2ce",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_ec8418447a2750fa",
+      "asset_id": "pron-8d30ad9299de7561",
+      "entry_id": "puyuma-audio-15e0e7223043",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7bef9dacd78a3a5f",
+      "asset_id": "pron-f6c55239f374e447",
+      "entry_id": "puyuma-audio-c4005834c802",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_0fef85c6dbef586c",
+      "asset_id": "pron-e606727f501417a6",
+      "entry_id": "puyuma-audio-cb87557f60ad",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_1304a0d6779ae283",
+      "asset_id": "pron-872a308aa4d9c2e0",
+      "entry_id": "puyuma-audio-96ee5840e608",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_72cf04beb0f248dd",
+      "asset_id": "pron-5c96b4e69fc883de",
+      "entry_id": "puyuma-audio-3e8e95834aec",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7b16d9f03a60466b",
+      "asset_id": "pron-cd4685469b8970bc",
+      "entry_id": "puyuma-audio-595e0d902d82",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_6cf797ec6dd4751a",
+      "asset_id": "pron-8aa09e041e263363",
+      "entry_id": "puyuma-audio-f720172af555",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_a000f6fe84255bf4",
+      "asset_id": "pron-57581ceacc1924e2",
+      "entry_id": "puyuma-audio-40cee4a7b4a2",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_facd6b0b00baf84b",
+      "asset_id": "pron-6f0a39612fc84e8a",
+      "entry_id": "puyuma-audio-f3b81e5909b4",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_73c6e20c77d4d272",
+      "asset_id": "pron-17fedfd8e064636e",
+      "entry_id": "puyuma-audio-c1f05d8abee4",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_025bc05bd2fc280f",
+      "asset_id": "pron-7200aceff7e59c94",
+      "entry_id": "puyuma-audio-c05c1fa52c34",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_e887568d99c3d6f1",
+      "asset_id": "pron-8bfd30f5f3a23b75",
+      "entry_id": "puyuma-audio-977400f1160f",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_0cae41824f46fb81",
+      "asset_id": "pron-71472a3696e57c08",
+      "entry_id": "puyuma-audio-6b36c9270538",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_aa6fcbcdca1453a2",
+      "asset_id": "pron-25e487f93475c5c5",
+      "entry_id": "puyuma-audio-15e8eef74423",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_b28fb84142e02648",
+      "asset_id": "pron-21c8cba544d3b592",
+      "entry_id": "puyuma-audio-c460026f7431",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_71db0c1bfa75cba5",
+      "asset_id": "pron-ebb7306ecd1de1f8",
+      "entry_id": "puyuma-audio-354ee90bdf89",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_48e85b0bd4f9d3de",
+      "asset_id": "pron-378e05e01531f74a",
+      "entry_id": "puyuma-audio-352af7943610",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_ca69a6f9f28a790a",
+      "asset_id": "pron-c3714607aa21ff67",
+      "entry_id": "puyuma-audio-7fbfd8c8045d",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_ab4e1311e229d7c7",
+      "asset_id": "pron-a12260f942a48c41",
+      "entry_id": "puyuma-audio-0aa5dc53e189",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_1898664292860d7d",
+      "asset_id": "pron-3841de352440315d",
+      "entry_id": "puyuma-audio-75abd617e2fb",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_31cc0a1ee1db2cd2",
+      "asset_id": "pron-8178165d471633cc",
+      "entry_id": "puyuma-audio-9f9593e40ba5",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_3d34f8dbd878b64b",
+      "asset_id": "pron-403bb09d4b2825cc",
+      "entry_id": "puyuma-audio-7dd92ece8811",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_faf1c9ca519a3df2",
+      "asset_id": "pron-eea5e0732184f80a",
+      "entry_id": "puyuma-audio-2c6e26ed604f",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_98e5b19e58919d44",
+      "asset_id": "pron-d807e787c3307ac0",
+      "entry_id": "puyuma-audio-03d14c86fc63",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_43233123ff6f9d88",
+      "asset_id": "pron-ef1947b83cb69206",
+      "entry_id": "puyuma-audio-7701493ee98e",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_95ce33006c9b5158",
+      "asset_id": "pron-61ea7ade9379f18e",
+      "entry_id": "puyuma-audio-860909877825",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_3ef18f5afabd8c45",
+      "asset_id": "pron-f393fe3ffedb6c47",
+      "entry_id": "puyuma-audio-edee4dfae2bd",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_1db4610679d954f0",
+      "asset_id": "pron-80383c9a92118dc3",
+      "entry_id": "puyuma-audio-210031b89cc3",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_9fa5e1a0c25c86b4",
+      "asset_id": "pron-0a875e842d68062f",
+      "entry_id": "puyuma-audio-f1d5aade55f4",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_c423fba5261404b1",
+      "asset_id": "pron-65ab96ddc1c78fa8",
+      "entry_id": "puyuma-audio-fbd737e6a151",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_87dfc3af1df3c6c6",
+      "asset_id": "pron-6f52bca48773dd08",
+      "entry_id": "puyuma-audio-db1c8c2cc14d",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_7727c9d2b75db35b",
+      "asset_id": "pron-d47c2cdd7832eae8",
+      "entry_id": "puyuma-audio-467fd1dc336b",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_360d401717f1e32d",
+      "asset_id": "pron-e6d7aa3a3d433e95",
+      "entry_id": "puyuma-audio-7b1988cb4900",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_cad6f18b0deee807",
+      "asset_id": "pron-c1320a917e92fac2",
+      "entry_id": "puyuma-audio-2f0f94868666",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_29cbd4f489da2422",
+      "asset_id": "pron-9a68ab5439d1e642",
+      "entry_id": "puyuma-audio-d0e05f7b87fb",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_76bb9ff25b8aa311",
+      "asset_id": "pron-ef5c1a33ad1a3604",
+      "entry_id": "puyuma-audio-1800952f0787",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_b2db73b9f9db95ff",
+      "asset_id": "pron-ed773dc335203902",
+      "entry_id": "puyuma-audio-dadf0ecf1ef9",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_c39070462772f893",
+      "asset_id": "pron-d4f2ef9b2f12374d",
+      "entry_id": "puyuma-audio-b682d7bcb672",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_05fef85112e2c2d1",
+      "asset_id": "pron-a4b17dd587707751",
+      "entry_id": "puyuma-audio-c30fc2b1df19",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_cc238f5492bdc0b9",
+      "asset_id": "pron-c4dcc7a6e12b5161",
+      "entry_id": "puyuma-audio-3cdd1df18621",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_beb7ee39bbfb72d3",
+      "asset_id": "pron-1b15de953f78edbd",
+      "entry_id": "puyuma-audio-01e26c7a1e43",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_f31de65460f05a87",
+      "asset_id": "pron-efd41d25577e179c",
+      "entry_id": "puyuma-audio-9e7e1ddf559f",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_e460e8ecef29af9d",
+      "asset_id": "pron-53498e15f18c91a4",
+      "entry_id": "puyuma-audio-4ae65b5d013c",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    },
+    {
+      "task_id": "pron_review_e57fc965f2d74a84",
+      "asset_id": "pron-ae3f50c7e3909686",
+      "entry_id": "puyuma-audio-eccf97d43a0f",
+      "priority": "normal",
+      "review_type": "native_speaker_public_learning_quality",
+      "status": "queued",
+      "reason_zh": "真人來源音檔可公開播放，但若作為正式教材，仍需族語教師/族人確認發音、斷句與文字對應。",
+      "checks": [
+        "audio_matches_text",
+        "dialect_label_correct",
+        "source_phon_or_ipa_reviewed",
+        "license_scope_confirmed",
+        "no_sensitive_or_restricted_content"
+      ],
+      "created_from": "puyuma_pronunciation_catalog_v16"
+    }
+  ]
+}

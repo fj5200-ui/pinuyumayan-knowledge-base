@@ -1,0 +1,797 @@
+{
+  "version": "v14",
+  "count": 57,
+  "tasks": [
+    {
+      "id": "v14_community_profile_01",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "puyuma",
+      "title": "完善南王頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_02",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "katratripulr",
+      "title": "完善知本頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_03",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "kasavakan",
+      "title": "完善建和頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_04",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "likavung",
+      "title": "完善利嘉頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_05",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "ulivelivek",
+      "title": "完善初鹿頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_06",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "tamalakaw",
+      "title": "完善泰安頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_07",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "pinaski",
+      "title": "完善下賓朗頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_08",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "danadanaw",
+      "title": "完善龍過脈頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_09",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "rarangus",
+      "title": "完善班鳩頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_community_profile_10",
+      "type": "content_enrichment",
+      "target": "community_page",
+      "entity_key": "papulu",
+      "title": "完善寶桑頁面公開摘要與相關知識區塊",
+      "required_inputs": [
+        "community authority record",
+        "verified facts",
+        "source citations"
+      ],
+      "public_release_condition": "approved sources only; no private family or ritual details",
+      "status": "ready_for_editor"
+    },
+    {
+      "id": "v14_ritual_summary_01",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "women_weeding_completion",
+      "title": "完善婦女除草完工慶公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_02",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "ancestral_landing_foundation_rite",
+      "title": "完善祖先登陸與發祥地祭祖公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_03",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "millet_harvest_rite",
+      "title": "完善小米收穫祭公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_04",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "annual_festival",
+      "title": "完善年祭公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_05",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "mangamangayaw_youth_rite",
+      "title": "完善少年年祭公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_06",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "mangayaw_great_hunting_rite",
+      "title": "完善大獵祭公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_ritual_summary_07",
+      "type": "content_enrichment",
+      "target": "ritual_page",
+      "entity_key": "united_annual_festival",
+      "title": "完善聯合年祭公開摘要與注意事項",
+      "required_inputs": [
+        "verified public source",
+        "sensitivity review"
+      ],
+      "public_release_condition": "public summary only; no procedural instruction or restricted knowledge",
+      "status": "ready_for_reviewer"
+    },
+    {
+      "id": "v14_fact_card_001",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "profile_plain_crossroads",
+      "title": "profile_plain_crossroads",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_002",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "profile_age_house_core",
+      "title": "profile_age_house_core",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_003",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "profile_annual_rituals_overview",
+      "title": "profile_annual_rituals_overview",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_004",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "name_puyuma_pinuyumayan_distinction",
+      "title": "name_puyuma_pinuyumayan_distinction",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_005",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "origin_bamboo_stone",
+      "title": "origin_bamboo_stone",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_006",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "settlement_core_area",
+      "title": "settlement_core_area",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_007",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "community_list_public",
+      "title": "community_list_public",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_008",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "agriculture_millet_to_rice",
+      "title": "agriculture_millet_to_rice",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_009",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "modern_economic_crops",
+      "title": "modern_economic_crops",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_010",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "traditional_food_staples",
+      "title": "traditional_food_staples",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_011",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "festival_food_shell_ginger",
+      "title": "festival_food_shell_ginger",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_012",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "betel_nut_role",
+      "title": "betel_nut_role",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_013",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "clothing_colors_patterns",
+      "title": "clothing_colors_patterns",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_014",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "clothing_social_identity",
+      "title": "clothing_social_identity",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_015",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "wreath_social_meaning",
+      "title": "wreath_social_meaning",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_016",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "weaving_bamboo_rattan",
+      "title": "weaving_bamboo_rattan",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_017",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "shell_ginger_mat",
+      "title": "shell_ginger_mat",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_018",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "architecture_categories",
+      "title": "architecture_categories",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_019",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "architecture_public_private",
+      "title": "architecture_public_private",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_020",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "house_structure",
+      "title": "house_structure",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_021",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "mens_house_training_age",
+      "title": "mens_house_training_age",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_022",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "mens_house_two_types",
+      "title": "mens_house_two_types",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_023",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "ancestral_house_function",
+      "title": "ancestral_house_function",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_024",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "music_poetic_narrative",
+      "title": "music_poetic_narrative",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_025",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "music_function_categories",
+      "title": "music_function_categories",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_026",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "music_public_figures",
+      "title": "music_public_figures",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_027",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "dance_role_difference",
+      "title": "dance_role_difference",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_028",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "shield_dance_spiritual_step",
+      "title": "shield_dance_spiritual_step",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_029",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "language_regional_variation",
+      "title": "language_regional_variation",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_030",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "kinship_matrilineal_summary",
+      "title": "kinship_matrilineal_summary",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_031",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "kinship_inheritance_marriage",
+      "title": "kinship_inheritance_marriage",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_032",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "leadership_ayawan_rahan",
+      "title": "leadership_ayawan_rahan",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_033",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "shaman_role_public_summary",
+      "title": "shaman_role_public_summary",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_034",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "age_grade_training_stages",
+      "title": "age_grade_training_stages",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_035",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "revitalization_1991",
+      "title": "revitalization_1991",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_036",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "spiritual_biruwa",
+      "title": "spiritual_biruwa",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_037",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "divination_public_summary",
+      "title": "divination_public_summary",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_038",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "ritual_categories_agriculture_life",
+      "title": "ritual_categories_agriculture_life",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_039",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "ritual_calendar_public",
+      "title": "ritual_calendar_public",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    },
+    {
+      "id": "v14_fact_card_040",
+      "type": "fact_to_content_card",
+      "target": "knowledge_card",
+      "entity_key": "women_weeding_detail_public",
+      "title": "women_weeding_detail_public",
+      "required_inputs": [
+        "source_id",
+        "citation",
+        "sensitivity label"
+      ],
+      "public_release_condition": "verified_public or approved public_summary_only",
+      "status": "queued"
+    }
+  ]
+}

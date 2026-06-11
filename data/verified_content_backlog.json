@@ -1,0 +1,235 @@
+{
+  "version": "2026-06-11-verified",
+  "purpose": "給前台/CMS/AI 產生器的真實內容題庫；每一題都綁定 verified fact ids。",
+  "items": [
+    {
+      "sort": 1,
+      "id": "home_what_is_pinuyumayan",
+      "title_zh": "首頁：什麼是卑南族 / Pinuyumayan？",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "profile_plain_crossroads",
+        "name_puyuma_pinuyumayan_distinction",
+        "settlement_core_area"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 2,
+      "id": "home_ten_communities_intro",
+      "title_zh": "首頁：卑南族十社入口導覽",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "community_list_public",
+        "origin_bamboo_stone"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 3,
+      "id": "module_ritual_calendar",
+      "title_zh": "祭儀時間軸：3月、4月、7月、12月",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "ritual_calendar_public",
+        "ritual_categories_agriculture_life"
+      ],
+      "sensitivity": "medium",
+      "public_rendering_rule": "summary_only",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 4,
+      "id": "module_age_grade",
+      "title_zh": "年齡階級與會所制度專題",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "profile_age_house_core",
+        "mens_house_training_age",
+        "age_grade_training_stages"
+      ],
+      "sensitivity": "medium",
+      "public_rendering_rule": "summary_only",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 5,
+      "id": "module_architecture",
+      "title_zh": "傳統建築：住屋、會所、祖靈屋",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "architecture_categories",
+        "house_structure",
+        "mens_house_two_types",
+        "ancestral_house_function"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 6,
+      "id": "module_food",
+      "title_zh": "飲食與小米文化",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "traditional_food_staples",
+        "festival_food_shell_ginger",
+        "betel_nut_role"
+      ],
+      "sensitivity": "medium",
+      "public_rendering_rule": "summary_only",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 7,
+      "id": "module_clothing",
+      "title_zh": "服飾色彩、年齡階級與花環",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "clothing_colors_patterns",
+        "clothing_social_identity",
+        "wreath_social_meaning"
+      ],
+      "sensitivity": "medium",
+      "public_rendering_rule": "summary_only",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 8,
+      "id": "module_craft",
+      "title_zh": "藤竹編與月桃葉工藝",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "weaving_bamboo_rattan",
+        "shell_ginger_mat"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 9,
+      "id": "module_music",
+      "title_zh": "歌謠與現代音樂人物",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "music_poetic_narrative",
+        "music_function_categories",
+        "music_public_figures"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 10,
+      "id": "module_dance",
+      "title_zh": "舞蹈與社會角色",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "dance_role_difference",
+        "shield_dance_spiritual_step"
+      ],
+      "sensitivity": "medium",
+      "public_rendering_rule": "summary_only",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 11,
+      "id": "module_language_variation",
+      "title_zh": "卑南語分支與部落差異",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "language_regional_variation",
+        "formosanbank_puyuma_dialects"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    },
+    {
+      "sort": 12,
+      "id": "module_kinship_review",
+      "title_zh": "母系親屬與家屋觀念",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "kinship_matrilineal_summary",
+        "kinship_inheritance_marriage"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 13,
+      "id": "module_leadership",
+      "title_zh": "ayawan、rahan、na temaramaw 角色辭典",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "leadership_ayawan_rahan",
+        "shaman_role_public_summary"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 14,
+      "id": "module_belief_public",
+      "title_zh": "神靈、祖靈與傳統信仰公開摘要",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "spiritual_biruwa",
+        "divination_public_summary"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 15,
+      "id": "module_harvest_rite",
+      "title_zh": "小米收穫祭公開介紹",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "millet_harvest_public",
+        "swing_millet_symbolism"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 16,
+      "id": "module_annual_festival",
+      "title_zh": "年祭、猴祭、大獵祭公開介紹",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "annual_festival_three_weeks",
+        "monkey_rite_symbolic_modern",
+        "hunting_rite_modern",
+        "joint_annual_festival_1982"
+      ],
+      "sensitivity": "high",
+      "public_rendering_rule": "summary_only",
+      "required_review": "community_review_before_publish"
+    },
+    {
+      "sort": 17,
+      "id": "module_revitalization",
+      "title_zh": "1990年代後文化復振脈絡",
+      "target_module": "文化內容系統",
+      "source_fact_ids": [
+        "revitalization_1991"
+      ],
+      "sensitivity": "low",
+      "public_rendering_rule": "public_article_allowed",
+      "required_review": "editor_review"
+    }
+  ]
+}

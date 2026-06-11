@@ -1,0 +1,26 @@
+{
+  "version": "v11",
+  "default_public_version": "2026-06-11",
+  "header": "x-pinuyumayan-api-version",
+  "supported_versions": [
+    {
+      "version": "2026-06-11",
+      "status": "stable",
+      "routes": [
+        "/api/public/knowledge/*",
+        "/api/internal/main-site/knowledge/*"
+      ]
+    }
+  ],
+  "deprecation_policy": {
+    "minimum_notice_days": 90,
+    "response_header": "x-pinuyumayan-api-deprecation",
+    "breaking_changes_require_new_version": true
+  },
+  "response_headers": [
+    "x-request-id",
+    "etag",
+    "cache-control",
+    "x-pinuyumayan-api-version"
+  ]
+}

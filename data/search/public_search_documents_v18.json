@@ -1,0 +1,558 @@
+{
+  "version": "v18",
+  "generated_at": "2026-06-11T18:45:00+08:00",
+  "description_zh": "v18 新增 source-grounded search documents；fingerprint 用於避免與既有內容重複。",
+  "counts": {
+    "documents": 27
+  },
+  "documents": [
+    {
+      "id": "v18_search_ad1fd8fdbfe4",
+      "slug": "source-grounded/族群簡介/kg_profile_plain_contact",
+      "title_zh": "族群簡介｜卑南族長期定居於多族群交會的平原地帶，與外界…",
+      "summary_zh": "卑南族長期定居於多族群交會的平原地帶，與外界接觸很早，但仍維持自身傳統、文化與生活方式。",
+      "body_zh": "卑南族長期定居於多族群交會的平原地帶，與外界接觸很早，但仍維持自身傳統、文化與生活方式。",
+      "keywords": [
+        "卑南族",
+        "平原",
+        "文化維持",
+        "族群簡介"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_17cf0e52bbb67156",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_8d0c1eaf69cd",
+      "slug": "source-grounded/社會制度/kg_social_age_house",
+      "title_zh": "社會制度｜卑南族以嚴謹的年齡階級與會所制度聞名，這是理…",
+      "summary_zh": "卑南族以嚴謹的年齡階級與會所制度聞名，這是理解公共生活、教育與社會角色的重要線索。",
+      "body_zh": "卑南族以嚴謹的年齡階級與會所制度聞名，這是理解公共生活、教育與社會角色的重要線索。",
+      "keywords": [
+        "年齡階級",
+        "會所",
+        "公共生活",
+        "教育"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_31b3fbf76b541f56",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_b8bf57860839",
+      "slug": "source-grounded/歲時祭儀/kg_ritual_overview_public",
+      "title_zh": "歲時祭儀｜公開資料可摘要說明卑南族年度祭儀包含小米除草…",
+      "summary_zh": "公開資料可摘要說明卑南族年度祭儀包含小米除草完工、小米收穫、少年年祭與大獵祭等；涉及祭儀細節時必須保留摘要層級。",
+      "body_zh": "公開資料可摘要說明卑南族年度祭儀包含小米除草完工、小米收穫、少年年祭與大獵祭等；涉及祭儀細節時必須保留摘要層級。",
+      "keywords": [
+        "祭儀",
+        "小米",
+        "少年年祭",
+        "大獵祭",
+        "公開摘要"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9f0a42eef462fe30",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_71a0b1b166fe",
+      "slug": "source-grounded/族稱與命名/kg_name_pinuyumayan",
+      "title_zh": "族稱與命名｜Pinuyumayan 作為族群稱呼，與南王…",
+      "summary_zh": "Pinuyumayan 作為族群稱呼，與南王部落名稱來源相關；平台應避免把 Puyuma 無脈絡地代稱整個族群。",
+      "body_zh": "Pinuyumayan 作為族群稱呼，與南王部落名稱來源相關；平台應避免把 Puyuma 無脈絡地代稱整個族群。",
+      "keywords": [
+        "Pinuyumayan",
+        "Puyuma",
+        "南王",
+        "族稱"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f94736a14d5e087a",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_94ddbe780002",
+      "slug": "source-grounded/起源系統/kg_origin_systems_public",
+      "title_zh": "起源系統｜公開資料將卑南族起源敘事概括為竹生與石生兩個…",
+      "summary_zh": "公開資料將卑南族起源敘事概括為竹生與石生兩個來源系統；主站文章只可做公開摘要，不生成神聖敘事細節。",
+      "body_zh": "公開資料將卑南族起源敘事概括為竹生與石生兩個來源系統；主站文章只可做公開摘要，不生成神聖敘事細節。",
+      "keywords": [
+        "竹生",
+        "石生",
+        "起源",
+        "公開摘要"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8e30dab2bbd9aead",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_e948c8a46551",
+      "slug": "source-grounded/分布/kg_distribution_taitung_center",
+      "title_zh": "分布｜今日臺東市與卑南鄉的臺東平原地帶，是卑南族的…",
+      "summary_zh": "今日臺東市與卑南鄉的臺東平原地帶，是卑南族的重要中心。",
+      "body_zh": "今日臺東市與卑南鄉的臺東平原地帶，是卑南族的重要中心。",
+      "keywords": [
+        "臺東市",
+        "卑南鄉",
+        "臺東平原",
+        "分布"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_01d05646c8dbdb42",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_09fad4ef9e3d",
+      "slug": "source-grounded/卑南族十社/kg_major_communities_list",
+      "title_zh": "卑南族十社｜公開資料列出知本、建和、南王、寶桑、利嘉、泰…",
+      "summary_zh": "公開資料列出知本、建和、南王、寶桑、利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等主要部落；平台以十社資料卡維護名稱與別名。",
+      "body_zh": "公開資料列出知本、建和、南王、寶桑、利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等主要部落；平台以十社資料卡維護名稱與別名。",
+      "keywords": [
+        "十社",
+        "知本",
+        "建和",
+        "南王",
+        "寶桑",
+        "利嘉",
+        "泰安",
+        "賓朗",
+        "初鹿",
+        "龍過脈"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ad845387d3825a53",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_cb14be46dd66",
+      "slug": "source-grounded/飲食/kg_food_staples_public",
+      "title_zh": "飲食｜公開資料可摘要說明卑南族傳統主食包含小米、旱…",
+      "summary_zh": "公開資料可摘要說明卑南族傳統主食包含小米、旱稻、甘藷與芋頭，狩獵、魚類與貝類也是蛋白質來源。",
+      "body_zh": "公開資料可摘要說明卑南族傳統主食包含小米、旱稻、甘藷與芋頭，狩獵、魚類與貝類也是蛋白質來源。",
+      "keywords": [
+        "小米",
+        "旱稻",
+        "甘藷",
+        "芋頭",
+        "飲食"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fadb9b8481c40439",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_db5a5aa6301a",
+      "slug": "source-grounded/服飾/kg_clothing_colors_identity",
+      "title_zh": "服飾｜卑南族傳統服飾常見紅、黃、綠等色彩，並有黑白…",
+      "summary_zh": "卑南族傳統服飾常見紅、黃、綠等色彩，並有黑白菱形與十字繡等裝飾；服飾也可反映性別與年齡群體。",
+      "body_zh": "卑南族傳統服飾常見紅、黃、綠等色彩，並有黑白菱形與十字繡等裝飾；服飾也可反映性別與年齡群體。",
+      "keywords": [
+        "服飾",
+        "紅黃綠",
+        "菱形",
+        "十字繡",
+        "年齡群體"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0e5eeb3e7b762219",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_48c44c104de6",
+      "slug": "source-grounded/服飾與社會關係/kg_wreath_public_summary",
+      "title_zh": "服飾與社會關係｜花環在祭儀與生命階段中具有辨識與祝福意義；主…",
+      "summary_zh": "花環在祭儀與生命階段中具有辨識與祝福意義；主站文章可摘要其社會關係意涵，不延伸臆造規範。",
+      "body_zh": "花環在祭儀與生命階段中具有辨識與祝福意義；主站文章可摘要其社會關係意涵，不延伸臆造規範。",
+      "keywords": [
+        "花環",
+        "祭儀",
+        "生命階段",
+        "社會關係"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6b87a7783f544136",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_6081c146a8b4",
+      "slug": "source-grounded/工藝/kg_weaving_public_tools",
+      "title_zh": "工藝｜公開資料說明卑南族善用藤、竹與月桃葉等材料製…",
+      "summary_zh": "公開資料說明卑南族善用藤、竹與月桃葉等材料製作日常器具，如籃、袋、背籃與蓆。",
+      "body_zh": "公開資料說明卑南族善用藤、竹與月桃葉等材料製作日常器具，如籃、袋、背籃與蓆。",
+      "keywords": [
+        "藤編",
+        "竹器",
+        "月桃",
+        "工藝"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7019f03f5c76a081",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_92bc7bad4248",
+      "slug": "source-grounded/建築/kg_architecture_types",
+      "title_zh": "建築｜卑南族傳統建築包含家屋、會所與祖靈相關祭祀空…",
+      "summary_zh": "卑南族傳統建築包含家屋、會所與祖靈相關祭祀空間；平台只提供公開摘要，不輸出禁忌空間細節。",
+      "body_zh": "卑南族傳統建築包含家屋、會所與祖靈相關祭祀空間；平台只提供公開摘要，不輸出禁忌空間細節。",
+      "keywords": [
+        "建築",
+        "家屋",
+        "會所",
+        "祭祀空間"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1cc930546430ee34",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_d9f256c89cd5",
+      "slug": "source-grounded/會所/kg_assembly_dakuvan_palakuan",
+      "title_zh": "會所｜公開資料區分少年會所 Dakuvan 與成年…",
+      "summary_zh": "公開資料區分少年會所 Dakuvan 與成年會所 Palakuan，並連結年齡階級教育與公共生活。",
+      "body_zh": "公開資料區分少年會所 Dakuvan 與成年會所 Palakuan，並連結年齡階級教育與公共生活。",
+      "keywords": [
+        "Dakuvan",
+        "Palakuan",
+        "少年會所",
+        "成年會所"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f3566c3bc451b18d",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_99c2983e39bb",
+      "slug": "source-grounded/音樂/kg_music_song_public",
+      "title_zh": "音樂｜卑南族音樂具有清楚節奏與敘事性，儀式歌、工作…",
+      "summary_zh": "卑南族音樂具有清楚節奏與敘事性，儀式歌、工作歌與聚會歌等依場合與社會角色有所區分。",
+      "body_zh": "卑南族音樂具有清楚節奏與敘事性，儀式歌、工作歌與聚會歌等依場合與社會角色有所區分。",
+      "keywords": [
+        "音樂",
+        "儀式歌",
+        "工作歌",
+        "聚會歌"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_98cdc3b00ce9defc",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_a318d56bff41",
+      "slug": "source-grounded/音樂與現代文化/kg_modern_music_influence",
+      "title_zh": "音樂與現代文化｜公開資料指出卑南族音樂在現代仍活躍，並有多位…",
+      "summary_zh": "公開資料指出卑南族音樂在現代仍活躍，並有多位出身社群的音樂人對流行音樂產生影響。",
+      "body_zh": "公開資料指出卑南族音樂在現代仍活躍，並有多位出身社群的音樂人對流行音樂產生影響。",
+      "keywords": [
+        "音樂人",
+        "現代音樂",
+        "流行音樂"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5c6ef65e1f79c1a2",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_ecfdf3e92ff2",
+      "slug": "source-grounded/舞蹈/kg_dance_public_roles",
+      "title_zh": "舞蹈｜卑南族舞蹈與性別、年齡與祭儀場域相關；主站文…",
+      "summary_zh": "卑南族舞蹈與性別、年齡與祭儀場域相關；主站文章只可摘要公開文化意義，不生成儀式操作步驟。",
+      "body_zh": "卑南族舞蹈與性別、年齡與祭儀場域相關；主站文章只可摘要公開文化意義，不生成儀式操作步驟。",
+      "keywords": [
+        "舞蹈",
+        "性別",
+        "年齡",
+        "祭儀"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ef6ef6dcde37f208",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_22518810ab18",
+      "slug": "source-grounded/族語/kg_language_variation",
+      "title_zh": "族語｜卑南語因部落與地理位置而有差異，知本、北部社…",
+      "summary_zh": "卑南語因部落與地理位置而有差異，知本、北部社群與漢人接觸語境皆會影響發音與使用。",
+      "body_zh": "卑南語因部落與地理位置而有差異，知本、北部社群與漢人接觸語境皆會影響發音與使用。",
+      "keywords": [
+        "卑南語",
+        "方言",
+        "知本",
+        "發音"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4b78354023476c54",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_f82f77ba6f6e",
+      "slug": "source-grounded/社會角色/kg_social_roles_public",
+      "title_zh": "社會角色｜公開資料描述政治領袖、祭司與巫者等角色分工，…",
+      "summary_zh": "公開資料描述政治領袖、祭司與巫者等角色分工，分別維繫公共事務、祭儀知識與照護需求。",
+      "body_zh": "公開資料描述政治領袖、祭司與巫者等角色分工，分別維繫公共事務、祭儀知識與照護需求。",
+      "keywords": [
+        "領袖",
+        "祭司",
+        "巫者",
+        "社會角色"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_cb02a43dbb2e11fa",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_b0618f6382bd",
+      "slug": "source-grounded/親屬制度/kg_matrilineal_public",
+      "title_zh": "親屬制度｜公開資料指出卑南族傳統具有母系與從妻居特色，…",
+      "summary_zh": "公開資料指出卑南族傳統具有母系與從妻居特色，家名與財產繼承可與長女相關；當代實況需以部落與家庭脈絡審慎描述。",
+      "body_zh": "公開資料指出卑南族傳統具有母系與從妻居特色，家名與財產繼承可與長女相關；當代實況需以部落與家庭脈絡審慎描述。",
+      "keywords": [
+        "母系",
+        "從妻居",
+        "繼承",
+        "親屬"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f72b4eff112f0069",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_8d3ac390379c",
+      "slug": "source-grounded/年齡階級教育/kg_youth_training_public",
+      "title_zh": "年齡階級教育｜公開資料說明少年約十二至十三歲進入少年會所接…",
+      "summary_zh": "公開資料說明少年約十二至十三歲進入少年會所接受體能與知識訓練，之後再進入成年會所接受進一步技能訓練。",
+      "body_zh": "公開資料說明少年約十二至十三歲進入少年會所接受體能與知識訓練，之後再進入成年會所接受進一步技能訓練。",
+      "keywords": [
+        "少年會所",
+        "成年會所",
+        "訓練",
+        "教育"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_188b9642cef45fcc",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_58ff88f332ab",
+      "slug": "source-grounded/歲時祭儀月曆/kg_ritual_calendar_public",
+      "title_zh": "歲時祭儀月曆｜公開資料將三月、四月、七月與十二月分別連結到…",
+      "summary_zh": "公開資料將三月、四月、七月與十二月分別連結到除草完工、祭祖、小米收穫與年祭等年度節奏；主站可做月曆摘要。",
+      "body_zh": "公開資料將三月、四月、七月與十二月分別連結到除草完工、祭祖、小米收穫與年祭等年度節奏；主站可做月曆摘要。",
+      "keywords": [
+        "三月",
+        "四月",
+        "七月",
+        "十二月",
+        "祭儀月曆"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e22f56042dbbe43e",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_42965a65ee78",
+      "slug": "source-grounded/小米收穫祭/kg_masarut_public_summary",
+      "title_zh": "小米收穫祭｜Masarut 可作為小米收穫祭公開摘要主題…",
+      "summary_zh": "Masarut 可作為小米收穫祭公開摘要主題，文章應聚焦農耕節奏與文化活動，不生成祭儀程序教學。",
+      "body_zh": "Masarut 可作為小米收穫祭公開摘要主題，文章應聚焦農耕節奏與文化活動，不生成祭儀程序教學。",
+      "keywords": [
+        "Masarut",
+        "小米收穫祭",
+        "農耕",
+        "鞦韆"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_48afe9c8c762d006",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_ccdda0cbfa2a",
+      "slug": "source-grounded/年祭/kg_mangayaw_public_summary",
+      "title_zh": "年祭｜Mangayaw 是年末到歲初的重要年度活動…",
+      "summary_zh": "Mangayaw 是年末到歲初的重要年度活動，公開摘要可說明其包含少年年祭與大獵祭脈絡，但不得改寫為操作指南。",
+      "body_zh": "Mangayaw 是年末到歲初的重要年度活動，公開摘要可說明其包含少年年祭與大獵祭脈絡，但不得改寫為操作指南。",
+      "keywords": [
+        "Mangayaw",
+        "年祭",
+        "少年年祭",
+        "大獵祭"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3bc527b455a6335a",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_7518e6848d75",
+      "slug": "source-grounded/少年年祭/kg_vasivas_societal_change",
+      "title_zh": "少年年祭｜公開資料指出少年年祭中過去與猴相關的實作，在…",
+      "summary_zh": "公開資料指出少年年祭中過去與猴相關的實作，在社會變遷後已以草猴取代真猴；主站應避免刺激性或獵奇描寫。",
+      "body_zh": "公開資料指出少年年祭中過去與猴相關的實作，在社會變遷後已以草猴取代真猴；主站應避免刺激性或獵奇描寫。",
+      "keywords": [
+        "Vasivas",
+        "少年年祭",
+        "草猴",
+        "社會變遷"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8436fa406a819021",
+      "search_boost": 0.8
+    },
+    {
+      "id": "v18_search_ba900a423899",
+      "slug": "source-grounded/聯合年祭/kg_joint_annual_ritual",
+      "title_zh": "聯合年祭｜公開資料指出聯合年祭自 1982 年開始發展…",
+      "summary_zh": "公開資料指出聯合年祭自 1982 年開始發展，時間由部落會議討論，並由不同部落輪流舉辦，具有族群認同連結意義。",
+      "body_zh": "公開資料指出聯合年祭自 1982 年開始發展，時間由部落會議討論，並由不同部落輪流舉辦，具有族群認同連結意義。",
+      "keywords": [
+        "聯合年祭",
+        "1982",
+        "輪流舉辦",
+        "族群認同"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_864a2af81edff186",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_c5736bc0214e",
+      "slug": "source-grounded/人口統計/kg_population_stats_link",
+      "title_zh": "人口統計｜人口數屬於會變動資料，主站文章只能引用官方統…",
+      "summary_zh": "人口數屬於會變動資料，主站文章只能引用官方統計頁與資料表，不可把舊數字當成最新人口。",
+      "body_zh": "人口數屬於會變動資料，主站文章只能引用官方統計頁與資料表，不可把舊數字當成最新人口。",
+      "keywords": [
+        "人口統計",
+        "官方統計",
+        "資料表"
+      ],
+      "source_ids": [
+        "cip_population_stats_202406_page"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2a8cb7034511a0b2",
+      "search_boost": 1.2
+    },
+    {
+      "id": "v18_search_75ca6c7a4011",
+      "slug": "source-grounded/族語發音/kg_audio_pronunciation_real_source",
+      "title_zh": "族語發音｜族語發音公開播放應優先使用具來源與授權紀錄的…",
+      "summary_zh": "族語發音公開播放應優先使用具來源與授權紀錄的真人音檔；未經審核的合成 TTS 不得冒充真人發音。",
+      "body_zh": "族語發音公開播放應優先使用具來源與授權紀錄的真人音檔；未經審核的合成 TTS 不得冒充真人發音。",
+      "keywords": [
+        "真人音檔",
+        "TTS",
+        "族語",
+        "發音"
+      ],
+      "source_ids": [
+        "formosanbank_puyuma_audio_public"
+      ],
+      "release_channel": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e5758168eb7c9348",
+      "search_boost": 1.2
+    }
+  ]
+}

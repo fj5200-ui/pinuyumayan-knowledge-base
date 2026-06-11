@@ -1,0 +1,30 @@
+{
+  "version": "3.0.0",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "normalization_steps": [
+    "Unicode NFC normalization",
+    "trim whitespace",
+    "normalize curly quotes/apostrophes only for comparison; preserve original text in display field",
+    "collapse repeated whitespace",
+    "lowercase ASCII letters for duplicate key only",
+    "strip trailing sentence punctuation for duplicate candidate matching, but preserve original text"
+  ],
+  "duplicate_key_fields": [
+    "dialect_code",
+    "normalized_puyuma_text",
+    "normalized_zh_tw",
+    "source_audio_url"
+  ],
+  "merge_policy": {
+    "same_text_same_audio": "merge source paths and keep earliest stable entry_id",
+    "same_text_different_audio": "keep separate audio variants but link duplicate_group_id",
+    "same_zh_tw_different_puyuma": "keep separate; likely dialect/translation variant",
+    "xml_and_csv_same_audio": "prefer XML because it may include source PHON; preserve CSV source as additional_source_path"
+  },
+  "review_flags": [
+    "same audio URL attached to different text",
+    "source_phon exists but IPA draft differs heavily",
+    "audio URL missing for audio-learning category",
+    "possible personal name or culturally sensitive phrase"
+  ]
+}

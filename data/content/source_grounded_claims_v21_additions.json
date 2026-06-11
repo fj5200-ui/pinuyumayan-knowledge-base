@@ -1,0 +1,1182 @@
+{
+  "version": "v21",
+  "generated_at": "2026-06-11T15:11:19+00:00",
+  "description_zh": "v21 新增可追溯真實知識 claims；已排除卑南文化遺址／卑南考古遺址作為卑南族文化知識來源。",
+  "count": 50,
+  "claims": [
+    {
+      "claim_id": "kg21_intro_age_hall_core",
+      "category": "族群簡介",
+      "statement_zh": "原民會英文頁將年齡階級組織與會所制度列為卑南族維持傳統文化的重要特徵。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L113-L115",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_59e73fb7f7f17c73",
+      "keywords": [
+        "年齡階級",
+        "會所制度",
+        "族群簡介"
+      ],
+      "dedupe_key": "claim_59e73fb7f7f17c73",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_rituals_existing_list",
+      "category": "歲時祭儀",
+      "statement_zh": "原民會英文頁列出現存卑南族祭儀包含 Mugamut、Masarut、Vasivas 與 Mangayau，其中 Mangayau／年祭規模最大。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L115-L115",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c4c1c999d44cb7db",
+      "keywords": [
+        "Mugamut",
+        "Masarut",
+        "Vasivas",
+        "Mangayau",
+        "年祭"
+      ],
+      "dedupe_key": "claim_c4c1c999d44cb7db",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_name_distinguish_group_vs_village",
+      "category": "族稱治理",
+      "statement_zh": "原民會英文頁說明 Pinuyumayan 一詞源自南王部落名稱，並提到為區分族群稱呼與特定部落，部分族人建議使用 Pinuyumayan 作為族群名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L118-L118",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c11e5770c16220b1",
+      "keywords": [
+        "Pinuyumayan",
+        "Puyuma",
+        "南王",
+        "族稱治理"
+      ],
+      "dedupe_key": "claim_c11e5770c16220b1",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_origin_narratives_two_sources",
+      "category": "歷史敘事邊界",
+      "statement_zh": "原民會英文頁以公開摘要列出卑南族起源敘事有「竹生」與「石生」兩種來源，但平台不得將其擴寫成未經授權的神話細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L119-L119",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e0d1986218a7d6fc",
+      "keywords": [
+        "竹生",
+        "石生",
+        "起源敘事"
+      ],
+      "dedupe_key": "claim_e0d1986218a7d6fc",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_pinadray_period_public_note",
+      "category": "歷史敘事邊界",
+      "statement_zh": "原民會英文頁提到卑南族在 17 世紀以前曾是具有影響力的族群，並在 Pinadray 時期達到高峰；平台僅保留公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L119-L120",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_52fa19a6a29044d1",
+      "keywords": [
+        "Pinadray",
+        "歷史摘要"
+      ],
+      "dedupe_key": "claim_52fa19a6a29044d1",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_sakuban_leadership_public_summary",
+      "category": "歷史敘事邊界",
+      "statement_zh": "原民會英文頁以公開摘要描述 Sakuban 曾被各部落尊崇為領導者，相關敘述需標示來源並避免自行延伸為細節史論。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L120-L120",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_341b6ed7c464e88f",
+      "keywords": [
+        "Sakuban",
+        "歷史摘要"
+      ],
+      "dedupe_key": "claim_341b6ed7c464e88f",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_sukaro_migration_summary",
+      "category": "歷史遷移",
+      "statement_zh": "原民會英文頁提到 18 世紀部分氏族遷往恆春半島，並稱此遷徙為 sukaro；平台應以公開摘要處理。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L121-L121",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1658660a36654c19",
+      "keywords": [
+        "sukaro",
+        "遷徙",
+        "恆春半島"
+      ],
+      "dedupe_key": "claim_1658660a36654c19",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_japanese_eight_tribe_label",
+      "category": "名稱與分類",
+      "statement_zh": "原民會英文頁說明日治時期因八社而以「八社番」等分類稱呼；平台需以歷史分類處理，不可覆蓋現行十社資料模型。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L121-L123",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d0951aecc6e763d5",
+      "keywords": [
+        "八社",
+        "十社",
+        "日治",
+        "資料模型"
+      ],
+      "dedupe_key": "claim_d0951aecc6e763d5",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_today_taitung_beinan_center",
+      "category": "地理分布",
+      "statement_zh": "原民會英文頁說明今日臺東市與卑南鄉的臺東平原是卑南族中心區域。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L122-L123",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_151fd0b4db8f0de3",
+      "keywords": [
+        "臺東市",
+        "卑南鄉",
+        "臺東平原"
+      ],
+      "dedupe_key": "claim_151fd0b4db8f0de3",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_additional_settlements_chenggong_taimali",
+      "category": "地理分布",
+      "statement_zh": "原民會英文頁提到也有卑南族人定居於成功鎮與太麻里鄉。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L122-L122",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_45bcd66c5d397809",
+      "keywords": [
+        "成功鎮",
+        "太麻里鄉",
+        "地理分布"
+      ],
+      "dedupe_key": "claim_45bcd66c5d397809",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_major_tribes_taitung_city",
+      "category": "卑南族十社",
+      "statement_zh": "原民會英文頁列出臺東市相關主要部落包含知本、建和、南王與寶桑。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L123-L123",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bd5aff8b807f1fcf",
+      "keywords": [
+        "知本",
+        "建和",
+        "南王",
+        "寶桑",
+        "臺東市"
+      ],
+      "dedupe_key": "claim_bd5aff8b807f1fcf",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_major_tribes_beinan_township",
+      "category": "卑南族十社",
+      "statement_zh": "原民會英文頁列出卑南鄉相關主要部落包含利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L123-L123",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8d00990e436ab139",
+      "keywords": [
+        "利嘉",
+        "泰安",
+        "上賓朗",
+        "下賓朗",
+        "初鹿",
+        "龍過脈",
+        "卑南鄉"
+      ],
+      "dedupe_key": "claim_8d00990e436ab139",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_urban_migration_note",
+      "category": "當代生活",
+      "statement_zh": "原民會英文頁提到許多卑南族人已離開東部到城市發展，並在不同領域活躍。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L124-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_93b8b8c11de60a97",
+      "keywords": [
+        "都市發展",
+        "當代生活"
+      ],
+      "dedupe_key": "claim_93b8b8c11de60a97",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_foxtail_millet_agriculture",
+      "category": "生業",
+      "statement_zh": "原民會英文頁說明卑南族農業以小米開始，後來也種植其他作物。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_45f6254a60777c66",
+      "keywords": [
+        "小米",
+        "農業",
+        "生業"
+      ],
+      "dedupe_key": "claim_45f6254a60777c66",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_rice_agriculture_pinadray",
+      "category": "生業",
+      "statement_zh": "原民會英文頁提到 Pinadray 引入稻作技術與設備，帶動農業生產與技術發展；平台需保留來源語境。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b10765429fcc131c",
+      "keywords": [
+        "稻作",
+        "Pinadray",
+        "農業"
+      ],
+      "dedupe_key": "claim_b10765429fcc131c",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_cash_crop_shift_1960s",
+      "category": "生業",
+      "statement_zh": "原民會英文頁指出 1960 年代以後部分作物轉向釋迦與檳榔等經濟作物。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L129-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c0974d3df58fe68c",
+      "keywords": [
+        "釋迦",
+        "檳榔",
+        "經濟作物"
+      ],
+      "dedupe_key": "claim_c0974d3df58fe68c",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_staple_foods",
+      "category": "飲食",
+      "statement_zh": "原民會英文頁列出傳統主食包含小米、陸稻、甘薯與芋頭。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L130-L131",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_276646da43b947d2",
+      "keywords": [
+        "小米",
+        "陸稻",
+        "甘薯",
+        "芋頭",
+        "飲食"
+      ],
+      "dedupe_key": "claim_276646da43b947d2",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_protein_sources",
+      "category": "飲食",
+      "statement_zh": "原民會英文頁說明狩獵所得肉類，以及漁撈取得的魚與貝類，是傳統蛋白質來源。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L131-L131",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_06c0eef78475da69",
+      "keywords": [
+        "狩獵",
+        "漁撈",
+        "蛋白質",
+        "飲食"
+      ],
+      "dedupe_key": "claim_06c0eef78475da69",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_shellflower_dumpling",
+      "category": "飲食",
+      "statement_zh": "原民會英文頁提到節慶時以月桃葉包糯米與鹹豬肉製作傳統食物。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L131-L131",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_694e374a5e78681e",
+      "keywords": [
+        "月桃葉",
+        "糯米",
+        "鹹豬肉",
+        "傳統食物"
+      ],
+      "dedupe_key": "claim_694e374a5e78681e",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_betel_daily_ritual_offering",
+      "category": "飲食與祭儀",
+      "statement_zh": "原民會英文頁說明檳榔在卑南族日常生活中不可或缺，也作為祭儀重要供品。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L132-L132",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c6c23a4ab0193c34",
+      "keywords": [
+        "檳榔",
+        "供品",
+        "日常生活"
+      ],
+      "dedupe_key": "claim_c6c23a4ab0193c34",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_clothing_colors",
+      "category": "服飾",
+      "statement_zh": "原民會英文頁指出傳統服飾色彩包含紅、黃、綠，並搭配黑白菱形紋與十字繡等裝飾。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L133-L135",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ca266de62011d8ef",
+      "keywords": [
+        "紅",
+        "黃",
+        "綠",
+        "服飾",
+        "菱形紋"
+      ],
+      "dedupe_key": "claim_ca266de62011d8ef",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_clothing_age_gender_identity",
+      "category": "服飾與社會辨識",
+      "statement_zh": "原民會英文頁說明卑南族可透過服飾辨識性別與年齡階級，服飾也呈現族內社會關係。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L134-L135",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a731bb54752401cc",
+      "keywords": [
+        "服飾",
+        "年齡階級",
+        "性別",
+        "社會辨識"
+      ],
+      "dedupe_key": "claim_a731bb54752401cc",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_wreath_social_relation",
+      "category": "服飾與人際關係",
+      "statement_zh": "原民會英文頁提到祭儀時族人會製作花環，收到越多花環可呈現其與社群的友誼與關係。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L136-L136",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9147fc9b1c60199d",
+      "keywords": [
+        "花環",
+        "祭儀",
+        "社群關係"
+      ],
+      "dedupe_key": "claim_9147fc9b1c60199d",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_rattan_bamboo_weaving",
+      "category": "工藝",
+      "statement_zh": "原民會英文頁指出卑南族擅長以藤或竹編織日常工具。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L137-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bdf9b1532e5d41b9",
+      "keywords": [
+        "藤編",
+        "竹編",
+        "工藝"
+      ],
+      "dedupe_key": "claim_bdf9b1532e5d41b9",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_weaving_techniques",
+      "category": "工藝",
+      "statement_zh": "原民會英文頁列出編織技法包含 entrelac、herringbone 與 hexagonal weaving，平台可保留為工藝索引詞。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L139-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9b534318fe1eb3aa",
+      "keywords": [
+        "編織技法",
+        "藤竹編",
+        "工藝"
+      ],
+      "dedupe_key": "claim_9b534318fe1eb3aa",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_shellflower_mat",
+      "category": "工藝與日常生活",
+      "statement_zh": "原民會英文頁提到以月桃葉編成的蓆子具有夏涼冬暖的日常使用特性。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L139-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f545e7d732534fe0",
+      "keywords": [
+        "月桃葉",
+        "蓆子",
+        "日常工具"
+      ],
+      "dedupe_key": "claim_f545e7d732534fe0",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_bamboo_tools",
+      "category": "工藝與日常生活",
+      "statement_zh": "原民會英文頁提到竹材常用於製作竹杯、菸斗、漁具與獸陷等工具。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L139-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_20c31a2f338fbc64",
+      "keywords": [
+        "竹杯",
+        "菸斗",
+        "漁具",
+        "獸陷"
+      ],
+      "dedupe_key": "claim_20c31a2f338fbc64",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_architecture_public_private",
+      "category": "建築",
+      "statement_zh": "原民會英文頁將傳統建築分為公共與私人建築，公共建築包含會所、祖靈屋與瞭望臺。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L140-L143",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_be2e7476bd4fe1f6",
+      "keywords": [
+        "建築",
+        "公共建築",
+        "私人建築"
+      ],
+      "dedupe_key": "claim_be2e7476bd4fe1f6",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_family_house_layout",
+      "category": "建築",
+      "statement_zh": "原民會英文頁描述傳統家屋為長方形竹壁茅頂建築，室內包含沿牆編床與石灶等配置。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L143-L144",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5eea54c85d076f73",
+      "keywords": [
+        "家屋",
+        "竹壁",
+        "茅頂",
+        "石灶"
+      ],
+      "dedupe_key": "claim_5eea54c85d076f73",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_house_size_status",
+      "category": "建築與社會",
+      "statement_zh": "原民會英文頁說明傳統家屋大小可反映屋主社會地位。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L144-L144",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7eb23da22a02c3eb",
+      "keywords": [
+        "家屋",
+        "社會地位"
+      ],
+      "dedupe_key": "claim_7eb23da22a02c3eb",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_assembly_hall_age_system",
+      "category": "會所制度",
+      "statement_zh": "原民會英文頁說明卑南族會所依年齡階級分為少年會所 Dakuvan 與成年會所 Palakuan。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L145-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2c9d6690c84fb575",
+      "keywords": [
+        "Dakuvan",
+        "Palakuan",
+        "會所制度"
+      ],
+      "dedupe_key": "claim_2c9d6690c84fb575",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_dakuvan_structure",
+      "category": "會所制度",
+      "statement_zh": "原民會英文頁描述 Dakuvan 為有樓梯的兩層建築，生活空間有傘形茅頂與中央火塘。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L145-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d8e137758559fa4e",
+      "keywords": [
+        "Dakuvan",
+        "少年會所",
+        "火塘"
+      ],
+      "dedupe_key": "claim_d8e137758559fa4e",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_palakuan_structure",
+      "category": "會所制度",
+      "statement_zh": "原民會英文頁描述 Palakuan 座落於長方形基礎上，呈橢圓形，有茅頂、竹壁、竹床與中央火塘。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L146-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8416fb2a7e8c2277",
+      "keywords": [
+        "Palakuan",
+        "成年會所",
+        "火塘"
+      ],
+      "dedupe_key": "claim_8416fb2a7e8c2277",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_music_story_poetic",
+      "category": "音樂",
+      "statement_zh": "原民會英文頁說明卑南族音樂優雅、節奏清楚，歌詞多敘述不同故事而具詩性。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L150-L153",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6424752f19dd3aa8",
+      "keywords": [
+        "音樂",
+        "歌謠",
+        "詩性"
+      ],
+      "dedupe_key": "claim_6424752f19dd3aa8",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_ritual_song_classification",
+      "category": "音樂與祭儀",
+      "statement_zh": "原民會英文頁說明祭儀歌謠依人們在社群中的工作與身分分類，平台只能做公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L152-L154",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_62914213e49a83dd",
+      "keywords": [
+        "祭儀歌謠",
+        "身分",
+        "工作"
+      ],
+      "dedupe_key": "claim_62914213e49a83dd",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_modern_music_artists",
+      "category": "音樂與當代文化",
+      "statement_zh": "原民會英文頁指出現代卑南族音樂仍活躍，並列舉多位在流行音樂領域具影響力的族人。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L155-L157",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_32002295ce099eac",
+      "keywords": [
+        "現代音樂",
+        "流行音樂",
+        "歌手"
+      ],
+      "dedupe_key": "claim_32002295ce099eac",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_dance_gender_age_status",
+      "category": "舞蹈",
+      "statement_zh": "原民會英文頁說明卑南族舞蹈反映性別與年齡差異，舞步需依社會身分而行。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L158-L160",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_60ff49daed8b06fd",
+      "keywords": [
+        "舞蹈",
+        "性別",
+        "年齡",
+        "社會身分"
+      ],
+      "dedupe_key": "claim_60ff49daed8b06fd",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_language_dialect_variation",
+      "category": "語言",
+      "statement_zh": "原民會英文頁說明卑南語因部落與地點影響而有些微差異。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L161-L163",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0b7c35841e846890",
+      "keywords": [
+        "卑南語",
+        "方言差異",
+        "部落"
+      ],
+      "dedupe_key": "claim_0b7c35841e846890",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_language_contact_south_north",
+      "category": "語言接觸",
+      "statement_zh": "原民會英文頁提到南部知本一帶受排灣、魯凱語音影響較強，北部則受阿美語音影響；需以公開摘要呈現。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L163-L163",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c9fce597ee01c892",
+      "keywords": [
+        "語言接觸",
+        "知本",
+        "排灣",
+        "魯凱",
+        "阿美"
+      ],
+      "dedupe_key": "claim_c9fce597ee01c892",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_social_roles_leader_priest_witch",
+      "category": "社會制度",
+      "statement_zh": "原民會英文頁說明政治領袖、祭師與巫師在政治、祭儀、醫療等日常需求中各有專業角色。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L164-L176",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4f357949e1eb732c",
+      "keywords": [
+        "政治領袖",
+        "祭師",
+        "巫師",
+        "社會制度"
+      ],
+      "dedupe_key": "claim_4f357949e1eb732c",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_matrilineality_transformation",
+      "category": "親屬制度",
+      "statement_zh": "原民會英文頁指出卑南族具有母系傳統，但在現代社會接觸影響下，親屬觀念已有轉變。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L165-L172",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c3ac44bfe173d0d4",
+      "keywords": [
+        "母系",
+        "親屬制度",
+        "現代變遷"
+      ],
+      "dedupe_key": "claim_c3ac44bfe173d0d4",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_kinship_lineage_terms",
+      "category": "親屬制度",
+      "statement_zh": "原民會英文頁以公開摘要說明同祖先與同家名者形成 lineage，並區分大宗族、小宗族與分支家庭等層級。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L167-L169",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a7628b544b59bcbc",
+      "keywords": [
+        "家名",
+        "宗族",
+        "親屬制度"
+      ],
+      "dedupe_key": "claim_a7628b544b59bcbc",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_age_training_physical_knowledge",
+      "category": "年齡階級",
+      "statement_zh": "原民會英文頁指出少年約 12 至 13 歲進入 Dakuvan，接受體能與知識訓練。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L177-L179",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_67c61a64007832cb",
+      "keywords": [
+        "Dakuvan",
+        "體能訓練",
+        "知識訓練"
+      ],
+      "dedupe_key": "claim_67c61a64007832cb",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_age_training_skill_stages",
+      "category": "年齡階級",
+      "statement_zh": "原民會英文頁提到約 17 至 18 歲進入 Palakuan，接受更進一步技能訓練並分階段進行。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L178-L179",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0976d27ce5ad4cf0",
+      "keywords": [
+        "Palakuan",
+        "技能訓練",
+        "年齡階級"
+      ],
+      "dedupe_key": "claim_0976d27ce5ad4cf0",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_1991_cultural_revitalization",
+      "category": "文化復振",
+      "statement_zh": "原民會英文頁提到 1991 年知本、初鹿、南王等地建立會所、青年會與文化協會，推動尋根與母語復振。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L179-L179",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fd3324a95087d884",
+      "keywords": [
+        "1991",
+        "文化復振",
+        "母語復振",
+        "青年會"
+      ],
+      "dedupe_key": "claim_fd3324a95087d884",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_ritual_calendar_summary",
+      "category": "歲時祭儀",
+      "statement_zh": "原民會英文頁列出公開歲時祭儀月份摘要：三月 Mugamut、四月 Ruvuwa’an、七月 Masarut、十二月年祭。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L185-L192",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_db57a1e675aab4ab",
+      "keywords": [
+        "祭儀月曆",
+        "Mugamut",
+        "Ruvuwa’an",
+        "Masarut",
+        "年祭"
+      ],
+      "dedupe_key": "claim_db57a1e675aab4ab",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_mangayaw_joint_1982",
+      "category": "歲時祭儀",
+      "statement_zh": "原民會英文頁提到 1982 年開始出現聯合年祭形式，由不同部落輪流舉辦，成為凝聚族群意識的重要活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L215-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bbdc808ffc7bddcf",
+      "keywords": [
+        "聯合年祭",
+        "1982",
+        "族群意識"
+      ],
+      "dedupe_key": "claim_bbdc808ffc7bddcf",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_chinese_population_current",
+      "category": "人口資料治理",
+      "statement_zh": "原民會中文頁目前顯示卑南族總人口為 16,734，此數字應標記為中文頁目前版本資料。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2c2f9f1f3773a622",
+      "keywords": [
+        "人口",
+        "原民會中文頁",
+        "版本治理"
+      ],
+      "dedupe_key": "claim_2c2f9f1f3773a622",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_chinese_summary_age_hall",
+      "category": "中文摘要",
+      "statement_zh": "原民會中文頁摘要指出卑南族社會有嚴謹年齡階級組織與會所制度。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c26f73bdb220bccc",
+      "keywords": [
+        "中文摘要",
+        "年齡階級",
+        "會所制度"
+      ],
+      "dedupe_key": "claim_c26f73bdb220bccc",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    },
+    {
+      "claim_id": "kg21_chinese_ritual_names",
+      "category": "中文摘要",
+      "statement_zh": "原民會中文頁列出卑南族現存年度慶典名稱，包括小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_83fe8369629f0b24",
+      "keywords": [
+        "中文摘要",
+        "小米鋤草完工慶",
+        "小米收穫祭",
+        "少年年祭",
+        "年祭"
+      ],
+      "dedupe_key": "claim_83fe8369629f0b24",
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。",
+      "v21_added": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": "v18",
+  "generated_at": "2026-06-11T18:45:00+08:00",
+  "description_zh": "主站 AI 發文與知識卡使用的官方/公開來源登錄表。只保存短摘要與引用，不鏡像整頁內容。",
+  "sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan official profile",
+      "publisher": "Council of Indigenous Peoples, Taiwan",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "language": "en",
+      "source_type": "official_public_profile",
+      "license_note": "Public government website; store only source URL, short factual summaries, and citations. Do not mirror full page text without review.",
+      "retrieved_at": "2026-06-11T18:45:00+08:00",
+      "evidence_line_ranges": [
+        "L113-L123",
+        "L127-L146",
+        "L150-L179",
+        "L185-L216"
+      ],
+      "trust_level": "official_primary",
+      "public_use": "summary_and_citation_only"
+    },
+    {
+      "source_id": "cip_population_stats_202406_page",
+      "title": "Council of Indigenous Peoples: 2024-06 Indigenous population statistics data page",
+      "publisher": "Council of Indigenous Peoples, Taiwan",
+      "url": "https://www.cip.gov.tw/zh-tw/news/data-list/812FFAB0BCD92D1A/EDBA26F819210681F3827C43BE19244F-info.html",
+      "language": "zh-TW",
+      "source_type": "official_statistics_page",
+      "license_note": "Use as pointer to official statistics files; do not infer current numbers without parsing the downloaded tables.",
+      "retrieved_at": "2026-06-11T18:45:00+08:00",
+      "evidence_line_ranges": [
+        "L224-L232",
+        "L241-L288"
+      ],
+      "trust_level": "official_primary",
+      "public_use": "link_and_metadata_only"
+    },
+    {
+      "source_id": "formosanbank_puyuma_audio_public",
+      "title": "FormosanBank/ePark Puyuma public vocabulary and source audio corpus",
+      "publisher": "FormosanBank project / ePark source corpus",
+      "url": "https://github.com/FormosanBank/FormosanBank",
+      "language": "pyu, zh-TW, en",
+      "source_type": "public_language_corpus",
+      "license_note": "Existing project metadata records CC-BY-NC-SA-like source licensing for XML samples; production must preserve source license per row.",
+      "retrieved_at": "2026-06-11T18:45:00+08:00",
+      "evidence_line_ranges": [
+        "repo README and dialect mapping already recorded in project references"
+      ],
+      "trust_level": "public_corpus_with_license_constraints",
+      "public_use": "pronunciation_audio_passthrough_and_learning_summary"
+    }
+  ]
+}

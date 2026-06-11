@@ -1,0 +1,13 @@
+erDiagram
+  kb_sources ||--o{ kb_facts : supports
+  kb_sources ||--o{ pinuyumayan_communities : supports
+  kb_sources ||--o{ pinuyumayan_rituals : supports
+  kb_sources ||--o{ puyuma_corpus_entries : supports
+  pinuyumayan_communities ||--o{ pinuyumayan_community_aliases : has
+  puyuma_corpus_entries ||--o{ puyuma_audio_assets : has
+  puyuma_corpus_entries ||--o{ puyuma_ipa_annotations : has
+  puyuma_corpus_entries ||--o{ puyuma_tts_jobs : has
+  kb_import_runs ||--o{ kb_import_errors : reports
+  puyuma_audio_assets ||--o{ ops_audio_mirror_queue : queues
+  admin_roles ||--o{ admin_role_permissions : grants
+  admin_permissions ||--o{ admin_role_permissions : granted_to

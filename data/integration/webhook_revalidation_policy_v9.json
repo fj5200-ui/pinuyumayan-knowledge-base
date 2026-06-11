@@ -1,0 +1,62 @@
+{
+  "version": "v9",
+  "events": [
+    {
+      "event": "knowledge.fact.approved",
+      "main_site_action": "pull_delta_and_revalidate_related_pages",
+      "payload_keys": [
+        "entityType",
+        "entityId",
+        "updatedAt",
+        "syncCursor"
+      ]
+    },
+    {
+      "event": "knowledge.community.updated",
+      "main_site_action": "revalidate_community_page_and_home",
+      "payload_keys": [
+        "communityKey",
+        "updatedAt",
+        "syncCursor"
+      ]
+    },
+    {
+      "event": "vocabulary.batch.imported",
+      "main_site_action": "pull_delta_for_vocabulary_pages",
+      "payload_keys": [
+        "dialectCodes",
+        "inserted",
+        "updated",
+        "syncCursor"
+      ]
+    },
+    {
+      "event": "audio.asset.reviewed",
+      "main_site_action": "revalidate_vocabulary_entry",
+      "payload_keys": [
+        "corpusEntryId",
+        "playbackEnabled",
+        "syncCursor"
+      ]
+    },
+    {
+      "event": "search.index.rebuilt",
+      "main_site_action": "clear_search_cache",
+      "payload_keys": [
+        "documentCount",
+        "syncCursor"
+      ]
+    }
+  ],
+  "delivery": {
+    "retry_schedule_seconds": [
+      30,
+      120,
+      600,
+      1800
+    ],
+    "signature_header": "x-pinuyumayan-signature",
+    "signature_algorithm": "hmac-sha256"
+  },
+  "security": "Webhook is best-effort notification only. Main site must pull delta using internal API key before trusting updated data."
+}

@@ -1,0 +1,782 @@
+{
+  "version": "2026-06-11",
+  "total": 35,
+  "cards": [
+    {
+      "id": "identity_pinuyumayan",
+      "title_zh": "Pinuyumayan 與卑南族正名",
+      "domain": "identity",
+      "summary_zh": "介紹卑南族、Pinuyumayan 與 Puyuma 的使用差異，避免把南王部落名稱誤當全族稱呼。",
+      "suggested_route": "/about/naming",
+      "tags": [
+        "正名",
+        "Pinuyumayan",
+        "Puyuma"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "historical_term_not_ui_label"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "origin_bamboo_stone",
+      "title_zh": "竹生與石生起源系統",
+      "domain": "history",
+      "summary_zh": "說明卑南族起源敘事中常見的竹生與石生兩大系統，以及它們與南王、知本等核心部落的關聯。",
+      "suggested_route": "/history/origin-systems",
+      "tags": [
+        "竹生",
+        "石生",
+        "起源"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "communities_overview",
+      "title_zh": "卑南族十社總覽",
+      "domain": "communities",
+      "summary_zh": "以平台權威表呈現十社名稱、羅馬拼音、工程 key、起源系統與常見異名。",
+      "suggested_route": "/communities",
+      "tags": [
+        "十社",
+        "部落",
+        "正名"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_puyuma",
+      "title_zh": "南王部落",
+      "domain": "communities",
+      "summary_zh": "南王是卑南族重要核心部落之一；平台中 Puyuma 僅指南王部落或英文語境中的卑南語，不可用來代稱整個卑南族。",
+      "suggested_route": "/communities/puyuma",
+      "tags": [
+        "部落",
+        "竹生系統",
+        "Puyuma"
+      ],
+      "community_keys": [
+        "puyuma"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_katratripulr",
+      "title_zh": "知本部落",
+      "domain": "communities",
+      "summary_zh": "知本是石生系統的重要核心，與建和等部落在起源敘事與四月祭祖脈絡中常被並讀。",
+      "suggested_route": "/communities/katratripulr",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Katratripulr"
+      ],
+      "community_keys": [
+        "katratripulr"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_kasavakan",
+      "title_zh": "建和部落",
+      "domain": "communities",
+      "summary_zh": "建和以祭祖、收穫祭與年祭脈絡重要；語料上對應 FormosanBank Jianhe_Puyuma。",
+      "suggested_route": "/communities/kasavakan",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Kasavakan"
+      ],
+      "community_keys": [
+        "kasavakan"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_likavung",
+      "title_zh": "利嘉部落",
+      "domain": "communities",
+      "summary_zh": "利嘉在平台中宜放入年祭、除喪、階級制度與歌舞復振等主題脈絡。",
+      "suggested_route": "/communities/likavung",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Likavung"
+      ],
+      "community_keys": [
+        "likavung"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_ulivelivek",
+      "title_zh": "初鹿部落",
+      "domain": "communities",
+      "summary_zh": "初鹿與西群卑南語脈絡關聯高；內容可強化會所、收穫祭與鞦韆文化特色。",
+      "suggested_route": "/communities/ulivelivek",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Ulivelivek"
+      ],
+      "community_keys": [
+        "ulivelivek"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_tamalakaw",
+      "title_zh": "泰安部落",
+      "domain": "communities",
+      "summary_zh": "泰安宜列入大獵祭、石生系統與部落治理脈絡；羅馬拼音以 Tamalakaw 為平台主用。",
+      "suggested_route": "/communities/tamalakaw",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Tamalakaw"
+      ],
+      "community_keys": [
+        "tamalakaw"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_pinaski",
+      "title_zh": "下賓朗部落",
+      "domain": "communities",
+      "summary_zh": "下賓朗內容可強化婦女除草完工慶、部落保守性與花環文化；Pinarai 類別名需人工複核。",
+      "suggested_route": "/communities/pinaski",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Pinaski"
+      ],
+      "community_keys": [
+        "pinaski"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_danadanaw",
+      "title_zh": "龍過脈部落",
+      "domain": "communities",
+      "summary_zh": "龍過脈適合作為十社地理與遷徙脈絡的補強內容；細節公開前需部落複核。",
+      "suggested_route": "/communities/danadanaw",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Danadanaw"
+      ],
+      "community_keys": [
+        "danadanaw"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_rarangus",
+      "title_zh": "班鳩部落",
+      "domain": "communities",
+      "summary_zh": "班鳩在平台權威表中不可省略；公開細節與當代狀態需保留複核欄位。",
+      "suggested_route": "/communities/rarangus",
+      "tags": [
+        "部落",
+        "石生系統",
+        "Rarangus"
+      ],
+      "community_keys": [
+        "rarangus"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "community_papulu",
+      "title_zh": "寶桑部落",
+      "domain": "communities",
+      "summary_zh": "寶桑可放入臺東市區部落、竹生系統與大獵祭脈絡；Papulu 為平台主用版。",
+      "suggested_route": "/communities/papulu",
+      "tags": [
+        "部落",
+        "竹生系統",
+        "Papulu"
+      ],
+      "community_keys": [
+        "papulu"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_women_weeding_completion",
+      "title_zh": "婦女除草完工慶",
+      "domain": "rituals",
+      "summary_zh": "與農事除草工作完成相關，凸顯婦女團體、祈福、團結與休閒活動。",
+      "suggested_route": "/rituals/women_weeding_completion",
+      "tags": [
+        "農事",
+        "婦女",
+        "祈福",
+        "部落團結"
+      ],
+      "community_keys": [
+        "pinaski",
+        "puyuma",
+        "other_review_required"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_ancestral_landing_foundation_rite",
+      "title_zh": "祖先登陸與發祥地祭祖",
+      "domain": "rituals",
+      "summary_zh": "知本、建和等部落會到祖先登陸地或發祥地祭祀歷代祖先，呈現慎終追遠與起源記憶。",
+      "suggested_route": "/rituals/ancestral_landing_foundation_rite",
+      "tags": [
+        "起源",
+        "祭祖",
+        "發祥地",
+        "石生系統"
+      ],
+      "community_keys": [
+        "katratripulr",
+        "kasavakan"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_millet_harvest_rite",
+      "title_zh": "小米收穫祭",
+      "domain": "rituals",
+      "summary_zh": "以家族與部落為單位感謝收穫，與小米、祭司、婦女角色、祈福及部落活動相關。",
+      "suggested_route": "/rituals/millet_harvest_rite",
+      "tags": [
+        "小米",
+        "收穫",
+        "感恩",
+        "家族",
+        "祈福"
+      ],
+      "community_keys": [
+        "puyuma",
+        "katratripulr",
+        "kasavakan",
+        "ulivelivek",
+        "pinaski",
+        "other_review_required"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_annual_festival",
+      "title_zh": "年祭",
+      "domain": "rituals",
+      "summary_zh": "卑南族最重要的年度活動之一，常包含少年年祭、大獵祭、慶功、除喪與部落團聚。",
+      "suggested_route": "/rituals/annual_festival",
+      "tags": [
+        "年祭",
+        "部落團聚",
+        "會所",
+        "除喪",
+        "花環"
+      ],
+      "community_keys": [
+        "all_review_by_community"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_mangamangayaw_youth_rite",
+      "title_zh": "少年年祭",
+      "domain": "rituals",
+      "summary_zh": "與少年膽識、會所訓練及成年過程相關；現代公開活動多以象徵方式延續，不使用真猴。",
+      "suggested_route": "/rituals/mangamangayaw_youth_rite",
+      "tags": [
+        "少年",
+        "會所",
+        "膽識",
+        "文化教育"
+      ],
+      "community_keys": [
+        "puyuma",
+        "ulivelivek",
+        "pinaski",
+        "other_review_required"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_mangayaw_great_hunting_rite",
+      "title_zh": "大獵祭",
+      "domain": "rituals",
+      "summary_zh": "與男子成年、野外求生、狩獵訓練、凱旋迎接與部落慰問相關，是年祭核心內容之一。",
+      "suggested_route": "/rituals/mangayaw_great_hunting_rite",
+      "tags": [
+        "大獵祭",
+        "成年",
+        "狩獵",
+        "野外求生",
+        "凱旋門"
+      ],
+      "community_keys": [
+        "puyuma",
+        "tamalakaw",
+        "papulu",
+        "other_review_required"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "ritual_united_annual_festival",
+      "title_zh": "聯合年祭",
+      "domain": "rituals",
+      "summary_zh": "由各部落輪流或共同辦理，以歌舞、競賽與交流凝聚卑南族共同體意識。",
+      "suggested_route": "/rituals/united_annual_festival",
+      "tags": [
+        "聯合年祭",
+        "十社",
+        "歌舞",
+        "交流",
+        "族群凝聚"
+      ],
+      "community_keys": [
+        "all_review_by_community"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "society_age_grade_system",
+      "title_zh": "年齡階級制度",
+      "domain": "society",
+      "summary_zh": "卑南族男性社會關係高度依賴年齡階級與會所訓練；少年約12、13歲進入少年會所，17、18歲轉入成年會所，學習體能、狩獵、野外求生、服從與公共服務。",
+      "suggested_route": "/society/age_grade_system",
+      "tags": [
+        "社會制度",
+        "年齡階級制度"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "society_mens_house",
+      "title_zh": "會所制度",
+      "domain": "society",
+      "summary_zh": "會所不只是建築，也是公共事務、年齡階級教育、訓練與部落主體性的重要空間；內容需分清少年會所與成年會所。",
+      "suggested_route": "/society/mens_house",
+      "tags": [
+        "社會制度",
+        "會所制度"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "society_matrilineal_kinship",
+      "title_zh": "母系親屬與家屋觀念",
+      "domain": "society",
+      "summary_zh": "傳統上重視母系家系、家屋、宗家與本家觀念；家族氏名與家屋財產承繼有母系特徵，但現代受社會變遷而有調整。",
+      "suggested_route": "/society/matrilineal_kinship",
+      "tags": [
+        "社會制度",
+        "母系親屬與家屋觀念"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "society_ritual_specialists",
+      "title_zh": "祭司、政治領袖與巫師角色",
+      "domain": "society",
+      "summary_zh": "傳統部落中，ayawan 負責重大事件協調與戰獵領導；rahan 掌管祭祀禮儀；巫師則與祈福、治病、驅邪等照護需求相關。",
+      "suggested_route": "/society/ritual_specialists",
+      "tags": [
+        "社會制度",
+        "祭司、政治領袖與巫師角色"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "society_spiritual_worldview",
+      "title_zh": "神靈、祖靈與傳統信仰",
+      "domain": "society",
+      "summary_zh": "傳統信仰中，自然、天地、四方、祖先與死者之靈皆可能影響生活；公開內容應以尊重、簡介與授權為原則。",
+      "suggested_route": "/society/spiritual_worldview",
+      "tags": [
+        "社會制度",
+        "神靈、祖靈與傳統信仰"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "material_food",
+      "title_zh": "飲食與小米文化",
+      "domain": "material_life",
+      "summary_zh": "整理小米、旱稻、甘薯、芋頭、狩獵肉類與河川魚貝等飲食脈絡，並標註祭典食物與檳榔的文化位置。",
+      "suggested_route": "/material-life/food",
+      "tags": [
+        "飲食",
+        "小米",
+        "檳榔"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "material_clothing",
+      "title_zh": "服飾、花環與身分",
+      "domain": "material_life",
+      "summary_zh": "介紹紅、黃、綠與黑白層次、十字繡花形紋、年齡階級服飾與花環社交意義。",
+      "suggested_route": "/material-life/clothing",
+      "tags": [
+        "服飾",
+        "花環",
+        "年齡階級"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "material_weaving",
+      "title_zh": "藤竹編與月桃葉工藝",
+      "domain": "material_life",
+      "summary_zh": "整理藤籃、藤包、背簍、月桃葉蓆、竹杯、煙斗與陷阱等生活工藝。",
+      "suggested_route": "/material-life/weaving",
+      "tags": [
+        "編織",
+        "藤編",
+        "竹編",
+        "月桃"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "material_architecture",
+      "title_zh": "住屋、會所與祖靈屋",
+      "domain": "material_life",
+      "summary_zh": "介紹住屋、會所、祖靈屋、瞭望臺等建築類別與公私使用權限。",
+      "suggested_route": "/material-life/architecture",
+      "tags": [
+        "建築",
+        "會所",
+        "祖靈屋"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "music_ritual_songs",
+      "title_zh": "祭儀歌謠",
+      "domain": "music_arts",
+      "summary_zh": "整理猴祭、大獵祭、年祭及古老敘事歌謠等祭儀歌脈絡，公開前需確認演唱權限與禁忌。",
+      "suggested_route": "/music-arts/ritual-songs",
+      "tags": [
+        "歌謠",
+        "祭儀",
+        "年祭"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "music_work_songs",
+      "title_zh": "休閒與工作歌謠",
+      "domain": "music_arts",
+      "summary_zh": "整理工作、聚會、婦女工作團等歌謠類型，可連動相簿牆與影音專區。",
+      "suggested_route": "/music-arts/work-songs",
+      "tags": [
+        "工作歌",
+        "婦女",
+        "聚會"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "music_modern_artists",
+      "title_zh": "現代音樂與演藝人物",
+      "domain": "music_arts",
+      "summary_zh": "建立卑南族音樂與演藝人物索引，人物頁須區分公開資料、授權資料與 AI 摘要。",
+      "suggested_route": "/music-arts/modern-artists",
+      "tags": [
+        "音樂",
+        "人物",
+        "演藝"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "needs_editor_review",
+        "needs_person_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "dance_roles",
+      "title_zh": "舞蹈與社會角色",
+      "domain": "music_arts",
+      "summary_zh": "整理不同儀禮中男女、年齡與身分對應的舞步與角色，不將舞步泛化為單一表演。",
+      "suggested_route": "/music-arts/dance",
+      "tags": [
+        "舞蹈",
+        "儀式",
+        "角色"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "flags": [
+        "public_summary_only",
+        "needs_community_review"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "language_dialects",
+      "title_zh": "卑南語四方言",
+      "domain": "language",
+      "summary_zh": "平台族語系統須區分南王、知本、西群、建和四方言，並對接 FormosanBank/ePark code 38–41。",
+      "suggested_route": "/language/dialects",
+      "tags": [
+        "卑南語",
+        "四方言",
+        "FormosanBank"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "formosanbank_dialects_csv"
+      ],
+      "flags": [
+        "public_summary_only",
+        "audio_available"
+      ],
+      "draft_status": "needs_editor_review"
+    },
+    {
+      "id": "language_audio_manifest",
+      "title_zh": "語音 manifest 與教材音檔",
+      "domain": "language",
+      "summary_zh": "以 manifest 建立文字、中文翻譯、英文翻譯、方言、音檔 URL 與授權來源對應，支援 TTS/播放/聽力測驗。",
+      "suggested_route": "/language/audio",
+      "tags": [
+        "語音",
+        "manifest",
+        "TTS",
+        "聽力"
+      ],
+      "community_keys": [],
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "flags": [
+        "public_summary_only",
+        "audio_available"
+      ],
+      "draft_status": "needs_editor_review"
+    }
+  ]
+}

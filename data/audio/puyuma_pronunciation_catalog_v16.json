@@ -1,0 +1,4012 @@
+{
+  "version": "v16-pronunciation-audio",
+  "description_zh": "卑南語發音服務目錄。公開端優先播放 FormosanBank/ePark 已驗證的人聲音檔；不是用假 TTS 取代真人音檔。",
+  "policy": {
+    "public_ui_default": "use_verified_source_audio_first",
+    "generated_tts_public_default": "disabled_until_model_is_trained_evaluated_and_approved",
+    "reason_zh": "若要像來源音檔一樣自然，必須以授權音檔訓練或微調聲學模型，並經語言教師/族人審核。沒有合格模型時，API 只回傳真人來源音檔或排入待補音。"
+  },
+  "entry_count": 80,
+  "entries": [
+    {
+      "id": "pron-a93b397f4a7a5a9b",
+      "entry_id": "puyuma-audio-3273c95775ad",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "inabayan! mungesalra ta!",
+        "zh_tw": "大家好！我們開始了。",
+        "en": "Hello everyone! Here we go.",
+        "normalized_for_match": "inabayan! mungesalra ta!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455706.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-3273c95775ad.mp3",
+        "source_phon": null,
+        "ipa_value": "i n a b a j a n m u ŋ ə s a ɭ a t a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-661fec2aadaf53ad",
+      "entry_id": "puyuma-audio-7d98a0571a64",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "karetigir driya! sungal!",
+        "zh_tw": "請起立! 敬禮!",
+        "en": "Please stand up! Salute!",
+        "normalized_for_match": "karetigir driya! sungal!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455707.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7d98a0571a64.mp3",
+        "source_phon": null,
+        "ipa_value": "k a r ə t i g i r ɖ i j a s u ŋ a l",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-da228ff74f512091",
+      "entry_id": "puyuma-audio-95ddd1e52a8c",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sinsi, inabayan!",
+        "zh_tw": "老師好。",
+        "en": "Hello.",
+        "normalized_for_match": "sinsi, inabayan!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455708.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-95ddd1e52a8c.mp3",
+        "source_phon": null,
+        "ipa_value": "s i n s i i n a b a j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-19a25c368eeb0fc5",
+      "entry_id": "puyuma-audio-658c87facd71",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "katengadraw lra!",
+        "zh_tw": "請坐下。",
+        "en": "Please sit down.",
+        "normalized_for_match": "katengadraw lra!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455709.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-658c87facd71.mp3",
+        "source_phon": null,
+        "ipa_value": "k a t ə ŋ a ɖ a w ɭ a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 4,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-cd95e42661f81187",
+      "entry_id": "puyuma-audio-b04e215f3e73",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "inabayan! garem i palaladam ku kanmu dra kemuda ta temarapuyuma marengay kana akanan.",
+        "zh_tw": "大家好。今天老師要教大家食物的南王卑南語怎麼說。",
+        "en": "Hello everyone. Today I am going to teach you how to say food in Puyuma.",
+        "normalized_for_match": "inabayan! garem i palaladam ku kanmu dra kemuda ta temarapuyuma marengay kana akanan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455710.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-b04e215f3e73.mp3",
+        "source_phon": null,
+        "ipa_value": "i n a b a j a n g a r ə m i p a l a l a d a m k u k a n m u ɖ a k ə m u d a t a t ə m a r a p u j u m a m a r ə ŋ a j k a n a a k a n a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 5,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-9744f1ace8b30e6c",
+      "entry_id": "puyuma-audio-3459f9d2c9ba",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "malradram yu kilrengaw kananku nirengayan?",
+        "zh_tw": "你聽得懂老師的話嗎?",
+        "en": "Do you understand what the teacher says?",
+        "normalized_for_match": "malradram yu kilrengaw kananku nirengayan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455711.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-3459f9d2c9ba.mp3",
+        "source_phon": null,
+        "ipa_value": "m a ɭ a ɖ a m j u k i ɭ ə ŋ a w k a n a n k u n i r ə ŋ a j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 6,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-37e8831304bf3008",
+      "entry_id": "puyuma-audio-c906ef49ba1a",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sinsi, adri ku malradram. karuwa yu masalr marengay?",
+        "zh_tw": "老師，我不懂。可以再說一次嗎?",
+        "en": "I don’t understand. Can you repeat it again?",
+        "normalized_for_match": "sinsi, adri ku malradram. karuwa yu masalr marengay?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455712.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c906ef49ba1a.mp3",
+        "source_phon": null,
+        "ipa_value": "s i n s i a ɖ i k u m a ɭ a ɖ a m k a r u w a j u m a s a ɭ m a r ə ŋ a j",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 7,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-98c4e8bd254a4c6b",
+      "entry_id": "puyuma-audio-f9f0a43ba400",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "adri ku kilrengaw. karuwa yu kematrina driya?",
+        "zh_tw": "我聽不到，可以大聲一點嗎?",
+        "en": "I can’t hear you, can you speak louder?",
+        "normalized_for_match": "adri ku kilrengaw. karuwa yu kematrina driya?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455713.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-f9f0a43ba400.mp3",
+        "source_phon": null,
+        "ipa_value": "a ɖ i k u k i ɭ ə ŋ a w k a r u w a j u k ə m a ʈ i n a ɖ i j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 8,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-66944aec0c0ee7d8",
+      "entry_id": "puyuma-audio-8f66055d0da1",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "nauwi driya kadri! kurenangi ku emaip pariyasalr.",
+        "zh_tw": "請看這裡! 跟著我唸一遍。",
+        "en": "Look here, please! Repeat after me.",
+        "normalized_for_match": "nauwi driya kadri! kurenangi ku emaip pariyasalr."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455714.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-8f66055d0da1.mp3",
+        "source_phon": null,
+        "ipa_value": "n a u w i ɖ i j a k a ɖ i k u r ə n a ŋ i k u ə m a i p p a r i j a s a ɭ",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 9,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-7c9be2bc4d215fe0",
+      "entry_id": "puyuma-audio-f47948944915",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "inaba nu inaipan.",
+        "zh_tw": "你唸得很好。",
+        "en": "You read it very well.",
+        "normalized_for_match": "inaba nu inaipan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455715.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-f47948944915.mp3",
+        "source_phon": null,
+        "ipa_value": "i n a b a n u i n a i p a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 10,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-885c6f1718ce5a8f",
+      "entry_id": "puyuma-audio-8ec78ce2da04",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "asalr driya maip. katrinayu driya.",
+        "zh_tw": "再唸一次。請大聲一點。",
+        "en": "Read it again. Please speak louder.",
+        "normalized_for_match": "asalr driya maip. katrinayu driya."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455716.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-8ec78ce2da04.mp3",
+        "source_phon": null,
+        "ipa_value": "a s a ɭ ɖ i j a m a i p k a ʈ i n a j u ɖ i j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 11,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-33ec2205b8296ba1",
+      "entry_id": "puyuma-audio-ef6059f7c2a9",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sasamengan! adri rarengay.",
+        "zh_tw": "請安靜。不要說話。",
+        "en": "Please be quiet. Don’t talk.",
+        "normalized_for_match": "sasamengan! adri rarengay."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455717.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-ef6059f7c2a9.mp3",
+        "source_phon": null,
+        "ipa_value": "s a s a m ə ŋ a n a ɖ i r a r ə ŋ a j",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 12,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-4d10004a1bcd6592",
+      "entry_id": "puyuma-audio-24d9088a2fe3",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "pupatraranu driya na tilin.",
+        "zh_tw": "請把課本拿出來。",
+        "en": "Please take out your textbook.",
+        "normalized_for_match": "pupatraranu driya na tilin."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455718.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-24d9088a2fe3.mp3",
+        "source_phon": null,
+        "ipa_value": "p u p a ʈ a r a n u ɖ i j a n a t i l i n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 13,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-58977d35305e36e5",
+      "entry_id": "puyuma-audio-d261d50e56e0",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sinsi, aiwa!",
+        "zh_tw": "是的，老師。",
+        "en": "Yes, sir.",
+        "normalized_for_match": "sinsi, aiwa!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455719.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-d261d50e56e0.mp3",
+        "source_phon": null,
+        "ipa_value": "s i n s i a i w a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 14,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-d5cad637d9cfd28c",
+      "entry_id": "puyuma-audio-b2abad192f8b",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "pupatraranu driya na tratruri.",
+        "zh_tw": "請把筆拿出來。",
+        "en": "Please take out your pen.",
+        "normalized_for_match": "pupatraranu driya na tratruri."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455720.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-b2abad192f8b.mp3",
+        "source_phon": null,
+        "ipa_value": "p u p a ʈ a r a n u ɖ i j a n a ʈ a ʈ u r i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 15,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-2ff003babc0ee518",
+      "entry_id": "puyuma-audio-0df27f692e48",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sinsi, abalu ku kemasu dra tratruri.",
+        "zh_tw": "老師，我忘了帶筆。",
+        "en": "I forgot to bring my pen.",
+        "normalized_for_match": "sinsi, abalu ku kemasu dra tratruri."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455721.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-0df27f692e48.mp3",
+        "source_phon": null,
+        "ipa_value": "s i n s i a b a l u k u k ə m a s u ɖ a ʈ a ʈ u r i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 16,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-b876d33aa5e17c61",
+      "entry_id": "puyuma-audio-7b7185613f33",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "pupatraranu driya na iyasaus.",
+        "zh_tw": "請把橡皮擦拿出來。",
+        "en": "Please take out the eraser.",
+        "normalized_for_match": "pupatraranu driya na iyasaus."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455722.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7b7185613f33.mp3",
+        "source_phon": null,
+        "ipa_value": "p u p a ʈ a r a n u ɖ i j a n a i j a s a u s",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 17,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-fe3cf5d7b809522b",
+      "entry_id": "puyuma-audio-3c05e63b6315",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "sinsi, abalu ku kemasu dra iyasaus.",
+        "zh_tw": "老師，我忘了帶橡皮擦。",
+        "en": "I forgot to bring my eraser.",
+        "normalized_for_match": "sinsi, abalu ku kemasu dra iyasaus."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455723.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-3c05e63b6315.mp3",
+        "source_phon": null,
+        "ipa_value": "s i n s i a b a l u k u k ə m a s u ɖ a i j a s a u s",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 18,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-e860a1d27728b6b2",
+      "entry_id": "puyuma-audio-38e4d63b1e3e",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "kibulas driya kan tu iyasaus kana risarisan i saninin.",
+        "zh_tw": "請跟旁邊同學借橡皮擦。",
+        "en": "Please borrow erasers from your classmates.",
+        "normalized_for_match": "kibulas driya kan tu iyasaus kana risarisan i saninin."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455724.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-38e4d63b1e3e.mp3",
+        "source_phon": null,
+        "ipa_value": "k i b u l a s ɖ i j a k a n t u i j a s a u s k a n a r i s a r i s a n i s a n i n i n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 19,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-93640b8654f9b32b",
+      "entry_id": "puyuma-audio-17126d46fe53",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "38",
+        "dialect_name": "Nanwang_Puyuma",
+        "dialect_zh": "南王卑南語",
+        "platform_key": "puyuma"
+      },
+      "text": {
+        "puyuma_form": "pabulasi ku driya dra iyasaus. maw?",
+        "zh_tw": "借我橡皮擦好嗎?",
+        "en": "Can I borrow your eraser?",
+        "normalized_for_match": "pabulasi ku driya dra iyasaus. maw?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/27443/455725.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-17126d46fe53.mp3",
+        "source_phon": null,
+        "ipa_value": "p a b u l a s i k u ɖ i j a ɖ a i j a s a u s m a w",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+        "source_row": 20,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-3b6038afe3564bcd",
+      "entry_id": "puyuma-audio-5c9375318083",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "ulra i Katratripulr niyam ruma’.",
+        "zh_tw": "我們家住在知本。",
+        "en": "Our family lives in Katratripulr.",
+        "normalized_for_match": "ulra i katratripulr niyam ruma’."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35733/556244.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-5c9375318083.mp3",
+        "source_phon": null,
+        "ipa_value": "u ɭ a i k a ʈ a ʈ i p u ɭ n i j a m r u m a ʔ",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-f3e7e709f3f91b56",
+      "entry_id": "puyuma-audio-e393a3d0412b",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "temakakesi mi lra, na sinsi pananadam kananta piningaiyan na aiyupan.",
+        "zh_tw": "上課的時候，老師教我們數字的族語。",
+        "en": "In class, the teacher taught us the Pinuyumayan language of numbers.",
+        "normalized_for_match": "temakakesi mi lra, na sinsi pananadam kananta piningaiyan na aiyupan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556140.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-e393a3d0412b.mp3",
+        "source_phon": null,
+        "ipa_value": "t ə m a k a k ə s i m i ɭ a n a s i n s i p a n a n a d a m k a n a n t a p i n i ŋ a i j a n n a a i j u p a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-9971f63b73a9d058",
+      "entry_id": "puyuma-audio-ebf64aa99678",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "harem kana wari pituwa tuki mu medek ku i kungkuwan.",
+        "zh_tw": "我今天七點到學校。",
+        "en": "I arrived at school at seven today.",
+        "normalized_for_match": "harem kana wari pituwa tuki mu medek ku i kungkuwan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556137.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-ebf64aa99678.mp3",
+        "source_phon": null,
+        "ipa_value": "h a r ə m k a n a w a r i p i t u w a t u k i m u m ə d ə k k u i k u ŋ k u w a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-55a52094b5c394c2",
+      "entry_id": "puyuma-audio-ecd06c07e0fd",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "puwateha mi lra temakesi zi, musavak na sinsi i takakesiyan, na niyam kemakezeng na sasevangan marengay, “katikeriz! sungal!” kema marengay.",
+        "zh_tw": "上課了，老師走進教室，班長說:「起立!敬禮!」",
+        "en": "It’s time for class, the teacher walked into the classroom, and the monitor said: “Stand up! Salute!”",
+        "normalized_for_match": "puwateha mi lra temakesi zi, musavak na sinsi i takakesiyan, na niyam kemakezeng na sasevangan marengay, “katikeriz! sungal!” kema marengay."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556138.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-ecd06c07e0fd.mp3",
+        "source_phon": null,
+        "ipa_value": "p u w a t ə h a m i ɭ a t ə m a k ə s i z i m u s a v a k n a s i n s i i t a k a k ə s i j a n n a n i j a m k ə m a k ə z ə ŋ n a s a s ə v a ŋ a n m a r ə ŋ a j k a t i k ə r i z s u ŋ a l k ə m a m a r ə ŋ a j",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 2,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-8cfb0b4863c40d7a",
+      "entry_id": "puyuma-audio-45dc39676f0e",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "kematamuni mi marengay, “’inavayan sinsi.”",
+        "zh_tw": "我們大聲的說:「老師好。」",
+        "en": "We said loudly, “Hi, teacher.”",
+        "normalized_for_match": "kematamuni mi marengay, “’inavayan sinsi.”"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556139.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-45dc39676f0e.mp3",
+        "source_phon": null,
+        "ipa_value": "k ə m a t a m u n i m i m a r ə ŋ a j ʔ i n a v a j a n s i n s i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 3,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-234aff26e31f2c5b",
+      "entry_id": "puyuma-audio-d8bf21308421",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "miturus mi kana sinsi miyup, semenay mi kana senay na aiyupan.",
+        "zh_tw": "我們跟著老師唸，我們唱了數字歌。",
+        "en": "We followed the teacher to read, we sang the number song.",
+        "normalized_for_match": "miturus mi kana sinsi miyup, semenay mi kana senay na aiyupan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556141.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-d8bf21308421.mp3",
+        "source_phon": null,
+        "ipa_value": "m i t u r u s m i k a n a s i n s i m i j u p s ə m ə n a j m i k a n a s ə n a j n a a i j u p a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 5,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-62bd239c30b8aa21",
+      "entry_id": "puyuma-audio-94508008f8a6",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "sazu aku ninadaman kananta piningaiyan.",
+        "zh_tw": "我學會好多族語。",
+        "en": "I have learned many Pinuyumayan languages.",
+        "normalized_for_match": "sazu aku ninadaman kananta piningaiyan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556142.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-94508008f8a6.mp3",
+        "source_phon": null,
+        "ipa_value": "s a z u a k u n i n a d a m a n k a n a n t a p i n i ŋ a i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 6,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-6dd78319e862303e",
+      "entry_id": "puyuma-audio-de7a5ff6d36d",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "kana wariwari ziya mukakuwa ku i kungkuwan, kana wariwari ziya mu menadanadam ku kananta piningaiyan, rarengay ku pakinger kani ina.",
+        "zh_tw": "我天天上學，我天天學族語，我要講給媽媽聽。",
+        "en": "I go to school every day, I learn the Pinuyumayan language every day, and I want to tell my mother.",
+        "normalized_for_match": "kana wariwari ziya mukakuwa ku i kungkuwan, kana wariwari ziya mu menadanadam ku kananta piningaiyan, rarengay ku pakinger kani ina."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35725/556143.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-de7a5ff6d36d.mp3",
+        "source_phon": null,
+        "ipa_value": "k a n a w a r i w a r i z i j a m u k a k u w a k u i k u ŋ k u w a n k a n a w a r i w a r i z i j a m u m ə n a d a n a d a m k u k a n a n t a p i n i ŋ a i j a n r a r ə ŋ a j k u p a k i ŋ ə r k a n i i n a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 7,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-cc019b3818defc08",
+      "entry_id": "puyuma-audio-2d0099983af8",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "i Atēk aku ngadan.",
+        "zh_tw": "我的名字是Atēk。",
+        "en": "My name is Atēk.",
+        "normalized_for_match": "i atēk aku ngadan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556191.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-2d0099983af8.mp3",
+        "source_phon": null,
+        "ipa_value": "i a t ə k a k u ŋ a d a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 8,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-5503ae16a5e7814e",
+      "entry_id": "puyuma-audio-1cdcfb554bb2",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "tu ngadan ni malri mu maw i Kaliya.",
+        "zh_tw": "我爸爸的名字是Kaliya。",
+        "en": "My dad’s name is Kaliya.",
+        "normalized_for_match": "tu ngadan ni malri mu maw i kaliya."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556192.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-1cdcfb554bb2.mp3",
+        "source_phon": null,
+        "ipa_value": "t u ŋ a d a n n i m a ɭ i m u m a w i k a l i j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 9,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-dcad769f726bf930",
+      "entry_id": "puyuma-audio-dd1bff32ef72",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "tu ngadan ni nani mu maw i Lapi.",
+        "zh_tw": "我媽媽的名字是Lapi。",
+        "en": "My mother’s name is Lapi.",
+        "normalized_for_match": "tu ngadan ni nani mu maw i lapi."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556193.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-dd1bff32ef72.mp3",
+        "source_phon": null,
+        "ipa_value": "t u ŋ a d a n n i n a n i m u m a w i l a p i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 10,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-0ed2d8980e9a3581",
+      "entry_id": "puyuma-audio-23c2fbbf4341",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "muketrep lra ku ’ami harem.",
+        "zh_tw": "我今年10歲。",
+        "en": "I am 10 years old.",
+        "normalized_for_match": "muketrep lra ku ’ami harem."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556194.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-23c2fbbf4341.mp3",
+        "source_phon": null,
+        "ipa_value": "m u k ə ʈ ə p ɭ a k u ʔ a m i h a r ə m",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 11,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-3acf36938fa297d5",
+      "entry_id": "puyuma-audio-7a6d8fcc6929",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "ulra i valri na ma’inay a sasa, tu ngadan maw i Uking, i intaw harem mu muketrep misama’ za saya tu ’ami.",
+        "zh_tw": "我有一個哥哥，他叫Uking，他今年11歲。",
+        "en": "I have a brother, his name is Uking, he is 11 years old.",
+        "normalized_for_match": "ulra i valri na ma’inay a sasa, tu ngadan maw i uking, i intaw harem mu muketrep misama’ za saya tu ’ami."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556195.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7a6d8fcc6929.mp3",
+        "source_phon": null,
+        "ipa_value": "u ɭ a i v a ɭ i n a m a ʔ i n a j a s a s a t u ŋ a d a n m a w i u k i ŋ i i n t a w h a r ə m m u m u k ə ʈ ə p m i s a m a ʔ z a s a j a t u ʔ a m i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 12,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-0f6569097b5c4d91",
+      "entry_id": "puyuma-audio-27ad7b13ee68",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "salrangan mi temakesi kana saya kungkuwan.",
+        "zh_tw": "我們在同一間學校讀書。",
+        "en": "We study in the same school.",
+        "normalized_for_match": "salrangan mi temakesi kana saya kungkuwan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556196.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-27ad7b13ee68.mp3",
+        "source_phon": null,
+        "ipa_value": "s a ɭ a ŋ a n m i t ə m a k ə s i k a n a s a j a k u ŋ k u w a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 13,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-7f2adadbfcbdc5a0",
+      "entry_id": "puyuma-audio-96aa43762826",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "inku za i valri sahar mi semenay.",
+        "zh_tw": "我和哥哥都喜歡唱歌。",
+        "en": "Both my brother and I like to sing.",
+        "normalized_for_match": "inku za i valri sahar mi semenay."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556197.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-96aa43762826.mp3",
+        "source_phon": null,
+        "ipa_value": "i n k u z a i v a ɭ i s a h a r m i s ə m ə n a j",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 14,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-3361557e7000469a",
+      "entry_id": "puyuma-audio-fba7d6ccb2ce",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "sahar ku pakulimalima, nu katalaulepan i kungkuwan mu, salrangan mi saruma’enan mukuwa pakulimaya.",
+        "zh_tw": "我喜歡游泳，放假的時候，我們全家會一起去游泳。",
+        "en": "I like swimming. During the holidays, our whole family go swimming together.",
+        "normalized_for_match": "sahar ku pakulimalima, nu katalaulepan i kungkuwan mu, salrangan mi saruma’enan mukuwa pakulimaya."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556198.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-fba7d6ccb2ce.mp3",
+        "source_phon": null,
+        "ipa_value": "s a h a r k u p a k u l i m a l i m a n u k a t a l a u l ə p a n i k u ŋ k u w a n m u s a ɭ a ŋ a n m i s a r u m a ʔ ə n a n m u k u w a p a k u l i m a j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 15,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-8d30ad9299de7561",
+      "entry_id": "puyuma-audio-15e0e7223043",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "sahar ku manadam kana vekal na ali’an, aruwa mi salrangan semenay zi mukuwa pakulimaya.",
+        "zh_tw": "我喜歡認識新朋友，我們可以一起唱歌和游泳。",
+        "en": "I love meeting new people, we can sing and swim together.",
+        "normalized_for_match": "sahar ku manadam kana vekal na ali’an, aruwa mi salrangan semenay zi mukuwa pakulimaya."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35729/556199.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-15e0e7223043.mp3",
+        "source_phon": null,
+        "ipa_value": "s a h a r k u m a n a d a m k a n a v ə k a l n a a l i ʔ a n a r u w a m i s a ɭ a ŋ a n s ə m ə n a j z i m u k u w a p a k u l i m a j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 16,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-f6c55239f374e447",
+      "entry_id": "puyuma-audio-c4005834c802",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "a alrak ku za Pinuyumayan.",
+        "zh_tw": "我是卑南族的小孩。",
+        "en": "I am an Pinuyumayan child.",
+        "normalized_for_match": "a alrak ku za pinuyumayan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35733/556243.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c4005834c802.mp3",
+        "source_phon": null,
+        "ipa_value": "a a ɭ a k k u z a p i n u j u m a j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 17,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-e606727f501417a6",
+      "entry_id": "puyuma-audio-cb87557f60ad",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "lralruwatr mi saruma’enan.",
+        "zh_tw": "我們家共有五個人。",
+        "en": "There are five people in our family.",
+        "normalized_for_match": "lralruwatr mi saruma’enan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35733/556245.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-cb87557f60ad.mp3",
+        "source_phon": null,
+        "ipa_value": "ɭ a ɭ u w a ʈ m i s a r u m a ʔ ə n a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 19,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-872a308aa4d9c2e0",
+      "entry_id": "puyuma-audio-96ee5840e608",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "39",
+        "dialect_name": "Zhiben_Puyuma",
+        "dialect_zh": "知本卑南語",
+        "platform_key": "katratripulr"
+      },
+      "text": {
+        "puyuma_form": "kaniyam saruma’enan tatelu mi maruwadiyadi.",
+        "zh_tw": "我們家有三個兄弟姊妹。",
+        "en": "There are three brothers and sisters in our family.",
+        "normalized_for_match": "kaniyam saruma’enan tatelu mi maruwadiyadi."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35733/556246.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-96ee5840e608.mp3",
+        "source_phon": null,
+        "ipa_value": "k a n i j a m s a r u m a ʔ ə n a n t a t ə l u m i m a r u w a d i j a d i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+        "source_row": 20,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-5c96b4e69fc883de",
+      "entry_id": "puyuma-audio-3e8e95834aec",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "meredek ku i takesiyan a pituwa tuki harem kana wari.",
+        "zh_tw": "我今天七點到學校。",
+        "en": "I arrived at school at seven today.",
+        "normalized_for_match": "meredek ku i takesiyan a pituwa tuki harem kana wari."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556886.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-3e8e95834aec.mp3",
+        "source_phon": null,
+        "ipa_value": "m ə r ə d ə k k u i t a k ə s i j a n a p i t u w a t u k i h a r ə m k a n a w a r i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-cd4685469b8970bc",
+      "entry_id": "puyuma-audio-595e0d902d82",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "a temakesi mi mu, tu panadamaw mi kana sinsi za aiyupan. kananta piningaiyan.",
+        "zh_tw": "上課的時候，老師教我們數字的族語。",
+        "en": "In class, the teacher taught us the Pinuyumayan language of numbers.",
+        "normalized_for_match": "a temakesi mi mu, tu panadamaw mi kana sinsi za aiyupan. kananta piningaiyan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556889.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-595e0d902d82.mp3",
+        "source_phon": null,
+        "ipa_value": "a t ə m a k ə s i m i m u t u p a n a d a m a w m i k a n a s i n s i z a a i j u p a n k a n a n t a p i n i ŋ a i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-8aa09e041e263363",
+      "entry_id": "puyuma-audio-f720172af555",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "ulra naniyam ruma’ i Mulivelivek.",
+        "zh_tw": "我們家住在初鹿部落。",
+        "en": "Our family lives in Mulivelivek.",
+        "normalized_for_match": "ulra naniyam ruma’ i mulivelivek."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35781/556993.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-f720172af555.mp3",
+        "source_phon": null,
+        "ipa_value": "u ɭ a n a n i j a m r u m a ʔ i m u l i v ə l i v ə k",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-57581ceacc1924e2",
+      "entry_id": "puyuma-audio-40cee4a7b4a2",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "kemiyarakaz lra temakesi, musavak na sinsi kana talrevaw, kema na pancang, “katikezir! sungal!”",
+        "zh_tw": "上課了，老師走進教室，班長說:「起立!敬禮!」",
+        "en": "It’s time for class, the teacher walked into the classroom, and the monitor said: “Stand up! Salute!”",
+        "normalized_for_match": "kemiyarakaz lra temakesi, musavak na sinsi kana talrevaw, kema na pancang, “katikezir! sungal!”"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556887.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-40cee4a7b4a2.mp3",
+        "source_phon": null,
+        "ipa_value": "k ə m i j a r a k a z ɭ a t ə m a k ə s i m u s a v a k n a s i n s i k a n a t a ɭ ə v a w k ə m a n a p a n ts a ŋ k a t i k ə z i r s u ŋ a l",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 2,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-6f0a39612fc84e8a",
+      "entry_id": "puyuma-audio-f3b81e5909b4",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "kema’izang mi marengay, “’inavayan sinsi.”",
+        "zh_tw": "我們大聲的說:「老師好。」",
+        "en": "We said loudly, “Hi, teacher.”",
+        "normalized_for_match": "kema’izang mi marengay, “’inavayan sinsi.”"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556888.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-f3b81e5909b4.mp3",
+        "source_phon": null,
+        "ipa_value": "k ə m a ʔ i z a ŋ m i m a r ə ŋ a j ʔ i n a v a j a n s i n s i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 3,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-17fedfd8e064636e",
+      "entry_id": "puyuma-audio-c1f05d8abee4",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "iturus mi kana sinsi miyup, zi semenay mi kana senay na aiyupan.",
+        "zh_tw": "我們跟著老師唸，我們唱了數字歌。",
+        "en": "We followed the teacher to read, we sang the number song.",
+        "normalized_for_match": "iturus mi kana sinsi miyup, zi semenay mi kana senay na aiyupan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556890.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c1f05d8abee4.mp3",
+        "source_phon": null,
+        "ipa_value": "i t u r u s m i k a n a s i n s i m i j u p z i s ə m ə n a j m i k a n a s ə n a j n a a i j u p a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 5,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-7200aceff7e59c94",
+      "entry_id": "puyuma-audio-c05c1fa52c34",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "sazu ku nilrazalrazam nanta piningaiyan.",
+        "zh_tw": "我學會好多族語。",
+        "en": "I have learned many Pinuyumayan languages.",
+        "normalized_for_match": "sazu ku nilrazalrazam nanta piningaiyan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556891.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c05c1fa52c34.mp3",
+        "source_phon": null,
+        "ipa_value": "s a z u k u n i ɭ a z a ɭ a z a m n a n t a p i n i ŋ a i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 6,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-8bfd30f5f3a23b75",
+      "entry_id": "puyuma-audio-977400f1160f",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "kana wariwari mukuwa ku i takesiyan, kana wariwari menadanadam ku kanata piningaiyan, rarengay ku pakinger kani inani.",
+        "zh_tw": "我天天上學，我天天學族語，我要講給媽媽聽。",
+        "en": "I go to school every day, I learn the Pinuyumayan language every day, and I want to tell my mother.",
+        "normalized_for_match": "kana wariwari mukuwa ku i takesiyan, kana wariwari menadanadam ku kanata piningaiyan, rarengay ku pakinger kani inani."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35773/556892.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-977400f1160f.mp3",
+        "source_phon": null,
+        "ipa_value": "k a n a w a r i w a r i m u k u w a k u i t a k ə s i j a n k a n a w a r i w a r i m ə n a d a n a d a m k u k a n a t a p i n i ŋ a i j a n r a r ə ŋ a j k u p a k i ŋ ə r k a n i i n a n i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 7,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-71472a3696e57c08",
+      "entry_id": "puyuma-audio-6b36c9270538",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "i Inor nanku ngadan.",
+        "zh_tw": "我的名字是Inor。",
+        "en": "My name is Inor.",
+        "normalized_for_match": "i inor nanku ngadan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556940.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-6b36c9270538.mp3",
+        "source_phon": null,
+        "ipa_value": "i i n o r n a n k u ŋ a d a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 8,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-25e487f93475c5c5",
+      "entry_id": "puyuma-audio-15e8eef74423",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "i Asing tu ngadan ni amalri",
+        "zh_tw": "我爸爸的名字是Asing。",
+        "en": "My dad’s name is Asing.",
+        "normalized_for_match": "i asing tu ngadan ni amalri"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556941.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-15e8eef74423.mp3",
+        "source_phon": null,
+        "ipa_value": "i a s i ŋ t u ŋ a d a n n i a m a ɭ i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 9,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-21c8cba544d3b592",
+      "entry_id": "puyuma-audio-c460026f7431",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "i Sunay tu ngadan ni inani.",
+        "zh_tw": "我媽媽的名字是 Sunay。",
+        "en": "My mother’s name is Sunay.",
+        "normalized_for_match": "i sunay tu ngadan ni inani."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556942.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c460026f7431.mp3",
+        "source_phon": null,
+        "ipa_value": "i s u n a j t u ŋ a d a n n i i n a n i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 10,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-ebb7306ecd1de1f8",
+      "entry_id": "puyuma-audio-354ee90bdf89",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "muketrep ku ’ami harem kana ’ami.",
+        "zh_tw": "我今年10歲。",
+        "en": "I am 10 years old.",
+        "normalized_for_match": "muketrep ku ’ami harem kana ’ami."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556943.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-354ee90bdf89.mp3",
+        "source_phon": null,
+        "ipa_value": "m u k ə ʈ ə p k u ʔ a m i h a r ə m k a n a ʔ a m i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 11,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-378e05e01531f74a",
+      "entry_id": "puyuma-audio-352af7943610",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "ulra i ivalri, i Singkay nantu ngadan, muketrep misama’ za saya nantu ’ami harem.",
+        "zh_tw": "我有一個哥哥，他叫Singkay，他今年11歲。",
+        "en": "I have a brother, his name is Singkay, he is 11 years old.",
+        "normalized_for_match": "ulra i ivalri, i singkay nantu ngadan, muketrep misama’ za saya nantu ’ami harem."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556944.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-352af7943610.mp3",
+        "source_phon": null,
+        "ipa_value": "u ɭ a i i v a ɭ i i s i ŋ k a j n a n t u ŋ a d a n m u k ə ʈ ə p m i s a m a ʔ z a s a j a n a n t u ʔ a m i h a r ə m",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 12,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-c3714607aa21ff67",
+      "entry_id": "puyuma-audio-7fbfd8c8045d",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "mukasa mi temakesi kana maresan na takesiyan.",
+        "zh_tw": "我們在同一間學校讀書。",
+        "en": "We study in the same school.",
+        "normalized_for_match": "mukasa mi temakesi kana maresan na takesiyan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556945.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7fbfd8c8045d.mp3",
+        "source_phon": null,
+        "ipa_value": "m u k a s a m i t ə m a k ə s i k a n a m a r ə s a n n a t a k ə s i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 13,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-a12260f942a48c41",
+      "entry_id": "puyuma-audio-0aa5dc53e189",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "sahar mi semenay iniyam i ivalri na ma’inayan.",
+        "zh_tw": "我和哥哥都喜歡唱歌。",
+        "en": "Both my brother and I like to sing.",
+        "normalized_for_match": "sahar mi semenay iniyam i ivalri na ma’inayan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556946.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-0aa5dc53e189.mp3",
+        "source_phon": null,
+        "ipa_value": "s a h a r m i s ə m ə n a j i n i j a m i i v a ɭ i n a m a ʔ i n a j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 14,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-3841de352440315d",
+      "entry_id": "puyuma-audio-75abd617e2fb",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "sahar ku melrangulranguya nu katalaulepan, marelrang mi saruma’enan mukuwa melrangulranguya.",
+        "zh_tw": "我喜歡游泳，放假的時候，我們全家會一起去游泳。",
+        "en": "I like swimming. During the holidays, our whole family go swimming together.",
+        "normalized_for_match": "sahar ku melrangulranguya nu katalaulepan, marelrang mi saruma’enan mukuwa melrangulranguya."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556947.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-75abd617e2fb.mp3",
+        "source_phon": null,
+        "ipa_value": "s a h a r k u m ə ɭ a ŋ u ɭ a ŋ u j a n u k a t a l a u l ə p a n m a r ə ɭ a ŋ m i s a r u m a ʔ ə n a n m u k u w a m ə ɭ a ŋ u ɭ a ŋ u j a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 15,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-8178165d471633cc",
+      "entry_id": "puyuma-audio-9f9593e40ba5",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "sahar ku malrazam za vekal za ’ali’an, karuwa mi mukasa semenasenay zi melrangulranguy.",
+        "zh_tw": "我喜歡認識新朋友，我們可以一起唱歌和游泳。",
+        "en": "I love meeting new people, we can sing and swim together.",
+        "normalized_for_match": "sahar ku malrazam za vekal za ’ali’an, karuwa mi mukasa semenasenay zi melrangulranguy."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35777/556948.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-9f9593e40ba5.mp3",
+        "source_phon": null,
+        "ipa_value": "s a h a r k u m a ɭ a z a m z a v ə k a l z a ʔ a l i ʔ a n k a r u w a m i m u k a s a s ə m ə n a s ə n a j z i m ə ɭ a ŋ u ɭ a ŋ u j",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 16,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-403bb09d4b2825cc",
+      "entry_id": "puyuma-audio-7dd92ece8811",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "a alrak ku za Pinuyumayan.",
+        "zh_tw": "我是卑南族的小孩。",
+        "en": "I am an Pinuyumayan child.",
+        "normalized_for_match": "a alrak ku za pinuyumayan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35781/556992.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7dd92ece8811.mp3",
+        "source_phon": null,
+        "ipa_value": "a a ɭ a k k u z a p i n u j u m a j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 17,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-eea5e0732184f80a",
+      "entry_id": "puyuma-audio-2c6e26ed604f",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "lralruwatr mi saruma’enan.",
+        "zh_tw": "我們家共有五個人。",
+        "en": "There are five people in our family.",
+        "normalized_for_match": "lralruwatr mi saruma’enan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35781/556994.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-2c6e26ed604f.mp3",
+        "source_phon": null,
+        "ipa_value": "ɭ a ɭ u w a ʈ m i s a r u m a ʔ ə n a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 19,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-d807e787c3307ac0",
+      "entry_id": "puyuma-audio-03d14c86fc63",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "40",
+        "dialect_name": "Xiqun_Puyuma",
+        "dialect_zh": "西群卑南語",
+        "platform_key": "ulivelivek"
+      },
+      "text": {
+        "puyuma_form": "tatelu mi maruwadiyadi.",
+        "zh_tw": "我們家有三個兄弟姊妹。",
+        "en": "There are three brothers and sisters in our family.",
+        "normalized_for_match": "tatelu mi maruwadiyadi."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://web.klokah.tw/text/sound/35781/556995.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-03d14c86fc63.mp3",
+        "source_phon": null,
+        "ipa_value": "t a t ə l u m i m a r u w a d i j a d i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+        "source_row": 20,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-ef1947b83cb69206",
+      "entry_id": "puyuma-audio-7701493ee98e",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "i nani mu Amis i Tulik, i malri mu Puyuma.",
+        "zh_tw": "我母親是都歷的阿美族，我父親是南王人。",
+        "en": "",
+        "normalized_for_match": "i nani mu amis i tulik, i malri mu puyuma."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s10.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7701493ee98e.mp3",
+        "source_phon": null,
+        "ipa_value": "i n a n i m u a m i s i t u l i k i m a ɭ i m u p u j u m a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-61ea7ade9379f18e",
+      "entry_id": "puyuma-audio-860909877825",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "avuruk ku i dekalr mena’uwa kani nani di malri.",
+        "zh_tw": "我要回部落探望我爸媽。",
+        "en": "",
+        "normalized_for_match": "avuruk ku i dekalr mena’uwa kani nani di malri."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s2.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-860909877825.mp3",
+        "source_phon": null,
+        "ipa_value": "a v u r u k k u i d ə k a ɭ m ə n a ʔ u w a k a n i n a n i d i m a ɭ i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-f393fe3ffedb6c47",
+      "entry_id": "puyuma-audio-edee4dfae2bd",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "semavalran. yawa u i iyan?",
+        "zh_tw": "早安。你要去哪裡？",
+        "en": "",
+        "normalized_for_match": "semavalran. yawa u i iyan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s1.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-edee4dfae2bd.mp3",
+        "source_phon": null,
+        "ipa_value": "s ə m a v a ɭ a n j a w a u i i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 0,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-80383c9a92118dc3",
+      "entry_id": "puyuma-audio-210031b89cc3",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "yawa u pida wariyan?",
+        "zh_tw": "你要去幾天？",
+        "en": "",
+        "normalized_for_match": "yawa u pida wariyan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s3.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-210031b89cc3.mp3",
+        "source_phon": null,
+        "ipa_value": "j a w a u p i d a w a r i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 3,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-0a875e842d68062f",
+      "entry_id": "puyuma-audio-f1d5aade55f4",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "nu ’emanan mu uwaruma’ ku lra.",
+        "zh_tw": "明天就回來了。",
+        "en": "",
+        "normalized_for_match": "nu ’emanan mu uwaruma’ ku lra."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s4.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-f1d5aade55f4.mp3",
+        "source_phon": null,
+        "ipa_value": "n u ʔ ə m a n a n m u u w a r u m a ʔ k u ɭ a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 4,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-65ab96ddc1c78fa8",
+      "entry_id": "puyuma-audio-fbd737e6a151",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "nu kemadu mu, tawar lra.",
+        "zh_tw": "那麼，請慢走。",
+        "en": "",
+        "normalized_for_match": "nu kemadu mu, tawar lra."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s5.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-fbd737e6a151.mp3",
+        "source_phon": null,
+        "ipa_value": "n u k ə m a d u m u t a w a r ɭ a",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 5,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-6f52bca48773dd08",
+      "entry_id": "puyuma-audio-db1c8c2cc14d",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "sawariyan ku lra adi mena’u kannu. muruma’ u a aydan?",
+        "zh_tw": "很久沒看到你，什麼時候回來的？",
+        "en": "",
+        "normalized_for_match": "sawariyan ku lra adi mena’u kannu. muruma’ u a aydan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s6.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-db1c8c2cc14d.mp3",
+        "source_phon": null,
+        "ipa_value": "s a w a r i j a n k u ɭ a a d i m ə n a ʔ u k a n n u m u r u m a ʔ u a a j d a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 6,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-d47c2cdd7832eae8",
+      "entry_id": "puyuma-audio-467fd1dc336b",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "muruma’ ku a semavalr.",
+        "zh_tw": "今天早上回來的。",
+        "en": "",
+        "normalized_for_match": "muruma’ ku a semavalr."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s7.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-467fd1dc336b.mp3",
+        "source_phon": null,
+        "ipa_value": "m u r u m a ʔ k u a s ə m a v a ɭ",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 7,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-e6d7aa3a3d433e95",
+      "entry_id": "puyuma-audio-7b1988cb4900",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "mavangavang u kinadamanan?",
+        "zh_tw": "你最近忙嗎？",
+        "en": "",
+        "normalized_for_match": "mavangavang u kinadamanan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s8.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-7b1988cb4900.mp3",
+        "source_phon": null,
+        "ipa_value": "m a v a ŋ a v a ŋ u k i n a d a m a n a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 8,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-c1320a917e92fac2",
+      "entry_id": "puyuma-audio-2f0f94868666",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "adi, aku kamavangavangan.",
+        "zh_tw": "還好，不太忙。",
+        "en": "",
+        "normalized_for_match": "adi, aku kamavangavangan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s9.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-2f0f94868666.mp3",
+        "source_phon": null,
+        "ipa_value": "a d i a k u k a m a v a ŋ a v a ŋ a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 9,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-9a68ab5439d1e642",
+      "entry_id": "puyuma-audio-d0e05f7b87fb",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "miwari u nu ’emanan? salrangana ta  kara’alri!",
+        "zh_tw": "明天有空嗎？我們一起吃午飯吧！",
+        "en": "",
+        "normalized_for_match": "miwari u nu ’emanan? salrangana ta kara’alri!"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s10.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-d0e05f7b87fb.mp3",
+        "source_phon": null,
+        "ipa_value": "m i w a r i u n u ʔ ə m a n a n s a ɭ a ŋ a n a t a k a r a ʔ a ɭ i",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 10,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-ef5c1a33ad1a3604",
+      "entry_id": "puyuma-audio-1800952f0787",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "’inavayan, i Haku ku, kiwmalra ku diya, i iman nu ngadan?",
+        "zh_tw": "你好，我叫Haku，請問，你叫什麼名字？",
+        "en": "",
+        "normalized_for_match": "’inavayan, i haku ku, kiwmalra ku diya, i iman nu ngadan?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s1.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-1800952f0787.mp3",
+        "source_phon": null,
+        "ipa_value": "ʔ i n a v a j a n i h a k u k u k i w m a ɭ a k u d i j a i i m a n n u ŋ a d a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 11,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-ed773dc335203902",
+      "entry_id": "puyuma-audio-dadf0ecf1ef9",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "nangku ngadan mau i Sahar.",
+        "zh_tw": "我的名字叫Sahar。",
+        "en": "",
+        "normalized_for_match": "nangku ngadan mau i sahar."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s2.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-dadf0ecf1ef9.mp3",
+        "source_phon": null,
+        "ipa_value": "n a ŋ k u ŋ a d a n m a u i s a h a r",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 12,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-d4f2ef9b2f12374d",
+      "entry_id": "puyuma-audio-b682d7bcb672",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "i Takusima intaw. nangku ’aliyan.",
+        "zh_tw": "他是我的朋友叫Takusima。",
+        "en": "",
+        "normalized_for_match": "i takusima intaw. nangku ’aliyan."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s3.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-b682d7bcb672.mp3",
+        "source_phon": null,
+        "ipa_value": "i t a k u s i m a i n t a w n a ŋ k u ʔ a l i j a n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 13,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-a4b17dd587707751",
+      "entry_id": "puyuma-audio-c30fc2b1df19",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "kemay i iyan i ’aliyu?",
+        "zh_tw": "你的朋友從哪裡來？",
+        "en": "",
+        "normalized_for_match": "kemay i iyan i ’aliyu?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s4.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-c30fc2b1df19.mp3",
+        "source_phon": null,
+        "ipa_value": "k ə m a j i i j a n i ʔ a l i j u",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 14,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-c4dcc7a6e12b5161",
+      "entry_id": "puyuma-audio-3cdd1df18621",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "a Dipung intaw, duwa Taiwan menadama da ngai na Yuēncumin.",
+        "zh_tw": "他是日本人，來臺灣學原住民族的語言。",
+        "en": "",
+        "normalized_for_match": "a dipung intaw, duwa taiwan menadama da ngai na yuēncumin."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s5.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-3cdd1df18621.mp3",
+        "source_phon": null,
+        "ipa_value": "a d i p u ŋ i n t a w d u w a t a i w a n m ə n a d a m a d a ŋ a i n a j u ə n ts u m i n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 15,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-1b15de953f78edbd",
+      "entry_id": "puyuma-audio-01e26c7a1e43",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "sayhu marengay da ta ngai intaw?",
+        "zh_tw": "他會說我們的語言嗎？",
+        "en": "",
+        "normalized_for_match": "sayhu marengay da ta ngai intaw?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s6.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-01e26c7a1e43.mp3",
+        "source_phon": null,
+        "ipa_value": "s a j h u m a r ə ŋ a j d a t a ŋ a i i n t a w",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 16,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-efd41d25577e179c",
+      "entry_id": "puyuma-audio-9e7e1ddf559f",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "ma’ulid, aymu, salaw sahar da ta bungka na Yuēncumin.",
+        "zh_tw": "不會，但是，他對原住民文化很有興趣。",
+        "en": "",
+        "normalized_for_match": "ma’ulid, aymu, salaw sahar da ta bungka na yuēncumin."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s7.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-9e7e1ddf559f.mp3",
+        "source_phon": null,
+        "ipa_value": "m a ʔ u l i d a j m u s a l a w s a h a r d a t a b u ŋ k a n a j u ə n ts u m i n",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 17,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-53498e15f18c91a4",
+      "entry_id": "puyuma-audio-4ae65b5d013c",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "salaw ku semangal kirekadalram kani Takusima sang.",
+        "zh_tw": "很高興認識你Takusima先生。",
+        "en": "",
+        "normalized_for_match": "salaw ku semangal kirekadalram kani takusima sang."
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s8.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-4ae65b5d013c.mp3",
+        "source_phon": null,
+        "ipa_value": "s a l a w k u s ə m a ŋ a l k i r ə k a d a ɭ a m k a n i t a k u s i m a s a ŋ",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 18,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    },
+    {
+      "id": "pron-ae3f50c7e3909686",
+      "entry_id": "puyuma-audio-eccf97d43a0f",
+      "asset_type": "verified_source_audio_pronunciation",
+      "language": {
+        "ethnic_group_zh": "卑南族",
+        "language_zh": "卑南語",
+        "dialect_code": "41",
+        "dialect_name": "Jianhe_Puyuma",
+        "dialect_zh": "建和卑南語",
+        "platform_key": "kasavakan"
+      },
+      "text": {
+        "puyuma_form": "i iyan u cawan Sahar?",
+        "zh_tw": "Sahar 你是哪個族群的人？",
+        "en": "",
+        "normalized_for_match": "i iyan u cawan sahar?"
+      },
+      "pronunciation": {
+        "source_audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s9.mp3",
+        "mime_type": "audio/mpeg",
+        "audio_mode": "human_recorded_source_audio_primary",
+        "tts_equivalence": "exact_recorded_pronunciation_for_this_entry",
+        "public_playback_allowed": true,
+        "local_mirror_path": "external/puyuma_audio_mirror/puyuma-audio-eccf97d43a0f.mp3",
+        "source_phon": null,
+        "ipa_value": "i i j a n u ts a w a n s a h a r",
+        "ipa_status": "rule_based_draft_requires_linguist_review",
+        "g2p_status": "rule_based_draft_requires_linguist_review",
+        "review_status": "approved_for_public_learning"
+      },
+      "quality": {
+        "real_pronunciation_score": 1.0,
+        "is_synthetic": false,
+        "requires_human_review_for_teaching": true,
+        "license_review_required_before_commercial_use": true
+      },
+      "source": {
+        "source_id": "formosanbank_epark",
+        "repository": "FormosanBank/FormosanBank",
+        "commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+        "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+        "source_row": 19,
+        "source_format": "csv",
+        "verification_status": "verified_public_source",
+        "license_review_required_before_commercial_use": true
+      },
+      "sensitivity": "public",
+      "release_channel": "public"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+  <S id="0001">
+    <FORM kindOf="original">kuan</FORM>
+    <PHON kindOf="original">kuan</PHON>
+    <TRANSL xml:lang="zh">我</TRANSL>
+    <TRANSL xml:lang="en">I / me</TRANSL>
+    <AUDIO url="sample.mp3" />
+  </S>
+</ROOT>

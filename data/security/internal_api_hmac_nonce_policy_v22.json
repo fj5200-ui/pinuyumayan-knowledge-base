@@ -1,0 +1,24 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "title_zh": "Internal API HMAC + Nonce 防重放安全策略",
+  "required_headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "signature_base": "METHOD\nPATH_WITH_QUERY\nTIMESTAMP\nNONCE\nSHA256_BODY",
+  "algorithm": "HMAC-SHA256",
+  "timestamp_tolerance_seconds": 300,
+  "nonce_ttl_seconds": 600,
+  "reject_when": [
+    "timestamp_out_of_range",
+    "nonce_reused",
+    "signature_mismatch",
+    "body_hash_mismatch",
+    "client_scope_missing",
+    "forbidden_relation_hit"
+  ],
+  "audit_table": "internal_api_signature_audit_v22"
+}

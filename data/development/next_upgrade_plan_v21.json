@@ -1,0 +1,80 @@
+{
+  "version": "v21-plan",
+  "generated_at": "2026-06-11T14:58:00+08:00",
+  "title": "下一次完善＆開發＆升級＆優化方案：v21 實作交付版",
+  "priority_order": [
+    {
+      "priority": 1,
+      "name": "真實來源擴充到多來源",
+      "tasks": [
+        "新增 TIPP/文化部/臺東縣官方來源抓取器",
+        "每個來源建立 source adapter",
+        "同一事實跨來源比對 confidence"
+      ],
+      "output": "data/sources/verified_source_registry_v21.json"
+    },
+    {
+      "priority": 2,
+      "name": "前端 AI Composer 正式接主站",
+      "tasks": [
+        "Next.js composer page",
+        "source packet picker",
+        "user idea form",
+        "citation preview",
+        "submit-review flow"
+      ],
+      "output": "webapp/components/FrontendAiArticleComposer.v21.tsx"
+    },
+    {
+      "priority": 3,
+      "name": "後台審核 UI",
+      "tasks": [
+        "AI 草稿審核列表",
+        "claim citation diff",
+        "duplicate check report",
+        "sensitive content banner"
+      ],
+      "output": "webapp/admin/ai-article-review-v21.tsx"
+    },
+    {
+      "priority": 4,
+      "name": "資料庫安全實作",
+      "tasks": [
+        "HMAC signature middleware 實際套用",
+        "nonce/replay check",
+        "RBAC scope guard 實作",
+        "public payload redaction test"
+      ],
+      "output": "backend/src/security/knowledgeVaultGuard.v21.ts"
+    },
+    {
+      "priority": 5,
+      "name": "千筆語料 full corpus 實際匯入測試",
+      "tasks": [
+        "跑 FormosanBank full corpus downloader",
+        "產生 >=1000 筆 preview DB seed",
+        "reconciliation report",
+        "audio coverage report"
+      ],
+      "output": "data/reports/full_corpus_reconciliation_v21.json"
+    },
+    {
+      "priority": 6,
+      "name": "文章去重與發布排程",
+      "tasks": [
+        "article_fingerprint table seed",
+        "publish calendar guard",
+        "topic cooldown",
+        "source claim overlap report"
+      ],
+      "output": "database/migrations/0019_article_publish_scheduler_v21.sql"
+    }
+  ],
+  "acceptance_criteria": [
+    "新增來源不得低於 3 個可靠來源",
+    "新增 claims 不得與既有 canonical_fingerprint 重複",
+    "前端 AI 仍負責生成；後端不生成文章本文",
+    "所有 high sensitivity claim 必須 public_summary_only",
+    "驗收腳本必須檢查 OpenAPI/SDK/DB migration/seed/去重規則"
+  ]
+}

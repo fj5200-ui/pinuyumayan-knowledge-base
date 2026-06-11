@@ -1,0 +1,607 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "count": 30,
+  "cards": [
+    {
+      "card_id": "card_kg22_religion_three_sources_summary",
+      "slug": "kg22-religion-three-sources-summary",
+      "title_zh": "原民會英文頁指出，卑南族在漢人與西方宗教接觸後，傳統信仰、漢人宗教與基督宗教等來源在…",
+      "summary_zh": "原民會英文頁指出，卑南族在漢人與西方宗教接觸後，傳統信仰、漢人宗教與基督宗教等來源在日常生活中並存；平台僅保存公開摘要。",
+      "claim_ids": [
+        "kg22_religion_three_sources_summary"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "宗教與信仰摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9d2595ec0adcc949",
+      "dedupe_key": "claim_9d2595ec0adcc949",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_ritual_revitalization_1981",
+      "slug": "kg22-ritual-revitalization-1981",
+      "title_zh": "原民會英文頁提到 1981 年傳統祭儀復振後，族人開始重視與討論傳統信仰與宗教。",
+      "summary_zh": "原民會英文頁提到 1981 年傳統祭儀復振後，族人開始重視與討論傳統信仰與宗教。",
+      "claim_ids": [
+        "kg22_ritual_revitalization_1981"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "文化復振",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e3befcc94bc5d7e9",
+      "dedupe_key": "claim_e3befcc94bc5d7e9",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_ritual_two_categories",
+      "slug": "kg22-ritual-two-categories",
+      "title_zh": "原民會英文頁將卑南族祭儀公開摘要分為農業祭儀與生命祭儀兩大類。",
+      "summary_zh": "原民會英文頁將卑南族祭儀公開摘要分為農業祭儀與生命祭儀兩大類。",
+      "claim_ids": [
+        "kg22_ritual_two_categories"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀分類",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9ed4303085a87f61",
+      "dedupe_key": "claim_9ed4303085a87f61",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_agricultural_ritual_examples",
+      "slug": "kg22-agricultural-ritual-examples",
+      "title_zh": "原民會英文頁以 Masarut 與 Mugamut 作為農業祭儀例子。",
+      "summary_zh": "原民會英文頁以 Masarut 與 Mugamut 作為農業祭儀例子。",
+      "claim_ids": [
+        "kg22_agricultural_ritual_examples"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀分類",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f4dc87fbb5ab8b82",
+      "dedupe_key": "claim_f4dc87fbb5ab8b82",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_life_ritual_examples",
+      "slug": "kg22-life-ritual-examples",
+      "title_zh": "原民會英文頁以 Vasivas 與 Mangayau 作為生命祭儀例子。",
+      "summary_zh": "原民會英文頁以 Vasivas 與 Mangayau 作為生命祭儀例子。",
+      "claim_ids": [
+        "kg22_life_ritual_examples"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀分類",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_73d282ca586e94b1",
+      "dedupe_key": "claim_73d282ca586e94b1",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mugamut_month_public",
+      "slug": "kg22-mugamut-month-public",
+      "title_zh": "原民會英文頁列出 Mugamut 約在三月，並以女性鋤草完工祭作公開摘要名稱。",
+      "summary_zh": "原民會英文頁列出 Mugamut 約在三月，並以女性鋤草完工祭作公開摘要名稱。",
+      "claim_ids": [
+        "kg22_mugamut_month_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀月曆",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1e2ae96cb2c1ee74",
+      "dedupe_key": "claim_1e2ae96cb2c1ee74",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_ruwuwaan_month_public",
+      "slug": "kg22-ruwuwaan-month-public",
+      "title_zh": "原民會英文頁列出 Ruvuwa’an 約在四月，並以祖先登陸與發祥地儀式作公開摘要名…",
+      "summary_zh": "原民會英文頁列出 Ruvuwa’an 約在四月，並以祖先登陸與發祥地儀式作公開摘要名稱。",
+      "claim_ids": [
+        "kg22_ruwuwaan_month_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀月曆",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2094f213e3a526b7",
+      "dedupe_key": "claim_2094f213e3a526b7",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_masarut_month_public",
+      "slug": "kg22-masarut-month-public",
+      "title_zh": "原民會英文頁列出 Masarut 約在七月，並以小米收穫祭作公開摘要名稱。",
+      "summary_zh": "原民會英文頁列出 Masarut 約在七月，並以小米收穫祭作公開摘要名稱。",
+      "claim_ids": [
+        "kg22_masarut_month_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀月曆",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d494e370c645f2e8",
+      "dedupe_key": "claim_d494e370c645f2e8",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_december_annual_ritual_public",
+      "slug": "kg22-december-annual-ritual-public",
+      "title_zh": "原民會英文頁列出十二月年祭，並說明其包含 Vasivas 與 Mangayau 的公…",
+      "summary_zh": "原民會英文頁列出十二月年祭，並說明其包含 Vasivas 與 Mangayau 的公開摘要關係。",
+      "claim_ids": [
+        "kg22_december_annual_ritual_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀月曆",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_25389cfba0be751f",
+      "dedupe_key": "claim_25389cfba0be751f",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mugamut_unification_summary",
+      "slug": "kg22-mugamut-unification-summary",
+      "title_zh": "原民會英文頁的 Mugamut 公開摘要提到活動象徵部落凝聚與團結；平台不得轉寫成操…",
+      "summary_zh": "原民會英文頁的 Mugamut 公開摘要提到活動象徵部落凝聚與團結；平台不得轉寫成操作教學。",
+      "claim_ids": [
+        "kg22_mugamut_unification_summary"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_77849ff19070cdcc",
+      "dedupe_key": "claim_77849ff19070cdcc",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_ruwuwaan_historical_meaning",
+      "slug": "kg22-ruwuwaan-historical-meaning",
+      "title_zh": "原民會英文頁指出 Ruvuwa’an 具有深刻歷史與文化意義；平台只保留公開摘要，不…",
+      "summary_zh": "原民會英文頁指出 Ruvuwa’an 具有深刻歷史與文化意義；平台只保留公開摘要，不延伸私密路線或儀式細節。",
+      "claim_ids": [
+        "kg22_ruwuwaan_historical_meaning"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3f9f89620d0fd806",
+      "dedupe_key": "claim_3f9f89620d0fd806",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_masarut_family_based_duration",
+      "slug": "kg22-masarut-family-based-duration",
+      "title_zh": "原民會英文頁指出 Masarut 以大家族為單位舉行，公開摘要描述其時間可為三至七日…",
+      "summary_zh": "原民會英文頁指出 Masarut 以大家族為單位舉行，公開摘要描述其時間可為三至七日。",
+      "claim_ids": [
+        "kg22_masarut_family_based_duration"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_053a4722ef2fc363",
+      "dedupe_key": "claim_053a4722ef2fc363",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_masarut_swing_culture_public",
+      "slug": "kg22-masarut-swing-culture-public",
+      "title_zh": "原民會英文頁提到部分社群會在會所前廣場設置鞦韆，今日也成為特殊文化活動。",
+      "summary_zh": "原民會英文頁提到部分社群會在會所前廣場設置鞦韆，今日也成為特殊文化活動。",
+      "claim_ids": [
+        "kg22_masarut_swing_culture_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "歲時祭儀與文化活動",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7d68fb817de69d05",
+      "dedupe_key": "claim_7d68fb817de69d05",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayaw_largest_event",
+      "slug": "kg22-mangayaw-largest-event",
+      "title_zh": "原民會英文頁指出 Mangayaw 是年末至年初之間最大的卑南族活動。",
+      "summary_zh": "原民會英文頁指出 Mangayaw 是年末至年初之間最大的卑南族活動。",
+      "claim_ids": [
+        "kg22_mangayaw_largest_event"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f5a012ae4f9cb34a",
+      "dedupe_key": "claim_f5a012ae4f9cb34a",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayaw_collective_term",
+      "slug": "kg22-mangayaw-collective-term",
+      "title_zh": "原民會英文頁說明 Mangayaw 是 Vasivas 與 Mangayau 兩項祭…",
+      "summary_zh": "原民會英文頁說明 Mangayaw 是 Vasivas 與 Mangayau 兩項祭儀的集合名稱。",
+      "claim_ids": [
+        "kg22_mangayaw_collective_term"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_00661e5ccaa8f86a",
+      "dedupe_key": "claim_00661e5ccaa8f86a",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayaw_three_week_public",
+      "slug": "kg22-mangayaw-three-week-public",
+      "title_zh": "原民會英文頁以公開摘要稱 Mangayaw 約為三週活動。",
+      "summary_zh": "原民會英文頁以公開摘要稱 Mangayaw 約為三週活動。",
+      "claim_ids": [
+        "kg22_mangayaw_three_week_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e4cb50e72683d4da",
+      "dedupe_key": "claim_e4cb50e72683d4da",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_vasivas_courage_training_public",
+      "slug": "kg22-vasivas-courage-training-public",
+      "title_zh": "原民會英文頁描述 Vasivas 與青少年勇氣訓練相關；平台只能作公開摘要，不提供操…",
+      "summary_zh": "原民會英文頁描述 Vasivas 與青少年勇氣訓練相關；平台只能作公開摘要，不提供操作細節。",
+      "claim_ids": [
+        "kg22_vasivas_courage_training_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4358d1f652c49214",
+      "dedupe_key": "claim_4358d1f652c49214",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayau_wilderness_training_public",
+      "slug": "kg22-mangayau-wilderness-training-public",
+      "title_zh": "原民會英文頁描述 Mangayau 與野外生存、狩獵能力及成年儀式相關；平台只保留公…",
+      "summary_zh": "原民會英文頁描述 Mangayau 與野外生存、狩獵能力及成年儀式相關；平台只保留公開摘要。",
+      "claim_ids": [
+        "kg22_mangayau_wilderness_training_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e6675fc66157b296",
+      "dedupe_key": "claim_e6675fc66157b296",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_remavaravas_reunion_public",
+      "slug": "kg22-remavaravas-reunion-public",
+      "title_zh": "原民會英文頁提到 remavaravas 作為活動後慰問與團聚的公開摘要；平台不得擴…",
+      "summary_zh": "原民會英文頁提到 remavaravas 作為活動後慰問與團聚的公開摘要；平台不得擴寫為除祟操作。",
+      "claim_ids": [
+        "kg22_remavaravas_reunion_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "restricted_summary_only",
+      "sensitivity": "high",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2099e6525612fc42",
+      "dedupe_key": "claim_2099e6525612fc42",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_joint_ritual_ethnic_awareness",
+      "slug": "kg22-joint-ritual-ethnic-awareness",
+      "title_zh": "原民會英文頁說明近年聯合祭儀成為村社交流與族群意識發展的重要活動。",
+      "summary_zh": "原民會英文頁說明近年聯合祭儀成為村社交流與族群意識發展的重要活動。",
+      "claim_ids": [
+        "kg22_joint_ritual_ethnic_awareness"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "聯合年祭",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f8bf751b25fd5ed5",
+      "dedupe_key": "claim_f8bf751b25fd5ed5",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_vasivas_grass_monkey_change",
+      "slug": "kg22-vasivas-grass-monkey-change",
+      "title_zh": "原民會英文頁提到因時代與社會變遷，Vasivas 中已以草猴取代真猴；平台可作公開變…",
+      "summary_zh": "原民會英文頁提到因時代與社會變遷，Vasivas 中已以草猴取代真猴；平台可作公開變遷摘要。",
+      "claim_ids": [
+        "kg22_vasivas_grass_monkey_change"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f408a09cf16719d2",
+      "dedupe_key": "claim_f408a09cf16719d2",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayau_fixed_date_range_public",
+      "slug": "kg22-mangayau-fixed-date-range-public",
+      "title_zh": "原民會英文頁提到今日 Mangayau 固定於十二月二十七日至三十一日期間舉行三日活…",
+      "summary_zh": "原民會英文頁提到今日 Mangayau 固定於十二月二十七日至三十一日期間舉行三日活動；仍應以部落實際公告為準。",
+      "claim_ids": [
+        "kg22_mangayau_fixed_date_range_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_684ceec2b42b3d3c",
+      "dedupe_key": "claim_684ceec2b42b3d3c",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayau_elder_teaching_public",
+      "slug": "kg22-mangayau-elder-teaching-public",
+      "title_zh": "原民會英文頁提到長者會在 Mangayau 中教授野外生存與狩獵技能；平台只保留文化…",
+      "summary_zh": "原民會英文頁提到長者會在 Mangayau 中教授野外生存與狩獵技能；平台只保留文化教育摘要。",
+      "claim_ids": [
+        "kg22_mangayau_elder_teaching_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ae577d0bb3f2f974",
+      "dedupe_key": "claim_ae577d0bb3f2f974",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_mangayau_return_celebration_public",
+      "slug": "kg22-mangayau-return-celebration-public",
+      "title_zh": "原民會英文頁提到 Mangayau 結束後有迎接與慰問等社群活動；平台不得擴寫私密儀…",
+      "summary_zh": "原民會英文頁提到 Mangayau 結束後有迎接與慰問等社群活動；平台不得擴寫私密儀程。",
+      "claim_ids": [
+        "kg22_mangayau_return_celebration_public"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "年祭摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8d3b84e4371b9598",
+      "dedupe_key": "claim_8d3b84e4371b9598",
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_joint_annual_ritual_1982",
+      "slug": "kg22-joint-annual-ritual-1982",
+      "title_zh": "原民會英文頁指出聯合年祭於 1982 年開始，時間由各部落會議討論決定。",
+      "summary_zh": "原民會英文頁指出聯合年祭於 1982 年開始，時間由各部落會議討論決定。",
+      "claim_ids": [
+        "kg22_joint_annual_ritual_1982"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "聯合年祭",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a3aa47b490222d4e",
+      "dedupe_key": "claim_a3aa47b490222d4e",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_joint_annual_ritual_turn_taking",
+      "slug": "kg22-joint-annual-ritual-turn-taking",
+      "title_zh": "原民會英文頁指出聯合年祭由不同村社輪流舉辦，內容包含歌舞與競賽等公開活動。",
+      "summary_zh": "原民會英文頁指出聯合年祭由不同村社輪流舉辦，內容包含歌舞與競賽等公開活動。",
+      "claim_ids": [
+        "kg22_joint_annual_ritual_turn_taking"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "聯合年祭",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ac2e34710d3264f6",
+      "dedupe_key": "claim_ac2e34710d3264f6",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_joint_annual_ritual_attachment",
+      "slug": "kg22-joint-annual-ritual-attachment",
+      "title_zh": "原民會英文頁指出聯合年祭從個別村社活動發展為整體族群活動，並有助於族群情感凝聚。",
+      "summary_zh": "原民會英文頁指出聯合年祭從個別村社活動發展為整體族群活動，並有助於族群情感凝聚。",
+      "claim_ids": [
+        "kg22_joint_annual_ritual_attachment"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "category": "聯合年祭",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_877dbf98b3f748f7",
+      "dedupe_key": "claim_877dbf98b3f748f7",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_zh_population_version_guard",
+      "slug": "kg22-zh-population-version-guard",
+      "title_zh": "原民會中文頁目前列出卑南族總人口 16,734；系統需與英文頁 2020 年 14,…",
+      "summary_zh": "原民會中文頁目前列出卑南族總人口 16,734；系統需與英文頁 2020 年 14,517 舊資料分開存放，不得混為同一版本。",
+      "claim_ids": [
+        "kg22_zh_population_version_guard"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "category": "人口資料治理",
+      "public_use": "public",
+      "sensitivity": "low",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_406bc3b0ced7c9b7",
+      "dedupe_key": "claim_406bc3b0ced7c9b7",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_zh_annual_ritual_names",
+      "slug": "kg22-zh-annual-ritual-names",
+      "title_zh": "原民會中文頁列出卑南族現存年度慶典名稱：小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "summary_zh": "原民會中文頁列出卑南族現存年度慶典名稱：小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "claim_ids": [
+        "kg22_zh_annual_ritual_names"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "category": "中文公開摘要",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_25cef1765675cd8c",
+      "dedupe_key": "claim_25cef1765675cd8c",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    },
+    {
+      "card_id": "card_kg22_zh_plain_contact_context",
+      "slug": "kg22-zh-plain-contact-context",
+      "title_zh": "原民會中文頁指出卑南族位於多族群交會的平原地帶，很早與外界文化接觸，仍維繫傳統文化與…",
+      "summary_zh": "原民會中文頁指出卑南族位於多族群交會的平原地帶，很早與外界文化接觸，仍維繫傳統文化與生活。",
+      "claim_ids": [
+        "kg22_zh_plain_contact_context"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "category": "中文公開摘要",
+      "public_use": "public",
+      "sensitivity": "low",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9cfc47e77af0507b",
+      "dedupe_key": "claim_9cfc47e77af0507b",
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。"
+    }
+  ]
+}

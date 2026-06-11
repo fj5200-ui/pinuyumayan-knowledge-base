@@ -1,0 +1,17 @@
+{
+  "version": "2026-06-11",
+  "policy_name": "Puyuma Audio Website Playback Policy",
+  "audio_storage": "remote_url_only_in_knowledge_pack",
+  "mp3_files_included_in_zip": false,
+  "frontend_requirements": [
+    "Use preload=\"none\" to avoid大量音檔自動下載。",
+    "Show source attribution near player.",
+    "Support retry/fallback state.",
+    "Do not modify, remix, or synthesize cultural voice data without separate permission."
+  ],
+  "review_required": [
+    "Before commercial use",
+    "Before bulk downloading audio",
+    "Before copying audio into own CDN or object storage"
+  ]
+}

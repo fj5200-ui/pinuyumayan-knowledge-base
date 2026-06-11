@@ -1,0 +1,20 @@
+{
+  "version": "0.8.0",
+  "strategy": "logical mysqldump for MySQL/TiDB-compatible deployments",
+  "defaultRetentionDays": 14,
+  "backupBefore": [
+    "migrations",
+    "full_corpus_import",
+    "bulk_audio_mirror",
+    "manual data fixes"
+  ],
+  "restoreValidation": [
+    "healthcheck",
+    "bootstrap endpoint",
+    "vocabulary endpoint",
+    "review queue count"
+  ],
+  "notes": [
+    "TiDB Cloud may provide managed backups; this policy still keeps portable logical snapshots for migration/rollback."
+  ]
+}

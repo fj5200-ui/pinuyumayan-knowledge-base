@@ -1,0 +1,39 @@
+{
+  "version": "v17",
+  "generated_at": "2026-06-11T14:40:00+08:00",
+  "public_routes": [
+    {
+      "method": "GET",
+      "path": "/api/public/audio/manifest",
+      "purpose_zh": "主站取得真人音檔播放清單"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/audio/search",
+      "purpose_zh": "搜尋真人音檔"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/audio/head/{assetId}",
+      "purpose_zh": "取得單筆播放 metadata"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/audio/proxy/{assetId}",
+      "purpose_zh": "後端白名單 proxy 播放音檔"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/pronunciation/search",
+      "purpose_zh": "主站語詞/發音搜尋"
+    },
+    {
+      "method": "GET",
+      "path": "/api/public/pronunciation/player-config",
+      "purpose_zh": "取得播放器 fallback 與安全策略"
+    }
+  ],
+  "public_synthetic_tts_enabled": false,
+  "human_recorded_audio_assets": 80,
+  "enriched_search_documents_added": 80
+}

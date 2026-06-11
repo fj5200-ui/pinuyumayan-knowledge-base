@@ -1,0 +1,15 @@
+[Unit]
+Description=Pinuyumayan Backend full corpus import job
+After=network-online.target pinuyumayan-backend.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/pinuyumayan-backend-database
+EnvironmentFile=/opt/pinuyumayan-backend-database/.env
+ExecStart=/opt/pinuyumayan-backend-database/deploy/postdeploy-full-corpus.sh
+User=pinuyumayan
+Group=pinuyumayan
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7

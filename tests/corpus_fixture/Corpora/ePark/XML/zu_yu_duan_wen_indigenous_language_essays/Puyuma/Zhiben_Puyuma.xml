@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<TEXT id="sample_Zhiben_Puyuma" xml:lang="pyu" source="族語短文 Zhiben_Puyuma" audio="diarized" copyright="CC-BY-NC-SA" dialect="Zhiben">
+  <S id="0">
+    <FORM kindOf="original">harem kana wari pituwa tuki mu medek ku i kungkuwan.</FORM>
+    <PHON kindOf="original">harəm kana wari pituwa tuki mu məðək ku i kuŋkuwan.</PHON>
+    <FORM kindOf="standard">harem kana wari pituwa tuki mu medek ku i kungkuwan.</FORM>
+    <PHON kindOf="standard">harəm kana wari pituwa tuki mu məðək ku i kuŋkuwan.</PHON>
+    <TRANSL xml:lang="zho">我今天七點到學校。</TRANSL>
+    <TRANSL xml:lang="eng">I arrived at school at seven today.</TRANSL>
+    <AUDIO file="sample.wav" url="https://web.klokah.tw/text/sound/35725/556137.mp3" start="0" end="6.79"/>
+  </S>
+</TEXT>

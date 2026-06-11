@@ -1,0 +1,138 @@
+{
+  "version": "2026-06-11",
+  "description": "把平台常用主張對應到來源與允許公開層級。Kimi/Manus/Codex 產生內容時應先查此表，避免把未審核內容寫成定論。",
+  "claims": [
+    {
+      "claim_id": "claim_name_distinction",
+      "claim": "Pinuyumayan 可用於卑南族整體；Puyuma 需小心區分南王部落與卑南語英文語境。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "229"
+      ],
+      "public_level": "public"
+    },
+    {
+      "claim_id": "claim_bamboo_stone_origin",
+      "claim": "卑南族起源敘事有竹生與石生兩種公開說法。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "231"
+      ],
+      "public_level": "public_summary"
+    },
+    {
+      "claim_id": "claim_communities_core",
+      "claim": "卑南族現代核心分布以臺東市與卑南鄉為主，公開資料列出多個主要部落。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "232"
+      ],
+      "public_level": "public"
+    },
+    {
+      "claim_id": "claim_food_materials",
+      "claim": "傳統飲食包括粟、旱稻、甘薯、芋頭與狩獵、河川魚貝等。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "241"
+      ],
+      "public_level": "public"
+    },
+    {
+      "claim_id": "claim_textile_colors",
+      "claim": "服飾常見紅、黃、綠並搭配黑白、菱形紋與十字繡紋。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "244"
+      ],
+      "public_level": "public"
+    },
+    {
+      "claim_id": "claim_mens_house_age",
+      "claim": "男子約12、13歲進入會所生活，接受體能、狩獵等訓練。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "255",
+        "283"
+      ],
+      "public_level": "summary_only"
+    },
+    {
+      "claim_id": "claim_kinship_matrilineal",
+      "claim": "傳統婚姻家庭以母系大家族制為原則，家族氏名與家屋財產由長女繼承。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "277",
+        "280"
+      ],
+      "public_level": "summary_only"
+    },
+    {
+      "claim_id": "claim_leadership_roles",
+      "claim": "ayawan、rahan、na temaramaw 在政治、祭儀與照護需求中扮演不同角色。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "277",
+        "282"
+      ],
+      "public_level": "summary_only"
+    },
+    {
+      "claim_id": "claim_ritual_calendar",
+      "claim": "3月婦女除草完工慶、4月祖先登陸與發祥地祭祖、7月小米收穫祭、12月年祭為公開年度脈絡。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "evidence_lines": [
+        "292-298"
+      ],
+      "public_level": "calendar_summary_only"
+    },
+    {
+      "claim_id": "claim_formosanbank_codes",
+      "claim": "FormosanBank ePark code 38–41 分別對應 Nanwang_Puyuma、Zhiben_Puyuma、Xiqun_Puyuma、Jianhe_Puyuma。",
+      "source_ids": [
+        "formosanbank_dialects_csv"
+      ],
+      "evidence_lines": [
+        "40-43"
+      ],
+      "public_level": "public"
+    },
+    {
+      "claim_id": "claim_formosanbank_audio_failures",
+      "claim": "FormosanBank ePark workflow 有 failed_audio.csv 與 update_audio.py，音檔匯入需保留失敗狀態。",
+      "source_ids": [
+        "formosanbank_epark_readme"
+      ],
+      "evidence_lines": [
+        "14",
+        "68-77"
+      ],
+      "public_level": "engineering"
+    }
+  ],
+  "public_level_rules": {
+    "public": "可直接公開，但仍需保留來源。",
+    "public_summary": "可公開摘要，不可擴寫為唯一正史或單一標準。",
+    "summary_only": "只能摘要，不能做成教學、步驟或身分判定。",
+    "calendar_summary_only": "只能列月份或公開脈絡；實際日期必須以部落/官方公告為準。",
+    "engineering": "可用於工程設計與驗收，不作文化內容展示。"
+  }
+}

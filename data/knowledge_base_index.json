@@ -1,0 +1,172 @@
+{
+  "version": "2026-06-11-web-rich-knowledge",
+  "purpose": "讓 Kimi/Manus/Codex/AI Agent 在回答或產生內容前，知道要查哪個檔案、使用哪些來源，以及何時不可自行擴寫。",
+  "primary_answer_order": [
+    "SKILL.md 核心規則",
+    "data/knowledge_base_index.json 任務路由",
+    "data/verified_pinuyumayan_facts.json 可追溯事實",
+    "references/tribe_name_authority.md 名稱權威表",
+    "主題 references 與 data/*.json",
+    "外部最新公告或部落審核結果"
+  ],
+  "query_routes": [
+    {
+      "intent": "族名、Puyuma/Pinuyumayan、普悠瑪族正誤",
+      "must_read": [
+        "SKILL.md",
+        "references/tribe_name_authority.md",
+        "data/verified_pinuyumayan_facts.json"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "明確說明 Puyuma 可指南王部落或卑南語英文語境；Pinuyumayan 用於卑南族整體；不得使用普悠瑪族。"
+    },
+    {
+      "intent": "十社、部落介紹、部落頁面 seed",
+      "must_read": [
+        "references/tribe_name_authority.md",
+        "data/pinuyumayan_communities_expanded.json",
+        "data/verified_pinuyumayan_facts.json"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "十社正式 UI 用卑南族十社；八社只作歷史用語。班鳩、寶桑不可遺漏；上賓朗若納入地理脈絡需標示為 related/historical entry。"
+    },
+    {
+      "intent": "祭儀、猴祭、大獵祭、年祭、小米收穫祭",
+      "must_read": [
+        "data/pinuyumayan_rituals.json",
+        "data/verified_pinuyumayan_facts.json",
+        "references/society_and_rituals.md"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "只做公開摘要；不得產生祭儀流程教學、禁忌細節、仿作腳本或日期臆測；日期以部落公告為準。"
+    },
+    {
+      "intent": "社會制度、年齡階級、會所、親屬制度",
+      "must_read": [
+        "data/pinuyumayan_social_organization.json",
+        "data/verified_pinuyumayan_facts.json",
+        "references/society_and_rituals.md"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "可說明制度概念；不得收集、推測或公開個人家族譜系、氏族內部規範、訓練細節或儀式操作。"
+    },
+    {
+      "intent": "族語、音檔、FormosanBank/ePark、TTS",
+      "must_read": [
+        "references/formosanbank_audio_integration.md",
+        "data/formosanbank_sources.json",
+        "data/audio_manifest_schema.json",
+        "data/generated/puyuma_audio_seed.json"
+      ],
+      "required_source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "answer_policy": "四方言必須分開：38 南王、39 知本、40 西群、41 建和；音檔 URL 只用已驗證 manifest，不得編造。"
+    },
+    {
+      "intent": "人物、音樂、演藝、歌謠",
+      "must_read": [
+        "references/music_and_arts.md",
+        "data/verified_pinuyumayan_facts.json"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "CIP 可支持公開列名；人物生平、作品、獎項需另查個別來源，不得只憑本包生成詳細傳記。"
+    },
+    {
+      "intent": "網站內容、CMS、前台文案",
+      "must_read": [
+        "data/pinuyumayan_content_taxonomy.json",
+        "data/pinuyumayan_content_cards.json",
+        "data/verified_content_backlog.json",
+        "references/pinuyumayan_content_expansion.md"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "answer_policy": "每張內容卡至少帶 source_ids、sensitivity、review_status。敏感內容前台預設摘要模式。"
+    },
+    {
+      "intent": "網站 FAQ、主題頁、時間線、學習路徑、搜尋索引",
+      "must_read": [
+        "data/web/pinuyumayan_topic_pages.json",
+        "data/web/pinuyumayan_faq.json",
+        "data/web/pinuyumayan_learning_paths.json",
+        "data/web/pinuyumayan_timeline_events.json",
+        "data/web/pinuyumayan_search_index.json"
+      ],
+      "required_source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ],
+      "answer_policy": "網站內容只能使用有 source_ids 的資料；敏感內容使用摘要與審核提示，不產生流程或細節。"
+    }
+  ],
+  "never_do": [
+    "不得把「八社」作為正式平台分類。",
+    "不得用 Puyuma 代稱整個卑南族。",
+    "不得用普悠瑪族作族群正式名稱。",
+    "不得自行編造祭儀日期、流程、禁忌、家族譜系、巫師作法、祖靈屋內部細節。",
+    "不得把 FormosanBank 音檔 URL 以規則推測出來；必須來自 CSV/XML/manifest。"
+  ],
+  "routes": {
+    "website_vocabulary_audio": {
+      "description": "網站用卑南語語詞／句型音檔資料層",
+      "read_first": [
+        "data/web/puyuma_vocabulary_audio_entries.json",
+        "data/web/puyuma_vocabulary_categories.json",
+        "references/web_vocabulary_audio_application.md"
+      ],
+      "rules": [
+        "不得編造音檔 URL",
+        "只顯示 verified_public_source",
+        "音檔採 preload=none"
+      ]
+    },
+    "website_knowledge_application": {
+      "description": "網站可直接使用的卑南族知識庫資料層：FAQ、主題頁、時間線、學習路徑、搜尋索引、敏感內容規則。",
+      "read_first": [
+        "data/web/pinuyumayan_topic_pages.json",
+        "data/web/pinuyumayan_faq.json",
+        "data/web/pinuyumayan_learning_paths.json",
+        "data/web/pinuyumayan_timeline_events.json",
+        "data/web/pinuyumayan_sensitive_content_rules.json",
+        "references/web_knowledge_application.md"
+      ],
+      "rules": [
+        "每筆內容保留 source_ids",
+        "high sensitivity 預設只做摘要",
+        "祭儀日期不得臆測，須以部落公告為準",
+        "人物頁需另補個別來源後才可公開詳細資料"
+      ]
+    }
+  },
+  "database_layer": {
+    "description_zh": "網站資料庫與後台資料治理路由。",
+    "primary_files": [
+      "data/database/pinuyumayan_database_schema.json",
+      "data/database/pinuyumayan_mysql_tidb_schema.sql",
+      "data/database/data_quality_rules.json",
+      "data/database/import_jobs_seed.json",
+      "references/database_application_guide.md"
+    ],
+    "use_when": [
+      "建立資料庫",
+      "匯入資料",
+      "後台審核",
+      "語料同步",
+      "音檔授權",
+      "搜尋索引"
+    ]
+  }
+}

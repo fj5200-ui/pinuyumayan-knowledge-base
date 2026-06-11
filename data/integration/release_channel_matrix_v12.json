@@ -1,0 +1,90 @@
+{
+  "version": "v12",
+  "channels": [
+    {
+      "channel": "public",
+      "description": "Approved public content visible to the main site.",
+      "requires_review": true,
+      "client_visibility": [
+        "main_site",
+        "mobile_app",
+        "search_worker"
+      ]
+    },
+    {
+      "channel": "preview",
+      "description": "Pre-release approved content for staging and admin preview.",
+      "requires_review": true,
+      "client_visibility": [
+        "main_site",
+        "admin_console",
+        "search_worker"
+      ],
+      "requires_header": "x-pinuyumayan-preview-token"
+    },
+    {
+      "channel": "full_corpus_candidate",
+      "description": "Imported corpus rows awaiting QA, deduplication and licensing checks.",
+      "requires_review": true,
+      "client_visibility": [
+        "admin_console"
+      ]
+    },
+    {
+      "channel": "full_corpus_verified",
+      "description": "Corpus rows validated for public learning use.",
+      "requires_review": true,
+      "client_visibility": [
+        "main_site",
+        "mobile_app",
+        "search_worker"
+      ]
+    },
+    {
+      "channel": "internal_review",
+      "description": "Internal review queue and curation notes.",
+      "requires_review": false,
+      "client_visibility": [
+        "admin_console"
+      ]
+    }
+  ],
+  "promotion_rules": [
+    {
+      "from": "full_corpus_candidate",
+      "to": "full_corpus_verified",
+      "required_checks": [
+        "has_source_path",
+        "has_audio_url_or_no_audio_reason",
+        "dedup_passed",
+        "license_reviewed",
+        "dialect_resolved",
+        "source_phon_preserved_when_available"
+      ]
+    },
+    {
+      "from": "preview",
+      "to": "public",
+      "required_checks": [
+        "content_review_approved",
+        "source_citation_present",
+        "sensitivity_allowed",
+        "seo_metadata_present"
+      ]
+    },
+    {
+      "from": "internal_review",
+      "to": "preview",
+      "required_checks": [
+        "reviewer_assigned",
+        "no_blocking_findings",
+        "public_summary_created"
+      ]
+    }
+  ],
+  "rollback_rules": {
+    "public_to_preview": "Allowed when factual issue or citation problem is found.",
+    "public_to_archived": "Allowed for license conflict, privacy concern, or cultural sensitivity concern.",
+    "full_corpus_verified_to_candidate": "Allowed when dedup or source mapping issue appears after release."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "main_site_sync_policy_v6",
+  "modes": [
+    {
+      "mode": "on_demand",
+      "endpoint": "/api/public/knowledge/*",
+      "use_case": "前台頁面即時查詢。"
+    },
+    {
+      "mode": "scheduled_bundle",
+      "endpoint": "/api/internal/main-site/knowledge/bundle",
+      "use_case": "主站每日或每小時拉一次資料到主站 cache/database。"
+    },
+    {
+      "mode": "delta_sync",
+      "endpoint": "/api/internal/main-site/knowledge/delta",
+      "use_case": "依 since cursor 拉取變更內容。"
+    },
+    {
+      "mode": "webhook",
+      "endpoint": "主站提供 /api/webhooks/pinuyumayan-kb",
+      "use_case": "後台發佈後通知主站 revalidate。"
+    }
+  ],
+  "recommended_for_main_site": "Next.js/Cloudflare Pages 可用 scheduled_bundle + ISR revalidate；Cloudflare Workers 可用 KV/R2 cache。",
+  "security": [
+    "internal endpoints require x-pinuyumayan-main-site-key",
+    "public endpoints only return public-safe views",
+    "never expose review tasks/import runs/audit logs to main site frontend"
+  ]
+}

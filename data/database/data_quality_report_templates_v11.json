@@ -1,0 +1,40 @@
+{
+  "version": "v11",
+  "templates": [
+    {
+      "key": "missing_source_id",
+      "severity": "blocker",
+      "description": "公開知識缺 source_id"
+    },
+    {
+      "key": "unapproved_public_row",
+      "severity": "blocker",
+      "description": "public view 出現未審核資料"
+    },
+    {
+      "key": "audio_url_missing",
+      "severity": "warning",
+      "description": "語料有文字但無音檔 URL"
+    },
+    {
+      "key": "source_phon_missing_for_xml",
+      "severity": "warning",
+      "description": "XML 語料未保留來源 PHON"
+    },
+    {
+      "key": "duplicate_corpus_entry",
+      "severity": "warning",
+      "description": "同方言同文本重複"
+    },
+    {
+      "key": "sensitive_content_public",
+      "severity": "blocker",
+      "description": "medium/high sensitivity 內容被公開為全文"
+    }
+  ],
+  "release_blockers": [
+    "missing_source_id",
+    "unapproved_public_row",
+    "sensitive_content_public"
+  ]
+}

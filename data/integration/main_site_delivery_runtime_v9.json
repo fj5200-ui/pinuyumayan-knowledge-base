@@ -1,0 +1,46 @@
+{
+  "version": "v9",
+  "purpose": "Runtime delivery layer for main-site pull, cache, revalidation, webhook, OpenAPI, and paged vocabulary access.",
+  "public_cache_strategy": {
+    "bootstrap": {
+      "ttl_seconds": 300,
+      "stale_while_revalidate_seconds": 3600,
+      "header": "Cache-Control: public, max-age=300, stale-while-revalidate=3600"
+    },
+    "search": {
+      "ttl_seconds": 120,
+      "stale_while_revalidate_seconds": 600
+    },
+    "vocabulary": {
+      "ttl_seconds": 900,
+      "stale_while_revalidate_seconds": 86400
+    },
+    "community_profile": {
+      "ttl_seconds": 1800,
+      "stale_while_revalidate_seconds": 86400
+    }
+  },
+  "internal_sync_strategy": {
+    "bundle": "Used by main site backend/ISR cache warmer. Requires API key. Can include vocabulary only when explicitly requested.",
+    "delta": "Used after publish/review/import jobs. Cursor must be persisted in knowledge_sync_cursors.",
+    "webhook": "Optional push event after approved content changes; main site still validates by pulling delta."
+  },
+  "safety_filters": [
+    "kb_facts.verification_status = verified_public",
+    "review_status/status in approved or approved_for_public_learning",
+    "visibility in public, public_summary_only",
+    "license_review_status not blocked",
+    "sensitivity not high unless public_summary_only"
+  ],
+  "pagination": {
+    "default_limit": 50,
+    "max_public_limit": 100,
+    "max_internal_limit": 5000,
+    "cursor_format": "base64url(json({updatedAt,id}))"
+  },
+  "rate_limits": {
+    "public_default": "120/min/ip",
+    "internal_default": "600/min/api_client",
+    "vocabulary_heavy_query": "30/min/ip"
+  }
+}

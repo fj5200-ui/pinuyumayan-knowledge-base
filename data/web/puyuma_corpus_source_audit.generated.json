@@ -1,0 +1,17 @@
+{
+  "version": "2026-06-11",
+  "manifest": {
+    "path": "data/web/puyuma_vocabulary_full_source_manifest.json",
+    "declared_csv_sources": 22,
+    "declared_xml_sources": 44,
+    "declared_total_sources": 66
+  },
+  "local_source_dir": "external/formosanbank_puyuma",
+  "local_files_found": 0,
+  "local_files_by_extension": {},
+  "actual_counts_from_local_files": {},
+  "actual_counts_by_dialect_zh": {},
+  "full_corpus_count_status": "not_generated_no_local_sources",
+  "note_zh": "若 local_files_found 為 0，代表尚未執行下載；請先執行 build_full_puyuma_web_vocabulary.py --download。",
+  "files": []
+}

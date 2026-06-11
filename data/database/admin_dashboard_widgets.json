@@ -1,0 +1,97 @@
+{
+  "version": "4.0.0",
+  "generated_at": "2026-06-11T20:30:00+08:00",
+  "widgets": [
+    {
+      "id": "kb_fact_status",
+      "title_zh": "知識事實狀態",
+      "metric_source": "kb_facts",
+      "default_filters": {
+        "verification_status": "verified_public"
+      },
+      "refresh_seconds": 300,
+      "visible_to": [
+        "super_admin",
+        "content_admin",
+        "culture_reviewer"
+      ]
+    },
+    {
+      "id": "review_queue",
+      "title_zh": "待審核任務",
+      "metric_source": "kb_review_tasks",
+      "default_filters": {
+        "status": "pending"
+      },
+      "refresh_seconds": 120,
+      "visible_to": [
+        "super_admin",
+        "culture_reviewer",
+        "language_reviewer"
+      ]
+    },
+    {
+      "id": "corpus_import_runs",
+      "title_zh": "語料匯入紀錄",
+      "metric_source": "kb_import_runs",
+      "default_filters": {},
+      "refresh_seconds": 120,
+      "visible_to": [
+        "super_admin",
+        "developer",
+        "language_reviewer"
+      ]
+    },
+    {
+      "id": "audio_mirror_status",
+      "title_zh": "音檔鏡像佇列",
+      "metric_source": "puyuma_audio_assets",
+      "default_filters": {
+        "mirror_status": [
+          "pending",
+          "failed"
+        ]
+      },
+      "refresh_seconds": 180,
+      "visible_to": [
+        "super_admin",
+        "developer",
+        "license_reviewer"
+      ]
+    },
+    {
+      "id": "search_documents",
+      "title_zh": "搜尋索引文件",
+      "metric_source": "kb_search_documents",
+      "default_filters": {
+        "is_public": true
+      },
+      "refresh_seconds": 600,
+      "visible_to": [
+        "super_admin",
+        "content_admin",
+        "developer"
+      ]
+    },
+    {
+      "id": "source_license_alerts",
+      "title_zh": "來源授權提醒",
+      "metric_source": "kb_sources",
+      "default_filters": {
+        "license_review_required": true
+      },
+      "refresh_seconds": 86400,
+      "visible_to": [
+        "super_admin",
+        "license_reviewer"
+      ]
+    }
+  ],
+  "dashboard_routes": [
+    "/admin/knowledge",
+    "/admin/reviews",
+    "/admin/imports",
+    "/admin/audio-assets",
+    "/admin/search-index"
+  ]
+}

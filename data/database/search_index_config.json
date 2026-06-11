@@ -1,0 +1,52 @@
+{
+  "version": "3.0.0",
+  "engines_supported": [
+    "MySQL FULLTEXT",
+    "Meilisearch",
+    "Typesense",
+    "SQLite FTS5 for local dev"
+  ],
+  "document_sources": [
+    {
+      "source": "kb_facts",
+      "doc_type": "fact",
+      "route_template": "/knowledge/facts/{fact_id}"
+    },
+    {
+      "source": "kb_communities",
+      "doc_type": "community",
+      "route_template": "/communities/{community_key}"
+    },
+    {
+      "source": "kb_rituals",
+      "doc_type": "ritual",
+      "route_template": "/culture/rituals/{ritual_key}"
+    },
+    {
+      "source": "puyuma_corpus_entries",
+      "doc_type": "language_entry",
+      "route_template": "/language/puyuma/audio/{entry_id}"
+    },
+    {
+      "source": "kb_faq_items",
+      "doc_type": "faq",
+      "route_template": "/faq#{id}"
+    }
+  ],
+  "fields": {
+    "title_weight": 5,
+    "puyuma_text_weight": 4,
+    "zh_tw_weight": 4,
+    "tags_weight": 2,
+    "body_weight": 1
+  },
+  "filters": [
+    "doc_type",
+    "sensitivity",
+    "review_status",
+    "dialect_code",
+    "category",
+    "source_id"
+  ],
+  "public_index_rule": "只索引 sensitivity=public 或經審核的 medium 摘要；high/restricted 僅可後台查詢。"
+}

@@ -1,0 +1,86 @@
+{
+  "version": "v15",
+  "suites": [
+    {
+      "id": "public_read_contract",
+      "auth": "none",
+      "cases": [
+        {
+          "id": "health",
+          "method": "GET",
+          "path": "/health",
+          "expect_status": 200
+        },
+        {
+          "id": "ready",
+          "method": "GET",
+          "path": "/ready",
+          "expect_status": 200
+        },
+        {
+          "id": "api_version",
+          "method": "GET",
+          "path": "/api/public/version",
+          "expect_status": 200
+        },
+        {
+          "id": "bootstrap",
+          "method": "GET",
+          "path": "/api/public/knowledge/bootstrap",
+          "expect_status": 200
+        },
+        {
+          "id": "vocabulary_page",
+          "method": "GET",
+          "path": "/api/public/knowledge/vocabulary?limit=20",
+          "expect_status": 200
+        },
+        {
+          "id": "search",
+          "method": "GET",
+          "path": "/api/public/knowledge/search?q=卑南族",
+          "expect_status": 200
+        },
+        {
+          "id": "suggest",
+          "method": "GET",
+          "path": "/api/public/search/suggest?q=卑",
+          "expect_status": 200
+        },
+        {
+          "id": "release_channels",
+          "method": "GET",
+          "path": "/api/public/release-channels",
+          "expect_status": 200
+        }
+      ]
+    },
+    {
+      "id": "internal_auth_contract",
+      "auth": "main_site_key",
+      "cases": [
+        {
+          "id": "bundle_requires_key",
+          "method": "GET",
+          "path": "/api/internal/main-site/knowledge/bundle",
+          "expect_status_without_key": 401,
+          "expect_status_with_key": 200
+        },
+        {
+          "id": "delta_requires_key",
+          "method": "GET",
+          "path": "/api/internal/main-site/knowledge/delta?since=2026-01-01T00:00:00Z",
+          "expect_status_without_key": 401,
+          "expect_status_with_key": 200
+        },
+        {
+          "id": "corpus_reconcile_requires_key",
+          "method": "POST",
+          "path": "/api/internal/corpus/reconcile/enqueue",
+          "expect_status_without_key": 401,
+          "expect_status_with_key": 202
+        }
+      ]
+    }
+  ]
+}

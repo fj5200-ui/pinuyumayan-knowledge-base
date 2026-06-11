@@ -1,0 +1,261 @@
+{
+  "version": "2026-06-11",
+  "nodes": [
+    {
+      "id": "community:puyuma",
+      "type": "community",
+      "label_zh": "南王",
+      "romanization": "Puyuma"
+    },
+    {
+      "id": "community:katratripulr",
+      "type": "community",
+      "label_zh": "知本",
+      "romanization": "Katratripulr"
+    },
+    {
+      "id": "community:kasavakan",
+      "type": "community",
+      "label_zh": "建和",
+      "romanization": "Kasavakan"
+    },
+    {
+      "id": "community:likavung",
+      "type": "community",
+      "label_zh": "利嘉",
+      "romanization": "Likavung"
+    },
+    {
+      "id": "community:ulivelivek",
+      "type": "community",
+      "label_zh": "初鹿",
+      "romanization": "Ulivelivek"
+    },
+    {
+      "id": "community:tamalakaw",
+      "type": "community",
+      "label_zh": "泰安",
+      "romanization": "Tamalakaw"
+    },
+    {
+      "id": "community:pinaski",
+      "type": "community",
+      "label_zh": "下賓朗",
+      "romanization": "Pinaski"
+    },
+    {
+      "id": "community:danadanaw",
+      "type": "community",
+      "label_zh": "龍過脈",
+      "romanization": "Danadanaw"
+    },
+    {
+      "id": "community:rarangus",
+      "type": "community",
+      "label_zh": "班鳩",
+      "romanization": "Rarangus"
+    },
+    {
+      "id": "community:papulu",
+      "type": "community",
+      "label_zh": "寶桑",
+      "romanization": "Papulu"
+    },
+    {
+      "id": "ritual:women_weeding_completion",
+      "type": "ritual",
+      "label_zh": "婦女除草完工慶"
+    },
+    {
+      "id": "ritual:ancestral_landing_foundation_rite",
+      "type": "ritual",
+      "label_zh": "祖先登陸與發祥地祭祖"
+    },
+    {
+      "id": "ritual:millet_harvest_rite",
+      "type": "ritual",
+      "label_zh": "小米收穫祭"
+    },
+    {
+      "id": "ritual:annual_festival",
+      "type": "ritual",
+      "label_zh": "年祭"
+    },
+    {
+      "id": "ritual:mangamangayaw_youth_rite",
+      "type": "ritual",
+      "label_zh": "少年年祭"
+    },
+    {
+      "id": "ritual:mangayaw_great_hunting_rite",
+      "type": "ritual",
+      "label_zh": "大獵祭"
+    },
+    {
+      "id": "ritual:united_annual_festival",
+      "type": "ritual",
+      "label_zh": "聯合年祭"
+    },
+    {
+      "id": "society:age_grade_system",
+      "type": "society_topic",
+      "label_zh": "年齡階級制度"
+    },
+    {
+      "id": "society:mens_house",
+      "type": "society_topic",
+      "label_zh": "會所制度"
+    },
+    {
+      "id": "society:matrilineal_kinship",
+      "type": "society_topic",
+      "label_zh": "母系親屬與家屋觀念"
+    },
+    {
+      "id": "society:ritual_specialists",
+      "type": "society_topic",
+      "label_zh": "祭司、政治領袖與巫師角色"
+    },
+    {
+      "id": "society:spiritual_worldview",
+      "type": "society_topic",
+      "label_zh": "神靈、祖靈與傳統信仰"
+    },
+    {
+      "id": "language:dialect:38",
+      "type": "dialect",
+      "label_zh": "南王卑南語",
+      "formosanbank_code": "38"
+    },
+    {
+      "id": "language:dialect:39",
+      "type": "dialect",
+      "label_zh": "知本卑南語",
+      "formosanbank_code": "39"
+    },
+    {
+      "id": "language:dialect:40",
+      "type": "dialect",
+      "label_zh": "西群卑南語",
+      "formosanbank_code": "40"
+    },
+    {
+      "id": "language:dialect:41",
+      "type": "dialect",
+      "label_zh": "建和卑南語",
+      "formosanbank_code": "41"
+    }
+  ],
+  "edges": [
+    {
+      "from": "community:pinaski",
+      "to": "ritual:women_weeding_completion",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:puyuma",
+      "to": "ritual:women_weeding_completion",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:katratripulr",
+      "to": "ritual:ancestral_landing_foundation_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:kasavakan",
+      "to": "ritual:ancestral_landing_foundation_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:puyuma",
+      "to": "ritual:millet_harvest_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:katratripulr",
+      "to": "ritual:millet_harvest_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:kasavakan",
+      "to": "ritual:millet_harvest_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:ulivelivek",
+      "to": "ritual:millet_harvest_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:pinaski",
+      "to": "ritual:millet_harvest_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:puyuma",
+      "to": "ritual:mangamangayaw_youth_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:ulivelivek",
+      "to": "ritual:mangamangayaw_youth_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:pinaski",
+      "to": "ritual:mangamangayaw_youth_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:puyuma",
+      "to": "ritual:mangayaw_great_hunting_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:tamalakaw",
+      "to": "ritual:mangayaw_great_hunting_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "community:papulu",
+      "to": "ritual:mangayaw_great_hunting_rite",
+      "type": "has_ritual_or_related"
+    },
+    {
+      "from": "society:age_grade_system",
+      "to": "society:mens_house",
+      "type": "institutionally_related"
+    },
+    {
+      "from": "society:age_grade_system",
+      "to": "ritual:mangamangayaw_youth_rite",
+      "type": "supports_life_stage"
+    },
+    {
+      "from": "society:age_grade_system",
+      "to": "ritual:mangayaw_great_hunting_rite",
+      "type": "supports_life_stage"
+    },
+    {
+      "from": "community:puyuma",
+      "to": "language:dialect:38",
+      "type": "maps_to_formosanbank_code"
+    },
+    {
+      "from": "community:katratripulr",
+      "to": "language:dialect:39",
+      "type": "maps_to_formosanbank_code"
+    },
+    {
+      "from": "community:ulivelivek",
+      "to": "language:dialect:40",
+      "type": "maps_to_formosanbank_code"
+    },
+    {
+      "from": "community:kasavakan",
+      "to": "language:dialect:41",
+      "type": "maps_to_formosanbank_code"
+    }
+  ]
+}

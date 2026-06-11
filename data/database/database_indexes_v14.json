@@ -1,0 +1,69 @@
+{
+  "version": "v14",
+  "recommended_indexes": [
+    {
+      "table": "puyuma_corpus_entries",
+      "columns": [
+        "release_channel",
+        "status",
+        "dialect_code",
+        "id"
+      ],
+      "reason": "public vocabulary pagination"
+    },
+    {
+      "table": "puyuma_corpus_entries",
+      "columns": [
+        "dedup_key"
+      ],
+      "unique": false,
+      "reason": "full corpus dedup"
+    },
+    {
+      "table": "puyuma_audio_assets",
+      "columns": [
+        "corpus_entry_id",
+        "license_status"
+      ],
+      "reason": "audio lookup and license filter"
+    },
+    {
+      "table": "kb_search_documents",
+      "columns": [
+        "release_channel",
+        "entity_type",
+        "updated_at"
+      ],
+      "reason": "search export and delta sync"
+    },
+    {
+      "table": "content_items",
+      "columns": [
+        "slug",
+        "status",
+        "release_channel"
+      ],
+      "unique": true,
+      "reason": "main-site content item lookup"
+    },
+    {
+      "table": "admin_sessions",
+      "columns": [
+        "admin_user_id",
+        "expires_at"
+      ],
+      "reason": "auth session cleanup"
+    },
+    {
+      "table": "api_request_logs",
+      "columns": [
+        "created_at",
+        "route",
+        "status_code"
+      ],
+      "reason": "ops dashboard"
+    }
+  ],
+  "mysql_notes": "Use generated columns for normalized search keys if TiDB/MySQL version supports it; otherwise maintain kb_search_documents.",
+  "tidb_notes": "Prefer explicit composite indexes and avoid relying on fulltext features unless enabled in target cluster."
+}

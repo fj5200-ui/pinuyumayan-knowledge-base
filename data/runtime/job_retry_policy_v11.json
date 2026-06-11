@@ -1,0 +1,22 @@
+{
+  "version": "v11",
+  "default_policy": {
+    "max_attempts": 5,
+    "backoff": "exponential",
+    "initial_delay_seconds": 30,
+    "max_delay_seconds": 3600
+  },
+  "dead_letter_table": "job_dead_letters",
+  "retryable_jobs": [
+    "full_corpus_import",
+    "audio_mirror",
+    "search_reindex",
+    "export_bundle",
+    "webhook_delivery"
+  ],
+  "non_retryable_error_codes": [
+    "invalid_license",
+    "schema_validation_failed",
+    "restricted_sensitive_content"
+  ]
+}

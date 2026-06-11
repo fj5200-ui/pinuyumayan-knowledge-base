@@ -1,0 +1,55 @@
+{
+  "version": "2026-06-11",
+  "purpose_zh": "說明語料庫規模：目前 ZIP 內嵌 80 筆網站可預覽資料，但 FormosanBank/ePark 卑南語來源清單包含 66 個候選檔，可重建千筆級語料。",
+  "embedded_current": {
+    "entries": 80,
+    "file": "data/web/puyuma_vocabulary_audio_entries.json",
+    "scope": "網站預覽子集，每筆含音檔 URL/G2P/IPA/TTS metadata"
+  },
+  "full_source_manifest": {
+    "file": "data/web/puyuma_vocabulary_full_source_manifest.json",
+    "csv_sources": 22,
+    "xml_sources": 44,
+    "total_sources": 66,
+    "csv_categories": {
+      "九階教材": 4,
+      "情境族語": 4,
+      "文化篇": 4,
+      "族語短文": 2,
+      "生活會話篇": 4,
+      "閱讀書寫篇": 4
+    },
+    "xml_categories": {
+      "繪本平台": 4,
+      "九階教材": 4,
+      "句型篇國中": 4,
+      "句型篇高中": 4,
+      "情境族語": 4,
+      "圖畫故事篇": 4,
+      "生活會話篇": 4,
+      "文化篇": 4,
+      "學習詞表": 4,
+      "閱讀書寫篇": 4,
+      "族語短文": 4
+    },
+    "sources_by_dialect_zh": {
+      "南王卑南語": 16,
+      "知本卑南語": 17,
+      "西群卑南語": 17,
+      "建和卑南語": 16
+    }
+  },
+  "full_build_output": {
+    "file": "data/web/puyuma_vocabulary_audio_entries.json",
+    "generated_by": "scripts/build_full_puyuma_web_vocabulary.py --download",
+    "actual_entry_count": "computed_after_download",
+    "audio_policy": "audio_url retained; MP3 binaries mirrored only by optional script"
+  },
+  "integrity_rules": [
+    "全量資料必須由公開來源下載或由使用者提供本機快取。",
+    "每筆資料必須有 source_path/source_row/audio_url。",
+    "G2P/IPA 為規則式草稿，必須保留 requires_linguist_review 狀態。",
+    "TTS 預設不得公開啟用，除非完成族語專家與授權審核。"
+  ],
+  "important_note_zh": "這份 audit 不把未下載資料寫成既成事實；它只證明完整來源清單與全量產生管線已納入。"
+}

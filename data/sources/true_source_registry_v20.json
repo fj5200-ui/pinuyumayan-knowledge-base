@@ -1,0 +1,31 @@
+{
+  "version": "v20",
+  "generated_at": "2026-06-11T14:58:00+08:00",
+  "description_zh": "v20 新增可追溯真實知識來源。只採公開官方來源，並將人口等可變資料分版本保存。",
+  "sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan",
+      "publisher": "Council of Indigenous Peoples, Taiwan",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "language": "en",
+      "source_type": "official_public_profile",
+      "captured_at": "2026-06-11T14:58:00+08:00",
+      "evidence_range": "L113-L216",
+      "trust_level": "official_high",
+      "notes_zh": "官方英文族群介紹，包含地理、文化、生業、服飾、建築、音樂、語言、社會制度與歲時祭儀摘要。"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_zh_current",
+      "title": "原住民族委員會：卑南族族群簡介",
+      "publisher": "原住民族委員會",
+      "url": "https://www.cip.gov.tw/zh-tw/index.html?cumid=367871808397303F4493DBDF516DA24A",
+      "language": "zh-TW",
+      "source_type": "official_public_profile",
+      "captured_at": "2026-06-11T14:58:00+08:00",
+      "evidence_range": "L587-L590",
+      "trust_level": "official_high",
+      "notes_zh": "官方中文首頁族群摘要，含卑南族人口、社會制度與年度慶典中文名稱。"
+    }
+  ]
+}

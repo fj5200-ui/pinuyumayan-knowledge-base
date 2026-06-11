@@ -1,0 +1,24 @@
+{
+  "version": "v11",
+  "public_endpoint": "GET /api/public/knowledge/export/latest",
+  "internal_enqueue_endpoint": "POST /api/internal/exports/bundle/enqueue",
+  "bundle_types": [
+    "main_site_bootstrap",
+    "vocabulary_audio",
+    "search_documents",
+    "full_public_snapshot"
+  ],
+  "formats": [
+    "json",
+    "ndjson"
+  ],
+  "integrity": {
+    "hash": "sha256",
+    "manifest_required": true,
+    "artifact_table": "data_export_artifact_files"
+  },
+  "cache": {
+    "public_max_age_seconds": 300,
+    "stale_while_revalidate_seconds": 86400
+  }
+}

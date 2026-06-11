@@ -1,0 +1,47 @@
+{
+  "version": "v12",
+  "policies": [
+    {
+      "table": "api_request_logs",
+      "retention_days": 30,
+      "archive": false,
+      "reason": "Operational debugging and abuse investigation"
+    },
+    {
+      "table": "api_error_events",
+      "retention_days": 180,
+      "archive": true,
+      "reason": "Stability trend analysis"
+    },
+    {
+      "table": "knowledge_api_access_logs",
+      "retention_days": 90,
+      "archive": true,
+      "reason": "Main site sync audit"
+    },
+    {
+      "table": "kb_audit_logs",
+      "retention_days": 3650,
+      "archive": true,
+      "reason": "Knowledge governance audit trail"
+    },
+    {
+      "table": "corpus_import_records",
+      "retention_days": 3650,
+      "archive": true,
+      "reason": "Corpus lineage and reproducibility"
+    },
+    {
+      "table": "data_export_artifacts",
+      "retention_days": 30,
+      "archive": false,
+      "reason": "Regenerable artifacts"
+    },
+    {
+      "table": "job_dead_letters",
+      "retention_days": 365,
+      "archive": true,
+      "reason": "Failure diagnosis"
+    }
+  ]
+}

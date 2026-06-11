@@ -1,0 +1,265 @@
+{
+  "version": "2026-06-11",
+  "description": "卑南族文化綜合平台用語表。每個詞都附顯示規則與來源，供 UI、CMS、搜尋同義詞與 AI 生成使用。",
+  "terms": [
+    {
+      "key": "pinuyumayan",
+      "label_zh": "卑南族",
+      "label_native": "Pinuyumayan",
+      "type": "ethnonym",
+      "allowed_context": [
+        "platform_title",
+        "族群整體",
+        "英文輔助顯示"
+      ],
+      "avoid_context": [
+        "南王部落單稱"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low"
+    },
+    {
+      "key": "puyuma",
+      "label_zh": "南王部落 / 卑南語英文語境",
+      "label_native": "Puyuma",
+      "type": "community_or_language_contextual",
+      "allowed_context": [
+        "南王部落",
+        "Puyuma language 英文語境",
+        "FormosanBank 方言名稱 Nanwang_Puyuma"
+      ],
+      "avoid_context": [
+        "卑南族整體中文族稱"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low"
+    },
+    {
+      "key": "punuyumayan",
+      "label_zh": "埔努悠瑪雅恩 / 比努優瑪樣",
+      "label_native": "Pinuyumayan variant",
+      "type": "name_variant",
+      "allowed_context": [
+        "族稱異寫",
+        "歷史或語音轉寫註記"
+      ],
+      "avoid_context": [
+        "工程 key 主用版"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low"
+    },
+    {
+      "key": "panapanayan",
+      "label_zh": "竹生系統",
+      "label_native": "Panapanayan",
+      "type": "origin_system",
+      "allowed_context": [
+        "起源敘事摘要",
+        "十社起源分類"
+      ],
+      "avoid_context": [
+        "單一正史定論"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium"
+    },
+    {
+      "key": "ruvoahan",
+      "label_zh": "石生系統",
+      "label_native": "Ruvoahan",
+      "type": "origin_system",
+      "allowed_context": [
+        "起源敘事摘要",
+        "十社起源分類"
+      ],
+      "avoid_context": [
+        "單一正史定論"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium"
+    },
+    {
+      "key": "palakuwan",
+      "label_zh": "成年會所",
+      "label_native": "palakuwan",
+      "type": "social_institution",
+      "allowed_context": [
+        "公開制度摘要",
+        "建築類型"
+      ],
+      "avoid_context": [
+        "內部訓練教學"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium"
+    },
+    {
+      "key": "ttakuban",
+      "label_zh": "少年會所",
+      "label_native": "ttakuban",
+      "type": "social_institution",
+      "allowed_context": [
+        "公開制度摘要",
+        "建築類型"
+      ],
+      "avoid_context": [
+        "內部訓練教學"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium"
+    },
+    {
+      "key": "ayawan",
+      "label_zh": "傳統政治領袖",
+      "label_native": "ayawan",
+      "type": "role",
+      "allowed_context": [
+        "角色摘要",
+        "社會制度介紹"
+      ],
+      "avoid_context": [
+        "現代個人權威判定"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium"
+    },
+    {
+      "key": "rahan",
+      "label_zh": "祭司",
+      "label_native": "rahan",
+      "type": "role",
+      "allowed_context": [
+        "角色摘要",
+        "祭儀制度介紹"
+      ],
+      "avoid_context": [
+        "祭儀主持教學"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high"
+    },
+    {
+      "key": "na_temaramaw",
+      "label_zh": "巫師",
+      "label_native": "na temaramaw",
+      "type": "role",
+      "allowed_context": [
+        "公開摘要",
+        "信仰制度介紹"
+      ],
+      "avoid_context": [
+        "作法教學",
+        "治病承諾",
+        "占卜操作"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high"
+    },
+    {
+      "key": "biruwa",
+      "label_zh": "神靈",
+      "label_native": "biruwa",
+      "type": "spiritual_term",
+      "allowed_context": [
+        "傳統信仰公開摘要"
+      ],
+      "avoid_context": [
+        "具體召請或操作步驟"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high"
+    },
+    {
+      "key": "mangamangayaw",
+      "label_zh": "少年年祭 / 猴祭",
+      "label_native": "mangamangayaw",
+      "type": "ritual",
+      "allowed_context": [
+        "公開摘要",
+        "祭儀時間軸"
+      ],
+      "avoid_context": [
+        "仿作、刺猴或驅邪流程教學"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high"
+    },
+    {
+      "key": "mulaliyaban",
+      "label_zh": "小米收穫祭 / 感恩海祭脈絡",
+      "label_native": "mulaliyaban",
+      "type": "ritual",
+      "allowed_context": [
+        "公開摘要",
+        "農業歲時祭儀"
+      ],
+      "avoid_context": [
+        "祭品與儀式操作教學"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high"
+    },
+    {
+      "key": "miyabetan",
+      "label_zh": "成年階段稱謂（需查證語境）",
+      "label_native": "Miyabetan",
+      "type": "age_grade_term",
+      "allowed_context": [
+        "待查證研究註記"
+      ],
+      "avoid_context": [
+        "正式 UI 主標籤"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "verification_status": "needs_additional_source"
+    },
+    {
+      "key": "bangsaran",
+      "label_zh": "成年階段稱謂（需查證語境）",
+      "label_native": "Bangsaran",
+      "type": "age_grade_term",
+      "allowed_context": [
+        "待查證研究註記"
+      ],
+      "avoid_context": [
+        "正式 UI 主標籤"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "verification_status": "needs_additional_source"
+    }
+  ]
+}

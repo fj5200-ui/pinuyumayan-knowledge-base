@@ -1,0 +1,39 @@
+{
+  "version": "v21",
+  "generated_at": "2026-06-11T15:11:19+00:00",
+  "description_zh": "v21 多來源真實知識來源登錄；保留原民會中英文官方頁，另新增「禁止關聯來源」類型，明確將卑南遺址／卑南文化排除於卑南族文化知識來源之外。",
+  "sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021_lines_113_216",
+      "title_zh": "原住民族委員會英文卑南族 Pinuyumayan 介紹頁",
+      "publisher": "Council of Indigenous Peoples",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "source_type": "official_public_webpage",
+      "language": "en",
+      "reliability": "official_high",
+      "allowed_use": "public_summary_with_citation",
+      "notes_zh": "支援族稱、地理分布、生業、飲食、服飾、建築、音樂舞蹈、語言、社會制度、祭儀公開摘要。"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_zh_current_lines_587_590",
+      "title_zh": "原住民族委員會中文 16 族簡介：卑南族",
+      "publisher": "原住民族委員會",
+      "url": "https://www.cip.gov.tw/zh-tw/index.html?cumid=367871808397303F4493DBDF516DA24A",
+      "source_type": "official_public_webpage",
+      "language": "zh-TW",
+      "reliability": "official_high",
+      "allowed_use": "public_summary_with_citation",
+      "notes_zh": "支援目前中文摘要、人口數與年度慶典名稱；人口數需標示來源版本。"
+    },
+    {
+      "source_id": "blocked_beinan_archaeological_site_not_pinuyumayan_v21",
+      "title_zh": "排除來源：卑南文化遺址／卑南考古遺址／Peinan/Beinan Site",
+      "publisher": "content_safety_policy",
+      "source_type": "blocked_relation_policy",
+      "language": "zh-TW",
+      "reliability": "policy_high",
+      "allowed_use": "only_for_disambiguation_not_for_pinuyumayan_claims",
+      "notes_zh": "使用者明確指示卑南文化遺址與卑南族不相關；系統不得將考古遺址、卑南文化、Peinan/Beinan Site 當作卑南族現代族群文化來源或關聯詞。"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "version": "v21",
+  "generated_at": "2026-06-11T15:11:19+00:00",
+  "packets": [
+    {
+      "packet_id": "sp_v21_name_and_distribution",
+      "title_zh": "族稱、十社與地理分布",
+      "claim_ids": [
+        "kg21_name_distinguish_group_vs_village",
+        "kg21_today_taitung_beinan_center",
+        "kg21_major_tribes_taitung_city",
+        "kg21_major_tribes_beinan_township",
+        "kg21_urban_migration_note"
+      ],
+      "allowed_article_angles": [
+        "Pinuyumayan 與 Puyuma 的使用原則",
+        "卑南族十社資料卡怎麼建立",
+        "為什麼平台不用卑南遺址當來源"
+      ],
+      "forbidden": [
+        "把卑南文化遺址當成卑南族來源",
+        "把 Puyuma 用來泛指整個族群而不加脈絡"
+      ]
+    },
+    {
+      "packet_id": "sp_v21_life_food_craft",
+      "title_zh": "生業、飲食、服飾與工藝",
+      "claim_ids": [
+        "kg21_foxtail_millet_agriculture",
+        "kg21_cash_crop_shift_1960s",
+        "kg21_staple_foods",
+        "kg21_shellflower_dumpling",
+        "kg21_clothing_colors",
+        "kg21_rattan_bamboo_weaving",
+        "kg21_weaving_techniques"
+      ],
+      "allowed_article_angles": [
+        "從小米到月桃葉食物的公開導覽",
+        "卑南族服飾色彩與社會辨識",
+        "藤竹編與日常器具"
+      ],
+      "forbidden": [
+        "新增未查證食譜細節",
+        "將祭儀供品改寫成操作教學"
+      ]
+    },
+    {
+      "packet_id": "sp_v21_architecture_and_age_system",
+      "title_zh": "建築、會所與年齡階級",
+      "claim_ids": [
+        "kg21_architecture_public_private",
+        "kg21_family_house_layout",
+        "kg21_assembly_hall_age_system",
+        "kg21_dakuvan_structure",
+        "kg21_palakuan_structure",
+        "kg21_age_training_physical_knowledge",
+        "kg21_age_training_skill_stages",
+        "kg21_1991_cultural_revitalization"
+      ],
+      "allowed_article_angles": [
+        "會所制度如何支撐公共生活",
+        "少年會所與成年會所的公開摘要",
+        "1991 年後文化復振的公開摘要"
+      ],
+      "forbidden": [
+        "描述禁忌細節",
+        "把訓練寫成可操作教程"
+      ]
+    },
+    {
+      "packet_id": "sp_v21_music_dance_language",
+      "title_zh": "音樂、舞蹈、語言接觸",
+      "claim_ids": [
+        "kg21_music_story_poetic",
+        "kg21_ritual_song_classification",
+        "kg21_modern_music_artists",
+        "kg21_dance_gender_age_status",
+        "kg21_language_dialect_variation",
+        "kg21_language_contact_south_north"
+      ],
+      "allowed_article_angles": [
+        "卑南族歌謠的故事性與現代音樂",
+        "舞蹈如何反映社會位置",
+        "為什麼語詞發音要按方言處理"
+      ],
+      "forbidden": [
+        "公開未授權歌詞",
+        "把祭儀歌曲改寫成儀式腳本"
+      ]
+    },
+    {
+      "packet_id": "sp_v21_ritual_public_calendar",
+      "title_zh": "歲時祭儀公開摘要",
+      "claim_ids": [
+        "kg21_rituals_existing_list",
+        "kg21_ritual_calendar_summary",
+        "kg21_chinese_ritual_names",
+        "kg21_mangayaw_joint_1982"
+      ],
+      "allowed_article_angles": [
+        "卑南族歲時祭儀月曆公開摘要",
+        "年祭與聯合年祭的公開導覽"
+      ],
+      "forbidden": [
+        "祭儀操作步驟",
+        "祖靈／巫術細節",
+        "禁忌細節"
+      ]
+    }
+  ]
+}

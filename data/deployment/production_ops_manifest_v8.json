@@ -1,0 +1,29 @@
+{
+  "version": "0.8.0",
+  "layers": [
+    "preflight",
+    "migrations",
+    "preview_bootstrap",
+    "api_healthcheck",
+    "main_site_contract_test",
+    "postdeploy_full_corpus",
+    "search_reindex",
+    "audio_mirror_optional",
+    "backup_schedule"
+  ],
+  "releaseBlockers": [
+    "DATABASE_URL missing",
+    "main site API key shorter than 32 chars",
+    "migrations fail",
+    "public bootstrap returns unapproved data",
+    "full corpus import claims complete with fewer than configured min entries"
+  ],
+  "recommendedOrder": [
+    "./deploy/preflight.sh",
+    "./deploy/run-migrations.sh",
+    "./deploy/bootstrap-preview-db.sh",
+    "./deploy/healthcheck.sh",
+    "python3 scripts/verify_main_site_contract.py",
+    "./deploy/postdeploy-full-corpus.sh"
+  ]
+}

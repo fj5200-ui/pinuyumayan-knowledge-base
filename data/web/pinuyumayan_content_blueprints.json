@@ -1,0 +1,196 @@
+{
+  "version": "2026-06-11",
+  "purpose": "給 Codex/Kimi/Manus 生成前台頁面用；只提供結構，不替代族人審核。",
+  "page_blueprints": [
+    {
+      "route": "/",
+      "page_key": "home",
+      "title_zh": "卑南族文化綜合平台",
+      "modules": [
+        "hero_overview",
+        "ten_communities_grid",
+        "ritual_calendar_teaser",
+        "language_audio_teaser",
+        "featured_articles",
+        "source_notice"
+      ],
+      "required_data": [
+        "data/web/pinuyumayan_topic_pages.json",
+        "data/web/puyuma_vocabulary_audio_entries.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ],
+      "sensitivity_policy": "首頁避免高敏感祭儀細節，只放概覽與導覽。"
+    },
+    {
+      "route": "/about/name",
+      "page_key": "name_rule",
+      "title_zh": "族名與正名",
+      "modules": [
+        "name_distinction_card",
+        "historical_transliterations_note",
+        "do_dont_table"
+      ],
+      "required_facts": [
+        "name_puyuma_pinuyumayan_distinction",
+        "name_historical_transliterations_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "可公開。"
+    },
+    {
+      "route": "/communities",
+      "page_key": "communities_index",
+      "title_zh": "卑南族十社",
+      "modules": [
+        "community_cards",
+        "map_placeholder",
+        "historical_terms_notice"
+      ],
+      "required_data": [
+        "data/pinuyumayan_communities_expanded.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "不公開私人家族資料。"
+    },
+    {
+      "route": "/rituals",
+      "page_key": "rituals_index",
+      "title_zh": "歲時祭儀",
+      "modules": [
+        "calendar_months",
+        "ritual_cards",
+        "community_notice",
+        "sensitivity_notice"
+      ],
+      "required_data": [
+        "data/pinuyumayan_rituals.json",
+        "data/web/pinuyumayan_timeline_events.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "只做公開摘要；日期以部落公告為準。"
+    },
+    {
+      "route": "/society",
+      "page_key": "society_index",
+      "title_zh": "社會制度",
+      "modules": [
+        "age_grade_intro",
+        "mens_house_intro",
+        "kinship_intro",
+        "leadership_roles"
+      ],
+      "required_data": [
+        "data/pinuyumayan_social_organization.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "高敏感，避免流程化與個人化。"
+    },
+    {
+      "route": "/material-life",
+      "page_key": "material_life",
+      "title_zh": "生活圖像：飲食、服飾、工藝與建築",
+      "modules": [
+        "industry_food",
+        "clothing_wreath",
+        "weaving_objects",
+        "architecture_cards"
+      ],
+      "required_facts": [
+        "traditional_food_staples",
+        "clothing_colors_patterns",
+        "weaving_daily_objects_public",
+        "architecture_categories"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "多數可公開；祖靈屋與祭祀部分摘要處理。"
+    },
+    {
+      "route": "/music-arts",
+      "page_key": "music_arts",
+      "title_zh": "歌謠與舞蹈",
+      "modules": [
+        "music_category_cards",
+        "dance_roles_notice",
+        "public_figures_list"
+      ],
+      "required_facts": [
+        "music_function_categories",
+        "dance_personal_social_steps_public",
+        "music_modern_public_figures_list_only"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity_policy": "不可未授權引用歌詞或製作儀式舞教學。"
+    },
+    {
+      "route": "/language/puyuma",
+      "page_key": "puyuma_language",
+      "title_zh": "卑南語學習",
+      "modules": [
+        "dialect_filter",
+        "audio_sentence_cards",
+        "source_and_license_notice"
+      ],
+      "required_data": [
+        "data/web/puyuma_vocabulary_audio_entries.json"
+      ],
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity_policy": "音檔 URL 只用 manifest。"
+    },
+    {
+      "route": "/knowledge/faq",
+      "page_key": "faq",
+      "title_zh": "常見問題",
+      "modules": [
+        "faq_search",
+        "faq_category_tabs",
+        "source_badge"
+      ],
+      "required_data": [
+        "data/web/pinuyumayan_faq.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme",
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity_policy": "FAQ 可公開，但高敏感回答只摘要。"
+    },
+    {
+      "route": "/knowledge/sources",
+      "page_key": "sources",
+      "title_zh": "資料來源與查核說明",
+      "modules": [
+        "source_registry",
+        "citation_map",
+        "review_policy"
+      ],
+      "required_data": [
+        "data/source_registry.json",
+        "data/web/pinuyumayan_source_citation_map.json"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ],
+      "sensitivity_policy": "公開透明。"
+    }
+  ]
+}

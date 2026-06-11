@@ -1,0 +1,54 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "principle_zh": "文章本文由主站前端／主站 server action 調用 AI provider；後端知識庫不產文，只提供 source packets、引用/去重/敏感/禁止關聯檢查。",
+  "providers": [
+    {
+      "provider_id": "openai_responses_adapter",
+      "display_name": "OpenAI Responses adapter",
+      "runtime": "main_site_server_route_or_edge_function",
+      "secret_policy": "never_expose_provider_key_to_browser",
+      "status": "adapter_contract_only"
+    },
+    {
+      "provider_id": "kimi_chat_adapter",
+      "display_name": "Kimi / Moonshot chat adapter",
+      "runtime": "main_site_server_route",
+      "secret_policy": "never_expose_provider_key_to_browser",
+      "status": "adapter_contract_only"
+    },
+    {
+      "provider_id": "local_mock_adapter",
+      "display_name": "Local mock adapter for review tests",
+      "runtime": "browser_or_node",
+      "secret_policy": "no_secret",
+      "status": "implemented_mock"
+    }
+  ],
+  "draft_payload_contract": {
+    "input": [
+      "user_idea",
+      "blueprint_id",
+      "selected_claim_ids",
+      "selected_source_ids",
+      "tone",
+      "target_route"
+    ],
+    "output": [
+      "title",
+      "summary",
+      "body_markdown",
+      "used_claim_ids",
+      "used_source_ids",
+      "draft_fingerprint"
+    ],
+    "must_send_to_backend_for_validation": true
+  },
+  "hard_blocks": [
+    "missing_used_claim_ids",
+    "uses_forbidden_relation_terms_as_source",
+    "claims_not_in_source_packet",
+    "high_sensitivity_without_admin_review",
+    "duplicate_fingerprint"
+  ]
+}

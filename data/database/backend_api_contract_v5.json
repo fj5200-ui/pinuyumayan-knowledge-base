@@ -1,0 +1,81 @@
+{
+  "version": "v5-backend-api-contract",
+  "transport": "tRPC over Express",
+  "base_path": "/trpc",
+  "routers": {
+    "communities": {
+      "public": [
+        "list",
+        "byId"
+      ],
+      "admin": [
+        "create",
+        "update",
+        "archive",
+        "aliases"
+      ]
+    },
+    "facts": {
+      "public": [
+        "list",
+        "byId",
+        "byCategory"
+      ],
+      "admin": [
+        "createDraft",
+        "submitReview",
+        "publish"
+      ]
+    },
+    "vocabulary": {
+      "public": [
+        "listAudioEntries",
+        "byId",
+        "filters"
+      ],
+      "admin": [
+        "importPreview",
+        "importFullCorpus",
+        "reviewIpa",
+        "queueTts"
+      ]
+    },
+    "audio": {
+      "public": [
+        "playbackMetadata"
+      ],
+      "admin": [
+        "reviewLicense",
+        "queueMirror",
+        "disablePlayback"
+      ]
+    },
+    "review": {
+      "admin": [
+        "queue",
+        "assign",
+        "approve",
+        "reject",
+        "auditTrail"
+      ]
+    },
+    "imports": {
+      "admin": [
+        "runs",
+        "startFullCorpusImport",
+        "errors",
+        "rollback"
+      ]
+    },
+    "search": {
+      "public": [
+        "query"
+      ],
+      "admin": [
+        "rebuildIndex"
+      ]
+    }
+  },
+  "public_filter_rule": "All public endpoints must use approved/public views and must not expose high sensitivity internals unless public_summary_only text is explicitly approved.",
+  "tts_rule": "TTS metadata may be returned to admin only; public generated TTS is disabled by default."
+}

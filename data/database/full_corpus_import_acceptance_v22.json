@@ -1,0 +1,21 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "status": "dry_run_contract_ready_not_executed_in_zip",
+  "minimum_target_entries": 1000,
+  "required_metrics": [
+    "total_entries",
+    "dialect_distribution",
+    "audio_url_coverage",
+    "source_phon_coverage",
+    "license_distribution",
+    "duplicate_count",
+    "blocked_license_count"
+  ],
+  "commands": [
+    "python3 scripts/build_full_puyuma_web_vocabulary.py --download --min-entries 1000",
+    "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+    "python3 scripts/build_puyuma_sql_seed.py"
+  ],
+  "public_policy": "匯入後先進 full_corpus_candidate，完成 quality gate 與 reconciliation 後才可 promotion 到 full_corpus_verified/public。"
+}

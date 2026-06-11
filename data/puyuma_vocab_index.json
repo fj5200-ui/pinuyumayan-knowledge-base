@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0",
+  "description": "Placeholder index path for generated Puyuma language vocabulary/corpus data. Generate real data with scripts/parse_puyuma_corpus.py.",
+  "entries": []
+}

@@ -1,0 +1,103 @@
+{
+  "version": "v13",
+  "collections": [
+    {
+      "id": "home_featured_knowledge",
+      "name_zh": "首頁精選知識",
+      "description": "主站首頁可拉取的公開摘要集合",
+      "item_refs": [
+        "content_community_d3f7410d85",
+        "content_community_2de40fb806",
+        "content_community_4ceae52c63",
+        "content_community_c9f182f779",
+        "content_community_989741c9b7",
+        "content_community_3932589101",
+        "content_community_0f5387b91f",
+        "content_community_59e3ba6919",
+        "content_community_75ba9ccbde",
+        "content_community_683000cba4",
+        "content_ritual_8854c9ce3c",
+        "content_ritual_7d43cd0b3d"
+      ],
+      "release_channel": "preview"
+    },
+    {
+      "id": "ten_communities_collection",
+      "name_zh": "卑南族十社資料集合",
+      "item_refs": [
+        "content_community_d3f7410d85",
+        "content_community_2de40fb806",
+        "content_community_4ceae52c63",
+        "content_community_c9f182f779",
+        "content_community_989741c9b7",
+        "content_community_3932589101",
+        "content_community_0f5387b91f",
+        "content_community_59e3ba6919",
+        "content_community_75ba9ccbde",
+        "content_community_683000cba4"
+      ],
+      "release_channel": "preview"
+    },
+    {
+      "id": "ritual_public_summary_collection",
+      "name_zh": "祭儀公開摘要集合",
+      "item_refs": [
+        "content_ritual_8854c9ce3c",
+        "content_ritual_7d43cd0b3d",
+        "content_ritual_0d6a4f5082",
+        "content_ritual_8d7bceded2",
+        "content_ritual_da182e5a7b",
+        "content_ritual_c7f95f12d4",
+        "content_ritual_65028893b6"
+      ],
+      "release_channel": "preview"
+    },
+    {
+      "id": "verified_fact_cards_collection",
+      "name_zh": "可追溯事實卡",
+      "item_refs": [
+        "fact_card_profile_plain_crossroads",
+        "fact_card_profile_age_house_core",
+        "fact_card_profile_annual_rituals_overview",
+        "fact_card_name_puyuma_pinuyumayan_distinction",
+        "fact_card_origin_bamboo_stone",
+        "fact_card_settlement_core_area",
+        "fact_card_community_list_public",
+        "fact_card_agriculture_millet_to_rice",
+        "fact_card_modern_economic_crops",
+        "fact_card_traditional_food_staples",
+        "fact_card_festival_food_shell_ginger",
+        "fact_card_betel_nut_role",
+        "fact_card_clothing_colors_patterns",
+        "fact_card_clothing_social_identity",
+        "fact_card_wreath_social_meaning",
+        "fact_card_weaving_bamboo_rattan",
+        "fact_card_shell_ginger_mat",
+        "fact_card_architecture_categories",
+        "fact_card_architecture_public_private",
+        "fact_card_house_structure",
+        "fact_card_mens_house_training_age",
+        "fact_card_mens_house_two_types",
+        "fact_card_ancestral_house_function",
+        "fact_card_music_poetic_narrative",
+        "fact_card_music_function_categories",
+        "fact_card_music_public_figures",
+        "fact_card_dance_role_difference",
+        "fact_card_shield_dance_spiritual_step",
+        "fact_card_language_regional_variation",
+        "fact_card_kinship_matrilineal_summary",
+        "fact_card_kinship_inheritance_marriage",
+        "fact_card_leadership_ayawan_rahan",
+        "fact_card_shaman_role_public_summary",
+        "fact_card_age_grade_training_stages",
+        "fact_card_revitalization_1991",
+        "fact_card_spiritual_biruwa",
+        "fact_card_divination_public_summary",
+        "fact_card_ritual_categories_agriculture_life",
+        "fact_card_ritual_calendar_public",
+        "fact_card_women_weeding_detail_public"
+      ],
+      "release_channel": "public"
+    }
+  ]
+}

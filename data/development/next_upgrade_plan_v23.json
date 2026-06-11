@@ -1,0 +1,65 @@
+{
+  "version": "v23",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v23",
+  "priorities": [
+    {
+      "priority": 1,
+      "title_zh": "實作主站 server-side AI provider route",
+      "items": [
+        "Next.js /api/ai/compose route",
+        "OpenAI/Kimi adapter env 驗證",
+        "前端不暴露 provider key"
+      ]
+    },
+    {
+      "priority": 2,
+      "title_zh": "後台審核頁實作接 API",
+      "items": [
+        "草稿列表",
+        "引用完整性視覺化",
+        "去重/冷卻/禁止關聯結果卡片",
+        "審核決策寫 audit log"
+      ]
+    },
+    {
+      "priority": 3,
+      "title_zh": "多來源 adapter 實際抓取候選資料",
+      "items": [
+        "TIPP candidate fetcher",
+        "文化部/國家文化記憶庫 candidate fetcher",
+        "臺東地方來源 candidate fetcher",
+        "候選資料不自動公開"
+      ]
+    },
+    {
+      "priority": 4,
+      "title_zh": "HMAC/nonce 套用到 internal routes",
+      "items": [
+        "Express middleware 全域套用",
+        "nonce table cleanup job",
+        "失敗 audit dashboard"
+      ]
+    },
+    {
+      "priority": 5,
+      "title_zh": "千筆語料實測匯入",
+      "items": [
+        "跑 full corpus",
+        "產出 coverage report",
+        "將可公開項目進 candidate channel",
+        "真人音檔 coverage dashboard"
+      ]
+    },
+    {
+      "priority": 6,
+      "title_zh": "文章發布排程與 SEO",
+      "items": [
+        "發布日曆",
+        "同主題冷卻",
+        "OG metadata",
+        "主站 sitemap 更新"
+      ]
+    }
+  ]
+}

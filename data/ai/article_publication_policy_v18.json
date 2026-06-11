@@ -1,0 +1,53 @@
+{
+  "version": "v18",
+  "generated_at": "2026-06-11T18:45:00+08:00",
+  "name": "source_grounded_no_duplicate_ai_publication_policy",
+  "summary_zh": "主站 AI 可用真實史料 claim + 管理者想法產生草稿；發布前必須去重、引用、敏感檢查與人工審核。",
+  "deduplication": {
+    "fingerprint_fields": [
+      "normalized_title",
+      "normalized_slug",
+      "source_claim_set",
+      "summary_hash"
+    ],
+    "hard_block_rules": [
+      "same_slug_exists",
+      "same_canonical_fingerprint_exists",
+      "source_claim_overlap_ratio_gte_0_8_and_same_angle",
+      "title_similarity_gte_0_92"
+    ],
+    "soft_review_rules": [
+      "same_topic_within_7_days",
+      "same_community_and_same_ritual_month",
+      "same_claim_set_with_different_title"
+    ],
+    "output": "duplicate_check_result must be attached to every draft plan"
+  },
+  "grounding": {
+    "allowed_source_status": [
+      "official_primary",
+      "public_corpus_with_license_constraints",
+      "verified_community_reviewed"
+    ],
+    "minimum_claims_per_article": 3,
+    "citation_required_for_every_historical_statement": true,
+    "user_idea_handling": "ideas may shape angle, tone, and call-to-action, but may not override verified source claims"
+  },
+  "safety": {
+    "ritual_content": "public_summary_only",
+    "ancestor_spirit_witchcraft_content": "public_summary_only_or_review_required",
+    "language_audio": "human_recorded_source_audio_first; synthetic_tts_not_public_without_native_review",
+    "population_numbers": "must query current official statistics table before claiming latest number"
+  },
+  "publication_flow": [
+    "idea_intake",
+    "source_claim_selection",
+    "draft_plan_generation",
+    "duplicate_check",
+    "sensitivity_check",
+    "citation_check",
+    "admin_or_cultural_reviewer_approval",
+    "main_site_publish_or_schedule",
+    "post_publish_fingerprint_record"
+  ]
+}

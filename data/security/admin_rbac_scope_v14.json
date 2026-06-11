@@ -1,0 +1,63 @@
+{
+  "version": "v14",
+  "roles": [
+    {
+      "role": "super_admin",
+      "scopes": [
+        "*"
+      ],
+      "mfa_required": true
+    },
+    {
+      "role": "knowledge_editor",
+      "scopes": [
+        "knowledge:read",
+        "content:read",
+        "content:write",
+        "review:submit"
+      ]
+    },
+    {
+      "role": "language_editor",
+      "scopes": [
+        "vocabulary:read",
+        "vocabulary:write",
+        "ipa:review",
+        "audio:review"
+      ]
+    },
+    {
+      "role": "source_reviewer",
+      "scopes": [
+        "source:read",
+        "source:verify",
+        "license:review"
+      ]
+    },
+    {
+      "role": "main_site_sync_operator",
+      "scopes": [
+        "export:read",
+        "sync:replay",
+        "cache:invalidate"
+      ]
+    },
+    {
+      "role": "viewer",
+      "scopes": [
+        "knowledge:read",
+        "content:read"
+      ]
+    }
+  ],
+  "sensitive_actions_requiring_step_up": [
+    "release_promote",
+    "superadmin_sync",
+    "api_key_rotate",
+    "full_corpus_publish",
+    "cache_invalidate_all",
+    "delete_source"
+  ],
+  "default_assignment": "viewer",
+  "note": "Use this file to seed admin_role_permissions and to configure backend scope checks."
+}

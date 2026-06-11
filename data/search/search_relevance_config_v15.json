@@ -1,0 +1,65 @@
+{
+  "version": "v15",
+  "ranking_weights": {
+    "exact_puyuma_form": 10,
+    "zh_tw_exact": 9,
+    "community_alias": 8,
+    "approved_fact_title": 7,
+    "ritual_public_summary": 6,
+    "audio_available": 2,
+    "source_phon_available": 1
+  },
+  "synonym_groups": [
+    {
+      "id": "tribe_name",
+      "terms": [
+        "卑南族",
+        "Pinuyumayan"
+      ],
+      "note": "Puyuma is not a blanket tribe label in platform copy."
+    },
+    {
+      "id": "nanwang",
+      "terms": [
+        "南王",
+        "Puyuma",
+        "Nanwang_Puyuma"
+      ],
+      "note": "Use Puyuma carefully for Nanwang or language contexts."
+    },
+    {
+      "id": "zhiben",
+      "terms": [
+        "知本",
+        "Katratripulr",
+        "Zhiben_Puyuma"
+      ]
+    },
+    {
+      "id": "xiqun",
+      "terms": [
+        "西群",
+        "初鹿",
+        "Mulivelivek",
+        "Xiqun_Puyuma"
+      ]
+    },
+    {
+      "id": "jianhe",
+      "terms": [
+        "建和",
+        "Kasavakan",
+        "Jianhe_Puyuma"
+      ]
+    }
+  ],
+  "evaluation_queries": [
+    "卑南族十社",
+    "南王卑南語",
+    "知本音檔",
+    "猴祭",
+    "會所",
+    "年齡階級",
+    "族語老師"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": "v15",
+  "slo_windows": [
+    "5m",
+    "1h",
+    "24h"
+  ],
+  "endpoints": [
+    {
+      "key": "public_bootstrap",
+      "path": "/api/public/knowledge/bootstrap",
+      "availability_pct": 99.5,
+      "p95_ms": 800,
+      "cache": "edge-cache 300s"
+    },
+    {
+      "key": "public_search",
+      "path": "/api/public/knowledge/search",
+      "availability_pct": 99.0,
+      "p95_ms": 1200,
+      "cache": "query-cache 60s"
+    },
+    {
+      "key": "public_vocabulary",
+      "path": "/api/public/knowledge/vocabulary",
+      "availability_pct": 99.0,
+      "p95_ms": 1000,
+      "cache": "cursor-cache 120s"
+    },
+    {
+      "key": "internal_delta",
+      "path": "/api/internal/main-site/knowledge/delta",
+      "availability_pct": 99.0,
+      "p95_ms": 1500,
+      "cache": "private no-store"
+    },
+    {
+      "key": "export_latest",
+      "path": "/api/public/knowledge/export/latest",
+      "availability_pct": 99.0,
+      "p95_ms": 700,
+      "cache": "artifact-cache 600s"
+    }
+  ],
+  "alert_policy": {
+    "sev1": "public_bootstrap unavailable for 10 minutes or export artifact corrupted",
+    "sev2": "delta sync failed for 30 minutes or vocabulary p95 > 3000ms",
+    "sev3": "search quality gate failed or contract test failed in staging"
+  }
+}

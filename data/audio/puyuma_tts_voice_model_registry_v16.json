@@ -1,0 +1,42 @@
+{
+  "version": "v16-tts-voice-model-registry",
+  "description_zh": "卑南語 TTS 聲音模型登錄表。v16 不假裝已有可公開的真人等級 TTS；需以授權音檔訓練/微調後才能啟用。",
+  "models": [
+    {
+      "id": "puyuma_source_audio_passthrough_v1",
+      "model_type": "source_audio_passthrough",
+      "status": "production_ready_for_existing_entries",
+      "public_ui_enabled": true,
+      "description_zh": "已有真人音檔的詞句，直接播放來源音檔，這是目前最接近真實發音的模式。",
+      "supports_free_text_tts": false,
+      "requires_training": false,
+      "license_scope": "inherits_each_audio_asset_license"
+    },
+    {
+      "id": "puyuma_neural_tts_candidate_v1",
+      "model_type": "neural_tts_training_candidate",
+      "status": "not_trained_not_public",
+      "public_ui_enabled": false,
+      "description_zh": "未來可用 VITS/Piper/Coqui 類模型訓練，但必須先取得授權音檔、切音、文本對齊、教師審核與相似度評估。",
+      "supports_free_text_tts": true,
+      "requires_training": true,
+      "minimum_training_requirements": {
+        "licensed_audio_hours_per_dialect": 2,
+        "target_audio_hours_per_dialect": 10,
+        "aligned_utterances_per_dialect": 1000,
+        "required_metadata": [
+          "dialect_code",
+          "speaker_consent",
+          "transcript",
+          "audio_url_or_file",
+          "source_phon_or_ipa"
+        ]
+      },
+      "quality_gate": {
+        "human_review_required": true,
+        "pronunciation_similarity_threshold": 0.85,
+        "no_public_release_for_ritual_or_sensitive_content": true
+      }
+    }
+  ]
+}

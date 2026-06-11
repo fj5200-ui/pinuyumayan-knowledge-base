@@ -1,0 +1,76 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "count": 3,
+  "source_packets": [
+    {
+      "packet_id": "ritual_public_summary_pack_v22",
+      "title_zh": "歲時祭儀公開摘要素材包",
+      "claim_ids": [
+        "kg22_ritual_two_categories",
+        "kg22_agricultural_ritual_examples",
+        "kg22_life_ritual_examples",
+        "kg22_mugamut_month_public",
+        "kg22_ruwuwaan_month_public",
+        "kg22_masarut_month_public",
+        "kg22_december_annual_ritual_public",
+        "kg22_mugamut_unification_summary",
+        "kg22_ruwuwaan_historical_meaning",
+        "kg22_masarut_family_based_duration",
+        "kg22_masarut_swing_culture_public",
+        "kg22_mangayaw_largest_event",
+        "kg22_mangayaw_collective_term",
+        "kg22_mangayaw_three_week_public",
+        "kg22_vasivas_courage_training_public",
+        "kg22_mangayau_wilderness_training_public",
+        "kg22_remavaravas_reunion_public",
+        "kg22_joint_ritual_ethnic_awareness",
+        "kg22_vasivas_grass_monkey_change",
+        "kg22_mangayau_fixed_date_range_public",
+        "kg22_mangayau_elder_teaching_public",
+        "kg22_mangayau_return_celebration_public",
+        "kg22_joint_annual_ritual_1982",
+        "kg22_joint_annual_ritual_turn_taking",
+        "kg22_joint_annual_ritual_attachment"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "allowed_use": "frontend_ai_composer_with_backend_validation",
+      "sensitivity_max": "high",
+      "article_guardrail_zh": "只能寫公開摘要與文化導覽；引用 claims 必須逐條保留，敏感內容需後台人工審核。"
+    },
+    {
+      "packet_id": "governance_security_pack_v22",
+      "title_zh": "文章引用與禁止關聯治理素材包",
+      "claim_ids": [
+        "kg22_zh_population_version_guard",
+        "kg22_zh_annual_ritual_names",
+        "kg22_zh_plain_contact_context"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "allowed_use": "frontend_ai_composer_with_backend_validation",
+      "sensitivity_max": "medium",
+      "article_guardrail_zh": "只能寫公開摘要與文化導覽；引用 claims 必須逐條保留，敏感內容需後台人工審核。"
+    },
+    {
+      "packet_id": "culture_revitalization_pack_v22",
+      "title_zh": "文化復振與社群活動素材包",
+      "claim_ids": [
+        "kg22_ritual_revitalization_1981",
+        "kg22_joint_ritual_ethnic_awareness",
+        "kg22_joint_annual_ritual_1982",
+        "kg22_joint_annual_ritual_turn_taking",
+        "kg22_joint_annual_ritual_attachment"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "allowed_use": "frontend_ai_composer_with_backend_validation",
+      "sensitivity_max": "medium",
+      "article_guardrail_zh": "只能寫公開摘要與文化導覽；引用 claims 必須逐條保留，敏感內容需後台人工審核。"
+    }
+  ]
+}

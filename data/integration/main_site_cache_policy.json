@@ -1,0 +1,23 @@
+{
+  "id": "main_site_cache_policy_v6",
+  "recommended_strategy": "主站 SSR/ISR 優先；前端只打公開 API；批次同步走 internal API key。",
+  "headers": {
+    "/api/public/knowledge/bootstrap": "public, s-maxage=300, stale-while-revalidate=86400",
+    "/api/public/knowledge/search": "public, s-maxage=120, stale-while-revalidate=3600",
+    "/api/public/knowledge/related": "public, s-maxage=300, stale-while-revalidate=86400",
+    "/api/public/knowledge/communities/:communityKey": "public, s-maxage=600, stale-while-revalidate=86400",
+    "/api/public/knowledge/vocabulary": "public, s-maxage=300, stale-while-revalidate=86400",
+    "/api/internal/main-site/knowledge/bundle": "private, no-store",
+    "/api/internal/main-site/knowledge/delta": "private, no-store"
+  },
+  "invalidation_events": [
+    "kb.fact.published",
+    "community.updated",
+    "ritual.updated",
+    "vocabulary.approved",
+    "audio.asset.updated",
+    "search.index.rebuilt"
+  ],
+  "etag_policy": "以 response body SHA-256 或 kb_content_versions max(created_at) 產生 ETag。",
+  "cdn_notes": "公開端點可上 Cloudflare Cache；internal 端點不得被 CDN 快取。"
+}

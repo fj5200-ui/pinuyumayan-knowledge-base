@@ -1,0 +1,107 @@
+{
+  "version": "v20",
+  "generated_at": "2026-06-11T14:58:00+08:00",
+  "description_zh": "前端 AI 發文去重索引與發布前檢查規則。",
+  "dedupe_keys_from_v20_claims": [
+    "claim_fc36569fa8a7c44e",
+    "claim_7cf30cd9d0b76159",
+    "claim_ce8932a3ed9c3172",
+    "claim_98e3ddfe033925db",
+    "claim_a3dabf885a695ffa",
+    "claim_fff9a197195ff7a5",
+    "claim_e65df7960360ba6a",
+    "claim_e76be11141373cdd",
+    "claim_4e262cf58bf98024",
+    "claim_6881f80ab0ebf9e2",
+    "claim_b4f114bc20041aea",
+    "claim_73a9238c4bfa3a62",
+    "claim_4debd2bec231d927",
+    "claim_6c1b8721c46b29ca",
+    "claim_7b945bbfcba734cc",
+    "claim_b6f83088b708df3f",
+    "claim_a7045577f32992c0",
+    "claim_9f1a9b7891a930b3",
+    "claim_1c0e0d4d6963c248",
+    "claim_1ae1dc932fcabdf8",
+    "claim_794aeadb89a26063",
+    "claim_106f51b1beb5c9bb",
+    "claim_d1183455e3ce3616",
+    "claim_9face48ea02d3393",
+    "claim_1f2fb30394479557",
+    "claim_adad80c3fbc2d47f",
+    "claim_319f8f8de4db985b",
+    "claim_a66a16ae3595f895",
+    "claim_9d4cfa39bb38c956",
+    "claim_d7d028f784847399",
+    "claim_da12cd4ea92f4cec",
+    "claim_9caed8644d1deef4",
+    "claim_94699f51679ebaaf",
+    "claim_cd49b65c6dd9c8ef",
+    "claim_3002bf3a225fc39c",
+    "claim_3a9d562eb452c7ee",
+    "claim_afe863259b070b76",
+    "claim_b66ddc06bec1930b",
+    "claim_07cbfffb393b10ec",
+    "claim_01c9b140429199f7",
+    "claim_30cd76a3d6f6d230",
+    "claim_93de4df63b25baaa",
+    "claim_8226a23965d2f7c1",
+    "claim_86ca9acaa13af558",
+    "claim_f6585ee9809771fb",
+    "claim_8c6f0a255706c22e",
+    "claim_8b19a43b7788dd30",
+    "claim_bbbf1867c68e14b1",
+    "claim_101b1b884fc7bf93",
+    "claim_5205bf6072e304ba",
+    "claim_1d6ddf67c827debf",
+    "claim_1aad1ad1240d0ddf",
+    "claim_d85e53f931ce470d",
+    "claim_94204b32c66150f4",
+    "claim_e4c04a5fe025f5a9",
+    "claim_017ee2a38697c2b9",
+    "claim_78f19dc2233f165f",
+    "claim_827d4b569a4a4f33",
+    "claim_57fd8e05c63c301a"
+  ],
+  "rules": [
+    {
+      "rule_id": "same_slug",
+      "action": "block",
+      "description_zh": "同 slug 文章不得重複發布。"
+    },
+    {
+      "rule_id": "same_claim_set_hash",
+      "action": "block",
+      "description_zh": "相同 claim set 與相同文章角度不得重複發布。"
+    },
+    {
+      "rule_id": "claim_overlap_ratio_gte_0_72",
+      "action": "manual_review",
+      "description_zh": "引用 claim 重疊率 >= 72% 時進人工審核。"
+    },
+    {
+      "rule_id": "same_topic_within_10_days",
+      "action": "manual_review",
+      "description_zh": "同主題 10 日內重複投稿進人工審核。"
+    },
+    {
+      "rule_id": "sensitive_claim_without_guardrail",
+      "action": "block",
+      "description_zh": "引用 high sensitivity claim 但未附 guardrail 時阻擋。"
+    }
+  ],
+  "frontend_composer_policy": {
+    "article_generation_location": "frontend",
+    "backend_generation_allowed": false,
+    "backend_role": [
+      "resolve_source_packets",
+      "validate_citations",
+      "duplicate_check",
+      "sensitivity_check",
+      "submit_review",
+      "publish_gate"
+    ],
+    "store_prompt_plaintext": false,
+    "store_prompt_hash_only": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "version": "v24",
+  "title": "主站實機串接 + 後台審核 UI + 千筆語料實測匯入",
+  "priorities": [
+    {
+      "priority": 1,
+      "name": "主站實機串接",
+      "tasks": [
+        "把 webapp/app/api/ai/compose/route.ts 移到主站",
+        "設定 Cloudflare Pages secrets",
+        "測 public API / internal API / HMAC"
+      ]
+    },
+    {
+      "priority": 2,
+      "name": "後台審核 UI 接 API",
+      "tasks": [
+        "草稿列表",
+        "citation completeness",
+        "duplicate fingerprint",
+        "forbidden Beinan relation result",
+        "publish approval"
+      ]
+    },
+    {
+      "priority": 3,
+      "name": "千筆語料實測匯入",
+      "tasks": [
+        "實跑 build_full_puyuma_web_vocabulary.py",
+        "匯出音檔覆蓋率",
+        "匯出 PHON 覆蓋率",
+        "匯出授權與公開狀態報告"
+      ]
+    },
+    {
+      "priority": 4,
+      "name": "知識來源多來源 adapter",
+      "tasks": [
+        "新增 TIPP/政府/博物館候選來源 adapter",
+        "候選資料只進 review queue",
+        "去除卑南遺址/考古來源污染"
+      ]
+    },
+    {
+      "priority": 5,
+      "name": "主站 SEO 與發布排程",
+      "tasks": [
+        "文章 sitemap",
+        "OG metadata",
+        "同主題冷卻時間",
+        "source packet 使用率 dashboard"
+      ]
+    },
+    {
+      "priority": 6,
+      "name": "安全壓測",
+      "tasks": [
+        "nonce replay test",
+        "invalid signature test",
+        "rate limit test",
+        "CORS test",
+        "audit log check"
+      ]
+    }
+  ]
+}

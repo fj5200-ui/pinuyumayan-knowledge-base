@@ -1,0 +1,43 @@
+{
+  "version": "4.0.0",
+  "generated_at": "2026-06-11T20:30:00+08:00",
+  "versioned_entities": [
+    "kb_facts",
+    "kb_communities",
+    "kb_rituals",
+    "puyuma_corpus_entries",
+    "puyuma_audio_assets",
+    "kb_search_documents"
+  ],
+  "version_fields": [
+    "version",
+    "source_hash",
+    "content_hash",
+    "created_at",
+    "updated_at",
+    "reviewed_at",
+    "reviewer_id"
+  ],
+  "hash_rules": {
+    "fact_hash": [
+      "statement_zh",
+      "source_ids",
+      "sensitivity"
+    ],
+    "corpus_hash": [
+      "puyuma_form",
+      "zh_tw",
+      "en",
+      "audio_url",
+      "source_path",
+      "source_row"
+    ],
+    "audio_hash": [
+      "source_audio_url",
+      "local_key",
+      "checksum_sha256"
+    ]
+  },
+  "rollback_policy_zh": "任何公開內容更新需保留上一版；若來源衝突或審核撤回，前台回退到最近 approved 版本。",
+  "migration_rule_zh": "資料表 schema 變動需新增 migrations，不直接覆蓋正式庫。"
+}

@@ -1,0 +1,206 @@
+{
+  "version": "2026-06-11",
+  "pages": [
+    {
+      "route": "/",
+      "title_zh": "卑南族文化綜合平台｜卑南族文化綜合平台",
+      "description_zh": "以真實來源與可追溯資料建構的卑南族文化綜合平台，整合十社、祭儀、社會制度、生活文化與卑南語音檔學習。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "hero overview",
+        "ten communities grid",
+        "ritual calendar teaser",
+        "language audio teaser",
+        "featured articles",
+        "source notice"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/about/name",
+      "title_zh": "族名與正名｜卑南族文化綜合平台",
+      "description_zh": "認識卑南族、Pinuyumayan 與 Puyuma 的使用差異，避免族稱與部落名混用。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "name distinction card",
+        "historical transliterations note",
+        "do dont table"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/communities",
+      "title_zh": "卑南族十社｜卑南族文化綜合平台",
+      "description_zh": "整理卑南族十社入口與公開部落脈絡，並清楚區分八社歷史用語與十社平台分類。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "community cards",
+        "map placeholder",
+        "historical terms notice"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/rituals",
+      "title_zh": "歲時祭儀｜卑南族文化綜合平台",
+      "description_zh": "以公開摘要方式介紹卑南族歲時祭儀，包含小米收穫祭、年祭、猴祭、大獵祭等。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "calendar months",
+        "ritual cards",
+        "community notice",
+        "sensitivity notice"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/society",
+      "title_zh": "社會制度｜卑南族文化綜合平台",
+      "description_zh": "介紹卑南族年齡階級、會所制度、親屬制度與部落角色，並標示敏感內容邊界。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "age grade intro",
+        "mens house intro",
+        "kinship intro",
+        "leadership roles"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/material-life",
+      "title_zh": "生活圖像：飲食、服飾、工藝與建築｜卑南族文化綜合平台",
+      "description_zh": "從飲食、服飾、花環、藤竹編、住屋與會所理解卑南族生活文化。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "industry food",
+        "clothing wreath",
+        "weaving objects",
+        "architecture cards"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/music-arts",
+      "title_zh": "歌謠與舞蹈｜卑南族文化綜合平台",
+      "description_zh": "認識卑南族歌謠、舞蹈與現代音樂文化脈絡，並遵守著作權與文化敏感規範。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "music category cards",
+        "dance roles notice",
+        "public figures list"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/language/puyuma",
+      "title_zh": "卑南語學習｜卑南族文化綜合平台",
+      "description_zh": "使用 FormosanBank/ePark 公開語料與音檔 URL 學習南王、知本、西群、建和卑南語句型。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "dialect filter",
+        "audio sentence cards",
+        "source and license notice"
+      ],
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/knowledge/faq",
+      "title_zh": "常見問題｜卑南族文化綜合平台",
+      "description_zh": "整理卑南族文化、語言、祭儀與網站資料來源常見問題。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "faq search",
+        "faq category tabs",
+        "source badge"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme",
+        "verification_pass_2026_06_11"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    },
+    {
+      "route": "/knowledge/sources",
+      "title_zh": "資料來源與查核說明｜卑南族文化綜合平台",
+      "description_zh": "公開平台知識庫的資料來源、查核方式、敏感內容規則與 AI 使用限制。",
+      "keywords_zh": [
+        "卑南族",
+        "Pinuyumayan",
+        "卑南族文化綜合平台",
+        "source registry",
+        "citation map",
+        "review policy"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ],
+      "indexing": "index",
+      "structured_data_type": "WebPage",
+      "review_status": "ready_for_editor_review"
+    }
+  ]
+}

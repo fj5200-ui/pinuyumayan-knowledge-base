@@ -1,0 +1,64 @@
+{
+  "version": "v23",
+  "main_site_routes": [
+    {
+      "route": "/",
+      "knowledge_calls": [
+        "bootstrap",
+        "content_collections",
+        "audio_manifest"
+      ],
+      "cache": "edge 10m + stale 1h"
+    },
+    {
+      "route": "/communities",
+      "knowledge_calls": [
+        "true_knowledge_cards?category=community",
+        "search facets"
+      ],
+      "cache": "edge 30m"
+    },
+    {
+      "route": "/communities/[slug]",
+      "knowledge_calls": [
+        "cards by community",
+        "related",
+        "pronunciation search"
+      ],
+      "cache": "ISR 30m"
+    },
+    {
+      "route": "/language/puyuma",
+      "knowledge_calls": [
+        "vocabulary",
+        "audio manifest",
+        "pronunciation search"
+      ],
+      "cache": "cursor pagination + edge 10m"
+    },
+    {
+      "route": "/articles/new",
+      "knowledge_calls": [
+        "frontend composer config",
+        "source packets",
+        "forbidden relations"
+      ],
+      "cache": "no-store for composer session"
+    },
+    {
+      "route": "/admin/review/articles",
+      "knowledge_calls": [
+        "review queue",
+        "client draft validation findings"
+      ],
+      "cache": "no-store admin only"
+    }
+  ],
+  "server_routes_to_add_to_main_site": [
+    "/api/kb/proxy/*",
+    "/api/ai/compose",
+    "/api/ai/validate-draft",
+    "/api/ai/submit-review",
+    "/api/kb/health"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "version": "0.8.0",
+  "project": "pinuyumayan-backend-database",
+  "required": [
+    {
+      "name": "DATABASE_URL",
+      "scope": "backend",
+      "example": "mysql://user:pass@host:4000/pinuyumayan",
+      "purpose": "MySQL/TiDB connection string",
+      "secret": true
+    },
+    {
+      "name": "PINUYUMAYAN_MAIN_SITE_API_KEY",
+      "scope": "backend",
+      "example": "replace-with-long-random-key",
+      "purpose": "Internal main site sync API key",
+      "secret": true
+    },
+    {
+      "name": "PUBLIC_KNOWLEDGE_BASE_URL",
+      "scope": "deploy",
+      "example": "https://kb-api.pinuyumayan.tw",
+      "purpose": "Public base URL used by healthcheck and main site client",
+      "secret": false
+    },
+    {
+      "name": "NODE_ENV",
+      "scope": "backend",
+      "example": "production",
+      "purpose": "Runtime mode",
+      "secret": false
+    }
+  ],
+  "optional": [
+    {
+      "name": "CORS_ORIGIN",
+      "default": "*",
+      "purpose": "Allowed main site origin; use explicit origin in production"
+    },
+    {
+      "name": "RATE_LIMIT_PUBLIC_PER_MINUTE",
+      "default": "120",
+      "purpose": "Public API soft limit"
+    },
+    {
+      "name": "RATE_LIMIT_INTERNAL_PER_MINUTE",
+      "default": "600",
+      "purpose": "Internal API soft limit"
+    },
+    {
+      "name": "FULL_CORPUS_MIN_ENTRIES",
+      "default": "1000",
+      "purpose": "Minimum full corpus target"
+    },
+    {
+      "name": "AUDIO_MIRROR_PROVIDER",
+      "default": "none",
+      "purpose": "none|r2|s3|local"
+    },
+    {
+      "name": "BACKUP_DIR",
+      "default": "./backups",
+      "purpose": "Database dump target folder"
+    },
+    {
+      "name": "DEPLOY_LOCK_TTL_SECONDS",
+      "default": "3600",
+      "purpose": "Prevents concurrent imports/migrations"
+    }
+  ],
+  "notes": [
+    "正式站請不要使用萬用 CORS。",
+    "完整千筆語料匯入應在 API healthcheck 通過後以 postdeploy job 執行。",
+    "API key 必須可輪替；不得寫死在前端 bundle。"
+  ]
+}

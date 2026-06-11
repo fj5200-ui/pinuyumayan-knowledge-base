@@ -1,0 +1,881 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "description_zh": "v22 新增可追溯真實知識 claims；以原民會官方公開頁為主，敏感祭儀內容只保留公開摘要與防擴寫 guardrail。",
+  "count": 30,
+  "claims": [
+    {
+      "claim_id": "kg22_religion_three_sources_summary",
+      "category": "宗教與信仰摘要",
+      "statement_zh": "原民會英文頁指出，卑南族在漢人與西方宗教接觸後，傳統信仰、漢人宗教與基督宗教等來源在日常生活中並存；平台僅保存公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L183-L184",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9d2595ec0adcc949",
+      "dedupe_key": "claim_9d2595ec0adcc949",
+      "keywords": [
+        "宗教接觸",
+        "傳統信仰",
+        "當代生活"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_ritual_revitalization_1981",
+      "category": "文化復振",
+      "statement_zh": "原民會英文頁提到 1981 年傳統祭儀復振後，族人開始重視與討論傳統信仰與宗教。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L184-L184",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e3befcc94bc5d7e9",
+      "dedupe_key": "claim_e3befcc94bc5d7e9",
+      "keywords": [
+        "1981",
+        "祭儀復振",
+        "文化復振"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_ritual_two_categories",
+      "category": "歲時祭儀分類",
+      "statement_zh": "原民會英文頁將卑南族祭儀公開摘要分為農業祭儀與生命祭儀兩大類。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L185-L185",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9ed4303085a87f61",
+      "dedupe_key": "claim_9ed4303085a87f61",
+      "keywords": [
+        "農業祭儀",
+        "生命祭儀",
+        "祭儀分類"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_agricultural_ritual_examples",
+      "category": "歲時祭儀分類",
+      "statement_zh": "原民會英文頁以 Masarut 與 Mugamut 作為農業祭儀例子。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L185-L185",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f4dc87fbb5ab8b82",
+      "dedupe_key": "claim_f4dc87fbb5ab8b82",
+      "keywords": [
+        "Masarut",
+        "Mugamut",
+        "農業祭儀"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_life_ritual_examples",
+      "category": "歲時祭儀分類",
+      "statement_zh": "原民會英文頁以 Vasivas 與 Mangayau 作為生命祭儀例子。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L185-L185",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_73d282ca586e94b1",
+      "dedupe_key": "claim_73d282ca586e94b1",
+      "keywords": [
+        "Vasivas",
+        "Mangayau",
+        "生命祭儀"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mugamut_month_public",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "原民會英文頁列出 Mugamut 約在三月，並以女性鋤草完工祭作公開摘要名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L187-L195",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1e2ae96cb2c1ee74",
+      "dedupe_key": "claim_1e2ae96cb2c1ee74",
+      "keywords": [
+        "三月",
+        "Mugamut",
+        "女性鋤草完工慶"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_ruwuwaan_month_public",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "原民會英文頁列出 Ruvuwa’an 約在四月，並以祖先登陸與發祥地儀式作公開摘要名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L189-L198",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2094f213e3a526b7",
+      "dedupe_key": "claim_2094f213e3a526b7",
+      "keywords": [
+        "四月",
+        "Ruvuwa’an",
+        "發祥地"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_masarut_month_public",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "原民會英文頁列出 Masarut 約在七月，並以小米收穫祭作公開摘要名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L191-L202",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d494e370c645f2e8",
+      "dedupe_key": "claim_d494e370c645f2e8",
+      "keywords": [
+        "七月",
+        "Masarut",
+        "小米收穫祭"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_december_annual_ritual_public",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "原民會英文頁列出十二月年祭，並說明其包含 Vasivas 與 Mangayau 的公開摘要關係。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L192-L206",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_25389cfba0be751f",
+      "dedupe_key": "claim_25389cfba0be751f",
+      "keywords": [
+        "十二月",
+        "年祭",
+        "Vasivas",
+        "Mangayau"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mugamut_unification_summary",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "原民會英文頁的 Mugamut 公開摘要提到活動象徵部落凝聚與團結；平台不得轉寫成操作教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L194-L195",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_77849ff19070cdcc",
+      "dedupe_key": "claim_77849ff19070cdcc",
+      "keywords": [
+        "Mugamut",
+        "部落凝聚",
+        "公開摘要"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_ruwuwaan_historical_meaning",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "原民會英文頁指出 Ruvuwa’an 具有深刻歷史與文化意義；平台只保留公開摘要，不延伸私密路線或儀式細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L198-L198",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3f9f89620d0fd806",
+      "dedupe_key": "claim_3f9f89620d0fd806",
+      "keywords": [
+        "Ruvuwa’an",
+        "歷史意義",
+        "文化意義"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_masarut_family_based_duration",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "原民會英文頁指出 Masarut 以大家族為單位舉行，公開摘要描述其時間可為三至七日。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L200-L201",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_053a4722ef2fc363",
+      "dedupe_key": "claim_053a4722ef2fc363",
+      "keywords": [
+        "Masarut",
+        "大家族",
+        "三至七日"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_masarut_swing_culture_public",
+      "category": "歲時祭儀與文化活動",
+      "statement_zh": "原民會英文頁提到部分社群會在會所前廣場設置鞦韆，今日也成為特殊文化活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L202-L203",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7d68fb817de69d05",
+      "dedupe_key": "claim_7d68fb817de69d05",
+      "keywords": [
+        "鞦韆",
+        "文化活動",
+        "Masarut"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayaw_largest_event",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁指出 Mangayaw 是年末至年初之間最大的卑南族活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L204-L206",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f5a012ae4f9cb34a",
+      "dedupe_key": "claim_f5a012ae4f9cb34a",
+      "keywords": [
+        "Mangayaw",
+        "年祭",
+        "最大活動"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayaw_collective_term",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁說明 Mangayaw 是 Vasivas 與 Mangayau 兩項祭儀的集合名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L206-L206",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_00661e5ccaa8f86a",
+      "dedupe_key": "claim_00661e5ccaa8f86a",
+      "keywords": [
+        "Mangayaw",
+        "Vasivas",
+        "Mangayau"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayaw_three_week_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁以公開摘要稱 Mangayaw 約為三週活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L206-L206",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e4cb50e72683d4da",
+      "dedupe_key": "claim_e4cb50e72683d4da",
+      "keywords": [
+        "Mangayaw",
+        "三週",
+        "公開摘要"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_vasivas_courage_training_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁描述 Vasivas 與青少年勇氣訓練相關；平台只能作公開摘要，不提供操作細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L207-L211",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4358d1f652c49214",
+      "dedupe_key": "claim_4358d1f652c49214",
+      "keywords": [
+        "Vasivas",
+        "青少年",
+        "勇氣訓練"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayau_wilderness_training_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁描述 Mangayau 與野外生存、狩獵能力及成年儀式相關；平台只保留公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L207-L213",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e6675fc66157b296",
+      "dedupe_key": "claim_e6675fc66157b296",
+      "keywords": [
+        "Mangayau",
+        "野外生存",
+        "成年儀式"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_remavaravas_reunion_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁提到 remavaravas 作為活動後慰問與團聚的公開摘要；平台不得擴寫為除祟操作。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L207-L208",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "restricted_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2099e6525612fc42",
+      "dedupe_key": "claim_2099e6525612fc42",
+      "keywords": [
+        "remavaravas",
+        "團聚",
+        "慰問"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_joint_ritual_ethnic_awareness",
+      "category": "聯合年祭",
+      "statement_zh": "原民會英文頁說明近年聯合祭儀成為村社交流與族群意識發展的重要活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L208-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f8bf751b25fd5ed5",
+      "dedupe_key": "claim_f8bf751b25fd5ed5",
+      "keywords": [
+        "聯合年祭",
+        "村社交流",
+        "族群意識"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_vasivas_grass_monkey_change",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁提到因時代與社會變遷，Vasivas 中已以草猴取代真猴；平台可作公開變遷摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L211-L211",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f408a09cf16719d2",
+      "dedupe_key": "claim_f408a09cf16719d2",
+      "keywords": [
+        "Vasivas",
+        "草猴",
+        "社會變遷"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayau_fixed_date_range_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁提到今日 Mangayau 固定於十二月二十七日至三十一日期間舉行三日活動；仍應以部落實際公告為準。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L213-L213",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_684ceec2b42b3d3c",
+      "dedupe_key": "claim_684ceec2b42b3d3c",
+      "keywords": [
+        "Mangayau",
+        "12月27日",
+        "12月31日"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayau_elder_teaching_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁提到長者會在 Mangayau 中教授野外生存與狩獵技能；平台只保留文化教育摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L213-L213",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ae577d0bb3f2f974",
+      "dedupe_key": "claim_ae577d0bb3f2f974",
+      "keywords": [
+        "長者",
+        "文化教育",
+        "野外生存"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_mangayau_return_celebration_public",
+      "category": "年祭摘要",
+      "statement_zh": "原民會英文頁提到 Mangayau 結束後有迎接與慰問等社群活動；平台不得擴寫私密儀程。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L214-L214",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8d3b84e4371b9598",
+      "dedupe_key": "claim_8d3b84e4371b9598",
+      "keywords": [
+        "迎接",
+        "慰問",
+        "社群活動"
+      ],
+      "article_allowed": false,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_joint_annual_ritual_1982",
+      "category": "聯合年祭",
+      "statement_zh": "原民會英文頁指出聯合年祭於 1982 年開始，時間由各部落會議討論決定。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L215-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a3aa47b490222d4e",
+      "dedupe_key": "claim_a3aa47b490222d4e",
+      "keywords": [
+        "1982",
+        "聯合年祭",
+        "部落會議"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_joint_annual_ritual_turn_taking",
+      "category": "聯合年祭",
+      "statement_zh": "原民會英文頁指出聯合年祭由不同村社輪流舉辦，內容包含歌舞與競賽等公開活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L216-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ac2e34710d3264f6",
+      "dedupe_key": "claim_ac2e34710d3264f6",
+      "keywords": [
+        "聯合年祭",
+        "輪流舉辦",
+        "歌舞",
+        "競賽"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_joint_annual_ritual_attachment",
+      "category": "聯合年祭",
+      "statement_zh": "原民會英文頁指出聯合年祭從個別村社活動發展為整體族群活動，並有助於族群情感凝聚。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021_lines_113_216"
+      ],
+      "evidence_locator": "L216-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_877dbf98b3f748f7",
+      "dedupe_key": "claim_877dbf98b3f748f7",
+      "keywords": [
+        "聯合年祭",
+        "族群情感",
+        "凝聚"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_zh_population_version_guard",
+      "category": "人口資料治理",
+      "statement_zh": "原民會中文頁目前列出卑南族總人口 16,734；系統需與英文頁 2020 年 14,517 舊資料分開存放，不得混為同一版本。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_406bc3b0ced7c9b7",
+      "dedupe_key": "claim_406bc3b0ced7c9b7",
+      "keywords": [
+        "人口",
+        "版本治理",
+        "中文頁"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_zh_annual_ritual_names",
+      "category": "中文公開摘要",
+      "statement_zh": "原民會中文頁列出卑南族現存年度慶典名稱：小米鋤草完工慶、小米收穫祭、少年年祭與年祭。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_25cef1765675cd8c",
+      "dedupe_key": "claim_25cef1765675cd8c",
+      "keywords": [
+        "小米鋤草完工慶",
+        "小米收穫祭",
+        "少年年祭",
+        "年祭"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    },
+    {
+      "claim_id": "kg22_zh_plain_contact_context",
+      "category": "中文公開摘要",
+      "statement_zh": "原民會中文頁指出卑南族位於多族群交會的平原地帶，很早與外界文化接觸，仍維繫傳統文化與生活。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current_lines_587_590"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9cfc47e77af0507b",
+      "dedupe_key": "claim_9cfc47e77af0507b",
+      "keywords": [
+        "平原地帶",
+        "多族群交會",
+        "傳統文化"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "僅可作為公開摘要或文章素材；不得擴寫為未經查證的祭儀操作、禁忌、靈術或祖靈細節。",
+      "forbidden_relation_guard": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "v22_added": true
+    }
+  ]
+}

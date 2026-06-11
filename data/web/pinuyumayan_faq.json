@@ -1,0 +1,544 @@
+{
+  "version": "2026-06-11",
+  "language": "zh-TW",
+  "usage": "網站 FAQ、AI 回答草稿、CMS 預設問答；公開前仍需編輯確認。",
+  "items": [
+    {
+      "id": "faq-001-pinuyumayan-name",
+      "question_zh": "Pinuyumayan 是什麼意思？",
+      "answer_zh": "Pinuyumayan 可作為卑南族整體族稱，用來避免把南王部落名稱 Puyuma 與整個卑南族混用。網站正式名稱建議使用「卑南族／Pinuyumayan」。",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "Pinuyumayan",
+        "Puyuma",
+        "族名"
+      ],
+      "suggested_route": "/about/name",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-002-puyuma-usage",
+      "question_zh": "Puyuma 可以直接代表整個卑南族嗎？",
+      "answer_zh": "不建議。Puyuma 可指南王部落，也常見於卑南語英文語境；平台正式族稱應使用「卑南族／Pinuyumayan」。",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "Puyuma",
+        "南王",
+        "正名"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-003-eight-ten-tribes",
+      "question_zh": "網站要寫八社還是十社？",
+      "answer_zh": "前台正式分類使用「卑南族十社」。八社可作歷史用語或文獻脈絡，不應作為現代平台主分類。",
+      "category": "十社",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "十社",
+        "八社",
+        "分類"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-004-core-area",
+      "question_zh": "卑南族主要分布在哪裡？",
+      "answer_zh": "公開資料指出，卑南族主要以臺東平原的臺東市、卑南鄉一帶為核心，也有族人居住成功鎮、太麻里鄉或移居都市。",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "臺東",
+        "卑南鄉",
+        "臺東市"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-005-origin-stories",
+      "question_zh": "竹生與石生是什麼？",
+      "answer_zh": "公開資料將卑南族起源敘事概括為竹生與石生兩種說法，竹生傳說以卑南社／南王為中心，石生傳說以知本社為中心。此類內容宜標示為起源敘事，不應改寫成唯一歷史定論。",
+      "category": "起源敘事",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "竹生",
+        "石生",
+        "起源"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-006-main-rituals",
+      "question_zh": "卑南族主要祭儀有哪些？",
+      "answer_zh": "公開資料列出婦女除草完工慶、祖先登陸與發祥地祭祖、小米收穫祭、年祭、猴祭、大獵祭與聯合年祭等。網站只做公開摘要，實際日期與細節以部落公告為準。",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "祭儀",
+        "年祭",
+        "小米收穫祭"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-007-calendar",
+      "question_zh": "可以直接公布祭儀日期嗎？",
+      "answer_zh": "不可以自行推測。公開資料提供月份脈絡，例如3月、4月、7月、12月等，但各部落實際日期仍應依當年度部落公告或主辦單位資訊。",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "日期",
+        "公告",
+        "祭儀"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-008-monkey-rite",
+      "question_zh": "猴祭現在還會刺真猴嗎？",
+      "answer_zh": "公開資料說明，隨著時代與社會環境變遷，現代刺猴儀式已改以草猴代替真猴。網站應避免仿作或鼓勵傷害動物。",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "猴祭",
+        "草猴",
+        "保育"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-009-hunting-rite",
+      "question_zh": "大獵祭可以寫成狩獵教學嗎？",
+      "answer_zh": "不可以。大獵祭可作文化與成年禮脈絡的公開摘要，但不應寫成狩獵、陷阱、野外求生或儀式操作手冊。",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "大獵祭",
+        "狩獵",
+        "安全"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-010-age-grade",
+      "question_zh": "卑南族年齡階級制度是什麼？",
+      "answer_zh": "公開資料指出卑南族男子在少年時期進入會所，接受體能、知識與技能訓練，並依階段進入少年會所與成年會所。網站可介紹制度概念，不公開細節訓練流程。",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "年齡階級",
+        "會所"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-011-mens-house",
+      "question_zh": "會所是什麼？",
+      "answer_zh": "會所是理解卑南族公共生活、年齡階級、教育訓練與祭儀脈絡的重要建築與制度。公開介紹可區分少年會所與成年會所。",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "會所",
+        "少年會所",
+        "成年會所"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-012-matrilineal",
+      "question_zh": "卑南族是母系社會嗎？",
+      "answer_zh": "公開資料指出，傳統婚姻與家產繼承有母系特徵，例如長女繼承與男子入居女方家庭；但近代受社會環境影響，親屬制度已有調整。",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "母系",
+        "婚姻",
+        "繼承"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-013-ayawan-rahan",
+      "question_zh": "ayawan 和 rahan 是什麼？",
+      "answer_zh": "公開資料描述 ayawan 為部落傳統政治領袖，rahan 為祭司，負責祭祀禮儀。平台只做角色概念摘要，不指定現任或個人身分。",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "ayawan",
+        "rahan"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-014-shaman",
+      "question_zh": "na temaramaw 可以怎麼介紹？",
+      "answer_zh": "可介紹為公開資料中的巫師角色，與疾病醫療、祈福、驅邪等傳統生活照護需求相關；不得生成作法、咒語、儀式教學或療效宣稱。",
+      "category": "信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "na temaramaw",
+        "巫師",
+        "敏感內容"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-015-biruwa",
+      "question_zh": "biruwa 是什麼？",
+      "answer_zh": "公開資料將 biruwa 置於神靈概念中，可涵蓋自然、天地、四方、祖先與死者之靈等範疇。網站只做概念性摘要。",
+      "category": "信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "biruwa",
+        "神靈",
+        "祖靈"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-016-food",
+      "question_zh": "卑南族傳統飲食可以介紹哪些？",
+      "answer_zh": "可介紹粟、旱稻、甘薯、芋頭、狩獵肉類、河川魚貝，以及月桃葉包裹的糯米粉糰、鹹豬肉、糯米粿粽等公開資料支持的內容。",
+      "category": "飲食",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "飲食",
+        "月桃",
+        "小米"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-017-clothing",
+      "question_zh": "卑南族服飾有哪些特色？",
+      "answer_zh": "公開資料提到卑南族服飾色彩常見紅、黃、綠並搭配黑白，並透過服裝區分性別、年齡階級與身分。",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "服飾",
+        "顏色",
+        "身分"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-018-wreath",
+      "question_zh": "花環有什麼意義？",
+      "answer_zh": "公開資料指出祭典時會編織花環給族人或來賓，花環也可呈現友誼與社交關係；但喪期或成年會所服役脈絡有不同規範，公開頁應摘要處理。",
+      "category": "服飾/祭典",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "花環",
+        "祭典"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-019-weaving",
+      "question_zh": "藤竹編可以做成網站內容嗎？",
+      "answer_zh": "可以。方格編、人字編、六角編、藤籃、藤包、背簍、竹杯、月桃葉蓆等，都屬於公開資料可支援的生活工藝內容。",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "藤竹編",
+        "工藝",
+        "月桃葉"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-020-architecture",
+      "question_zh": "傳統建築可以介紹哪些？",
+      "answer_zh": "可介紹住屋、會所、祖靈屋等類型，以及茅草、竹片、編床、爐灶等公開資料支持的建築特徵；祖靈屋內容應避免細節化。",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "建築",
+        "住屋",
+        "祖靈屋"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-021-music",
+      "question_zh": "卑南族歌謠怎麼分類？",
+      "answer_zh": "公開資料將卑南族歌謠概分為祭儀歌謠、休閒工作歌謠與社會時代歌謠。涉及歌詞、儀式用途或著作權時須另行審核。",
+      "category": "歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "歌謠",
+        "音樂"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-022-dance",
+      "question_zh": "舞蹈內容可以教學嗎？",
+      "answer_zh": "公開頁可介紹舞蹈反映性別、年齡與角色差異，以及盾牌舞步、精神舞步等公開名稱；不建議未經授權製作教學或仿作流程。",
+      "category": "舞蹈",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "舞蹈",
+        "盾牌舞步"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-023-language-variation",
+      "question_zh": "卑南語各地說法會不同嗎？",
+      "answer_zh": "公開資料指出卑南族語言因部落區位與族群接觸而有差異，例如南面知本受排灣、魯凱語影響，北面卑南受阿美語發音方式與漢語互動影響。",
+      "category": "語言",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "卑南語",
+        "方言",
+        "語音差異"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-024-audio-source",
+      "question_zh": "網站語詞庫的音檔從哪裡來？",
+      "answer_zh": "目前語詞庫音檔 URL 來自 FormosanBank/ePark 公開資料所索引的 Klokah/ePark 音檔連結，網站不得自行編造音檔 URL。",
+      "category": "語詞庫",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "音檔",
+        "FormosanBank",
+        "ePark"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-025-dialects",
+      "question_zh": "目前語音資料分哪些卑南語分支？",
+      "answer_zh": "網站語音資料依 FormosanBank dialects.csv 對應 38 南王卑南語、39 知本卑南語、40 西群卑南語、41 建和卑南語。",
+      "category": "語詞庫",
+      "source_ids": [
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "南王",
+        "知本",
+        "西群",
+        "建和"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-026-commercial-use",
+      "question_zh": "音檔可以直接商業使用嗎？",
+      "answer_zh": "不建議未審核直接商業使用。此包提供網站串流與學習預覽用途，商業使用或大量搬移到 CDN 前應確認原始資料與音檔授權。",
+      "category": "授權",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "授權",
+        "商業使用"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-027-ai-rules",
+      "question_zh": "AI 可以自動寫卑南族文章嗎？",
+      "answer_zh": "可以先寫草稿，但必須使用可追溯來源、標記敏感度，且祭儀、家族、巫師、禁忌、人物故事等內容需人工或部落複核。",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "medium",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "AI",
+        "審核",
+        "來源"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-028-restricted-content",
+      "question_zh": "哪些內容不適合直接公開？",
+      "answer_zh": "祭儀流程、禁忌、祖靈屋內部細節、巫師作法、特定家族譜系、未公開人物故事、未授權歌詞與影像，都不適合由 AI 直接公開。",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11",
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "敏感內容",
+        "公開限制"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-029-source-required",
+      "question_zh": "沒有來源的內容可以放網站嗎？",
+      "answer_zh": "不應直接公開。沒有 source_id 的內容只能放在研究 backlog 或待查核草稿，不能成為前台正式知識。",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "source_id",
+        "查核"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    },
+    {
+      "id": "faq-030-cms-workflow",
+      "question_zh": "CMS 文章發布前要檢查什麼？",
+      "answer_zh": "至少檢查族名是否正確、十社/八社用語是否合規、是否有 source_id、是否涉及敏感內容、是否需部落複核、音檔 URL 是否在 manifest 中。",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "review_status": "approved_public_summary",
+      "tags": [
+        "CMS",
+        "審核",
+        "發布"
+      ],
+      "suggested_route": "/knowledge/faq",
+      "answer_policy": "不得超出 answer_zh 的公開摘要範圍；需要細節時改提示來源與部落公告。"
+    }
+  ]
+}

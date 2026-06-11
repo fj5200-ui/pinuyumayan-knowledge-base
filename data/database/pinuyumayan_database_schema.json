@@ -1,0 +1,978 @@
+{
+  "version": "3.0.0-database-rich",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "target_stack": [
+    "MySQL 8 compatible",
+    "TiDB Cloud Starter compatible",
+    "Drizzle ORM",
+    "tRPC",
+    "React"
+  ],
+  "principles": [
+    "所有公開內容必須能追溯 source_id。",
+    "敏感內容不得直接公開完整流程、禁忌、家族內部細節或仿作教學。",
+    "語料表允許 preview subset 與 full corpus build output 分開標示，避免把 80 筆誤認為千筆級完整資料。",
+    "XML 來源若有 PHON，需優先保存 source_phon；G2P/IPA 草稿只能作為 fallback 或待審欄位。"
+  ],
+  "entity_groups": {
+    "source_governance": [
+      "kb_sources",
+      "kb_source_claims",
+      "kb_source_snapshots",
+      "kb_license_terms"
+    ],
+    "knowledge_content": [
+      "kb_facts",
+      "kb_topics",
+      "kb_faq_items",
+      "kb_content_cards",
+      "kb_communities",
+      "kb_rituals"
+    ],
+    "language_corpus": [
+      "puyuma_corpus_entries",
+      "puyuma_audio_assets",
+      "puyuma_g2p_jobs",
+      "puyuma_ipa_reviews",
+      "puyuma_tts_jobs"
+    ],
+    "workflow": [
+      "kb_review_tasks",
+      "kb_publication_events",
+      "kb_import_runs",
+      "kb_data_quality_reports"
+    ],
+    "search_and_api": [
+      "kb_search_documents",
+      "kb_search_aliases",
+      "kb_api_routes"
+    ]
+  },
+  "tables": [
+    {
+      "name": "kb_sources",
+      "purpose": "來源登錄表；所有事實、語料、音檔都應回到此表。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "source_id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "來源代碼，如 cip_pinuyumayan_official、formosanbank_epark"
+        },
+        {
+          "name": "title",
+          "type": "varchar(255)",
+          "required": true,
+          "description": "來源標題"
+        },
+        {
+          "name": "url",
+          "type": "text",
+          "required": false,
+          "description": "來源網址"
+        },
+        {
+          "name": "publisher",
+          "type": "varchar(255)",
+          "required": false,
+          "description": "發布者"
+        },
+        {
+          "name": "source_type",
+          "type": "enum",
+          "values": [
+            "official",
+            "academic",
+            "community",
+            "dataset",
+            "internal_review",
+            "unknown"
+          ],
+          "required": true
+        },
+        {
+          "name": "license",
+          "type": "varchar(120)",
+          "required": false,
+          "description": "授權或使用限制"
+        },
+        {
+          "name": "trust_level",
+          "type": "enum",
+          "values": [
+            "primary",
+            "high",
+            "medium",
+            "low",
+            "unknown"
+          ],
+          "required": true
+        },
+        {
+          "name": "review_status",
+          "type": "enum",
+          "values": [
+            "verified",
+            "needs_review",
+            "rejected",
+            "archived"
+          ],
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(source_id)",
+        "index(source_type)",
+        "index(review_status)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_facts",
+      "purpose": "可追溯事實資料；用於內容生成、FAQ、主題頁與 AI RAG。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "fact_id",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "statement_zh",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "statement_en",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "source_ids",
+          "type": "json",
+          "required": true
+        },
+        {
+          "name": "evidence_hint",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "sensitivity",
+          "type": "enum",
+          "values": [
+            "public",
+            "medium",
+            "high",
+            "restricted"
+          ],
+          "required": true
+        },
+        {
+          "name": "verification_status",
+          "type": "enum",
+          "values": [
+            "verified",
+            "needs_review",
+            "conflicting",
+            "rejected"
+          ],
+          "required": true
+        },
+        {
+          "name": "public_use_allowed",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "name": "content_policy",
+          "type": "json",
+          "required": false
+        }
+      ],
+      "indexes": [
+        "unique(fact_id)",
+        "index(category)",
+        "index(sensitivity)",
+        "index(verification_status)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_communities",
+      "purpose": "卑南族十社與相關歷史/別名資料。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "community_key",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "name_zh",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "romanization",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "also_known_as",
+          "type": "json",
+          "required": false
+        },
+        {
+          "name": "origin_system",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "platform_summary",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "source_ids",
+          "type": "json",
+          "required": true
+        },
+        {
+          "name": "review_status",
+          "type": "enum",
+          "values": [
+            "verified",
+            "needs_review",
+            "hidden"
+          ],
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(community_key)",
+        "index(name_zh)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_rituals",
+      "purpose": "歲時祭儀公開摘要；僅保存公開層級資料。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "ritual_key",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "name_zh",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "month_hint",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "public_summary",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "source_ids",
+          "type": "json",
+          "required": true
+        },
+        {
+          "name": "sensitivity",
+          "type": "enum",
+          "values": [
+            "public",
+            "medium",
+            "high",
+            "restricted"
+          ],
+          "required": true
+        },
+        {
+          "name": "do_not_publish",
+          "type": "json",
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(ritual_key)",
+        "index(sensitivity)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "puyuma_corpus_entries",
+      "purpose": "卑南語語料主表；同時支援 preview subset 與 full corpus output。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "entry_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "dataset_scope",
+          "type": "enum",
+          "values": [
+            "preview_subset",
+            "full_corpus",
+            "manual_curated"
+          ],
+          "required": true
+        },
+        {
+          "name": "dialect_code",
+          "type": "varchar(10)",
+          "required": true
+        },
+        {
+          "name": "dialect_name",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "community_key",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "entry_type",
+          "type": "enum",
+          "values": [
+            "sentence",
+            "word",
+            "phrase",
+            "dialogue",
+            "story_line"
+          ],
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "puyuma_text",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "zh_tw",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "en",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "source_phon",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "g2p_output",
+          "type": "json",
+          "required": false
+        },
+        {
+          "name": "ipa_value",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "ipa_status",
+          "type": "enum",
+          "values": [
+            "source_phon",
+            "rule_based_draft",
+            "manual_verified",
+            "missing"
+          ],
+          "required": true
+        },
+        {
+          "name": "audio_asset_id",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "source_id",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "source_path",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "source_row_or_sentence_id",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "source_format",
+          "type": "enum",
+          "values": [
+            "csv",
+            "xml",
+            "json",
+            "manual"
+          ],
+          "required": true
+        },
+        {
+          "name": "copyright",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "review_status",
+          "type": "enum",
+          "values": [
+            "verified",
+            "needs_review",
+            "blocked"
+          ],
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(entry_id)",
+        "index(dialect_code)",
+        "fulltext(puyuma_text)",
+        "index(dataset_scope)",
+        "index(ipa_status)"
+      ],
+      "notes": [
+        "full_corpus 需由 build_full_puyuma_web_vocabulary.py 產生；preview_subset 不可當完整語料庫。"
+      ]
+    },
+    {
+      "name": "puyuma_audio_assets",
+      "purpose": "音檔 URL 與鏡像狀態。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "audio_asset_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "source_audio_url",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "mirror_url",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "local_path",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "duration_sec",
+          "type": "decimal(8,2)",
+          "required": false
+        },
+        {
+          "name": "mime_type",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "license",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "mirror_status",
+          "type": "enum",
+          "values": [
+            "not_mirrored",
+            "queued",
+            "mirrored",
+            "failed",
+            "license_blocked"
+          ],
+          "required": true
+        },
+        {
+          "name": "last_checked_at",
+          "type": "datetime",
+          "required": false
+        }
+      ],
+      "indexes": [
+        "unique(audio_asset_id)",
+        "index(mirror_status)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "puyuma_tts_jobs",
+      "purpose": "TTS 產生任務；預設不公開，需族語審核。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "job_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "entry_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "tts_text",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "voice_profile",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "provider",
+          "type": "varchar(120)",
+          "required": false
+        },
+        {
+          "name": "output_audio_url",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "disabled",
+            "queued",
+            "generated",
+            "needs_native_review",
+            "approved",
+            "rejected"
+          ],
+          "required": true
+        },
+        {
+          "name": "public_ui_enabled",
+          "type": "boolean",
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(job_id)",
+        "index(entry_id)",
+        "index(status)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_review_tasks",
+      "purpose": "後台審核任務。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "task_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "entity_type",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "entity_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "review_type",
+          "type": "enum",
+          "values": [
+            "source_check",
+            "cultural_sensitivity",
+            "language_review",
+            "audio_license",
+            "publication"
+          ],
+          "required": true
+        },
+        {
+          "name": "priority",
+          "type": "enum",
+          "values": [
+            "low",
+            "normal",
+            "high",
+            "critical"
+          ],
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "open",
+            "in_review",
+            "approved",
+            "blocked",
+            "closed"
+          ],
+          "required": true
+        },
+        {
+          "name": "assigned_role",
+          "type": "varchar(80)",
+          "required": false
+        },
+        {
+          "name": "notes",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "indexes": [
+        "unique(task_id)",
+        "index(status)",
+        "index(review_type)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_import_runs",
+      "purpose": "語料/知識庫匯入與重建紀錄。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "run_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "pipeline_name",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "input_manifest",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "output_path",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "expected_min_entries",
+          "type": "int",
+          "required": false
+        },
+        {
+          "name": "actual_entries",
+          "type": "int",
+          "required": true
+        },
+        {
+          "name": "audio_entries",
+          "type": "int",
+          "required": true
+        },
+        {
+          "name": "source_phon_entries",
+          "type": "int",
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "enum",
+          "values": [
+            "planned",
+            "running",
+            "passed",
+            "failed",
+            "partial"
+          ],
+          "required": true
+        },
+        {
+          "name": "report_json",
+          "type": "json",
+          "required": false
+        }
+      ],
+      "indexes": [
+        "unique(run_id)",
+        "index(pipeline_name)",
+        "index(status)"
+      ],
+      "notes": []
+    },
+    {
+      "name": "kb_search_documents",
+      "purpose": "站內搜尋索引資料。",
+      "columns": [
+        {
+          "name": "id",
+          "type": "varchar(80)",
+          "required": true,
+          "description": "穩定主鍵"
+        },
+        {
+          "name": "created_at",
+          "type": "datetime",
+          "required": true,
+          "description": "建立時間"
+        },
+        {
+          "name": "updated_at",
+          "type": "datetime",
+          "required": true,
+          "description": "更新時間"
+        },
+        {
+          "name": "doc_id",
+          "type": "varchar(120)",
+          "required": true
+        },
+        {
+          "name": "doc_type",
+          "type": "varchar(80)",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "varchar(255)",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "mediumtext",
+          "required": true
+        },
+        {
+          "name": "route",
+          "type": "varchar(255)",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "type": "json",
+          "required": false
+        },
+        {
+          "name": "source_ids",
+          "type": "json",
+          "required": false
+        },
+        {
+          "name": "sensitivity",
+          "type": "enum",
+          "values": [
+            "public",
+            "medium",
+            "high",
+            "restricted"
+          ],
+          "required": true
+        },
+        {
+          "name": "review_status",
+          "type": "enum",
+          "values": [
+            "published",
+            "draft",
+            "needs_review",
+            "blocked"
+          ],
+          "required": true
+        }
+      ],
+      "indexes": [
+        "unique(doc_id)",
+        "fulltext(title, body)",
+        "index(doc_type)",
+        "index(review_status)"
+      ],
+      "notes": []
+    }
+  ]
+}

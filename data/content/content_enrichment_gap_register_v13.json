@@ -1,0 +1,29 @@
+{
+  "version": "v13",
+  "gaps": [
+    {
+      "id": "gap_community_photos",
+      "title_zh": "十社代表照片與授權",
+      "status": "needs_local_permission",
+      "reason": "目前資料包不應擅自引用未授權圖片。"
+    },
+    {
+      "id": "gap_ritual_dates_annual",
+      "title_zh": "年度祭儀日期",
+      "status": "requires_current_community_announcement",
+      "reason": "日期每年可能變動，必須依部落公告。"
+    },
+    {
+      "id": "gap_people_biographies",
+      "title_zh": "人物傳記",
+      "status": "needs_individual_sources",
+      "reason": "人物資料需逐一來源驗證與肖像授權。"
+    },
+    {
+      "id": "gap_full_corpus_import",
+      "title_zh": "千筆語料實際匯入",
+      "status": "postdeploy_job_required",
+      "reason": "目前內嵌 80 筆 preview，完整語料需部署後執行 full corpus pipeline。"
+    }
+  ]
+}

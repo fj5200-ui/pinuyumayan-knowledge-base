@@ -1,0 +1,25 @@
+{
+  "version": "v11",
+  "purpose": "主站若錯過 webhook 或 delta cursor，可請後端回放指定時間區間內的公開知識變更。",
+  "endpoint": "POST /api/internal/main-site/sync/replay",
+  "auth": {
+    "header": "x-pinuyumayan-main-site-key",
+    "required_scopes": [
+      "knowledge:read",
+      "sync:replay"
+    ]
+  },
+  "max_window_days": 30,
+  "replay_event_types": [
+    "fact.published",
+    "community.updated",
+    "ritual.updated",
+    "vocabulary.published",
+    "search.reindexed"
+  ],
+  "idempotency_key_header": "idempotency-key",
+  "cursor_rules": {
+    "cursor_is_opaque": true,
+    "cursor_expiry_days": 45
+  }
+}

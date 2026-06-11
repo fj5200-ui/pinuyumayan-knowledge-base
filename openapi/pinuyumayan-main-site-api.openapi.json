@@ -1,0 +1,2066 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Pinuyumayan Main Site API v22 - Frontend AI Composer + Security + True Knowledge",
+    "version": "v23",
+    "description": "Public-safe and internal sync API for the 卑南族文化綜合平台主站. Public endpoints return approved/verified knowledge only; internal endpoints require x-pinuyumayan-main-site-key. v10 adds readiness, job queue operations, and a stable error response contract. v11 adds API versioning, export bundle artifacts, scoped internal APIs, and sync replay. v12 adds release channels, multi-site scoped delivery, governance dashboard and search export readiness. v13 adds admin login bootstrap, main-site superadmin sync, and content collection delivery endpoints. v14 adds search suggestions/facets, cache invalidation, quality gate run hooks, admin security sessions and MFA scaffold. v15 adds delivery SLOs, contract-test runs, full corpus reconciliation, payload snapshots, search index versions and scoped admin permission grants. v18 adds source-grounded AI article planning, duplicate prevention, and human-review publication governance. v20 adds true source collection, no-duplicate frontend AI article memory, source packet delivery, and a built-in next-upgrade roadmap. v22 adds frontend AI provider adapters, client draft validation, citation/duplicate cooldown checks, HMAC nonce policy, candidate source adapters and admin review dashboard."
+  },
+  "servers": [
+    {
+      "url": "https://kb-api.pinuyumayan.tw"
+    },
+    {
+      "url": "http://localhost:8787"
+    }
+  ],
+  "tags": [
+    {
+      "name": "health"
+    },
+    {
+      "name": "publicKnowledge"
+    },
+    {
+      "name": "internalSync"
+    },
+    {
+      "name": "operations"
+    },
+    {
+      "name": "Release Channels",
+      "description": "Release channel and public delivery metadata."
+    },
+    {
+      "name": "Governance",
+      "description": "Operational governance dashboard endpoints."
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Service health",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/bootstrap": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Fetch public bootstrap knowledge for the main site",
+        "parameters": [
+          {
+            "name": "locale",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "zh-TW",
+                "en"
+              ],
+              "default": "zh-TW"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public knowledge bootstrap payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BootstrapPayload"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/search": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Search public-safe knowledge documents",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50,
+              "default": 20
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResultPage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/related": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Related knowledge cards for a content/entity page",
+        "parameters": [
+          {
+            "name": "entityType",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "entityId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 30,
+              "default": 12
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Related public knowledge",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RelatedPayload"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/communities/{communityKey}": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Fetch one public community profile",
+        "parameters": [
+          {
+            "name": "communityKey",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Community profile"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/vocabulary": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Paged public learning vocabulary/corpus entries with audio URLs",
+        "parameters": [
+          {
+            "name": "dialectCode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "38",
+                "39",
+                "40",
+                "41"
+              ]
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 50
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vocabulary page",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VocabularyPage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/knowledge/bundle": {
+      "get": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Internal full public-safe bundle for main-site cache warmup",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "includeVocabulary",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "maxVocabulary",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 5000,
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Bundle payload"
+          },
+          "401": {
+            "description": "Missing/invalid API key"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/knowledge/delta": {
+      "get": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Internal delta sync since cursor/timestamp",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "since",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000,
+              "default": 250
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Delta payload"
+          },
+          "401": {
+            "description": "Missing/invalid API key"
+          }
+        }
+      }
+    },
+    "/api/ops/openapi.json": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Return OpenAPI JSON spec",
+        "responses": {
+          "200": {
+            "description": "OpenAPI document"
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Readiness check for deployment and main-site pull dependency",
+        "responses": {
+          "200": {
+            "description": "Ready"
+          },
+          "503": {
+            "description": "Not ready"
+          }
+        }
+      }
+    },
+    "/api/ops/readiness": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Detailed runtime readiness checks",
+        "responses": {
+          "200": {
+            "description": "Readiness report"
+          }
+        }
+      }
+    },
+    "/api/ops/jobs": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "List runtime job queue placeholders/status",
+        "responses": {
+          "200": {
+            "description": "Job list"
+          }
+        }
+      }
+    },
+    "/api/internal/jobs/full-corpus/enqueue": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Enqueue full corpus import after deployment",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "minEntries": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1000
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Job queued"
+          },
+          "401": {
+            "description": "Missing/invalid API key"
+          }
+        }
+      }
+    },
+    "/api/internal/jobs/{jobId}": {
+      "get": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Get internal job status",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "jobId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Job status"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/api/public/version": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Return current API version and corpus scope contract",
+        "responses": {
+          "200": {
+            "description": "Version response"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/export/latest": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Return latest public-safe export artifact manifest",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "main_site_bootstrap",
+                "vocabulary_audio",
+                "search_documents",
+                "full_public_snapshot"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Latest export artifact manifest"
+          }
+        }
+      }
+    },
+    "/api/internal/exports/bundle/enqueue": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Enqueue a public-safe export bundle generation job",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Export bundle job queued"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Missing scope"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/sync/replay": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Replay public-safe sync events for a time/cursor range",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Sync replay queued"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Missing scope"
+          }
+        }
+      }
+    },
+    "/api/public/release-channels": {
+      "get": {
+        "tags": [
+          "Release Channels"
+        ],
+        "summary": "List public-safe release channels",
+        "responses": {
+          "200": {
+            "description": "Release channels visible to public clients"
+          }
+        }
+      }
+    },
+    "/api/ops/governance-dashboard": {
+      "get": {
+        "tags": [
+          "Governance"
+        ],
+        "summary": "Return governance dashboard widget metadata",
+        "responses": {
+          "200": {
+            "description": "Governance dashboard metadata"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/export/search": {
+      "get": {
+        "tags": [
+          "Knowledge"
+        ],
+        "summary": "Return latest public search export artifact metadata",
+        "parameters": [
+          {
+            "name": "channel",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "public"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search export artifact metadata"
+          }
+        }
+      }
+    },
+    "/api/internal/release/promote": {
+      "post": {
+        "tags": [
+          "Release Channels"
+        ],
+        "summary": "Promote reviewed records between release channels",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Promotion job accepted"
+          },
+          "403": {
+            "description": "Missing scope"
+          }
+        }
+      }
+    },
+    "/api/internal/quality/gates/run": {
+      "post": {
+        "tags": [
+          "Governance"
+        ],
+        "summary": "Run data quality gates for an import or release batch",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Quality gate job accepted"
+          },
+          "403": {
+            "description": "Missing scope"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/login": {
+      "post": {
+        "tags": [
+          "admin-auth"
+        ],
+        "summary": "Admin login",
+        "requestBody": {
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Login accepted"
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Invalid credentials"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/me": {
+      "get": {
+        "tags": [
+          "admin-auth"
+        ],
+        "summary": "Current admin session",
+        "responses": {
+          "200": {
+            "description": "Current admin profile"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/change-password": {
+      "post": {
+        "tags": [
+          "admin-auth"
+        ],
+        "summary": "Change admin password",
+        "responses": {
+          "200": {
+            "description": "Password rotated"
+          },
+          "400": {
+            "description": "Weak password"
+          }
+        }
+      }
+    },
+    "/api/admin/auth/logout": {
+      "post": {
+        "tags": [
+          "admin-auth"
+        ],
+        "summary": "Logout admin session",
+        "responses": {
+          "200": {
+            "description": "Session revoked"
+          }
+        }
+      }
+    },
+    "/api/internal/admin/superadmin/sync-to-main-site": {
+      "post": {
+        "tags": [
+          "admin-sync"
+        ],
+        "summary": "Sync backend superadmin identity to main site",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sync queued"
+          },
+          "401": {
+            "description": "Missing API key"
+          }
+        }
+      }
+    },
+    "/api/internal/admin/superadmin/sync-status": {
+      "get": {
+        "tags": [
+          "admin-sync"
+        ],
+        "summary": "Get superadmin sync status",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sync status"
+          }
+        }
+      }
+    },
+    "/api/public/content/collections": {
+      "get": {
+        "tags": [
+          "content"
+        ],
+        "summary": "Public-safe content collections",
+        "responses": {
+          "200": {
+            "description": "Content collections"
+          }
+        }
+      }
+    },
+    "/api/public/content/items/{slug}": {
+      "get": {
+        "tags": [
+          "content"
+        ],
+        "summary": "Public-safe content item by slug",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Content item"
+          }
+        }
+      }
+    },
+    "/api/internal/content/rebuild-collections": {
+      "post": {
+        "tags": [
+          "content"
+        ],
+        "summary": "Rebuild content collections from verified facts",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Rebuild queued"
+          }
+        }
+      }
+    },
+    "/api/public/search/suggest": {
+      "get": {
+        "summary": "Search suggestions",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Suggestions",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/public/search/facets": {
+      "get": {
+        "summary": "Search facets",
+        "responses": {
+          "200": {
+            "description": "Facets"
+          }
+        }
+      }
+    },
+    "/api/internal/cache/invalidate": {
+      "post": {
+        "summary": "Queue cache invalidation",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "target",
+                  "reason"
+                ],
+                "properties": {
+                  "target": {
+                    "type": "string"
+                  },
+                  "releaseChannel": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Queued"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/internal/data-quality/run": {
+      "post": {
+        "summary": "Run data quality gate",
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "gateKey"
+                ],
+                "properties": {
+                  "gateKey": {
+                    "type": "string"
+                  },
+                  "releaseChannel": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Queued"
+          }
+        }
+      }
+    },
+    "/api/admin/security/sessions": {
+      "get": {
+        "summary": "List admin sessions",
+        "responses": {
+          "200": {
+            "description": "Admin sessions"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/security/mfa/enroll": {
+      "post": {
+        "summary": "Enroll admin MFA scaffold",
+        "responses": {
+          "200": {
+            "description": "MFA enrollment scaffold"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/performance": {
+      "get": {
+        "summary": "Performance and cache policy summary",
+        "responses": {
+          "200": {
+            "description": "Runtime performance summary"
+          }
+        }
+      }
+    },
+    "/api/ops/slo": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Return main-site delivery SLO status.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/observability-dashboard": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Return observability dashboard metadata.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/contract-tests/latest": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Return latest main-site contract test run.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/contracts/run": {
+      "post": {
+        "tags": [
+          "Internal"
+        ],
+        "summary": "Enqueue main-site API contract tests.",
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/reconciliation": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Return latest full-corpus reconciliation report.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/reconcile/enqueue": {
+      "post": {
+        "tags": [
+          "Internal"
+        ],
+        "summary": "Enqueue full-corpus reconciliation job.",
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/admin/data-quality/reports/latest": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "summary": "Return latest data quality report.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/payload-snapshot/latest": {
+      "get": {
+        "tags": [
+          "Public"
+        ],
+        "summary": "Return latest public payload snapshot metadata.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/pronunciation/{entryId}": {
+      "get": {
+        "summary": "Get verified human pronunciation audio for a vocabulary entry",
+        "parameters": [
+          {
+            "name": "entryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pronunciation asset with source audio URL"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/api/public/tts/pronounce": {
+      "get": {
+        "summary": "Pronounce text using verified source audio when available; synthetic TTS disabled for public",
+        "parameters": [
+          {
+            "name": "text",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "entryId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dialectCode",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Source audio match or non-public TTS status"
+          }
+        }
+      }
+    },
+    "/api/admin/tts/models": {
+      "get": {
+        "summary": "List TTS voice model registry",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Voice models"
+          }
+        }
+      }
+    },
+    "/api/internal/tts/synthesize": {
+      "post": {
+        "summary": "Queue source-audio/TTS synthesis request for internal review",
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Source audio returned or request queued"
+          }
+        },
+        "description": "Internal-only synthesis candidate queue; public synthetic TTS remains disabled without review."
+      }
+    },
+    "/api/public/audio/manifest": {
+      "get": {
+        "summary": "List public Puyuma pronunciation audio playback manifest",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/audio/search": {
+      "get": {
+        "summary": "Search public Puyuma pronunciation audio assets",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dialectCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/audio/head/{assetId}": {
+      "get": {
+        "summary": "Get playback metadata for one pronunciation audio asset",
+        "parameters": [
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/audio/proxy/{assetId}": {
+      "get": {
+        "summary": "Proxy a verified source audio asset with allowlist and cache headers",
+        "parameters": [
+          {
+            "name": "assetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/pronunciation/search": {
+      "get": {
+        "summary": "Search pronunciation entries with real audio first",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dialectCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/pronunciation/player-config": {
+      "get": {
+        "summary": "Get public pronunciation player policy",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/source-packets": {
+      "get": {
+        "summary": "List source-grounded facts and official source packets for main-site AI drafting",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/blueprints": {
+      "get": {
+        "summary": "List safe article blueprints that combine verified claims with admin ideas",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/draft-plan": {
+      "post": {
+        "summary": "[Deprecated v19] Backend article text generation is disabled; use frontend composer flow.",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "deprecated": true
+      }
+    },
+    "/api/internal/ai-article/duplicate-check": {
+      "post": {
+        "summary": "Check candidate article slug, title, and claim set for duplicates",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/internal/ai-article/publish-check": {
+      "post": {
+        "summary": "Run citation, sensitivity, and review-required checks before publishing",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/admin/ai-article/review-queue": {
+      "get": {
+        "summary": "Return admin AI article review queue metadata",
+        "tags": [
+          "AI Article Grounding v18"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/public/ai-article/frontend-composer-config": {
+      "get": {
+        "summary": "Get frontend AI composer config",
+        "tags": [
+          "Frontend AI Article v19"
+        ],
+        "responses": {
+          "200": {
+            "description": "Composer config"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/source-pack/resolve": {
+      "post": {
+        "summary": "Resolve source claims for frontend AI composer",
+        "tags": [
+          "Frontend AI Article v19"
+        ],
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resolved source pack"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/client-draft/validate": {
+      "post": {
+        "summary": "Validate a client-generated AI article draft",
+        "responses": {
+          "200": {
+            "description": "Validation result"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/client-draft/submit-review": {
+      "post": {
+        "summary": "Submit a validated AI article draft to admin review",
+        "responses": {
+          "200": {
+            "description": "Submitted"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/ops/security/knowledge-vault": {
+      "get": {
+        "summary": "Knowledge vault security status",
+        "tags": [
+          "Security v19"
+        ],
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Security policy status"
+          }
+        }
+      }
+    },
+    "/api/admin/source-claims/v19": {
+      "get": {
+        "summary": "List v19 source-grounded claims for admin review",
+        "tags": [
+          "True Knowledge v19"
+        ],
+        "security": [
+          {
+            "AdminSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Claims"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v20/sources": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List v20 verified public true-knowledge sources",
+        "responses": {
+          "200": {
+            "description": "Source registry"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v20/claims": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List v20 source-grounded claims",
+        "responses": {
+          "200": {
+            "description": "Claims"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v20/source-packets": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List v20 frontend AI source packets",
+        "responses": {
+          "200": {
+            "description": "Source packets"
+          }
+        }
+      }
+    },
+    "/api/internal/true-knowledge/v20/deduplicate": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Run v20 draft duplicate precheck",
+        "responses": {
+          "200": {
+            "description": "Duplicate decision"
+          }
+        }
+      }
+    },
+    "/api/internal/true-knowledge/v20/ingestion-runs": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "List v20 true source ingestion runs",
+        "responses": {
+          "200": {
+            "description": "Ingestion runs"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Fetch next development / upgrade / optimization plan",
+        "responses": {
+          "200": {
+            "description": "Next upgrade plan"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v21/claims": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List v21 source-grounded claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v21/cards": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List v21 public knowledge cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v21/source-packets": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "List frontend AI source packets v21",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/knowledge/forbidden-relations/v21": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Get forbidden relation policy v21",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v21/blocked-relation-check": {
+      "post": {
+        "tags": [
+          "internalKnowledge"
+        ],
+        "summary": "Validate draft against forbidden relation policy v21",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/true-knowledge/v21/review-queue": {
+      "get": {
+        "tags": [
+          "adminKnowledge"
+        ],
+        "summary": "List v21 true knowledge review queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v22": {
+      "get": {
+        "tags": [
+          "ops"
+        ],
+        "summary": "Read next upgrade plan v22",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v22/provider-adapters": {
+      "get": {
+        "summary": "List frontend AI provider adapter contracts",
+        "tags": [
+          "frontend-ai-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v22/source-packets": {
+      "get": {
+        "summary": "List source packets for frontend AI composer",
+        "tags": [
+          "frontend-ai-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v22/client-draft/validate": {
+      "post": {
+        "summary": "Validate client-generated AI draft",
+        "tags": [
+          "frontend-ai-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "Ready for review"
+          },
+          "422": {
+            "description": "Blocked"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v22/citation-check": {
+      "post": {
+        "summary": "Check usedClaimIds and usedSourceIds",
+        "tags": [
+          "frontend-ai-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v22/duplicate-cooldown-check": {
+      "post": {
+        "summary": "Check article duplicate/cooldown policy",
+        "tags": [
+          "frontend-ai-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/ai-article/v22/review-dashboard": {
+      "get": {
+        "summary": "Admin AI article review dashboard",
+        "tags": [
+          "admin-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/security/v22/signature-audit": {
+      "get": {
+        "summary": "Internal API HMAC signature audit log",
+        "tags": [
+          "security-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/source-candidates/v22/ingest": {
+      "post": {
+        "summary": "Ingest external source candidates for manual review only",
+        "tags": [
+          "source-candidates-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v22/cards": {
+      "get": {
+        "summary": "Public v22 source-grounded cards",
+        "tags": [
+          "true-knowledge-v22"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v23": {
+      "get": {
+        "summary": "Return next upgrade plan v23",
+        "tags": [
+          "ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/main-site-connection": {
+      "get": {
+        "summary": "Get main-site connection status",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/main-site-connection/config": {
+      "get": {
+        "summary": "Get browser-safe main-site connection config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "mainSiteApiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-pinuyumayan-main-site-key"
+      },
+      "MainSiteApiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-pinuyumayan-main-site-key"
+      }
+    },
+    "schemas": {
+      "PublicKnowledgeCard": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "sourceIds",
+          "visibility"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        }
+      },
+      "VocabularyEntry": {
+        "type": "object",
+        "required": [
+          "id",
+          "dialectCode",
+          "puyumaForm",
+          "audio"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "dialectCode": {
+            "type": "string"
+          },
+          "dialectName": {
+            "type": "string"
+          },
+          "puyumaForm": {
+            "type": "string"
+          },
+          "zhTw": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          },
+          "sourcePhon": {
+            "type": "string"
+          },
+          "ipaValue": {
+            "type": "string"
+          },
+          "audio": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "durationSeconds": {
+                "type": "number"
+              },
+              "playbackEnabled": {
+                "type": "boolean"
+              }
+            }
+          },
+          "source": {
+            "type": "object"
+          }
+        }
+      },
+      "BootstrapPayload": {
+        "type": "object",
+        "properties": {
+          "generatedAt": {
+            "type": "string"
+          },
+          "cacheTtlSeconds": {
+            "type": "integer"
+          },
+          "facts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicKnowledgeCard"
+            }
+          },
+          "communities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicKnowledgeCard"
+            }
+          },
+          "rituals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicKnowledgeCard"
+            }
+          },
+          "vocabularyStats": {
+            "type": "object"
+          }
+        }
+      },
+      "SearchResultPage": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicKnowledgeCard"
+            }
+          },
+          "nextCursor": {
+            "type": "string"
+          },
+          "totalEstimate": {
+            "type": "integer"
+          }
+        }
+      },
+      "RelatedPayload": {
+        "type": "object",
+        "properties": {
+          "entityType": {
+            "type": "string"
+          },
+          "entityId": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicKnowledgeCard"
+            }
+          }
+        }
+      },
+      "VocabularyPage": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VocabularyEntry"
+            }
+          },
+          "nextCursor": {
+            "type": "string"
+          },
+          "dialectStats": {
+            "type": "object"
+          }
+        }
+      },
+      "ApiError": {
+        "type": "object",
+        "required": [
+          "ok",
+          "error"
+        ],
+        "properties": {
+          "ok": {
+            "const": false
+          },
+          "error": {
+            "type": "object",
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "details": {
+                "type": "object"
+              },
+              "requestId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "JobStatus": {
+        "type": "object",
+        "required": [
+          "id",
+          "jobType",
+          "status",
+          "createdAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "jobType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "running",
+              "succeeded",
+              "failed",
+              "cancelled"
+            ]
+          },
+          "payload": {
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

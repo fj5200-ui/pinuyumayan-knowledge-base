@@ -1,0 +1,65 @@
+{
+  "version": "v14",
+  "gates": [
+    {
+      "gate": "public_content_gate",
+      "required": [
+        "source_id",
+        "status=approved",
+        "sensitivity in public/public_summary_only",
+        "no restricted fields"
+      ],
+      "blocks_release": true
+    },
+    {
+      "gate": "vocabulary_audio_gate",
+      "required": [
+        "dialect_code",
+        "form_text",
+        "zh_tw or en",
+        "audio.source_url",
+        "source_path",
+        "license_status"
+      ],
+      "blocks_release": true
+    },
+    {
+      "gate": "ipa_gate",
+      "required": [
+        "source_phon OR ipa.draft",
+        "ipa_status in draft/reviewed/source"
+      ],
+      "blocks_release": false
+    },
+    {
+      "gate": "full_corpus_candidate_gate",
+      "required": [
+        "dedup_key",
+        "source_hash",
+        "import_run_id",
+        "release_channel=full_corpus_candidate"
+      ],
+      "blocks_release": true
+    },
+    {
+      "gate": "main_site_export_gate",
+      "required": [
+        "payload_schema_valid",
+        "etag_present",
+        "public_safe_view_only"
+      ],
+      "blocks_release": true
+    }
+  ],
+  "severity_levels": [
+    "info",
+    "warning",
+    "blocking",
+    "critical"
+  ],
+  "outputs": [
+    "data_quality_reports",
+    "data_quality_report_items",
+    "ops dashboard snapshot"
+  ]
+}

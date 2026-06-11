@@ -1,0 +1,45 @@
+{
+  "version": "v15",
+  "name": "Reliability, contract, and corpus reconciliation hardening",
+  "principles": [
+    "Public APIs must return approved public-safe data only.",
+    "Full corpus import must pass reconciliation before release promotion.",
+    "Main-site delivery must be contract-tested after every deployment.",
+    "Every export artifact must have SHA-256, ETag and release channel metadata.",
+    "Admin permission grants must be scoped and auditable."
+  ],
+  "runtime_checks": [
+    {
+      "id": "check_openapi_current",
+      "severity": "blocker",
+      "description": "OpenAPI path count and version must match v15 contract."
+    },
+    {
+      "id": "check_public_payload_snapshot",
+      "severity": "warning",
+      "description": "Latest public payload snapshot exists and has a stable ETag."
+    },
+    {
+      "id": "check_full_corpus_reconciliation",
+      "severity": "blocker",
+      "description": "Full corpus candidate cannot promote until reconciliation passes."
+    },
+    {
+      "id": "check_main_site_contract",
+      "severity": "blocker",
+      "description": "Main-site bootstrap/search/vocabulary/delta endpoints pass contract tests."
+    },
+    {
+      "id": "check_admin_scope_grants",
+      "severity": "warning",
+      "description": "No expired or global admin grants without reason."
+    }
+  ],
+  "release_blockers": [
+    "missing_source",
+    "blocked_license",
+    "contract_failed",
+    "reconciliation_failed",
+    "critical_security_event"
+  ]
+}

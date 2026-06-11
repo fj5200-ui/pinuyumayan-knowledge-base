@@ -1,0 +1,87 @@
+{
+  "version": "2026-06-11",
+  "purpose": "明確告訴網站、CMS、AI Agent 哪些內容只能摘要、哪些不可產生。",
+  "levels": [
+    {
+      "level": "public",
+      "meaning_zh": "可公開摘要與教育使用",
+      "requires_review": false
+    },
+    {
+      "level": "medium",
+      "meaning_zh": "可公開但需編輯審查與來源標示",
+      "requires_review": true
+    },
+    {
+      "level": "high",
+      "meaning_zh": "只能公開摘要，且建議部落/族人複核",
+      "requires_review": true
+    }
+  ],
+  "restricted_topics": [
+    {
+      "topic": "祭儀流程、禁忌、祭壇、路障、驅邪等操作",
+      "allowed_zh": "公開摘要與來源連結",
+      "forbidden_zh": "流程教學、仿作腳本、用品清單、禁忌細節、具體操作步驟",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "topic": "大獵祭、狩獵與野外求生",
+      "allowed_zh": "文化意義與公開時間脈絡",
+      "forbidden_zh": "狩獵教學、陷阱、武器、追蹤、捕獵技巧",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "topic": "猴祭",
+      "allowed_zh": "現代改以草猴代替真猴的公開摘要",
+      "forbidden_zh": "傷害動物、仿作刺猴儀式、挑戰式內容",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "topic": "祖靈屋、祖靈與巫師知識",
+      "allowed_zh": "文化角色與公開概念摘要",
+      "forbidden_zh": "作法、咒語、療效宣稱、神聖空間內部細節、方位操作教學",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "topic": "親屬、氏族、家族譜系",
+      "allowed_zh": "制度概念摘要",
+      "forbidden_zh": "推測或公開特定家族、氏族成員、繼承關係、個資",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "topic": "歌謠、舞蹈、影像與音檔",
+      "allowed_zh": "分類、公開名稱、已授權或可公開 URL 的播放",
+      "forbidden_zh": "未授權歌詞全文、儀式舞教學、下載搬運音檔作商業使用",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_epark_readme"
+      ]
+    }
+  ],
+  "cms_enforcement": {
+    "block_publish_if": [
+      "missing_source_id",
+      "sensitivity_high_without_review",
+      "contains_exact_ritual_steps",
+      "contains_personal_family_data",
+      "audio_url_not_in_manifest"
+    ],
+    "warn_if": [
+      "uses_historical_eight_tribes",
+      "uses_puyuma_as_ethnic_group",
+      "mentions_ritual_date_without_community_announcement",
+      "uses_public_figure_without_individual_source"
+    ]
+  }
+}

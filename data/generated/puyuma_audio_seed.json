@@ -1,0 +1,150 @@
+{
+  "version": "2026-06-11-seed",
+  "note": "Seed examples copied from FormosanBank/ePark CSV rows. Use scripts/sync_formosanbank_puyuma.py + scripts/build_puyuma_audio_manifest.py to rebuild full manifests.",
+  "entries": [
+    {
+      "id": "seed-nanwang-qingjing-0001",
+      "dialect_code": "38",
+      "dialect": "Nanwang_Puyuma",
+      "dialect_zh": "南王卑南語",
+      "category": "情境族語",
+      "form": "inabayan! mungesalra ta!",
+      "english": "Hello everyone! Here we go.",
+      "chinese": "大家好！我們開始了。",
+      "audio_url": "https://web.klokah.tw/text/sound/27443/455706.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv"
+    },
+    {
+      "id": "seed-nanwang-qingjing-0002",
+      "dialect_code": "38",
+      "dialect": "Nanwang_Puyuma",
+      "dialect_zh": "南王卑南語",
+      "category": "情境族語",
+      "form": "karetigir driya! sungal!",
+      "english": "Please stand up! Salute!",
+      "chinese": "請起立! 敬禮!",
+      "audio_url": "https://web.klokah.tw/text/sound/27443/455707.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv"
+    },
+    {
+      "id": "seed-nanwang-qingjing-0003",
+      "dialect_code": "38",
+      "dialect": "Nanwang_Puyuma",
+      "dialect_zh": "南王卑南語",
+      "category": "情境族語",
+      "form": "sinsi, inabayan!",
+      "english": "Hello.",
+      "chinese": "老師好。",
+      "audio_url": "https://web.klokah.tw/text/sound/27443/455708.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv"
+    },
+    {
+      "id": "seed-zhiben-duanwen-0001",
+      "dialect_code": "39",
+      "dialect": "Zhiben_Puyuma",
+      "dialect_zh": "知本卑南語",
+      "category": "族語短文",
+      "form": "harem kana wari pituwa tuki mu medek ku i kungkuwan.",
+      "english": "I arrived at school at seven today.",
+      "chinese": "我今天七點到學校。",
+      "audio_url": "https://web.klokah.tw/text/sound/35725/556137.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv"
+    },
+    {
+      "id": "seed-zhiben-duanwen-0002",
+      "dialect_code": "39",
+      "dialect": "Zhiben_Puyuma",
+      "dialect_zh": "知本卑南語",
+      "category": "族語短文",
+      "form": "temakakesi mi lra, na sinsi pananadam kananta piningaiyan na aiyupan.",
+      "english": "In class, the teacher taught us the Pinuyumayan language of numbers.",
+      "chinese": "上課的時候，老師教我們數字的族語。",
+      "audio_url": "https://web.klokah.tw/text/sound/35725/556140.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv"
+    },
+    {
+      "id": "seed-zhiben-duanwen-0003",
+      "dialect_code": "39",
+      "dialect": "Zhiben_Puyuma",
+      "dialect_zh": "知本卑南語",
+      "category": "族語短文",
+      "form": "ulra i Katratripulr niyam ruma’.",
+      "english": "Our family lives in Katratripulr.",
+      "chinese": "我們家住在知本。",
+      "audio_url": "https://web.klokah.tw/text/sound/35733/556244.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv"
+    },
+    {
+      "id": "seed-xiqun-duanwen-0001",
+      "dialect_code": "40",
+      "dialect": "Xiqun_Puyuma",
+      "dialect_zh": "西群卑南語",
+      "category": "族語短文",
+      "form": "meredek ku i takesiyan a pituwa tuki harem kana wari.",
+      "english": "I arrived at school at seven today.",
+      "chinese": "我今天七點到學校。",
+      "audio_url": "https://web.klokah.tw/text/sound/35773/556886.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv"
+    },
+    {
+      "id": "seed-xiqun-duanwen-0002",
+      "dialect_code": "40",
+      "dialect": "Xiqun_Puyuma",
+      "dialect_zh": "西群卑南語",
+      "category": "族語短文",
+      "form": "a temakesi mi mu, tu panadamaw mi kana sinsi za aiyupan. kananta piningaiyan.",
+      "english": "In class, the teacher taught us the Pinuyumayan language of numbers.",
+      "chinese": "上課的時候，老師教我們數字的族語。",
+      "audio_url": "https://web.klokah.tw/text/sound/35773/556889.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv"
+    },
+    {
+      "id": "seed-xiqun-duanwen-0003",
+      "dialect_code": "40",
+      "dialect": "Xiqun_Puyuma",
+      "dialect_zh": "西群卑南語",
+      "category": "族語短文",
+      "form": "ulra naniyam ruma’ i Mulivelivek.",
+      "english": "Our family lives in Mulivelivek.",
+      "chinese": "我們家住在初鹿部落。",
+      "audio_url": "https://web.klokah.tw/text/sound/35781/556993.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv"
+    },
+    {
+      "id": "seed-jianhe-huihua-0001",
+      "dialect_code": "41",
+      "dialect": "Jianhe_Puyuma",
+      "dialect_zh": "建和卑南語",
+      "category": "生活會話篇",
+      "form": "semavalran. yawa u i iyan?",
+      "english": "",
+      "chinese": "早安。你要去哪裡？",
+      "audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s1.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv"
+    },
+    {
+      "id": "seed-jianhe-huihua-0002",
+      "dialect_code": "41",
+      "dialect": "Jianhe_Puyuma",
+      "dialect_zh": "建和卑南語",
+      "category": "生活會話篇",
+      "form": "avuruk ku i dekalr mena’uwa kani nani di malri.",
+      "english": "",
+      "chinese": "我要回部落探望我爸媽。",
+      "audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c1s2.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv"
+    },
+    {
+      "id": "seed-jianhe-huihua-0003",
+      "dialect_code": "41",
+      "dialect": "Jianhe_Puyuma",
+      "dialect_zh": "建和卑南語",
+      "category": "生活會話篇",
+      "form": "i nani mu Amis i Tulik, i malri mu Puyuma.",
+      "english": "",
+      "chinese": "我母親是都歷的阿美族，我父親是南王人。",
+      "audio_url": "https://klokah.tw/extension/con_data/sound/41/sentence/41c2s10.mp3",
+      "source_path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv"
+    }
+  ]
+}

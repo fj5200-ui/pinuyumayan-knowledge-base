@@ -1,0 +1,107 @@
+{
+  "version": "3.0.0",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "rules": [
+    {
+      "id": "dq_source_required",
+      "severity": "critical",
+      "description": "所有 kb_facts、FAQ、topic pages、corpus entries 必須有 source_ids 或 source_id。",
+      "applies_to": [
+        "kb_facts",
+        "kb_faq_items",
+        "kb_topics",
+        "puyuma_corpus_entries"
+      ]
+    },
+    {
+      "id": "dq_no_public_sensitive_detail",
+      "severity": "critical",
+      "description": "sensitivity=high/restricted 的內容不得標為 published；只能公開摘要。",
+      "applies_to": [
+        "kb_facts",
+        "kb_rituals",
+        "kb_search_documents"
+      ]
+    },
+    {
+      "id": "dq_preview_not_full",
+      "severity": "critical",
+      "description": "entry_count < 1000 時不得標示為 full_corpus_complete。",
+      "applies_to": [
+        "puyuma_corpus_entries",
+        "kb_import_runs"
+      ]
+    },
+    {
+      "id": "dq_audio_url_required_for_audio_learning",
+      "severity": "high",
+      "description": "語音學習頁使用的語料必須有 audio.url 或 audio_asset_id。",
+      "applies_to": [
+        "puyuma_corpus_entries",
+        "puyuma_audio_assets"
+      ]
+    },
+    {
+      "id": "dq_xml_source_phon_priority",
+      "severity": "high",
+      "description": "XML 來源若存在 PHON，必須保存 source_phon，ipa_status=source_phon。",
+      "applies_to": [
+        "puyuma_corpus_entries"
+      ]
+    },
+    {
+      "id": "dq_tts_public_off_by_default",
+      "severity": "critical",
+      "description": "TTS 生成音檔預設不得公開；public_ui_enabled 必須 false，除非族語審核 approved。",
+      "applies_to": [
+        "puyuma_tts_jobs"
+      ]
+    },
+    {
+      "id": "dq_dialect_codes",
+      "severity": "high",
+      "description": "卑南語 ePark 方言代碼僅接受 38,39,40,41。",
+      "allowed_values": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "applies_to": [
+        "puyuma_corpus_entries"
+      ]
+    },
+    {
+      "id": "dq_license_tracking",
+      "severity": "high",
+      "description": "FormosanBank/ePark 音檔與 XML 需保存 license/copyright 欄位；未確認授權時不可鏡像到 CDN。",
+      "applies_to": [
+        "puyuma_audio_assets",
+        "puyuma_corpus_entries"
+      ]
+    },
+    {
+      "id": "dq_fact_verification",
+      "severity": "medium",
+      "description": "verification_status=needs_review 的 fact 不得用於首頁重點文案。",
+      "applies_to": [
+        "kb_facts",
+        "kb_content_cards"
+      ]
+    },
+    {
+      "id": "dq_duplicate_text",
+      "severity": "medium",
+      "description": "同 dialect + normalized_puyuma_text + zh_tw + audio_url 重複時需合併來源，不新增重複 row。",
+      "applies_to": [
+        "puyuma_corpus_entries"
+      ]
+    }
+  ],
+  "validation_commands": [
+    "python3 scripts/validate_database_layer.py",
+    "python3 scripts/validate_full_puyuma_corpus_output.py data/web/puyuma_vocabulary_audio_entries.json --min-entries 1000 --require-all-dialects --require-source-phon",
+    "python3 scripts/validate_web_knowledge.py",
+    "python3 scripts/validate_tts_g2p_ipa.py"
+  ]
+}

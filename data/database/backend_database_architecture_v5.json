@@ -1,0 +1,84 @@
+{
+  "version": "v5-backend-database-schema",
+  "generated_at": "2026-06-11T20:00:00+08:00",
+  "target_database": "MySQL 8 / TiDB Cloud",
+  "naming_policy": {
+    "table_prefixes": [
+      "kb_",
+      "pinuyumayan_",
+      "puyuma_",
+      "admin_",
+      "ops_"
+    ],
+    "id_style": "varchar stable ids for imported cultural data; bigint auto increment allowed for app-only logs",
+    "status_fields": [
+      "review_status",
+      "visibility",
+      "sensitivity",
+      "source_status"
+    ]
+  },
+  "schemas": [
+    {
+      "group": "source_governance",
+      "tables": [
+        "kb_sources",
+        "kb_source_claims",
+        "kb_content_versions",
+        "kb_review_tasks",
+        "kb_audit_logs"
+      ]
+    },
+    {
+      "group": "culture_core",
+      "tables": [
+        "pinuyumayan_communities",
+        "pinuyumayan_community_aliases",
+        "pinuyumayan_rituals",
+        "kb_facts",
+        "kb_entity_relations"
+      ]
+    },
+    {
+      "group": "language_corpus",
+      "tables": [
+        "puyuma_corpus_entries",
+        "puyuma_audio_assets",
+        "puyuma_ipa_annotations",
+        "puyuma_tts_jobs",
+        "puyuma_vocabulary_categories"
+      ]
+    },
+    {
+      "group": "ops_import_search",
+      "tables": [
+        "kb_import_runs",
+        "kb_import_errors",
+        "kb_search_documents",
+        "ops_audio_mirror_queue",
+        "ops_data_snapshots"
+      ]
+    },
+    {
+      "group": "auth_admin",
+      "tables": [
+        "admin_roles",
+        "admin_permissions",
+        "admin_role_permissions"
+      ]
+    }
+  ],
+  "data_counts": {
+    "verified_facts": 109,
+    "communities": 10,
+    "rituals": 7,
+    "preview_vocabulary_audio_entries": 80,
+    "full_corpus_source_candidates": 66
+  },
+  "release_blockers": [
+    "full_corpus rows cannot be marked complete unless >= 1000 entries after import",
+    "public view must exclude high sensitivity and non-approved rows",
+    "audio mirror must not run without license_review_status approved or exempt",
+    "TTS public_ui_enabled must default false"
+  ]
+}

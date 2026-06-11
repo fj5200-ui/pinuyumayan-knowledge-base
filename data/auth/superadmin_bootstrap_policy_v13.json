@@ -1,0 +1,33 @@
+{
+  "version": "v13",
+  "safe_bootstrap_modes": [
+    {
+      "mode": "env",
+      "description": "Read ADMIN_SUPERUSER_EMAIL/PASSWORD from deployment environment; never write password to disk."
+    },
+    {
+      "mode": "interactive",
+      "description": "Prompt operator over SSH and emit SQL with password_hash only."
+    },
+    {
+      "mode": "ci_secret",
+      "description": "Use CI/CD secret store and rotate after first successful login."
+    }
+  ],
+  "forbidden": [
+    "Hard-coded admin password in SQL seed",
+    "Default admin/admin credentials",
+    "Plaintext password in logs",
+    "Syncing plaintext password to main site after bootstrap"
+  ],
+  "commands": [
+    "./deploy/bootstrap-superadmin.sh",
+    "python3 scripts/bootstrap_superadmin.py --emit-sql > database/seeds/009_local_superadmin.generated.sql"
+  ],
+  "required_after_first_login": [
+    "change password",
+    "enable MFA when implemented",
+    "verify sync status",
+    "rotate temporary bootstrap secret"
+  ]
+}

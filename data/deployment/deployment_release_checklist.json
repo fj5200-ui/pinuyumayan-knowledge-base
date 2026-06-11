@@ -1,0 +1,12 @@
+{
+  "version": "0.7.0",
+  "checklist": [
+    {"id": "deploy_001", "item": "DATABASE_URL 已設定到 MySQL/TiDB", "required": true},
+    {"id": "deploy_002", "item": "MAIN_SITE_API_KEY 已更換，不可使用 change-me", "required": true},
+    {"id": "deploy_003", "item": "已執行 migrations 0001-0003", "required": true},
+    {"id": "deploy_004", "item": "已匯入核心 seeds 001-007", "required": true},
+    {"id": "deploy_005", "item": "主站 public bootstrap API 回應正常", "required": true},
+    {"id": "deploy_006", "item": "若要千筆語料，已執行 postdeploy-full-corpus job", "required": false},
+    {"id": "deploy_007", "item": "音檔鏡像若啟用，已完成授權檢查", "required": false}
+  ]
+}

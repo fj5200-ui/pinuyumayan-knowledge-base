@@ -1,0 +1,88 @@
+{
+  "version": "2026-06-11",
+  "base_path": "/api/knowledge",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/facts",
+      "description_zh": "查詢已驗證 fact",
+      "query": {
+        "category": "optional",
+        "sensitivity": "optional",
+        "source_id": "optional",
+        "q": "optional"
+      },
+      "response_data": "data/verified_pinuyumayan_facts.json#facts"
+    },
+    {
+      "method": "GET",
+      "path": "/topics",
+      "description_zh": "取得網站主題頁資料",
+      "query": {
+        "route": "optional",
+        "sensitivity": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_topic_pages.json#topic_pages"
+    },
+    {
+      "method": "GET",
+      "path": "/faq",
+      "description_zh": "取得 FAQ",
+      "query": {
+        "category": "optional",
+        "q": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_faq.json#items"
+    },
+    {
+      "method": "GET",
+      "path": "/timeline",
+      "description_zh": "取得歷史與現代發展時間線",
+      "query": {
+        "claim_type": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_timeline_events.json#events"
+    },
+    {
+      "method": "GET",
+      "path": "/learning-paths",
+      "description_zh": "取得學習路徑與單元",
+      "query": {
+        "level": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_learning_paths.json#paths"
+    },
+    {
+      "method": "GET",
+      "path": "/search",
+      "description_zh": "跨 facts、FAQ、topic、timeline、vocabulary 搜尋",
+      "query": {
+        "q": "required",
+        "category": "optional",
+        "has_audio": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_search_index.json#documents"
+    },
+    {
+      "method": "GET",
+      "path": "/sources",
+      "description_zh": "取得來源與 citation map",
+      "query": {
+        "source_id": "optional"
+      },
+      "response_data": "data/web/pinuyumayan_source_citation_map.json#citations"
+    },
+    {
+      "method": "GET",
+      "path": "/safety-rules",
+      "description_zh": "取得敏感內容與 CMS 發布規則",
+      "query": {},
+      "response_data": "data/web/pinuyumayan_sensitive_content_rules.json"
+    }
+  ],
+  "server_rules": [
+    "所有回應須保留 source_ids",
+    "high sensitivity 預設不回傳長文，只回摘要與 review_required",
+    "音檔 URL 必須存在於 puyuma_vocabulary_audio_entries.json 或 generated/puyuma_audio_seed.json"
+  ]
+}

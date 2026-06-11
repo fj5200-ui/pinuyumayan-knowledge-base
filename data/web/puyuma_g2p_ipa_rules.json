@@ -1,0 +1,147 @@
+{
+  "version": "2026-06-11",
+  "status": "draft_requires_linguist_review",
+  "purpose": "Provide deterministic website fields for search, learning display, and future TTS experiments; not authoritative linguistic analysis.",
+  "orthography_notes": [
+    "FormosanBank/ePark sources include mixed orthographic histories; ePark README notes multiple orthographies by subcorpus.",
+    "Do not present generated IPA as final teaching material before expert review."
+  ],
+  "longest_match_rules": [
+    {
+      "grapheme": "ng",
+      "ipa": "ŋ"
+    },
+    {
+      "grapheme": "dr",
+      "ipa": "ɖ"
+    },
+    {
+      "grapheme": "tr",
+      "ipa": "ʈ"
+    },
+    {
+      "grapheme": "lr",
+      "ipa": "ɭ"
+    },
+    {
+      "grapheme": "ts",
+      "ipa": "ts"
+    },
+    {
+      "grapheme": "a",
+      "ipa": "a"
+    },
+    {
+      "grapheme": "e",
+      "ipa": "ə"
+    },
+    {
+      "grapheme": "i",
+      "ipa": "i"
+    },
+    {
+      "grapheme": "u",
+      "ipa": "u"
+    },
+    {
+      "grapheme": "o",
+      "ipa": "o"
+    },
+    {
+      "grapheme": "p",
+      "ipa": "p"
+    },
+    {
+      "grapheme": "t",
+      "ipa": "t"
+    },
+    {
+      "grapheme": "k",
+      "ipa": "k"
+    },
+    {
+      "grapheme": "b",
+      "ipa": "b"
+    },
+    {
+      "grapheme": "d",
+      "ipa": "d"
+    },
+    {
+      "grapheme": "g",
+      "ipa": "g"
+    },
+    {
+      "grapheme": "m",
+      "ipa": "m"
+    },
+    {
+      "grapheme": "n",
+      "ipa": "n"
+    },
+    {
+      "grapheme": "r",
+      "ipa": "r"
+    },
+    {
+      "grapheme": "l",
+      "ipa": "l"
+    },
+    {
+      "grapheme": "v",
+      "ipa": "v"
+    },
+    {
+      "grapheme": "w",
+      "ipa": "w"
+    },
+    {
+      "grapheme": "y",
+      "ipa": "j"
+    },
+    {
+      "grapheme": "s",
+      "ipa": "s"
+    },
+    {
+      "grapheme": "z",
+      "ipa": "z"
+    },
+    {
+      "grapheme": "c",
+      "ipa": "ts"
+    },
+    {
+      "grapheme": "h",
+      "ipa": "h"
+    },
+    {
+      "grapheme": "q",
+      "ipa": "q"
+    },
+    {
+      "grapheme": "j",
+      "ipa": "dʒ"
+    },
+    {
+      "grapheme": "’",
+      "ipa": "ʔ"
+    },
+    {
+      "grapheme": "'",
+      "ipa": "ʔ"
+    },
+    {
+      "grapheme": "-",
+      "ipa": "-"
+    },
+    {
+      "grapheme": " ",
+      "ipa": " "
+    }
+  ],
+  "blocked_assumptions": [
+    "Do not infer stress, tone, vowel length, or allophony from this draft mapper.",
+    "Do not use generated IPA to override human teacher pronunciation."
+  ]
+}

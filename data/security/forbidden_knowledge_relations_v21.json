@@ -1,0 +1,54 @@
+{
+  "version": "v21",
+  "generated_at": "2026-06-11T15:11:19+00:00",
+  "title_zh": "禁止關聯規則：卑南文化遺址與卑南族文化知識不得混用",
+  "rationale_zh": "使用者明確指示卑南文化遺址與卑南族不相關。系統將其視為考古／史前遺址詞彙，不作為卑南族文化、族語、部落、祭儀、人物、文章素材之來源或自動關聯。",
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site",
+    "Beinan Cultural Park",
+    "Peinan Cultural Park"
+  ],
+  "blocked_relation_types": [
+    "same_as",
+    "related_to",
+    "source_for_pinuyumayan",
+    "article_source",
+    "knowledge_card_source",
+    "auto_tag",
+    "search_synonym"
+  ],
+  "allowed_relation_types": [
+    "negative_disambiguation",
+    "not_related_note",
+    "admin_blocklist_audit"
+  ],
+  "frontend_ai_rules": [
+    "前端 AI Composer 不得把 blocked_terms 作為卑南族文章史料來源。",
+    "若使用者文章主題包含 blocked_terms，composer 必須提示：此主題屬考古遺址，不屬本平台卑南族文化知識來源。",
+    "引用檢查若發現 blocked_terms 被當成 source_ids，必須阻擋發布。"
+  ],
+  "backend_validation_rules": [
+    {
+      "rule_id": "block_beinan_site_as_source",
+      "action": "block",
+      "message_zh": "卑南文化遺址／卑南遺址不可作為卑南族文化知識來源。"
+    },
+    {
+      "rule_id": "block_auto_related_tag",
+      "action": "remove_tag",
+      "message_zh": "移除卑南遺址與卑南族自動關聯標籤。"
+    },
+    {
+      "rule_id": "allow_disambiguation_only",
+      "action": "allow_only_negative_note",
+      "message_zh": "僅允許作為「不相關」消歧說明。"
+    }
+  ]
+}

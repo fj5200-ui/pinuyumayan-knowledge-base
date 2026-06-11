@@ -1,0 +1,76 @@
+{
+  "version": "v13",
+  "title": "Admin Auth and Main-site Superadmin Sync Contract",
+  "principles": [
+    "Never commit plaintext passwords or reusable default admin credentials.",
+    "Bootstrap superadmin only from environment variables or an interactive secret source.",
+    "Store password_hash only; force password rotation after first login when bootstrap_created=true.",
+    "Main-site superadmin sync uses scoped API key or signed internal API call, not shared plaintext password.",
+    "Every admin auth and sync action must write audit log records."
+  ],
+  "env_required_for_bootstrap": [
+    "ADMIN_SUPERUSER_EMAIL",
+    "ADMIN_SUPERUSER_PASSWORD",
+    "ADMIN_SUPERUSER_DISPLAY_NAME",
+    "PINUYUMAYAN_MAIN_SITE_API_KEY"
+  ],
+  "public_endpoints": [],
+  "admin_endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/admin/auth/login",
+      "body": [
+        "email",
+        "password"
+      ],
+      "response": "session + admin profile"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/auth/logout",
+      "auth": "admin_session"
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/auth/me",
+      "auth": "admin_session"
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/auth/change-password",
+      "auth": "admin_session"
+    },
+    {
+      "method": "POST",
+      "path": "/api/internal/admin/superadmin/sync-to-main-site",
+      "auth": "internal_api_key + scope admin:sync"
+    },
+    {
+      "method": "GET",
+      "path": "/api/internal/admin/superadmin/sync-status",
+      "auth": "internal_api_key + scope admin:sync"
+    }
+  ],
+  "password_policy": {
+    "min_length": 14,
+    "require_uppercase": true,
+    "require_lowercase": true,
+    "require_number": true,
+    "require_symbol": true,
+    "hashing": "scrypt sha256, per-user salt, constant-time verify",
+    "rotation": "bootstrap account must change password on first login"
+  },
+  "session_policy": {
+    "type": "httpOnly secure cookie or bearer session token",
+    "default_ttl_minutes": 720,
+    "idle_timeout_minutes": 120,
+    "same_site": "lax",
+    "secure_in_production": true
+  },
+  "sync_policy": {
+    "main_site_superadmin_identity": "email must match configured ADMIN_SUPERUSER_EMAIL unless explicitly overridden",
+    "sync_mode": "upsert remote admin identity and role mapping, never send plaintext password after initial bootstrap",
+    "secret_transport": "x-pinuyumayan-main-site-key plus scope validation",
+    "audit_required": true
+  }
+}

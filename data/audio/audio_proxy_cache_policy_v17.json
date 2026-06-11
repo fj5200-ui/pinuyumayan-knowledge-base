@@ -1,0 +1,31 @@
+{
+  "version": "v17",
+  "public_routes": [
+    "/api/public/audio/manifest",
+    "/api/public/audio/head/{assetId}",
+    "/api/public/audio/proxy/{assetId}",
+    "/api/public/pronunciation/search",
+    "/api/public/pronunciation/player-config"
+  ],
+  "security": {
+    "allowed_hosts": [
+      "klokah.tw",
+      "web.klokah.tw"
+    ],
+    "deny_unknown_url": true,
+    "deny_non_audio_mime": true,
+    "hide_internal_paths": true,
+    "no_synthetic_tts_public_fallback": true
+  },
+  "cache": {
+    "manifest_seconds": 86400,
+    "head_seconds": 3600,
+    "proxy_seconds": 3600,
+    "stale_while_revalidate_seconds": 86400
+  },
+  "notes_zh": [
+    "主站可直接播放 source_audio_url；若外部來源 CORS 不穩，改用 proxy_url。",
+    "proxy 僅允許 manifest 內來源，不接受任意 URL，避免變成開放代理。",
+    "未命中真人音檔時只回傳審核/候選狀態，不用假 TTS 冒充。"
+  ]
+}

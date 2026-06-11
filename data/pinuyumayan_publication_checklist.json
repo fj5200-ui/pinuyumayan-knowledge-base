@@ -1,0 +1,62 @@
+{
+  "version": "2026-06-11",
+  "description": "前台、後台 CMS、AI 自動發佈前的資料真實性與文化敏感度檢查。",
+  "checks": [
+    {
+      "id": "source_required",
+      "level": "blocking",
+      "question": "每筆內容是否有 source_ids，且 source_ids 存在於 source_registry.json？"
+    },
+    {
+      "id": "sensitivity_required",
+      "level": "blocking",
+      "question": "每筆內容是否標示 sensitivity：low / medium / high？"
+    },
+    {
+      "id": "review_status_required",
+      "level": "blocking",
+      "question": "每筆內容是否標示 review_status 或 verification_status？"
+    },
+    {
+      "id": "ritual_summary_only",
+      "level": "blocking",
+      "question": "祭儀、祖靈、巫師、氏族、家族與禁忌內容是否只做摘要，沒有流程教學？"
+    },
+    {
+      "id": "date_no_guessing",
+      "level": "blocking",
+      "question": "祭儀或活動日期是否來自部落/官方公告，而非 AI 推測？"
+    },
+    {
+      "id": "name_authority",
+      "level": "blocking",
+      "question": "族名、部落名、羅馬拼音是否符合 tribe_name_authority.md？"
+    },
+    {
+      "id": "no_forbidden_terms",
+      "level": "blocking",
+      "question": "是否未使用錯誤族名、舊模組名或錯誤英文十社分類等不合規用語？"
+    },
+    {
+      "id": "audio_manifest_valid",
+      "level": "blocking",
+      "question": "族語音檔是否來自可驗證 manifest，且 validate_audio_manifest.py 通過？"
+    },
+    {
+      "id": "community_review_high",
+      "level": "blocking",
+      "question": "高敏感內容是否設為 needs_community_review 或 summary_only？"
+    },
+    {
+      "id": "uncertainty_disclosure",
+      "level": "warning",
+      "question": "來源互相衝突或資料不足處，是否明確標示「待查證」？"
+    }
+  ],
+  "recommended_release_gates": [
+    "editor_review",
+    "source_check",
+    "community_review_for_sensitive_topics",
+    "final_publish_review"
+  ]
+}

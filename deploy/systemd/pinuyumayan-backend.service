@@ -1,0 +1,16 @@
+[Unit]
+Description=Pinuyumayan Backend Database API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/pinuyumayan-backend-database/backend
+EnvironmentFile=/opt/pinuyumayan-backend-database/backend/.env
+ExecStart=/usr/bin/node dist/server.js
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

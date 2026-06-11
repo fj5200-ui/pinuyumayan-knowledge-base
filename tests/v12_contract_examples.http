@@ -1,0 +1,16 @@
+### Public release channels
+GET http://localhost:8787/api/public/release-channels
+
+### Public bootstrap
+GET http://localhost:8787/api/public/knowledge/bootstrap?channel=public
+
+### Vocabulary first page
+GET http://localhost:8787/api/public/knowledge/vocabulary?dialectCode=39&limit=50&channel=public
+
+### Internal sync replay
+POST http://localhost:8787/api/internal/main-site/sync/replay
+x-pinuyumayan-main-site-key: replace-me
+Content-Type: application/json
+
+{"since":"2026-06-01T00:00:00Z","mode":"delta"}
+

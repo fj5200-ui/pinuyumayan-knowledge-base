@@ -1,0 +1,92 @@
+{
+  "version": "4.0.0",
+  "roles": [
+    "super_admin",
+    "knowledge_admin",
+    "language_editor",
+    "cultural_reviewer",
+    "audio_manager",
+    "content_editor",
+    "public_user"
+  ],
+  "modules": [
+    {
+      "module": "knowledge_facts",
+      "permissions": [
+        "view",
+        "create",
+        "edit",
+        "submit_review",
+        "approve",
+        "archive",
+        "export"
+      ]
+    },
+    {
+      "module": "puyuma_corpus",
+      "permissions": [
+        "view",
+        "import",
+        "edit_metadata",
+        "approve_g2p_ipa",
+        "export",
+        "archive"
+      ]
+    },
+    {
+      "module": "audio_assets",
+      "permissions": [
+        "view",
+        "mirror_after_license",
+        "disable_playback",
+        "export_manifest"
+      ]
+    },
+    {
+      "module": "sources_licenses",
+      "permissions": [
+        "view",
+        "create",
+        "edit",
+        "approve_license",
+        "block_source"
+      ]
+    },
+    {
+      "module": "review_tasks",
+      "permissions": [
+        "view",
+        "assign",
+        "comment",
+        "approve",
+        "reject",
+        "request_changes"
+      ]
+    },
+    {
+      "module": "search_index",
+      "permissions": [
+        "view",
+        "rebuild",
+        "tune_weights",
+        "rollback"
+      ]
+    },
+    {
+      "module": "import_runs",
+      "permissions": [
+        "view",
+        "start",
+        "cancel",
+        "retry",
+        "download_report"
+      ]
+    }
+  ],
+  "rules_zh": [
+    "預設角色可見可編輯不可刪除；刪除改為 archive。",
+    "高敏感文化內容需 culture_reviewer 或 super_admin 審核。",
+    "音檔鏡像需 license_reviewer 通過後才可執行。",
+    "TTS 公開啟用需 language_reviewer 與 culture_reviewer 雙審。"
+  ]
+}

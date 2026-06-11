@@ -1,0 +1,26 @@
+{
+  "version": "v18",
+  "generated_at": "2026-06-11T18:45:00+08:00",
+  "description_zh": "主站 AI 發文可拉取的來源包：包含來源、claim、藍圖、禁止事項與去重規則。",
+  "api_endpoints": {
+    "source_packets": "/api/public/ai-article/source-packets",
+    "blueprints": "/api/public/ai-article/blueprints",
+    "draft_plan": "/api/internal/ai-article/draft-plan",
+    "duplicate_check": "/api/internal/ai-article/duplicate-check",
+    "publish_check": "/api/internal/ai-article/publish-check",
+    "review_queue": "/api/admin/ai-article/review-queue"
+  },
+  "counts": {
+    "sources": 3,
+    "claims": 27,
+    "blueprints": 6,
+    "cards": 27
+  },
+  "guardrails": [
+    "AI 不得發佈無來源史料。",
+    "AI 不得把管理者想法改寫成史實。",
+    "AI 不得重複發佈同 slug、同 fingerprint 或高相似 claim set 文章。",
+    "AI 不得輸出祭儀操作教學、禁忌細節或祖靈/巫術細節。",
+    "AI 必須保留 source_ids 與 claim_ids。"
+  ]
+}

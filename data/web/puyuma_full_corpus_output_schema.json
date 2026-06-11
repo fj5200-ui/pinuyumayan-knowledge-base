@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pinuyumayan Puyuma Full Corpus Website Output",
+  "type": "object",
+  "required": ["version", "entry_count", "entries"],
+  "properties": {
+    "version": {"type": "string"},
+    "entry_count": {"type": "integer", "minimum": 0},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "language", "category", "text", "audio", "g2p", "ipa", "tts", "source", "website", "sensitivity", "review_status"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"enum": ["sentence_audio", "word_audio"]},
+          "language": {
+            "type": "object",
+            "required": ["ethnic_group_zh", "language_zh", "dialect_code", "dialect_name", "dialect_zh", "platform_key"],
+            "properties": {
+              "ethnic_group_zh": {"const": "卑南族"},
+              "ethnic_group_romanized": {"const": "Pinuyumayan"},
+              "language_zh": {"const": "卑南語"},
+              "language_en": {"const": "Puyuma language"},
+              "dialect_code": {"enum": ["38", "39", "40", "41"]},
+              "dialect_name": {"enum": ["Nanwang_Puyuma", "Zhiben_Puyuma", "Xiqun_Puyuma", "Jianhe_Puyuma"]},
+              "dialect_zh": {"type": "string"},
+              "platform_key": {"type": "string"},
+              "community_label_zh": {"type": "string"}
+            }
+          },
+          "category": {
+            "type": "object",
+            "required": ["source_category", "website_category_key", "website_category_label_zh"]
+          },
+          "text": {
+            "type": "object",
+            "required": ["puyuma_form", "zh_tw", "en"],
+            "properties": {
+              "puyuma_form": {"type": "string", "minLength": 1},
+              "puyuma_form_original": {"type": "string"},
+              "zh_tw": {"type": "string"},
+              "en": {"type": "string"}
+            }
+          },
+          "audio": {
+            "type": "object",
+            "required": ["url", "storage_mode", "local_file_included"],
+            "properties": {
+              "url": {"type": "string", "pattern": "^https?://"},
+              "source_file": {"type": "string"},
+              "start": {},
+              "end": {},
+              "storage_mode": {"enum": ["remote_url", "local_mirror", "cdn_mirror"]},
+              "local_file_included": {"const": false}
+            }
+          },
+          "g2p": {
+            "type": "object",
+            "required": ["status", "engine", "phoneme_sequence"]
+          },
+          "ipa": {
+            "type": "object",
+            "required": ["status", "value"],
+            "properties": {
+              "status": {"enum": ["source_phon_from_formosanbank", "rule_based_draft_requires_linguist_review"]},
+              "value": {"type": "string", "minLength": 1},
+              "source_phon": {"type": "string"},
+              "draft_value": {"type": "string"}
+            }
+          },
+          "tts": {
+            "type": "object",
+            "required": ["tts_text", "status", "enabled_for_public_ui", "review_required"],
+            "properties": {
+              "enabled_for_public_ui": {"const": false},
+              "review_required": {"const": true}
+            }
+          },
+          "source": {
+            "type": "object",
+            "required": ["source_id", "repository", "commit", "source_path", "source_format"],
+            "properties": {
+              "repository": {"const": "FormosanBank/FormosanBank"},
+              "source_format": {"enum": ["csv", "xml"]}
+            }
+          },
+          "website": {"type": "object"},
+          "sensitivity": {"enum": ["public", "medium", "high"]},
+          "review_status": {"type": "string"}
+        }
+      }
+    }
+  }
+}

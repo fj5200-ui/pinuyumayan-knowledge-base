@@ -1,0 +1,30 @@
+{
+  "version": "4.0.0",
+  "generated_at": "2026-06-11T20:30:00+08:00",
+  "name": "database-ops-v4",
+  "added_files": [
+    "data/database/review_queue_seed.json",
+    "data/database/admin_dashboard_widgets.json",
+    "data/database/import_monitoring_dashboard.json",
+    "data/database/audio_mirror_queue_schema.json",
+    "data/database/data_versioning_policy.json",
+    "data/database/backup_restore_plan.json",
+    "data/database/observability_metrics.json",
+    "data/database/api_test_cases.json",
+    "data/database/role_permission_matrix_expanded.json",
+    "data/database/pinuyumayan_sql_views_and_indexes.sql",
+    "data/database/migration_plan_v4.json",
+    "data/database/release_checklist_v4.json",
+    "scripts/validate_operational_database_layer.py",
+    "scripts/build_review_queue_seed.py",
+    "scripts/export_api_test_cases.py",
+    "webapp/admin/components/KnowledgeReviewQueue.tsx",
+    "webapp/admin/components/CorpusImportMonitor.tsx",
+    "webapp/admin/components/AudioAssetManager.tsx",
+    "webapp/tests/knowledge-api.test.ts",
+    "references/admin_operations_guide.md",
+    "references/database_release_runbook.md"
+  ],
+  "facts_added": 0,
+  "note_zh": "本版豐富資料庫營運層，不新增未查證文化事實。"
+}

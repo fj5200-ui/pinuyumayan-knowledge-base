@@ -1,0 +1,60 @@
+{
+  "version": "v10",
+  "jobs": [
+    {
+      "jobType": "preview_bootstrap",
+      "queue": "deploy",
+      "lockKey": "preview_bootstrap",
+      "timeoutSeconds": 600,
+      "retryLimit": 1
+    },
+    {
+      "jobType": "full_corpus_import",
+      "queue": "corpus",
+      "lockKey": "full_corpus_import",
+      "timeoutSeconds": 7200,
+      "retryLimit": 2
+    },
+    {
+      "jobType": "audio_mirror",
+      "queue": "media",
+      "lockKey": "audio_mirror",
+      "timeoutSeconds": 14400,
+      "retryLimit": 3
+    },
+    {
+      "jobType": "search_reindex",
+      "queue": "search",
+      "lockKey": "search_reindex",
+      "timeoutSeconds": 1800,
+      "retryLimit": 2
+    },
+    {
+      "jobType": "main_site_delta_export",
+      "queue": "sync",
+      "lockKey": "main_site_delta_export",
+      "timeoutSeconds": 900,
+      "retryLimit": 2
+    },
+    {
+      "jobType": "webhook_delivery",
+      "queue": "webhook",
+      "lockKey": "webhook_delivery",
+      "timeoutSeconds": 600,
+      "retryLimit": 5
+    }
+  ],
+  "required_state_flow": [
+    "queued",
+    "running",
+    "succeeded",
+    "failed",
+    "cancelled"
+  ],
+  "full_corpus_job_requirements": [
+    "Must not run on API startup.",
+    "Must store source file manifest rows before parsing.",
+    "Must preserve source_path, source_row, audio_url, source_phon when available.",
+    "Must update kb_search_documents after import completes."
+  ]
+}

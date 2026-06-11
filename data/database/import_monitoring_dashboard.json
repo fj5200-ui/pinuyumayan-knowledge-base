@@ -1,0 +1,63 @@
+{
+  "version": "4.0.0",
+  "generated_at": "2026-06-11T20:30:00+08:00",
+  "import_stages": [
+    {
+      "key": "discover_sources",
+      "label_zh": "探索來源檔",
+      "expected_output": "source_manifest.json"
+    },
+    {
+      "key": "download_sources",
+      "label_zh": "下載來源檔",
+      "expected_output": "external/formosanbank_puyuma/*"
+    },
+    {
+      "key": "parse_csv_xml",
+      "label_zh": "解析 CSV/XML",
+      "expected_output": "normalized_entries.ndjson"
+    },
+    {
+      "key": "dedupe",
+      "label_zh": "去重與合併音檔",
+      "expected_output": "deduped_entries.ndjson"
+    },
+    {
+      "key": "g2p_ipa",
+      "label_zh": "補 G2P/IPA 草稿或保存 XML PHON",
+      "expected_output": "puyuma_vocabulary_audio_entries.json"
+    },
+    {
+      "key": "validate",
+      "label_zh": "品質驗收",
+      "expected_output": "validation_report.json"
+    },
+    {
+      "key": "db_import",
+      "label_zh": "匯入資料庫",
+      "expected_output": "kb_import_runs row"
+    },
+    {
+      "key": "search_index",
+      "label_zh": "重建搜尋索引",
+      "expected_output": "kb_search_documents rows"
+    }
+  ],
+  "required_metrics": [
+    "entry_count",
+    "audio_url_count",
+    "dialect_count",
+    "source_file_count",
+    "dedupe_ratio",
+    "source_phon_count",
+    "g2p_draft_count",
+    "validation_error_count"
+  ],
+  "alert_thresholds": {
+    "min_full_corpus_entries": 1000,
+    "max_validation_errors": 0,
+    "min_dialect_count": 4,
+    "min_audio_url_ratio": 0.8,
+    "max_failed_audio_ratio": 0.1
+  }
+}

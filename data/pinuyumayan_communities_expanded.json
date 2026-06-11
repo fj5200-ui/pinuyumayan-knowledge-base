@@ -1,0 +1,277 @@
+{
+  "version": "2026-06-11",
+  "authority": "references/tribe_name_authority.md",
+  "policy": {
+    "official_group_label_zh": "卑南族十社",
+    "official_group_label_en": "Pinuyumayan Ten Communities",
+    "do_not_use_as_official_classification": [
+      "卑南族八社",
+      "八社番",
+      "普悠瑪族"
+    ],
+    "review_required": [
+      "新增十社以外的部落作正式分類",
+      "將歷史稱呼設為前台主稱",
+      "公開家族/祭儀細節"
+    ]
+  },
+  "communities": [
+    {
+      "sort": 1,
+      "key": "puyuma",
+      "name_zh": "南王",
+      "romanization": "Puyuma",
+      "also_known_as": [
+        "Nanwang",
+        "南王部落",
+        "卑南社",
+        "普悠瑪部落"
+      ],
+      "origin_system": "竹生系統",
+      "administrative_hint": "臺東市南王里",
+      "content_focus": [
+        "年祭",
+        "少年年祭",
+        "大獵祭",
+        "巫師祭",
+        "海祭/小米收穫祭",
+        "音樂人才"
+      ],
+      "platform_summary": "南王是卑南族重要核心部落之一；平台中 Puyuma 僅指南王部落或英文語境中的卑南語，不可用來代稱整個卑南族。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 2,
+      "key": "katratripulr",
+      "name_zh": "知本",
+      "romanization": "Katratripulr",
+      "also_known_as": [
+        "Katipul",
+        "Katratipul",
+        "Katripul",
+        "Zhiben",
+        "卡大地布"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東市知本里",
+      "content_focus": [
+        "石生起源",
+        "祖先登陸與發祥地祭祖",
+        "收穫祭",
+        "會所復振",
+        "知本卑南語"
+      ],
+      "platform_summary": "知本是石生系統的重要核心，與建和等部落在起源敘事與四月祭祖脈絡中常被並讀。",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ]
+    },
+    {
+      "sort": 3,
+      "key": "kasavakan",
+      "name_zh": "建和",
+      "romanization": "Kasavakan",
+      "also_known_as": [
+        "Jianhe",
+        "Samagan",
+        "射馬干",
+        "建和部落"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東市建和里",
+      "content_focus": [
+        "祖先登陸與發祥地祭祖",
+        "小米收穫祭",
+        "年祭",
+        "巨型鞦韆",
+        "建和卑南語"
+      ],
+      "platform_summary": "建和以祭祖、收穫祭與年祭脈絡重要；語料上對應 FormosanBank Jianhe_Puyuma。",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ]
+    },
+    {
+      "sort": 4,
+      "key": "likavung",
+      "name_zh": "利嘉",
+      "romanization": "Likavung",
+      "also_known_as": [
+        "Likavong",
+        "Lijia",
+        "呂家望",
+        "利嘉部落"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東縣卑南鄉利嘉村",
+      "content_focus": [
+        "年祭",
+        "除喪",
+        "部落階級制度",
+        "傳統歌舞"
+      ],
+      "platform_summary": "利嘉在平台中宜放入年祭、除喪、階級制度與歌舞復振等主題脈絡。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 5,
+      "key": "ulivelivek",
+      "name_zh": "初鹿",
+      "romanization": "Ulivelivek",
+      "also_known_as": [
+        "Mulivelivek",
+        "Chulu",
+        "北絲鬮",
+        "初鹿部落"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東縣卑南鄉初鹿村",
+      "content_focus": [
+        "收穫祭",
+        "盪鞦韆",
+        "年祭",
+        "會所",
+        "西群卑南語"
+      ],
+      "platform_summary": "初鹿與西群卑南語脈絡關聯高；內容可強化會所、收穫祭與鞦韆文化特色。",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "formosanbank_dialects_csv"
+      ]
+    },
+    {
+      "sort": 6,
+      "key": "tamalakaw",
+      "name_zh": "泰安",
+      "romanization": "Tamalakaw",
+      "also_known_as": [
+        "Tamalrakaw",
+        "Damalagaw",
+        "Taian",
+        "大巴六九"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東縣卑南鄉泰安村/太平村脈絡",
+      "content_focus": [
+        "大獵祭",
+        "石生系統",
+        "部落治理"
+      ],
+      "platform_summary": "泰安宜列入大獵祭、石生系統與部落治理脈絡；羅馬拼音以 Tamalakaw 為平台主用。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 7,
+      "key": "pinaski",
+      "name_zh": "下賓朗",
+      "romanization": "Pinaski",
+      "also_known_as": [
+        "Pinaseki",
+        "Pinarai",
+        "Xiabinglang",
+        "檳榔樹格"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東縣卑南鄉賓朗村",
+      "content_focus": [
+        "婦女除草完工慶",
+        "收穫祭",
+        "年祭",
+        "花環文化"
+      ],
+      "platform_summary": "下賓朗內容可強化婦女除草完工慶、部落保守性與花環文化；Pinarai 類別名需人工複核。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 8,
+      "key": "danadanaw",
+      "name_zh": "龍過脈",
+      "romanization": "Danadanaw",
+      "also_known_as": [
+        "Longguomai",
+        "明峰村脈絡",
+        "龍過脈部落"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "臺東縣卑南鄉明峰村脈絡",
+      "content_focus": [
+        "遷徙記憶",
+        "初鹿地區脈絡",
+        "部落地理"
+      ],
+      "platform_summary": "龍過脈適合作為十社地理與遷徙脈絡的補強內容；細節公開前需部落複核。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 9,
+      "key": "rarangus",
+      "name_zh": "班鳩",
+      "romanization": "Rarangus",
+      "also_known_as": [
+        "Banjou",
+        "班鳩部落"
+      ],
+      "origin_system": "石生系統",
+      "administrative_hint": "文獻常記為已遷併入初鹿脈絡",
+      "content_focus": [
+        "遷併記憶",
+        "十社補遺",
+        "平台正名"
+      ],
+      "platform_summary": "班鳩在平台權威表中不可省略；公開細節與當代狀態需保留複核欄位。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "sort": 10,
+      "key": "papulu",
+      "name_zh": "寶桑",
+      "romanization": "Papulu",
+      "also_known_as": [
+        "Apapolo",
+        "Baosang",
+        "巴布麓",
+        "寶桑部落"
+      ],
+      "origin_system": "竹生系統",
+      "administrative_hint": "臺東市寶桑里",
+      "content_focus": [
+        "大獵祭",
+        "都市部落",
+        "文化延續"
+      ],
+      "platform_summary": "寶桑可放入臺東市區部落、竹生系統與大獵祭脈絡；Papulu 為平台主用版。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    }
+  ],
+  "related_or_historical_entries": [
+    {
+      "key": "alripay",
+      "name_zh": "上賓朗",
+      "romanization": "Alripay",
+      "also_known_as": [
+        "Alipai",
+        "阿里擺"
+      ],
+      "platform_policy": "目前不覆蓋既有十社權威表；可作相關聚落/歷史脈絡與全文搜尋 alias，若要改為正式十社項目需重新決策。",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    }
+  ]
+}

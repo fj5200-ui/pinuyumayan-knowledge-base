@@ -1,0 +1,102 @@
+{
+  "version": "v12",
+  "purpose": "Allow the main site, admin console, mobile apps, and future public portals to pull approved Pinuyumayan knowledge through scoped clients without reading the database directly.",
+  "clients": [
+    {
+      "client_key": "main_site",
+      "display_name": "卑南族文化綜合平台主站",
+      "allowed_channels": [
+        "public",
+        "preview"
+      ],
+      "required_scopes": [
+        "knowledge:read",
+        "vocabulary:read",
+        "export:read"
+      ],
+      "cache_profile": "public_web",
+      "default_rate_limit": "600/min"
+    },
+    {
+      "client_key": "admin_console",
+      "display_name": "後台管理系統",
+      "allowed_channels": [
+        "public",
+        "preview",
+        "internal_review"
+      ],
+      "required_scopes": [
+        "knowledge:read",
+        "review:read",
+        "review:write",
+        "lineage:read"
+      ],
+      "cache_profile": "admin_private",
+      "default_rate_limit": "300/min"
+    },
+    {
+      "client_key": "mobile_app",
+      "display_name": "行動應用",
+      "allowed_channels": [
+        "public"
+      ],
+      "required_scopes": [
+        "knowledge:read",
+        "vocabulary:read"
+      ],
+      "cache_profile": "mobile_offline",
+      "default_rate_limit": "300/min"
+    },
+    {
+      "client_key": "search_worker",
+      "display_name": "搜尋索引工作器",
+      "allowed_channels": [
+        "public",
+        "preview"
+      ],
+      "required_scopes": [
+        "search:read",
+        "export:read"
+      ],
+      "cache_profile": "worker",
+      "default_rate_limit": "120/min"
+    }
+  ],
+  "public_safety": {
+    "allowed_statuses": [
+      "approved",
+      "verified_public",
+      "published"
+    ],
+    "blocked_statuses": [
+      "draft",
+      "pending_review",
+      "restricted",
+      "rejected",
+      "archived"
+    ],
+    "allowed_sensitivity": [
+      "public",
+      "public_summary_only"
+    ],
+    "blocked_sensitivity": [
+      "restricted",
+      "admin_only",
+      "internal_only"
+    ],
+    "notes": "Public clients must read from public-safe views or API services only."
+  },
+  "integration_modes": [
+    "public_rest",
+    "trpc",
+    "internal_bundle",
+    "delta_sync",
+    "export_artifact",
+    "webhook_revalidate"
+  ],
+  "non_goals": [
+    "Expose raw database credentials to主站",
+    "Publish restricted ritual/family/internal review notes",
+    "Trigger full corpus import during API startup"
+  ]
+}

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Pinuyumayan full corpus import after deploy or on demand
+
+[Timer]
+OnBootSec=20min
+OnUnitActiveSec=7d
+Persistent=true
+
+[Install]
+WantedBy=timers.target

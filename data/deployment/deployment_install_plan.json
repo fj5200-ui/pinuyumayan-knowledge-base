@@ -1,0 +1,45 @@
+{
+  "version": "0.7.0",
+  "name": "部署時安裝與首次匯入計畫",
+  "principle": "後端啟動與千筆級語料匯入分離；部署先可用，完整語料以 post-deploy job 匯入。",
+  "modes": [
+    {
+      "key": "preview",
+      "label": "快速部署：schema + 基礎 seed + 80 筆 preview 語料",
+      "recommended_for": ["首次測試", "VPS 快速上線", "CI smoke test"],
+      "runs": ["migrations", "core_seeds", "preview_vocabulary_seed"],
+      "expected_corpus_entries": 80,
+      "blocks_web_start": false
+    },
+    {
+      "key": "full-corpus-postdeploy",
+      "label": "正式部署：先上線，再背景匯入千筆級語料",
+      "recommended_for": ["正式站", "主站已能拉取知識後", "資料庫已備份後"],
+      "runs": ["download_formosanbank_sources", "build_full_corpus", "validate_min_entries", "generate_sql_seed", "import_sql", "refresh_search_index"],
+      "minimum_expected_entries": 1000,
+      "blocks_web_start": false
+    },
+    {
+      "key": "full-corpus-blocking",
+      "label": "嚴格部署：匯入千筆語料未成功就不放行",
+      "recommended_for": ["一次性資料庫初始化", "非線上維護時間"],
+      "runs": ["migrations", "core_seeds", "full_corpus_import", "strict_validation"],
+      "minimum_expected_entries": 1000,
+      "blocks_web_start": true
+    }
+  ],
+  "environment_variables": {
+    "DEPLOY_INSTALL_MODE": "preview | full-corpus-postdeploy | full-corpus-blocking",
+    "RUN_FULL_CORPUS_ON_DEPLOY": "true | false",
+    "FULL_CORPUS_MIN_ENTRIES": "1000",
+    "IMPORT_SQL_AFTER_BUILD": "true | false",
+    "DATABASE_URL": "mysql://user:password@host:3306/database",
+    "MAIN_SITE_API_KEY": "主站同步 API key"
+  },
+  "safety_rules": [
+    "不要在 Node.js start 階段自動跑千筆匯入，避免主站啟動逾時。",
+    "正式站建議先跑 preview 部署，health check 通過後再跑 full-corpus postdeploy job。",
+    "full corpus 匯入前先備份資料庫或建立 ops_data_snapshots 紀錄。",
+    "音檔先使用 remote URL；鏡像到 R2/S3/CDN 需走 license review。"
+  ]
+}

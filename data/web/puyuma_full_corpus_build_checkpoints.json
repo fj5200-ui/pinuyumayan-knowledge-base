@@ -1,0 +1,37 @@
+{
+  "version": "2026-06-11-full-corpus-checkpoints-v2",
+  "purpose_zh": "規定從 FormosanBank/ePark 來源建立千筆級卑南語網站語料庫時，每個階段必須產生的檢查點。",
+  "checkpoints": [
+    {
+      "id": "source_manifest_loaded",
+      "required_file": "data/web/puyuma_vocabulary_full_source_manifest.json",
+      "pass_condition": "csv_sources + xml_sources >= 60"
+    },
+    {
+      "id": "raw_sources_downloaded",
+      "required_directory": "external/formosanbank_puyuma",
+      "pass_condition": "下載的 CSV/XML 數量應接近 manifest；失敗項目寫入 generated build summary"
+    },
+    {
+      "id": "records_parsed",
+      "required_file": "data/web/puyuma_vocabulary_audio_entries.json",
+      "pass_condition": "entry_count 必須由實際解析結果產生，不得手填"
+    },
+    {
+      "id": "audio_urls_present",
+      "required_field": "entries[].audio.url",
+      "pass_condition": "每筆公開語料都必須有 http(s) 音檔 URL"
+    },
+    {
+      "id": "source_phon_preserved",
+      "required_field": "entries[].ipa.source_phon",
+      "pass_condition": "XML 若有 PHON 必須保存；CSV 可使用 rule-based draft IPA"
+    },
+    {
+      "id": "tts_is_metadata_only",
+      "required_field": "entries[].tts.enabled_for_public_ui",
+      "pass_condition": "一律 false；不得自動產生公開 TTS 聲音"
+    }
+  ],
+  "do_not_claim_zh": "只有通過 validate_full_puyuma_corpus_output.py 並產生實際 entry_count 後，才能宣稱已完成全量語料匯入。"
+}

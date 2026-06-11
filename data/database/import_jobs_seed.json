@@ -1,0 +1,71 @@
+{
+  "version": "3.0.0",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "jobs": [
+    {
+      "job_id": "import_verified_facts_v1",
+      "pipeline": "load_verified_pinuyumayan_facts",
+      "input": "data/verified_pinuyumayan_facts.json",
+      "target_tables": [
+        "kb_sources",
+        "kb_facts"
+      ],
+      "expected_count": 109,
+      "status": "ready"
+    },
+    {
+      "job_id": "import_communities_v1",
+      "pipeline": "load_communities",
+      "input": "data/pinuyumayan_communities_expanded.json",
+      "target_tables": [
+        "kb_communities"
+      ],
+      "expected_count": 10,
+      "status": "ready"
+    },
+    {
+      "job_id": "import_rituals_v1",
+      "pipeline": "load_rituals",
+      "input": "data/pinuyumayan_rituals.json",
+      "target_tables": [
+        "kb_rituals"
+      ],
+      "expected_count": 7,
+      "status": "ready"
+    },
+    {
+      "job_id": "import_vocab_preview_v1",
+      "pipeline": "load_puyuma_vocabulary_preview",
+      "input": "data/web/puyuma_vocabulary_audio_entries.json",
+      "target_tables": [
+        "puyuma_audio_assets",
+        "puyuma_corpus_entries",
+        "puyuma_tts_jobs"
+      ],
+      "expected_count": 80,
+      "status": "ready_preview_only"
+    },
+    {
+      "job_id": "build_full_corpus_v1",
+      "pipeline": "build_full_puyuma_web_vocabulary",
+      "input": "data/web/puyuma_vocabulary_full_source_manifest.json",
+      "target_tables": [
+        "puyuma_audio_assets",
+        "puyuma_corpus_entries",
+        "kb_import_runs"
+      ],
+      "expected_min_count": 1000,
+      "status": "requires_network_download"
+    },
+    {
+      "job_id": "build_search_index_v1",
+      "pipeline": "build_pinuyumayan_search_index",
+      "input": "data/web/*",
+      "target_tables": [
+        "kb_search_documents"
+      ],
+      "expected_count": 173,
+      "status": "ready"
+    }
+  ]
+}

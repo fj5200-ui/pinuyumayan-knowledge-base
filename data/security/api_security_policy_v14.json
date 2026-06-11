@@ -1,0 +1,60 @@
+{
+  "version": "v14",
+  "principles": [
+    "No default passwords",
+    "No plaintext secrets in repository",
+    "Public APIs return approved public-safe data only",
+    "Internal APIs require scoped API keys",
+    "Admin APIs require session plus role scope"
+  ],
+  "admin_auth": {
+    "session_cookie": "httpOnly + secure + sameSite=lax in production",
+    "session_ttl_minutes": 240,
+    "idle_timeout_minutes": 30,
+    "password_hash": "scrypt in v13; argon2id recommended if native dependency is approved",
+    "mfa": "optional in v14 schema, required before production public launch",
+    "lockout": {
+      "max_failed_attempts": 10,
+      "window_minutes": 15,
+      "lock_minutes": 30
+    }
+  },
+  "api_key_scopes": [
+    "knowledge:read",
+    "vocabulary:read",
+    "content:read",
+    "export:read",
+    "sync:replay",
+    "jobs:write",
+    "quality:run",
+    "cache:invalidate",
+    "admin:sync"
+  ],
+  "rate_limits": [
+    {
+      "scope": "public_read",
+      "window_seconds": 60,
+      "limit": 600
+    },
+    {
+      "scope": "internal_sync",
+      "window_seconds": 60,
+      "limit": 120
+    },
+    {
+      "scope": "admin_auth",
+      "window_seconds": 300,
+      "limit": 30
+    }
+  ],
+  "audit_required_for": [
+    "admin_login",
+    "admin_logout",
+    "change_password",
+    "superadmin_sync",
+    "cache_invalidate",
+    "quality_gate_run",
+    "release_promote",
+    "full_corpus_import"
+  ]
+}

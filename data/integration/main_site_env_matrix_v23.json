@@ -1,0 +1,46 @@
+{
+  "version": "v23",
+  "hosting_targets": {
+    "cloudflare_pages_nextjs": {
+      "required_variables": [
+        "NEXT_PUBLIC_KB_API_URL",
+        "PINUYUMAYAN_KB_API_URL",
+        "PINUYUMAYAN_MAIN_SITE_CLIENT_ID",
+        "PINUYUMAYAN_MAIN_SITE_API_KEY",
+        "PINUYUMAYAN_HMAC_SECRET",
+        "PINUYUMAYAN_HMAC_ENABLED",
+        "AI_PROVIDER",
+        "OPENAI_API_KEY or KIMI_API_KEY",
+        "NEXT_PUBLIC_SITE_URL"
+      ],
+      "notes": [
+        "NEXT_PUBLIC_* may be visible to browser. Do not put API key or AI key in NEXT_PUBLIC_*.",
+        "Use a server route or server action for AI provider calls.",
+        "Use Cloudflare environment secrets for API keys."
+      ]
+    },
+    "vps_node": {
+      "required_variables": [
+        "DATABASE_URL",
+        "MAIN_SITE_API_KEY",
+        "PINUYUMAYAN_HMAC_SECRET",
+        "ALLOWED_ORIGINS",
+        "PUBLIC_KNOWLEDGE_BASE_URL"
+      ],
+      "notes": [
+        "Run migrations before starting backend",
+        "Use systemd service from deploy/systemd"
+      ]
+    }
+  },
+  "cors": {
+    "production": [
+      "https://pinuyumayan.tw",
+      "https://www.pinuyumayan.tw"
+    ],
+    "staging": [
+      "https://staging.pinuyumayan.tw",
+      "http://localhost:3000"
+    ]
+  }
+}

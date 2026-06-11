@@ -1,0 +1,77 @@
+{
+  "version": "2026-06-11",
+  "topics": [
+    {
+      "id": "age_grade_system",
+      "name_zh": "年齡階級制度",
+      "summary": "卑南族男性社會關係高度依賴年齡階級與會所訓練；少年約12、13歲進入少年會所，17、18歲轉入成年會所，學習體能、狩獵、野外求生、服從與公共服務。",
+      "platform_use": [
+        "文化內容系統",
+        "族語學習系統",
+        "青少年教育專區",
+        "祭儀時間軸"
+      ],
+      "sensitivity": "medium",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "mens_house",
+      "name_zh": "會所制度",
+      "summary": "會所不只是建築，也是公共事務、年齡階級教育、訓練與部落主體性的重要空間；內容需分清少年會所與成年會所。",
+      "platform_use": [
+        "部落介紹",
+        "建築專題",
+        "祭儀專題",
+        "3D/圖解內容"
+      ],
+      "sensitivity": "medium",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "matrilineal_kinship",
+      "name_zh": "母系親屬與家屋觀念",
+      "summary": "傳統上重視母系家系、家屋、宗家與本家觀念；家族氏名與家屋財產承繼有母系特徵，但現代受社會變遷而有調整。",
+      "platform_use": [
+        "歷史研究",
+        "親屬制度專題",
+        "內容審核規則"
+      ],
+      "sensitivity": "high",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "ritual_specialists",
+      "name_zh": "祭司、政治領袖與巫師角色",
+      "summary": "傳統部落中，ayawan 負責重大事件協調與戰獵領導；rahan 掌管祭祀禮儀；巫師則與祈福、治病、驅邪等照護需求相關。",
+      "platform_use": [
+        "人物角色辭典",
+        "祭儀專題",
+        "AI 回答限制"
+      ],
+      "sensitivity": "high",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "spiritual_worldview",
+      "name_zh": "神靈、祖靈與傳統信仰",
+      "summary": "傳統信仰中，自然、天地、四方、祖先與死者之靈皆可能影響生活；公開內容應以尊重、簡介與授權為原則。",
+      "platform_use": [
+        "信仰專題",
+        "祭儀倫理",
+        "內容審核"
+      ],
+      "sensitivity": "high",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    }
+  ]
+}

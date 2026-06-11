@@ -1,0 +1,1367 @@
+{
+  "version": "v20",
+  "generated_at": "2026-06-11T14:58:00+08:00",
+  "description_zh": "v20 新增真實知識 claims：強化官方來源、雙語人口資料治理、部落別名、文化敏感邊界、AI 發文去重與引用規則。",
+  "counts": {
+    "v20_new_claims": 59
+  },
+  "claims": [
+    {
+      "claim_id": "kg20_population_current_zh_official",
+      "category": "人口資料治理",
+      "statement_zh": "原民會中文族群簡介頁目前顯示卑南族總人口為 16,734；此類人口數需標記來源語言與擷取日期，不能覆蓋舊資料而不留版本。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fc36569fa8a7c44e",
+      "dedupe_key": "claim_fc36569fa8a7c44e",
+      "keywords": [
+        "人口",
+        "官方資料",
+        "版本控管",
+        "中文來源"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_population_2020_en_historical",
+      "category": "人口資料治理",
+      "statement_zh": "原民會英文介紹頁保留 2020 年 1 月約 14,517 人的歷史人口敘述；知識庫應把它作為舊版時間點資料，而非最新人口。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L113-L116",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7cf30cd9d0b76159",
+      "dedupe_key": "claim_7cf30cd9d0b76159",
+      "keywords": [
+        "人口",
+        "2020",
+        "歷史數據",
+        "資料有效日"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_bilingual_source_discrepancy_policy",
+      "category": "資料治理",
+      "statement_zh": "當中文頁與英文頁人口數不同時，系統應同時保存兩筆來源 claim，並用 source_date、captured_at 與 language 欄位讓主站 AI 避免混用。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ce8932a3ed9c3172",
+      "dedupe_key": "claim_ce8932a3ed9c3172",
+      "keywords": [
+        "雙語來源",
+        "人口差異",
+        "AI引用",
+        "資料治理"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_zh_ritual_names_source",
+      "category": "歲時祭儀名稱",
+      "statement_zh": "中文官方摘要使用「小米鋤草完工慶」、「小米收穫祭（感恩海祭）」、「少年年祭（猴祭）」與「年祭（大獵祭）」等名稱，適合建立主站中文標籤。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_98e3ddfe033925db",
+      "dedupe_key": "claim_98e3ddfe033925db",
+      "keywords": [
+        "中文名稱",
+        "祭儀標籤",
+        "小米收穫祭",
+        "年祭"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_official_summary_mentions_male_age_house",
+      "category": "社會制度",
+      "statement_zh": "中文官方摘要把嚴謹的年齡階級組織與會所制度列為卑南族重要社會特徵，這可作為主站介紹頁的核心但不可替代部落審核。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a3dabf885a695ffa",
+      "dedupe_key": "claim_a3dabf885a695ffa",
+      "keywords": [
+        "年齡階級",
+        "會所制度",
+        "官方摘要",
+        "主站介紹"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_official_summary_mentions_witchcraft_as_reputation",
+      "category": "敏感內容治理",
+      "statement_zh": "中文官方摘要提到巫法之術名聲遠播；主站 AI 只能將此列為公開來源中的文化描述，不得生成巫術方法、咒語或療法指示。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "evidence_locator": "L587-L590",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fff9a197195ff7a5",
+      "dedupe_key": "claim_fff9a197195ff7a5",
+      "keywords": [
+        "巫法",
+        "敏感內容",
+        "公開摘要",
+        "禁止操作教學"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "涉及巫法、祖靈、禁忌或療癒內容時，主站 AI 只能摘要來源說法，禁止產生方法、咒語、療法與儀式步驟。"
+    },
+    {
+      "claim_id": "kg20_pinadray_peak_as_historical_frame",
+      "category": "歷史敘事",
+      "statement_zh": "英文官方資料描述卑南族在十七世紀以前已是有影響力的族群，並在 Pinadray 時期達到高峰；文章應標示為來源敘事而非自行推論。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L119-L121",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e65df7960360ba6a",
+      "dedupe_key": "claim_e65df7960360ba6a",
+      "keywords": [
+        "Pinadray",
+        "十七世紀以前",
+        "歷史敘事",
+        "來源標示"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_sakuban_72_tribes_said_to",
+      "category": "歷史敘事",
+      "statement_zh": "英文官方資料以「據說」語氣描述 Sakuban 曾領導東臺灣不同族群的七十二社；知識庫應保存 said_to/attributed 屬性，避免 AI 寫成無條件事實。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L119-L121",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e76be11141373cdd",
+      "dedupe_key": "claim_e76be11141373cdd",
+      "keywords": [
+        "Sakuban",
+        "七十二社",
+        "據說",
+        "史料語氣"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_sakuban_influence_geographic_range",
+      "category": "歷史地理",
+      "statement_zh": "英文官方資料描述 Sakuban 影響範圍北至花蓮玉里、南至屏東恆春；主站若引用，應同時標示來源與「據說」語氣。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L119-L121",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4e262cf58bf98024",
+      "dedupe_key": "claim_4e262cf58bf98024",
+      "keywords": [
+        "Sakuban",
+        "玉里",
+        "恆春",
+        "影響範圍"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_sukaro_migration_hengchun",
+      "category": "遷徙史",
+      "statement_zh": "英文官方資料提到十八世紀部分卑南族氏族遷往恆春半島，並以 sukaro 描述該遷徙；主站可作遷徙史摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L121-L122",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6881f80ab0ebf9e2",
+      "dedupe_key": "claim_6881f80ab0ebf9e2",
+      "keywords": [
+        "遷徙",
+        "恆春半島",
+        "sukaro",
+        "十八世紀"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_sukaro_term_paiwan_language_note",
+      "category": "語詞註記",
+      "statement_zh": "英文官方資料說明 sukaro 一詞在排灣語語境中有被抬、坐轎之意；平台應將其作跨族語接觸詞條並標示來源。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L121-L122",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b4f114bc20041aea",
+      "dedupe_key": "claim_b4f114bc20041aea",
+      "keywords": [
+        "sukaro",
+        "排灣語",
+        "語詞註記",
+        "跨族語"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_japanese_period_eight_tribes_label",
+      "category": "族稱史",
+      "statement_zh": "英文官方資料指出日治末期以八社概念進行民族學稱呼；主站應避免把「八社」直接取代目前平台使用的「十社」資料結構。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L121-L122",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_73a9238c4bfa3a62",
+      "dedupe_key": "claim_73a9238c4bfa3a62",
+      "keywords": [
+        "日治時期",
+        "八社",
+        "十社",
+        "族稱史"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_platform_eight_tribes_vs_ten_communities",
+      "category": "資料模型",
+      "statement_zh": "平台資料模型可同時保存歷史「八社」語境與主站「十社」分類，但前端顯示需清楚標示時間與用途，避免使用者誤解。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L121-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4debd2bec231d927",
+      "dedupe_key": "claim_4debd2bec231d927",
+      "keywords": [
+        "八社",
+        "十社",
+        "資料模型",
+        "前端顯示"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_distribution_taitung_plain_center",
+      "category": "地理分布",
+      "statement_zh": "英文官方資料指出臺東市與卑南鄉所在的臺東平原，是今日卑南族的重要中心；可用於主站地圖初始視角。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L122-L123",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6c1b8721c46b29ca",
+      "dedupe_key": "claim_6c1b8721c46b29ca",
+      "keywords": [
+        "臺東平原",
+        "臺東市",
+        "卑南鄉",
+        "地圖"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_major_community_danadanaw",
+      "category": "部落資料",
+      "statement_zh": "英文官方資料在卑南鄉主要部落中列出 Danadanaw，位於明峰村；主站十社資料應把別名、行政村里與來源分欄管理。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7b945bbfcba734cc",
+      "dedupe_key": "claim_7b945bbfcba734cc",
+      "keywords": [
+        "Danadanaw",
+        "明峰村",
+        "部落別名",
+        "資料分欄"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_major_community_banjiu_combined_chulu",
+      "category": "部落資料",
+      "statement_zh": "英文官方資料提到 Banjiu 與初鹿合併脈絡；資料庫應以關聯表記錄合併/歸併關係，而非硬刪歷史名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b6f83088b708df3f",
+      "dedupe_key": "claim_b6f83088b708df3f",
+      "keywords": [
+        "Banjiu",
+        "初鹿",
+        "合併脈絡",
+        "關聯表"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_zhiben_katratripulr_spelling_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Zhiben (Katratripulr) 標示知本，平台應保存中文名、羅馬拼寫與行政區欄位，以利搜尋與文章引用。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a7045577f32992c0",
+      "dedupe_key": "claim_a7045577f32992c0",
+      "keywords": [
+        "知本",
+        "Katratripulr",
+        "名稱治理",
+        "搜尋"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_jianhe_kasavakan_spelling_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Jianhe (Kasavakan) 標示建和，平台應將 Kasavakan 作為別名索引，而不是另建重複部落。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9f1a9b7891a930b3",
+      "dedupe_key": "claim_9f1a9b7891a930b3",
+      "keywords": [
+        "建和",
+        "Kasavakan",
+        "別名索引",
+        "去重"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_baosang_apapolo_spelling_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Baosang (Apapolo) 標示寶桑，主站搜尋應讓寶桑與 Apapolo 指向同一部落實體。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1c0e0d4d6963c248",
+      "dedupe_key": "claim_1c0e0d4d6963c248",
+      "keywords": [
+        "寶桑",
+        "Apapolo",
+        "搜尋同義",
+        "部落實體"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_lijia_ligavon_spelling_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Lijia (Ligavon) 標示利嘉，應在資料庫保存 Ligavon 作為官方來源別名。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1ae1dc932fcabdf8",
+      "dedupe_key": "claim_1ae1dc932fcabdf8",
+      "keywords": [
+        "利嘉",
+        "Ligavon",
+        "別名",
+        "來源"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_taian_tamalakau_admin_note",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料將 Taian (Tamalakau) 與太平村/泰安鄉文字一併出現；此欄位需人工校對行政區，避免 AI 自動修正成未查證資料。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_794aeadb89a26063",
+      "dedupe_key": "claim_794aeadb89a26063",
+      "keywords": [
+        "泰安",
+        "Tamalakau",
+        "行政區校對",
+        "人工審核"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_shangbinlang_alripay_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Shangbinlang (Alripay) 標示上賓朗，應建立上賓朗與 Alripay 的別名索引。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_106f51b1beb5c9bb",
+      "dedupe_key": "claim_106f51b1beb5c9bb",
+      "keywords": [
+        "上賓朗",
+        "Alripay",
+        "別名索引",
+        "部落"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_shabinlang_pinaski_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Shabinlang (Pinaski) 標示下賓朗，應建立下賓朗與 Pinaski 的別名索引。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d1183455e3ce3616",
+      "dedupe_key": "claim_d1183455e3ce3616",
+      "keywords": [
+        "下賓朗",
+        "Pinaski",
+        "別名索引",
+        "部落"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_chulu_ulivelivek_variant",
+      "category": "部落名稱治理",
+      "statement_zh": "英文官方資料使用 Chulu (Ulivelivek) 標示初鹿，應建立初鹿與 Ulivelivek 的別名索引。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L123-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9face48ea02d3393",
+      "dedupe_key": "claim_9face48ea02d3393",
+      "keywords": [
+        "初鹿",
+        "Ulivelivek",
+        "別名索引",
+        "部落"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_farming_foxtail_millet_taxonomy",
+      "category": "農業與生業",
+      "statement_zh": "英文官方資料把 foxtail millet 標示為 Setaria italica；知識庫應保存俗名、中文名與學名欄位，利於科普文章。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L128",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1f2fb30394479557",
+      "dedupe_key": "claim_1f2fb30394479557",
+      "keywords": [
+        "小米",
+        "Setaria italica",
+        "學名",
+        "農業"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_crop_taxonomy_rice",
+      "category": "農業與生業",
+      "statement_zh": "英文官方資料把水稻標示為 Oryza sativa；主站若做作物知識卡，應把水稻與旱稻、糯米等內容分開處理。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L131",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_adad80c3fbc2d47f",
+      "dedupe_key": "claim_adad80c3fbc2d47f",
+      "keywords": [
+        "水稻",
+        "Oryza sativa",
+        "作物知識卡",
+        "分類"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_cash_crop_sugar_apple_taxonomy",
+      "category": "農業與生業",
+      "statement_zh": "英文官方資料把釋迦標示為 Annona squamosa，並說明其屬 1960 年代後轉向經濟作物之一；可作當代農業轉型卡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L128-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_319f8f8de4db985b",
+      "dedupe_key": "claim_319f8f8de4db985b",
+      "keywords": [
+        "釋迦",
+        "Annona squamosa",
+        "經濟作物",
+        "農業轉型"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_cash_crop_betel_piper_taxonomy",
+      "category": "農業與生業",
+      "statement_zh": "英文官方資料把檳榔標示為 Piper betle 並列為經濟作物與生活/祭儀物件；資料庫應區分作物、日常物、供物三種脈絡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L128-L132",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a66a16ae3595f895",
+      "dedupe_key": "claim_a66a16ae3595f895",
+      "keywords": [
+        "檳榔",
+        "Piper betle",
+        "日常生活",
+        "供物"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_shellflower_alpinia_zerumbet_taxonomy",
+      "category": "飲食與植物",
+      "statement_zh": "英文官方資料把月桃標示為 Alpinia zerumbet，並與節慶包裹糯米與鹹豬肉的食物相關；可做飲食植物知識卡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L130-L132",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9d4cfa39bb38c956",
+      "dedupe_key": "claim_9d4cfa39bb38c956",
+      "keywords": [
+        "月桃",
+        "Alpinia zerumbet",
+        "飲食植物",
+        "節慶食物"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_food_protein_hunting_fishing_not_recipe",
+      "category": "飲食與生業",
+      "statement_zh": "英文官方資料將狩獵肉類、魚類與貝類列為蛋白質來源；主站文章應避免把此改寫成狩獵教學或食譜。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L130-L132",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d7d028f784847399",
+      "dedupe_key": "claim_d7d028f784847399",
+      "keywords": [
+        "蛋白質來源",
+        "狩獵",
+        "魚貝",
+        "安全摘要"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_clothing_cross_stitch_counted_thread",
+      "category": "服飾與圖紋",
+      "statement_zh": "英文官方資料指出服飾裝飾包含十字繡與數紗刺繡；平台可把其列為視覺設計靈感，但不能冒稱特定部落授權圖紋。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L135",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_da12cd4ea92f4cec",
+      "dedupe_key": "claim_da12cd4ea92f4cec",
+      "keywords": [
+        "十字繡",
+        "數紗刺繡",
+        "視覺設計",
+        "圖紋授權"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_male_clothing_age_differentiation",
+      "category": "服飾與身份",
+      "statement_zh": "英文官方資料提到男性服飾依年齡群體有所區分；主站若生成插圖或文章，應避免把不同年齡服飾混用。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L135",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9caed8644d1deef4",
+      "dedupe_key": "claim_9caed8644d1deef4",
+      "keywords": [
+        "男性服飾",
+        "年齡群體",
+        "AI插圖",
+        "避免混用"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_wreath_after_funeral_context_caution",
+      "category": "生命禮俗治理",
+      "statement_zh": "英文官方資料提及花環在成年與喪葬後可能有不同替換脈絡；主站 AI 僅能摘要社會意義，不得生成禮俗程序。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L136-L137",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_94699f51679ebaaf",
+      "dedupe_key": "claim_94699f51679ebaaf",
+      "keywords": [
+        "花環",
+        "喪葬脈絡",
+        "成年",
+        "程序禁止"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "生命禮俗、喪葬與祖靈相關內容只能做公開摘要；禁止產生程序、步驟、禁忌細節或替代儀式。"
+    },
+    {
+      "claim_id": "kg20_weaving_material_index",
+      "category": "工藝資料",
+      "statement_zh": "英文官方資料把藤、竹與月桃葉列為重要材料；資料庫應以 material_terms 表支援搜尋，而非只存在文章本文。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L137-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_cd49b65c6dd9c8ef",
+      "dedupe_key": "claim_cd49b65c6dd9c8ef",
+      "keywords": [
+        "藤",
+        "竹",
+        "月桃葉",
+        "材料索引"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_architecture_watchtower_public_private",
+      "category": "建築資料",
+      "statement_zh": "英文官方資料把瞭望台列入公共建築類型之一；主站可做建築分類，但不應自行推論功能細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L140-L143",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3002bf3a225fc39c",
+      "dedupe_key": "claim_3002bf3a225fc39c",
+      "keywords": [
+        "瞭望台",
+        "公共建築",
+        "建築分類",
+        "避免推論"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_family_house_doors_windows_layout",
+      "category": "建築資料",
+      "statement_zh": "英文官方資料描述傳統家屋長邊開門、短邊設窗；可用於建築知識卡，但需避免當作現代建築規範。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L143-L144",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3a9d562eb452c7ee",
+      "dedupe_key": "claim_3a9d562eb452c7ee",
+      "keywords": [
+        "家屋",
+        "門窗",
+        "建築知識卡",
+        "歷史建築"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_family_house_barn_tools",
+      "category": "建築與生業",
+      "statement_zh": "英文官方資料描述穀倉位於後牆角，並與臼、杵等農具收納相關；可連結農業與建築資料。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L143-L144",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_afe863259b070b76",
+      "dedupe_key": "claim_afe863259b070b76",
+      "keywords": [
+        "穀倉",
+        "臼",
+        "杵",
+        "農具"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_assembly_fireplace_learning_center",
+      "category": "會所制度",
+      "statement_zh": "英文官方資料在少年會所與成年會所描述中都提到中央爐火；主站可把它作為建築摘要，不得延伸為祭儀細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L145-L147",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b66ddc06bec1930b",
+      "dedupe_key": "claim_b66ddc06bec1930b",
+      "keywords": [
+        "會所",
+        "中央爐火",
+        "建築摘要",
+        "敏感邊界"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_ancestral_shrine_sensitive_boundary",
+      "category": "敏感內容治理",
+      "statement_zh": "英文官方資料描述祖靈相關祭祀空間與神聖方位；知識庫應將此類內容標為高敏感摘要，不提供空間操作或擺設教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L147-L149",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_07cbfffb393b10ec",
+      "dedupe_key": "claim_07cbfffb393b10ec",
+      "keywords": [
+        "祖靈",
+        "祭祀空間",
+        "神聖方位",
+        "高敏感"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "祖靈、神聖方位與祭祀空間資料只可作來源摘要；禁止提供配置教學、擺設步驟或替代儀式。"
+    },
+    {
+      "claim_id": "kg20_music_irairao_sensitive_title_only",
+      "category": "音樂資料治理",
+      "statement_zh": "英文官方資料列出古老 Irairao 歌謠名稱；主站只能保留名稱與分類，不得生成歌詞、旋律或未授權錄音替代。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L152-L156",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_01c9b140429199f7",
+      "dedupe_key": "claim_01c9b140429199f7",
+      "keywords": [
+        "Irairao",
+        "歌謠名稱",
+        "授權",
+        "禁止生成歌詞"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "歌謠內容需有授權與來源；未授權不得生成歌詞、旋律或模仿族人演唱。"
+    },
+    {
+      "claim_id": "kg20_modern_artist_lu_senpao_founder_label",
+      "category": "現代音樂",
+      "statement_zh": "英文官方資料列舉 Baliwakes/Lu Sen-pao 並稱其為卑南族歌曲奠基者之一；主站人物資料需另建來源與權限審核。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L155-L157",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_30cd76a3d6f6d230",
+      "dedupe_key": "claim_30cd76a3d6f6d230",
+      "keywords": [
+        "陸森寶",
+        "Baliwakes",
+        "現代音樂",
+        "人物資料"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_modern_artist_sangpuy_listed",
+      "category": "現代音樂",
+      "statement_zh": "英文官方資料列舉 Sangpuy Katatepan Mavaliyw 等現代音樂人；人物卡應保存族名、漢名與來源欄位，避免混名。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L155-L157",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_93de4df63b25baaa",
+      "dedupe_key": "claim_93de4df63b25baaa",
+      "keywords": [
+        "Sangpuy",
+        "現代音樂",
+        "人物卡",
+        "族名"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_dance_spirit_dance_title_caution",
+      "category": "舞蹈資料治理",
+      "statement_zh": "英文官方資料提到 dance of spirits 等舞蹈稱呼；主站應只使用公開名稱與文化摘要，不輸出動作拆解或儀式功能細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L158-L160",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8226a23965d2f7c1",
+      "dedupe_key": "claim_8226a23965d2f7c1",
+      "keywords": [
+        "舞蹈名稱",
+        "spirits dance",
+        "動作拆解禁止",
+        "公開摘要"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_language_contact_multilingual_card",
+      "category": "語言接觸",
+      "statement_zh": "英文官方資料同時描述南部、北部與漢人接觸對卑南語使用的影響；可建立「語言接觸」知識卡而非只放在方言頁。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L161-L164",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_86ca9acaa13af558",
+      "dedupe_key": "claim_86ca9acaa13af558",
+      "keywords": [
+        "語言接觸",
+        "南部",
+        "北部",
+        "漢人接觸"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_religion_three_sources_modern",
+      "category": "信仰變遷",
+      "statement_zh": "英文官方資料指出漢人宗教與基督宗教進入後，卑南族日常生活中存在多重宗教來源；主站只能做公開摘要與變遷描述。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L180-L184",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f6585ee9809771fb",
+      "dedupe_key": "claim_f6585ee9809771fb",
+      "keywords": [
+        "信仰變遷",
+        "漢人宗教",
+        "基督宗教",
+        "多重來源"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_ritual_revival_1981_discussion",
+      "category": "文化復振",
+      "statement_zh": "英文官方資料提到 1981 年傳統祭儀復振後，族人開始重視並討論傳統信仰與宗教；可作文化復振時間軸節點。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L183-L184",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8c6f0a255706c22e",
+      "dedupe_key": "claim_8c6f0a255706c22e",
+      "keywords": [
+        "1981",
+        "祭儀復振",
+        "文化復振",
+        "時間軸"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_mugamut_march_women_team_context",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "英文官方資料將三月 Mugamut 與女性除草隊完成工作連結；主站文章可聚焦女性勞動組織與農耕節奏，不寫程序。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L187-L196",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8b19a43b7788dd30",
+      "dedupe_key": "claim_8b19a43b7788dd30",
+      "keywords": [
+        "Mugamut",
+        "女性除草隊",
+        "三月",
+        "農耕節奏"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_ruvuwaan_ancestral_landing_site_sensitive",
+      "category": "文化地景",
+      "statement_zh": "英文官方資料將 Ruvuwa’an 與祖先登陸地/發祥地祭儀連結；主站應以文化地景摘要呈現，避免標示敏感位置細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L198-L199",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bbbf1867c68e14b1",
+      "dedupe_key": "claim_bbbf1867c68e14b1",
+      "keywords": [
+        "Ruvuwa’an",
+        "文化地景",
+        "發祥地",
+        "敏感位置"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_masarut_dream_divination_sensitive",
+      "category": "敏感內容治理",
+      "statement_zh": "英文官方資料提到 Masarut 前一晚有夢占等內容；知識庫可保留為來源摘要，但前端 AI 不得生成占卜方法或替代儀式。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L200-L203",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_101b1b884fc7bf93",
+      "dedupe_key": "claim_101b1b884fc7bf93",
+      "keywords": [
+        "Masarut",
+        "夢占",
+        "敏感內容",
+        "禁止方法"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "占卜、驅邪與祭儀細節只可保留來源摘要；禁止生成方法、口訣、流程或替代做法。"
+    },
+    {
+      "claim_id": "kg20_masarut_swing_educational_angle",
+      "category": "文化活動",
+      "statement_zh": "英文官方資料指出部分社群的鞦韆活動今日成為特殊文化活動；主站可將其作文化活動介紹，而非儀式替代。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L201-L203",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5205bf6072e304ba",
+      "dedupe_key": "claim_5205bf6072e304ba",
+      "keywords": [
+        "鞦韆",
+        "文化活動",
+        "小米收穫",
+        "教育角度"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_mangayaw_three_week_event_not_single_day",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "英文官方資料稱 Mangayaw 約為三週的重要年度活動；主站行事曆應避免把它簡化成單日事件。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L204-L208",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1d6ddf67c827debf",
+      "dedupe_key": "claim_1d6ddf67c827debf",
+      "keywords": [
+        "Mangayaw",
+        "三週",
+        "年度活動",
+        "行事曆"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_mangayaw_preparation_public_summary",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "英文官方資料描述 Mangayaw 前會準備花環、食物與釀酒等；主站可摘要準備氛圍，但不能生成祭儀備辦清單。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L206-L208",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1aad1ad1240d0ddf",
+      "dedupe_key": "claim_1aad1ad1240d0ddf",
+      "keywords": [
+        "Mangayaw",
+        "準備",
+        "花環",
+        "食物"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_remavaravas_comfort_context",
+      "category": "生命禮俗治理",
+      "statement_zh": "英文官方資料將 remavaravas 與慰藉年度逝者家庭的團聚脈絡相連；主站只能採摘要與關懷角度，禁止喪葬流程化。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L207-L208",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d85e53f931ce470d",
+      "dedupe_key": "claim_d85e53f931ce470d",
+      "keywords": [
+        "remavaravas",
+        "慰藉",
+        "逝者家庭",
+        "喪葬敏感"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_vasivas_charcoal_banana_leaf_sensitive",
+      "category": "敏感內容治理",
+      "statement_zh": "英文官方資料描述少年年祭前有炭灰與芭蕉葉相關驅邪場景；主站不得將此轉為模仿教學或活動企劃模板。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L209-L212",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_94204b32c66150f4",
+      "dedupe_key": "claim_94204b32c66150f4",
+      "keywords": [
+        "炭灰",
+        "芭蕉葉",
+        "驅邪",
+        "禁止模仿"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_mangayau_survival_training_elder_teaching",
+      "category": "歲時祭儀摘要",
+      "statement_zh": "英文官方資料描述 Mangayau 中長者教導野外生存與狩獵技能；主站可作成年教育摘要，不提供野外狩獵教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L212-L214",
+      "confidence": "high",
+      "sensitivity": "high",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e4c04a5fe025f5a9",
+      "dedupe_key": "claim_e4c04a5fe025f5a9",
+      "keywords": [
+        "Mangayau",
+        "長者教導",
+        "野外生存",
+        "狩獵"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_mangayau_triumphal_arch_summary",
+      "category": "文化場景",
+      "statement_zh": "英文官方資料提到大獵祭結束時女性在村口設凱旋竹門迎接；主站可作文化場景摘要，不生成儀式流程。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L213-L214",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_017ee2a38697c2b9",
+      "dedupe_key": "claim_017ee2a38697c2b9",
+      "keywords": [
+        "凱旋竹門",
+        "Mangayau",
+        "文化場景",
+        "摘要"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_joint_ritual_council_decision",
+      "category": "聯合年祭",
+      "statement_zh": "英文官方資料指出聯合年祭時間由部落會議討論決定；主站公告不得自行推估日期，應由管理員/部落提供最新確認。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L215-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_78f19dc2233f165f",
+      "dedupe_key": "claim_78f19dc2233f165f",
+      "keywords": [
+        "聯合年祭",
+        "部落會議",
+        "日期確認",
+        "公告治理"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_ai_article_date_sensitive_rule",
+      "category": "AI發文治理",
+      "statement_zh": "涉及年度祭儀日期的文章必須區分固定歷史敘述、官方摘要與當年度公告；前端 AI 不得自行產生今年日期。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L185-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_827d4b569a4a4f33",
+      "dedupe_key": "claim_827d4b569a4a4f33",
+      "keywords": [
+        "AI發文",
+        "日期敏感",
+        "年度公告",
+        "治理"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    },
+    {
+      "claim_id": "kg20_no_duplicate_same_source_line_policy",
+      "category": "去重治理",
+      "statement_zh": "同一來源行段可產生多個知識原子，但必須具有不同 claim_id、主題、用途與 canonical_fingerprint，並通過語意相似度檢查。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L113-L216",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_57fd8e05c63c301a",
+      "dedupe_key": "claim_57fd8e05c63c301a",
+      "keywords": [
+        "去重",
+        "來源行段",
+        "知識原子",
+        "相似度"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "主站文章必須保留來源 ID 與 claim ID；不得把公開摘要擴寫成未查證史料。"
+    }
+  ]
+}

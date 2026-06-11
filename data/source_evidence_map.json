@@ -1,0 +1,114 @@
+{
+  "version": "2026-06-11",
+  "note": "line_hint 是本次查核時取得的公開來源行號提示；網站更新後行號可能改變，仍以 source URL 為準。",
+  "evidence_groups": [
+    {
+      "id": "cip_overview_name_origin",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "226-232"
+      ],
+      "covers": [
+        "族群簡介",
+        "Pinuyumayan/Puyuma 區分",
+        "竹生/石生",
+        "主要部落脈絡"
+      ]
+    },
+    {
+      "id": "cip_life_industry_food_clothing",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "236-248"
+      ],
+      "covers": [
+        "產業",
+        "飲食",
+        "服飾",
+        "花環",
+        "編織"
+      ]
+    },
+    {
+      "id": "cip_architecture",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "249-256"
+      ],
+      "covers": [
+        "住屋",
+        "會所",
+        "祖靈屋"
+      ]
+    },
+    {
+      "id": "cip_music_dance_language",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "258-273"
+      ],
+      "covers": [
+        "音樂歌謠",
+        "舞蹈",
+        "語言差異"
+      ]
+    },
+    {
+      "id": "cip_social_organization",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "277-283"
+      ],
+      "covers": [
+        "親屬制度",
+        "部落制度",
+        "年齡階級",
+        "會所"
+      ]
+    },
+    {
+      "id": "cip_belief_rituals",
+      "source_id": "cip_puyuma_profile",
+      "line_ranges": [
+        "287-313"
+      ],
+      "covers": [
+        "傳統信仰",
+        "祭儀時間軸",
+        "婦女除草完工慶",
+        "小米收穫祭",
+        "年祭",
+        "猴祭",
+        "大獵祭",
+        "聯合年祭"
+      ]
+    },
+    {
+      "id": "formosanbank_epark_readme",
+      "source_id": "formosanbank_epark_readme",
+      "line_ranges": [
+        "3-17",
+        "135-147"
+      ],
+      "covers": [
+        "ePark 資料結構",
+        "XML",
+        "正字法處理",
+        "Puyuma subcorpora"
+      ]
+    },
+    {
+      "id": "formosanbank_dialects",
+      "source_id": "formosanbank_dialects_csv",
+      "line_ranges": [
+        "40-43"
+      ],
+      "covers": [
+        "Nanwang_Puyuma",
+        "Zhiben_Puyuma",
+        "Xiqun_Puyuma",
+        "Jianhe_Puyuma"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": "2026-06-11-full-vocab-audio-tts-g2p-ipa",
+  "dialects": [
+    {
+      "code": "38",
+      "key": "puyuma",
+      "name": "Nanwang_Puyuma",
+      "zh": "南王卑南語",
+      "community_label_zh": "南王",
+      "entry_count": 20
+    },
+    {
+      "code": "39",
+      "key": "katratripulr",
+      "name": "Zhiben_Puyuma",
+      "zh": "知本卑南語",
+      "community_label_zh": "知本",
+      "entry_count": 20
+    },
+    {
+      "code": "40",
+      "key": "ulivelivek",
+      "name": "Xiqun_Puyuma",
+      "zh": "西群卑南語",
+      "community_label_zh": "西群／初鹿系",
+      "entry_count": 20
+    },
+    {
+      "code": "41",
+      "key": "kasavakan",
+      "name": "Jianhe_Puyuma",
+      "zh": "建和卑南語",
+      "community_label_zh": "建和",
+      "entry_count": 20
+    }
+  ],
+  "categories": [
+    {
+      "key": "greeting",
+      "label_zh": "問候語",
+      "description_zh": "你好、大家好、早安等入門語句。",
+      "entry_count": 7
+    },
+    {
+      "key": "classroom_school",
+      "label_zh": "教室與學校",
+      "description_zh": "教室指令、學校、上課、族語學習語句。",
+      "entry_count": 56
+    },
+    {
+      "key": "family_community",
+      "label_zh": "家庭與部落",
+      "description_zh": "家庭成員、部落、家屋與身分相關語句。",
+      "entry_count": 3
+    },
+    {
+      "key": "self_introduction",
+      "label_zh": "自我介紹",
+      "description_zh": "姓名、朋友、族群、從哪裡來等語句。",
+      "entry_count": 7
+    },
+    {
+      "key": "daily_conversation",
+      "label_zh": "日常會話",
+      "description_zh": "一般生活會話與互動語句。",
+      "entry_count": 7
+    }
+  ],
+  "ui_filters": [
+    "dialect",
+    "category",
+    "has_audio",
+    "has_ipa",
+    "has_g2p",
+    "source_category"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": "v15",
+  "steps": [
+    "backup database",
+    "run 0012_observability_scaling_governance_v15.sql",
+    "deploy backend code",
+    "publish OpenAPI v15",
+    "run main-site contract tests",
+    "run preview smoke tests",
+    "enqueue full corpus reconciliation only after import completes",
+    "promote payload snapshots after quality gates pass"
+  ],
+  "rollback": [
+    "disable v15 ops endpoints by feature flag",
+    "keep v14 public endpoints active",
+    "do not drop v15 tables during emergency rollback",
+    "restore previous OpenAPI artifact if SDK generation fails"
+  ]
+}

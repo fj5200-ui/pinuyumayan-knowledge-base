@@ -1,0 +1,37 @@
+name: Pinuyumayan Backend Database CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install backend dependencies
+        run: cd backend && npm ci || npm install
+      - name: Typecheck backend
+        run: cd backend && npm run typecheck
+      - name: Validate Python scripts
+        run: python3 -m py_compile scripts/*.py
+      - name: Validate delivery runtime layer
+        run: python3 scripts/validate_delivery_runtime_layer.py
+      - name: Validate production ops layer
+        run: python3 scripts/validate_production_ops_layer.py
+      - name: Validate main-site contract spec
+        run: python3 scripts/verify_main_site_contract.py --skip-network
+      - name: Validate full corpus pipeline metadata
+        run: python3 scripts/validate_full_corpus_pipeline.py
+      - name: Validate package
+        run: python3 scripts/validate_package.py

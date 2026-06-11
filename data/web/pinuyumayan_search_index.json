@@ -1,0 +1,4251 @@
+{
+  "version": "2026-06-11",
+  "document_count": 173,
+  "documents": [
+    {
+      "id": "profile_plain_crossroads",
+      "kind": "fact",
+      "title_zh": "族群簡介",
+      "body_zh": "卑南族位於多族群交會的平原地帶，長期與外界文化接觸，同時仍維繫傳統文化與生活。",
+      "route": "/knowledge/facts/profile_plain_crossroads",
+      "category": "族群簡介",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族位於多族群交會的平原地帶",
+        "同時仍維繫傳統文化與生活",
+        "族群簡介",
+        "長期與外界文化接觸"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "profile_age_house_core",
+      "kind": "fact",
+      "title_zh": "社會制度",
+      "body_zh": "卑南族社會以嚴謹的年齡階級組織與會所制度聞名，這兩者是理解部落公共生活的重要基礎。",
+      "route": "/knowledge/facts/profile_age_house_core",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族社會以嚴謹的年齡階級組織與會所制度聞名",
+        "社會制度",
+        "這兩者是理解部落公共生活的重要基礎"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "profile_annual_rituals_overview",
+      "kind": "fact",
+      "title_zh": "祭儀",
+      "body_zh": "卑南族現今仍有小米除草完工、小米收穫、少年年祭、年祭與大獵祭等年度慶典，其中年祭規模最大。",
+      "route": "/knowledge/facts/profile_annual_rituals_overview",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "其中年祭規模最大",
+        "卑南族現今仍有小米除草完工",
+        "小米收穫",
+        "少年年祭",
+        "年祭與大獵祭等年度慶典",
+        "祭儀"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "name_puyuma_pinuyumayan_distinction",
+      "kind": "fact",
+      "title_zh": "正名",
+      "body_zh": "Puyuma 源自南王部落名稱；為避免族稱與部落名混用，近年有族人提倡以 Pinuyumayan 作為卑南族族稱。",
+      "route": "/knowledge/facts/name_puyuma_pinuyumayan_distinction",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan",
+        "puyuma",
+        "作為卑南族族稱",
+        "正名",
+        "源自南王部落名稱",
+        "為避免族稱與部落名混用",
+        "近年有族人提倡以"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "origin_bamboo_stone",
+      "kind": "fact",
+      "title_zh": "起源敘事",
+      "body_zh": "卑南族起源敘事常見「竹生」與「石生」兩大說法，前者以卑南社/南王為中心，後者以知本社為中心。",
+      "route": "/knowledge/facts/origin_bamboo_stone",
+      "category": "起源敘事",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "前者以卑南社",
+        "卑南族起源敘事常見「竹生」與「石生」兩大說法",
+        "南王為中心",
+        "後者以知本社為中心",
+        "起源敘事"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "settlement_core_area",
+      "kind": "fact",
+      "title_zh": "部落地理",
+      "body_zh": "現代卑南族主要以臺東平原的臺東市、卑南鄉一帶為核心，也有族人居住成功鎮、太麻里鄉或移居都市。",
+      "route": "/knowledge/facts/settlement_core_area",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "也有族人居住成功鎮",
+        "卑南鄉一帶為核心",
+        "太麻里鄉或移居都市",
+        "現代卑南族主要以臺東平原的臺東市",
+        "部落地理"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "community_list_public",
+      "kind": "fact",
+      "title_zh": "部落地理",
+      "body_zh": "公開資料列出知本、建和、南王、寶桑、利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等卑南族主要部落脈絡。",
+      "route": "/knowledge/facts/community_list_public",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "上賓朗",
+        "下賓朗",
+        "公開資料列出知本",
+        "初鹿",
+        "利嘉",
+        "南王",
+        "寶桑",
+        "建和",
+        "泰安",
+        "部落地理",
+        "龍過脈等卑南族主要部落脈絡"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "agriculture_millet_to_rice",
+      "kind": "fact",
+      "title_zh": "產業",
+      "body_zh": "卑南族早期農作以小米為重要作物，後來也有禾、麻、菽、麥等作物；水稻耕作技術在歷史敘事中與卑南王 Pinadray 有關。",
+      "route": "/knowledge/facts/agriculture_millet_to_rice",
+      "category": "產業",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinadray",
+        "卑南族早期農作以小米為重要作物",
+        "後來也有禾",
+        "有關",
+        "水稻耕作技術在歷史敘事中與卑南王",
+        "產業",
+        "菽",
+        "麥等作物",
+        "麻"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "modern_economic_crops",
+      "kind": "fact",
+      "title_zh": "產業",
+      "body_zh": "1960年代以後，部分卑南族地區的作物轉向釋迦、荖葉等經濟作物。",
+      "route": "/knowledge/facts/modern_economic_crops",
+      "category": "產業",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "1960年代以後",
+        "cip_puyuma_profile",
+        "產業",
+        "荖葉等經濟作物",
+        "部分卑南族地區的作物轉向釋迦"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "traditional_food_staples",
+      "kind": "fact",
+      "title_zh": "飲食",
+      "body_zh": "卑南族傳統飲食包含粟、旱稻、甘薯、芋頭，以及狩獵、河川魚貝取得的蛋白質來源。",
+      "route": "/knowledge/facts/traditional_food_staples",
+      "category": "飲食",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以及狩獵",
+        "卑南族傳統飲食包含粟",
+        "旱稻",
+        "河川魚貝取得的蛋白質來源",
+        "甘薯",
+        "芋頭",
+        "飲食"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "festival_food_shell_ginger",
+      "kind": "fact",
+      "title_zh": "飲食",
+      "body_zh": "月桃葉包裹的糯米粉糰、鹹豬肉做成的月桃小米或糯米粿粽，是公開介紹中常見的卑南族慶典食物代表。",
+      "route": "/knowledge/facts/festival_food_shell_ginger",
+      "category": "飲食",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "是公開介紹中常見的卑南族慶典食物代表",
+        "月桃葉包裹的糯米粉糰",
+        "飲食",
+        "鹹豬肉做成的月桃小米或糯米粿粽"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "betel_nut_role",
+      "kind": "fact",
+      "title_zh": "飲食/祭祀",
+      "body_zh": "檳榔在卑南族生活與祭祀中具有重要性，既是日常生活中的食用物，也可作為祭祀物品。",
+      "route": "/knowledge/facts/betel_nut_role",
+      "category": "飲食/祭祀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "也可作為祭祀物品",
+        "既是日常生活中的食用物",
+        "檳榔在卑南族生活與祭祀中具有重要性",
+        "祭祀",
+        "飲食"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clothing_colors_patterns",
+      "kind": "fact",
+      "title_zh": "服飾",
+      "body_zh": "卑南族傳統服飾以麻為材料，常見紅、黃、綠並搭配黑白色，呈現多層次菱形紋路與十字繡花形紋。",
+      "route": "/knowledge/facts/clothing_colors_patterns",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族傳統服飾以麻為材料",
+        "呈現多層次菱形紋路與十字繡花形紋",
+        "常見紅",
+        "服飾",
+        "綠並搭配黑白色",
+        "黃"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clothing_social_identity",
+      "kind": "fact",
+      "title_zh": "服飾/社會身分",
+      "body_zh": "卑南族服飾可區分性別與年齡階級，並表現社會身分與社會關係。",
+      "route": "/knowledge/facts/clothing_social_identity",
+      "category": "服飾/社會身分",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並表現社會身分與社會關係",
+        "卑南族服飾可區分性別與年齡階級",
+        "服飾",
+        "社會身分"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "wreath_social_meaning",
+      "kind": "fact",
+      "title_zh": "服飾/祭典",
+      "body_zh": "祭典花環可用於族人與來賓，花環數量也可象徵友誼與社交關係；但成年會所服役期男子與守喪者只戴蕨類草環。",
+      "route": "/knowledge/facts/wreath_social_meaning",
+      "category": "服飾/祭典",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但成年會所服役期男子與守喪者只戴蕨類草環",
+        "服飾",
+        "祭典",
+        "祭典花環可用於族人與來賓",
+        "花環數量也可象徵友誼與社交關係"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "weaving_bamboo_rattan",
+      "kind": "fact",
+      "title_zh": "工藝",
+      "body_zh": "卑南族擅長藤竹編，公開資料提及方格編、人字編、六角編，以及藤籃、藤包、背簍、竹杯、煙斗與陷阱等物件。",
+      "route": "/knowledge/facts/weaving_bamboo_rattan",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "人字編",
+        "以及藤籃",
+        "公開資料提及方格編",
+        "六角編",
+        "卑南族擅長藤竹編",
+        "工藝",
+        "煙斗與陷阱等物件",
+        "竹杯",
+        "背簍",
+        "藤包"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "shell_ginger_mat",
+      "kind": "fact",
+      "title_zh": "工藝",
+      "body_zh": "月桃葉編織蓆子具冬暖夏涼特性，是卑南族日常躺臥休息使用的編織品之一。",
+      "route": "/knowledge/facts/shell_ginger_mat",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "工藝",
+        "是卑南族日常躺臥休息使用的編織品之一",
+        "月桃葉編織蓆子具冬暖夏涼特性"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "architecture_categories",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "卑南族傳統建築包括住屋、會所、祖靈屋；建築使用權限可分為公有與私有。",
+      "route": "/knowledge/facts/architecture_categories",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族傳統建築包括住屋",
+        "建築",
+        "建築使用權限可分為公有與私有",
+        "會所",
+        "祖靈屋"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "architecture_public_private",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "公有建築可包含會所、祖靈屋、瞭望臺；私有建築可包含住家、穀倉或女巫師專用祖靈屋。",
+      "route": "/knowledge/facts/architecture_public_private",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公有建築可包含會所",
+        "建築",
+        "瞭望臺",
+        "祖靈屋",
+        "私有建築可包含住家",
+        "穀倉或女巫師專用祖靈屋"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "house_structure",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "傳統住屋可為茅草蓋頂、竹片為牆的長方形建築，內部沿牆設編床，前方設爐灶，後方可作穀倉。",
+      "route": "/knowledge/facts/house_structure",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "傳統住屋可為茅草蓋頂",
+        "內部沿牆設編床",
+        "前方設爐灶",
+        "建築",
+        "後方可作穀倉",
+        "竹片為牆的長方形建築"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "mens_house_training_age",
+      "kind": "fact",
+      "title_zh": "會所/年齡階級",
+      "body_zh": "卑南族男子約12、13歲進入會所生活，接受體能、狩獵等教育訓練，直到結婚後才離開。",
+      "route": "/knowledge/facts/mens_house_training_age",
+      "category": "會所/年齡階級",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "13歲進入會所生活",
+        "cip_puyuma_profile",
+        "卑南族男子約12",
+        "年齡階級",
+        "接受體能",
+        "會所",
+        "狩獵等教育訓練",
+        "直到結婚後才離開"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "mens_house_two_types",
+      "kind": "fact",
+      "title_zh": "會所/建築",
+      "body_zh": "卑南族會所依年齡階級可分為少年會所與成年會所，兩者建築形制與生活訓練功能不同。",
+      "route": "/knowledge/facts/mens_house_two_types",
+      "category": "會所/建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "兩者建築形制與生活訓練功能不同",
+        "卑南族會所依年齡階級可分為少年會所與成年會所",
+        "建築",
+        "會所"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ancestral_house_function",
+      "kind": "fact",
+      "title_zh": "祖靈屋",
+      "body_zh": "祖靈屋是氏族祭祀場所，祖先祭祀與生命禮俗多與祖靈屋相關；涉及配置與儀式時需審核後才可公開。",
+      "route": "/knowledge/facts/ancestral_house_function",
+      "category": "祖靈屋",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "涉及配置與儀式時需審核後才可公開",
+        "祖先祭祀與生命禮俗多與祖靈屋相關",
+        "祖靈屋",
+        "祖靈屋是氏族祭祀場所"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "music_poetic_narrative",
+      "kind": "fact",
+      "title_zh": "音樂歌謠",
+      "body_zh": "公開介紹指出卑南族音樂節奏明確、歌詞具敘事性，整體呈現詩歌意境。",
+      "route": "/knowledge/facts/music_poetic_narrative",
+      "category": "音樂歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹指出卑南族音樂節奏明確",
+        "整體呈現詩歌意境",
+        "歌詞具敘事性",
+        "音樂歌謠"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "music_function_categories",
+      "kind": "fact",
+      "title_zh": "音樂歌謠",
+      "body_zh": "卑南族歌謠可依功能分為祭儀歌謠、休閒工作歌謠、社會時代歌謠等類型。",
+      "route": "/knowledge/facts/music_function_categories",
+      "category": "音樂歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "休閒工作歌謠",
+        "卑南族歌謠可依功能分為祭儀歌謠",
+        "社會時代歌謠等類型",
+        "音樂歌謠"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "music_public_figures",
+      "kind": "fact",
+      "title_zh": "現代音樂",
+      "body_zh": "公開介紹列舉陸森寶、胡德夫、陳建年、紀曉君、張惠妹、陳明仁、桑布依等卑南族音樂/演藝相關人物。",
+      "route": "/knowledge/facts/music_public_figures",
+      "category": "現代音樂",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹列舉陸森寶",
+        "張惠妹",
+        "桑布依等卑南族音樂",
+        "演藝相關人物",
+        "現代音樂",
+        "紀曉君",
+        "胡德夫",
+        "陳建年",
+        "陳明仁"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "dance_role_difference",
+      "kind": "fact",
+      "title_zh": "舞蹈",
+      "body_zh": "卑南族舞蹈反映男女與年齡角色差異，跳舞時需遵守個人社會身分所對應的舞步。",
+      "route": "/knowledge/facts/dance_role_difference",
+      "category": "舞蹈",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族舞蹈反映男女與年齡角色差異",
+        "舞蹈",
+        "跳舞時需遵守個人社會身分所對應的舞步"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "shield_dance_spiritual_step",
+      "kind": "fact",
+      "title_zh": "舞蹈",
+      "body_zh": "公開介紹提及猴祭時的舞步、勇士持盾牌的舞步，以及具感恩、賜福、守護部落意義的精神舞步。",
+      "route": "/knowledge/facts/shield_dance_spiritual_step",
+      "category": "舞蹈",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以及具感恩",
+        "公開介紹提及猴祭時的舞步",
+        "勇士持盾牌的舞步",
+        "守護部落意義的精神舞步",
+        "舞蹈",
+        "賜福"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "language_regional_variation",
+      "kind": "fact",
+      "title_zh": "族語",
+      "body_zh": "卑南語因部落區位與族群接觸經驗而有差異，例如知本受排灣族、魯凱族語影響，北部卑南部落受阿美族語發音方式影響。",
+      "route": "/knowledge/facts/language_regional_variation",
+      "category": "族語",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "例如知本受排灣族",
+        "北部卑南部落受阿美族語發音方式影響",
+        "卑南語因部落區位與族群接觸經驗而有差異",
+        "族語",
+        "魯凱族語影響"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "kinship_matrilineal_summary",
+      "kind": "fact",
+      "title_zh": "親屬制度",
+      "body_zh": "卑南族傳統婚姻家庭以母系大家族制為原則，重視母系家系、本家與宗家觀念；現代運作已有變化。",
+      "route": "/knowledge/facts/kinship_matrilineal_summary",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "卑南族傳統婚姻家庭以母系大家族制為原則",
+        "本家與宗家觀念",
+        "現代運作已有變化",
+        "親屬制度",
+        "重視母系家系"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "kinship_inheritance_marriage",
+      "kind": "fact",
+      "title_zh": "親屬制度",
+      "body_zh": "公開介紹指出傳統上家族氏名與家屋財產由長女繼承，居住方式以男子入居女方家庭為原則，但現代從妻居已相當少見。",
+      "route": "/knowledge/facts/kinship_inheritance_marriage",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但現代從妻居已相當少見",
+        "公開介紹指出傳統上家族氏名與家屋財產由長女繼承",
+        "居住方式以男子入居女方家庭為原則",
+        "親屬制度"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "leadership_ayawan_rahan",
+      "kind": "fact",
+      "title_zh": "部落制度",
+      "body_zh": "卑南族傳統部落政治領袖 ayawan 負責重大事件協調；祭司 rahan 掌管祭祀禮儀並需熟知曆法、氣象、歷史、歌謠與舞蹈。",
+      "route": "/knowledge/facts/leadership_ayawan_rahan",
+      "category": "部落制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "ayawan",
+        "cip_puyuma_profile",
+        "rahan",
+        "卑南族傳統部落政治領袖",
+        "掌管祭祀禮儀並需熟知曆法",
+        "歌謠與舞蹈",
+        "歷史",
+        "氣象",
+        "祭司",
+        "負責重大事件協調",
+        "部落制度"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "shaman_role_public_summary",
+      "kind": "fact",
+      "title_zh": "信仰/巫師",
+      "body_zh": "公開介紹指出巫師 na temaramaw 可為男女，與祈福、治病、驅邪等照護需求相關；平台僅可公開摘要，不得產生作法教學。",
+      "route": "/knowledge/facts/shaman_role_public_summary",
+      "category": "信仰/巫師",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "na",
+        "temaramaw",
+        "不得產生作法教學",
+        "信仰",
+        "公開介紹指出巫師",
+        "可為男女",
+        "巫師",
+        "平台僅可公開摘要",
+        "治病",
+        "與祈福",
+        "驅邪等照護需求相關"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "age_grade_training_stages",
+      "kind": "fact",
+      "title_zh": "年齡階級",
+      "body_zh": "公開介紹指出少年約12、13歲進入少年會所，17、18歲轉入成年會所；訓練包含體能、知識、競走、摔角、野外求生與狩獵等。",
+      "route": "/knowledge/facts/age_grade_training_stages",
+      "category": "年齡階級",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "13歲進入少年會所",
+        "17",
+        "18歲轉入成年會所",
+        "cip_puyuma_profile",
+        "公開介紹指出少年約12",
+        "年齡階級",
+        "摔角",
+        "知識",
+        "競走",
+        "訓練包含體能",
+        "野外求生與狩獵等"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "revitalization_1991",
+      "kind": "fact",
+      "title_zh": "文化復振",
+      "body_zh": "公開介紹指出1991年前後，知本、初鹿與南王等部落建新會所、成立青年會或文化工作協會，推動尋根與母語復振。",
+      "route": "/knowledge/facts/revitalization_1991",
+      "category": "文化復振",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹指出1991年前後",
+        "初鹿與南王等部落建新會所",
+        "成立青年會或文化工作協會",
+        "推動尋根與母語復振",
+        "文化復振",
+        "知本"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "spiritual_biruwa",
+      "kind": "fact",
+      "title_zh": "傳統信仰",
+      "body_zh": "卑南族傳統信仰認為自然、天地、四方、祖先與死者之靈等皆存在，神靈稱為 biruwa。",
+      "route": "/knowledge/facts/spiritual_biruwa",
+      "category": "傳統信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "biruwa",
+        "cip_puyuma_profile",
+        "傳統信仰",
+        "卑南族傳統信仰認為自然",
+        "四方",
+        "天地",
+        "祖先與死者之靈等皆存在",
+        "神靈稱為"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "divination_public_summary",
+      "kind": "fact",
+      "title_zh": "傳統信仰",
+      "body_zh": "公開介紹提到卑南族巫術中有占卜行為，並以夢兆與鳥占為主；此內容僅適合摘要，不可操作化。",
+      "route": "/knowledge/facts/divination_public_summary",
+      "category": "傳統信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不可操作化",
+        "並以夢兆與鳥占為主",
+        "傳統信仰",
+        "公開介紹提到卑南族巫術中有占卜行為",
+        "此內容僅適合摘要"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ritual_categories_agriculture_life",
+      "kind": "fact",
+      "title_zh": "祭儀分類",
+      "body_zh": "卑南族傳統信仰祭典可概分為農業相關歲時祭儀，以及按個人生命歷程進行的生命禮俗。",
+      "route": "/knowledge/facts/ritual_categories_agriculture_life",
+      "category": "祭儀分類",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以及按個人生命歷程進行的生命禮俗",
+        "卑南族傳統信仰祭典可概分為農業相關歲時祭儀",
+        "祭儀分類"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ritual_calendar_public",
+      "kind": "fact",
+      "title_zh": "祭儀時間軸",
+      "body_zh": "公開介紹列出3月婦女除草完工慶、4月祖先登陸與發祥地祭祖、7月小米收穫祭、12月年祭等年度脈絡；實際日期仍需依部落公告。",
+      "route": "/knowledge/facts/ritual_calendar_public",
+      "category": "祭儀時間軸",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "12月年祭等年度脈絡",
+        "4月祖先登陸與發祥地祭祖",
+        "7月小米收穫祭",
+        "cip_puyuma_profile",
+        "公開介紹列出3月婦女除草完工慶",
+        "實際日期仍需依部落公告",
+        "祭儀時間軸"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "women_weeding_detail_public",
+      "kind": "fact",
+      "title_zh": "祭儀",
+      "body_zh": "婦女除草完工慶與農事團體、女巫師祈福、婦女團結、荖葉藤禮物、會餐與活動相關；公開平台只作摘要。",
+      "route": "/knowledge/facts/women_weeding_detail_public",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開平台只作摘要",
+        "女巫師祈福",
+        "婦女團結",
+        "婦女除草完工慶與農事團體",
+        "會餐與活動相關",
+        "祭儀",
+        "荖葉藤禮物"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ancestral_landing_rite_public",
+      "kind": "fact",
+      "title_zh": "祭儀",
+      "body_zh": "知本、建和部落每年4月會由祭司與女巫師帶領族人至祖先登陸地祭祀歷代祖先，具有慎終追遠意義。",
+      "route": "/knowledge/facts/ancestral_landing_rite_public",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "具有慎終追遠意義",
+        "建和部落每年4月會由祭司與女巫師帶領族人至祖先登陸地祭祀歷代祖先",
+        "知本",
+        "祭儀"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "millet_harvest_public",
+      "kind": "fact",
+      "title_zh": "祭儀",
+      "body_zh": "小米收穫祭以家族為單位，公開介紹提及3至7天活動、祭司夢占與驅邪、婦女小米田祭品及收割儀式等；平台不公開操作步驟。",
+      "route": "/knowledge/facts/millet_harvest_public",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹提及3至7天活動",
+        "婦女小米田祭品及收割儀式等",
+        "小米收穫祭以家族為單位",
+        "平台不公開操作步驟",
+        "祭儀",
+        "祭司夢占與驅邪"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "swing_millet_symbolism",
+      "kind": "fact",
+      "title_zh": "祭儀/活動",
+      "body_zh": "部分部落在小米收穫祭期間於會所廣場搭設鞦韆架，公開介紹指出盪得越高象徵祈願隔年小米長得更高更多。",
+      "route": "/knowledge/facts/swing_millet_symbolism",
+      "category": "祭儀/活動",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹指出盪得越高象徵祈願隔年小米長得更高更多",
+        "活動",
+        "祭儀",
+        "部分部落在小米收穫祭期間於會所廣場搭設鞦韆架"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "annual_festival_three_weeks",
+      "kind": "fact",
+      "title_zh": "年祭",
+      "body_zh": "年祭是舊年尾、新年頭之間的活動，公開介紹指出其包含猴祭、大獵祭等活動，前後可接近三週。",
+      "route": "/knowledge/facts/annual_festival_three_weeks",
+      "category": "年祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹指出其包含猴祭",
+        "前後可接近三週",
+        "大獵祭等活動",
+        "年祭",
+        "年祭是舊年尾",
+        "新年頭之間的活動"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "monkey_rite_symbolic_modern",
+      "kind": "fact",
+      "title_zh": "少年年祭/猴祭",
+      "body_zh": "猴祭傳統上與少年膽識訓練有關；現代公開活動已改以草猴等象徵物代替真猴。",
+      "route": "/knowledge/facts/monkey_rite_symbolic_modern",
+      "category": "少年年祭/猴祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "少年年祭",
+        "猴祭",
+        "猴祭傳統上與少年膽識訓練有關",
+        "現代公開活動已改以草猴等象徵物代替真猴"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "hunting_rite_modern",
+      "kind": "fact",
+      "title_zh": "大獵祭",
+      "body_zh": "大獵祭與男性成年儀式、野外求生與狩獵技能傳承相關；現代已改為定點活動，公開介紹以12月27日至31日脈絡說明。",
+      "route": "/knowledge/facts/hunting_rite_modern",
+      "category": "大獵祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹以12月27日至31日脈絡說明",
+        "大獵祭",
+        "大獵祭與男性成年儀式",
+        "現代已改為定點活動",
+        "野外求生與狩獵技能傳承相關"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "joint_annual_festival_1982",
+      "kind": "fact",
+      "title_zh": "聯合年祭",
+      "body_zh": "公開介紹指出卑南族各部落自1982年起逐漸發展出聯合年祭，由部落輪流舉辦，成為部落交誼與凝聚民族意識的重要活動。",
+      "route": "/knowledge/facts/joint_annual_festival_1982",
+      "category": "聯合年祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹指出卑南族各部落自1982年起逐漸發展出聯合年祭",
+        "成為部落交誼與凝聚民族意識的重要活動",
+        "由部落輪流舉辦",
+        "聯合年祭"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "formosanbank_epark_structure",
+      "kind": "fact",
+      "title_zh": "族語語料",
+      "body_zh": "FormosanBank 的 ePark 資料包含 ePark_1、ePark_2、ePark_3 等來源資料，並整理為 FormosanBank XML 格式，可作族語教材與音檔索引依據。",
+      "route": "/knowledge/facts/formosanbank_epark_structure",
+      "category": "族語語料",
+      "source_ids": [
+        "formosanbank_epark_readme"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "epark",
+        "epark_1",
+        "epark_2",
+        "epark_3",
+        "formosanbank",
+        "formosanbank_epark_readme",
+        "xml",
+        "並整理為",
+        "可作族語教材與音檔索引依據",
+        "族語語料",
+        "格式",
+        "的",
+        "等來源資料",
+        "資料包含"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "formosanbank_puyuma_dialects",
+      "kind": "fact",
+      "title_zh": "族語語料",
+      "body_zh": "FormosanBank ePark dialects.csv 將 38 至 41 對應為 Nanwang_Puyuma、Zhiben_Puyuma、Xiqun_Puyuma、Jianhe_Puyuma。",
+      "route": "/knowledge/facts/formosanbank_puyuma_dialects",
+      "category": "族語語料",
+      "source_ids": [
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "38",
+        "41",
+        "dialects.csv",
+        "epark",
+        "formosanbank",
+        "formosanbank_dialects_csv",
+        "jianhe_puyuma",
+        "nanwang_puyuma",
+        "xiqun_puyuma",
+        "zhiben_puyuma",
+        "將",
+        "對應為",
+        "族語語料",
+        "至"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "history_japanese_classification_pinuyumayan",
+      "kind": "fact",
+      "title_zh": "歷史分類",
+      "body_zh": "公開資料指出，十九世紀末進入日本殖民統治時期後，卑南族在民族文化分類上被稱為 Pinuyumayan，並因主要有八個部落而被稱為「八社蕃」；平台只能將「八社」作歷史用語，不可作正式分類。",
+      "route": "/knowledge/facts/history_japanese_classification_pinuyumayan",
+      "category": "歷史分類",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan",
+        "不可作正式分類",
+        "並因主要有八個部落而被稱為「八社蕃」",
+        "公開資料指出",
+        "十九世紀末進入日本殖民統治時期後",
+        "卑南族在民族文化分類上被稱為",
+        "平台只能將「八社」作歷史用語",
+        "歷史分類"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "migration_hengchun_sukaro_public",
+      "kind": "fact",
+      "title_zh": "歷史遷徙",
+      "body_zh": "公開資料指出，十八世紀有一部分卑南族氏族遷居恆春半島並發展出稱為「斯卡羅」（sukaro）的歷史脈絡；此主題涉及跨族群歷史，平台應以來源摘要呈現並標記待專題審核。",
+      "route": "/knowledge/facts/migration_hengchun_sukaro_public",
+      "category": "歷史遷徙",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "sukaro",
+        "公開資料指出",
+        "十八世紀有一部分卑南族氏族遷居恆春半島並發展出稱為「斯卡羅」",
+        "平台應以來源摘要呈現並標記待專題審核",
+        "此主題涉及跨族群歷史",
+        "歷史遷徙",
+        "的歷史脈絡"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "urban_migration_modern_fields",
+      "kind": "fact",
+      "title_zh": "現代發展",
+      "body_zh": "公開資料指出，目前有不少卑南族人離開東部到都市發展，並活躍於各領域；平台可建立「都會族人與現代發展」內容分類，但人物條目需另行來源查證。",
+      "route": "/knowledge/facts/urban_migration_modern_fields",
+      "category": "現代發展",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並活躍於各領域",
+        "但人物條目需另行來源查證",
+        "公開資料指出",
+        "平台可建立「都會族人與現代發展」內容分類",
+        "現代發展",
+        "目前有不少卑南族人離開東部到都市發展"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "rice_technology_pinadray_public",
+      "kind": "fact",
+      "title_zh": "產業/歷史",
+      "body_zh": "公開資料將十八世紀水稻耕作技術與器物的引進，連結到卑南王 Pinadray 的歷史敘事；此類歷史人物敘事應標示來源並避免過度擴寫。",
+      "route": "/knowledge/facts/rice_technology_pinadray_public",
+      "category": "產業/歷史",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinadray",
+        "公開資料將十八世紀水稻耕作技術與器物的引進",
+        "此類歷史人物敘事應標示來源並避免過度擴寫",
+        "歷史",
+        "產業",
+        "的歷史敘事",
+        "連結到卑南王"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "male_clothing_parts_public",
+      "kind": "fact",
+      "title_zh": "服飾",
+      "body_zh": "公開資料列出男子盛裝可包含上衣、黑短褲、套褲、檳榔袋、腰袋等，盛裝時也可佩刀並配戴琉璃珠或銀飾；平台應以服飾知識卡呈現，不替代部落穿著規範。",
+      "route": "/knowledge/facts/male_clothing_parts_public",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不替代部落穿著規範",
+        "公開資料列出男子盛裝可包含上衣",
+        "套褲",
+        "平台應以服飾知識卡呈現",
+        "服飾",
+        "檳榔袋",
+        "盛裝時也可佩刀並配戴琉璃珠或銀飾",
+        "腰袋等",
+        "黑短褲"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "young_women_clothing_public",
+      "kind": "fact",
+      "title_zh": "服飾",
+      "body_zh": "公開資料提到適婚年齡少女服飾包括頭巾、上衣、肚兜、腰裙、綁腿等；平台可作為服飾元素資料，但不自行判斷個人身分。",
+      "route": "/knowledge/facts/young_women_clothing_public",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "上衣",
+        "但不自行判斷個人身分",
+        "公開資料提到適婚年齡少女服飾包括頭巾",
+        "平台可作為服飾元素資料",
+        "服飾",
+        "綁腿等",
+        "肚兜",
+        "腰裙"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "leader_priest_shaman_clothing_public",
+      "kind": "fact",
+      "title_zh": "服飾/身分",
+      "body_zh": "公開資料指出傳統領袖與祭師盛裝另有羽冠與肩袋，女靈媒或巫師另有肩飾；平台可作摘要，但不得產生身分判定或儀式穿著教學。",
+      "route": "/knowledge/facts/leader_priest_shaman_clothing_public",
+      "category": "服飾/身分",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但不得產生身分判定或儀式穿著教學",
+        "公開資料指出傳統領袖與祭師盛裝另有羽冠與肩袋",
+        "女靈媒或巫師另有肩飾",
+        "平台可作摘要",
+        "服飾",
+        "身分"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "architecture_private_granary_public",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "公開資料將住家、穀倉或女巫師專用祖靈屋列入私有建築類；涉及女巫師祖靈屋配置與神聖方位時，平台僅可保留摘要並需社群審核。",
+      "route": "/knowledge/facts/architecture_private_granary_public",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料將住家",
+        "平台僅可保留摘要並需社群審核",
+        "建築",
+        "涉及女巫師祖靈屋配置與神聖方位時",
+        "穀倉或女巫師專用祖靈屋列入私有建築類"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "house_status_scale_public",
+      "kind": "fact",
+      "title_zh": "建築/社會身分",
+      "body_zh": "公開資料提到傳統家屋規模大小與屋主社會地位相關，部落領導人直系家族家屋較大，旁系血親與一般家屋較小；平台應避免將此用於現代個人身分判斷。",
+      "route": "/knowledge/facts/house_status_scale_public",
+      "category": "建築/社會身分",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料提到傳統家屋規模大小與屋主社會地位相關",
+        "平台應避免將此用於現代個人身分判斷",
+        "建築",
+        "旁系血親與一般家屋較小",
+        "社會身分",
+        "部落領導人直系家族家屋較大"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "musical_categories_detail_public",
+      "kind": "fact",
+      "title_zh": "音樂歌謠",
+      "body_zh": "公開資料將卑南族歌謠分為祭儀歌謠、休閒工作歌謠與社會時代歌謠，並舉例猴祭、大獵祭、年祭歌謠以及婦女工作團工作歌等。",
+      "route": "/knowledge/facts/musical_categories_detail_public",
+      "category": "音樂歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並舉例猴祭",
+        "休閒工作歌謠與社會時代歌謠",
+        "公開資料將卑南族歌謠分為祭儀歌謠",
+        "大獵祭",
+        "年祭歌謠以及婦女工作團工作歌等",
+        "音樂歌謠"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "dance_social_steps_rule",
+      "kind": "fact",
+      "title_zh": "舞蹈/社會角色",
+      "body_zh": "公開資料指出卑南族舞蹈需依男女與年齡角色遵守相應舞步；平台展示舞蹈時應標示角色脈絡，避免把儀式舞步做成娛樂化教學。",
+      "route": "/knowledge/facts/dance_social_steps_rule",
+      "category": "舞蹈/社會角色",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出卑南族舞蹈需依男女與年齡角色遵守相應舞步",
+        "平台展示舞蹈時應標示角色脈絡",
+        "社會角色",
+        "舞蹈",
+        "避免把儀式舞步做成娛樂化教學"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "language_contact_north_south_public",
+      "kind": "fact",
+      "title_zh": "族語/方言差異",
+      "body_zh": "公開資料指出卑南語因部落區位與族群接觸不同而有差異，例如南面知本部落受排灣族、魯凱族語影響，北面卑南部落受阿美族語發音方式影響。",
+      "route": "/knowledge/facts/language_contact_north_south_public",
+      "category": "族語/方言差異",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "例如南面知本部落受排灣族",
+        "公開資料指出卑南語因部落區位與族群接觸不同而有差異",
+        "北面卑南部落受阿美族語發音方式影響",
+        "方言差異",
+        "族語",
+        "魯凱族語影響"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "kinship_clan_house_categories_public",
+      "kind": "fact",
+      "title_zh": "親屬制度",
+      "body_zh": "公開資料描述卑南族宗族與家屋觀念中，有大宗本家、小宗本家與分家等分類；平台僅可做制度摘要，不應收集或推測現代家族譜系。",
+      "route": "/knowledge/facts/kinship_clan_house_categories_public",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不應收集或推測現代家族譜系",
+        "公開資料描述卑南族宗族與家屋觀念中",
+        "小宗本家與分家等分類",
+        "平台僅可做制度摘要",
+        "有大宗本家",
+        "親屬制度"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "zhiben_three_clans_public_note",
+      "kind": "fact",
+      "title_zh": "親屬制度/部落差異",
+      "body_zh": "公開資料以知本社為例，提到三個氏族、共同祖廟、親族首長與會所等脈絡；此內容涉及部落內部制度，平台只做來源摘要並標記需部落審核。",
+      "route": "/knowledge/facts/zhiben_three_clans_public_note",
+      "category": "親屬制度/部落差異",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料以知本社為例",
+        "共同祖廟",
+        "平台只做來源摘要並標記需部落審核",
+        "提到三個氏族",
+        "此內容涉及部落內部制度",
+        "親屬制度",
+        "親族首長與會所等脈絡",
+        "部落差異"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "rahan_required_knowledge_public",
+      "kind": "fact",
+      "title_zh": "祭司/知識角色",
+      "body_zh": "公開資料指出祭司 rahan 掌管祭祀禮儀，需熟知曆法、氣象、歷史、傳統歌謠與舞蹈；平台可列為角色摘要，不可產生祭儀主持教學。",
+      "route": "/knowledge/facts/rahan_required_knowledge_public",
+      "category": "祭司/知識角色",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "rahan",
+        "不可產生祭儀主持教學",
+        "傳統歌謠與舞蹈",
+        "公開資料指出祭司",
+        "平台可列為角色摘要",
+        "掌管祭祀禮儀",
+        "歷史",
+        "氣象",
+        "知識角色",
+        "祭司",
+        "需熟知曆法"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "age_grade_adult_house_levels_public",
+      "kind": "fact",
+      "title_zh": "年齡階級",
+      "body_zh": "公開資料指出進入成年會所後可分四到五個階級，成員須服從資深長者、負擔較多勞務並學習競走、摔角、野外求生與狩獵等技能。",
+      "route": "/knowledge/facts/age_grade_adult_house_levels_public",
+      "category": "年齡階級",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出進入成年會所後可分四到五個階級",
+        "年齡階級",
+        "成員須服從資深長者",
+        "摔角",
+        "負擔較多勞務並學習競走",
+        "野外求生與狩獵等技能"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "modern_religion_coexistence_public",
+      "kind": "fact",
+      "title_zh": "宗教信仰/現代變遷",
+      "body_zh": "公開資料指出卑南族除傳統信仰外，也有漢族信仰與西方基督宗教並存於現代生活；平台敘述現代宗教時應避免將單一信仰視為全部族人的共同狀態。",
+      "route": "/knowledge/facts/modern_religion_coexistence_public",
+      "category": "宗教信仰/現代變遷",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "也有漢族信仰與西方基督宗教並存於現代生活",
+        "公開資料指出卑南族除傳統信仰外",
+        "宗教信仰",
+        "平台敘述現代宗教時應避免將單一信仰視為全部族人的共同狀態",
+        "現代變遷"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "traditional_religion_revitalization_1981_public",
+      "kind": "fact",
+      "title_zh": "信仰/文化復振",
+      "body_zh": "公開資料指出1981年後因傳統祭典恢復與振興，傳統宗教信仰觀念再度受到重視與討論；平台可作為文化復振時間線節點。",
+      "route": "/knowledge/facts/traditional_religion_revitalization_1981_public",
+      "category": "信仰/文化復振",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "信仰",
+        "傳統宗教信仰觀念再度受到重視與討論",
+        "公開資料指出1981年後因傳統祭典恢復與振興",
+        "平台可作為文化復振時間線節點",
+        "文化復振"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "millet_harvest_swing_public_rule",
+      "kind": "fact",
+      "title_zh": "祭儀/公開活動",
+      "body_zh": "公開資料提到部分部落在小米收穫祭時於會所廣場搭鞦韆架，並賦予為農作祈福的象徵意義；平台可作文化活動介紹，但不替代部落祭儀說明。",
+      "route": "/knowledge/facts/millet_harvest_swing_public_rule",
+      "category": "祭儀/公開活動",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並賦予為農作祈福的象徵意義",
+        "但不替代部落祭儀說明",
+        "公開活動",
+        "公開資料提到部分部落在小米收穫祭時於會所廣場搭鞦韆架",
+        "平台可作文化活動介紹",
+        "祭儀"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "annual_festival_preparation_public",
+      "kind": "fact",
+      "title_zh": "年祭/準備工作",
+      "body_zh": "公開資料指出年祭前族人會編織花環、準備食物與釀酒，部落周圍也會設立路障並整修會所、設立祭壇與刺猴祭壇；平台需避免公開禁忌或操作細節。",
+      "route": "/knowledge/facts/annual_festival_preparation_public",
+      "category": "年祭/準備工作",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出年祭前族人會編織花環",
+        "平台需避免公開禁忌或操作細節",
+        "年祭",
+        "準備工作",
+        "準備食物與釀酒",
+        "設立祭壇與刺猴祭壇",
+        "部落周圍也會設立路障並整修會所"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "monkey_rite_exorcism_public",
+      "kind": "fact",
+      "title_zh": "少年年祭/猴祭",
+      "body_zh": "公開資料指出傳統猴祭前一晚，青少年有赤裸上身、塗炭灰、持芭蕉葉到各戶驅除邪魔的脈絡；平台只可摘要，不可做成仿作或教學內容。",
+      "route": "/knowledge/facts/monkey_rite_exorcism_public",
+      "category": "少年年祭/猴祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不可做成仿作或教學內容",
+        "公開資料指出傳統猴祭前一晚",
+        "塗炭灰",
+        "少年年祭",
+        "平台只可摘要",
+        "持芭蕉葉到各戶驅除邪魔的脈絡",
+        "猴祭",
+        "青少年有赤裸上身"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "hunting_rite_return_ceremony_public",
+      "kind": "fact",
+      "title_zh": "大獵祭",
+      "body_zh": "公開資料指出大獵祭活動結束時，部落婦女會於部落外以竹子搭建凱旋門等待，男子回部落後由婦女更換禮服並共同慶功與慰問喪家。",
+      "route": "/knowledge/facts/hunting_rite_return_ceremony_public",
+      "category": "大獵祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出大獵祭活動結束時",
+        "大獵祭",
+        "男子回部落後由婦女更換禮服並共同慶功與慰問喪家",
+        "部落婦女會於部落外以竹子搭建凱旋門等待"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "joint_festival_decision_body_public",
+      "kind": "fact",
+      "title_zh": "聯合年祭",
+      "body_zh": "公開資料指出聯合年祭舉辦時間不定，由部落聯合會議決定，並由卑南族各部落輪流舉辦；平台不得自行公告日期，應連結部落或官方公告。",
+      "route": "/knowledge/facts/joint_festival_decision_body_public",
+      "category": "聯合年祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並由卑南族各部落輪流舉辦",
+        "公開資料指出聯合年祭舉辦時間不定",
+        "平台不得自行公告日期",
+        "應連結部落或官方公告",
+        "由部落聯合會議決定",
+        "聯合年祭"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "formosanbank_epark_audio_failed_handling",
+      "kind": "fact",
+      "title_zh": "族語語料/音檔治理",
+      "body_zh": "FormosanBank ePark README 說明有 failed_audio.csv 與 update_audio.py，用於記錄與移除下載失敗音檔相關標籤；平台建立語音 manifest 時應保留 failed/skipped 狀態，不可假設所有音檔都有效。",
+      "route": "/knowledge/facts/formosanbank_epark_audio_failed_handling",
+      "category": "族語語料/音檔治理",
+      "source_ids": [
+        "formosanbank_epark_readme"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "epark",
+        "failed",
+        "failed_audio.csv",
+        "formosanbank",
+        "formosanbank_epark_readme",
+        "manifest",
+        "readme",
+        "skipped",
+        "update_audio.py",
+        "不可假設所有音檔都有效",
+        "平台建立語音",
+        "族語語料",
+        "時應保留",
+        "狀態",
+        "用於記錄與移除下載失敗音檔相關標籤",
+        "與",
+        "說明有",
+        "音檔治理"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "formosanbank_puyuma_orthography_note",
+      "kind": "fact",
+      "title_zh": "族語語料/正字法",
+      "body_zh": "FormosanBank ePark README 指出九階教材的 Puyuma 使用 Ortho94 轉換表，其他多數 Puyuma 子語料常見 Ortho113；平台匯入族語資料時應保留來源正字法欄位與標準化版本欄位。",
+      "route": "/knowledge/facts/formosanbank_puyuma_orthography_note",
+      "category": "族語語料/正字法",
+      "source_ids": [
+        "formosanbank_epark_readme"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "epark",
+        "formosanbank",
+        "formosanbank_epark_readme",
+        "ortho113",
+        "ortho94",
+        "puyuma",
+        "readme",
+        "使用",
+        "其他多數",
+        "子語料常見",
+        "平台匯入族語資料時應保留來源正字法欄位與標準化版本欄位",
+        "指出九階教材的",
+        "族語語料",
+        "正字法",
+        "轉換表"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "profile_shaman_reputation_public",
+      "kind": "fact",
+      "title_zh": "族群簡介/信仰",
+      "body_zh": "公開資料形容卑南族巫法或靈術興盛，且在鄰近民族間具有名聲；網站應只作文化現象摘要，不得產生作法教學。",
+      "route": "/knowledge/facts/profile_shaman_reputation_public",
+      "category": "族群簡介/信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不得產生作法教學",
+        "且在鄰近民族間具有名聲",
+        "信仰",
+        "公開資料形容卑南族巫法或靈術興盛",
+        "族群簡介",
+        "網站應只作文化現象摘要"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "name_historical_transliterations_public",
+      "kind": "fact",
+      "title_zh": "正名",
+      "body_zh": "公開資料列出「彪馬」、「漂馬」、「普悠馬」等歷史音譯寫法；平台可作歷史註解，但正式名稱仍使用「卑南族／Pinuyumayan」。",
+      "route": "/knowledge/facts/name_historical_transliterations_public",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan」",
+        "「普悠馬」等歷史音譯寫法",
+        "「漂馬」",
+        "但正式名稱仍使用「卑南族",
+        "公開資料列出「彪馬」",
+        "平台可作歷史註解",
+        "正名"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "history_puyuma_power_72_public_claim",
+      "kind": "fact",
+      "title_zh": "歷史敘事",
+      "body_zh": "公開資料以「傳說」脈絡描述卑南王時代曾影響東部多個部落；平台應標明為公開敘事或傳說脈絡，不作未考證的歷史定論。",
+      "route": "/knowledge/facts/history_puyuma_power_72_public_claim",
+      "category": "歷史敘事",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不作未考證的歷史定論",
+        "公開資料以「傳說」脈絡描述卑南王時代曾影響東部多個部落",
+        "平台應標明為公開敘事或傳說脈絡",
+        "歷史敘事"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "community_admin_taitung_city_public",
+      "kind": "fact",
+      "title_zh": "部落地理",
+      "body_zh": "公開資料將知本、建和、南王、寶桑列為臺東市相關卑南族部落脈絡。",
+      "route": "/knowledge/facts/community_admin_taitung_city_public",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料將知本",
+        "南王",
+        "寶桑列為臺東市相關卑南族部落脈絡",
+        "建和",
+        "部落地理"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "community_admin_beinan_public",
+      "kind": "fact",
+      "title_zh": "部落地理",
+      "body_zh": "公開資料將利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等列入卑南鄉相關卑南族部落脈絡。",
+      "route": "/knowledge/facts/community_admin_beinan_public",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "上賓朗",
+        "下賓朗",
+        "公開資料將利嘉",
+        "初鹿",
+        "泰安",
+        "部落地理",
+        "龍過脈等列入卑南鄉相關卑南族部落脈絡"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "diaspora_urban_development_public",
+      "kind": "fact",
+      "title_zh": "現代發展",
+      "body_zh": "公開資料提到不少卑南族人離開東部到都市發展，並活躍於不同領域。",
+      "route": "/knowledge/facts/diaspora_urban_development_public",
+      "category": "現代發展",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並活躍於不同領域",
+        "公開資料提到不少卑南族人離開東部到都市發展",
+        "現代發展"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "industry_japanese_period_rice_public",
+      "kind": "fact",
+      "title_zh": "產業",
+      "body_zh": "日本殖民統治時期，水稻受政策鼓勵與支持，耕作面積增加。",
+      "route": "/knowledge/facts/industry_japanese_period_rice_public",
+      "category": "產業",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "日本殖民統治時期",
+        "水稻受政策鼓勵與支持",
+        "產業",
+        "耕作面積增加"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "food_festival_betel_and_shell_ginger_public",
+      "kind": "fact",
+      "title_zh": "飲食/祭祀",
+      "body_zh": "月桃、糯米、鹹豬肉、檳榔等可作為飲食與祭祀文化的公開介紹素材；涉及祭儀操作時仍需摘要化。",
+      "route": "/knowledge/facts/food_festival_betel_and_shell_ginger_public",
+      "category": "飲食/祭祀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "月桃",
+        "檳榔等可作為飲食與祭祀文化的公開介紹素材",
+        "涉及祭儀操作時仍需摘要化",
+        "祭祀",
+        "糯米",
+        "飲食",
+        "鹹豬肉"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clothing_youth_male_public",
+      "kind": "fact",
+      "title_zh": "服飾",
+      "body_zh": "公開資料指出男子服裝依年齡階級區別，青年服飾較華麗，並可包含上衣、黑短褲、套褲、檳榔袋、腰袋等。",
+      "route": "/knowledge/facts/clothing_youth_male_public",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並可包含上衣",
+        "公開資料指出男子服裝依年齡階級區別",
+        "套褲",
+        "服飾",
+        "檳榔袋",
+        "腰袋等",
+        "青年服飾較華麗",
+        "黑短褲"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clothing_eligible_young_women_public",
+      "kind": "fact",
+      "title_zh": "服飾",
+      "body_zh": "公開資料指出適婚年齡少女服裝可包含頭巾、上衣、肚兜、腰裙與綁腿等。",
+      "route": "/knowledge/facts/clothing_eligible_young_women_public",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "上衣",
+        "公開資料指出適婚年齡少女服裝可包含頭巾",
+        "服飾",
+        "肚兜",
+        "腰裙與綁腿等"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clothing_elder_priest_shaman_marks_public",
+      "kind": "fact",
+      "title_zh": "服飾/身分",
+      "body_zh": "公開資料提及傳統領袖、祭師、女靈媒在盛裝或肩飾上有身分差異；平台可作身分符號摘要，不應仿製或戲劇化神職。",
+      "route": "/knowledge/facts/clothing_elder_priest_shaman_marks_public",
+      "category": "服飾/身分",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不應仿製或戲劇化神職",
+        "公開資料提及傳統領袖",
+        "女靈媒在盛裝或肩飾上有身分差異",
+        "平台可作身分符號摘要",
+        "服飾",
+        "祭師",
+        "身分"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "weaving_technique_names_public",
+      "kind": "fact",
+      "title_zh": "工藝",
+      "body_zh": "公開資料列出卑南族藤竹編技法包含方格編、人字編、六角編等。",
+      "route": "/knowledge/facts/weaving_technique_names_public",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "人字編",
+        "公開資料列出卑南族藤竹編技法包含方格編",
+        "六角編等",
+        "工藝"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "weaving_daily_objects_public",
+      "kind": "fact",
+      "title_zh": "工藝",
+      "body_zh": "藤籃、藤包、背簍、月桃葉蓆、竹杯、煙斗與捕魚獵獸陷阱等，是公開資料可支持的生活工藝例子。",
+      "route": "/knowledge/facts/weaving_daily_objects_public",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "工藝",
+        "是公開資料可支持的生活工藝例子",
+        "月桃葉蓆",
+        "煙斗與捕魚獵獸陷阱等",
+        "竹杯",
+        "背簍",
+        "藤包",
+        "藤籃"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "architecture_mens_house_southeast_asia_style_public",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "公開資料指出卑南族男子會所為高架干欄式建築，具有東南亞文化風格。",
+      "route": "/knowledge/facts/architecture_mens_house_southeast_asia_style_public",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出卑南族男子會所為高架干欄式建築",
+        "具有東南亞文化風格",
+        "建築"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "house_layout_public",
+      "kind": "fact",
+      "title_zh": "建築",
+      "body_zh": "公開資料描述傳統住屋可有長面兩門、短邊窗戶、沿牆編床、前方爐灶與後牆穀倉等配置。",
+      "route": "/knowledge/facts/house_layout_public",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料描述傳統住屋可有長面兩門",
+        "前方爐灶與後牆穀倉等配置",
+        "建築",
+        "沿牆編床",
+        "短邊窗戶"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "mens_house_youth_architecture_public",
+      "kind": "fact",
+      "title_zh": "會所/建築",
+      "body_zh": "少年會所公開描述包含高約兩層樓、樓梯進出、傘狀茅草屋頂、圓形走廊與中央火爐等特徵。",
+      "route": "/knowledge/facts/mens_house_youth_architecture_public",
+      "category": "會所/建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "傘狀茅草屋頂",
+        "圓形走廊與中央火爐等特徵",
+        "少年會所公開描述包含高約兩層樓",
+        "建築",
+        "會所",
+        "樓梯進出"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "mens_house_adult_architecture_public",
+      "kind": "fact",
+      "title_zh": "會所/建築",
+      "body_zh": "成年會所公開描述為茅草頂、竹片牆、橢圓或長方形建築，內部有竹床與中央爐灶。",
+      "route": "/knowledge/facts/mens_house_adult_architecture_public",
+      "category": "會所/建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "內部有竹床與中央爐灶",
+        "建築",
+        "成年會所公開描述為茅草頂",
+        "會所",
+        "橢圓或長方形建築",
+        "竹片牆"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ancestral_house_ritual_space_public_sensitive",
+      "kind": "fact",
+      "title_zh": "祖靈屋",
+      "body_zh": "祖靈屋被公開描述為氏族祭祀與生命禮俗相關場所；平台只能介紹其文化意義，不公開內部儀式細節。",
+      "route": "/knowledge/facts/ancestral_house_ritual_space_public_sensitive",
+      "category": "祖靈屋",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不公開內部儀式細節",
+        "平台只能介紹其文化意義",
+        "祖靈屋",
+        "祖靈屋被公開描述為氏族祭祀與生命禮俗相關場所"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "songs_ritual_gender_role_public",
+      "kind": "fact",
+      "title_zh": "歌謠",
+      "body_zh": "公開資料指出祭儀歌謠在祭典時演唱，且依部落角色與身分有各自歌曲。",
+      "route": "/knowledge/facts/songs_ritual_gender_role_public",
+      "category": "歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "且依部落角色與身分有各自歌曲",
+        "公開資料指出祭儀歌謠在祭典時演唱",
+        "歌謠"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "music_modern_public_figures_list_only",
+      "kind": "fact",
+      "title_zh": "音樂/人物",
+      "body_zh": "公開資料列名陸森寶、胡德夫、陳建年、紀曉君、張惠妹、陳明仁、桑布依等與卑南族音樂文化活力相關的人物；個別生平需另查來源。",
+      "route": "/knowledge/facts/music_modern_public_figures_list_only",
+      "category": "音樂/人物",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "人物",
+        "個別生平需另查來源",
+        "公開資料列名陸森寶",
+        "張惠妹",
+        "桑布依等與卑南族音樂文化活力相關的人物",
+        "紀曉君",
+        "胡德夫",
+        "陳建年",
+        "陳明仁",
+        "音樂"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "dance_personal_social_steps_public",
+      "kind": "fact",
+      "title_zh": "舞蹈",
+      "body_zh": "公開資料指出卑南族舞蹈反映性別與年齡角色差異，跳舞時需遵守個人社會舞步。",
+      "route": "/knowledge/facts/dance_personal_social_steps_public",
+      "category": "舞蹈",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出卑南族舞蹈反映性別與年齡角色差異",
+        "舞蹈",
+        "跳舞時需遵守個人社會舞步"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "language_contact_south_north_public_detail",
+      "kind": "fact",
+      "title_zh": "語言",
+      "body_zh": "公開資料描述知本等南面部落受排灣族、魯凱族語影響較明顯，北面卑南部落則受阿美族語發音方式與漢語互動影響。",
+      "route": "/knowledge/facts/language_contact_south_north_public_detail",
+      "category": "語言",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料描述知本等南面部落受排灣族",
+        "北面卑南部落則受阿美族語發音方式與漢語互動影響",
+        "語言",
+        "魯凱族語影響較明顯"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "clan_house_categories_public",
+      "kind": "fact",
+      "title_zh": "親屬制度",
+      "body_zh": "公開資料說明宗族中可區分大宗本家、小宗本家與分家等概念；平台不得推測或公開特定家族資料。",
+      "route": "/knowledge/facts/clan_house_categories_public",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料說明宗族中可區分大宗本家",
+        "小宗本家與分家等概念",
+        "平台不得推測或公開特定家族資料",
+        "親屬制度"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "traditional_marriage_current_change_public",
+      "kind": "fact",
+      "title_zh": "婚姻制度",
+      "body_zh": "公開資料指出傳統婚姻以從妻居與長女繼承為特徵之一，但現今傳統從妻居婚姻方式已較少見。",
+      "route": "/knowledge/facts/traditional_marriage_current_change_public",
+      "category": "婚姻制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但現今傳統從妻居婚姻方式已較少見",
+        "公開資料指出傳統婚姻以從妻居與長女繼承為特徵之一",
+        "婚姻制度"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "rahan_calendar_weather_history_public",
+      "kind": "fact",
+      "title_zh": "祭司/社會制度",
+      "body_zh": "公開資料描述祭司需熟知曆法、氣象、歷史、傳統歌謠與舞蹈，作為農耕與生活指引；平台可摘要，不可替代族內指導。",
+      "route": "/knowledge/facts/rahan_calendar_weather_history_public",
+      "category": "祭司/社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不可替代族內指導",
+        "作為農耕與生活指引",
+        "傳統歌謠與舞蹈",
+        "公開資料描述祭司需熟知曆法",
+        "平台可摘要",
+        "歷史",
+        "氣象",
+        "社會制度",
+        "祭司"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "age_grade_training_skills_public",
+      "kind": "fact",
+      "title_zh": "年齡階級/會所",
+      "body_zh": "公開資料列出會所訓練可包含體能、知識、競走、摔角、野外求生與狩獵等技能；平台不得把它改寫成訓練手冊。",
+      "route": "/knowledge/facts/age_grade_training_skills_public",
+      "category": "年齡階級/會所",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料列出會所訓練可包含體能",
+        "平台不得把它改寫成訓練手冊",
+        "年齡階級",
+        "摔角",
+        "會所",
+        "知識",
+        "競走",
+        "野外求生與狩獵等技能"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "belief_biruwa_scope_public",
+      "kind": "fact",
+      "title_zh": "信仰",
+      "body_zh": "公開資料說明卑南族傳統信仰中的 biruwa 可涵蓋大自然、天地、四方、造人、祖先與死者之靈等範疇。",
+      "route": "/knowledge/facts/belief_biruwa_scope_public",
+      "category": "信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "biruwa",
+        "cip_puyuma_profile",
+        "信仰",
+        "公開資料說明卑南族傳統信仰中的",
+        "可涵蓋大自然",
+        "四方",
+        "天地",
+        "祖先與死者之靈等範疇",
+        "造人"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "belief_modern_religions_public",
+      "kind": "fact",
+      "title_zh": "信仰/現代生活",
+      "body_zh": "公開資料指出卑南族現代生活中除傳統信仰外，也可見漢族信仰與西方基督宗教並存。",
+      "route": "/knowledge/facts/belief_modern_religions_public",
+      "category": "信仰/現代生活",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "也可見漢族信仰與西方基督宗教並存",
+        "信仰",
+        "公開資料指出卑南族現代生活中除傳統信仰外",
+        "現代生活"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ritual_two_categories_public",
+      "kind": "fact",
+      "title_zh": "祭儀分類",
+      "body_zh": "公開資料將卑南族傳統信仰祭典活動概分為農業相關歲時祭儀與個人生命歷程相關生命禮俗。",
+      "route": "/knowledge/facts/ritual_two_categories_public",
+      "category": "祭儀分類",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料將卑南族傳統信仰祭典活動概分為農業相關歲時祭儀與個人生命歷程相關生命禮俗",
+        "祭儀分類"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "ritual_calendar_months_public",
+      "kind": "fact",
+      "title_zh": "祭儀時間軸",
+      "body_zh": "公開資料將婦女除草完工慶列於3月、祖先登陸與發祥地祭祖列於4月、小米收穫祭列於7月、年祭列於12月；實際日期仍應以部落公告為準。",
+      "route": "/knowledge/facts/ritual_calendar_months_public",
+      "category": "祭儀時間軸",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料將婦女除草完工慶列於3月",
+        "實際日期仍應以部落公告為準",
+        "小米收穫祭列於7月",
+        "年祭列於12月",
+        "祖先登陸與發祥地祭祖列於4月",
+        "祭儀時間軸"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "millet_harvest_family_unit_public",
+      "kind": "fact",
+      "title_zh": "小米收穫祭",
+      "body_zh": "公開資料指出小米收穫祭可由家族為單位，活動為期3到7天；儀式細節只能摘要化。",
+      "route": "/knowledge/facts/millet_harvest_family_unit_public",
+      "category": "小米收穫祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "儀式細節只能摘要化",
+        "公開資料指出小米收穫祭可由家族為單位",
+        "小米收穫祭",
+        "活動為期3到7天"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "annual_festival_roadblocks_altars_public_sensitive",
+      "kind": "fact",
+      "title_zh": "年祭",
+      "body_zh": "公開資料提到年祭前可能有花環、食物、釀酒、路障、整修會所、祭壇等準備；平台只可作概述，不得變成辦理流程。",
+      "route": "/knowledge/facts/annual_festival_roadblocks_altars_public_sensitive",
+      "category": "年祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不得變成辦理流程",
+        "公開資料提到年祭前可能有花環",
+        "平台只可作概述",
+        "年祭",
+        "整修會所",
+        "祭壇等準備",
+        "路障",
+        "釀酒",
+        "食物"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "monkey_rite_grass_monkey_public",
+      "kind": "fact",
+      "title_zh": "猴祭",
+      "body_zh": "公開資料說明現代刺猴儀式已改以草猴代替真猴；平台需避免鼓勵傷害動物或仿作。",
+      "route": "/knowledge/facts/monkey_rite_grass_monkey_public",
+      "category": "猴祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料說明現代刺猴儀式已改以草猴代替真猴",
+        "平台需避免鼓勵傷害動物或仿作",
+        "猴祭"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "hunting_rite_three_day_public",
+      "kind": "fact",
+      "title_zh": "大獵祭",
+      "body_zh": "公開資料描述現代大獵祭已改為定點活動，並於12月下旬連續數日進行野地紮營與技能教導；實際日期與內容以部落公告為準。",
+      "route": "/knowledge/facts/hunting_rite_three_day_public",
+      "category": "大獵祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並於12月下旬連續數日進行野地紮營與技能教導",
+        "公開資料描述現代大獵祭已改為定點活動",
+        "大獵祭",
+        "實際日期與內容以部落公告為準"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "joint_festival_rotating_public",
+      "kind": "fact",
+      "title_zh": "聯合年祭",
+      "body_zh": "公開資料指出聯合年祭自1982年前後逐漸發展，由各部落輪流舉辦，包含歌舞與競賽等公開活動。",
+      "route": "/knowledge/facts/joint_festival_rotating_public",
+      "category": "聯合年祭",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料指出聯合年祭自1982年前後逐漸發展",
+        "包含歌舞與競賽等公開活動",
+        "由各部落輪流舉辦",
+        "聯合年祭"
+      ],
+      "extra": {}
+    },
+    {
+      "id": "faq-001-pinuyumayan-name",
+      "kind": "faq",
+      "title_zh": "Pinuyumayan 是什麼意思？",
+      "body_zh": "Pinuyumayan 可作為卑南族整體族稱，用來避免把南王部落名稱 Puyuma 與整個卑南族混用。網站正式名稱建議使用「卑南族／Pinuyumayan」。",
+      "route": "/about/name",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan",
+        "pinuyumayan」",
+        "puyuma",
+        "可作為卑南族整體族稱",
+        "是什麼意思",
+        "用來避免把南王部落名稱",
+        "網站正式名稱建議使用「卑南族",
+        "與整個卑南族混用"
+      ],
+      "extra": {
+        "tags": [
+          "Pinuyumayan",
+          "Puyuma",
+          "族名"
+        ]
+      }
+    },
+    {
+      "id": "faq-002-puyuma-usage",
+      "kind": "faq",
+      "title_zh": "Puyuma 可以直接代表整個卑南族嗎？",
+      "body_zh": "不建議。Puyuma 可指南王部落，也常見於卑南語英文語境；平台正式族稱應使用「卑南族／Pinuyumayan」。",
+      "route": "/knowledge/faq",
+      "category": "正名",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan」",
+        "puyuma",
+        "不建議",
+        "也常見於卑南語英文語境",
+        "可以直接代表整個卑南族嗎",
+        "可指南王部落",
+        "平台正式族稱應使用「卑南族"
+      ],
+      "extra": {
+        "tags": [
+          "Puyuma",
+          "南王",
+          "正名"
+        ]
+      }
+    },
+    {
+      "id": "faq-003-eight-ten-tribes",
+      "kind": "faq",
+      "title_zh": "網站要寫八社還是十社？",
+      "body_zh": "前台正式分類使用「卑南族十社」。八社可作歷史用語或文獻脈絡，不應作為現代平台主分類。",
+      "route": "/knowledge/faq",
+      "category": "十社",
+      "source_ids": [
+        "cip_puyuma_profile",
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "verification_pass_2026_06_11",
+        "不應作為現代平台主分類",
+        "八社可作歷史用語或文獻脈絡",
+        "前台正式分類使用「卑南族十社」",
+        "網站要寫八社還是十社"
+      ],
+      "extra": {
+        "tags": [
+          "十社",
+          "八社",
+          "分類"
+        ]
+      }
+    },
+    {
+      "id": "faq-004-core-area",
+      "kind": "faq",
+      "title_zh": "卑南族主要分布在哪裡？",
+      "body_zh": "公開資料指出，卑南族主要以臺東平原的臺東市、卑南鄉一帶為核心，也有族人居住成功鎮、太麻里鄉或移居都市。",
+      "route": "/knowledge/faq",
+      "category": "部落地理",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "也有族人居住成功鎮",
+        "公開資料指出",
+        "卑南族主要以臺東平原的臺東市",
+        "卑南族主要分布在哪裡",
+        "卑南鄉一帶為核心",
+        "太麻里鄉或移居都市"
+      ],
+      "extra": {
+        "tags": [
+          "臺東",
+          "卑南鄉",
+          "臺東市"
+        ]
+      }
+    },
+    {
+      "id": "faq-005-origin-stories",
+      "kind": "faq",
+      "title_zh": "竹生與石生是什麼？",
+      "body_zh": "公開資料將卑南族起源敘事概括為竹生與石生兩種說法，竹生傳說以卑南社／南王為中心，石生傳說以知本社為中心。此類內容宜標示為起源敘事，不應改寫成唯一歷史定論。",
+      "route": "/knowledge/faq",
+      "category": "起源敘事",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不應改寫成唯一歷史定論",
+        "公開資料將卑南族起源敘事概括為竹生與石生兩種說法",
+        "南王為中心",
+        "此類內容宜標示為起源敘事",
+        "石生傳說以知本社為中心",
+        "竹生傳說以卑南社",
+        "竹生與石生是什麼"
+      ],
+      "extra": {
+        "tags": [
+          "竹生",
+          "石生",
+          "起源"
+        ]
+      }
+    },
+    {
+      "id": "faq-006-main-rituals",
+      "kind": "faq",
+      "title_zh": "卑南族主要祭儀有哪些？",
+      "body_zh": "公開資料列出婦女除草完工慶、祖先登陸與發祥地祭祖、小米收穫祭、年祭、猴祭、大獵祭與聯合年祭等。網站只做公開摘要，實際日期與細節以部落公告為準。",
+      "route": "/knowledge/faq",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料列出婦女除草完工慶",
+        "卑南族主要祭儀有哪些",
+        "大獵祭與聯合年祭等",
+        "實際日期與細節以部落公告為準",
+        "小米收穫祭",
+        "年祭",
+        "猴祭",
+        "祖先登陸與發祥地祭祖",
+        "網站只做公開摘要"
+      ],
+      "extra": {
+        "tags": [
+          "祭儀",
+          "年祭",
+          "小米收穫祭"
+        ]
+      }
+    },
+    {
+      "id": "faq-007-calendar",
+      "kind": "faq",
+      "title_zh": "可以直接公布祭儀日期嗎？",
+      "body_zh": "不可以自行推測。公開資料提供月份脈絡，例如3月、4月、7月、12月等，但各部落實際日期仍應依當年度部落公告或主辦單位資訊。",
+      "route": "/knowledge/faq",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "12月等",
+        "4月",
+        "7月",
+        "cip_puyuma_profile",
+        "不可以自行推測",
+        "但各部落實際日期仍應依當年度部落公告或主辦單位資訊",
+        "例如3月",
+        "公開資料提供月份脈絡",
+        "可以直接公布祭儀日期嗎"
+      ],
+      "extra": {
+        "tags": [
+          "日期",
+          "公告",
+          "祭儀"
+        ]
+      }
+    },
+    {
+      "id": "faq-008-monkey-rite",
+      "kind": "faq",
+      "title_zh": "猴祭現在還會刺真猴嗎？",
+      "body_zh": "公開資料說明，隨著時代與社會環境變遷，現代刺猴儀式已改以草猴代替真猴。網站應避免仿作或鼓勵傷害動物。",
+      "route": "/knowledge/faq",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開資料說明",
+        "猴祭現在還會刺真猴嗎",
+        "現代刺猴儀式已改以草猴代替真猴",
+        "網站應避免仿作或鼓勵傷害動物",
+        "隨著時代與社會環境變遷"
+      ],
+      "extra": {
+        "tags": [
+          "猴祭",
+          "草猴",
+          "保育"
+        ]
+      }
+    },
+    {
+      "id": "faq-009-hunting-rite",
+      "kind": "faq",
+      "title_zh": "大獵祭可以寫成狩獵教學嗎？",
+      "body_zh": "不可以。大獵祭可作文化與成年禮脈絡的公開摘要，但不應寫成狩獵、陷阱、野外求生或儀式操作手冊。",
+      "route": "/knowledge/faq",
+      "category": "祭儀",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不可以",
+        "但不應寫成狩獵",
+        "大獵祭可以寫成狩獵教學嗎",
+        "大獵祭可作文化與成年禮脈絡的公開摘要",
+        "野外求生或儀式操作手冊",
+        "陷阱"
+      ],
+      "extra": {
+        "tags": [
+          "大獵祭",
+          "狩獵",
+          "安全"
+        ]
+      }
+    },
+    {
+      "id": "faq-010-age-grade",
+      "kind": "faq",
+      "title_zh": "卑南族年齡階級制度是什麼？",
+      "body_zh": "公開資料指出卑南族男子在少年時期進入會所，接受體能、知識與技能訓練，並依階段進入少年會所與成年會所。網站可介紹制度概念，不公開細節訓練流程。",
+      "route": "/knowledge/faq",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不公開細節訓練流程",
+        "並依階段進入少年會所與成年會所",
+        "公開資料指出卑南族男子在少年時期進入會所",
+        "卑南族年齡階級制度是什麼",
+        "接受體能",
+        "知識與技能訓練",
+        "網站可介紹制度概念"
+      ],
+      "extra": {
+        "tags": [
+          "年齡階級",
+          "會所"
+        ]
+      }
+    },
+    {
+      "id": "faq-011-mens-house",
+      "kind": "faq",
+      "title_zh": "會所是什麼？",
+      "body_zh": "會所是理解卑南族公共生活、年齡階級、教育訓練與祭儀脈絡的重要建築與制度。公開介紹可區分少年會所與成年會所。",
+      "route": "/knowledge/faq",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "公開介紹可區分少年會所與成年會所",
+        "年齡階級",
+        "教育訓練與祭儀脈絡的重要建築與制度",
+        "會所是什麼",
+        "會所是理解卑南族公共生活"
+      ],
+      "extra": {
+        "tags": [
+          "會所",
+          "少年會所",
+          "成年會所"
+        ]
+      }
+    },
+    {
+      "id": "faq-012-matrilineal",
+      "kind": "faq",
+      "title_zh": "卑南族是母系社會嗎？",
+      "body_zh": "公開資料指出，傳統婚姻與家產繼承有母系特徵，例如長女繼承與男子入居女方家庭；但近代受社會環境影響，親屬制度已有調整。",
+      "route": "/knowledge/faq",
+      "category": "親屬制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但近代受社會環境影響",
+        "例如長女繼承與男子入居女方家庭",
+        "傳統婚姻與家產繼承有母系特徵",
+        "公開資料指出",
+        "卑南族是母系社會嗎",
+        "親屬制度已有調整"
+      ],
+      "extra": {
+        "tags": [
+          "母系",
+          "婚姻",
+          "繼承"
+        ]
+      }
+    },
+    {
+      "id": "faq-013-ayawan-rahan",
+      "kind": "faq",
+      "title_zh": "ayawan 和 rahan 是什麼？",
+      "body_zh": "公開資料描述 ayawan 為部落傳統政治領袖，rahan 為祭司，負責祭祀禮儀。平台只做角色概念摘要，不指定現任或個人身分。",
+      "route": "/knowledge/faq",
+      "category": "社會制度",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "ayawan",
+        "cip_puyuma_profile",
+        "rahan",
+        "不指定現任或個人身分",
+        "公開資料描述",
+        "和",
+        "平台只做角色概念摘要",
+        "是什麼",
+        "為祭司",
+        "為部落傳統政治領袖",
+        "負責祭祀禮儀"
+      ],
+      "extra": {
+        "tags": [
+          "ayawan",
+          "rahan"
+        ]
+      }
+    },
+    {
+      "id": "faq-014-shaman",
+      "kind": "faq",
+      "title_zh": "na temaramaw 可以怎麼介紹？",
+      "body_zh": "可介紹為公開資料中的巫師角色，與疾病醫療、祈福、驅邪等傳統生活照護需求相關；不得生成作法、咒語、儀式教學或療效宣稱。",
+      "route": "/knowledge/faq",
+      "category": "信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "na",
+        "temaramaw",
+        "不得生成作法",
+        "儀式教學或療效宣稱",
+        "可介紹為公開資料中的巫師角色",
+        "可以怎麼介紹",
+        "咒語",
+        "祈福",
+        "與疾病醫療",
+        "驅邪等傳統生活照護需求相關"
+      ],
+      "extra": {
+        "tags": [
+          "na temaramaw",
+          "巫師",
+          "敏感內容"
+        ]
+      }
+    },
+    {
+      "id": "faq-015-biruwa",
+      "kind": "faq",
+      "title_zh": "biruwa 是什麼？",
+      "body_zh": "公開資料將 biruwa 置於神靈概念中，可涵蓋自然、天地、四方、祖先與死者之靈等範疇。網站只做概念性摘要。",
+      "route": "/knowledge/faq",
+      "category": "信仰",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "biruwa",
+        "cip_puyuma_profile",
+        "公開資料將",
+        "可涵蓋自然",
+        "四方",
+        "天地",
+        "是什麼",
+        "祖先與死者之靈等範疇",
+        "網站只做概念性摘要",
+        "置於神靈概念中"
+      ],
+      "extra": {
+        "tags": [
+          "biruwa",
+          "神靈",
+          "祖靈"
+        ]
+      }
+    },
+    {
+      "id": "faq-016-food",
+      "kind": "faq",
+      "title_zh": "卑南族傳統飲食可以介紹哪些？",
+      "body_zh": "可介紹粟、旱稻、甘薯、芋頭、狩獵肉類、河川魚貝，以及月桃葉包裹的糯米粉糰、鹹豬肉、糯米粿粽等公開資料支持的內容。",
+      "route": "/knowledge/faq",
+      "category": "飲食",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以及月桃葉包裹的糯米粉糰",
+        "卑南族傳統飲食可以介紹哪些",
+        "可介紹粟",
+        "旱稻",
+        "河川魚貝",
+        "狩獵肉類",
+        "甘薯",
+        "糯米粿粽等公開資料支持的內容",
+        "芋頭",
+        "鹹豬肉"
+      ],
+      "extra": {
+        "tags": [
+          "飲食",
+          "月桃",
+          "小米"
+        ]
+      }
+    },
+    {
+      "id": "faq-017-clothing",
+      "kind": "faq",
+      "title_zh": "卑南族服飾有哪些特色？",
+      "body_zh": "公開資料提到卑南族服飾色彩常見紅、黃、綠並搭配黑白，並透過服裝區分性別、年齡階級與身分。",
+      "route": "/knowledge/faq",
+      "category": "服飾",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "並透過服裝區分性別",
+        "公開資料提到卑南族服飾色彩常見紅",
+        "卑南族服飾有哪些特色",
+        "年齡階級與身分",
+        "綠並搭配黑白",
+        "黃"
+      ],
+      "extra": {
+        "tags": [
+          "服飾",
+          "顏色",
+          "身分"
+        ]
+      }
+    },
+    {
+      "id": "faq-018-wreath",
+      "kind": "faq",
+      "title_zh": "花環有什麼意義？",
+      "body_zh": "公開資料指出祭典時會編織花環給族人或來賓，花環也可呈現友誼與社交關係；但喪期或成年會所服役脈絡有不同規範，公開頁應摘要處理。",
+      "route": "/knowledge/faq",
+      "category": "服飾/祭典",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "但喪期或成年會所服役脈絡有不同規範",
+        "公開資料指出祭典時會編織花環給族人或來賓",
+        "公開頁應摘要處理",
+        "花環也可呈現友誼與社交關係",
+        "花環有什麼意義"
+      ],
+      "extra": {
+        "tags": [
+          "花環",
+          "祭典"
+        ]
+      }
+    },
+    {
+      "id": "faq-019-weaving",
+      "kind": "faq",
+      "title_zh": "藤竹編可以做成網站內容嗎？",
+      "body_zh": "可以。方格編、人字編、六角編、藤籃、藤包、背簍、竹杯、月桃葉蓆等，都屬於公開資料可支援的生活工藝內容。",
+      "route": "/knowledge/faq",
+      "category": "工藝",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "人字編",
+        "六角編",
+        "可以",
+        "方格編",
+        "月桃葉蓆等",
+        "竹杯",
+        "背簍",
+        "藤包",
+        "藤竹編可以做成網站內容嗎",
+        "藤籃",
+        "都屬於公開資料可支援的生活工藝內容"
+      ],
+      "extra": {
+        "tags": [
+          "藤竹編",
+          "工藝",
+          "月桃葉"
+        ]
+      }
+    },
+    {
+      "id": "faq-020-architecture",
+      "kind": "faq",
+      "title_zh": "傳統建築可以介紹哪些？",
+      "body_zh": "可介紹住屋、會所、祖靈屋等類型，以及茅草、竹片、編床、爐灶等公開資料支持的建築特徵；祖靈屋內容應避免細節化。",
+      "route": "/knowledge/faq",
+      "category": "建築",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以及茅草",
+        "傳統建築可以介紹哪些",
+        "可介紹住屋",
+        "會所",
+        "爐灶等公開資料支持的建築特徵",
+        "祖靈屋內容應避免細節化",
+        "祖靈屋等類型",
+        "竹片",
+        "編床"
+      ],
+      "extra": {
+        "tags": [
+          "建築",
+          "住屋",
+          "祖靈屋"
+        ]
+      }
+    },
+    {
+      "id": "faq-021-music",
+      "kind": "faq",
+      "title_zh": "卑南族歌謠怎麼分類？",
+      "body_zh": "公開資料將卑南族歌謠概分為祭儀歌謠、休閒工作歌謠與社會時代歌謠。涉及歌詞、儀式用途或著作權時須另行審核。",
+      "route": "/knowledge/faq",
+      "category": "歌謠",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "休閒工作歌謠與社會時代歌謠",
+        "儀式用途或著作權時須另行審核",
+        "公開資料將卑南族歌謠概分為祭儀歌謠",
+        "卑南族歌謠怎麼分類",
+        "涉及歌詞"
+      ],
+      "extra": {
+        "tags": [
+          "歌謠",
+          "音樂"
+        ]
+      }
+    },
+    {
+      "id": "faq-022-dance",
+      "kind": "faq",
+      "title_zh": "舞蹈內容可以教學嗎？",
+      "body_zh": "公開頁可介紹舞蹈反映性別、年齡與角色差異，以及盾牌舞步、精神舞步等公開名稱；不建議未經授權製作教學或仿作流程。",
+      "route": "/knowledge/faq",
+      "category": "舞蹈",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不建議未經授權製作教學或仿作流程",
+        "以及盾牌舞步",
+        "公開頁可介紹舞蹈反映性別",
+        "年齡與角色差異",
+        "精神舞步等公開名稱",
+        "舞蹈內容可以教學嗎"
+      ],
+      "extra": {
+        "tags": [
+          "舞蹈",
+          "盾牌舞步"
+        ]
+      }
+    },
+    {
+      "id": "faq-023-language-variation",
+      "kind": "faq",
+      "title_zh": "卑南語各地說法會不同嗎？",
+      "body_zh": "公開資料指出卑南族語言因部落區位與族群接觸而有差異，例如南面知本受排灣、魯凱語影響，北面卑南受阿美語發音方式與漢語互動影響。",
+      "route": "/knowledge/faq",
+      "category": "語言",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "例如南面知本受排灣",
+        "公開資料指出卑南族語言因部落區位與族群接觸而有差異",
+        "北面卑南受阿美語發音方式與漢語互動影響",
+        "卑南語各地說法會不同嗎",
+        "魯凱語影響"
+      ],
+      "extra": {
+        "tags": [
+          "卑南語",
+          "方言",
+          "語音差異"
+        ]
+      }
+    },
+    {
+      "id": "faq-024-audio-source",
+      "kind": "faq",
+      "title_zh": "網站語詞庫的音檔從哪裡來？",
+      "body_zh": "目前語詞庫音檔 URL 來自 FormosanBank/ePark 公開資料所索引的 Klokah/ePark 音檔連結，網站不得自行編造音檔 URL。",
+      "route": "/knowledge/faq",
+      "category": "語詞庫",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "epark",
+        "formosanbank",
+        "formosanbank_dialects_csv",
+        "formosanbank_epark_readme",
+        "klokah",
+        "url",
+        "來自",
+        "公開資料所索引的",
+        "目前語詞庫音檔",
+        "網站不得自行編造音檔",
+        "網站語詞庫的音檔從哪裡來",
+        "音檔連結"
+      ],
+      "extra": {
+        "tags": [
+          "音檔",
+          "FormosanBank",
+          "ePark"
+        ]
+      }
+    },
+    {
+      "id": "faq-025-dialects",
+      "kind": "faq",
+      "title_zh": "目前語音資料分哪些卑南語分支？",
+      "body_zh": "網站語音資料依 FormosanBank dialects.csv 對應 38 南王卑南語、39 知本卑南語、40 西群卑南語、41 建和卑南語。",
+      "route": "/knowledge/faq",
+      "category": "語詞庫",
+      "source_ids": [
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "dialects.csv",
+        "formosanbank",
+        "formosanbank_dialects_csv",
+        "南王卑南語",
+        "對應",
+        "建和卑南語",
+        "目前語音資料分哪些卑南語分支",
+        "知本卑南語",
+        "網站語音資料依",
+        "西群卑南語"
+      ],
+      "extra": {
+        "tags": [
+          "南王",
+          "知本",
+          "西群",
+          "建和"
+        ]
+      }
+    },
+    {
+      "id": "faq-026-commercial-use",
+      "kind": "faq",
+      "title_zh": "音檔可以直接商業使用嗎？",
+      "body_zh": "不建議未審核直接商業使用。此包提供網站串流與學習預覽用途，商業使用或大量搬移到 CDN 前應確認原始資料與音檔授權。",
+      "route": "/knowledge/faq",
+      "category": "授權",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cdn",
+        "formosanbank_epark_readme",
+        "verification_pass_2026_06_11",
+        "不建議未審核直接商業使用",
+        "前應確認原始資料與音檔授權",
+        "商業使用或大量搬移到",
+        "此包提供網站串流與學習預覽用途",
+        "音檔可以直接商業使用嗎"
+      ],
+      "extra": {
+        "tags": [
+          "授權",
+          "商業使用"
+        ]
+      }
+    },
+    {
+      "id": "faq-027-ai-rules",
+      "kind": "faq",
+      "title_zh": "AI 可以自動寫卑南族文章嗎？",
+      "body_zh": "可以先寫草稿，但必須使用可追溯來源、標記敏感度，且祭儀、家族、巫師、禁忌、人物故事等內容需人工或部落複核。",
+      "route": "/knowledge/faq",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "ai",
+        "verification_pass_2026_06_11",
+        "且祭儀",
+        "人物故事等內容需人工或部落複核",
+        "但必須使用可追溯來源",
+        "可以先寫草稿",
+        "可以自動寫卑南族文章嗎",
+        "家族",
+        "巫師",
+        "標記敏感度",
+        "禁忌"
+      ],
+      "extra": {
+        "tags": [
+          "AI",
+          "審核",
+          "來源"
+        ]
+      }
+    },
+    {
+      "id": "faq-028-restricted-content",
+      "kind": "faq",
+      "title_zh": "哪些內容不適合直接公開？",
+      "body_zh": "祭儀流程、禁忌、祖靈屋內部細節、巫師作法、特定家族譜系、未公開人物故事、未授權歌詞與影像，都不適合由 AI 直接公開。",
+      "route": "/knowledge/faq",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11",
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "ai",
+        "cip_puyuma_profile",
+        "verification_pass_2026_06_11",
+        "哪些內容不適合直接公開",
+        "巫師作法",
+        "未公開人物故事",
+        "未授權歌詞與影像",
+        "特定家族譜系",
+        "直接公開",
+        "祖靈屋內部細節",
+        "祭儀流程",
+        "禁忌",
+        "都不適合由"
+      ],
+      "extra": {
+        "tags": [
+          "敏感內容",
+          "公開限制"
+        ]
+      }
+    },
+    {
+      "id": "faq-029-source-required",
+      "kind": "faq",
+      "title_zh": "沒有來源的內容可以放網站嗎？",
+      "body_zh": "不應直接公開。沒有 source_id 的內容只能放在研究 backlog 或待查核草稿，不能成為前台正式知識。",
+      "route": "/knowledge/faq",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "backlog",
+        "source_id",
+        "verification_pass_2026_06_11",
+        "不應直接公開",
+        "不能成為前台正式知識",
+        "或待查核草稿",
+        "沒有",
+        "沒有來源的內容可以放網站嗎",
+        "的內容只能放在研究"
+      ],
+      "extra": {
+        "tags": [
+          "source_id",
+          "查核"
+        ]
+      }
+    },
+    {
+      "id": "faq-030-cms-workflow",
+      "kind": "faq",
+      "title_zh": "CMS 文章發布前要檢查什麼？",
+      "body_zh": "至少檢查族名是否正確、十社/八社用語是否合規、是否有 source_id、是否涉及敏感內容、是否需部落複核、音檔 URL 是否在 manifest 中。",
+      "route": "/knowledge/faq",
+      "category": "治理",
+      "source_ids": [
+        "verification_pass_2026_06_11"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cms",
+        "manifest",
+        "source_id",
+        "url",
+        "verification_pass_2026_06_11",
+        "中",
+        "八社用語是否合規",
+        "十社",
+        "文章發布前要檢查什麼",
+        "是否在",
+        "是否有",
+        "是否涉及敏感內容",
+        "是否需部落複核",
+        "至少檢查族名是否正確",
+        "音檔"
+      ],
+      "extra": {
+        "tags": [
+          "CMS",
+          "審核",
+          "發布"
+        ]
+      }
+    },
+    {
+      "id": "topic-name",
+      "kind": "topic_page",
+      "title_zh": "族名與正名",
+      "body_zh": "Pinuyumayan 用於卑南族整體，Puyuma 可指南王部落或卑南語英文語境；網站正式族名不使用「普悠瑪族」。",
+      "route": "/about/name",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "pinuyumayan",
+        "puyuma",
+        "可指南王部落或卑南語英文語境",
+        "族名與正名",
+        "用於卑南族整體",
+        "網站正式族名不使用「普悠瑪族」"
+      ],
+      "extra": {
+        "components": [
+          "DoDontTable",
+          "NameComparisonCard"
+        ]
+      }
+    },
+    {
+      "id": "topic-communities",
+      "kind": "topic_page",
+      "title_zh": "卑南族十社",
+      "body_zh": "以十社作為平台正式分類，八社僅保留為歷史用語；部落頁不得推測家族或內部資料。",
+      "route": "/communities",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "以十社作為平台正式分類",
+        "八社僅保留為歷史用語",
+        "卑南族十社",
+        "部落頁不得推測家族或內部資料"
+      ],
+      "extra": {
+        "components": [
+          "CommunityGrid",
+          "HistoricalTermNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-origin",
+      "kind": "topic_page",
+      "title_zh": "竹生與石生起源敘事",
+      "body_zh": "竹生與石生為公開資料中常見起源敘事，應以敘事方式呈現，不改寫成唯一史實。",
+      "route": "/history/origin",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不改寫成唯一史實",
+        "應以敘事方式呈現",
+        "竹生與石生為公開資料中常見起源敘事",
+        "竹生與石生起源敘事"
+      ],
+      "extra": {
+        "components": [
+          "NarrativeNotice",
+          "SourceCard"
+        ]
+      }
+    },
+    {
+      "id": "topic-industry-food",
+      "kind": "topic_page",
+      "title_zh": "產業與飲食",
+      "body_zh": "整理小米、旱稻、甘薯、芋頭、月桃、檳榔與慶典食物的公開資料。",
+      "route": "/material-life/food",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "整理小米",
+        "旱稻",
+        "月桃",
+        "檳榔與慶典食物的公開資料",
+        "甘薯",
+        "產業與飲食",
+        "芋頭"
+      ],
+      "extra": {
+        "components": [
+          "FoodCultureCards"
+        ]
+      }
+    },
+    {
+      "id": "topic-clothing",
+      "kind": "topic_page",
+      "title_zh": "服飾與花環",
+      "body_zh": "服飾色彩、紋樣、年齡階級、花環與身分脈絡可作公開介紹，神職與喪期相關內容摘要處理。",
+      "route": "/material-life/clothing",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "年齡階級",
+        "服飾與花環",
+        "服飾色彩",
+        "神職與喪期相關內容摘要處理",
+        "紋樣",
+        "花環與身分脈絡可作公開介紹"
+      ],
+      "extra": {
+        "components": [
+          "ClothingPalette",
+          "WreathMeaningCard"
+        ]
+      }
+    },
+    {
+      "id": "topic-weaving",
+      "kind": "topic_page",
+      "title_zh": "藤竹編與月桃葉",
+      "body_zh": "方格編、人字編、六角編與藤籃、藤包、背簍、月桃葉蓆等生活工藝可作網站內容。",
+      "route": "/material-life/weaving",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "人字編",
+        "六角編與藤籃",
+        "方格編",
+        "月桃葉蓆等生活工藝可作網站內容",
+        "背簍",
+        "藤包",
+        "藤竹編與月桃葉"
+      ],
+      "extra": {
+        "components": [
+          "CraftGrid"
+        ]
+      }
+    },
+    {
+      "id": "topic-architecture",
+      "kind": "topic_page",
+      "title_zh": "住屋、會所與祖靈屋",
+      "body_zh": "可介紹住屋與會所的公開建築特徵；祖靈屋屬高敏感內容，只做文化意義摘要。",
+      "route": "/material-life/architecture",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "住屋",
+        "只做文化意義摘要",
+        "可介紹住屋與會所的公開建築特徵",
+        "會所與祖靈屋",
+        "祖靈屋屬高敏感內容"
+      ],
+      "extra": {
+        "components": [
+          "ArchitectureCards",
+          "SensitiveNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-society",
+      "kind": "topic_page",
+      "title_zh": "社會制度",
+      "body_zh": "年齡階級、會所、親屬、ayawan、rahan 與 na temaramaw 均需以公開摘要呈現，不公開個人、家族、訓練或儀式細節。",
+      "route": "/society",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "ayawan",
+        "cip_puyuma_profile",
+        "na",
+        "rahan",
+        "temaramaw",
+        "不公開個人",
+        "均需以公開摘要呈現",
+        "家族",
+        "年齡階級",
+        "會所",
+        "社會制度",
+        "與",
+        "親屬",
+        "訓練或儀式細節"
+      ],
+      "extra": {
+        "components": [
+          "RoleCards",
+          "AgeGradeSummary",
+          "SensitiveNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-belief",
+      "kind": "topic_page",
+      "title_zh": "信仰概述",
+      "body_zh": "biruwa、祖靈、善惡靈、夢兆與鳥占等可作公開概念摘要；不得提供作法、占卜或療效教學。",
+      "route": "/belief",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "biruwa",
+        "cip_puyuma_profile",
+        "不得提供作法",
+        "信仰概述",
+        "占卜或療效教學",
+        "善惡靈",
+        "夢兆與鳥占等可作公開概念摘要",
+        "祖靈"
+      ],
+      "extra": {
+        "components": [
+          "BeliefConceptCards",
+          "SensitiveNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-rituals",
+      "kind": "topic_page",
+      "title_zh": "歲時祭儀",
+      "body_zh": "祭儀頁只呈現公開摘要、月份脈絡與部落公告提示，不顯示流程或禁忌細節。",
+      "route": "/rituals",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "tokens": [
+        "cip_puyuma_profile",
+        "不顯示流程或禁忌細節",
+        "月份脈絡與部落公告提示",
+        "歲時祭儀",
+        "祭儀頁只呈現公開摘要"
+      ],
+      "extra": {
+        "components": [
+          "RitualCalendar",
+          "RitualCards",
+          "CommunityAnnouncementNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-music-dance",
+      "kind": "topic_page",
+      "title_zh": "歌謠與舞蹈",
+      "body_zh": "可介紹祭儀歌謠、休閒工作歌謠、社會時代歌謠與舞蹈角色差異；歌詞與教學需另行授權與複核。",
+      "route": "/music-arts",
+      "category": "topic",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "休閒工作歌謠",
+        "可介紹祭儀歌謠",
+        "歌詞與教學需另行授權與複核",
+        "歌謠與舞蹈",
+        "社會時代歌謠與舞蹈角色差異"
+      ],
+      "extra": {
+        "components": [
+          "MusicCategoryCards",
+          "DanceNotice"
+        ]
+      }
+    },
+    {
+      "id": "topic-language-audio",
+      "kind": "topic_page",
+      "title_zh": "卑南語與音檔",
+      "body_zh": "語音學習使用 FormosanBank/ePark 已驗證音檔 URL，支援南王、知本、西群、建和卑南語分支篩選。",
+      "route": "/language/puyuma",
+      "category": "topic",
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "epark",
+        "formosanbank",
+        "formosanbank_dialects_csv",
+        "formosanbank_epark_readme",
+        "url",
+        "卑南語與音檔",
+        "已驗證音檔",
+        "建和卑南語分支篩選",
+        "支援南王",
+        "知本",
+        "西群",
+        "語音學習使用"
+      ],
+      "extra": {
+        "components": [
+          "DialectTabs",
+          "PuyumaVocabularyBrowser",
+          "AudioLicenseNotice"
+        ]
+      }
+    },
+    {
+      "id": "time-origin-bamboo-stone",
+      "kind": "timeline",
+      "title_zh": "竹生與石生兩種起源敘事",
+      "body_zh": "起源敘事｜竹生傳說以卑南社／南王為中心，石生傳說以知本社為中心。",
+      "route": "/history/origin",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "cip_puyuma_profile",
+        "南王為中心",
+        "石生傳說以知本社為中心",
+        "竹生與石生兩種起源敘事",
+        "起源敘事｜竹生傳說以卑南社"
+      ],
+      "extra": {
+        "claim_type": "origin_narrative"
+      }
+    },
+    {
+      "id": "time-pre-17th-strong-polity",
+      "kind": "timeline",
+      "title_zh": "公開資料描述卑南族曾是東部強盛民族",
+      "body_zh": "17世紀以前｜公開資料稱卑南族在十七世紀以前即為強盛民族，卑南王時代威望達到高峰；網站應標示為公開資料脈絡。",
+      "route": "/history",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "17世紀以前｜公開資料稱卑南族在十七世紀以前即為強盛民族",
+        "cip_puyuma_profile",
+        "公開資料描述卑南族曾是東部強盛民族",
+        "卑南王時代威望達到高峰",
+        "網站應標示為公開資料脈絡"
+      ],
+      "extra": {
+        "claim_type": "public_source_historical_claim"
+      }
+    },
+    {
+      "id": "time-18th-hengchun-sukaro",
+      "kind": "timeline",
+      "title_zh": "部分氏族遷居恆春半島並發展斯卡羅脈絡",
+      "body_zh": "18世紀｜公開資料描述十八世紀有部分氏族遷居恆春半島，並與斯卡羅脈絡相關。",
+      "route": "/history/migration",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "18世紀｜公開資料描述十八世紀有部分氏族遷居恆春半島",
+        "cip_puyuma_profile",
+        "並與斯卡羅脈絡相關",
+        "部分氏族遷居恆春半島並發展斯卡羅脈絡"
+      ],
+      "extra": {
+        "claim_type": "public_source_historical_claim"
+      }
+    },
+    {
+      "id": "time-late-19th-japanese-classification",
+      "kind": "timeline",
+      "title_zh": "日本殖民統治時期分類中出現 Pinuyumayan 與八社蕃歷史用語",
+      "body_zh": "19世紀末｜公開資料提到十九世紀末進入日本殖民統治時期後，民族文化分類上稱為 Pinuyumayan，並因主要八個部落而有八社蕃之稱。",
+      "route": "/history/terms",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "19世紀末｜公開資料提到十九世紀末進入日本殖民統治時期後",
+        "cip_puyuma_profile",
+        "pinuyumayan",
+        "並因主要八個部落而有八社蕃之稱",
+        "日本殖民統治時期分類中出現",
+        "民族文化分類上稱為",
+        "與八社蕃歷史用語"
+      ],
+      "extra": {
+        "claim_type": "historical_classification"
+      }
+    },
+    {
+      "id": "time-japanese-rice-policy",
+      "kind": "timeline",
+      "title_zh": "水稻耕作受到政策鼓勵",
+      "body_zh": "日本殖民統治時期｜公開資料指出水稻受到政策鼓勵與支持，耕作面積增加。",
+      "route": "/material-life/industry",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "日本殖民統治時期｜公開資料指出水稻受到政策鼓勵與支持",
+        "水稻耕作受到政策鼓勵",
+        "耕作面積增加"
+      ],
+      "extra": {
+        "claim_type": "public_source_historical_claim"
+      }
+    },
+    {
+      "id": "time-1960s-economic-crops",
+      "kind": "timeline",
+      "title_zh": "部分地區轉向釋迦、荖葉等經濟作物",
+      "body_zh": "1960年代以後｜公開資料提到部分作物轉為釋迦與荖葉等經濟性作物。",
+      "route": "/material-life/industry",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "1960年代以後｜公開資料提到部分作物轉為釋迦與荖葉等經濟性作物",
+        "cip_puyuma_profile",
+        "荖葉等經濟作物",
+        "部分地區轉向釋迦"
+      ],
+      "extra": {
+        "claim_type": "public_source_modern_development"
+      }
+    },
+    {
+      "id": "time-1981-ritual-revival",
+      "kind": "timeline",
+      "title_zh": "傳統祭典恢復與振興使傳統信仰再受重視",
+      "body_zh": "1981年以後｜公開資料提到民國70年（1981）之後，因傳統祭典恢復辦理與振興，傳統宗教信仰觀念再度受到重視與討論。",
+      "route": "/rituals",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "1981",
+        "1981年以後｜公開資料提到民國70年",
+        "cip_puyuma_profile",
+        "之後",
+        "傳統宗教信仰觀念再度受到重視與討論",
+        "傳統祭典恢復與振興使傳統信仰再受重視",
+        "因傳統祭典恢復辦理與振興"
+      ],
+      "extra": {
+        "claim_type": "public_source_modern_development"
+      }
+    },
+    {
+      "id": "time-1982-joint-festival",
+      "kind": "timeline",
+      "title_zh": "聯合年祭逐漸發展",
+      "body_zh": "1982年起｜公開資料指出卑南族各部落自民國71年（1982）開始逐漸發展聯合年祭，由各部落輪流舉辦。",
+      "route": "/rituals/joint-festival",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "1982",
+        "1982年起｜公開資料指出卑南族各部落自民國71年",
+        "cip_puyuma_profile",
+        "由各部落輪流舉辦",
+        "聯合年祭逐漸發展",
+        "開始逐漸發展聯合年祭"
+      ],
+      "extra": {
+        "claim_type": "public_source_modern_development"
+      }
+    },
+    {
+      "id": "time-1991-revitalization",
+      "kind": "timeline",
+      "title_zh": "知本、初鹿、南王推動會所、青年會與文化工作協會等復振行動",
+      "body_zh": "1991年｜公開資料指出民國80年（1991）卑南族意識到傳統文化重要，知本、初鹿與南王分別在部落蓋新會所、成立青年會與文化工作協會，辦理歷史尋根與母語復振。",
+      "route": "/society/revitalization",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "tokens": [
+        "1991",
+        "1991年｜公開資料指出民國80年",
+        "cip_puyuma_profile",
+        "初鹿",
+        "初鹿與南王分別在部落蓋新會所",
+        "卑南族意識到傳統文化重要",
+        "南王推動會所",
+        "成立青年會與文化工作協會",
+        "知本",
+        "辦理歷史尋根與母語復振",
+        "青年會與文化工作協會等復振行動"
+      ],
+      "extra": {
+        "claim_type": "public_source_modern_development"
+      }
+    },
+    {
+      "id": "time-current-urban-fields",
+      "kind": "timeline",
+      "title_zh": "族人活躍於東部與都市多領域",
+      "body_zh": "現代｜公開資料提到不少族人離開東部到都市發展，活躍於不同領域之間。",
+      "route": "/modern-development",
+      "category": "timeline",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "tokens": [
+        "cip_puyuma_profile",
+        "族人活躍於東部與都市多領域",
+        "活躍於不同領域之間",
+        "現代｜公開資料提到不少族人離開東部到都市發展"
+      ],
+      "extra": {
+        "claim_type": "public_source_modern_development"
+      }
+    },
+    {
+      "id": "puyuma-audio-0001",
+      "kind": "vocabulary_audio",
+      "title_zh": "南王卑南語｜大家好！我們開始了。",
+      "body_zh": "inabayan! mungesalra ta!｜大家好！我們開始了。｜Hello everyone! Here we go.｜南王卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0001",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "everyone!",
+        "formosanbank_epark",
+        "go.｜南王卑南語",
+        "here",
+        "inabayan!",
+        "mungesalra",
+        "ta!｜大家好",
+        "we",
+        "南王卑南語｜大家好",
+        "我們開始了",
+        "｜hello"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Nanwang_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0002",
+      "kind": "vocabulary_audio",
+      "title_zh": "南王卑南語｜請起立! 敬禮!",
+      "body_zh": "karetigir driya! sungal!｜請起立! 敬禮!｜Please stand up! Salute!｜南王卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0002",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "driya!",
+        "formosanbank_epark",
+        "karetigir",
+        "salute!｜南王卑南語",
+        "stand",
+        "sungal!｜請起立!",
+        "up!",
+        "南王卑南語｜請起立!",
+        "敬禮!",
+        "敬禮!｜please"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Nanwang_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0003",
+      "kind": "vocabulary_audio",
+      "title_zh": "南王卑南語｜老師好。",
+      "body_zh": "sinsi, inabayan!｜老師好。｜Hello.｜南王卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0003",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "formosanbank_epark",
+        "inabayan!｜老師好",
+        "sinsi",
+        "南王卑南語｜老師好",
+        "｜hello.｜南王卑南語"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Nanwang_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0004",
+      "kind": "vocabulary_audio",
+      "title_zh": "知本卑南語｜我今天七點到學校。",
+      "body_zh": "harem kana wari pituwa tuki mu medek ku i kungkuwan.｜我今天七點到學校。｜I arrived at school at seven today.｜知本卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0004",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "arrived",
+        "at",
+        "formosanbank_epark",
+        "harem",
+        "i",
+        "kana",
+        "ku",
+        "kungkuwan.｜我今天七點到學校",
+        "medek",
+        "mu",
+        "pituwa",
+        "school",
+        "seven",
+        "today.｜知本卑南語",
+        "tuki",
+        "wari",
+        "知本卑南語｜我今天七點到學校",
+        "｜i"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Zhiben_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0005",
+      "kind": "vocabulary_audio",
+      "title_zh": "知本卑南語｜上課的時候，老師教我們數字的族語。",
+      "body_zh": "temakakesi mi lra, na sinsi pananadam kananta piningaiyan na aiyupan.｜上課的時候，老師教我們數字的族語。｜In class, the teacher taught us the Pinuyumayan language of numbers.｜知本卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0005",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "aiyupan.｜上課的時候",
+        "class",
+        "formosanbank_epark",
+        "kananta",
+        "language",
+        "lra",
+        "mi",
+        "na",
+        "numbers.｜知本卑南語",
+        "of",
+        "pananadam",
+        "piningaiyan",
+        "pinuyumayan",
+        "sinsi",
+        "taught",
+        "teacher",
+        "temakakesi",
+        "the",
+        "us",
+        "知本卑南語｜上課的時候",
+        "老師教我們數字的族語",
+        "｜in"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Zhiben_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0006",
+      "kind": "vocabulary_audio",
+      "title_zh": "知本卑南語｜我們家住在知本。",
+      "body_zh": "ulra i Katratripulr niyam ruma’.｜我們家住在知本。｜Our family lives in Katratripulr.｜知本卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0006",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "family",
+        "formosanbank_epark",
+        "i",
+        "in",
+        "katratripulr",
+        "katratripulr.｜知本卑南語",
+        "lives",
+        "niyam",
+        "ruma’.｜我們家住在知本",
+        "ulra",
+        "知本卑南語｜我們家住在知本",
+        "｜our"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Zhiben_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0007",
+      "kind": "vocabulary_audio",
+      "title_zh": "西群卑南語｜我今天七點到學校。",
+      "body_zh": "meredek ku i takesiyan a pituwa tuki harem kana wari.｜我今天七點到學校。｜I arrived at school at seven today.｜西群卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0007",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "a",
+        "arrived",
+        "at",
+        "formosanbank_epark",
+        "harem",
+        "i",
+        "kana",
+        "ku",
+        "meredek",
+        "pituwa",
+        "school",
+        "seven",
+        "takesiyan",
+        "today.｜西群卑南語",
+        "tuki",
+        "wari.｜我今天七點到學校",
+        "西群卑南語｜我今天七點到學校",
+        "｜i"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Xiqun_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0008",
+      "kind": "vocabulary_audio",
+      "title_zh": "西群卑南語｜上課的時候，老師教我們數字的族語。",
+      "body_zh": "a temakesi mi mu, tu panadamaw mi kana sinsi za aiyupan. kananta piningaiyan.｜上課的時候，老師教我們數字的族語。｜In class, the teacher taught us the Pinuyumayan language of numbers.｜西群卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0008",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "a",
+        "aiyupan.",
+        "class",
+        "formosanbank_epark",
+        "kana",
+        "kananta",
+        "language",
+        "mi",
+        "mu",
+        "numbers.｜西群卑南語",
+        "of",
+        "panadamaw",
+        "piningaiyan.｜上課的時候",
+        "pinuyumayan",
+        "sinsi",
+        "taught",
+        "teacher",
+        "temakesi",
+        "the",
+        "tu",
+        "us",
+        "za",
+        "老師教我們數字的族語",
+        "西群卑南語｜上課的時候",
+        "｜in"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Xiqun_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0009",
+      "kind": "vocabulary_audio",
+      "title_zh": "西群卑南語｜我們家住在初鹿部落。",
+      "body_zh": "ulra naniyam ruma’ i Mulivelivek.｜我們家住在初鹿部落。｜Our family lives in Mulivelivek.｜西群卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0009",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "family",
+        "formosanbank_epark",
+        "i",
+        "in",
+        "lives",
+        "mulivelivek.｜我們家住在初鹿部落",
+        "mulivelivek.｜西群卑南語",
+        "naniyam",
+        "ruma’",
+        "ulra",
+        "西群卑南語｜我們家住在初鹿部落",
+        "｜our"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Xiqun_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0010",
+      "kind": "vocabulary_audio",
+      "title_zh": "建和卑南語｜早安。你要去哪裡？",
+      "body_zh": "semavalran. yawa u i iyan?｜早安。你要去哪裡？｜｜建和卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0010",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "formosanbank_epark",
+        "i",
+        "iyan?｜早安",
+        "semavalran.",
+        "u",
+        "yawa",
+        "你要去哪裡",
+        "建和卑南語｜早安",
+        "｜｜建和卑南語"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Jianhe_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0011",
+      "kind": "vocabulary_audio",
+      "title_zh": "建和卑南語｜我要回部落探望我爸媽。",
+      "body_zh": "avuruk ku i dekalr mena’uwa kani nani di malri.｜我要回部落探望我爸媽。｜｜建和卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0011",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "avuruk",
+        "dekalr",
+        "di",
+        "formosanbank_epark",
+        "i",
+        "kani",
+        "ku",
+        "malri.｜我要回部落探望我爸媽",
+        "mena’uwa",
+        "nani",
+        "建和卑南語｜我要回部落探望我爸媽",
+        "｜｜建和卑南語"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Jianhe_Puyuma"
+      }
+    },
+    {
+      "id": "puyuma-audio-0012",
+      "kind": "vocabulary_audio",
+      "title_zh": "建和卑南語｜我母親是都歷的阿美族，我父親是南王人。",
+      "body_zh": "i nani mu Amis i Tulik, i malri mu Puyuma.｜我母親是都歷的阿美族，我父親是南王人。｜｜建和卑南語",
+      "route": "/language/puyuma/audio/puyuma-audio-0012",
+      "category": "language",
+      "source_ids": [
+        "formosanbank_epark"
+      ],
+      "sensitivity": "public",
+      "tokens": [
+        "amis",
+        "formosanbank_epark",
+        "i",
+        "malri",
+        "mu",
+        "nani",
+        "puyuma.｜我母親是都歷的阿美族",
+        "tulik",
+        "建和卑南語｜我母親是都歷的阿美族",
+        "我父親是南王人",
+        "｜｜建和卑南語"
+      ],
+      "extra": {
+        "has_audio": true,
+        "dialect": "Jianhe_Puyuma"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "v22",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "rules": [
+    {
+      "rule_id": "same_claim_set_30_days",
+      "action": "block",
+      "window_days": 30
+    },
+    {
+      "rule_id": "same_topic_10_days",
+      "action": "manual_review",
+      "window_days": 10
+    },
+    {
+      "rule_id": "same_blueprint_3_days",
+      "action": "warn",
+      "window_days": 3
+    },
+    {
+      "rule_id": "same_forbidden_relation_anytime",
+      "action": "block",
+      "window_days": 3650
+    }
+  ],
+  "fingerprint_fields": [
+    "normalized_title",
+    "selected_claim_ids",
+    "selected_source_ids",
+    "blueprint_id",
+    "topic_key",
+    "route_key"
+  ],
+  "dashboard_table": "article_fingerprint_dashboard_v22"
+}

@@ -1,0 +1,231 @@
+{
+  "version": "2026-06-11",
+  "topic_pages": [
+    {
+      "id": "topic-name",
+      "route": "/about/name",
+      "title_zh": "族名與正名",
+      "summary_zh": "Pinuyumayan 用於卑南族整體，Puyuma 可指南王部落或卑南語英文語境；網站正式族名不使用「普悠瑪族」。",
+      "fact_ids": [
+        "name_puyuma_pinuyumayan_distinction",
+        "name_historical_transliterations_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "components": [
+        "DoDontTable",
+        "NameComparisonCard"
+      ]
+    },
+    {
+      "id": "topic-communities",
+      "route": "/communities",
+      "title_zh": "卑南族十社",
+      "summary_zh": "以十社作為平台正式分類，八社僅保留為歷史用語；部落頁不得推測家族或內部資料。",
+      "fact_ids": [
+        "community_list_public",
+        "community_admin_taitung_city_public",
+        "community_admin_beinan_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "components": [
+        "CommunityGrid",
+        "HistoricalTermNotice"
+      ]
+    },
+    {
+      "id": "topic-origin",
+      "route": "/history/origin",
+      "title_zh": "竹生與石生起源敘事",
+      "summary_zh": "竹生與石生為公開資料中常見起源敘事，應以敘事方式呈現，不改寫成唯一史實。",
+      "fact_ids": [
+        "origin_bamboo_stone"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "components": [
+        "NarrativeNotice",
+        "SourceCard"
+      ]
+    },
+    {
+      "id": "topic-industry-food",
+      "route": "/material-life/food",
+      "title_zh": "產業與飲食",
+      "summary_zh": "整理小米、旱稻、甘薯、芋頭、月桃、檳榔與慶典食物的公開資料。",
+      "fact_ids": [
+        "traditional_food_staples",
+        "festival_food_shell_ginger",
+        "industry_japanese_period_rice_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "components": [
+        "FoodCultureCards"
+      ]
+    },
+    {
+      "id": "topic-clothing",
+      "route": "/material-life/clothing",
+      "title_zh": "服飾與花環",
+      "summary_zh": "服飾色彩、紋樣、年齡階級、花環與身分脈絡可作公開介紹，神職與喪期相關內容摘要處理。",
+      "fact_ids": [
+        "clothing_colors_patterns",
+        "clothing_social_identity",
+        "wreath_social_meaning"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "components": [
+        "ClothingPalette",
+        "WreathMeaningCard"
+      ]
+    },
+    {
+      "id": "topic-weaving",
+      "route": "/material-life/weaving",
+      "title_zh": "藤竹編與月桃葉",
+      "summary_zh": "方格編、人字編、六角編與藤籃、藤包、背簍、月桃葉蓆等生活工藝可作網站內容。",
+      "fact_ids": [
+        "weaving_technique_names_public",
+        "weaving_daily_objects_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "components": [
+        "CraftGrid"
+      ]
+    },
+    {
+      "id": "topic-architecture",
+      "route": "/material-life/architecture",
+      "title_zh": "住屋、會所與祖靈屋",
+      "summary_zh": "可介紹住屋與會所的公開建築特徵；祖靈屋屬高敏感內容，只做文化意義摘要。",
+      "fact_ids": [
+        "architecture_categories",
+        "house_layout_public",
+        "mens_house_youth_architecture_public",
+        "ancestral_house_ritual_space_public_sensitive"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "components": [
+        "ArchitectureCards",
+        "SensitiveNotice"
+      ]
+    },
+    {
+      "id": "topic-society",
+      "route": "/society",
+      "title_zh": "社會制度",
+      "summary_zh": "年齡階級、會所、親屬、ayawan、rahan 與 na temaramaw 均需以公開摘要呈現，不公開個人、家族、訓練或儀式細節。",
+      "fact_ids": [
+        "kinship_matrilineal_summary",
+        "leadership_ayawan_rahan",
+        "age_grade_training_skills_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "components": [
+        "RoleCards",
+        "AgeGradeSummary",
+        "SensitiveNotice"
+      ]
+    },
+    {
+      "id": "topic-belief",
+      "route": "/belief",
+      "title_zh": "信仰概述",
+      "summary_zh": "biruwa、祖靈、善惡靈、夢兆與鳥占等可作公開概念摘要；不得提供作法、占卜或療效教學。",
+      "fact_ids": [
+        "belief_biruwa_scope_public",
+        "belief_modern_religions_public",
+        "divination_public_summary"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "components": [
+        "BeliefConceptCards",
+        "SensitiveNotice"
+      ]
+    },
+    {
+      "id": "topic-rituals",
+      "route": "/rituals",
+      "title_zh": "歲時祭儀",
+      "summary_zh": "祭儀頁只呈現公開摘要、月份脈絡與部落公告提示，不顯示流程或禁忌細節。",
+      "fact_ids": [
+        "ritual_two_categories_public",
+        "ritual_calendar_months_public",
+        "annual_festival_three_weeks"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "high",
+      "components": [
+        "RitualCalendar",
+        "RitualCards",
+        "CommunityAnnouncementNotice"
+      ]
+    },
+    {
+      "id": "topic-music-dance",
+      "route": "/music-arts",
+      "title_zh": "歌謠與舞蹈",
+      "summary_zh": "可介紹祭儀歌謠、休閒工作歌謠、社會時代歌謠與舞蹈角色差異；歌詞與教學需另行授權與複核。",
+      "fact_ids": [
+        "music_function_categories",
+        "songs_ritual_gender_role_public",
+        "dance_personal_social_steps_public"
+      ],
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "components": [
+        "MusicCategoryCards",
+        "DanceNotice"
+      ]
+    },
+    {
+      "id": "topic-language-audio",
+      "route": "/language/puyuma",
+      "title_zh": "卑南語與音檔",
+      "summary_zh": "語音學習使用 FormosanBank/ePark 已驗證音檔 URL，支援南王、知本、西群、建和卑南語分支篩選。",
+      "fact_ids": [
+        "formosanbank_epark_structure",
+        "formosanbank_puyuma_dialects"
+      ],
+      "source_ids": [
+        "formosanbank_epark_readme",
+        "formosanbank_dialects_csv"
+      ],
+      "sensitivity": "low",
+      "components": [
+        "DialectTabs",
+        "PuyumaVocabularyBrowser",
+        "AudioLicenseNotice"
+      ]
+    }
+  ]
+}

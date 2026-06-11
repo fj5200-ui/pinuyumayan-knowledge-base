@@ -1,0 +1,66 @@
+{
+  "version": "0.8.0",
+  "baseUrlEnv": "PUBLIC_KNOWLEDGE_BASE_URL",
+  "apiKeyEnv": "PINUYUMAYAN_MAIN_SITE_API_KEY",
+  "tests": [
+    {
+      "id": "health",
+      "method": "GET",
+      "path": "/health",
+      "auth": "none",
+      "expectStatus": 200,
+      "expectJsonPath": [
+        "ok"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "method": "GET",
+      "path": "/api/public/knowledge/bootstrap",
+      "auth": "none",
+      "expectStatus": 200,
+      "expectJsonPath": [
+        "meta",
+        "communities",
+        "facts"
+      ]
+    },
+    {
+      "id": "search",
+      "method": "GET",
+      "path": "/api/public/knowledge/search?q=卑南族&limit=5",
+      "auth": "none",
+      "expectStatus": 200,
+      "expectJsonPath": [
+        "items"
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "method": "GET",
+      "path": "/api/public/knowledge/vocabulary?limit=5",
+      "auth": "none",
+      "expectStatus": 200,
+      "expectJsonPath": [
+        "items"
+      ]
+    },
+    {
+      "id": "internal_bundle_without_key_rejected",
+      "method": "GET",
+      "path": "/api/internal/main-site/knowledge/bundle",
+      "auth": "none",
+      "expectStatus": 401
+    },
+    {
+      "id": "internal_bundle_with_key",
+      "method": "GET",
+      "path": "/api/internal/main-site/knowledge/bundle",
+      "auth": "mainSiteApiKey",
+      "expectStatus": 200,
+      "expectJsonPath": [
+        "meta"
+      ]
+    }
+  ]
+}

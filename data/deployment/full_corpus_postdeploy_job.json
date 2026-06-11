@@ -1,0 +1,29 @@
+{
+  "job_key": "postdeploy_formosanbank_full_corpus_import",
+  "version": "0.7.0",
+  "description": "部署完成後匯入 FormosanBank/ePark 卑南語千筆級語料，含音檔 URL、source PHON、IPA/G2P/TTS metadata。",
+  "input_sources": {
+    "manifest": "data/web/puyuma_vocabulary_full_source_manifest.json",
+    "candidate_count": 66,
+    "source_types": ["csv", "xml"],
+    "dialects": ["Nanwang_Puyuma", "Zhiben_Puyuma", "Xiqun_Puyuma", "Jianhe_Puyuma"]
+  },
+  "outputs": [
+    "data/web/puyuma_vocabulary_audio_entries.json",
+    "data/web/puyuma_vocabulary_seed.sql",
+    "data/web/puyuma_corpus_source_audit.generated.json",
+    "kb_search_documents refresh input"
+  ],
+  "minimum_acceptance": {
+    "entries": 1000,
+    "require_all_dialects": true,
+    "require_source_phon_for_xml_rows": true,
+    "audio_url_required": true
+  },
+  "deployment_behavior": {
+    "recommended": "post-deploy/background job",
+    "not_recommended": "web server startup script",
+    "restart_required_after_import": false,
+    "main_site_revalidate_after_success": true
+  }
+}

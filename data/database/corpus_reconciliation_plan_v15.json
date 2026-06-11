@@ -1,0 +1,44 @@
+{
+  "version": "v15",
+  "goal": "Verify that FormosanBank/ePark full corpus imports are complete, source-linked and safe before promotion.",
+  "expected_source_candidates": 66,
+  "minimum_full_corpus_entries": 1000,
+  "checks": [
+    {
+      "id": "source_count",
+      "type": "blocker",
+      "rule": "seen_sources must equal expected source manifest or be explicitly ignored."
+    },
+    {
+      "id": "audio_coverage",
+      "type": "warning",
+      "rule": "entries_with_audio / actual_entries should be reported by dialect."
+    },
+    {
+      "id": "source_phon_coverage",
+      "type": "warning",
+      "rule": "XML rows should preserve source PHON when available."
+    },
+    {
+      "id": "deduplication",
+      "type": "blocker",
+      "rule": "duplicate candidate clusters must be reviewed before public promotion."
+    },
+    {
+      "id": "license",
+      "type": "blocker",
+      "rule": "blocked_license entries cannot enter public or verified release channels."
+    },
+    {
+      "id": "dialect_distribution",
+      "type": "warning",
+      "rule": "Nanwang, Zhiben, Xiqun and Jianhe counts must be reported separately."
+    }
+  ],
+  "outputs": [
+    "corpus_reconciliation_runs",
+    "corpus_reconciliation_findings",
+    "data_quality_reports",
+    "search_index_versions_v15"
+  ]
+}

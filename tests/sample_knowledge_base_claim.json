@@ -1,0 +1,8 @@
+{
+  "claim_id": "sample_public_claim",
+  "claim": "這是測試用主張。",
+  "source_ids": [
+    "cip_puyuma_profile"
+  ],
+  "public_level": "public"
+}

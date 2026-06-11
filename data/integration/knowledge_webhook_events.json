@@ -1,0 +1,49 @@
+{
+  "id": "knowledge_webhook_events_v6",
+  "events": [
+    {
+      "event": "kb.fact.published",
+      "payload": {
+        "entityType": "fact",
+        "entityId": "...",
+        "action": "publish"
+      }
+    },
+    {
+      "event": "community.updated",
+      "payload": {
+        "entityType": "community",
+        "entityId": "...",
+        "communityKey": "..."
+      }
+    },
+    {
+      "event": "ritual.updated",
+      "payload": {
+        "entityType": "ritual",
+        "entityId": "..."
+      }
+    },
+    {
+      "event": "vocabulary.approved",
+      "payload": {
+        "entityType": "vocabulary",
+        "entityId": "...",
+        "dialectCode": "38"
+      }
+    },
+    {
+      "event": "search.index.rebuilt",
+      "payload": {
+        "entityType": "search_index",
+        "version": "..."
+      }
+    }
+  ],
+  "signature_header": "x-pinuyumayan-signature",
+  "signature_algorithm": "HMAC-SHA256 over raw body using WEBHOOK_SECRET",
+  "delivery_policy": {
+    "retry": "3 attempts",
+    "timeout_ms": 5000
+  }
+}

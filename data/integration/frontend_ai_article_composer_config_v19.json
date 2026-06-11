@@ -1,0 +1,32 @@
+{
+  "version": "v19",
+  "generated_at": "2026-06-11T22:51:40+08:00",
+  "public_config": {
+    "backendGeneratesArticleText": false,
+    "frontendCallsAiProvider": true,
+    "requiresBackendSourcePacket": true,
+    "requiresPostDraftValidation": true,
+    "requiresHumanReview": true,
+    "allowAutoPublish": false,
+    "allowedSourceUse": [
+      "verified_source_public_summary",
+      "public_summary_only"
+    ],
+    "blockedSensitiveActions": [
+      "ritual_procedure_instruction",
+      "ancestor_spirit_secret_generation",
+      "fake_quote",
+      "uncited_history"
+    ]
+  },
+  "endpoints": {
+    "composer_config": "/api/public/ai-article/frontend-composer-config",
+    "source_packets": "/api/public/ai-article/source-packets",
+    "blueprints": "/api/public/ai-article/blueprints",
+    "resolve_source_pack": "/api/internal/ai-article/source-pack/resolve",
+    "validate_client_draft": "/api/internal/ai-article/client-draft/validate",
+    "submit_review": "/api/internal/ai-article/client-draft/submit-review",
+    "duplicate_check": "/api/internal/ai-article/duplicate-check",
+    "publish_check": "/api/internal/ai-article/publish-check"
+  }
+}

@@ -1,0 +1,74 @@
+import { registerFrontendAiArticleRoutes } from './rest/frontendAiArticleRoutes';
+import "dotenv/config";
+import express from "express";
+import helmet from "helmet";
+import cors from "cors";
+import { createExpressMiddleware } from "@trpc/server/adapters/express";
+import { appRouter } from "./trpc/root";
+import { createContext } from "./trpc/context";
+import { registerMainSiteKnowledgeRoutes } from "./rest/mainSiteKnowledgeRoutes";
+import { registerOpenApiRoutes } from "./rest/openapiRoutes";
+import { registerRuntimeOpsRoutes } from "./rest/runtimeOpsRoutes";
+import { registerReadinessRoutes } from "./rest/readinessRoutes";
+import { registerJobsRoutes } from "./rest/jobsRoutes";
+import { registerSyncReplayRoutes } from "./rest/syncReplayRoutes";
+import { registerExportRoutes } from "./rest/exportRoutes";
+import { registerVersionRoutes } from "./rest/versionRoutes";
+import { registerAdminAuthRoutes } from "./rest/adminAuthRoutes";
+import { registerAdminSyncRoutes } from "./rest/adminSyncRoutes";
+import { registerContentRoutes } from "./rest/contentRoutes";
+import { registerSearchRoutes } from "./rest/searchRoutes";
+import { registerReleaseRoutes } from "./rest/releaseRoutes";
+import { registerObservabilityRoutes } from "./rest/observabilityRoutes";
+import { registerContractRoutes } from "./rest/contractRoutes";
+import { registerCorpusReconciliationRoutes } from "./rest/corpusReconciliationRoutes";
+import { registerSecurityOpsRoutes } from "./rest/securityOpsRoutes";
+import { registerPronunciationRoutes } from "./rest/pronunciationRoutes";
+import { registerAudioRoutes } from "./rest/audioRoutes";
+import { registerAiArticleRoutes } from "./rest/aiArticleRoutes";
+import { requestIdMiddleware } from "./lib/requestId";
+import { createMemoryRateLimit, cleanupRateLimitBuckets } from "./security/rateLimit";
+import { env, assertProductionEnv } from "./lib/env";
+
+assertProductionEnv();
+const app = express();
+app.use(helmet());
+app.use(requestIdMiddleware);
+app.use(cors({ origin: env.corsOrigin === "*" ? true : env.corsOrigin.split(",") }));
+app.use(express.json({ limit: "2mb" }));
+app.use("/api/public", createMemoryRateLimit({ windowMs: 60_000, max: env.publicRateLimitPerMinute, keyPrefix: "public" }));
+app.use("/api/internal", createMemoryRateLimit({ windowMs: 60_000, max: env.internalRateLimitPerMinute, keyPrefix: "internal" }));
+setInterval(cleanupRateLimitBuckets, 60_000).unref();
+
+app.get("/health", (_req, res) => {
+  res.json({ ok: true, service: "pinuyumayan-backend-database", mode: process.env.NODE_ENV ?? "development" });
+});
+
+registerMainSiteKnowledgeRoutes(app, createContext);
+registerFrontendAiArticleRoutes(app);
+registerOpenApiRoutes(app);
+registerRuntimeOpsRoutes(app);
+registerReadinessRoutes(app);
+registerJobsRoutes(app);
+registerSyncReplayRoutes(app);
+registerExportRoutes(app);
+registerVersionRoutes(app);
+registerAdminAuthRoutes(app);
+registerAdminSyncRoutes(app);
+registerContentRoutes(app);
+registerSearchRoutes(app);
+registerReleaseRoutes(app);
+registerObservabilityRoutes(app);
+registerContractRoutes(app);
+registerCorpusReconciliationRoutes(app);
+registerSecurityOpsRoutes(app);
+registerPronunciationRoutes(app);
+registerAudioRoutes(app);
+registerAiArticleRoutes(app);
+
+app.use("/trpc", createExpressMiddleware({ router: appRouter, createContext }));
+
+const port = env.port;
+app.listen(port, () => {
+  console.log(`Pinuyumayan backend database API listening on :${port}`);
+});

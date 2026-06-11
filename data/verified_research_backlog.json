@@ -1,0 +1,85 @@
+{
+  "version": "2026-06-11",
+  "description": "後續可擴充但尚需更多來源或部落審核的題目。這些不是已驗證事實，不得直接作為平台內容。",
+  "items": [
+    {
+      "id": "community_specific_ritual_variation",
+      "topic": "各部落祭儀差異",
+      "needed_sources": [
+        "部落公告",
+        "部落耆老/文化工作者審核",
+        "官方或學術文獻"
+      ],
+      "risk": "high",
+      "reason": "不同部落實作與禁忌可能不同。"
+    },
+    {
+      "id": "community_current_contact_info",
+      "topic": "十社最新公開聯絡資訊",
+      "needed_sources": [
+        "部落官方社群",
+        "鄉鎮市公所",
+        "原民會核定部落資料"
+      ],
+      "risk": "medium",
+      "reason": "人事與窗口可能改變，必須查最新。"
+    },
+    {
+      "id": "music_figures_biographies",
+      "topic": "陸森寶、胡德夫、陳建年、紀曉君、張惠妹、陳明仁、桑布依人物資料",
+      "needed_sources": [
+        "個人官方頁",
+        "唱片公司/文化部資料",
+        "新聞或專訪"
+      ],
+      "risk": "medium",
+      "reason": "CIP 僅列名，生平作品需個別查證。"
+    },
+    {
+      "id": "puyuma_language_grammar_lessons",
+      "topic": "卑南語文法課程化",
+      "needed_sources": [
+        "官方族語教材",
+        "FormosanBank XML",
+        "語言學文獻",
+        "族語教師審核"
+      ],
+      "risk": "medium",
+      "reason": "四方言差異與正字法不可混用。"
+    },
+    {
+      "id": "tribe_name_alias_authority_review",
+      "topic": "部落羅馬拼音異名全面審核",
+      "needed_sources": [
+        "官方部落名稱",
+        "FormosanBank dialects",
+        "部落看板/公告",
+        "學術文獻"
+      ],
+      "risk": "medium",
+      "reason": "異寫很多，需確定前台主用與搜尋 alias。"
+    },
+    {
+      "id": "historical_pinadray_context",
+      "topic": "卑南王 Pinadray 歷史專題",
+      "needed_sources": [
+        "學術文獻",
+        "地方志",
+        "原民會/文化部資料"
+      ],
+      "risk": "medium",
+      "reason": "屬歷史人物與傳說交界，不能用單一來源過度推論。"
+    },
+    {
+      "id": "sukaro_cross_ethnic_history",
+      "topic": "斯卡羅與卑南族遷徙脈絡",
+      "needed_sources": [
+        "學術文獻",
+        "博物館資料",
+        "族群相關公開資料"
+      ],
+      "risk": "medium",
+      "reason": "跨族群歷史，需多方來源。"
+    }
+  ]
+}

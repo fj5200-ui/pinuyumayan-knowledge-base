@@ -1,0 +1,30 @@
+{
+  "version": "v16-pronunciation-quality-gate",
+  "gates": [
+    {
+      "id": "source_audio_available",
+      "required_for_public_exact_pronunciation": true,
+      "description_zh": "已有來源人聲音檔時，公開端必須優先使用來源音檔。"
+    },
+    {
+      "id": "synthetic_tts_human_review",
+      "required_for_public_synthetic_tts": true,
+      "description_zh": "任何神經 TTS 輸出公開前必須由語言教師/族人審核。"
+    },
+    {
+      "id": "license_check",
+      "required_for_audio_mirror_or_training": true,
+      "description_zh": "音檔鏡像、訓練或商用前必須檢查授權。"
+    },
+    {
+      "id": "sensitive_content_block",
+      "required": true,
+      "description_zh": "祭儀、祖靈、巫師與禁忌內容不得自動生成 TTS。"
+    },
+    {
+      "id": "source_phon_preferred",
+      "required_for_xml_corpus": true,
+      "description_zh": "FormosanBank XML 若有 PHON，需保存並優先用於發音標註。"
+    }
+  ]
+}

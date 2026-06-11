@@ -1,0 +1,113 @@
+{
+  "version": "4.0.0",
+  "base_path": "/api/trpc",
+  "test_groups": [
+    {
+      "group": "knowledge_public",
+      "cases": [
+        {
+          "id": "list_public_facts",
+          "procedure": "knowledge.fact.list",
+          "input": {
+            "sensitivity": [
+              "low"
+            ]
+          },
+          "expect": {
+            "status": 200,
+            "min_items": 1
+          }
+        },
+        {
+          "id": "get_topic_page",
+          "procedure": "knowledge.topic.get",
+          "input": {
+            "slug": "pinuyumayan-overview"
+          },
+          "expect": {
+            "status": 200,
+            "fields": [
+              "title_zh",
+              "source_ids"
+            ]
+          }
+        },
+        {
+          "id": "search_public",
+          "procedure": "knowledge.search",
+          "input": {
+            "q": "年齡階級"
+          },
+          "expect": {
+            "status": 200,
+            "min_items": 1
+          }
+        }
+      ]
+    },
+    {
+      "group": "puyuma_vocabulary",
+      "cases": [
+        {
+          "id": "list_audio_entries",
+          "procedure": "puyumaVocabulary.list",
+          "input": {
+            "hasAudio": true,
+            "limit": 20
+          },
+          "expect": {
+            "status": 200,
+            "min_items": 1
+          }
+        },
+        {
+          "id": "filter_dialect_38",
+          "procedure": "puyumaVocabulary.list",
+          "input": {
+            "dialectCode": "38",
+            "limit": 20
+          },
+          "expect": {
+            "status": 200,
+            "min_items": 1
+          }
+        },
+        {
+          "id": "get_audio_entry",
+          "procedure": "puyumaVocabulary.getById",
+          "input": {
+            "id": "puyuma-audio-3273c95775ad"
+          },
+          "expect": {
+            "status": 200,
+            "fields": [
+              "audio.url",
+              "text.puyuma_form"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "group": "admin_guarded",
+      "cases": [
+        {
+          "id": "review_queue_requires_auth",
+          "procedure": "admin.reviewQueue.list",
+          "input": {},
+          "expect": {
+            "status": 401
+          }
+        },
+        {
+          "id": "import_runs_requires_auth",
+          "procedure": "admin.importRuns.list",
+          "input": {},
+          "expect": {
+            "status": 401
+          }
+        }
+      ]
+    }
+  ]
+}

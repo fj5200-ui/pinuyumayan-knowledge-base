@@ -1,0 +1,225 @@
+{
+  "project": "pinuyumayan-backend-database",
+  "project_key": "pinuyumayan-backend-database",
+  "version": "v23",
+  "generated_at": "2026-06-11T15:21:47+00:00",
+  "status": "backend_database_project_not_skill_package",
+  "target_stack": [
+    "Node.js 20+",
+    "TypeScript",
+    "Express",
+    "tRPC",
+    "Drizzle ORM",
+    "MySQL 8 / TiDB Cloud",
+    "Cloudflare Workers adapter optional"
+  ],
+  "root_entry": "PROJECT.md",
+  "legacy_note": "legacy/SKILL.legacy.md 僅保留歷史規則與文化命名約束，不再作為主入口。",
+  "data_counts": {
+    "verified_facts": 109,
+    "communities": 10,
+    "rituals": 7,
+    "preview_vocabulary_audio_entries": 80,
+    "full_corpus_source_candidates": 66
+  },
+  "architecture_layers": [
+    "database",
+    "backend_api",
+    "import_pipeline",
+    "admin_review_ops",
+    "search_index",
+    "audio_assets",
+    "observability"
+  ],
+  "non_goals": [
+    "不得把 80 筆 preview 語料宣稱為完整千筆語料",
+    "不得公開未審核的祭儀細節/禁忌/家族內部知識",
+    "不得把 Puyuma 當成整個卑南族代稱"
+  ],
+  "project_type": "backend_database_service",
+  "features": [
+    "cache_and_webhook_policy",
+    "database_bootstrap_preview_mode",
+    "deployment_install_scripts",
+    "frontend_sdk_for_main_site",
+    "main_site_internal_sync_api",
+    "main_site_public_knowledge_api",
+    "postdeploy_full_corpus_import_job",
+    "public_vocabulary_audio_api",
+    "related_knowledge_pull_service",
+    "vps_systemd_nginx_runbook"
+  ],
+  "main_site_integration": {
+    "public_base_paths": [
+      "/api/public/knowledge/bootstrap",
+      "/api/public/knowledge/search",
+      "/api/public/knowledge/related",
+      "/api/public/knowledge/vocabulary"
+    ],
+    "internal_base_paths": [
+      "/api/internal/main-site/knowledge/bundle",
+      "/api/internal/main-site/knowledge/delta"
+    ],
+    "auth_header": "x-pinuyumayan-main-site-key",
+    "docs": [
+      "docs/main_site_integration_guide.md",
+      "docs/public_knowledge_api.md"
+    ]
+  },
+  "deployment_install": {
+    "default_mode": "preview",
+    "supported_modes": [
+      "preview",
+      "full-corpus-postdeploy",
+      "full-corpus-blocking"
+    ],
+    "recommended_full_corpus_strategy": "postdeploy_background_job",
+    "scripts": [
+      "deploy/install.sh",
+      "deploy/bootstrap-preview-db.sh",
+      "deploy/postdeploy-full-corpus.sh",
+      "deploy/healthcheck.sh"
+    ],
+    "docs": [
+      "docs/deployment_installation_guide.md",
+      "docs/vps_deployment_runbook.md"
+    ]
+  },
+  "stage": "delivery-governance-ready",
+  "v8_features": [
+    "production env matrix",
+    "deployment preflight",
+    "migration ledger",
+    "contract tests",
+    "backup/restore stubs",
+    "API key rotation metadata",
+    "rate limit policies",
+    "full corpus operations runbook"
+  ],
+  "v9_delivery_runtime": {
+    "openapi": "openapi/pinuyumayan-main-site-api.openapi.json",
+    "migration": "database/migrations/0005_delivery_runtime.sql",
+    "validation": "scripts/validate_delivery_runtime_layer.py",
+    "main_site_pull": true,
+    "full_corpus_import_at_startup": false
+  },
+  "latest_layer": "reliability-governance-v15",
+  "layers": [
+    "v10_application_runtime_hardening",
+    "v11_data_delivery_governance",
+    {
+      "version": "v13",
+      "name": "admin_auth_main_site_superadmin_sync_and_content_enrichment",
+      "files": [
+        "database/migrations/0009_admin_auth_main_site_superadmin.sql",
+        "database/migrations/0010_content_delivery_enrichment.sql",
+        "data/content/main_site_content_packets_v13.json",
+        "data/auth/admin_auth_contract_v13.json"
+      ]
+    },
+    "v17 pronunciation audio proxy/search/player implementation",
+    {
+      "version": "v18",
+      "name": "source grounded AI article publication + no duplicate governance",
+      "files": [
+        "data/sources/official_source_registry_v18.json",
+        "data/content/source_grounded_claims_v18.json",
+        "data/content/public_source_grounded_cards_v18.json",
+        "data/ai/article_blueprints_v18.json",
+        "data/ai/article_publication_policy_v18.json",
+        "database/migrations/0016_ai_article_grounding_no_duplicate_v18.sql",
+        "backend/src/rest/aiArticleRoutes.ts",
+        "backend/src/modules/aiArticle/service.ts",
+        "frontend-sdk/pinuyumayanAiArticleClient.v18.ts"
+      ],
+      "no_duplicate_policy": true,
+      "public_auto_publish": false,
+      "human_review_required": true,
+      "source_grounded_claim_count": 27
+    },
+    {
+      "version": "v19",
+      "name": "frontend-ai-secure-knowledge",
+      "description": "Frontend AI article composer flow, secure knowledge vault policies, true-source claim expansion with dedupe.",
+      "added_files": [
+        "data/ai/frontend_ai_article_composer_policy_v19.json",
+        "data/ai/frontend_source_packets_v19.json",
+        "data/content/source_grounded_claims_v19_additions.json",
+        "data/security/knowledge_base_security_hardening_v19.json",
+        "database/migrations/0017_frontend_ai_security_true_sources_v19.sql",
+        "frontend-sdk/pinuyumayanFrontendAiArticleClient.v19.ts"
+      ]
+    },
+    "v20_true_knowledge_collection_no_duplicate_next_upgrade_plan",
+    {
+      "version": "v23",
+      "name": "main-site integration kit",
+      "features": [
+        "main site env setup",
+        "server-side AI route",
+        "HMAC nonce signing",
+        "SDK bridge",
+        "connection checks",
+        "v24 roadmap"
+      ]
+    }
+  ],
+  "v11_data_delivery_governance": {
+    "migration": "database/migrations/0007_data_delivery_governance.sql",
+    "validation": "scripts/validate_data_delivery_governance_v11.py",
+    "features": [
+      "api_versioning",
+      "api_scopes",
+      "export_bundles",
+      "sync_replay",
+      "job_dead_letters",
+      "data_quality_reports",
+      "release_channels"
+    ],
+    "preview_subset_entries": 80,
+    "full_corpus_min_entries": 1000
+  },
+  "capabilities": [
+    "release_channel_governance",
+    "multi_site_delivery",
+    "data_lineage_dashboard",
+    "search_export_artifacts",
+    "api_slo_policy"
+  ],
+  "latest_package": "pinuyumayan-backend-database-governance-runtime-v12.zip",
+  "project_version": "v15",
+  "latest_upgrade": "performance_security_search_optimization_v14",
+  "validation_scripts": [
+    "scripts/validate_upgrade_optimization_v14.py"
+  ],
+  "migrations": [
+    "database/migrations/0011_performance_security_search_v14.sql"
+  ],
+  "description": "卑南族文化綜合平台後端資料庫服務；v15 adds SLO, contract testing, corpus reconciliation, payload snapshots and scoped admin grants.",
+  "preview_vocabulary_entries": 80,
+  "full_corpus_policy": "full corpus is imported post-deploy and must pass reconciliation before public promotion",
+  "validation": [
+    "scripts/validate_pronunciation_audio_delivery_v17.py"
+  ],
+  "counts": {
+    "source_grounded_claims_total_v19": 76,
+    "source_grounded_claims_added_v19": 49,
+    "openapi_paths_v19": 69
+  },
+  "name": "pinuyumayan-backend-database-true-knowledge-roadmap",
+  "v20": {
+    "new_claims": 59,
+    "merged_claims": 135,
+    "openapi_paths": 75,
+    "next_plan": "docs/next_upgrade_plan_v21.md"
+  },
+  "v22": {
+    "name": "Frontend AI Composer + Security + True Knowledge Expansion",
+    "new_claims": 30,
+    "merged_claims": 215,
+    "openapi_paths": 92,
+    "zip": "pinuyumayan-backend-database-frontend-ai-composer-security-v22.zip",
+    "next_plan": "data/development/next_upgrade_plan_v23.json"
+  },
+  "artifact": "pinuyumayan-backend-database-main-site-integration-v23.zip"
+}

@@ -1,0 +1,24 @@
+{
+  "version": "v23",
+  "signature_headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "signature_base": "METHOD\\nPATH_WITH_QUERY\\nTIMESTAMP\\nNONCE\\nSHA256_BODY",
+  "nonce_ttl_seconds": 300,
+  "clock_skew_seconds": 300,
+  "rotation_policy": {
+    "api_key_rotation_days": 90,
+    "hmac_secret_rotation_days": 90,
+    "overlap_window_days": 7,
+    "audit_event": "main_site_secret_rotation"
+  },
+  "failed_request_action": [
+    "reject",
+    "write_security_audit_log",
+    "increment_rate_limit_event"
+  ]
+}

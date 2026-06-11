@@ -1,0 +1,34 @@
+{
+  "version": "3.0.0",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "policy": "此表用於後台顯示授權狀態與音檔鏡像限制；未確認授權時，不得下載重發布 MP3，只能串流來源 URL 或留待審核。",
+  "sources": [
+    {
+      "source_id": "cip_pinuyumayan_official",
+      "title": "原住民族委員會卑南族介紹頁",
+      "source_type": "official",
+      "license_status": "official_public_page_review_required",
+      "allowed_use": "可摘要引用並附來源；不可斷章取義或取代部落公告。",
+      "mirror_policy": "not_applicable",
+      "review_status": "verified_source_need_content_review"
+    },
+    {
+      "source_id": "formosanbank_epark",
+      "title": "FormosanBank / ePark 卑南語語料與音檔 URL",
+      "source_type": "dataset",
+      "license_status": "source_xml_declares_CC-BY-NC-SA_in_sample; confirm before commercial reuse",
+      "allowed_use": "可作研究、教育、網站學習資料引用；正式商用或音檔鏡像需授權複核。",
+      "mirror_policy": "do_not_mirror_until_license_review_passed",
+      "review_status": "needs_license_review_for_audio_mirroring"
+    },
+    {
+      "source_id": "internal_native_speaker_review",
+      "title": "族語/部落審核者人工確認",
+      "source_type": "internal_review",
+      "license_status": "internal_platform_review",
+      "allowed_use": "用於確認拼寫、IPA、TTS 發音與文化敏感內容。",
+      "mirror_policy": "not_applicable",
+      "review_status": "planned"
+    }
+  ]
+}

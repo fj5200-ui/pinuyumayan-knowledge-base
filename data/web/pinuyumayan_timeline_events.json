@@ -1,0 +1,127 @@
+{
+  "version": "2026-06-11",
+  "usage": "網站歷史時間線；含傳說/公開敘事的項目必須標示 claim_type，不得全部寫成確定史實。",
+  "events": [
+    {
+      "id": "time-origin-bamboo-stone",
+      "date_label_zh": "起源敘事",
+      "title_zh": "竹生與石生兩種起源敘事",
+      "summary_zh": "竹生傳說以卑南社／南王為中心，石生傳說以知本社為中心。",
+      "claim_type": "origin_narrative",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/history/origin"
+    },
+    {
+      "id": "time-pre-17th-strong-polity",
+      "date_label_zh": "17世紀以前",
+      "title_zh": "公開資料描述卑南族曾是東部強盛民族",
+      "summary_zh": "公開資料稱卑南族在十七世紀以前即為強盛民族，卑南王時代威望達到高峰；網站應標示為公開資料脈絡。",
+      "claim_type": "public_source_historical_claim",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/history"
+    },
+    {
+      "id": "time-18th-hengchun-sukaro",
+      "date_label_zh": "18世紀",
+      "title_zh": "部分氏族遷居恆春半島並發展斯卡羅脈絡",
+      "summary_zh": "公開資料描述十八世紀有部分氏族遷居恆春半島，並與斯卡羅脈絡相關。",
+      "claim_type": "public_source_historical_claim",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/history/migration"
+    },
+    {
+      "id": "time-late-19th-japanese-classification",
+      "date_label_zh": "19世紀末",
+      "title_zh": "日本殖民統治時期分類中出現 Pinuyumayan 與八社蕃歷史用語",
+      "summary_zh": "公開資料提到十九世紀末進入日本殖民統治時期後，民族文化分類上稱為 Pinuyumayan，並因主要八個部落而有八社蕃之稱。",
+      "claim_type": "historical_classification",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "display_route": "/history/terms",
+      "ui_warning_zh": "八社僅作歷史用語，不作平台正式分類。"
+    },
+    {
+      "id": "time-japanese-rice-policy",
+      "date_label_zh": "日本殖民統治時期",
+      "title_zh": "水稻耕作受到政策鼓勵",
+      "summary_zh": "公開資料指出水稻受到政策鼓勵與支持，耕作面積增加。",
+      "claim_type": "public_source_historical_claim",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "display_route": "/material-life/industry"
+    },
+    {
+      "id": "time-1960s-economic-crops",
+      "date_label_zh": "1960年代以後",
+      "title_zh": "部分地區轉向釋迦、荖葉等經濟作物",
+      "summary_zh": "公開資料提到部分作物轉為釋迦與荖葉等經濟性作物。",
+      "claim_type": "public_source_modern_development",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "display_route": "/material-life/industry"
+    },
+    {
+      "id": "time-1981-ritual-revival",
+      "date_label_zh": "1981年以後",
+      "title_zh": "傳統祭典恢復與振興使傳統信仰再受重視",
+      "summary_zh": "公開資料提到民國70年（1981）之後，因傳統祭典恢復辦理與振興，傳統宗教信仰觀念再度受到重視與討論。",
+      "claim_type": "public_source_modern_development",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/rituals"
+    },
+    {
+      "id": "time-1982-joint-festival",
+      "date_label_zh": "1982年起",
+      "title_zh": "聯合年祭逐漸發展",
+      "summary_zh": "公開資料指出卑南族各部落自民國71年（1982）開始逐漸發展聯合年祭，由各部落輪流舉辦。",
+      "claim_type": "public_source_modern_development",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/rituals/joint-festival"
+    },
+    {
+      "id": "time-1991-revitalization",
+      "date_label_zh": "1991年",
+      "title_zh": "知本、初鹿、南王推動會所、青年會與文化工作協會等復振行動",
+      "summary_zh": "公開資料指出民國80年（1991）卑南族意識到傳統文化重要，知本、初鹿與南王分別在部落蓋新會所、成立青年會與文化工作協會，辦理歷史尋根與母語復振。",
+      "claim_type": "public_source_modern_development",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "medium",
+      "display_route": "/society/revitalization"
+    },
+    {
+      "id": "time-current-urban-fields",
+      "date_label_zh": "現代",
+      "title_zh": "族人活躍於東部與都市多領域",
+      "summary_zh": "公開資料提到不少族人離開東部到都市發展，活躍於不同領域之間。",
+      "claim_type": "public_source_modern_development",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "sensitivity": "low",
+      "display_route": "/modern-development"
+    }
+  ]
+}

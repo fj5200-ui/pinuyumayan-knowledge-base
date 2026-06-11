@@ -1,0 +1,66 @@
+{
+  "version": "3.0.0",
+  "generated_at": "2026-06-11T20:20:00+08:00",
+  "statuses": [
+    "draft",
+    "source_verified",
+    "cultural_review",
+    "language_review",
+    "ready_to_publish",
+    "published",
+    "blocked",
+    "archived"
+  ],
+  "transitions": [
+    {
+      "from": "draft",
+      "to": "source_verified",
+      "requires": [
+        "source_id",
+        "evidence_hint"
+      ]
+    },
+    {
+      "from": "source_verified",
+      "to": "cultural_review",
+      "requires": [
+        "sensitivity_assessment"
+      ]
+    },
+    {
+      "from": "cultural_review",
+      "to": "language_review",
+      "requires": [
+        "no_sensitive_detail_leak"
+      ]
+    },
+    {
+      "from": "language_review",
+      "to": "ready_to_publish",
+      "requires": [
+        "native_speaker_or_editorial_review"
+      ]
+    },
+    {
+      "from": "ready_to_publish",
+      "to": "published",
+      "requires": [
+        "admin_publish_permission"
+      ]
+    },
+    {
+      "from": "any",
+      "to": "blocked",
+      "requires": [
+        "sensitivity_violation_or_bad_source"
+      ]
+    }
+  ],
+  "auto_block_rules": [
+    "內容要求祭儀流程教學、禁忌細節、巫師操作或祖靈儀式仿作",
+    "缺少 source_id",
+    "語料宣稱 full corpus 但 entry_count < 1000",
+    "TTS 音檔未經審核卻要公開播放",
+    "音檔鏡像授權未確認卻產生 mirror_url"
+  ]
+}

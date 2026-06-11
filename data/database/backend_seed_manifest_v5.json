@@ -1,0 +1,32 @@
+{
+  "version": "v5-backend-db-seed-manifest",
+  "generated_at": "2026-06-11T20:00:00+08:00",
+  "seed_files": [
+    "database/seeds/001_sources.sql",
+    "database/seeds/002_communities.sql",
+    "database/seeds/003_verified_facts.sql",
+    "database/seeds/004_rituals.sql",
+    "database/seeds/005_preview_vocabulary_audio.sql",
+    "database/seeds/006_admin_roles_permissions.sql"
+  ],
+  "expected_counts": {
+    "verified_facts": 109,
+    "communities": 10,
+    "rituals": 7,
+    "preview_vocabulary_audio_entries": 80,
+    "full_corpus_source_candidates": 66
+  },
+  "load_order": [
+    "001_sources",
+    "002_communities",
+    "003_verified_facts",
+    "004_rituals",
+    "005_preview_vocabulary_audio",
+    "006_admin_roles_permissions"
+  ],
+  "warnings": [
+    "80 preview entries are not full corpus",
+    "audio mirror requires license review",
+    "TTS public generation disabled"
+  ]
+}

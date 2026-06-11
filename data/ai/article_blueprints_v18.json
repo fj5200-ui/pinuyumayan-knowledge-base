@@ -1,0 +1,141 @@
+{
+  "version": "v18",
+  "generated_at": "2026-06-11T18:45:00+08:00",
+  "description_zh": "主站 AI 發文藍圖：AI 只能結合 verified claims 與使用者想法，不可自行杜撰史料。",
+  "policy": {
+    "public_auto_publish": false,
+    "requires_human_review_before_publish": true,
+    "must_cite_source_claims": true,
+    "must_run_duplicate_check": true,
+    "disallow_secret_ritual_procedure_generation": true,
+    "disallow_uncited_historical_claims": true,
+    "disallow_fake_quotes": true
+  },
+  "blueprints": [
+    {
+      "blueprint_id": "article_bp_pinuyumayan_name_usage",
+      "title_zh": "Pinuyumayan 與 Puyuma：主站文章的名稱使用原則",
+      "slug": "ai-articles/name-usage-pinuyumayan-puyuma",
+      "angle": "用清楚、不混淆的方式說明族群稱呼、南王部落名稱與平台命名規範。",
+      "required_claim_ids": [
+        "kg_name_pinuyumayan",
+        "kg_distribution_taitung_center",
+        "kg_major_communities_list"
+      ],
+      "idea_slots": [
+        "你想補充的平台命名理念",
+        "你希望讀者記住的一句話"
+      ],
+      "prohibited": [
+        "不可把 Puyuma 無條件代稱整個卑南族",
+        "不可宣稱單一部落代表全部文化"
+      ],
+      "default_status": "draft_needs_human_review"
+    },
+    {
+      "blueprint_id": "article_bp_ten_communities_public_intro",
+      "title_zh": "卑南族十社入門：從地理、名稱到主站資料卡",
+      "slug": "ai-articles/ten-communities-intro",
+      "angle": "以十社名稱和地理線索建立主站入口，不重複產生相同部落介紹。",
+      "required_claim_ids": [
+        "kg_distribution_taitung_center",
+        "kg_major_communities_list",
+        "kg_name_pinuyumayan"
+      ],
+      "idea_slots": [
+        "你想把哪一社放在首頁焦點",
+        "是否加入近期活動連結"
+      ],
+      "prohibited": [
+        "不可改寫未來源化的起源神話",
+        "不可混用八社/十社造成平台分類錯亂"
+      ],
+      "default_status": "draft_needs_human_review"
+    },
+    {
+      "blueprint_id": "article_bp_age_house_public",
+      "title_zh": "會所與年齡階級：理解卑南族公共生活的一把鑰匙",
+      "slug": "ai-articles/age-house-public-life",
+      "angle": "以公共教育、角色分工和會所制度做文化解說。",
+      "required_claim_ids": [
+        "kg_social_age_house",
+        "kg_assembly_dakuvan_palakuan",
+        "kg_youth_training_public",
+        "kg_social_roles_public"
+      ],
+      "idea_slots": [
+        "你對青年文化傳承的看法",
+        "要不要連到主站族語學習區"
+      ],
+      "prohibited": [
+        "不可描寫會所內部禁忌或未公開儀式細節",
+        "不可寫成訓練規程"
+      ],
+      "default_status": "draft_needs_human_review"
+    },
+    {
+      "blueprint_id": "article_bp_ritual_calendar_summary",
+      "title_zh": "從三月到十二月：卑南族歲時祭儀的公開摘要",
+      "slug": "ai-articles/ritual-calendar-public-summary",
+      "angle": "做主站公開月曆與文化入門，不提供祭儀操作教學。",
+      "required_claim_ids": [
+        "kg_ritual_overview_public",
+        "kg_ritual_calendar_public",
+        "kg_masarut_public_summary",
+        "kg_mangayaw_public_summary",
+        "kg_joint_annual_ritual"
+      ],
+      "idea_slots": [
+        "你想提醒訪客尊重哪些參與禮節",
+        "是否加入活動公告連結"
+      ],
+      "prohibited": [
+        "不可生成祭儀步驟",
+        "不可臆造咒語、禁忌、祖靈內容",
+        "不可使用獵奇角度"
+      ],
+      "default_status": "draft_needs_human_review"
+    },
+    {
+      "blueprint_id": "article_bp_clothing_music_dance",
+      "title_zh": "色彩、歌舞與身份：卑南族文化表現的公開導覽",
+      "slug": "ai-articles/clothing-music-dance-guide",
+      "angle": "用公開史料說明服飾、音樂、舞蹈與社會角色的關係。",
+      "required_claim_ids": [
+        "kg_clothing_colors_identity",
+        "kg_music_song_public",
+        "kg_dance_public_roles",
+        "kg_modern_music_influence"
+      ],
+      "idea_slots": [
+        "你想加入哪些網站視覺設計想法",
+        "是否連到影音/相簿牆"
+      ],
+      "prohibited": [
+        "不可替族人發明服飾規定",
+        "不可把表演化內容說成所有部落固定形式"
+      ],
+      "default_status": "draft_needs_human_review"
+    },
+    {
+      "blueprint_id": "article_bp_real_audio_language_learning",
+      "title_zh": "卑南語學習為什麼要真人音檔優先",
+      "slug": "ai-articles/real-audio-language-learning",
+      "angle": "說明真人音檔、方言標籤、來源 PHON 與未審核 TTS 的區隔。",
+      "required_claim_ids": [
+        "kg_language_variation",
+        "kg_audio_pronunciation_real_source",
+        "kg_population_stats_link"
+      ],
+      "idea_slots": [
+        "你想怎麼安排語詞卡和播放器",
+        "是否說明未來 TTS 訓練願景"
+      ],
+      "prohibited": [
+        "不可把機器合成音標示為真人音檔",
+        "不可移除授權和來源欄位"
+      ],
+      "default_status": "draft_needs_human_review"
+    }
+  ]
+}

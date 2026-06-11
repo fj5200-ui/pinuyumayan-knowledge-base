@@ -1,0 +1,58 @@
+{
+  "version": "v9",
+  "presets": [
+    {
+      "key": "home_bootstrap",
+      "endpoint": "/api/public/knowledge/bootstrap",
+      "method": "GET",
+      "cache_key": "kb:bootstrap:{locale}",
+      "ttl_seconds": 300
+    },
+    {
+      "key": "community_page",
+      "endpoint": "/api/public/knowledge/communities/{communityKey}",
+      "method": "GET",
+      "cache_key": "kb:community:{communityKey}:{locale}",
+      "ttl_seconds": 1800
+    },
+    {
+      "key": "vocabulary_page",
+      "endpoint": "/api/public/knowledge/vocabulary",
+      "method": "GET",
+      "cache_key": "kb:vocab:{dialectCode}:{q}:{cursor}:{limit}",
+      "ttl_seconds": 900
+    },
+    {
+      "key": "related_cards",
+      "endpoint": "/api/public/knowledge/related",
+      "method": "GET",
+      "cache_key": "kb:related:{entityType}:{entityId}:{limit}",
+      "ttl_seconds": 600
+    },
+    {
+      "key": "main_site_delta",
+      "endpoint": "/api/internal/main-site/knowledge/delta",
+      "method": "GET",
+      "cache_key": "internal:delta:{since}:{limit}",
+      "ttl_seconds": 0
+    }
+  ],
+  "recommended_main_site_usage": {
+    "home": [
+      "home_bootstrap"
+    ],
+    "article_detail": [
+      "related_cards"
+    ],
+    "community_detail": [
+      "community_page",
+      "related_cards"
+    ],
+    "language_learning": [
+      "vocabulary_page"
+    ],
+    "site_search": [
+      "/api/public/knowledge/search"
+    ]
+  }
+}

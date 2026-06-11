@@ -1,0 +1,79 @@
+{
+  "version": "2026-06-11",
+  "platform_name": "卑南族文化綜合平台",
+  "content_domains": [
+    {
+      "key": "communities",
+      "name_zh": "卑南族十社",
+      "route": "/communities",
+      "data_source": "data/pinuyumayan_communities_expanded.json"
+    },
+    {
+      "key": "rituals",
+      "name_zh": "歲時祭儀",
+      "route": "/rituals",
+      "data_source": "data/pinuyumayan_rituals.json"
+    },
+    {
+      "key": "society",
+      "name_zh": "社會制度",
+      "route": "/society",
+      "data_source": "data/pinuyumayan_social_organization.json"
+    },
+    {
+      "key": "language",
+      "name_zh": "卑南語學習",
+      "route": "/language",
+      "data_source": "data/generated/puyuma_audio_seed.json"
+    },
+    {
+      "key": "material_life",
+      "name_zh": "生活工藝",
+      "route": "/material-life",
+      "data_source": "references/material_culture.md"
+    },
+    {
+      "key": "music_arts",
+      "name_zh": "歌謠與藝術",
+      "route": "/music-arts",
+      "data_source": "references/music_and_arts.md"
+    },
+    {
+      "key": "history",
+      "name_zh": "歷史與研究",
+      "route": "/history",
+      "data_source": "references/history_and_research.md"
+    }
+  ],
+  "approval_workflow": [
+    {
+      "stage": "draft",
+      "label_zh": "草稿",
+      "rule": "AI 可產生摘要，但必須標記來源與信心程度。"
+    },
+    {
+      "stage": "editor_review",
+      "label_zh": "編輯審核",
+      "rule": "檢查正名、十社、敏感內容、來源與語氣。"
+    },
+    {
+      "stage": "community_review",
+      "label_zh": "部落/族人複核",
+      "rule": "祭儀細節、家族、巫師、人物故事與禁忌內容必須複核。"
+    },
+    {
+      "stage": "published",
+      "label_zh": "公開",
+      "rule": "只公開通過審核且無禁忌風險的內容。"
+    }
+  ],
+  "content_flags": [
+    "public_summary_only",
+    "needs_community_review",
+    "needs_language_review",
+    "contains_ritual_detail",
+    "contains_personal_or_family_data",
+    "historical_term_not_ui_label",
+    "audio_available"
+  ]
+}

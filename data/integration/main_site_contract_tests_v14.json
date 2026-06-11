@@ -1,0 +1,35 @@
+{
+  "version": "v14",
+  "tests": [
+    {
+      "id": "suggest_requires_query",
+      "method": "GET",
+      "path": "/api/public/search/suggest?q=卑南",
+      "expect_status": 200
+    },
+    {
+      "id": "facets_public",
+      "method": "GET",
+      "path": "/api/public/search/facets",
+      "expect_status": 200
+    },
+    {
+      "id": "cache_invalidate_requires_key",
+      "method": "POST",
+      "path": "/api/internal/cache/invalidate",
+      "expect_status_without_key": 401
+    },
+    {
+      "id": "quality_run_requires_key",
+      "method": "POST",
+      "path": "/api/internal/data-quality/run",
+      "expect_status_without_key": 401
+    },
+    {
+      "id": "admin_sessions_requires_auth",
+      "method": "GET",
+      "path": "/api/admin/security/sessions",
+      "expect_status_without_session": 401
+    }
+  ]
+}

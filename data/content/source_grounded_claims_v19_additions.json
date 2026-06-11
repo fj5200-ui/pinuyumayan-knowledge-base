@@ -1,0 +1,1129 @@
+{
+  "version": "v19",
+  "generated_at": "2026-06-11T22:51:40+08:00",
+  "description_zh": "v19 新增可引用真實知識 claims。已與 v18 canonical_fingerprint 去重；全部為公開摘要層級。",
+  "counts": {
+    "new_claims": 49,
+    "deduped_against_v18": 0
+  },
+  "claims": [
+    {
+      "claim_id": "kg19_industry_foxtail_millet",
+      "category": "生業",
+      "statement_zh": "公開資料說明，卑南族早期農業以小米為重要作物之一，後續也栽培大麻、黃豆與小麥等作物。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1a8c3a51f3bc797e",
+      "keywords": [
+        "生業",
+        "小米",
+        "農業",
+        "黃豆",
+        "小麥"
+      ],
+      "dedupe_key": "claim_1a8c3a51f3bc797e",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_industry_pinadray_rice",
+      "category": "生業",
+      "statement_zh": "公開資料將 Pinadray 時期與水稻栽培技術與設備的引入相連，並描述其帶動農業生產與技術的興盛。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_94a10ac25762c28b",
+      "keywords": [
+        "Pinadray",
+        "水稻",
+        "農業技術"
+      ],
+      "dedupe_key": "claim_94a10ac25762c28b",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_industry_japanese_paddy",
+      "category": "生業",
+      "statement_zh": "公開資料指出，日治時期因政策鼓勵與支持，卑南族地區的水田耕作面積明顯增加。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bf6c456e58cab0e9",
+      "keywords": [
+        "日治時期",
+        "水田",
+        "農業"
+      ],
+      "dedupe_key": "claim_bf6c456e58cab0e9",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_industry_cash_crops_1960s",
+      "category": "生業",
+      "statement_zh": "公開資料指出，自 1960 年代起，卑南族社群部分作物轉向釋迦與檳榔等經濟作物。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L127-L129",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_eb9aed3f460fb61f",
+      "keywords": [
+        "1960年代",
+        "釋迦",
+        "檳榔",
+        "經濟作物"
+      ],
+      "dedupe_key": "claim_eb9aed3f460fb61f",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_food_shellflower_dumpling",
+      "category": "飲食",
+      "statement_zh": "公開資料提到，節慶時會以月桃葉包裹糯米與鹹豬肉，形成具卑南族特色的月桃葉小米粽或糯米粽。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L130-L132",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0ab0fcf1932a296a",
+      "keywords": [
+        "飲食",
+        "月桃葉",
+        "小米粽",
+        "糯米粽"
+      ],
+      "dedupe_key": "claim_0ab0fcf1932a296a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_food_betel_daily_ritual",
+      "category": "飲食與祭儀",
+      "statement_zh": "公開資料指出，檳榔在卑南族日常生活中不可或缺，也在祭儀中作為重要供物；主站文章只能做公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L130-L132",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9d440e18c61feac2",
+      "keywords": [
+        "檳榔",
+        "日常生活",
+        "供物"
+      ],
+      "dedupe_key": "claim_9d440e18c61feac2",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_clothing_flax_material",
+      "category": "服飾",
+      "statement_zh": "公開資料說明卑南族傳統服裝使用麻纖維製作，並以紅、黃、綠等色彩與黑白菱形紋、十字繡形成視覺特色。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L136",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2763f27ac5e6646a",
+      "keywords": [
+        "服飾",
+        "麻",
+        "紅黃綠",
+        "菱形紋",
+        "十字繡"
+      ],
+      "dedupe_key": "claim_2763f27ac5e6646a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_clothing_social_identifier",
+      "category": "服飾",
+      "statement_zh": "公開資料指出，卑南族服飾可用來辨識性別與年齡群體，並反映社會地位與社會關係。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L136",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_918bb406dccacc52",
+      "keywords": [
+        "服飾",
+        "性別",
+        "年齡",
+        "社會地位"
+      ],
+      "dedupe_key": "claim_918bb406dccacc52",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_clothing_youth_male_regalia",
+      "category": "服飾",
+      "statement_zh": "公開資料描述，青少年男性盛裝可包含胸飾、黑短褲、裙褲、檳榔袋與腰袋等元素。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L136",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_111fefbe2943bc3a",
+      "keywords": [
+        "青少年",
+        "男性服飾",
+        "盛裝"
+      ],
+      "dedupe_key": "claim_111fefbe2943bc3a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_clothing_female_marriage_age",
+      "category": "服飾",
+      "statement_zh": "公開資料描述，達婚齡女性的盛裝可包含頭巾、上衣、腹帶、裙與綁腿等元素。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L136",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d7914778a7de5970",
+      "keywords": [
+        "女性服飾",
+        "頭巾",
+        "腹帶",
+        "綁腿"
+      ],
+      "dedupe_key": "claim_d7914778a7de5970",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_clothing_leader_priest_feather",
+      "category": "服飾與角色",
+      "statement_zh": "公開資料指出，盛裝時頭目與祭司可佩戴羽冠與肩帶；巫者則有肩飾作為特殊身分標誌。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L133-L136",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_67770e65bf2706d9",
+      "keywords": [
+        "頭目",
+        "祭司",
+        "羽冠",
+        "巫者",
+        "肩飾"
+      ],
+      "dedupe_key": "claim_67770e65bf2706d9",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_wreath_relationship_marker",
+      "category": "服飾與社會關係",
+      "statement_zh": "公開資料說明，花環在祭儀與生命階段中具有標示、祝福與社交關係的意義，獲得多個花環可顯示良好社群關係。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L136-L136",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2678908d3dd8e17a",
+      "keywords": [
+        "花環",
+        "社會關係",
+        "祭儀"
+      ],
+      "dedupe_key": "claim_2678908d3dd8e17a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_weaving_techniques",
+      "category": "工藝",
+      "statement_zh": "公開資料列舉卑南族藤竹編工藝包含交編、人字紋與六角編等技法。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L137-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4fb21bc23796c90f",
+      "keywords": [
+        "工藝",
+        "藤編",
+        "竹編",
+        "六角編",
+        "人字紋"
+      ],
+      "dedupe_key": "claim_4fb21bc23796c90f",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_weaving_daily_tools",
+      "category": "工藝",
+      "statement_zh": "公開資料指出，藤籃、藤袋、背籃、月桃葉蓆、竹杯、煙斗、漁具與獸夾等器具，展現卑南族材料運用與日常工藝。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L137-L139",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_50f5ab2ab77c48b2",
+      "keywords": [
+        "工藝",
+        "藤籃",
+        "背籃",
+        "月桃葉蓆",
+        "竹杯"
+      ],
+      "dedupe_key": "claim_50f5ab2ab77c48b2",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_architecture_public_private",
+      "category": "建築",
+      "statement_zh": "公開資料將卑南族傳統建築依權限與用途分為公共建築與私人建築，公共建築包含會所、祖靈相關祭祀空間與瞭望台。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L140-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_025a648c0aaac733",
+      "keywords": [
+        "建築",
+        "公共建築",
+        "私人建築",
+        "會所",
+        "瞭望台"
+      ],
+      "dedupe_key": "claim_025a648c0aaac733",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_architecture_family_house_layout",
+      "category": "建築",
+      "statement_zh": "公開資料描述傳統家屋為長方形建築，具茅草屋頂與竹牆，室內包含沿牆床鋪與由三塊石頭構成的爐灶。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L142-L144",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0452ef5016abbbc8",
+      "keywords": [
+        "家屋",
+        "茅草",
+        "竹牆",
+        "爐灶"
+      ],
+      "dedupe_key": "claim_0452ef5016abbbc8",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_architecture_house_status",
+      "category": "建築與社會",
+      "statement_zh": "公開資料指出，傳統家屋大小可反映屋主社會地位，頭目直系家屋最大，新婚者家屋較簡樸。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L143-L144",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0338d4b8780049c4",
+      "keywords": [
+        "家屋",
+        "社會地位",
+        "頭目",
+        "新婚"
+      ],
+      "dedupe_key": "claim_0338d4b8780049c4",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_architecture_dakuvan_structure",
+      "category": "會所",
+      "statement_zh": "公開資料描述少年會所 Dakuvan 為二層建築，具有樓梯、傘形茅草屋頂、環形走道與中央爐火。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L145-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_555a1b92f942c1ca",
+      "keywords": [
+        "Dakuvan",
+        "少年會所",
+        "建築",
+        "中央爐火"
+      ],
+      "dedupe_key": "claim_555a1b92f942c1ca",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_architecture_palakuan_structure",
+      "category": "會所",
+      "statement_zh": "公開資料描述成年會所 Palakuan 坐落於長方形基礎上，呈橢圓形，內有竹床與中央爐火。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L145-L146",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5e00bbae6d1e5700",
+      "keywords": [
+        "Palakuan",
+        "成年會所",
+        "建築",
+        "中央爐火"
+      ],
+      "dedupe_key": "claim_5e00bbae6d1e5700",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_music_poetic_narrative",
+      "category": "音樂",
+      "statement_zh": "公開資料指出，卑南族音樂節奏明確且具優雅感，歌詞多敘述故事，因此具有詩性特質。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L150-L156",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3e0017a88949f842",
+      "keywords": [
+        "音樂",
+        "節奏",
+        "敘事",
+        "詩性"
+      ],
+      "dedupe_key": "claim_3e0017a88949f842",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_music_ritual_job_status",
+      "category": "音樂",
+      "statement_zh": "公開資料說明，儀式歌依工作與社群身分分類；主站僅能摘要分類，不生成儀式歌詞或私密內容。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L152-L154",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d811c3748586e278",
+      "keywords": [
+        "儀式歌",
+        "工作",
+        "身分"
+      ],
+      "dedupe_key": "claim_d811c3748586e278",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_music_women_work_song",
+      "category": "音樂",
+      "statement_zh": "公開資料提到，工作歌與聚會歌曲可有女性專屬的使用脈絡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L155-L156",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_02b96d2cc066de6a",
+      "keywords": [
+        "工作歌",
+        "女性",
+        "聚會歌"
+      ],
+      "dedupe_key": "claim_02b96d2cc066de6a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_modern_music_artists_summary",
+      "category": "現代音樂",
+      "statement_zh": "公開資料列舉多位卑南族音樂人與歌手，顯示卑南族音樂在現代流行音樂中仍具活力與影響力。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L156-L156",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_93f1068ee7f45950",
+      "keywords": [
+        "現代音樂",
+        "歌手",
+        "流行音樂"
+      ],
+      "dedupe_key": "claim_93f1068ee7f45950",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_dance_social_steps",
+      "category": "舞蹈",
+      "statement_zh": "公開資料指出，卑南族舞蹈反映性別與年齡差異，參與者需依自身社會身分遵循相應步伐。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L158-L160",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7a0520b275ea8a8f",
+      "keywords": [
+        "舞蹈",
+        "性別",
+        "年齡",
+        "社會身分"
+      ],
+      "dedupe_key": "claim_7a0520b275ea8a8f",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_dance_ritual_diversity",
+      "category": "舞蹈",
+      "statement_zh": "公開資料說明，卑南族在不同祭儀中有不同舞蹈形式，主站可作分類摘要但不得轉為操作教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L158-L160",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_866cdf8edebfc229",
+      "keywords": [
+        "舞蹈",
+        "祭儀",
+        "分類"
+      ],
+      "dedupe_key": "claim_866cdf8edebfc229",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_language_southern_voiced",
+      "category": "族語",
+      "statement_zh": "公開資料指出，南部知本一帶卑南語發音受排灣語與魯凱語影響，帶有較強濁音特色。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L161-L163",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2bc1a2ce94287955",
+      "keywords": [
+        "卑南語",
+        "知本",
+        "發音",
+        "排灣語",
+        "魯凱語"
+      ],
+      "dedupe_key": "claim_2bc1a2ce94287955",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_language_northern_amis_influence",
+      "category": "族語",
+      "statement_zh": "公開資料指出，北部卑南社群的卑南語發音可能受到阿美語影響。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L161-L163",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8cc81bf33a1f4d19",
+      "keywords": [
+        "卑南語",
+        "北部",
+        "阿美語",
+        "發音"
+      ],
+      "dedupe_key": "claim_8cc81bf33a1f4d19",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_language_han_contact_taiwanese",
+      "category": "族語",
+      "statement_zh": "公開資料提到，因與漢人接觸頻繁，卑南族人也常能使用福佬語，俗稱臺語。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L161-L163",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2890ee9aa6e7c915",
+      "keywords": [
+        "福佬語",
+        "臺語",
+        "語言接觸"
+      ],
+      "dedupe_key": "claim_2890ee9aa6e7c915",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_religion_roles_maintain_life",
+      "category": "社會角色",
+      "statement_zh": "公開資料指出，政治領袖、祭司與巫者在卑南族社會中分別承擔公共治理、祭儀與醫療照護等專業角色。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L164-L176",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6ed05bcd3ecba273",
+      "keywords": [
+        "政治領袖",
+        "祭司",
+        "巫者",
+        "照護"
+      ],
+      "dedupe_key": "claim_6ed05bcd3ecba273",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_male_age_hall_relationship",
+      "category": "社會制度",
+      "statement_zh": "公開資料指出，男性社會關係透過年齡階級與會所制度呈現，與公共事務及教育訓練密切相關。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L165-L179",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_02183415546f23b7",
+      "keywords": [
+        "男性社會關係",
+        "年齡階級",
+        "會所"
+      ],
+      "dedupe_key": "claim_02183415546f23b7",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_matrilineality_transformation",
+      "category": "親屬制度",
+      "statement_zh": "公開資料指出，卑南族傳統有母系繼承與從妻居特徵，但在現代社會互動下，親屬制度也出現向父系轉變的現象。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L165-L172",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8743fd0924749f1b",
+      "keywords": [
+        "母系",
+        "從妻居",
+        "父系轉變",
+        "親屬制度"
+      ],
+      "dedupe_key": "claim_8743fd0924749f1b",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_lineage_big_small_split",
+      "category": "親屬制度",
+      "statement_zh": "公開資料將同祖先與同家名者視為同一系統，並區分大宗、小宗與分支家庭等層級。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L167-L169",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_61e5dd408792fca7",
+      "keywords": [
+        "家名",
+        "大宗",
+        "小宗",
+        "分支家庭"
+      ],
+      "dedupe_key": "claim_61e5dd408792fca7",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_zhiben_three_clans",
+      "category": "親屬制度",
+      "statement_zh": "公開資料以知本 Katratripulr 為例，說明其下有三個氏族，並與共同祖先、頭目與會所相連。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L168-L169",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_18abccf279574ce2",
+      "keywords": [
+        "知本",
+        "Katratripulr",
+        "氏族",
+        "頭目",
+        "會所"
+      ],
+      "dedupe_key": "claim_18abccf279574ce2",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_priest_knowledge_calendar",
+      "category": "社會角色",
+      "statement_zh": "公開資料描述祭司需熟悉曆法、氣象、歷史、傳統歌舞，並能提供農耕與生活指導。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L174-L176",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6ed32bd63691c6f0",
+      "keywords": [
+        "祭司",
+        "曆法",
+        "氣象",
+        "歷史",
+        "農耕"
+      ],
+      "dedupe_key": "claim_6ed32bd63691c6f0",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_age_training_stages_skills",
+      "category": "年齡階級教育",
+      "statement_zh": "公開資料指出，青少年在會所訓練中學習競走、摔角、野外生存與狩獵等技能，並需遵從長輩。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L177-L179",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ceb5bee44e62fa15",
+      "keywords": [
+        "會所訓練",
+        "競走",
+        "摔角",
+        "野外生存",
+        "狩獵"
+      ],
+      "dedupe_key": "claim_ceb5bee44e62fa15",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_1991_revival_associations",
+      "category": "文化復振",
+      "statement_zh": "公開資料指出，1991 年知本、初鹿與南王等地重建會所、成立青年會與文化協會，推動尋根與母語復振。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L177-L179",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c64f1495601f8b41",
+      "keywords": [
+        "1991",
+        "文化復振",
+        "會所",
+        "青年會",
+        "母語"
+      ],
+      "dedupe_key": "claim_c64f1495601f8b41",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_ritual_types_agriculture_life",
+      "category": "歲時祭儀",
+      "statement_zh": "公開資料將卑南族祭儀概分為農業祭儀與生命祭儀兩大類；主站只能公開摘要，不生成儀式流程。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L184-L192",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_427b5418015b5b7a",
+      "keywords": [
+        "農業祭儀",
+        "生命祭儀",
+        "分類"
+      ],
+      "dedupe_key": "claim_427b5418015b5b7a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_ritual_march_mugamut",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "公開資料將三月與 Mugamut 小米除草完工祭連結，適合做主站年度文化月曆摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L185-L195",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6819a35c9f8d578f",
+      "keywords": [
+        "三月",
+        "Mugamut",
+        "小米除草完工祭"
+      ],
+      "dedupe_key": "claim_6819a35c9f8d578f",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_ritual_april_ruvuwaan",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "公開資料將四月與 Ruvuwa’an 祖先登陸與發祥地祭儀連結，主站應只做文化地景與歷史意義摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L185-L199",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f5c6c99cf8f4478e",
+      "keywords": [
+        "四月",
+        "Ruvuwa’an",
+        "發祥地",
+        "祖先登陸"
+      ],
+      "dedupe_key": "claim_f5c6c99cf8f4478e",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_ritual_july_masarut",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "公開資料將七月與 Masarut 小米收穫祭連結，主站可摘要農耕節奏、收穫與社群文化活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L185-L203",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_41b0728aad3a4eab",
+      "keywords": [
+        "七月",
+        "Masarut",
+        "小米收穫祭"
+      ],
+      "dedupe_key": "claim_41b0728aad3a4eab",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_ritual_december_annual",
+      "category": "歲時祭儀月曆",
+      "statement_zh": "公開資料將十二月與年度祭儀、少年年祭及大獵祭連結，主站應避免獵奇化與操作式描寫。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L204-L214",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ffcca65c59b2dcec",
+      "keywords": [
+        "十二月",
+        "年祭",
+        "少年年祭",
+        "大獵祭"
+      ],
+      "dedupe_key": "claim_ffcca65c59b2dcec",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_masarut_family_based_duration",
+      "category": "歲時祭儀",
+      "statement_zh": "公開資料指出，Masarut 以各延伸家庭為基礎舉行，時間可為三至七日；主站只做公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L200-L203",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e8ac4e8321f6ad8e",
+      "keywords": [
+        "Masarut",
+        "延伸家庭",
+        "三至七日"
+      ],
+      "dedupe_key": "claim_e8ac4e8321f6ad8e",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_masarut_swing_cultural_activity",
+      "category": "文化活動",
+      "statement_zh": "公開資料指出，部分社群會在會所前廣場設置鞦韆，並在今日成為特殊文化活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L200-L203",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a31a925a274d104a",
+      "keywords": [
+        "鞦韆",
+        "會所前廣場",
+        "文化活動"
+      ],
+      "dedupe_key": "claim_a31a925a274d104a",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_mangayaw_largest_three_week",
+      "category": "歲時祭儀",
+      "statement_zh": "公開資料指出，Mangayaw 是卑南族最大年度活動，約跨年末歲初，並可持續約三週。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L204-L208",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7f9e1d2cf9e93b6e",
+      "keywords": [
+        "Mangayaw",
+        "年末歲初",
+        "三週"
+      ],
+      "dedupe_key": "claim_7f9e1d2cf9e93b6e",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_vasivas_grass_monkey_change",
+      "category": "文化變遷",
+      "statement_zh": "公開資料指出，Vasivas 中與猴相關的實作因社會變遷改以草猴取代真猴；主站應以文化變遷角度呈現。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L209-L211",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_97f8c94096232c6b",
+      "keywords": [
+        "Vasivas",
+        "草猴",
+        "社會變遷"
+      ],
+      "dedupe_key": "claim_97f8c94096232c6b",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_mangayau_fixed_location_today",
+      "category": "文化變遷",
+      "statement_zh": "公開資料指出，今日 Mangayau 大獵祭在固定地點舉行，並通常安排於十二月底數日；主站應做公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L212-L214",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0e492112cab8ce01",
+      "keywords": [
+        "Mangayau",
+        "固定地點",
+        "十二月底"
+      ],
+      "dedupe_key": "claim_0e492112cab8ce01",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_joint_ritual_rotation_identity",
+      "category": "聯合年祭",
+      "statement_zh": "公開資料指出，聯合年祭由不同部落輪流舉辦，包含歌舞與競賽等內容，並成為凝聚族群認同的重要活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L215-L216",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8a3cd7748b458387",
+      "keywords": [
+        "聯合年祭",
+        "輪流舉辦",
+        "歌舞",
+        "競賽",
+        "族群認同"
+      ],
+      "dedupe_key": "claim_8a3cd7748b458387",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_distribution_chenggong_taimali",
+      "category": "分布",
+      "statement_zh": "公開資料提到，除了臺東平原核心地帶，也有部分卑南族人定居於成功鎮與太麻里鄉。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L122-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fc468c47707341f9",
+      "keywords": [
+        "分布",
+        "成功鎮",
+        "太麻里"
+      ],
+      "dedupe_key": "claim_fc468c47707341f9",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    },
+    {
+      "claim_id": "kg19_migration_urban_development",
+      "category": "當代發展",
+      "statement_zh": "公開資料指出，許多卑南族人已因發展需求離開東臺灣、在城市及不同領域活動。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "evidence_locator": "L122-L124",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ce2d3a4fbe730f61",
+      "keywords": [
+        "都市移居",
+        "當代發展",
+        "東臺灣"
+      ],
+      "dedupe_key": "claim_ce2d3a4fbe730f61",
+      "article_allowed": true,
+      "article_guardrail": "必須引用來源；不得把摘要擴寫成未查證史實；敏感祭儀/信仰只做公開摘要。"
+    }
+  ]
+}

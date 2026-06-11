@@ -1,0 +1,82 @@
+{
+  "version": "v13",
+  "roles": [
+    {
+      "key": "super_admin",
+      "name_zh": "超級管理員",
+      "immutable": true,
+      "description": "最高權限；可管理知識庫、語料匯入、主站同步、API client、審核與發布。"
+    },
+    {
+      "key": "knowledge_admin",
+      "name_zh": "知識庫管理員",
+      "description": "管理 facts、content items、source citations 與 release channel。"
+    },
+    {
+      "key": "corpus_admin",
+      "name_zh": "語料管理員",
+      "description": "管理 FormosanBank/ePark 匯入、音檔、G2P/IPA/TTS metadata。"
+    },
+    {
+      "key": "reviewer",
+      "name_zh": "內容審核員",
+      "description": "審核公開內容與敏感內容摘要。"
+    },
+    {
+      "key": "main_site_sync",
+      "name_zh": "主站同步服務帳號",
+      "service_account": true,
+      "description": "主站後端同步 bundle/delta/export，不可登入後台 UI。"
+    }
+  ],
+  "permissions": [
+    "admin:login",
+    "admin:manage_users",
+    "admin:sync_main_site",
+    "knowledge:read",
+    "knowledge:write",
+    "knowledge:publish",
+    "vocabulary:read",
+    "vocabulary:write",
+    "corpus:import",
+    "corpus:quality_gate",
+    "release:promote",
+    "sync:replay",
+    "export:read",
+    "export:write",
+    "audit:read"
+  ],
+  "default_grants": {
+    "super_admin": [
+      "*"
+    ],
+    "knowledge_admin": [
+      "admin:login",
+      "knowledge:read",
+      "knowledge:write",
+      "knowledge:publish",
+      "release:promote",
+      "audit:read"
+    ],
+    "corpus_admin": [
+      "admin:login",
+      "vocabulary:read",
+      "vocabulary:write",
+      "corpus:import",
+      "corpus:quality_gate",
+      "audit:read"
+    ],
+    "reviewer": [
+      "admin:login",
+      "knowledge:read",
+      "knowledge:write",
+      "audit:read"
+    ],
+    "main_site_sync": [
+      "knowledge:read",
+      "vocabulary:read",
+      "sync:replay",
+      "export:read"
+    ]
+  }
+}

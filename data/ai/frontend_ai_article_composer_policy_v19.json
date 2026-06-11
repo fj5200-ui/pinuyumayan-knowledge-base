@@ -1,0 +1,51 @@
+{
+  "version": "v19",
+  "generated_at": "2026-06-11T22:51:40+08:00",
+  "name": "frontend_ai_article_composer_policy",
+  "description_zh": "主站文章生成改由前端 Composer 調用 AI provider；後端知識庫只提供可引用史料 packets、安全/去重檢查、審核與發佈前驗證。",
+  "architecture": {
+    "frontend_responsibility": [
+      "呼叫後端取得 source packets / blueprints / citation rules",
+      "將使用者想法與 source packets 組成前端 AI prompt",
+      "自行呼叫 AI provider，不把 AI provider key 放到後端知識庫服務",
+      "取得草稿後送回後端進行 citation-check、duplicate-check、sensitivity-check、review-submit"
+    ],
+    "backend_responsibility": [
+      "只提供 verified / public_summary_only source claims",
+      "不生成文章本文，不替前端調用 LLM",
+      "檢查草稿引用是否覆蓋必要 claim_ids/source_ids",
+      "檢查重複 slug、fingerprint、title similarity、claim overlap",
+      "阻擋未審核祭儀程序、禁忌細節、祖靈/巫術操作化內容",
+      "保存審核佇列、audit log、publish checks"
+    ],
+    "deprecated_backend_endpoint": "/api/internal/ai-article/draft-plan"
+  },
+  "prompt_rules": {
+    "must_include_user_idea": true,
+    "must_include_claim_ids": true,
+    "must_cite_sources": true,
+    "forbid_unsourced_historical_claims": true,
+    "forbid_turning_user_idea_into_fact": true,
+    "forbid_ritual_procedure_instruction": true,
+    "output_required_fields": [
+      "title_zh",
+      "slug",
+      "angle",
+      "body_markdown",
+      "claim_ids",
+      "source_ids",
+      "user_idea_summary",
+      "citation_notes",
+      "sensitivity_self_check"
+    ]
+  },
+  "review_required": true,
+  "auto_publish_allowed": false,
+  "dedupe": {
+    "same_slug": "block",
+    "same_canonical_fingerprint": "block",
+    "claim_overlap_ratio_gte_0_80_same_angle": "manual_review",
+    "title_similarity_gte_0_92": "manual_review",
+    "same_topic_within_7_days": "manual_review"
+  }
+}

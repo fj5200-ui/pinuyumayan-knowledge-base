@@ -1,0 +1,622 @@
+{
+  "version": "2026-06-11-expanded",
+  "source_repository": "https://github.com/FormosanBank/FormosanBank",
+  "repository_commit": "604a1074b6ea5685365defd8cfd043f3f10aaecb",
+  "target_language": "卑南語 / Puyuma language",
+  "platform_scope": "卑南族文化綜合平台",
+  "google_drive_audio_folder": {
+    "id": "1o_iEc2dbet-cENHLjv86R_b67M0TlakZ",
+    "url": "https://drive.google.com/drive/folders/1o_iEc2dbet-cENHLjv86R_b67M0TlakZ",
+    "role": "使用者指定的對應語音資料夾；同步腳本支援以 gdown 下載，若無權限或非公開，需先登入或改用本機掛載。"
+  },
+  "dialects": [
+    {
+      "code": "38",
+      "formosanbank_name": "Nanwang_Puyuma",
+      "display_zh": "南王卑南語",
+      "community_key": "puyuma",
+      "glottocode": "nanw1237",
+      "platform_note": "Puyuma 在部落名指南王；語言名可作 Puyuma language。"
+    },
+    {
+      "code": "39",
+      "formosanbank_name": "Zhiben_Puyuma",
+      "display_zh": "知本卑南語",
+      "community_key": "katratripulr",
+      "glottocode": "",
+      "platform_note": "前台部落主用拼法 Katratripulr；Zhiben 為 FormosanBank/ePark 檔名與漢語地名轉寫。"
+    },
+    {
+      "code": "40",
+      "formosanbank_name": "Xiqun_Puyuma",
+      "display_zh": "西群卑南語",
+      "community_key": "ulivelivek",
+      "glottocode": "",
+      "platform_note": "西群可涵蓋初鹿等石生系統聚落；展示時需依內容細分部落。"
+    },
+    {
+      "code": "41",
+      "formosanbank_name": "Jianhe_Puyuma",
+      "display_zh": "建和卑南語",
+      "community_key": "kasavakan",
+      "glottocode": "",
+      "platform_note": "前台部落主用拼法 Kasavakan；Jianhe 為 FormosanBank/ePark 檔名與漢語地名轉寫。"
+    }
+  ],
+  "csv_sources": [
+    {
+      "id": "ep1_jiu_jie_38_nanwang",
+      "category": "九階教材",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_1/九階教材/38 南王卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_1/九階教材/38 南王卑南語.csv"
+    },
+    {
+      "id": "ep1_jiu_jie_39_zhiben",
+      "category": "九階教材",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_1/九階教材/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_1/九階教材/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep1_jiu_jie_40_xiqun",
+      "category": "九階教材",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_1/九階教材/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_1/九階教材/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep1_jiu_jie_41_jianhe",
+      "category": "九階教材",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_1/九階教材/41 建和卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_1/九階教材/41 建和卑南語.csv"
+    },
+    {
+      "id": "ep2_qingjing_38_nanwang",
+      "category": "情境族語",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/情境族語/38 南王卑南語.csv"
+    },
+    {
+      "id": "ep2_qingjing_39_zhiben",
+      "category": "情境族語",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/情境族語/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep2_qingjing_40_xiqun",
+      "category": "情境族語",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/情境族語/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep2_qingjing_41_jianhe",
+      "category": "情境族語",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/情境族語/41 建和卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/情境族語/41 建和卑南語.csv"
+    },
+    {
+      "id": "ep2_wenhua_38_nanwang",
+      "category": "文化篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/文化篇/38 南王卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/文化篇/38 南王卑南語.csv"
+    },
+    {
+      "id": "ep2_wenhua_39_zhiben",
+      "category": "文化篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/文化篇/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/文化篇/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep2_wenhua_40_xiqun",
+      "category": "文化篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/文化篇/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/文化篇/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep2_wenhua_41_jianhe",
+      "category": "文化篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/文化篇/41 建和卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/文化篇/41 建和卑南語.csv"
+    },
+    {
+      "id": "ep2_duanwen_39_zhiben",
+      "category": "族語短文",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/族語短文/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep2_duanwen_40_xiqun",
+      "category": "族語短文",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/族語短文/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep2_huihua_38_nanwang",
+      "category": "生活會話篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/38 南王卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/38 南王卑南語.csv"
+    },
+    {
+      "id": "ep2_huihua_39_zhiben",
+      "category": "生活會話篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep2_huihua_40_xiqun",
+      "category": "生活會話篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep2_huihua_41_jianhe",
+      "category": "生活會話篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/生活會話篇/41 建和卑南語.csv"
+    },
+    {
+      "id": "ep2_readwrite_38_nanwang",
+      "category": "閱讀書寫篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/38 南王卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/38 南王卑南語.csv"
+    },
+    {
+      "id": "ep2_readwrite_39_zhiben",
+      "category": "閱讀書寫篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/39 知本卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/39 知本卑南語.csv"
+    },
+    {
+      "id": "ep2_readwrite_40_xiqun",
+      "category": "閱讀書寫篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/40 西群卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/40 西群卑南語.csv"
+    },
+    {
+      "id": "ep2_readwrite_41_jianhe",
+      "category": "閱讀書寫篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/41 建和卑南語.csv",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/CodeAndDocs/ePark_2/閱讀書寫篇/41 建和卑南語.csv"
+    }
+  ],
+  "xml_sources": [
+    {
+      "id": "hui_ben_ping_tai_picture_book_platform_38",
+      "category": "繪本平台",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "hui_ben_ping_tai_picture_book_platform_39",
+      "category": "繪本平台",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "hui_ben_ping_tai_picture_book_platform_40",
+      "category": "繪本平台",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "hui_ben_ping_tai_picture_book_platform_41",
+      "category": "繪本平台",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/hui_ben_ping_tai_picture_book_platform/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "jiu_jie_jiao_cai_nine_level_materials_38",
+      "category": "九階教材",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "jiu_jie_jiao_cai_nine_level_materials_39",
+      "category": "九階教材",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "jiu_jie_jiao_cai_nine_level_materials_40",
+      "category": "九階教材",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "jiu_jie_jiao_cai_nine_level_materials_41",
+      "category": "九階教材",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/jiu_jie_jiao_cai_nine_level_materials/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_guo_zhong_sentence_patterns_junior_high_38",
+      "category": "句型篇國中",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_guo_zhong_sentence_patterns_junior_high_39",
+      "category": "句型篇國中",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_guo_zhong_sentence_patterns_junior_high_40",
+      "category": "句型篇國中",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_guo_zhong_sentence_patterns_junior_high_41",
+      "category": "句型篇國中",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_guo_zhong_sentence_patterns_junior_high/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_gao_zhong_sentence_patterns_senior_high_38",
+      "category": "句型篇高中",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_gao_zhong_sentence_patterns_senior_high_39",
+      "category": "句型篇高中",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_gao_zhong_sentence_patterns_senior_high_40",
+      "category": "句型篇高中",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "ju_xing_pian_gao_zhong_sentence_patterns_senior_high_41",
+      "category": "句型篇高中",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/ju_xing_pian_gao_zhong_sentence_patterns_senior_high/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "qing_jing_zu_yu_contextual_indigenous_language_38",
+      "category": "情境族語",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "qing_jing_zu_yu_contextual_indigenous_language_39",
+      "category": "情境族語",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "qing_jing_zu_yu_contextual_indigenous_language_40",
+      "category": "情境族語",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "qing_jing_zu_yu_contextual_indigenous_language_41",
+      "category": "情境族語",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/qing_jing_zu_yu_contextual_indigenous_language/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "tu_hua_gu_shi_pian_picture_story_38",
+      "category": "圖畫故事篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "tu_hua_gu_shi_pian_picture_story_39",
+      "category": "圖畫故事篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "tu_hua_gu_shi_pian_picture_story_40",
+      "category": "圖畫故事篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "tu_hua_gu_shi_pian_picture_story_41",
+      "category": "圖畫故事篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/tu_hua_gu_shi_pian_picture_story/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "sheng_huo_hui_hua_pian_daily_conversation_38",
+      "category": "生活會話篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "sheng_huo_hui_hua_pian_daily_conversation_39",
+      "category": "生活會話篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "sheng_huo_hui_hua_pian_daily_conversation_40",
+      "category": "生活會話篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "sheng_huo_hui_hua_pian_daily_conversation_41",
+      "category": "生活會話篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/sheng_huo_hui_hua_pian_daily_conversation/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "wen_hua_pian_cultural_section_38",
+      "category": "文化篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "wen_hua_pian_cultural_section_39",
+      "category": "文化篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "wen_hua_pian_cultural_section_40",
+      "category": "文化篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "wen_hua_pian_cultural_section_41",
+      "category": "文化篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/wen_hua_pian_cultural_section/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "xue_xi_ci_biao_learning_vocabulary_38",
+      "category": "學習詞表",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "xue_xi_ci_biao_learning_vocabulary_39",
+      "category": "學習詞表",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "xue_xi_ci_biao_learning_vocabulary_40",
+      "category": "學習詞表",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "xue_xi_ci_biao_learning_vocabulary_41",
+      "category": "學習詞表",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/xue_xi_ci_biao_learning_vocabulary/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "yue_du_shu_xie_pian_reading_writing_38",
+      "category": "閱讀書寫篇",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "yue_du_shu_xie_pian_reading_writing_39",
+      "category": "閱讀書寫篇",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "yue_du_shu_xie_pian_reading_writing_40",
+      "category": "閱讀書寫篇",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "yue_du_shu_xie_pian_reading_writing_41",
+      "category": "閱讀書寫篇",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/yue_du_shu_xie_pian_reading_writing/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "zu_yu_duan_wen_indigenous_language_essays_38",
+      "category": "族語短文",
+      "dialect_code": "38",
+      "dialect_zh": "南王卑南語",
+      "path": "Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Nanwang_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Nanwang_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "zu_yu_duan_wen_indigenous_language_essays_39",
+      "category": "族語短文",
+      "dialect_code": "39",
+      "dialect_zh": "知本卑南語",
+      "path": "Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Zhiben_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Zhiben_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "zu_yu_duan_wen_indigenous_language_essays_40",
+      "category": "族語短文",
+      "dialect_code": "40",
+      "dialect_zh": "西群卑南語",
+      "path": "Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Xiqun_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Xiqun_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    },
+    {
+      "id": "zu_yu_duan_wen_indigenous_language_essays_41",
+      "category": "族語短文",
+      "dialect_code": "41",
+      "dialect_zh": "建和卑南語",
+      "path": "Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Jianhe_Puyuma.xml",
+      "raw_url": "https://raw.githubusercontent.com/FormosanBank/FormosanBank/604a1074b6ea5685365defd8cfd043f3f10aaecb/Corpora/ePark/XML/zu_yu_duan_wen_indigenous_language_essays/Puyuma/Jianhe_Puyuma.xml",
+      "exists_confirmed": "search-confirmed for several files; sync script tolerates 404 for missing candidates"
+    }
+  ]
+}

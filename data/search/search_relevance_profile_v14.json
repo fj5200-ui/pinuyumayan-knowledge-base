@@ -1,0 +1,80 @@
+{
+  "version": "v14",
+  "search_modes": [
+    "keyword",
+    "facet",
+    "suggest",
+    "related",
+    "future_vector_candidate"
+  ],
+  "rank_weights": {
+    "exact_title_match": 5.0,
+    "community_key_match": 4.5,
+    "ritual_name_match": 4.0,
+    "verified_fact_title": 3.5,
+    "vocabulary_form_text": 3.0,
+    "zh_tw_translation": 2.6,
+    "source_phon_or_ipa": 1.4,
+    "tags": 1.2,
+    "body_summary": 1.0
+  },
+  "facets": [
+    "entity_type",
+    "community_key",
+    "dialect_code",
+    "category",
+    "sensitivity",
+    "release_channel",
+    "source_type"
+  ],
+  "synonyms": [
+    {
+      "term": "卑南族",
+      "aliases": [
+        "Pinuyumayan",
+        "Puyuma people"
+      ],
+      "rule": "Pinuyumayan preferred for whole people; Puyuma may mean Nanwang or Puyuma language depending context."
+    },
+    {
+      "term": "南王",
+      "aliases": [
+        "Puyuma",
+        "Nanwang_Puyuma",
+        "普悠瑪"
+      ],
+      "rule": "Use community context to avoid treating Puyuma as all Pinuyumayan."
+    },
+    {
+      "term": "知本",
+      "aliases": [
+        "Katratripulr",
+        "Zhiben_Puyuma"
+      ],
+      "rule": "Keep romanization aliases searchable but display approved Chinese name."
+    },
+    {
+      "term": "西群",
+      "aliases": [
+        "Xiqun_Puyuma",
+        "西部卑南語"
+      ],
+      "rule": "Search alias only; display source label."
+    },
+    {
+      "term": "建和",
+      "aliases": [
+        "Jianhe_Puyuma",
+        "Kasavakan"
+      ],
+      "rule": "Search alias only; respect community authority table."
+    }
+  ],
+  "blocked_from_public_search": [
+    "internal_review_notes",
+    "admin_only_fields",
+    "restricted_sensitive_detail",
+    "plaintext_secret",
+    "unapproved_tts_audio"
+  ]
+}

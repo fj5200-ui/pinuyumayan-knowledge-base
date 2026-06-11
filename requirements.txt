@@ -1,0 +1,4 @@
+# Runtime dependency for scripts/parse_puyuma_corpus.py
+gdown>=5.2.0,<6
+
+requests>=2.31.0,<3

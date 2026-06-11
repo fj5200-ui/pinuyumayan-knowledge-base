@@ -1,0 +1,64 @@
+{
+  "version": "v14",
+  "goal": "Make main-site knowledge pulls stable under public traffic while preserving cultural governance and approval filters.",
+  "cache_layers": [
+    {
+      "layer": "edge_cdn",
+      "applies_to": [
+        "/api/public/knowledge/bootstrap",
+        "/api/public/content/collections",
+        "/api/public/release-channels"
+      ],
+      "ttl_seconds": 300,
+      "stale_while_revalidate_seconds": 86400,
+      "cache_key": [
+        "path",
+        "releaseChannel",
+        "locale"
+      ]
+    },
+    {
+      "layer": "api_memory_or_redis",
+      "applies_to": [
+        "search",
+        "vocabulary",
+        "related"
+      ],
+      "ttl_seconds": 120,
+      "stale_while_revalidate_seconds": 600,
+      "cache_key": [
+        "path",
+        "query",
+        "cursor",
+        "dialectCode",
+        "releaseChannel"
+      ]
+    },
+    {
+      "layer": "database_materialized_payload",
+      "applies_to": [
+        "bootstrap",
+        "export_latest",
+        "search_export"
+      ],
+      "ttl_seconds": 900,
+      "refresh_trigger": [
+        "publish_batch_approved",
+        "quality_gate_passed",
+        "manual_cache_invalidation"
+      ]
+    }
+  ],
+  "headers": {
+    "public": "Cache-Control: public, max-age=300, stale-while-revalidate=86400",
+    "private_internal": "Cache-Control: private, max-age=30",
+    "no_store_admin": "Cache-Control: no-store"
+  },
+  "do_not_cache": [
+    "/api/admin/auth/login",
+    "/api/admin/auth/me",
+    "/api/admin/security/sessions",
+    "/api/internal/jobs/*"
+  ],
+  "validation": "ETag must be generated from release channel, latest publish batch id, and payload hash."
+}

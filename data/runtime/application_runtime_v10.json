@@ -1,0 +1,70 @@
+{
+  "version": "v10",
+  "project": "pinuyumayan-backend-database",
+  "purpose": "Production-ready backend database service for main-site knowledge pull and full-corpus import operations.",
+  "runtime_principles": [
+    "Do not import full corpus at API boot.",
+    "All public responses must be public-safe and approved or verified.",
+    "All internal sync endpoints require x-pinuyumayan-main-site-key.",
+    "Long-running jobs must use job queue records and locks.",
+    "Preview subset and full corpus must remain distinguishable in every import and API response."
+  ],
+  "public_routes": [
+    "/health",
+    "/ready",
+    "/api/public/knowledge/bootstrap",
+    "/api/public/knowledge/search",
+    "/api/public/knowledge/related",
+    "/api/public/knowledge/communities/:communityKey",
+    "/api/public/knowledge/vocabulary"
+  ],
+  "internal_routes": [
+    "/api/internal/main-site/knowledge/bundle",
+    "/api/internal/main-site/knowledge/delta",
+    "/api/internal/jobs/full-corpus/enqueue",
+    "/api/internal/jobs/:jobId"
+  ],
+  "ops_routes": [
+    "/api/ops/openapi.json",
+    "/api/ops/runtime",
+    "/api/ops/readiness",
+    "/api/ops/jobs"
+  ],
+  "readiness_checks": [
+    {
+      "id": "env",
+      "required": true,
+      "description": "Required environment variables are present and safe."
+    },
+    {
+      "id": "database",
+      "required": true,
+      "description": "DATABASE_URL is configured and DB ping succeeds."
+    },
+    {
+      "id": "migrations",
+      "required": true,
+      "description": "Core migrations 0001-0006 are applied."
+    },
+    {
+      "id": "preview_vocab",
+      "required": false,
+      "description": "80 preview entries are present for initial UI."
+    },
+    {
+      "id": "main_site_key",
+      "required": true,
+      "description": "Internal pull key is configured in production."
+    }
+  ],
+  "corpus_scope_contract": {
+    "preview_subset": {
+      "expected_min_entries": 80,
+      "bootstrapped_by": "deploy/bootstrap-preview-db.sh"
+    },
+    "full_corpus": {
+      "expected_min_entries": 1000,
+      "bootstrapped_by": "deploy/postdeploy-full-corpus.sh"
+    }
+  }
+}

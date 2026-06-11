@@ -1,0 +1,167 @@
+{
+  "version": "2026-06-11",
+  "safety_notice": "祭儀內容僅作公開文化介紹與平台分類；禁忌、儀式細節、家族角色與未公開知識必須由部落授權後才可公開。",
+  "rituals": [
+    {
+      "id": "women_weeding_completion",
+      "name_zh": "婦女除草完工慶",
+      "time_hint": "國曆3月；實際日期依部落公告",
+      "category": "農事祭儀/婦女組織",
+      "summary": "與農事除草工作完成相關，凸顯婦女團體、祈福、團結與休閒活動。",
+      "communities": [
+        "pinaski",
+        "puyuma",
+        "other_review_required"
+      ],
+      "platform_tags": [
+        "農事",
+        "婦女",
+        "祈福",
+        "部落團結"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "ancestral_landing_foundation_rite",
+      "name_zh": "祖先登陸與發祥地祭祖",
+      "time_hint": "國曆4月；實際日期依部落公告",
+      "category": "祖源/祭祖",
+      "summary": "知本、建和等部落會到祖先登陸地或發祥地祭祀歷代祖先，呈現慎終追遠與起源記憶。",
+      "communities": [
+        "katratripulr",
+        "kasavakan"
+      ],
+      "platform_tags": [
+        "起源",
+        "祭祖",
+        "發祥地",
+        "石生系統"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "millet_harvest_rite",
+      "name_zh": "小米收穫祭",
+      "time_hint": "國曆7月；部落可能為3至7天不等",
+      "category": "農事祭儀",
+      "summary": "以家族與部落為單位感謝收穫，與小米、祭司、婦女角色、祈福及部落活動相關。",
+      "communities": [
+        "puyuma",
+        "katratripulr",
+        "kasavakan",
+        "ulivelivek",
+        "pinaski",
+        "other_review_required"
+      ],
+      "platform_tags": [
+        "小米",
+        "收穫",
+        "感恩",
+        "家族",
+        "祈福"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "annual_festival",
+      "name_zh": "年祭",
+      "time_hint": "國曆12月；部分部落延續至跨年脈絡",
+      "category": "歲時祭儀/生命禮俗",
+      "summary": "卑南族最重要的年度活動之一，常包含少年年祭、大獵祭、慶功、除喪與部落團聚。",
+      "communities": [
+        "all_review_by_community"
+      ],
+      "platform_tags": [
+        "年祭",
+        "部落團聚",
+        "會所",
+        "除喪",
+        "花環"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "mangamangayaw_youth_rite",
+      "name_zh": "少年年祭",
+      "also_known_as": [
+        "猴祭"
+      ],
+      "time_hint": "多在12月下旬；依部落公告",
+      "category": "年齡階級/少年訓練",
+      "summary": "與少年膽識、會所訓練及成年過程相關；現代公開活動多以象徵方式延續，不使用真猴。",
+      "communities": [
+        "puyuma",
+        "ulivelivek",
+        "pinaski",
+        "other_review_required"
+      ],
+      "platform_tags": [
+        "少年",
+        "會所",
+        "膽識",
+        "文化教育"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "mangayaw_great_hunting_rite",
+      "name_zh": "大獵祭",
+      "time_hint": "國曆12月下旬；部落可能不同",
+      "category": "成年/狩獵/年祭",
+      "summary": "與男子成年、野外求生、狩獵訓練、凱旋迎接與部落慰問相關，是年祭核心內容之一。",
+      "communities": [
+        "puyuma",
+        "tamalakaw",
+        "papulu",
+        "other_review_required"
+      ],
+      "platform_tags": [
+        "大獵祭",
+        "成年",
+        "狩獵",
+        "野外求生",
+        "凱旋門"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    },
+    {
+      "id": "united_annual_festival",
+      "name_zh": "聯合年祭",
+      "time_hint": "時間不定；由部落聯合會議或主辦單位公告",
+      "category": "跨部落交流",
+      "summary": "由各部落輪流或共同辦理，以歌舞、競賽與交流凝聚卑南族共同體意識。",
+      "communities": [
+        "all_review_by_community"
+      ],
+      "platform_tags": [
+        "聯合年祭",
+        "十社",
+        "歌舞",
+        "交流",
+        "族群凝聚"
+      ],
+      "visibility": "public_summary_only",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ]
+    }
+  ]
+}

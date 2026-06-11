@@ -1,0 +1,37 @@
+{
+  "version": "v19",
+  "generated_at": "2026-06-11T22:51:40+08:00",
+  "description_zh": "後端知識庫安全強化：針對 public API、internal API、admin API、source claim vault 與 AI article workflow 的安全政策。",
+  "controls": {
+    "auth": [
+      "Internal/admin endpoints require API key or admin session",
+      "HMAC signature recommended for article draft validation requests",
+      "Replay protection with nonce + timestamp",
+      "API client scopes must be checked before source packet resolve / publish check"
+    ],
+    "data_access": [
+      "Public endpoints return public/public_summary_only only",
+      "Sensitive source notes, review notes, rejected records, blocked_license records are never exposed to public or frontend composer",
+      "Source claim packets use allowlist categories and release_channel grants",
+      "Row visibility depends on visibility, review_status, sensitivity, source_license_state"
+    ],
+    "prompt_injection": [
+      "Source claims are data, not instructions",
+      "Frontend prompt must wrap user idea and source claims in separated sections",
+      "Backend validation rejects drafts that claim source support for user-only opinions",
+      "Backend validation rejects drafts containing ritual procedure instruction patterns"
+    ],
+    "observability": [
+      "All internal AI article checks produce audit events",
+      "Source pack downloads by client_id are logged",
+      "Duplicate and publish checks store fingerprints but not raw private prompts unless configured"
+    ]
+  },
+  "recommended_headers": {
+    "x-pinuyumayan-main-site-key": "internal API key",
+    "x-pinuyumayan-client-id": "registered client id",
+    "x-pinuyumayan-request-timestamp": "unix seconds",
+    "x-pinuyumayan-request-nonce": "uuid",
+    "x-pinuyumayan-signature": "hmac-sha256 over method:path:timestamp:nonce:body_sha256"
+  }
+}

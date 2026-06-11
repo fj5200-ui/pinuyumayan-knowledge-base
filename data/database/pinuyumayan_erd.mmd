@@ -1,0 +1,11 @@
+erDiagram
+  kb_sources ||--o{ kb_facts : supports
+  kb_sources ||--o{ puyuma_corpus_entries : provides
+  kb_sources ||--o{ kb_communities : cites
+  kb_sources ||--o{ kb_rituals : cites
+  puyuma_audio_assets ||--o{ puyuma_corpus_entries : plays
+  puyuma_corpus_entries ||--o{ puyuma_tts_jobs : may_generate
+  kb_facts ||--o{ kb_review_tasks : reviewed_by
+  puyuma_corpus_entries ||--o{ kb_review_tasks : reviewed_by
+  kb_import_runs ||--o{ kb_data_quality_reports : produces
+  kb_search_documents }o--o{ kb_sources : cites

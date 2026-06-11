@@ -1,0 +1,69 @@
+{
+  "version": "2026-06-11",
+  "policy": "CIP 只支持這些人物名稱出現在卑南族音樂文化脈絡；不得憑此產生完整傳記、作品年表或族籍細節。每位人物需另補個別來源後才能開頁。",
+  "items": [
+    {
+      "id": "person-lu-sen-bao",
+      "name_zh": "陸森寶",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-hu-de-fu",
+      "name_zh": "胡德夫",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-chen-chien-nien",
+      "name_zh": "陳建年",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-chi-hsiao-chun",
+      "name_zh": "紀曉君",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-a-mei",
+      "name_zh": "張惠妹",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-chen-ming-jen",
+      "name_zh": "陳明仁",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    },
+    {
+      "id": "person-sangpuy",
+      "name_zh": "桑布依（盧偕興）",
+      "source_ids": [
+        "cip_puyuma_profile"
+      ],
+      "source_context": "CIP line 266 lists as public music/culture figure",
+      "page_status": "needs_individual_sources"
+    }
+  ]
+}

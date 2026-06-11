@@ -1,0 +1,39 @@
+{
+  "version": "v15",
+  "session_policy": {
+    "idle_timeout_minutes": 60,
+    "absolute_timeout_hours": 12,
+    "require_reauth_for": [
+      "role_change",
+      "release_promote",
+      "full_corpus_import",
+      "api_key_rotation"
+    ]
+  },
+  "mfa_policy": {
+    "required_for_roles": [
+      "super_admin",
+      "release_manager",
+      "corpus_import_manager"
+    ],
+    "allowed_methods": [
+      "totp",
+      "webauthn"
+    ]
+  },
+  "permission_grants": {
+    "allow_global_grants": true,
+    "require_reason": true,
+    "require_expiry_for_temporary": true,
+    "audit_table": "admin_permission_grants_v15"
+  },
+  "audit_events": [
+    "admin.login",
+    "admin.logout",
+    "permission.grant",
+    "release.promote",
+    "corpus.import.enqueue",
+    "api_key.rotate",
+    "cache.invalidate"
+  ]
+}

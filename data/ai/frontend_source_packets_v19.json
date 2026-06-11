@@ -1,0 +1,354 @@
+{
+  "version": "v19",
+  "generated_at": "2026-06-11T22:51:40+08:00",
+  "description_zh": "前端 AI Composer 可拉取的來源史料包；只含 claim_ids 與摘要，不含未審核私密內容。",
+  "counts": {
+    "packets": 19
+  },
+  "packets": [
+    {
+      "packet_id": "source_packet_f3193bf59f",
+      "title_zh": "分布｜前端 AI 可引用史料包",
+      "category": "分布",
+      "claim_ids": [
+        "kg_distribution_taitung_center",
+        "kg19_distribution_chenggong_taimali"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_147ca956138af7bb"
+    },
+    {
+      "packet_id": "source_packet_04b4b4ff1e",
+      "title_zh": "工藝｜前端 AI 可引用史料包",
+      "category": "工藝",
+      "claim_ids": [
+        "kg_weaving_public_tools",
+        "kg19_weaving_techniques",
+        "kg19_weaving_daily_tools"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_bb3fc64b4983cc91"
+    },
+    {
+      "packet_id": "source_packet_0f336d7c59",
+      "title_zh": "年齡階級教育｜前端 AI 可引用史料包",
+      "category": "年齡階級教育",
+      "claim_ids": [
+        "kg_youth_training_public",
+        "kg19_age_training_stages_skills"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_3c3ac47a6284593f"
+    },
+    {
+      "packet_id": "source_packet_c1073732ac",
+      "title_zh": "建築｜前端 AI 可引用史料包",
+      "category": "建築",
+      "claim_ids": [
+        "kg_architecture_types",
+        "kg19_architecture_public_private",
+        "kg19_architecture_family_house_layout"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_195d171d8be2ae7f"
+    },
+    {
+      "packet_id": "source_packet_6764e3c870",
+      "title_zh": "文化變遷｜前端 AI 可引用史料包",
+      "category": "文化變遷",
+      "claim_ids": [
+        "kg19_vasivas_grass_monkey_change",
+        "kg19_mangayau_fixed_location_today"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_a5072b6b15f13c6b"
+    },
+    {
+      "packet_id": "source_packet_23771dab38",
+      "title_zh": "族語｜前端 AI 可引用史料包",
+      "category": "族語",
+      "claim_ids": [
+        "kg_language_variation",
+        "kg19_language_southern_voiced",
+        "kg19_language_northern_amis_influence",
+        "kg19_language_han_contact_taiwanese"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_0c29f2c0f14c5fbf"
+    },
+    {
+      "packet_id": "source_packet_ad73faca15",
+      "title_zh": "會所｜前端 AI 可引用史料包",
+      "category": "會所",
+      "claim_ids": [
+        "kg_assembly_dakuvan_palakuan",
+        "kg19_architecture_dakuvan_structure",
+        "kg19_architecture_palakuan_structure"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_7a9e44d9a904a9d5"
+    },
+    {
+      "packet_id": "source_packet_387893d43f",
+      "title_zh": "服飾｜前端 AI 可引用史料包",
+      "category": "服飾",
+      "claim_ids": [
+        "kg_clothing_colors_identity",
+        "kg19_clothing_flax_material",
+        "kg19_clothing_social_identifier",
+        "kg19_clothing_youth_male_regalia",
+        "kg19_clothing_female_marriage_age"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_afed1515a1355d3e"
+    },
+    {
+      "packet_id": "source_packet_5ad899db8c",
+      "title_zh": "服飾與社會關係｜前端 AI 可引用史料包",
+      "category": "服飾與社會關係",
+      "claim_ids": [
+        "kg_wreath_public_summary",
+        "kg19_wreath_relationship_marker"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_a33b7e420f767982"
+    },
+    {
+      "packet_id": "source_packet_a2aebfd02d",
+      "title_zh": "歲時祭儀｜前端 AI 可引用史料包",
+      "category": "歲時祭儀",
+      "claim_ids": [
+        "kg_ritual_overview_public",
+        "kg19_ritual_types_agriculture_life",
+        "kg19_masarut_family_based_duration",
+        "kg19_mangayaw_largest_three_week"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_9536de373d4d5c83"
+    },
+    {
+      "packet_id": "source_packet_a6b7224a82",
+      "title_zh": "歲時祭儀月曆｜前端 AI 可引用史料包",
+      "category": "歲時祭儀月曆",
+      "claim_ids": [
+        "kg_ritual_calendar_public",
+        "kg19_ritual_march_mugamut",
+        "kg19_ritual_april_ruvuwaan",
+        "kg19_ritual_july_masarut",
+        "kg19_ritual_december_annual"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_af67a5c3a8f75f84"
+    },
+    {
+      "packet_id": "source_packet_71b905077a",
+      "title_zh": "生業｜前端 AI 可引用史料包",
+      "category": "生業",
+      "claim_ids": [
+        "kg19_industry_foxtail_millet",
+        "kg19_industry_pinadray_rice",
+        "kg19_industry_japanese_paddy",
+        "kg19_industry_cash_crops_1960s"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_b1bbb58506a2912b"
+    },
+    {
+      "packet_id": "source_packet_6ecbcff6eb",
+      "title_zh": "社會制度｜前端 AI 可引用史料包",
+      "category": "社會制度",
+      "claim_ids": [
+        "kg_social_age_house",
+        "kg19_male_age_hall_relationship"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_0e40457615167a4c"
+    },
+    {
+      "packet_id": "source_packet_755403c0e7",
+      "title_zh": "社會角色｜前端 AI 可引用史料包",
+      "category": "社會角色",
+      "claim_ids": [
+        "kg_social_roles_public",
+        "kg19_religion_roles_maintain_life",
+        "kg19_priest_knowledge_calendar"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_08806c7776a36bd4"
+    },
+    {
+      "packet_id": "source_packet_10fef5f439",
+      "title_zh": "聯合年祭｜前端 AI 可引用史料包",
+      "category": "聯合年祭",
+      "claim_ids": [
+        "kg_joint_annual_ritual",
+        "kg19_joint_ritual_rotation_identity"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_0c580278d1c9988f"
+    },
+    {
+      "packet_id": "source_packet_e29686f977",
+      "title_zh": "舞蹈｜前端 AI 可引用史料包",
+      "category": "舞蹈",
+      "claim_ids": [
+        "kg_dance_public_roles",
+        "kg19_dance_social_steps",
+        "kg19_dance_ritual_diversity"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_7e81ec93e58e5f22"
+    },
+    {
+      "packet_id": "source_packet_bd37cdcfef",
+      "title_zh": "親屬制度｜前端 AI 可引用史料包",
+      "category": "親屬制度",
+      "claim_ids": [
+        "kg_matrilineal_public",
+        "kg19_matrilineality_transformation",
+        "kg19_lineage_big_small_split",
+        "kg19_zhiben_three_clans"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_b29c55b15897e677"
+    },
+    {
+      "packet_id": "source_packet_f7ec64c3a6",
+      "title_zh": "音樂｜前端 AI 可引用史料包",
+      "category": "音樂",
+      "claim_ids": [
+        "kg_music_song_public",
+        "kg19_music_poetic_narrative",
+        "kg19_music_ritual_job_status",
+        "kg19_music_women_work_song"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_f2f22d011f329c17"
+    },
+    {
+      "packet_id": "source_packet_1a0d5f78ff",
+      "title_zh": "飲食｜前端 AI 可引用史料包",
+      "category": "飲食",
+      "claim_ids": [
+        "kg_food_staples_public",
+        "kg19_food_shellflower_dumpling"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "usage": "frontend_ai_prompt_context_only",
+      "max_claims_per_article": 6,
+      "must_keep_citations": true,
+      "requires_human_review": true,
+      "no_duplicate_key": "packet_353f79b3365b8204"
+    }
+  ]
+}
