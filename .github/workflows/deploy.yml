@@ -1,0 +1,44 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [master, main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
+            set -e
+            cd ${{ secrets.DEPLOY_PATH }}
+
+            echo "=== 1. Pull latest code ==="
+            git pull origin master
+
+            echo "=== 2. Install backend dependencies ==="
+            cd backend
+            npm ci
+
+            echo "=== 3. Run database migrations ==="
+            npm run db:migrate 2>/dev/null || true
+
+            echo "=== 4. Restart KB service ==="
+            pm2 restart pinuyumayan-kb || pm2 start "npm run dev" --name pinuyumayan-kb --cwd ${{ secrets.DEPLOY_PATH }}/backend
+            pm2 save
+
+            echo "=== Deploy complete ==="
+
