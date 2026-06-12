@@ -1,8 +1,8 @@
 {
   "project": "pinuyumayan-backend-database",
   "project_key": "pinuyumayan-backend-database",
-  "version": "v28",
-  "generated_at": "2026-06-11T15:21:47+00:00",
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
   "status": "backend_database_project_not_skill_package",
   "target_stack": [
     "Node.js 20+",
@@ -20,7 +20,9 @@
     "communities": 10,
     "rituals": 7,
     "preview_vocabulary_audio_entries": 80,
-    "full_corpus_source_candidates": 66
+    "full_corpus_source_candidates": 66,
+    "v41_tts_stt_music_claims": 25,
+    "merged_claims_v41": 672
   },
   "architecture_layers": [
     "database",
@@ -29,7 +31,12 @@
     "admin_review_ops",
     "search_index",
     "audio_assets",
-    "observability"
+    "observability",
+    {
+      "version": "v41",
+      "name": "TTS/STT training + music ops implementation",
+      "summary": "Metadata-only YouTube worker, music review UI, authority adapters, FULLTEXT builder, AI music guardrails, VPS DB transaction contract, TTS/STT training governance."
+    }
   ],
   "non_goals": [
     "不得把 80 筆 preview 語料宣稱為完整千筆語料",
@@ -47,7 +54,8 @@
     "postdeploy_full_corpus_import_job",
     "public_vocabulary_audio_api",
     "related_knowledge_pull_service",
-    "vps_systemd_nginx_runbook"
+    "vps_systemd_nginx_runbook",
+    "v35 music/youtube metadata candidate search; no lyrics/audio storage"
   ],
   "main_site_integration": {
     "public_base_paths": [
@@ -103,7 +111,7 @@
     "main_site_pull": true,
     "full_corpus_import_at_startup": false
   },
-  "latest_layer": "reliability-governance-v15",
+  "latest_layer": "music_folk_song_deep_v38",
   "layers": [
     "v10_application_runtime_hardening",
     "v11_data_delivery_governance",
@@ -170,7 +178,20 @@
       "openapi_paths": 102
     },
     "v25 main-site deployable bridge: review API, HMAC, SEO, corpus acceptance",
-    "v28_vps_live_ops_search_fallback"
+    "v28_vps_live_ops_search_fallback",
+    "v29_vps_actual_ops_db_backed_live_dashboard",
+    {
+      "version": "v30",
+      "name": "Production Cutover",
+      "files_added": 16,
+      "openapi_paths": 170,
+      "notes": "formal production cutover checklist, main-site acceptance, SEO launch, search quality, secret rotation, rollback"
+    },
+    {
+      "version": "v42",
+      "name": "TTS/STT evaluation and music search",
+      "paths_added": 20
+    }
   ],
   "v11_data_delivery_governance": {
     "migration": "database/migrations/0007_data_delivery_governance.sql",
@@ -231,7 +252,7 @@
   },
   "artifact": "pinuyumayan-backend-database-main-site-deployable-v25.zip",
   "openapi_paths": 112,
-  "latest_version": "v27",
+  "latest_version": "v43",
   "v26": "VPS DB Production Core: DB-backed admin auth, HMAC nonce, article review transactions, VPS database deployment.",
   "important_files_v26": [
     "database/migrations/0023_vps_db_production_core_v26.sql",
@@ -252,11 +273,90 @@
     ]
   },
   "important_status": {
-    "full_corpus": "embedded preview subset remains 80; run v28 VPS staging flow for >=1000 actual import"
+    "full_corpus": "embedded preview subset remains 80; run v28 VPS staging flow for >=1000 actual import",
+    "v29_vps_execution": "requires running scripts on user VPS staging; package includes honest preview failure only"
   },
   "v28_added_files": [
     "deploy/vps-full-corpus-staging-v28.sh",
     "scripts/build_vps_full_corpus_acceptance_v28.py",
     "backend/src/rest/vpsLiveOpsV28Routes.ts"
+  ],
+  "v29_added_files": [
+    "deploy/vps-run-full-corpus-v29.sh",
+    "backend/src/rest/vpsActualOpsV29Routes.ts",
+    "database/migrations/0026_vps_actual_ops_v29.sql",
+    "data/development/next_upgrade_plan_v30.json"
+  ],
+  "versions": {
+    "v43": {
+      "name": "TTS/STT Live Music Ops",
+      "new_claims": 32,
+      "openapi_paths_after": 373,
+      "public_tts_enabled": false,
+      "public_stt_enabled": false
+    }
+  },
+  "artifacts": {
+    "v31": "pinuyumayan-backend-database-production-dry-run-v31.zip"
+  },
+  "generated_artifacts": [
+    {
+      "version": "v34",
+      "name": "expanded_true_knowledge",
+      "new_claims": 46,
+      "merged_claims": 296,
+      "openapi_paths": 222,
+      "generated_at": "2026-06-12T00:00:00+08:00"
+    }
+  ],
+  "v36": {
+    "title": "歌曲/歌謠 metadata 擴充",
+    "new_claims": 67,
+    "song_candidates": 42,
+    "openapi_paths": 248,
+    "rights": "metadata_only_no_lyrics_no_audio"
+  },
+  "v37_music_folk_song_catalog": {
+    "version": "v37",
+    "claims_added": 54,
+    "song_candidates_added": 32,
+    "openapi_paths": 263,
+    "notes": "Metadata-only song/old-song/YouTube candidate expansion; no lyrics/audio downloads."
+  },
+  "v38_summary": {
+    "new_candidates": 40,
+    "new_claims": 60,
+    "merged_claims": 532,
+    "openapi_paths": 278,
+    "metadata_only": true
+  },
+  "versions_history": [
+    {
+      "version": "v31",
+      "name": "Production Dry-run",
+      "openapi_paths": 184,
+      "notes": "VPS dry-run, main-site migration acceptance, HMAC coverage, corpus report backfill"
+    },
+    {
+      "version": "v33",
+      "name": "expanded source search and true knowledge enrichment",
+      "claims_added": 35,
+      "openapi_paths": 208,
+      "generated_at": "2026-06-12T00:00:00+08:00"
+    },
+    {
+      "version": "v39",
+      "name": "folk song song old tune expansion",
+      "generated_at": "2026-06-12T12:35:00+08:00",
+      "artifact": "pinuyumayan-backend-database-folk-song-v39.zip",
+      "notes": "Metadata-only expansion for songs, folk songs and old tunes."
+    },
+    {
+      "version": "v40",
+      "name": "folk song song old tune expansion",
+      "generated_at": "2026-06-12T13:20:00+08:00",
+      "artifact": "pinuyumayan-backend-database-folk-song-v40.zip",
+      "notes": "Metadata-only expansion for songs, folk songs and old tunes; YouTube worker contract and rights guardrails."
+    }
   ]
 }

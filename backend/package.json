@@ -51,7 +51,17 @@
     "full-corpus:acceptance:v27": "cd .. && python3 scripts/build_vps_full_corpus_acceptance_v27.py --input data/web/puyuma_vocabulary_audio_entries.json --out data/database/full_corpus_acceptance_report_v27.generated.json",
     "ci:all:v27": "npm run typecheck && cd .. && python3 scripts/validate_vps_db_core_v26.py && python3 scripts/validate_vps_staging_runtime_v27.py && python3 scripts/validate_openapi_contract.py",
     "validate:v28": "cd .. && python3 scripts/validate_vps_live_ops_v28.py",
-    "search:build:v28": "cd .. && python3 scripts/build_mysql_fulltext_index_v28.py"
+    "search:build:v28": "cd .. && python3 scripts/build_mysql_fulltext_index_v28.py",
+    "validate:v29": "cd .. && python3 scripts/validate_vps_actual_ops_v29.py",
+    "vps:verify:v29": "cd .. && python3 scripts/verify_vps_env_v29.py --database \"$DATABASE_URL\" --mode staging",
+    "search:populate:v29": "cd .. && python3 scripts/build_search_index_population_v29.py --database \"$DATABASE_URL\"",
+    "validate:v31": "cd .. && python3 scripts/validate_production_dry_run_v31.py",
+    "cutover:dry-run:v31": "cd .. && ./deploy/production-dry-run-v31.sh",
+    "ci:all:v31": "npm run typecheck && cd .. && python3 scripts/validate_production_cutover_v30.py && python3 scripts/validate_production_dry_run_v31.py && python3 scripts/validate_openapi_contract.py",
+    "v41:youtube-metadata": "cd .. && python3 scripts/youtube_metadata_worker_v41.py",
+    "v41:tts-stt-manifest": "cd .. && python3 scripts/build_tts_stt_training_manifest_v41.py",
+    "v41:music-fulltext": "cd .. && python3 scripts/build_music_fulltext_seed_v41.py",
+    "validate:tts-stt-live-v43": "cd .. && python3 scripts/validate_tts_stt_live_music_v43.py"
   },
   "dependencies": {
     "@trpc/server": "latest",

@@ -1,0 +1,23 @@
+{
+  "version": "v42",
+  "blocked": [
+    "完整歌詞",
+    "仿古調歌詞",
+    "歌聲模型訓練",
+    "YouTube音源下載",
+    "未授權音源訓練",
+    "卑南文化遺址關聯"
+  ],
+  "required": [
+    "claim_ids",
+    "source_ids",
+    "rights_status",
+    "no_full_lyrics_attestation"
+  ],
+  "sensitive_topics_public_summary_only": [
+    "祭儀歌謠",
+    "巫師之歌",
+    "除喪歌謠",
+    "祖靈語境"
+  ]
+}

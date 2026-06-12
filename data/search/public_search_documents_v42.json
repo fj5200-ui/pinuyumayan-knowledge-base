@@ -1,0 +1,114 @@
+{
+  "version": "v42",
+  "documents": [
+    {
+      "id": "search-card-v42-speech-music-claim-006",
+      "title": "Youtube Metadata Only Training Block",
+      "body": "YouTube 只允許 metadata 擷取；YouTube 音訊不得下載、不得訓練 TTS/STT、不得做歌聲模型。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "low"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-006"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-007",
+      "title": "Music Lyrics Guardrail",
+      "body": "音樂與歌謠資料庫只保存 metadata、來源與摘要，不保存完整歌詞或可重製作品內容。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "low"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-007"
+      ],
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-010",
+      "title": "Public Tts Disabled Until Approved",
+      "body": "公開合成 TTS 預設關閉；只有授權資料、模型評估與族語審核通過後才可開放。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "low"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-010"
+      ],
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-011",
+      "title": "Public Stt Disabled Until Approved",
+      "body": "公開 STT 預設關閉；歌曲、祭儀或敏感錄音不得自動轉寫公開。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "medium"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-011"
+      ],
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-016",
+      "title": "Forbidden Archaeology Relation Music",
+      "body": "卑南文化遺址/Beinan Site/Peinan Site 不得進入音樂、歌謠、TTS/STT source packet 或搜尋同義詞。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "low"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-016"
+      ],
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-020",
+      "title": "Stt Transcript Publication Gate",
+      "body": "STT 產生的轉寫需二次人工審核後才能公開，尤其涉及祭儀、巫師、除喪或祖靈語境。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "medium"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-020"
+      ],
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ]
+    },
+    {
+      "id": "search-card-v42-speech-music-claim-021",
+      "title": "Ai Composer Music Claim Required",
+      "body": "AI Composer 撰寫音樂文章時必須帶 claim_ids/source_ids，且不得生成仿古調歌詞或完整歌詞。",
+      "facets": {
+        "type": "speech_music_policy",
+        "sensitivity": "low"
+      },
+      "claim_ids": [
+        "v42-speech-music-claim-021"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ]
+    }
+  ]
+}

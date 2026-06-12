@@ -1,0 +1,47 @@
+{
+  "version": "v31",
+  "panels": [
+    {
+      "key": "admin_auth",
+      "title": "後台登入",
+      "api": "/api/admin/auth/v26/me",
+      "status": "live_api_required"
+    },
+    {
+      "key": "article_review",
+      "title": "文章審核",
+      "api": "/api/admin/articles/v26/review-transactions",
+      "status": "live_api_required"
+    },
+    {
+      "key": "hmac_failures",
+      "title": "HMAC 失敗",
+      "api": "/api/ops/security/v26/hmac-failures",
+      "status": "live_api_required"
+    },
+    {
+      "key": "full_corpus_runs",
+      "title": "千筆語料驗收",
+      "api": "/api/admin/corpus/v29/runs",
+      "status": "live_api_required"
+    },
+    {
+      "key": "search_quality",
+      "title": "搜尋品質",
+      "api": "/api/ops/search/v30/quality-suite",
+      "status": "live_api_required"
+    },
+    {
+      "key": "cutover_readiness",
+      "title": "正式切換準備度",
+      "api": "/api/ops/dry-run/v31/readiness",
+      "status": "live_api_required"
+    }
+  ],
+  "display_rules": [
+    "never show secrets",
+    "show forbidden relation failures prominently",
+    "show preview corpus failure honestly",
+    "show DB fallback events as blockers in production"
+  ]
+}

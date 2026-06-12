@@ -1,0 +1,44 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "mode": "metadata_only",
+  "requires_env": [
+    "YOUTUBE_API_KEY"
+  ],
+  "allowed_fields": [
+    "videoId",
+    "title",
+    "channelId",
+    "channelTitle",
+    "publishedAt",
+    "description_snippet",
+    "thumbnails",
+    "duration",
+    "liveBroadcastContent"
+  ],
+  "blocked_actions": [
+    "download_audio",
+    "download_video",
+    "transcribe_song_lyrics",
+    "train_model_from_youtube_audio"
+  ],
+  "write_targets": [
+    "music_youtube_metadata_runs_v41",
+    "music_youtube_metadata_candidates_v41"
+  ],
+  "queries": [
+    "卑南族 歌謠",
+    "卑南族 古調",
+    "南王部落 歌謠",
+    "Damalagaw 大巴六九",
+    "陸森寶 美麗的稻穗",
+    "Samingad Puyuma old song"
+  ],
+  "forbidden_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

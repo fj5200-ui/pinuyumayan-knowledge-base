@@ -1,0 +1,62 @@
+{
+  "version": "v31",
+  "policy": "All /api/internal/* routes must require HMAC + timestamp + nonce in production.",
+  "required_headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "signing_base": "METHOD\\nPATH_WITH_QUERY\\nTIMESTAMP\\nNONCE\\nSHA256_BODY",
+  "timestamp_skew_seconds": 300,
+  "nonce_store": "api_signature_nonces_v19 or Redis; DB store is default for VPS deployment",
+  "coverage_matrix": [
+    {
+      "route_prefix": "/api/internal/main-site/",
+      "required": true,
+      "scope": "main_site:sync"
+    },
+    {
+      "route_prefix": "/api/internal/ai-article/",
+      "required": true,
+      "scope": "article:validate"
+    },
+    {
+      "route_prefix": "/api/internal/corpus/",
+      "required": true,
+      "scope": "corpus:write"
+    },
+    {
+      "route_prefix": "/api/internal/search/",
+      "required": true,
+      "scope": "search:write"
+    },
+    {
+      "route_prefix": "/api/internal/vps-db/",
+      "required": true,
+      "scope": "ops:write"
+    },
+    {
+      "route_prefix": "/api/internal/cutover/",
+      "required": true,
+      "scope": "ops:write"
+    },
+    {
+      "route_prefix": "/api/internal/seo/",
+      "required": true,
+      "scope": "seo:write"
+    },
+    {
+      "route_prefix": "/api/internal/production/",
+      "required": true,
+      "scope": "ops:rollback"
+    }
+  ],
+  "failure_actions": [
+    "return 401/403",
+    "write security audit event",
+    "do not execute handler",
+    "record nonce replay attempt"
+  ]
+}

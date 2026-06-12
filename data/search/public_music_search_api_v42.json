@@ -1,0 +1,22 @@
+{
+  "version": "v42",
+  "endpoint": "/api/public/search/music",
+  "engine": "mysql_fulltext_or_adapter",
+  "facets": [
+    "artist",
+    "community",
+    "work_type",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "youtube_official_status"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "zero_result_logging": true
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v39",
+  "items": [
+    {
+      "priority": 1,
+      "area": "YouTube Data API 真實 worker",
+      "content": "實作 video metadata fetch，寫入 VPS DB，禁止下載音訊/影片。"
+    },
+    {
+      "priority": 2,
+      "area": "歌謠審核 UI",
+      "content": "後台顯示 candidate、來源、縮圖、權利狀態、敏感標籤、部落審核欄位。"
+    },
+    {
+      "priority": 3,
+      "area": "MySQL FULLTEXT 音樂索引",
+      "content": "將 v38 歌謠 documents 寫入 search_index_documents，支援 artist/community/work_type/rights/sensitivity facets。"
+    },
+    {
+      "priority": 4,
+      "area": "權威來源 fetch adapter",
+      "content": "臺灣音樂館、國家文化記憶庫、金曲獎、唱片資料只進候選區。"
+    },
+    {
+      "priority": 5,
+      "area": "AI Composer 音樂防護",
+      "content": "阻擋仿古調歌詞、完整歌詞、無來源音樂史料與高重複 claim set。"
+    },
+    {
+      "priority": 6,
+      "area": "VPS DB transaction",
+      "content": "ingestion-report / review-report 真寫 VPS DB，後台 dashboard 顯示狀態。"
+    }
+  ]
+}

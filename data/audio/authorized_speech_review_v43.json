@@ -1,0 +1,39 @@
+{
+  "version": "v43",
+  "purpose": "review 80 preview pronunciation assets before they can become TTS/STT training data",
+  "current_state": {
+    "preview_candidates": 80,
+    "trainable_items": 0,
+    "public_tts_enabled": false,
+    "public_stt_enabled": false
+  },
+  "required_fields": [
+    "asset_id",
+    "source_audio_url",
+    "source_license",
+    "speaker_consent_status",
+    "speaker_id_or_anonymous_code",
+    "dialect_code",
+    "transcript_text",
+    "phon",
+    "ipa",
+    "alignment_status",
+    "reviewer",
+    "review_status"
+  ],
+  "review_statuses": [
+    "candidate",
+    "needs_license_review",
+    "needs_speaker_consent",
+    "needs_alignment",
+    "approved_for_experiment",
+    "approved_for_public_training",
+    "rejected"
+  ],
+  "blocked_sources": [
+    "youtube_audio",
+    "unlicensed_song_recording",
+    "unknown_rights_audio",
+    "private_ceremony_audio_without_permission"
+  ]
+}

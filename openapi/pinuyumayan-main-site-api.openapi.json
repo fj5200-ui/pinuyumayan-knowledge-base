@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Pinuyumayan Main Site API v25 - Deployable Main Site Bridge + Review/HMAC/SEO Governance",
-    "version": "v28",
-    "description": "Public-safe and internal sync API for the 卑南族文化綜合平台主站. Public endpoints return approved/verified knowledge only; internal endpoints require x-pinuyumayan-main-site-key. v10 adds readiness, job queue operations, and a stable error response contract. v11 adds API versioning, export bundle artifacts, scoped internal APIs, and sync replay. v12 adds release channels, multi-site scoped delivery, governance dashboard and search export readiness. v13 adds admin login bootstrap, main-site superadmin sync, and content collection delivery endpoints. v14 adds search suggestions/facets, cache invalidation, quality gate run hooks, admin security sessions and MFA scaffold. v15 adds delivery SLOs, contract-test runs, full corpus reconciliation, payload snapshots, search index versions and scoped admin permission grants. v18 adds source-grounded AI article planning, duplicate prevention, and human-review publication governance. v20 adds true source collection, no-duplicate frontend AI article memory, source packet delivery, and a built-in next-upgrade roadmap. v22 adds frontend AI provider adapters, client draft validation, citation/duplicate cooldown checks, HMAC nonce policy, candidate source adapters and admin review dashboard. v25 adds deployable main-site migration manifest, article review action API, HMAC verification endpoint, SEO publish checks, full corpus acceptance reporting, and v26 roadmap."
+    "title": "Pinuyumayan Backend Database API v41",
+    "version": "v43",
+    "description": "Public-safe and internal sync API for the 卑南族文化綜合平台主站. Public endpoints return approved/verified knowledge only; internal endpoints require x-pinuyumayan-main-site-key. v10 adds readiness, job queue operations, and a stable error response contract. v11 adds API versioning, export bundle artifacts, scoped internal APIs, and sync replay. v12 adds release channels, multi-site scoped delivery, governance dashboard and search export readiness. v13 adds admin login bootstrap, main-site superadmin sync, and content collection delivery endpoints. v14 adds search suggestions/facets, cache invalidation, quality gate run hooks, admin security sessions and MFA scaffold. v15 adds delivery SLOs, contract-test runs, full corpus reconciliation, payload snapshots, search index versions and scoped admin permission grants. v18 adds source-grounded AI article planning, duplicate prevention, and human-review publication governance. v20 adds true source collection, no-duplicate frontend AI article memory, source packet delivery, and a built-in next-upgrade roadmap. v22 adds frontend AI provider adapters, client draft validation, citation/duplicate cooldown checks, HMAC nonce policy, candidate source adapters and admin review dashboard. v25 adds deployable main-site migration manifest, article review action API, HMAC verification endpoint, SEO publish checks, full corpus acceptance reporting, and v26 roadmap. v34 expands true-knowledge source search, adds candidate harvest worker contracts, public cards/search documents/source packets, and keeps Beinan/Peinan archaeology terms as forbidden negative-disambiguation only. v36 expands song/chant metadata catalog, YouTube metadata worker contract, rights-safe music source packets, and song review queues. v38 deepens folk song/old tune metadata catalog, variant index, rights-safe source packets and review queues. v41 adds TTS/STT training governance, metadata-only YouTube worker, music review UI, authoritative source adapters, music FULLTEXT builder, AI music guardrails and VPS DB transaction contracts."
   },
   "servers": [
     {
@@ -2484,6 +2484,2567 @@
         "tags": [
           "v28 VPS Live Ops"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/vps/v29/readiness": {
+      "get": {
+        "summary": "Get VPS DB readiness for actual operations",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/vps/v29/full-corpus-run/start": {
+      "post": {
+        "summary": "Start a full corpus execution run record",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/internal/vps/v29/full-corpus-run/report": {
+      "post": {
+        "summary": "Submit a full corpus execution report",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/admin/corpus/v29/runs": {
+      "get": {
+        "summary": "List DB-backed full corpus execution runs",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/v29/populate-db": {
+      "post": {
+        "summary": "Queue DB search index population",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/ops/search/v29/population-runs": {
+      "get": {
+        "summary": "List search index population runs",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/fallback/v29/route-coverage": {
+      "get": {
+        "summary": "Get fallback route coverage audit",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/fallback/v29/coverage-report": {
+      "post": {
+        "summary": "Submit fallback route coverage report",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/ops/vps-db/v29/backup-restore-checksum": {
+      "get": {
+        "summary": "List backup restore checksum reports",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/vps-db/v29/backup-restore-checksum": {
+      "post": {
+        "summary": "Submit backup restore checksum report",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "MainSiteApiKey": []
+          }
+        ]
+      }
+    },
+    "/api/admin/source-candidates/v29/reviews": {
+      "get": {
+        "summary": "List candidate source human reviews",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v30": {
+      "get": {
+        "summary": "Get v30 upgrade plan",
+        "tags": [
+          "v29 VPS Actual Ops"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/cutover/v30/checklist": {
+      "get": {
+        "summary": "Get v30 production cutover checklist",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/cutover/v30/readiness": {
+      "get": {
+        "summary": "Get v30 production cutover readiness",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/cutover/v30/readiness-report": {
+      "post": {
+        "summary": "Submit v30 production cutover readiness report",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/main-site/v30/acceptance": {
+      "get": {
+        "summary": "Get main site v30 acceptance suite",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/v30/acceptance-report": {
+      "post": {
+        "summary": "Submit main site v30 acceptance report",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/seo/v30/launch-checklist": {
+      "get": {
+        "summary": "Get production SEO launch checklist",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/seo/v30/launch-report": {
+      "post": {
+        "summary": "Submit production SEO launch report",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/search/v30/quality-suite": {
+      "get": {
+        "summary": "Get search quality suite",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/v30/quality-report": {
+      "post": {
+        "summary": "Submit search quality report",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/secrets/v30/rotation-plan": {
+      "get": {
+        "summary": "Get production secret rotation plan",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/production/v30/rollback-report": {
+      "post": {
+        "summary": "Submit rollback report",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "mainSiteHmac": []
+          }
+        ]
+      }
+    },
+    "/api/ops/next-upgrade-plan/v31": {
+      "get": {
+        "summary": "Get v31 next upgrade plan",
+        "tags": [
+          "v30-production-cutover"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/dry-run/v31/checklist": {
+      "get": {
+        "summary": "Get v31 production dry-run checklist",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/dry-run/v31/readiness": {
+      "get": {
+        "summary": "Get v31 production dry-run readiness",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/dry-run/v31/report": {
+      "post": {
+        "summary": "Submit v31 production dry-run report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/main-site/v31/migration-acceptance": {
+      "get": {
+        "summary": "Get v31 main-site migration acceptance spec",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/v31/migration-report": {
+      "post": {
+        "summary": "Submit v31 main-site migration report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/security/v31/hmac-route-coverage": {
+      "get": {
+        "summary": "Get v31 HMAC route coverage matrix",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/security/v31/hmac-coverage-report": {
+      "post": {
+        "summary": "Submit v31 HMAC coverage report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/v31/backfill-status": {
+      "get": {
+        "summary": "Get v31 full corpus report backfill status",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/v31/backfill-report": {
+      "post": {
+        "summary": "Submit v31 corpus report backfill",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/dashboard/v31/live-bindings": {
+      "get": {
+        "summary": "Get v31 admin live dashboard bindings",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/search/v31/quality-suite": {
+      "get": {
+        "summary": "Get v31 search quality suite",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/v31/quality-report": {
+      "post": {
+        "summary": "Submit v31 search quality report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-candidates/v31/intake-plan": {
+      "get": {
+        "summary": "Get v31 source candidate intake plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v32": {
+      "get": {
+        "summary": "Get v32 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/vps/v32/dry-run-backfill-plan": {
+      "get": {
+        "summary": "V32 VPS dry-run backfill plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/vps/v32/dry-run-backfill-report": {
+      "post": {
+        "summary": "V32 post VPS dry-run backfill report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/main-site/v32/migration-secret-scan": {
+      "get": {
+        "summary": "V32 main-site secret scan policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/main-site/v32/migration-secret-scan-report": {
+      "post": {
+        "summary": "V32 post main-site secret scan report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/security/v32/hmac-enforcement": {
+      "get": {
+        "summary": "V32 HMAC enforcement policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/security/v32/hmac-enforcement-report": {
+      "post": {
+        "summary": "V32 post HMAC enforcement report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/corpus/v32/full-corpus-backfill": {
+      "get": {
+        "summary": "V32 full corpus backfill contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/corpus/v32/full-corpus-backfill-report": {
+      "post": {
+        "summary": "V32 post full corpus backfill report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/dashboard/v32/live-bindings": {
+      "get": {
+        "summary": "V32 dashboard live bindings",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/search-seo/v32/validation-suite": {
+      "get": {
+        "summary": "V32 search and SEO validation suite",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search-seo/v32/validation-report": {
+      "post": {
+        "summary": "V32 post search and SEO validation report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/fallback/v32/enforcement": {
+      "get": {
+        "summary": "V32 production fallback enforcement policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/fallback/v32/enforcement-report": {
+      "post": {
+        "summary": "V32 post production fallback enforcement report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v33": {
+      "get": {
+        "summary": "V33 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-search/v33/expanded-plan": {
+      "get": {
+        "summary": "Get v33 expanded source search plan",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-search/v33/candidates": {
+      "get": {
+        "summary": "Get v33 source search candidates",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/source-search/v33/ingestion-report": {
+      "post": {
+        "summary": "Submit v33 source ingestion report",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Accepted"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v33/cards": {
+      "get": {
+        "summary": "Get v33 public true knowledge cards",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v33/search-documents": {
+      "get": {
+        "summary": "Get v33 public search documents",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v33/source-packets": {
+      "get": {
+        "summary": "Get v33 frontend AI source packets",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v33/source-grounding-check": {
+      "post": {
+        "summary": "Submit v33 source grounding check",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "security": [
+          {
+            "mainSiteApiKey": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Accepted"
+          }
+        }
+      }
+    },
+    "/api/admin/true-knowledge/v33/review-queue": {
+      "get": {
+        "summary": "Get v33 true knowledge review queue",
+        "tags": [
+          "v33 admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/forbidden-relations/v33/audit": {
+      "get": {
+        "summary": "Get v33 forbidden relation audit policy",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v34": {
+      "get": {
+        "summary": "Get v34 next upgrade plan",
+        "tags": [
+          "v33 expanded source search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-search/v34/expanded-plan": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Get v34 expanded source search plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-search/v34/worker-contract": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Get v34 source harvest worker contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/source-search/v34/candidates": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "List v34 source candidates",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/source-search/v34/ingestion-report": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Submit v34 source ingestion report",
+        "responses": {
+          "200": {
+            "description": "Accepted"
+          }
+        }
+      }
+    },
+    "/api/internal/source-search/v34/candidate-review-report": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Submit v34 candidate review report",
+        "responses": {
+          "200": {
+            "description": "Accepted"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v34/cards": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Get v34 public true knowledge cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v34/search-documents": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Get v34 public search documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v34/claims": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Get v34 claim additions",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v34/source-packets": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "Get v34 frontend AI source packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v34/source-grounding-check": {
+      "post": {
+        "tags": [
+          "internalSync"
+        ],
+        "summary": "Check v34 source grounding",
+        "responses": {
+          "200": {
+            "description": "Accepted"
+          }
+        }
+      }
+    },
+    "/api/admin/true-knowledge/v34/review-queue": {
+      "get": {
+        "tags": [
+          "Governance"
+        ],
+        "summary": "Get v34 review queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/forbidden-relations/v34/audit": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Get v34 forbidden relation audit",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/search/v34/config": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Get v34 expanded search config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v35": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "Get v35 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-youtube/v35/source-registry": {
+      "get": {
+        "summary": "source registry",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-youtube/v35/search-config": {
+      "get": {
+        "summary": "search config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-youtube/v35/review-queue": {
+      "get": {
+        "summary": "review queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-youtube/v35/ingestion-report": {
+      "post": {
+        "summary": "ingestion report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-youtube/v35/review-report": {
+      "post": {
+        "summary": "review report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v35/music/cards": {
+      "get": {
+        "summary": "cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v35/music/search-documents": {
+      "get": {
+        "summary": "search documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v35/music/claims": {
+      "get": {
+        "summary": "claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v35/music-source-packets": {
+      "get": {
+        "summary": "music source packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-youtube/v35/rights-policy": {
+      "get": {
+        "summary": "rights policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v35/music-grounding-check": {
+      "post": {
+        "summary": "music grounding check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v36": {
+      "get": {
+        "summary": "v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/source-registry": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music/song source registry v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/catalog": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music/song metadata catalog v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/search-config": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music/song search config v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/review-queue": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music/song review queue v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/rights-policy": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music/song rights policy v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-song/v36/youtube-worker-contract": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "YouTube song metadata worker contract v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-song/v36/ingestion-report": {
+      "post": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Submit music/song ingestion report v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-song/v36/review-report": {
+      "post": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Submit music/song review report v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v36/music/cards": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Public music cards v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v36/music/search-documents": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Public music search documents v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v36/music/claims": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music claims v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v36/music-source-packets": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music source packets v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v36/music-grounding-check": {
+      "post": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Music grounding check v36",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v37": {
+      "get": {
+        "tags": [
+          "Music Song Catalog v36"
+        ],
+        "summary": "Next upgrade plan v37",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/source-registry": {
+      "get": {
+        "summary": "v37 music folk song source registry",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/catalog": {
+      "get": {
+        "summary": "v37 music folk song catalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/taxonomy": {
+      "get": {
+        "summary": "v37 music folk song taxonomy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/search-config": {
+      "get": {
+        "summary": "v37 music folk song search config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/review-queue": {
+      "get": {
+        "summary": "v37 music folk song review queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/rights-policy": {
+      "get": {
+        "summary": "v37 music folk song rights policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v37/youtube-worker-contract": {
+      "get": {
+        "summary": "v37 YouTube metadata worker contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v37/music/cards": {
+      "get": {
+        "summary": "v37 music public cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v37/music/search-documents": {
+      "get": {
+        "summary": "v37 music search documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v37/music/claims": {
+      "get": {
+        "summary": "v37 music claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v37/music-source-packets": {
+      "get": {
+        "summary": "v37 music AI source packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v38": {
+      "get": {
+        "summary": "v38 next plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v37/ingestion-report": {
+      "post": {
+        "summary": "v37 music folk song ingestion report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v37/review-report": {
+      "post": {
+        "summary": "v37 music folk song review report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v37/music-grounding-check": {
+      "post": {
+        "summary": "v37 music grounding check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/source-registry": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 source registry for folk song deep metadata",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/catalog": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 folk song deep catalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/variant-index": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 folk song variant index",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/search-config": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 folk song expanded search config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/review-queue": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 folk song review queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/rights-policy": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 folk song rights policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v38/youtube-worker-contract": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v38 YouTube metadata worker contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v38/ingestion-report": {
+      "post": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "submit v38 folk song ingestion report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v38/review-report": {
+      "post": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "submit v38 folk song review report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v38/music/cards": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "v38 public music knowledge cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v38/music/search-documents": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "v38 public music search documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v38/music/claims": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "v38 public music claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v38/music-source-packets": {
+      "get": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "v38 frontend AI music source packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v38/music-grounding-check": {
+      "post": {
+        "tags": [
+          "publicKnowledge"
+        ],
+        "summary": "v38 music grounding safety check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v39": {
+      "get": {
+        "tags": [
+          "operations"
+        ],
+        "summary": "v39 next upgrade plan",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/source-registry": {
+      "get": {
+        "summary": "取得 v39 歌謠來源登錄",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/catalog": {
+      "get": {
+        "summary": "取得 v39 歌謠 catalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/variant-index": {
+      "get": {
+        "summary": "取得 v39 異名/版本索引",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/search-config": {
+      "get": {
+        "summary": "取得 v39 搜尋設定",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/review-queue": {
+      "get": {
+        "summary": "取得 v39 審核佇列",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/rights-policy": {
+      "get": {
+        "summary": "取得 v39 權利政策",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v39/metadata-worker-contract": {
+      "get": {
+        "summary": "取得 v39 metadata worker contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v39/ingestion-report": {
+      "post": {
+        "summary": "回報 v39 ingestion 結果",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v39/review-report": {
+      "post": {
+        "summary": "回報 v39 review 結果",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v39/youtube-metadata-report": {
+      "post": {
+        "summary": "回報 YouTube metadata 結果",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v39/music/cards": {
+      "get": {
+        "summary": "取得 v39 music cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v39/music/search-documents": {
+      "get": {
+        "summary": "取得 v39 music search docs",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v39/music/claims": {
+      "get": {
+        "summary": "取得 v39 music claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v39/music-source-packets": {
+      "get": {
+        "summary": "取得 v39 AI music source packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v39/music-grounding-check": {
+      "post": {
+        "summary": "檢查 v39 AI 音樂草稿引用與風險",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v40": {
+      "get": {
+        "summary": "取得 v40 下一步方案",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/source-registry": {
+      "get": {
+        "summary": "取得 v40 source-registry",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/catalog": {
+      "get": {
+        "summary": "取得 v40 catalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/relation-variant-index": {
+      "get": {
+        "summary": "取得 v40 relation-variant-index",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/search-config": {
+      "get": {
+        "summary": "取得 v40 search-config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/review-queue": {
+      "get": {
+        "summary": "取得 v40 review-queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/rights-policy": {
+      "get": {
+        "summary": "取得 v40 rights-policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v40/youtube-worker-contract": {
+      "get": {
+        "summary": "取得 v40 youtube-worker-contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v40/ingestion-report": {
+      "post": {
+        "summary": "回報 v40 ingestion-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v40/review-report": {
+      "post": {
+        "summary": "回報 v40 review-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v40/youtube-metadata-report": {
+      "post": {
+        "summary": "回報 v40 youtube-metadata-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v40/music/cards": {
+      "get": {
+        "summary": "取得 v40 音樂公開資料",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v40/music/search-documents": {
+      "get": {
+        "summary": "取得 v40 音樂公開資料",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v40/music/claims": {
+      "get": {
+        "summary": "取得 v40 音樂公開資料",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v40/music-source-packets": {
+      "get": {
+        "summary": "取得 v40 音樂公開資料",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v40/music-grounding-check": {
+      "post": {
+        "summary": "檢查 v40 AI 音樂草稿引用與風險",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v41": {
+      "get": {
+        "summary": "取得 v41 下一步方案",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v41/policy": {
+      "get": {
+        "summary": "v41 GET /api/ops/speech-training/v41/policy",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v41/manifest": {
+      "get": {
+        "summary": "v41 GET /api/ops/speech-training/v41/manifest",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v41/quality-gate": {
+      "get": {
+        "summary": "v41 GET /api/ops/speech-training/v41/quality-gate",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v41/dataset-report": {
+      "post": {
+        "summary": "v41 POST /api/internal/speech-training/v41/dataset-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/source-registry": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/source-registry",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/catalog": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/catalog",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/review-ui": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/review-ui",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/review-queue": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/review-queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/youtube-worker-contract": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/youtube-worker-contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/authority-adapters": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/authority-adapters",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/fulltext-config": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/fulltext-config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/ai-guardrails": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/ai-guardrails",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-folk-song/v41/db-transaction-contract": {
+      "get": {
+        "summary": "v41 GET /api/ops/music-folk-song/v41/db-transaction-contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v41/ingestion-report": {
+      "post": {
+        "summary": "v41 POST /api/internal/music-folk-song/v41/ingestion-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v41/review-report": {
+      "post": {
+        "summary": "v41 POST /api/internal/music-folk-song/v41/review-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/music-folk-song/v41/youtube-metadata-report": {
+      "post": {
+        "summary": "v41 POST /api/internal/music-folk-song/v41/youtube-metadata-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/music/v41/populate-fulltext": {
+      "post": {
+        "summary": "v41 POST /api/internal/search/music/v41/populate-fulltext",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v41/music/cards": {
+      "get": {
+        "summary": "v41 GET /api/public/true-knowledge/v41/music/cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v41/music/search-documents": {
+      "get": {
+        "summary": "v41 GET /api/public/true-knowledge/v41/music/search-documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v41/music/claims": {
+      "get": {
+        "summary": "v41 GET /api/public/true-knowledge/v41/music/claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v41/music-tts-stt-source-packets": {
+      "get": {
+        "summary": "v41 GET /api/public/ai-article/v41/music-tts-stt-source-packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v41/music-grounding-check": {
+      "post": {
+        "summary": "v41 POST /api/internal/ai-article/v41/music-grounding-check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v42": {
+      "get": {
+        "summary": "v41 GET /api/ops/next-upgrade-plan/v42",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v42/authorized-review": {
+      "get": {
+        "summary": "v42 /api/ops/speech-training/v42/authorized-review",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v42/dataset-split": {
+      "get": {
+        "summary": "v42 /api/ops/speech-training/v42/dataset-split",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v42/evaluation-schema": {
+      "get": {
+        "summary": "v42 /api/ops/speech-training/v42/evaluation-schema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/speech-training/v42/review-queue": {
+      "get": {
+        "summary": "v42 /api/admin/speech-training/v42/review-queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v42/dataset-review-report": {
+      "post": {
+        "summary": "v42 /api/internal/speech-training/v42/dataset-review-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v42/evaluation-report": {
+      "post": {
+        "summary": "v42 /api/internal/speech-training/v42/evaluation-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/search/music/v42/config": {
+      "get": {
+        "summary": "v42 /api/ops/search/music/v42/config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/search/music": {
+      "get": {
+        "summary": "v42 /api/public/search/music",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/music/v42/populate-fulltext": {
+      "post": {
+        "summary": "v42 /api/internal/search/music/v42/populate-fulltext",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/authority-sources/v42/worker-contract": {
+      "get": {
+        "summary": "v42 /api/ops/authority-sources/v42/worker-contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/authority-sources/v42/fetch-report": {
+      "post": {
+        "summary": "v42 /api/internal/authority-sources/v42/fetch-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/music-speech/v42/live-dashboard": {
+      "get": {
+        "summary": "v42 /api/admin/music-speech/v42/live-dashboard",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-speech/v42/db-transaction-schema": {
+      "get": {
+        "summary": "v42 /api/ops/music-speech/v42/db-transaction-schema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/music-speech/v42/ai-guardrails": {
+      "get": {
+        "summary": "v42 /api/ops/music-speech/v42/ai-guardrails",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v42/music/cards": {
+      "get": {
+        "summary": "v42 /api/public/true-knowledge/v42/music/cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v42/music/search-documents": {
+      "get": {
+        "summary": "v42 /api/public/true-knowledge/v42/music/search-documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v42/music/claims": {
+      "get": {
+        "summary": "v42 /api/public/true-knowledge/v42/music/claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v42/music-speech-source-packets": {
+      "get": {
+        "summary": "v42 /api/public/ai-article/v42/music-speech-source-packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v42/music-speech-grounding-check": {
+      "post": {
+        "summary": "v42 /api/internal/ai-article/v42/music-speech-grounding-check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v43": {
+      "get": {
+        "summary": "v42 /api/ops/next-upgrade-plan/v43",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v43/authorized-review": {
+      "get": {
+        "summary": "v43 /api/ops/speech-training/v43/authorized-review",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v43/model-workspace": {
+      "get": {
+        "summary": "v43 /api/ops/speech-training/v43/model-workspace",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v43/evaluation-dashboard": {
+      "get": {
+        "summary": "v43 /api/ops/speech-training/v43/evaluation-dashboard",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/speech-training/v43/release-gate": {
+      "get": {
+        "summary": "v43 /api/ops/speech-training/v43/release-gate",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/speech-training/v43/review-queue": {
+      "get": {
+        "summary": "v43 /api/admin/speech-training/v43/review-queue",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v43/authorization-report": {
+      "post": {
+        "summary": "v43 /api/internal/speech-training/v43/authorization-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v43/model-experiment-report": {
+      "post": {
+        "summary": "v43 /api/internal/speech-training/v43/model-experiment-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/speech-training/v43/evaluation-report": {
+      "post": {
+        "summary": "v43 /api/internal/speech-training/v43/evaluation-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/search/music/v43/live-db-config": {
+      "get": {
+        "summary": "v43 /api/ops/search/music/v43/live-db-config",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/search/music/v43": {
+      "get": {
+        "summary": "v43 /api/public/search/music/v43",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/search/music/v43/live-db-report": {
+      "post": {
+        "summary": "v43 /api/internal/search/music/v43/live-db-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/authority-sources/v43/live-fetch-contract": {
+      "get": {
+        "summary": "v43 /api/ops/authority-sources/v43/live-fetch-contract",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/authority-sources/v43/live-fetch-report": {
+      "post": {
+        "summary": "v43 /api/internal/authority-sources/v43/live-fetch-report",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/music-speech/v43/dashboard": {
+      "get": {
+        "summary": "v43 /api/admin/music-speech/v43/dashboard",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v43/music/cards": {
+      "get": {
+        "summary": "v43 /api/public/true-knowledge/v43/music/cards",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v43/music/search-documents": {
+      "get": {
+        "summary": "v43 /api/public/true-knowledge/v43/music/search-documents",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/true-knowledge/v43/music/claims": {
+      "get": {
+        "summary": "v43 /api/public/true-knowledge/v43/music/claims",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/public/ai-article/v43/music-speech-source-packets": {
+      "get": {
+        "summary": "v43 /api/public/ai-article/v43/music-speech-source-packets",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/internal/ai-article/v43/music-speech-grounding-check": {
+      "post": {
+        "summary": "v43 /api/internal/ai-article/v43/music-speech-grounding-check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ops/next-upgrade-plan/v44": {
+      "get": {
+        "summary": "v43 /api/ops/next-upgrade-plan/v44",
         "responses": {
           "200": {
             "description": "OK"

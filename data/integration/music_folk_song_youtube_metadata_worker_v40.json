@@ -1,0 +1,55 @@
+{
+  "version": "v40",
+  "generated_at": "2026-06-12T13:20:00+08:00",
+  "worker_name": "music-folk-song-youtube-metadata-worker-v40",
+  "description_zh": "v40 YouTube/音樂來源 metadata worker contract；只抓 metadata，寫入候選，不自動公開。",
+  "inputs": [
+    "seed_query",
+    "source_id",
+    "max_results",
+    "region_code",
+    "published_after",
+    "channel_allowlist_optional"
+  ],
+  "outputs": [
+    "candidate_id",
+    "source_id",
+    "source_url",
+    "video_id",
+    "title",
+    "channel_title",
+    "channel_id",
+    "published_at",
+    "duration_iso8601",
+    "thumbnail_url",
+    "description_hash_only",
+    "rights_status_guess",
+    "official_channel_guess",
+    "blocked_relation_hits",
+    "sensitivity_guess",
+    "dedupe_key"
+  ],
+  "forbidden_actions": [
+    "download_audio",
+    "download_video",
+    "scrape_full_lyrics",
+    "save_video_description_verbatim_if_long",
+    "train_tts_or_singing_model",
+    "publish_without_review"
+  ],
+  "db_target_tables": [
+    "music_youtube_candidates_v40",
+    "music_source_candidates_v39",
+    "music_candidate_findings_v39"
+  ],
+  "blocked_relation_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

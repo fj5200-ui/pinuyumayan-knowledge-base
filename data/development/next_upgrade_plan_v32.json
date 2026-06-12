@@ -1,0 +1,69 @@
+{
+  "version": "v32",
+  "name": "Live VPS Evidence Backfill and Admin UX",
+  "priorities": [
+    {
+      "priority": 1,
+      "area": "VPS dry-run evidence",
+      "tasks": [
+        "run production-dry-run-v31.sh on VPS staging",
+        "upload generated dry-run report",
+        "resolve blocker checks before production cutover"
+      ]
+    },
+    {
+      "priority": 2,
+      "area": "Main-site migration",
+      "tasks": [
+        "move webapp/lib and app/api routes into the main site",
+        "run acceptance tests",
+        "verify browser bundle has no server secrets"
+      ]
+    },
+    {
+      "priority": 3,
+      "area": "HMAC enforcement",
+      "tasks": [
+        "wrap every /api/internal/* route with requireHmac middleware",
+        "persist nonce in DB or Redis",
+        "add security audit dashboard"
+      ]
+    },
+    {
+      "priority": 4,
+      "area": "Full corpus real import",
+      "tasks": [
+        "run full corpus pipeline on VPS staging",
+        "backfill acceptance report into DB",
+        "promote only verified corpus to public release channel"
+      ]
+    },
+    {
+      "priority": 5,
+      "area": "Admin UI",
+      "tasks": [
+        "connect live dashboard panels",
+        "support approve/reject/revision/schedule",
+        "show forbidden relation and duplicate checks"
+      ]
+    },
+    {
+      "priority": 6,
+      "area": "Candidate knowledge intake",
+      "tasks": [
+        "add candidate-source import jobs",
+        "store all new facts as candidate_needs_human_review",
+        "keep Beinan/Peinan archaeology terms blocked"
+      ]
+    },
+    {
+      "priority": 7,
+      "area": "Search and SEO",
+      "tasks": [
+        "run search quality suite",
+        "add sitemap/OG/canonical generation",
+        "track zero-result queries"
+      ]
+    }
+  ]
+}

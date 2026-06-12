@@ -1,0 +1,25 @@
+{
+  "version": "v42",
+  "split_policy": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
+  "leakage_guards": [
+    "same_audio_hash_not_cross_split",
+    "same_speaker_balanced",
+    "same_source_batch_limited",
+    "same_sentence_not_cross_split"
+  ],
+  "dialect_balance_required": true,
+  "current_split": {
+    "train": 0,
+    "dev": 0,
+    "test": 0,
+    "blocked_candidates": 80
+  },
+  "output_manifest_paths": [
+    "data/audio/tts_dataset_manifest_v42.generated.json",
+    "data/audio/stt_dataset_manifest_v42.generated.json"
+  ]
+}

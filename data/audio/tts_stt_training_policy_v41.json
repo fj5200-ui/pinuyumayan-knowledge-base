@@ -1,0 +1,51 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "public_synthetic_tts_enabled": false,
+  "public_stt_music_transcription_enabled": false,
+  "allowed_training_sources": [
+    "authorized_source_audio",
+    "reviewed_formosanbank_epark_audio",
+    "community_approved_recording"
+  ],
+  "blocked_training_sources": [
+    "youtube_audio",
+    "youtube_video",
+    "unlicensed_music",
+    "unreviewed_ritual_song",
+    "restricted_spiritual_or_shamanic_content"
+  ],
+  "required_fields": [
+    "asset_id",
+    "source_id",
+    "speaker_id",
+    "dialect_code",
+    "transcript",
+    "source_phon",
+    "ipa",
+    "audio_url_or_storage_key",
+    "license_status",
+    "review_status",
+    "split"
+  ],
+  "splits": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
+  "quality_gates": [
+    "license_approved",
+    "audio_available",
+    "transcript_aligned",
+    "dialect_tagged",
+    "speaker_consented_or_public_license",
+    "sensitive_content_reviewed",
+    "no_youtube_audio"
+  ],
+  "release_channels": [
+    "speech_training_candidate",
+    "speech_training_verified",
+    "internal_model_eval",
+    "public_pronunciation_only_after_review"
+  ]
+}

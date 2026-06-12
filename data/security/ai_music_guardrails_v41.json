@@ -1,0 +1,24 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "required": [
+    "claim_ids",
+    "source_ids",
+    "rights_status",
+    "no_full_lyrics",
+    "no_style_imitation",
+    "no_youtube_audio_training"
+  ],
+  "block_patterns": [
+    "完整歌詞",
+    "逐字歌詞",
+    "仿古調",
+    "模仿古調",
+    "下載音訊",
+    "下載影片",
+    "訓練歌聲",
+    "歌聲模型",
+    "卑南文化遺址"
+  ],
+  "review_status_on_violation": "blocked_or_request_revision"
+}

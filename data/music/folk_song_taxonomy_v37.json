@@ -1,0 +1,55 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "categories": [
+    {
+      "key": "archival_recording",
+      "label_zh": "典藏錄音候選",
+      "public_rule": "metadata_only"
+    },
+    {
+      "key": "old_song_performance",
+      "label_zh": "古調/古謠演唱候選",
+      "public_rule": "metadata_only_after_review"
+    },
+    {
+      "key": "ritual_related_song",
+      "label_zh": "祭儀相關歌謠候選",
+      "public_rule": "summary_only_manual_review"
+    },
+    {
+      "key": "modern_song_album",
+      "label_zh": "現代歌曲/專輯候選",
+      "public_rule": "metadata_only"
+    },
+    {
+      "key": "community_song_collection",
+      "label_zh": "部落傳唱/採集候選",
+      "public_rule": "metadata_only_after_review"
+    },
+    {
+      "key": "artist_network",
+      "label_zh": "音樂人物網絡候選",
+      "public_rule": "candidate_only_until_source_verified"
+    },
+    {
+      "key": "youtube_playlist",
+      "label_zh": "YouTube 播放清單候選",
+      "public_rule": "metadata_only_no_embed_until_rights_review"
+    }
+  ],
+  "sensitivity_rules": [
+    {
+      "match": "祭儀/祖靈/巫師/除喪/大獵祭/少年年祭",
+      "classification": "cultural_sensitive_summary_only"
+    },
+    {
+      "match": "完整歌詞/音源/表演細節",
+      "classification": "blocked_without_rights_and_cultural_review"
+    },
+    {
+      "match": "卑南文化遺址/Beinan Site/Peinan Site",
+      "classification": "forbidden_relation"
+    }
+  ]
+}

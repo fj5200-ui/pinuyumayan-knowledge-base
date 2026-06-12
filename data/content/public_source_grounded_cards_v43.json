@@ -1,0 +1,197 @@
+{
+  "version": "v43",
+  "cards": [
+    {
+      "id": "card-v43-tts-stt-live-claim-001",
+      "slug": "licensed-speech-review-v43",
+      "title": "Licensed Speech Review",
+      "summary_zh": "TTS/STT 訓練資料必須先通過授權、來源、speaker、dialect、alignment 與敏感分級審核，未完成審核不得進入 train/dev/test。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-001"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-002",
+      "slug": "train-dev-test-split-v43",
+      "title": "Train Dev Test Split",
+      "summary_zh": "TTS/STT 資料集切分必須以 speaker 與 dialect 分層，避免同一說話人同一句話同時落入訓練集與測試集。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-002"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-003",
+      "slug": "local-model-experiment-workspace-v43",
+      "title": "Local Model Experiment Workspace",
+      "summary_zh": "模型實驗區只能輸出 internal experiment artifacts，任何 TTS/STT 模型未通過 MOS、WER、CER 與人工審核前不得公開。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-003"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-004",
+      "slug": "tts-release-gate-v43",
+      "title": "Tts Release Gate",
+      "summary_zh": "TTS 公開前必須通過真人發音優先、授權可公開、MOS 門檻、族語審核與敏感內容限制。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-004"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-005",
+      "slug": "stt-release-gate-v43",
+      "title": "Stt Release Gate",
+      "summary_zh": "STT 公開前必須通過授權轉寫、WER/CER 門檻、方言標籤與敏感內容遮蔽規則。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-005"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-006",
+      "slug": "youtube-audio-training-block-v43",
+      "title": "Youtube Audio Training Block",
+      "summary_zh": "YouTube 只允許抓 metadata；影片、音訊、歌詞不得下載、不得保存、不得用於 TTS/STT 或歌聲模型訓練。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-006"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-007",
+      "slug": "music-live-db-search-v43",
+      "title": "Music Live Db Search",
+      "summary_zh": "音樂搜尋 API 應讀取 VPS DB FULLTEXT 索引，並支援 artist、community、work_type、rights_status、sensitivity facets。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-007"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-008",
+      "slug": "authority-source-candidate-only-v43",
+      "title": "Authority Source Candidate Only",
+      "summary_zh": "臺灣音樂館、國家文化記憶庫、金曲獎與唱片資料先進候選表，不經人工審核不得自動公開。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-008"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-009",
+      "slug": "music-review-db-transaction-v43",
+      "title": "Music Review Db Transaction",
+      "summary_zh": "音樂候選審核動作必須寫入 DB transaction 與 audit log，包含審核者、理由、權利狀態與敏感標籤。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-009"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-010",
+      "slug": "speech-review-db-transaction-v43",
+      "title": "Speech Review Db Transaction",
+      "summary_zh": "TTS/STT dataset review 必須寫入 DB transaction，保留 dataset hash、reviewer、gate result 與 release channel。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-010"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-011",
+      "slug": "beinan-site-block-music-v43",
+      "title": "Beinan Site Block Music",
+      "summary_zh": "卑南文化遺址、Beinan Site、Peinan Site 只能作負向消歧，不能進入音樂來源、AI source packet 或 related content。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-011"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    },
+    {
+      "id": "card-v43-tts-stt-live-claim-012",
+      "slug": "ai-composer-music-no-lyrics-v43",
+      "title": "Ai Composer Music No Lyrics",
+      "summary_zh": "AI Composer 音樂文章草稿必須帶 claim_ids/source_ids，且不得產生完整歌詞、仿古調歌詞或無來源音樂史料。",
+      "claim_ids": [
+        "v43-tts-stt-live-claim-012"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v43",
+        "src_music_metadata_policy_v43"
+      ],
+      "review_status": "approved_internal_policy",
+      "public_visibility": "admin_ops_public_summary",
+      "sensitivity": "low"
+    }
+  ]
+}

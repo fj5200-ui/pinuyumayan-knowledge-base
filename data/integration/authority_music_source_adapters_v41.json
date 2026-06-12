@@ -1,0 +1,36 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "adapters": [
+    {
+      "adapter_id": "taiwan_music_institute_metadata",
+      "status": "contract_ready",
+      "public_release": "candidate_only"
+    },
+    {
+      "adapter_id": "national_culture_memory_bank_metadata",
+      "status": "contract_ready",
+      "public_release": "candidate_only"
+    },
+    {
+      "adapter_id": "golden_melody_awards_metadata",
+      "status": "contract_ready",
+      "public_release": "candidate_only"
+    },
+    {
+      "adapter_id": "record_release_metadata",
+      "status": "contract_ready",
+      "public_release": "candidate_only"
+    }
+  ],
+  "required_fields": [
+    "source_url",
+    "source_title",
+    "publisher",
+    "retrieved_at",
+    "license_status",
+    "candidate_claim",
+    "review_status",
+    "public_use"
+  ]
+}

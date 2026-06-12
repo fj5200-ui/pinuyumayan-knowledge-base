@@ -1,0 +1,47 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "description_zh": "TTS/STT 訓練、YouTube metadata、音樂權利與內部治理來源登錄。",
+  "sources": [
+    {
+      "source_id": "formosanbank_epark_puyuma_audio_corpus_candidate_v41",
+      "title": "FormosanBank/ePark Puyuma audio corpus candidates",
+      "publisher": "FormosanBank / ePark source data candidate",
+      "source_type": "corpus_metadata_candidate",
+      "url": "https://github.com/FormosanBank/FormosanBank",
+      "license_status": "candidate_requires_review",
+      "public_use": "metadata_only",
+      "notes_zh": "僅作語料來源候選與 metadata；不得未經授權公開音檔、訓練 TTS/STT 或再散布。"
+    },
+    {
+      "source_id": "youtube_music_metadata_candidates_v41",
+      "title": "YouTube Data API metadata-only candidates for Pinuyumayan music",
+      "publisher": "YouTube Data API metadata layer",
+      "source_type": "video_metadata_candidate",
+      "url": "https://developers.google.com/youtube/v3",
+      "license_status": "metadata_only_requires_review",
+      "public_use": "metadata_only",
+      "notes_zh": "只擷取 title/channel/videoId/publishedAt/thumbnail/duration 等 metadata；禁止下載音訊或影片。"
+    },
+    {
+      "source_id": "v40_music_catalog_internal_governance",
+      "title": "v40 music catalog internal governance rules",
+      "publisher": "卑南族文化綜合平台後端資料庫服務",
+      "source_type": "internal_governance",
+      "url": "internal://data/music/folk_song_expanded_catalog_v40.json",
+      "license_status": "internal_project_metadata",
+      "public_use": "public_summary_only",
+      "notes_zh": "延續 v40 歌曲/歌謠/古調 metadata-only 與文化敏感規則。"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_governed_reference",
+      "title": "原民會卑南族公開介紹作為族群文化背景來源",
+      "publisher": "原住民族委員會",
+      "source_type": "official_public_summary",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "license_status": "public_page_summary_requires_citation",
+      "public_use": "public_summary_only",
+      "notes_zh": "作族群背景與公開摘要來源，不作歌詞或音訊來源。"
+    }
+  ]
+}

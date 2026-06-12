@@ -1,0 +1,169 @@
+{
+  "version": "v40",
+  "generated_at": "2026-06-12T13:20:00+08:00",
+  "description_zh": "v40 繼續擴充卑南族歌曲、歌謠、古調 metadata。新增專輯/人物/曲目/版本/YouTube metadata/權威來源候選；只保存 metadata，不保存歌詞或音源。",
+  "source_policy": {
+    "public_release": "只公開 metadata 摘要與已審核來源，不公開歌詞、音訊下載、未審核敏感資訊。",
+    "candidate_release": "YouTube、Wiki、唱片、獎項、館藏資料先進 candidate，不自動公開。",
+    "forbidden": "不得下載 YouTube 音訊/影片；不得保存完整歌詞；不得以未授權音源訓練 TTS/歌聲模型；不得生成仿古調歌詞。",
+    "beinan_archaeology_relation": "卑南文化遺址/Beinan Site/Peinan Site 只作負向消歧，不得進入卑南族歌曲/歌謠/古調來源。"
+  },
+  "sources": [
+    {
+      "source_id": "wiki_jiajia_candidate",
+      "title": "家家 / 紀家盈公開人物條目",
+      "url": "https://zh.wikipedia.org/wiki/%E7%B4%80%E5%AE%B6%E7%9B%88",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "南王家族音樂脈絡",
+        "曾修花傳唱代表",
+        "昊恩家家",
+        "金曲獎 metadata"
+      ],
+      "use_policy": "candidate_metadata_only; verify with official artist/label/awards sources",
+      "rights_note": "只保存人物、專輯、獎項 metadata，不收歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_tamalakaw_community_candidate",
+      "title": "大巴六九部落 / Tamalakaw 公開部落條目",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D%E9%83%A8%E8%90%BD",
+      "publisher": "Wikipedia / secondary context candidate",
+      "known_scope": [
+        "泰安村",
+        "Tamalakaw",
+        "大巴六九部落",
+        "部落背景"
+      ],
+      "use_policy": "candidate_context_only; verify with CIP/community source",
+      "rights_note": "可作部落背景 metadata，不直接導出祭儀細節。"
+    },
+    {
+      "source_id": "wiki_damalagaw_album_candidate",
+      "title": "Damalagaw 大巴六九部落傳唱歌謠公開曲目條目",
+      "url": "https://zh.wikipedia.org/wiki/Damalagaw%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D%E9%83%A8%E8%90%BD%E5%82%B3%E5%94%B1%E6%AD%8C%E8%AC%A0",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "16 首曲目",
+        "大巴六九古謠",
+        "張惠妹企劃統籌",
+        "金曲獎提名"
+      ],
+      "use_policy": "candidate_metadata_only; verify with album publisher/rights holder/community review",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_lu_senbao_music_candidate",
+      "title": "陸森寶 / Baliwakes Raera 公開作品與人物條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B8%E6%A3%AE%E5%AF%B6",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "卑南族音樂歌謠作曲家",
+        "作品列表",
+        "陳建年家族脈絡"
+      ],
+      "use_policy": "candidate_metadata_only; verify with Taiwan Music Institute/museum/community source",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_ji_xiaojun_samingad_candidate",
+      "title": "紀曉君 / Samingad 公開人物與古調演唱條目",
+      "url": "https://zh.wikipedia.org/wiki/%E7%B4%80%E6%9B%89%E5%90%9B",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "南王部落",
+        "古調演唱",
+        "曾修花傳唱",
+        "金曲獎新人獎"
+      ],
+      "use_policy": "candidate_metadata_only; verify with album/label/official source",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_chen_jiannian_candidate",
+      "title": "陳建年公開人物、金曲獎與南王音樂脈絡條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%BB%BA%E5%B9%B4_%28%E6%AD%8C%E6%89%8B%29",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "南王部落",
+        "陸森寶外孫",
+        "金曲獎",
+        "專輯 metadata"
+      ],
+      "use_policy": "candidate_metadata_only; verify with awards/label/official profiles",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_chen_yonglong_candidate",
+      "title": "陳永龍公開人物與專輯條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B0%B8%E9%BE%8D_%28%E6%AD%8C%E6%89%8B%29",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "南王部落",
+        "傳統音樂傳唱",
+        "個人專輯",
+        "合輯"
+      ],
+      "use_policy": "candidate_metadata_only; verify with official/label source",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "wiki_huang_meizhen_tamalakao_candidate",
+      "title": "黃美珍《大巴六九 / Tamalakao》專輯公開條目",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D_%28%E9%BB%83%E7%BE%8E%E7%8F%8D%E5%B0%88%E8%BC%AF%29",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "known_scope": [
+        "大巴六九專輯",
+        "Tamalakao",
+        "泰安村情感連結",
+        "MV metadata"
+      ],
+      "use_policy": "album_metadata_candidate; verify with label/official release",
+      "rights_note": "不保存歌詞或音源。"
+    },
+    {
+      "source_id": "taiwan_music_institute_archive_candidate",
+      "title": "臺灣音樂館卑南族館藏錄音候選",
+      "url": "https://music.ncfta.gov.tw/",
+      "publisher": "國立傳統藝術中心 臺灣音樂館",
+      "known_scope": [
+        "館藏錄音",
+        "知本少年年祭之歌",
+        "南王童謠",
+        "Mangednged",
+        "賓朗巫師之歌"
+      ],
+      "use_policy": "authoritative_archive_candidate; metadata only; rights review required",
+      "rights_note": "館藏音檔不得下載或再散布。"
+    },
+    {
+      "source_id": "youtube_metadata_candidate",
+      "title": "YouTube 公開影片 metadata 候選",
+      "url": "https://www.youtube.com/",
+      "publisher": "YouTube / channel owners",
+      "known_scope": [
+        "videoId",
+        "title",
+        "channel",
+        "publishedAt",
+        "duration",
+        "thumbnail"
+      ],
+      "use_policy": "metadata_only_via_official_api",
+      "rights_note": "不得下載音訊/影片或抓完整歌詞。"
+    },
+    {
+      "source_id": "golden_melody_awards_metadata_candidate",
+      "title": "金曲獎資料庫候選",
+      "url": "https://gma.tavis.tw/",
+      "publisher": "金曲獎 / TAVIS",
+      "known_scope": [
+        "獎項",
+        "入圍",
+        "得獎",
+        "專輯與藝人 metadata"
+      ],
+      "use_policy": "award_metadata_candidate",
+      "rights_note": "只保存獎項 metadata。"
+    }
+  ]
+}

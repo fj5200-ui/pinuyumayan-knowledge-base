@@ -1,0 +1,69 @@
+{
+  "version": "v31",
+  "title": "Search quality and forbidden relation smoke suite",
+  "queries": [
+    {
+      "q": "南王",
+      "expect_any": [
+        "Nanwang",
+        "Puyuma"
+      ],
+      "forbid": [
+        "Peinan Site",
+        "Beinan Site"
+      ]
+    },
+    {
+      "q": "知本",
+      "expect_any": [
+        "Zhiben"
+      ],
+      "forbid": [
+        "考古遺址"
+      ]
+    },
+    {
+      "q": "少年會所",
+      "expect_any": [
+        "Dakuvan",
+        "會所"
+      ],
+      "forbid": [
+        "卑南文化公園"
+      ]
+    },
+    {
+      "q": "大獵祭",
+      "expect_any": [
+        "Mangayaw",
+        "公開摘要"
+      ],
+      "forbid": [
+        "操作教學",
+        "禁忌細節"
+      ]
+    },
+    {
+      "q": "卑南文化遺址",
+      "expect_behavior": "negative_disambiguation_only",
+      "forbid": [
+        "source_packet",
+        "related_cultural_claim"
+      ]
+    },
+    {
+      "q": "Beinan Site",
+      "expect_behavior": "negative_disambiguation_only",
+      "forbid": [
+        "source_packet",
+        "related_cultural_claim"
+      ]
+    }
+  ],
+  "quality_gates": [
+    "zero_result_queries_logged",
+    "forbidden_terms_not_indexed_as_related",
+    "source_ids_present_for knowledge results",
+    "audio results have source_audio_url or proxy_url"
+  ]
+}

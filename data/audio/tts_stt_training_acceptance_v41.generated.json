@@ -1,0 +1,10 @@
+{
+  "version": "v41",
+  "input": "data/audio/tts_stt_training_manifest_v41.json",
+  "total_items": 80,
+  "train_ready_items": 0,
+  "blocked_items": 80,
+  "status": "failed",
+  "reason": "preview candidates are not license/alignment reviewed",
+  "no_youtube_audio": true
+}

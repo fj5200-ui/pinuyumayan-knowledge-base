@@ -1,0 +1,108 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "description_zh": "v38 擴充歌謠/古調深度 metadata 來源登錄；只保存來源、人物、作品、館藏、YouTube metadata 候選，不保存完整歌詞、不下載音訊。",
+  "sources": [
+    {
+      "source_id": "wiki_lu_senbao_music_candidate",
+      "title": "陸森寶 / Baliwakes Raera 公開作品與人物條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B8%E6%A3%AE%E5%AF%B6",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "use_policy": "candidate_metadata_only; verify with Taiwan Music Institute or museum source before public factual article",
+      "known_scope": [
+        "人物",
+        "作品列表",
+        "南王音樂脈絡",
+        "陸森寶作品年表"
+      ],
+      "rights_note": "不可複製歌詞或音源；只登錄 metadata。"
+    },
+    {
+      "source_id": "wiki_ji_xiaojun_samingad_candidate",
+      "title": "紀曉君 / Samingad 公開人物與專輯條目",
+      "url": "https://zh.wikipedia.org/wiki/%E7%B4%80%E6%9B%89%E5%90%9B",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "use_policy": "candidate_metadata_only; verify with album/label/official source before public release",
+      "known_scope": [
+        "人物",
+        "南王部落",
+        "古調演唱",
+        "專輯 metadata"
+      ],
+      "rights_note": "不可複製歌詞或音源；只登錄 metadata。"
+    },
+    {
+      "source_id": "wiki_chen_jiannian_candidate",
+      "title": "陳建年公開人物、金曲獎與南王音樂脈絡條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%BB%BA%E5%B9%B4_%28%E6%AD%8C%E6%89%8B%29",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "use_policy": "candidate_metadata_only; verify with awards/label/official profiles",
+      "known_scope": [
+        "人物",
+        "南王部落",
+        "陸森寶家族脈絡",
+        "專輯與獎項"
+      ],
+      "rights_note": "不可複製歌詞或音源；只登錄 metadata。"
+    },
+    {
+      "source_id": "wiki_chen_yonglong_candidate",
+      "title": "陳永龍公開人物與專輯條目",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B0%B8%E9%BE%8D_%28%E6%AD%8C%E6%89%8B%29",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "use_policy": "candidate_metadata_only; verify with label/official profiles",
+      "known_scope": [
+        "南王部落",
+        "原住民傳統音樂傳唱",
+        "專輯 metadata"
+      ],
+      "rights_note": "不可複製歌詞或音源；只登錄 metadata。"
+    },
+    {
+      "source_id": "wiki_damalagaw_album_candidate",
+      "title": "Damalagaw 大巴六九部落傳唱歌謠公開曲目條目",
+      "url": "https://zh.wikipedia.org/wiki/Damalagaw%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D%E9%83%A8%E8%90%BD%E5%82%B3%E5%94%B1%E6%AD%8C%E8%AC%A0",
+      "publisher": "Wikipedia / secondary metadata candidate",
+      "use_policy": "candidate_metadata_only; verify with album publisher/rights holder/community review",
+      "known_scope": [
+        "大巴六九",
+        "部落傳唱",
+        "古謠",
+        "曲目 metadata"
+      ],
+      "rights_note": "不可複製歌詞或音源；只登錄 metadata。"
+    },
+    {
+      "source_id": "taiwan_music_institute_archive_candidate",
+      "title": "臺灣音樂館卑南族館藏錄音候選",
+      "url": "https://music.ncfta.gov.tw/",
+      "publisher": "國立傳統藝術中心 臺灣音樂館",
+      "use_policy": "authoritative_archive_candidate; fetch metadata only; public release requires rights field review",
+      "known_scope": [
+        "呂炳川錄音",
+        "知本少年年祭之歌",
+        "南王童謠",
+        "Mangednged",
+        "賓朗巫師之歌"
+      ],
+      "rights_note": "館藏音檔不得下載或再散布；平台只保存 metadata 與公開摘要。"
+    },
+    {
+      "source_id": "youtube_metadata_candidate",
+      "title": "YouTube 公開影片 metadata 候選",
+      "url": "https://www.youtube.com/",
+      "publisher": "YouTube / channel owners",
+      "use_policy": "metadata_only_via_official_api; no audio/video download; no lyric scraping",
+      "known_scope": [
+        "影片標題",
+        "頻道",
+        "videoId",
+        "publishedAt",
+        "duration",
+        "thumbnail"
+      ],
+      "rights_note": "不得下載音訊、影片或以 YouTube 音源訓練模型。"
+    }
+  ],
+  "forbidden_relation_note": "卑南文化遺址/Beinan Site/Peinan Site 只做負向消歧，不能進入歌謠來源或 related content。"
+}

@@ -1,0 +1,40 @@
+{
+  "version": "v42",
+  "composer_mode": "frontend_or_main_site_server_route_only",
+  "backend_does_not_generate_article_body": true,
+  "required_submission_fields": [
+    "draft_title",
+    "draft_body",
+    "claim_ids",
+    "source_ids",
+    "no_full_lyrics_attestation"
+  ],
+  "blocked_outputs": [
+    "完整歌詞",
+    "仿古調歌詞",
+    "下載音訊",
+    "YouTube音源訓練",
+    "卑南文化遺址關聯"
+  ],
+  "packets": [
+    {
+      "packet_id": "music-speech-policy-v42",
+      "title": "TTS/STT 與歌謠文章安全素材包",
+      "claim_ids": [
+        "v42-speech-music-claim-006",
+        "v42-speech-music-claim-007",
+        "v42-speech-music-claim-010",
+        "v42-speech-music-claim-011",
+        "v42-speech-music-claim-016",
+        "v42-speech-music-claim-020",
+        "v42-speech-music-claim-021"
+      ],
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "usage": "front-end AI composer grounding only"
+    }
+  ]
+}

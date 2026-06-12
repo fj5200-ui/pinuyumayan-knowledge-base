@@ -1,0 +1,20 @@
+{
+  "version": "v42",
+  "transactions": [
+    "dataset_review_report",
+    "evaluation_report",
+    "music_search_population",
+    "authority_fetch_report",
+    "ai_grounding_check"
+  ],
+  "required_audit_fields": [
+    "transaction_id",
+    "actor_id",
+    "client_id",
+    "request_hash",
+    "created_at",
+    "hmac_verified",
+    "nonce_id"
+  ],
+  "production_requires_db_write": true
+}

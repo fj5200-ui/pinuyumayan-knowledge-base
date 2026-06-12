@@ -1,0 +1,19 @@
+{
+  "version": "v43",
+  "metrics": {
+    "tts_mos_min": 4.0,
+    "tts_pronunciation_review_required": true,
+    "stt_wer_max": 0.25,
+    "stt_cer_max": 0.15
+  },
+  "current_reports": [],
+  "dashboard_panels": [
+    "dataset readiness",
+    "license gaps",
+    "speaker consent gaps",
+    "alignment status",
+    "TTS MOS",
+    "STT WER/CER",
+    "release gate"
+  ]
+}

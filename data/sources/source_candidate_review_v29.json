@@ -1,0 +1,39 @@
+{
+  "version": "v29",
+  "mode": "candidate_review_only",
+  "candidate_adapters": [
+    {
+      "key": "tipp_candidate",
+      "public_auto_publish": false
+    },
+    {
+      "key": "culture_memory_candidate",
+      "public_auto_publish": false
+    },
+    {
+      "key": "taitung_public_candidate",
+      "public_auto_publish": false
+    },
+    {
+      "key": "museum_candidate",
+      "public_auto_publish": false,
+      "note": "must exclude Beinan/Peinan archaeological-site relation"
+    }
+  ],
+  "review_required_fields": [
+    "source_url",
+    "publisher",
+    "license_status",
+    "claim_text",
+    "source_id",
+    "retrieved_at",
+    "sensitivity",
+    "forbidden_relation_screening"
+  ],
+  "blocked_relation_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Beinan Site",
+    "Peinan Site"
+  ]
+}

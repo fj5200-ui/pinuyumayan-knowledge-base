@@ -1,0 +1,26 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "index_table": "music_search_index_documents_v41",
+  "facets": [
+    "artist",
+    "community",
+    "work_type",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "youtube_official_status",
+    "release_channel"
+  ],
+  "exclude_forbidden_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "Peinan Site",
+    "Beinan Site"
+  ],
+  "source_documents": [
+    "data/search/public_search_documents_v40.json",
+    "data/search/public_search_documents_v41.json"
+  ],
+  "status": "builder_script_included"
+}

@@ -1,0 +1,32 @@
+{
+  "version": "v41",
+  "live": false,
+  "metadata_only": true,
+  "download_audio": false,
+  "download_video": false,
+  "candidate_count": 2,
+  "blocked_count": 0,
+  "candidates": [
+    {
+      "query": "卑南族 歌謠",
+      "video_id": null,
+      "title": "preview metadata candidate for 卑南族 歌謠",
+      "channel_title": null,
+      "published_at": null,
+      "thumbnail_url": null,
+      "rights_status": "unknown",
+      "review_status": "preview_not_live_api"
+    },
+    {
+      "query": "卑南族 古調",
+      "video_id": null,
+      "title": "preview metadata candidate for 卑南族 古調",
+      "channel_title": null,
+      "published_at": null,
+      "thumbnail_url": null,
+      "rights_status": "unknown",
+      "review_status": "preview_not_live_api"
+    }
+  ],
+  "blocked": []
+}

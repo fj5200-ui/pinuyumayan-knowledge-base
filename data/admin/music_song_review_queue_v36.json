@@ -1,0 +1,1157 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "count": 42,
+  "items": [
+    {
+      "review_id": "v36_review_lu_de66a7118a",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "卑南山",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_f02d4b91ae",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "散步歌",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_f0cbd35082",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "頌祭祖先",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_a92f8f3d93",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "美麗的稻穗",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_f5b7dc707d",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "思故鄉",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_bedc8f8903",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "優美的普悠瑪青年",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_34dbd9e14d",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "再見大家",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_b372df9271",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "祝福歌",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_82ddd7a23a",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "天主羔羊",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_eed2d5e83a",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "上主垂憐",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_532c049e00",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "卑南王",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_921da3db98",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "南王互助社歌",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_9f123c4bbe",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "蘭嶼之戀",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_37f7ad4d7a",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "神職晉鐸",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_f45a2ff078",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "海祭",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_lu_32f2450784",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "懷念年祭",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_01",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "來大巴六九",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_02",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "我們歌唱吧",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_03",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "歡聚泰安",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_04",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "姊姊親愛歌",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_05",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "部落出征古謠",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_06",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "歌舞泰安村",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_07",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "大巴六九歌謠",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_08",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "嗨那魯灣",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_09",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "篝火旁的獨吟",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_10",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "思念好友歌謠",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_11",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "父親回來了",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_12",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "懷想曲",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_13",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "巴拉冠之歌",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_14",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "傳唱歌謠",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_15",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "聚會 巴拉冠",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_damalagaw_16",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "呼喊之謠：除喪版",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_tmi_4e3229bbcf",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "知本卑南族少年年祭之歌",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "review_status": "candidate_needs_archive_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_tmi_0d70f42352",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "南王卑南族童謠",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "review_status": "candidate_needs_archive_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_tmi_8a85973b92",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "南王卑南族頌讚之歌（Mangednged）",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "review_status": "candidate_needs_archive_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_tmi_19fe225f90",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "卑南鄉賓朗村卑南族巫師之歌",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "review_status": "candidate_needs_archive_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_samingad_sun",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "太陽 風 草原的聲音",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_samingad_wildfire",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "野火春風",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_chen_ocean",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "海洋",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_chen_dadi",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "大地",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_huang_tamalakao",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "大巴六九",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    },
+    {
+      "review_id": "v36_review_movie_rice",
+      "item_type": "song_metadata_candidate",
+      "title_zh": "美麗的稻穗（電影主題曲版本候選）",
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "review_status": "candidate_needs_rights_review",
+      "checks": [
+        "rights_status",
+        "source_authority",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation",
+        "sensitivity"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ]
+    }
+  ]
+}

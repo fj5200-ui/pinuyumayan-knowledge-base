@@ -1,0 +1,4 @@
+"use client";
+import { useEffect, useState } from "react";
+import { createTtsSttLiveMusicClientV43 } from "../../frontend-sdk/ttsSttLiveMusicClient.v43";
+export function TtsSttLiveDashboardV43({ baseUrl }: { baseUrl: string }) { const [data, setData] = useState<any>(null); useEffect(() => { const client = createTtsSttLiveMusicClientV43({ baseUrl }); Promise.all([client.authorizedReview(), client.evaluationDashboard(), client.modelWorkspace()]).then(([review, evals, workspace]) => setData({ review, evals, workspace })).catch((error) => setData({ error: String(error) })); }, [baseUrl]); if (!data) return <div>Loading TTS/STT live dashboard...</div>; if (data.error) return <pre>{data.error}</pre>; return <section><h2>TTS/STT Live Ops v43</h2><pre>{JSON.stringify(data, null, 2)}</pre></section>; }

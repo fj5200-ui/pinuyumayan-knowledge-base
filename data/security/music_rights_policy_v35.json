@@ -1,0 +1,42 @@
+{
+  "version": "v35",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "policy_name": "Pinuyumayan music/youtube rights and cultural safety policy",
+  "rules": [
+    {
+      "rule_id": "no_lyrics_storage",
+      "severity": "block",
+      "description_zh": "不得保存完整歌詞；僅可保存標題、摘要、metadata。"
+    },
+    {
+      "rule_id": "no_youtube_audio_download",
+      "severity": "block",
+      "description_zh": "不得下載或代理 YouTube 音訊/影片；只保存 URL/metadata。"
+    },
+    {
+      "rule_id": "sensitive_ritual_song_summary_only",
+      "severity": "manual_review",
+      "description_zh": "祭儀、祖靈、巫師、除喪等歌曲只允許公開摘要。"
+    },
+    {
+      "rule_id": "beinan_site_forbidden_relation",
+      "severity": "block",
+      "description_zh": "卑南文化遺址不得作歌謠/古調來源。"
+    },
+    {
+      "rule_id": "ai_no_fake_old_tune",
+      "severity": "block",
+      "description_zh": "AI 不得生成冒充傳統古調或部落歌謠的新歌詞。"
+    }
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "description_zh": "v41 新增 TTS/STT 訓練治理、YouTube worker、音樂審核 UI、FULLTEXT、AI 防護與 VPS DB transaction claims。",
+  "counts": {
+    "v41_additions": 25
+  },
+  "claims": [
+    {
+      "claim_id": "v41_tts_stt_training_authorized_audio_only",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "TTS/STT 訓練只能使用已授權、可追溯、經審核的音檔與逐句文字對齊資料；YouTube 音訊、未授權歌曲或未審核古調不得進入訓練集。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41",
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_760a6d2e2085372d",
+      "dedupe_key": "claim_760a6d2e2085372d",
+      "keywords": [
+        "TTS",
+        "STT",
+        "授權音檔",
+        "訓練集"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_tts_training_needs_segment_alignment",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "卑南語 TTS 資料集必須保留語句切分、speaker/dialect 標籤、source_audio_url、transcript、PHON/IPA 欄位與審核狀態，不能只保存純文字。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_742f982537350b49",
+      "dedupe_key": "claim_742f982537350b49",
+      "keywords": [
+        "TTS",
+        "語句切分",
+        "speaker",
+        "dialect",
+        "PHON",
+        "IPA"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_stt_training_needs_transcript_quality_gate",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "卑南語 STT 訓練資料要通過 transcript 對齊、音檔可讀性、方言標籤、授權狀態與敏感內容檢查後才能進入 train/dev/test split。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_506c38dc4387487a",
+      "dedupe_key": "claim_506c38dc4387487a",
+      "keywords": [
+        "STT",
+        "逐字稿",
+        "quality gate",
+        "train dev test"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_public_tts_synthetic_disabled_until_review",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "公開端合成 TTS 預設維持關閉；只有模型、音色、授權、族語審核與品質門檻都通過後，才能釋出為公開發音服務。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_d28ae57b05486590",
+      "dedupe_key": "claim_d28ae57b05486590",
+      "keywords": [
+        "TTS",
+        "公開服務",
+        "審核",
+        "品質門檻"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_stt_public_recognition_not_music_transcription",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "STT 公開辨識功能不得用來轉錄完整歌曲、古調或祭儀歌謠；歌曲與古調只能進 metadata 與審核流程，不提供歌詞轉寫服務。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_ac13cdbd0789b656",
+      "dedupe_key": "claim_ac13cdbd0789b656",
+      "keywords": [
+        "STT",
+        "歌曲",
+        "古調",
+        "歌詞轉寫禁止"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_youtube_worker_metadata_only",
+      "category": "YouTube metadata worker",
+      "statement_zh": "YouTube Data API worker 只允許抓取影片 metadata，例如 videoId、title、channel、publishedAt、thumbnail、duration；不得下載音訊或影片。",
+      "source_ids": [
+        "youtube_music_metadata_candidates_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_c9686593094fdb0f",
+      "dedupe_key": "claim_c9686593094fdb0f",
+      "keywords": [
+        "YouTube",
+        "metadata",
+        "videoId",
+        "thumbnail"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_youtube_worker_db_transaction",
+      "category": "YouTube metadata worker",
+      "statement_zh": "YouTube metadata ingestion report 必須寫入 VPS DB transaction，保存 run id、query、candidate count、blocked count、rights status 與 forbidden relation findings。",
+      "source_ids": [
+        "youtube_music_metadata_candidates_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_61379b132209b6d5",
+      "dedupe_key": "claim_61379b132209b6d5",
+      "keywords": [
+        "VPS DB",
+        "transaction",
+        "YouTube metadata"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_music_review_ui_required_fields",
+      "category": "音樂審核 UI",
+      "statement_zh": "音樂審核 UI 必須顯示曲名、人物、部落、來源 URL、縮圖、頻道、權利狀態、敏感分類與是否官方來源。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_4f5e20868a152753",
+      "dedupe_key": "claim_4f5e20868a152753",
+      "keywords": [
+        "審核 UI",
+        "權利狀態",
+        "縮圖",
+        "敏感分類"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_authority_source_adapters_metadata_only",
+      "category": "權威來源 adapter",
+      "statement_zh": "臺灣音樂館、國家文化記憶庫、金曲獎與唱片發行資料 adapter 只進候選區，審核前不得自動公開。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_02a40309d9b5b064",
+      "dedupe_key": "claim_02a40309d9b5b064",
+      "keywords": [
+        "臺灣音樂館",
+        "國家文化記憶庫",
+        "金曲獎",
+        "候選區"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_mysql_fulltext_music_facets",
+      "category": "搜尋索引",
+      "statement_zh": "音樂搜尋索引需支援 artist、community、work_type、rights_status、sensitivity、source_authority、youtube_official_status facets。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_d1c68c2595e29f5f",
+      "dedupe_key": "claim_d1c68c2595e29f5f",
+      "keywords": [
+        "MySQL FULLTEXT",
+        "facets",
+        "音樂搜尋"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_ai_music_guard_claim_source_required",
+      "category": "AI Composer 音樂防護",
+      "statement_zh": "AI Composer 產生音樂文章草稿時必須帶 claim_ids 與 source_ids；沒有引用史料或來源的草稿不得進入審核。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_8b45858cf51bed3d",
+      "dedupe_key": "claim_8b45858cf51bed3d",
+      "keywords": [
+        "AI Composer",
+        "claim_ids",
+        "source_ids"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_ai_music_guard_no_fake_ancient_style",
+      "category": "AI Composer 音樂防護",
+      "statement_zh": "AI Composer 必須阻擋仿古調歌詞、完整歌詞、未授權改寫歌詞與以 YouTube 音源生成新歌的請求。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_c4c5e813872c925e",
+      "dedupe_key": "claim_c4c5e813872c925e",
+      "keywords": [
+        "仿古調",
+        "完整歌詞",
+        "未授權改寫"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_vps_db_review_report_transaction",
+      "category": "VPS DB transaction",
+      "statement_zh": "ingestion-report、review-report、youtube-metadata-report 都要改成 DB transaction，並回寫後台 dashboard 狀態。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_c9b449b32d7939a1",
+      "dedupe_key": "claim_c9b449b32d7939a1",
+      "keywords": [
+        "VPS DB",
+        "審核報告",
+        "dashboard"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_tts_stt_dataset_not_music_database",
+      "category": "資料分層治理",
+      "statement_zh": "語詞 TTS/STT 訓練資料、真人發音資料與歌曲/歌謠 metadata 必須分表、分 release channel 管理，不能混成同一個公開資料集。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41",
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_e7156431432a8381",
+      "dedupe_key": "claim_e7156431432a8381",
+      "keywords": [
+        "release channel",
+        "分表",
+        "TTS/STT",
+        "音樂 metadata"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_forbidden_beinan_relation_applies_to_music_and_stt",
+      "category": "禁止關聯治理",
+      "statement_zh": "卑南文化遺址、卑南遺址、Beinan Site、Peinan Site 不得進入歌曲來源、TTS/STT 訓練集、AI source packet 或搜尋同義詞。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_1f9c1e8ebe8e1d00",
+      "dedupe_key": "claim_1f9c1e8ebe8e1d00",
+      "keywords": [
+        "卑南文化遺址",
+        "Beinan Site",
+        "禁止關聯"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_tts_stt_acceptance_report_required",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "TTS/STT 訓練前必須產生 acceptance report，列出授權覆蓋率、音檔時長、speaker/dialect 分布、PHON/IPA 覆蓋率、train/dev/test 分割與 blocked items。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_be6a8045450c511c",
+      "dedupe_key": "claim_be6a8045450c511c",
+      "keywords": [
+        "acceptance report",
+        "授權覆蓋率",
+        "音檔時長"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_stt_eval_needs_wer_cer_by_dialect",
+      "category": "STT 評估",
+      "statement_zh": "STT 評估報告需以 dialect 與 speaker 分組保存 WER、CER、OOV、短句/長句錯誤與人工審核結果。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_c7f4e282c06fb1a3",
+      "dedupe_key": "claim_c7f4e282c06fb1a3",
+      "keywords": [
+        "WER",
+        "CER",
+        "dialect",
+        "speaker"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_tts_eval_needs_mos_and_pronunciation_review",
+      "category": "TTS 評估",
+      "statement_zh": "TTS 評估報告需保存 MOS、音素錯誤、重音/節奏問題、方言一致性與族語審核評語。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_5e2c3f562e707d69",
+      "dedupe_key": "claim_5e2c3f562e707d69",
+      "keywords": [
+        "MOS",
+        "音素錯誤",
+        "族語審核"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_speech_training_requires_human_review_for_sensitive_items",
+      "category": "文化敏感治理",
+      "statement_zh": "涉及祭儀、巫師、祖靈、除喪或限制性歌謠的音檔不得自動進入 TTS/STT 訓練；需保留人工審核與公開摘要限制。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance",
+        "cip_pinuyumayan_profile_governed_reference"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "medium",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_5e419c7aac1c8a15",
+      "dedupe_key": "claim_5e419c7aac1c8a15",
+      "keywords": [
+        "祭儀",
+        "巫師",
+        "祖靈",
+        "人工審核"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_youtube_official_status_must_be_reviewed",
+      "category": "YouTube metadata worker",
+      "statement_zh": "YouTube 影片是否為官方、授權、創作者本人或再上傳，必須由審核欄位標記；不能因為可搜尋到就視為可公開素材。",
+      "source_ids": [
+        "youtube_music_metadata_candidates_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_1430c8f8e2098c04",
+      "dedupe_key": "claim_1430c8f8e2098c04",
+      "keywords": [
+        "官方狀態",
+        "授權",
+        "再上傳",
+        "審核"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_music_rights_status_blocks_public_audio",
+      "category": "音樂權利治理",
+      "statement_zh": "rights_status 若為 unknown、third_party_upload、blocked 或 restricted，主站只能顯示 metadata 摘要，不得嵌入或代理播放音訊。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_cd85b1c0e2d0912d",
+      "dedupe_key": "claim_cd85b1c0e2d0912d",
+      "keywords": [
+        "rights_status",
+        "metadata-only",
+        "公開播放限制"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_fulltext_index_excludes_forbidden_relations",
+      "category": "搜尋索引",
+      "statement_zh": "音樂 FULLTEXT index builder 必須排除卑南文化遺址類禁用詞，避免搜尋將考古遺址與卑南族歌謠自動關聯。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_658d683959f13940",
+      "dedupe_key": "claim_658d683959f13940",
+      "keywords": [
+        "FULLTEXT",
+        "禁用詞",
+        "卑南文化遺址"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_training_manifest_records_no_youtube_audio",
+      "category": "TTS/STT訓練治理",
+      "statement_zh": "TTS/STT training manifest 必須明確記錄 no_youtube_audio=true 與 no_music_training_without_license=true，作為審核與 CI 檢查項。",
+      "source_ids": [
+        "formosanbank_epark_puyuma_audio_corpus_candidate_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_b0c0886373e65a33",
+      "dedupe_key": "claim_b0c0886373e65a33",
+      "keywords": [
+        "training manifest",
+        "YouTube 禁用",
+        "CI 檢查"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_source_adapter_candidates_require_license_status",
+      "category": "權威來源 adapter",
+      "statement_zh": "所有權威來源 adapter 寫入 candidate 時都必須帶 license_status、source_authority、retrieved_at、review_status 與 public_use。",
+      "source_ids": [
+        "v40_music_catalog_internal_governance"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_f3c8562a285a0007",
+      "dedupe_key": "claim_f3c8562a285a0007",
+      "keywords": [
+        "license_status",
+        "source_authority",
+        "review_status"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    },
+    {
+      "claim_id": "v41_review_ui_must_not_show_download_audio_action",
+      "category": "音樂審核 UI",
+      "statement_zh": "音樂審核 UI 不得提供下載 YouTube 音訊或影片按鈕，只能提供開啟來源頁、標記授權、審核 metadata 的動作。",
+      "source_ids": [
+        "youtube_music_metadata_candidates_v41"
+      ],
+      "evidence_locator": "v41 governance/spec",
+      "confidence": "high",
+      "sensitivity": "low",
+      "public_use": "public_summary_only",
+      "review_status": "verified_project_policy",
+      "canonical_fingerprint": "claim_73f0c5aee5f8658c",
+      "dedupe_key": "claim_73f0c5aee5f8658c",
+      "keywords": [
+        "UI",
+        "禁止下載",
+        "metadata 審核"
+      ],
+      "article_allowed": true,
+      "article_guardrail": "音樂/語音內容僅可摘要 metadata；不得產生完整歌詞、仿古調歌詞、下載音訊、下載影片或未授權訓練。"
+    }
+  ]
+}

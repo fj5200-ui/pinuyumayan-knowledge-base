@@ -1,0 +1,19 @@
+{
+  "version": "v42",
+  "panels": [
+    "tts_stt_authorization_review",
+    "dataset_split_status",
+    "mos_wer_cer_reports",
+    "youtube_metadata_runs",
+    "authority_fetch_runs",
+    "music_fulltext_population",
+    "ai_guardrail_failures"
+  ],
+  "live_api_required": true,
+  "db_tables": [
+    "speech_dataset_review_reports_v42",
+    "speech_evaluation_reports_v42",
+    "music_search_query_logs_v42",
+    "authority_source_fetch_runs_v42"
+  ]
+}

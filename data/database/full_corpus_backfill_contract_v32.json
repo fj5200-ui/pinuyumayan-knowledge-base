@@ -1,0 +1,28 @@
+{
+  "version": "v32",
+  "status": "contract_only_until_vps_generated_report_is_backfilled",
+  "required_min_entries": 1000,
+  "preview_subset_entries": 80,
+  "preview_status": "failed_below_required_min_entries",
+  "required_metrics": [
+    "total_entries",
+    "dialect_distribution",
+    "audio_asset_count",
+    "audio_coverage_ratio",
+    "source_phon_coverage_ratio",
+    "duplicate_count",
+    "blocked_license_count",
+    "public_eligible_count"
+  ],
+  "backfill_rules": [
+    "Do not promote full_corpus_candidate to public without acceptance report.",
+    "Do not publish entries without license_status.",
+    "Do not expose synthetic TTS as public pronunciation.",
+    "Use real source audio first; missing audio entries remain text-only or review-only."
+  ],
+  "db_targets": [
+    "full_corpus_execution_runs_v29",
+    "full_corpus_execution_findings_v29",
+    "full_corpus_backfill_reports_v32"
+  ]
+}

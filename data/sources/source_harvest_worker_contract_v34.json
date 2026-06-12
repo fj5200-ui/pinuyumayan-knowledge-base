@@ -1,0 +1,32 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "worker_name": "expanded_true_knowledge_source_worker_v34",
+  "purpose_zh": "將多來源搜尋結果寫入候選區，不直接公開。",
+  "input": {
+    "query_bundle_id": "string",
+    "source_class": "string",
+    "limit": "number"
+  },
+  "output_tables": [
+    "source_search_runs_v34",
+    "source_search_candidates_v34",
+    "source_candidate_findings_v34",
+    "source_ingestion_review_queue_v34"
+  ],
+  "required_filters": [
+    "forbidden_relation_filter",
+    "license_status",
+    "duplicate_candidate_url",
+    "publisher_trust_level",
+    "sensitivity_precheck"
+  ],
+  "candidate_only_by_default": true,
+  "verified_release_requires": [
+    "human_review",
+    "source_url_valid",
+    "license_ok_or_summary_only",
+    "claim_dedup_ok",
+    "forbidden_relation_ok"
+  ]
+}

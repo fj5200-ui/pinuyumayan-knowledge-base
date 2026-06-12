@@ -1,0 +1,792 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T12:35:00+08:00",
+  "count": 49,
+  "description_zh": "v39 歌謠/歌曲/古調候選審核佇列。",
+  "items": [
+    {
+      "review_id": "review_v39_c84af2c130ff",
+      "song_id": "v39_c84af2c130ff",
+      "title_zh": "陳實歌曲採集與創作傳唱脈絡候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_33a37d33ac1d",
+      "song_id": "v39_33a37d33ac1d",
+      "title_zh": "陳實作品跨族群傳唱範圍補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_8c67846efc44",
+      "song_id": "v39_8c67846efc44",
+      "title_zh": "陳實家族音樂與傳統藝術人物關係候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_665be7eb5bda",
+      "song_id": "v39_665be7eb5bda",
+      "title_zh": "知本學校教育與歌謠傳唱 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_57f3d6c115cb",
+      "song_id": "v39_57f3d6c115cb",
+      "title_zh": "南王祭典歌謠地圖補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_cf08ee86c36b",
+      "song_id": "v39_cf08ee86c36b",
+      "title_zh": "南王部落音樂人物索引補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_b8dfece2e40f",
+      "song_id": "v39_b8dfece2e40f",
+      "title_zh": "南王音樂資料禁止連到卑南文化遺址規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_703c7306031c",
+      "song_id": "v39_703c7306031c",
+      "title_zh": "《卑南山》不同錄音/演出版本 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_c88abc0c23d8",
+      "song_id": "v39_c88abc0c23d8",
+      "title_zh": "《散步歌》不同版本與公開演出 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_f736892dd594",
+      "song_id": "v39_f736892dd594",
+      "title_zh": "《祝福歌》社群/教會演唱版本 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_1334a1cc4d3a",
+      "song_id": "v39_1334a1cc4d3a",
+      "title_zh": "《優美的普悠瑪青年》青年/社群脈絡補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_faa9f3d2bd76",
+      "song_id": "v39_faa9f3d2bd76",
+      "title_zh": "《頌祭祖先》文化敏感摘要與公開邊界候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_91bff5210dd2",
+      "song_id": "v39_91bff5210dd2",
+      "title_zh": "《美麗的稻穗》農作/稻作意象 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_5ad97536edcb",
+      "song_id": "v39_5ad97536edcb",
+      "title_zh": "《懷念年祭》最後遺作與年祭關聯 metadata 候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_f72a877f3a17",
+      "song_id": "v39_f72a877f3a17",
+      "title_zh": "曾修花到紀曉君的古調發音/韻律教學 lineage 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_8690efa57080",
+      "song_id": "v39_8690efa57080",
+      "title_zh": "紀曉君《聖民歌：太陽 風 草原的聲音》類型補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_10e18b9866d0",
+      "song_id": "v39_10e18b9866d0",
+      "title_zh": "紀曉君現場古調影片 metadata 擷取候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_a6cfaa35054c",
+      "song_id": "v39_a6cfaa35054c",
+      "title_zh": "紀曉君金曲新人獎與古謠演唱 visibility 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_a5266ff7dc70",
+      "song_id": "v39_a5266ff7dc70",
+      "title_zh": "陳建年專輯與金曲獎 metadata 補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_ba6295643bfb",
+      "song_id": "v39_ba6295643bfb",
+      "title_zh": "陳建年與陸森寶外孫關係 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_76a0c409dc6e",
+      "song_id": "v39_76a0c409dc6e",
+      "title_zh": "陳建年與南王姐妹花製作/家族網絡補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_e5048ffe8f00",
+      "song_id": "v39_e5048ffe8f00",
+      "title_zh": "陳永龍專輯與傳統音樂傳唱關聯補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_db3a9b7159f7",
+      "song_id": "v39_db3a9b7159f7",
+      "title_zh": "黃美珍《大巴六九 / Tamalakao》MV metadata 索引候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_a15200d536e3",
+      "song_id": "v39_a15200d536e3",
+      "title_zh": "《大巴六九 / Tamalakao》專輯名稱與泰安村/部落連結候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_0b368b89da96",
+      "song_id": "v39_0b368b89da96",
+      "title_zh": "Damalagaw 金曲獎提名與華語金曲獎 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_659dcf874b87",
+      "song_id": "v39_659dcf874b87",
+      "title_zh": "Damalagaw 製作/企劃/音樂總監 credits metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_4a8730cc0eba",
+      "song_id": "v39_4a8730cc0eba",
+      "title_zh": "Damalagaw 16 首曲目權利狀態批次補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_6440b4a2b9dd",
+      "song_id": "v39_6440b4a2b9dd",
+      "title_zh": "Damalagaw 巴拉冠/除喪相關曲目敏感邊界候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_9730e185d91d",
+      "song_id": "v39_9730e185d91d",
+      "title_zh": "陸森寶惜別晚會留言及歌聲館藏 metadata 候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_66adf931e218",
+      "song_id": "v39_66adf931e218",
+      "title_zh": "臺灣音樂群像陸森寶人物頁 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_e8fa97892feb",
+      "song_id": "v39_e8fa97892feb",
+      "title_zh": "呂炳川錄音中的卑南族館藏群 metadata 候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_d7220fd9ddc1",
+      "song_id": "v39_d7220fd9ddc1",
+      "title_zh": "YouTube 搜尋種子：卑南族 古調 南王 metadata",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_9f8bf2036546",
+      "song_id": "v39_9f8bf2036546",
+      "title_zh": "YouTube 搜尋種子：Puyuma song Pinuyumayan metadata",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_619a613c1a82",
+      "song_id": "v39_619a613c1a82",
+      "title_zh": "YouTube 搜尋種子：Lu Senbao Baliwakes Raera metadata",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_a709fd56781b",
+      "song_id": "v39_a709fd56781b",
+      "title_zh": "YouTube 搜尋種子：Samingad Puyuma old tune metadata",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_2d75a452bd4a",
+      "song_id": "v39_2d75a452bd4a",
+      "title_zh": "YouTube 搜尋種子：Damalagaw Tamalakao songs metadata",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_f54e39f78984",
+      "song_id": "v39_f54e39f78984",
+      "title_zh": "YouTube 官方/非官方頻道辨識欄位候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_3301ee40eeb8",
+      "song_id": "v39_3301ee40eeb8",
+      "title_zh": "YouTube metadata 不等於授權可重用規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_010061c20e1b",
+      "song_id": "v39_010061c20e1b",
+      "title_zh": "金曲獎原住民語專輯得獎/入圍 metadata 補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_632b6ee8a756",
+      "song_id": "v39_632b6ee8a756",
+      "title_zh": "歌謠來源權威排序規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_ab42b5c3ec9a",
+      "song_id": "v39_ab42b5c3ec9a",
+      "title_zh": "歌謠 source packet claim set 去重候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_8a9b1ee48981",
+      "song_id": "v39_8a9b1ee48981",
+      "title_zh": "歌謠搜尋 facets：artist/community/work_type/source_authority 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_bf9377e19a3a",
+      "song_id": "v39_bf9377e19a3a",
+      "title_zh": "歌謠敏感 facets：ritual_related/shaman/mourning/public_summary 候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_1e81224570ac",
+      "song_id": "v39_1e81224570ac",
+      "title_zh": "歌謠候選審核必填欄位規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_784482a1e8e5",
+      "song_id": "v39_784482a1e8e5",
+      "title_zh": "前端 AI 音樂 source packet 公開欄位限制候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_14120c8fa009",
+      "song_id": "v39_14120c8fa009",
+      "title_zh": "不得以未授權歌謠訓練歌聲模型規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_781015faadda",
+      "song_id": "v39_781015faadda",
+      "title_zh": "AI Composer 阻擋仿古調歌詞生成規則候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_27aebddbcfeb",
+      "song_id": "v39_27aebddbcfeb",
+      "title_zh": "歌謠公開摘要模板：人物/曲名/來源/審核狀態候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v39_258b1782b9b3",
+      "song_id": "v39_258b1782b9b3",
+      "title_zh": "館藏錄音引用格式模板候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "v42",
+  "purpose": "Review whether candidate speech/audio items can become TTS/STT training data.",
+  "public_synthetic_tts_enabled": false,
+  "public_stt_enabled": false,
+  "counts": {
+    "candidate_items": 80,
+    "train_ready_items": 0,
+    "dev_ready_items": 0,
+    "test_ready_items": 0
+  },
+  "required_fields": [
+    "asset_id",
+    "source_audio_url",
+    "transcript",
+    "dialect_code",
+    "dialect_name",
+    "speaker_id",
+    "speaker_consent_status",
+    "license_status",
+    "alignment_status",
+    "sensitivity",
+    "review_status"
+  ],
+  "blocking_conditions": [
+    "unknown_license",
+    "no_speaker_consent",
+    "missing_transcript",
+    "missing_alignment",
+    "youtube_audio_source",
+    "music_or_song_audio",
+    "restricted_ritual_context",
+    "beinan_archaeology_relation"
+  ],
+  "notes": [
+    "80 preview items remain candidates only until license/consent/alignment are verified.",
+    "YouTube/video/music audio is explicitly blocked from training datasets."
+  ]
+}

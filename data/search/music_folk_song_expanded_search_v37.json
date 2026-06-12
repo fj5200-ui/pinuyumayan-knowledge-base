@@ -1,0 +1,53 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "description_zh": "擴大卑南族歌謠/古調/歌曲搜尋；YouTube 只抓 metadata；搜尋結果先進候選審核。",
+  "never_download_audio": true,
+  "never_store_lyrics": true,
+  "require_human_review_before_public_embed": true,
+  "youtube_query_seeds": [
+    "卑南族 歌謠 古調 南王",
+    "卑南族 古謠 紀曉君 Samingad",
+    "紀曉君 神話 陳建年",
+    "陳永龍 南王 卑南族 歌謠",
+    "南王姐妹花 陳建年",
+    "黃美珍 大巴六九 Tamalakao 無聲抗議",
+    "Damalagaw 大巴六九 張王玉妹",
+    "大巴六九 巴拉冠之歌",
+    "卑南族 少年年祭 歌謠",
+    "卑南族 大獵祭 歌謠",
+    "陸森寶 惜別晚會 歌聲",
+    "臺灣音樂館 卑南族 歌謠",
+    "南王古謠 教唱",
+    "卑南語 歌曲 playlist",
+    "Puyuma song Samingad"
+  ],
+  "facets": [
+    "artist",
+    "community",
+    "work_type",
+    "source_class",
+    "rights_status",
+    "review_status",
+    "is_ritual_related",
+    "is_archive_recording",
+    "is_youtube_candidate"
+  ],
+  "ranking_rules": [
+    "verified_authoritative_metadata_first",
+    "official_channel_first",
+    "archive_catalog_first",
+    "avoid_duplicate_title_artist",
+    "blocked_terms_never_related"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

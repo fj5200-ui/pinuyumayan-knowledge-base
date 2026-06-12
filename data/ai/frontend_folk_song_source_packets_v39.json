@@ -1,0 +1,1318 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T12:35:00+08:00",
+  "count": 57,
+  "packets": [
+    {
+      "packet_id": "packet_music_v39_1837f990764d",
+      "title_zh": "陳實歌曲採集與創作傳唱脈絡候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳實歌曲採集與創作傳唱脈絡候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_1837f990764d"
+      ],
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_08372813c038",
+      "title_zh": "陳實作品跨族群傳唱範圍補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳實作品跨族群傳唱範圍補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_08372813c038"
+      ],
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_726241bf35a6",
+      "title_zh": "陳實家族音樂與傳統藝術人物關係候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳實家族音樂與傳統藝術人物關係候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_726241bf35a6"
+      ],
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_286ac3925a74",
+      "title_zh": "知本學校教育與歌謠傳唱 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "知本學校教育與歌謠傳唱 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_286ac3925a74"
+      ],
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_7bd9f510986a",
+      "title_zh": "南王祭典歌謠地圖補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "南王祭典歌謠地圖補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_7bd9f510986a"
+      ],
+      "source_ids": [
+        "wiki_nanwang_tribe_music_context_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_1d0bf78b1b47",
+      "title_zh": "南王部落音樂人物索引補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "南王部落音樂人物索引補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_1d0bf78b1b47"
+      ],
+      "source_ids": [
+        "wiki_nanwang_tribe_music_context_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_7f9a312186a3",
+      "title_zh": "南王音樂資料禁止連到卑南文化遺址規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "南王音樂資料禁止連到卑南文化遺址規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_7f9a312186a3"
+      ],
+      "source_ids": [
+        "wiki_nanwang_tribe_music_context_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_aa4c1e30b152",
+      "title_zh": "《卑南山》不同錄音/演出版本 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《卑南山》不同錄音/演出版本 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_aa4c1e30b152"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_ae6194433242",
+      "title_zh": "《散步歌》不同版本與公開演出 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《散步歌》不同版本與公開演出 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_ae6194433242"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_2ec39171f9b4",
+      "title_zh": "《祝福歌》社群/教會演唱版本 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《祝福歌》社群/教會演唱版本 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_2ec39171f9b4"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_afc76d9ebaab",
+      "title_zh": "《優美的普悠瑪青年》青年/社群脈絡補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《優美的普悠瑪青年》青年/社群脈絡補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_afc76d9ebaab"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_eb9745e84d19",
+      "title_zh": "《頌祭祖先》文化敏感摘要與公開邊界候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《頌祭祖先》文化敏感摘要與公開邊界候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_eb9745e84d19"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_d4ba77dfd7da",
+      "title_zh": "《美麗的稻穗》農作/稻作意象 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《美麗的稻穗》農作/稻作意象 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_d4ba77dfd7da"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_79e1c492f7b5",
+      "title_zh": "《懷念年祭》最後遺作與年祭關聯 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "《懷念年祭》最後遺作與年祭關聯 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_79e1c492f7b5"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_d1d4f1f662da",
+      "title_zh": "曾修花到紀曉君的古調發音/韻律教學 lineage 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "曾修花到紀曉君的古調發音/韻律教學 lineage 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_d1d4f1f662da"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_eeee5a67564f",
+      "title_zh": "紀曉君《聖民歌：太陽 風 草原的聲音》類型補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "紀曉君《聖民歌：太陽 風 草原的聲音》類型補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_eeee5a67564f"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_842120ff006e",
+      "title_zh": "紀曉君現場古調影片 metadata 擷取候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "紀曉君現場古調影片 metadata 擷取候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_842120ff006e"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_5eb054ade82c",
+      "title_zh": "紀曉君金曲新人獎與古謠演唱 visibility 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "紀曉君金曲新人獎與古謠演唱 visibility 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_5eb054ade82c"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_d981eec63df6",
+      "title_zh": "陳建年專輯與金曲獎 metadata 補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳建年專輯與金曲獎 metadata 補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_d981eec63df6"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_04f4a6aa17f5",
+      "title_zh": "陳建年與陸森寶外孫關係 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳建年與陸森寶外孫關係 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_04f4a6aa17f5"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_b2cde51e4736",
+      "title_zh": "陳建年與南王姐妹花製作/家族網絡補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳建年與南王姐妹花製作/家族網絡補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_b2cde51e4736"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_98247e57806a",
+      "title_zh": "陳永龍專輯與傳統音樂傳唱關聯補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陳永龍專輯與傳統音樂傳唱關聯補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_98247e57806a"
+      ],
+      "source_ids": [
+        "wiki_chen_yonglong_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_53e6e133be1d",
+      "title_zh": "黃美珍《大巴六九 / Tamalakao》MV metadata 索引候選卑南族歌謠/歌曲/古調資料庫 v39 meta",
+      "summary_zh": "黃美珍《大巴六九 / Tamalakao》MV metadata 索引候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_53e6e133be1d"
+      ],
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_5af2ce4e9357",
+      "title_zh": "《大巴六九 / Tamalakao》專輯名稱與泰安村/部落連結候選卑南族歌謠/歌曲/古調資料庫 v39 metadata",
+      "summary_zh": "《大巴六九 / Tamalakao》專輯名稱與泰安村/部落連結候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_5af2ce4e9357"
+      ],
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_a73d6f532289",
+      "title_zh": "Damalagaw 金曲獎提名與華語金曲獎 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata",
+      "summary_zh": "Damalagaw 金曲獎提名與華語金曲獎 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_a73d6f532289"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_2206d9b6052e",
+      "title_zh": "Damalagaw 製作/企劃/音樂總監 credits metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 m",
+      "summary_zh": "Damalagaw 製作/企劃/音樂總監 credits metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_2206d9b6052e"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_875523a9d063",
+      "title_zh": "Damalagaw 16 首曲目權利狀態批次補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "Damalagaw 16 首曲目權利狀態批次補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_875523a9d063"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_cc859227922c",
+      "title_zh": "Damalagaw 巴拉冠/除喪相關曲目敏感邊界候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "Damalagaw 巴拉冠/除喪相關曲目敏感邊界候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_cc859227922c"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_a2c1119a4357",
+      "title_zh": "陸森寶惜別晚會留言及歌聲館藏 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "陸森寶惜別晚會留言及歌聲館藏 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_a2c1119a4357"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_4b33d108f49c",
+      "title_zh": "臺灣音樂群像陸森寶人物頁 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "臺灣音樂群像陸森寶人物頁 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_4b33d108f49c"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_558903bad820",
+      "title_zh": "呂炳川錄音中的卑南族館藏群 metadata 候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "呂炳川錄音中的卑南族館藏群 metadata 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_558903bad820"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_9eefeb053102",
+      "title_zh": "YouTube 搜尋種子：卑南族 古調 南王 metadata卑南族歌謠/歌曲/古調資料庫 v39 metadata 候",
+      "summary_zh": "YouTube 搜尋種子：卑南族 古調 南王 metadata 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_9eefeb053102"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_5c742a60d465",
+      "title_zh": "YouTube 搜尋種子：Puyuma song Pinuyumayan metadata卑南族歌謠/歌曲/古調資料庫 ",
+      "summary_zh": "YouTube 搜尋種子：Puyuma song Pinuyumayan metadata 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_5c742a60d465"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_54efc7d2c6da",
+      "title_zh": "YouTube 搜尋種子：Lu Senbao Baliwakes Raera metadata卑南族歌謠/歌曲/古調資料",
+      "summary_zh": "YouTube 搜尋種子：Lu Senbao Baliwakes Raera metadata 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_54efc7d2c6da"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_56a2ddc01bad",
+      "title_zh": "YouTube 搜尋種子：Samingad Puyuma old tune metadata卑南族歌謠/歌曲/古調資料庫",
+      "summary_zh": "YouTube 搜尋種子：Samingad Puyuma old tune metadata 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_56a2ddc01bad"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_fe13f0661e15",
+      "title_zh": "YouTube 搜尋種子：Damalagaw Tamalakao songs metadata卑南族歌謠/歌曲/古調資料",
+      "summary_zh": "YouTube 搜尋種子：Damalagaw Tamalakao songs metadata 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_fe13f0661e15"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_24d8d45eee12",
+      "title_zh": "YouTube 官方/非官方頻道辨識欄位候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "YouTube 官方/非官方頻道辨識欄位候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_24d8d45eee12"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_290b8d307c59",
+      "title_zh": "YouTube metadata 不等於授權可重用規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "YouTube metadata 不等於授權可重用規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_290b8d307c59"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_18dc467a4763",
+      "title_zh": "金曲獎原住民語專輯得獎/入圍 metadata 補欄候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "金曲獎原住民語專輯得獎/入圍 metadata 補欄候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_18dc467a4763"
+      ],
+      "source_ids": [
+        "golden_melody_awards_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_16870174aaa3",
+      "title_zh": "歌謠來源權威排序規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "歌謠來源權威排序規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_16870174aaa3"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_db261ca8b79b",
+      "title_zh": "歌謠 source packet claim set 去重候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候",
+      "summary_zh": "歌謠 source packet claim set 去重候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_db261ca8b79b"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_5e1508224456",
+      "title_zh": "歌謠搜尋 facets：artist/community/work_type/source_authority 候選卑南",
+      "summary_zh": "歌謠搜尋 facets：artist/community/work_type/source_authority 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_5e1508224456"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_951560d2624d",
+      "title_zh": "歌謠敏感 facets：ritual_related/shaman/mourning/public_summary 候選",
+      "summary_zh": "歌謠敏感 facets：ritual_related/shaman/mourning/public_summary 候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_951560d2624d"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_202d09a9a800",
+      "title_zh": "歌謠候選審核必填欄位規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "歌謠候選審核必填欄位規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_202d09a9a800"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_04ecdbb3ba91",
+      "title_zh": "前端 AI 音樂 source packet 公開欄位限制候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候",
+      "summary_zh": "前端 AI 音樂 source packet 公開欄位限制候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_04ecdbb3ba91"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_4f2ed9a01581",
+      "title_zh": "不得以未授權歌謠訓練歌聲模型規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "不得以未授權歌謠訓練歌聲模型規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_4f2ed9a01581"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_aeec806dc617",
+      "title_zh": "AI Composer 阻擋仿古調歌詞生成規則候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "AI Composer 阻擋仿古調歌詞生成規則候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_aeec806dc617"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_86585793a6c7",
+      "title_zh": "歌謠公開摘要模板：人物/曲名/來源/審核狀態候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "歌謠公開摘要模板：人物/曲名/來源/審核狀態候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_86585793a6c7"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_32956ca68c13",
+      "title_zh": "館藏錄音引用格式模板候選卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選",
+      "summary_zh": "館藏錄音引用格式模板候選 已列為卑南族歌謠/歌曲/古調資料庫 v39 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v39_32956ca68c13"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_cbc38be5eb64",
+      "title_zh": "陳實可作為知本地區音樂教育、歌曲採集與傳唱脈絡的候選人物；資料庫應先保存人物與傳唱 metadata",
+      "summary_zh": "陳實可作為知本地區音樂教育、歌曲採集與傳唱脈絡的候選人物；資料庫應先保存人物與傳唱 metadata，待權威來源確認後再公開。",
+      "claim_ids": [
+        "music_v39_cbc38be5eb64"
+      ],
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_3e29f965c448",
+      "title_zh": "南王部落音樂資料可連結陸森寶、陳建年、紀曉君等人物脈絡",
+      "summary_zh": "南王部落音樂資料可連結陸森寶、陳建年、紀曉君等人物脈絡，但不得自動連到卑南文化遺址或考古公園。",
+      "claim_ids": [
+        "music_v39_3e29f965c448"
+      ],
+      "source_ids": [
+        "wiki_nanwang_tribe_music_context_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_46ff68cd42d2",
+      "title_zh": "Damalagaw 大巴六九部落傳唱歌謠可建立獎項、製作與曲目 metadata 候選；完整曲目權利、歌詞與音源仍需權利",
+      "summary_zh": "Damalagaw 大巴六九部落傳唱歌謠可建立獎項、製作與曲目 metadata 候選；完整曲目權利、歌詞與音源仍需權利人與部落審核。",
+      "claim_ids": [
+        "music_v39_46ff68cd42d2"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_2e5fcefa9818",
+      "title_zh": "YouTube 影片 metadata 可以作為候選來源",
+      "summary_zh": "YouTube 影片 metadata 可以作為候選來源，但 YouTube 連結本身不代表平台可下載、再散布或用於模型訓練。",
+      "claim_ids": [
+        "music_v39_2e5fcefa9818"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_012dc31103e2",
+      "title_zh": "臺灣音樂館類來源應優先作為館藏 metadata 候選；音檔、錄音內容與敏感欄位不得未審核公開。",
+      "summary_zh": "臺灣音樂館類來源應優先作為館藏 metadata 候選；音檔、錄音內容與敏感欄位不得未審核公開。",
+      "claim_ids": [
+        "music_v39_012dc31103e2"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_652f8fc44852",
+      "title_zh": "前端 AI Composer 可使用歌謠 source packet 生成文章草稿",
+      "summary_zh": "前端 AI Composer 可使用歌謠 source packet 生成文章草稿，但必須保留 claim_ids/source_ids，且不得生成仿古調歌詞或完整歌詞。",
+      "claim_ids": [
+        "music_v39_652f8fc44852"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_c641baa8be4d",
+      "title_zh": "歌謠搜尋應支援 artist、community、work_type、rights_status、sensitivity",
+      "summary_zh": "歌謠搜尋應支援 artist、community、work_type、rights_status、sensitivity、source_authority 等 facets，並排除卑南文化遺址相關詞。",
+      "claim_ids": [
+        "music_v39_c641baa8be4d"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    },
+    {
+      "packet_id": "packet_music_v39_c048d4113f82",
+      "title_zh": "歌謠/古調資料的 public release 應以 metadata 摘要為主",
+      "summary_zh": "歌謠/古調資料的 public release 應以 metadata 摘要為主，未知權利、祭儀相關、巫師相關、除喪相關內容必須先進後台審核。",
+      "claim_ids": [
+        "music_v39_c048d4113f82"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "allowed_use": [
+        "article_context",
+        "metadata_summary",
+        "source_grounded_caption"
+      ],
+      "blocked_use": [
+        "full_lyrics",
+        "old_tune_lyrics_generation",
+        "audio_download",
+        "model_training"
+      ],
+      "must_include_notice": "本文依據公開 metadata 與候選來源整理，曲目/權利/敏感內容需後台審核。"
+    }
+  ]
+}

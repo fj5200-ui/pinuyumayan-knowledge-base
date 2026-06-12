@@ -1,0 +1,134 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "queue_groups": [
+    "youtube_metadata",
+    "authority_source_candidate",
+    "music_rights_review",
+    "cultural_sensitivity_review",
+    "tts_stt_training_review",
+    "fulltext_index_review"
+  ],
+  "items": [
+    {
+      "queue_id": "q_music-v41-cand-001",
+      "candidate_id": "music-v41-cand-001",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-002",
+      "candidate_id": "music-v41-cand-002",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-003",
+      "candidate_id": "music-v41-cand-003",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-004",
+      "candidate_id": "music-v41-cand-004",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-005",
+      "candidate_id": "music-v41-cand-005",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-006",
+      "candidate_id": "music-v41-cand-006",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-007",
+      "candidate_id": "music-v41-cand-007",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-008",
+      "candidate_id": "music-v41-cand-008",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-009",
+      "candidate_id": "music-v41-cand-009",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-010",
+      "candidate_id": "music-v41-cand-010",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-011",
+      "candidate_id": "music-v41-cand-011",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    },
+    {
+      "queue_id": "q_music-v41-cand-012",
+      "candidate_id": "music-v41-cand-012",
+      "required_actions": [
+        "license_status",
+        "source_authority",
+        "sensitivity",
+        "public_use"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": "v31",
+  "generated_in_zip": true,
+  "actual_vps_run": false,
+  "status": "not_run_on_user_vps",
+  "blockers": [
+    "requires VPS DATABASE_URL",
+    "requires deployed kb service URL",
+    "requires real DNS/TLS/systemd checks",
+    "requires full corpus acceptance report from VPS staging"
+  ],
+  "preview_corpus_truth": {
+    "total_entries": 80,
+    "required_min_entries": 1000,
+    "status": "failed_preview_only"
+  },
+  "checklist_hash": "90edff002e163ce02c90e372935ab3ce32be88b4e9fa7073b67ea77b1493cc74"
+}

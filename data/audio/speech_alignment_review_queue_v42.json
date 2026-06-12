@@ -1,0 +1,57 @@
+{
+  "version": "v42",
+  "queue_name": "speech_alignment_review_queue_v42",
+  "items": [
+    {
+      "asset_id": "preview-audio-001",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-002",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-003",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-004",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-005",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-006",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-007",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-008",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-009",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    },
+    {
+      "asset_id": "preview-audio-010",
+      "status": "candidate_needs_license_consent_alignment",
+      "priority": "normal"
+    }
+  ],
+  "note": "Sample review queue; full 80-item review is generated on VPS from actual assets."
+}

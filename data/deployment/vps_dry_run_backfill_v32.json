@@ -1,0 +1,65 @@
+{
+  "version": "v32",
+  "title": "VPS dry-run report backfill and evidence binding plan",
+  "principle": "Do not claim production readiness until generated VPS evidence has been uploaded or POSTed back to the backend.",
+  "input_reports": [
+    "data/deployment/production_dry_run_report_v31.generated.json",
+    "data/database/full_corpus_acceptance_report_v29.generated.json",
+    "data/search/search_quality_report_v31.generated.json",
+    "data/security/hmac_route_coverage_report_v31.generated.json"
+  ],
+  "evidence_types": [
+    {
+      "type": "dry_run",
+      "required": true,
+      "must_include": [
+        "database_url_present",
+        "node_env",
+        "hmac_enabled",
+        "static_fallback_disabled",
+        "tls_checked",
+        "systemd_checked"
+      ]
+    },
+    {
+      "type": "main_site_migration",
+      "required": true,
+      "must_include": [
+        "server_routes_copied",
+        "secret_scan_passed",
+        "kb_health_passed"
+      ]
+    },
+    {
+      "type": "full_corpus",
+      "required": false,
+      "must_include": [
+        "total_entries",
+        "audio_coverage_ratio",
+        "source_phon_coverage_ratio",
+        "license_findings"
+      ]
+    },
+    {
+      "type": "hmac_route_coverage",
+      "required": true,
+      "must_include": [
+        "covered_routes",
+        "uncovered_routes",
+        "report_only_routes"
+      ]
+    }
+  ],
+  "blockers": [
+    "production_static_fallback_enabled",
+    "hmac_disabled_for_internal_api",
+    "main_site_secret_leaked_to_client_bundle",
+    "beinan_archaeology_relation_in_source_packet",
+    "full_corpus_claimed_complete_without_acceptance_report"
+  ],
+  "outputs": [
+    "vps_dry_run_backfill_runs_v32",
+    "main_site_migration_evidence_v32",
+    "hmac_enforcement_reports_v32"
+  ]
+}

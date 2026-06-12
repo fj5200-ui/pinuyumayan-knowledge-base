@@ -1,0 +1,56 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "public_search_indices": [
+    "public_source_grounded_cards_v34",
+    "public_search_documents_v34",
+    "pronunciation_assets",
+    "vocabulary_preview_subset"
+  ],
+  "candidate_search_indices": [
+    "source_candidates",
+    "source_candidate_findings",
+    "academic_metadata_candidates",
+    "music_archive_candidates"
+  ],
+  "forbidden_relation_filter": {
+    "enabled": true,
+    "block_as_related_content": true,
+    "block_as_source_packet": true,
+    "blocked_terms": [
+      "卑南文化遺址",
+      "卑南遺址",
+      "卑南考古遺址",
+      "卑南文化公園",
+      "Peinan Site",
+      "Beinan Site",
+      "Peinan Archaeological Site"
+    ]
+  },
+  "ranking_weights": {
+    "verified_official": 1.0,
+    "candidate_needs_review": 0.25,
+    "has_audio_asset": 0.15,
+    "has_community_context": 0.1,
+    "sensitive_summary_only_penalty": -0.2
+  },
+  "zero_result_expansion": {
+    "enabled": true,
+    "suggest_terms": [
+      "Pinuyumayan",
+      "Puyuma language",
+      "南王",
+      "知本",
+      "建和",
+      "初鹿",
+      "下賓朗",
+      "會所",
+      "年齡階級"
+    ],
+    "never_suggest_terms": [
+      "卑南文化遺址",
+      "Beinan Site",
+      "Peinan Site"
+    ]
+  }
+}

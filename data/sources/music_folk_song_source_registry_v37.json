@@ -1,0 +1,108 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "goal_zh": "擴充卑南族歌謠、古調、現代歌曲、專輯與 YouTube metadata 候選；只保存 metadata 與審核狀態，不保存歌詞、不下載音訊。",
+  "verified_sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan profile",
+      "publisher": "Council of Indigenous Peoples",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "allowed_use": "public_summary"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "source_id": "wiki_lu_senbao_music_candidate",
+      "title": "陸森寶公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B8%E6%A3%AE%E5%AF%B6",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "wiki_samingad_music_candidate",
+      "title": "紀曉君/Samingad 公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/%E7%B4%80%E6%9B%89%E5%90%9B",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "wiki_chen_jiannian_music_candidate",
+      "title": "陳建年公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E5%BB%BA%E5%B9%B4_(%E6%AD%8C%E6%89%8B)",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "wiki_chen_yonglong_music_candidate",
+      "title": "陳永龍公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/%E9%99%B3%E6%B0%B8%E9%BE%8D_(%E6%AD%8C%E6%89%8B)",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "wiki_damalagaw_album_candidate",
+      "title": "Damalagaw 大巴六九部落傳唱歌謠公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/Damalagaw%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D%E9%83%A8%E8%90%BD%E5%82%B3%E5%94%B1%E6%AD%8C%E8%AC%A0",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "wiki_huang_meizhen_tamalakao_candidate",
+      "title": "黃美珍《大巴六九 / Tamalakao》公開資料候選",
+      "publisher": "Wikipedia / secondary reference candidate",
+      "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%B7%B4%E5%85%AD%E4%B9%9D_(%E9%BB%83%E7%BE%8E%E7%8F%8D%E5%B0%88%E8%BC%AF)",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "taiwan_music_institute_puyuma_song_candidates",
+      "title": "臺灣音樂館：卑南族歌謠與錄音 metadata 候選",
+      "publisher": "國立傳統藝術中心臺灣音樂館",
+      "source_class": "music_archival_authority_candidate",
+      "review_status": "candidate_needs_fetch",
+      "allowed_use": "metadata_only_no_audio"
+    },
+    {
+      "source_id": "youtube_data_api_metadata_worker_v37",
+      "title": "YouTube Data API metadata worker output",
+      "publisher": "YouTube Data API / user-configured worker",
+      "source_class": "platform_metadata_candidate",
+      "review_status": "worker_output_requires_human_review",
+      "allowed_use": "metadata_only_no_audio"
+    },
+    {
+      "source_id": "golden_melody_awards_database_candidate",
+      "title": "金曲獎資料庫與入圍/得獎 metadata 候選",
+      "source_class": "award_database_candidate",
+      "review_status": "candidate_needs_fetch",
+      "allowed_use": "metadata_only_candidate"
+    },
+    {
+      "source_id": "national_culture_memory_bank_music_candidate",
+      "title": "國家文化記憶庫音樂與人物 metadata 候選",
+      "source_class": "culture_archive_candidate",
+      "review_status": "candidate_needs_fetch",
+      "allowed_use": "metadata_only_candidate"
+    }
+  ],
+  "rights_guardrails": [
+    "no_lyrics_storage",
+    "no_youtube_audio_download",
+    "no_unlicensed_training",
+    "metadata_only_until_review",
+    "ritual_song_summary_only",
+    "forbidden_beinan_archaeology_relation"
+  ]
+}

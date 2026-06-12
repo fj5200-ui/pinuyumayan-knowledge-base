@@ -1,0 +1,125 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "count": 5,
+  "packets": [
+    {
+      "packet_id": "v34_identity_geo_population",
+      "title_zh": "族稱、地理、人口版本 source packet",
+      "claim_ids": [
+        "v34_population_zh_versioned",
+        "v34_population_en_historical",
+        "v34_name_nanwang_origin_boundary",
+        "v34_taitung_beinan_center",
+        "v34_chenggong_taimali_settlement",
+        "v34_major_tribes_source_list"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v34_lifeways_food_craft",
+      "title_zh": "生業、飲食、工藝 source packet",
+      "claim_ids": [
+        "v34_millet_agriculture_origin",
+        "v34_rice_technology_pinadray",
+        "v34_cash_crop_shift_1960s",
+        "v34_food_staple_group",
+        "v34_food_protein_sources",
+        "v34_shellflower_leaf_food",
+        "v34_betel_daily_and_ritual",
+        "v34_weaving_techniques_summary",
+        "v34_weaving_tools_daily_life"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v34_clothing_architecture",
+      "title_zh": "服飾、花環、建築 source packet",
+      "claim_ids": [
+        "v34_clothing_flax_material",
+        "v34_clothing_color_system",
+        "v34_clothing_social_status",
+        "v34_wreath_social_relation_metric",
+        "v34_architecture_public_private",
+        "v34_family_house_layout_summary",
+        "v34_house_size_status_guardrail"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v34_language_music_social",
+      "title_zh": "語言、音樂、社會角色 source packet",
+      "claim_ids": [
+        "v34_music_poetic_lyrics",
+        "v34_music_ritual_song_status_guardrail",
+        "v34_music_modern_artists_index",
+        "v34_dance_status_steps_guardrail",
+        "v34_language_north_south_influences",
+        "v34_language_taiwanese_contact",
+        "v34_social_roles_tripartite",
+        "v34_matrilineality_transition",
+        "v34_lineage_clan_taxonomy",
+        "v34_zhiben_clan_example"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v34_ritual_summary_guarded",
+      "title_zh": "祭儀公開摘要 source packet",
+      "claim_ids": [
+        "v34_ritual_taxonomy_two_types",
+        "v34_ritual_calendar_months",
+        "v34_joint_annual_ritual_1982"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "sensitivity": "medium",
+      "guardrail_zh": "只能摘要公開月曆與分類；不得輸出操作步驟、咒語、禁忌細節、祖靈/巫術程序。",
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    }
+  ]
+}

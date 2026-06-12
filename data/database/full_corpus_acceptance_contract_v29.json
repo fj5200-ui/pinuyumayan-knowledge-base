@@ -1,0 +1,35 @@
+{
+  "version": "v29",
+  "report_file": "data/database/full_corpus_acceptance_report_v29.generated.json",
+  "required_fields": [
+    "total_entries",
+    "required_min_entries",
+    "dialects",
+    "audio_asset_count",
+    "audio_coverage_ratio",
+    "source_phon_count",
+    "source_phon_coverage_ratio",
+    "duplicate_count",
+    "license_blocker_count",
+    "forbidden_relation_hits",
+    "status",
+    "reasons",
+    "promotion_allowed"
+  ],
+  "pass_conditions": {
+    "total_entries_gte": 1000,
+    "all_four_puyuma_dialects_present": true,
+    "forbidden_relation_hits": 0,
+    "license_blocker_count": 0,
+    "status": "passed"
+  },
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

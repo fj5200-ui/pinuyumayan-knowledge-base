@@ -1,0 +1,113 @@
+{
+  "version": "v35",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "platform": "youtube",
+  "mode": "metadata_candidate_only",
+  "queries": [
+    {
+      "query": "卑南族 歌謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "卑南族 古調",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "卑南族 古謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "南王部落 歌謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "南王部落 古調",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "南王姊妹花 卑南族",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "陸森寶 美麗的稻穗",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "陸森寶 懷念年祭",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "紀曉君 卑南族 古謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "Samingad Puyuma old song",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "Damalagaw 大巴六九部落傳唱歌謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "大巴六九 部落出征古謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "卑南族 年祭 歌謠",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "卑南族 巴拉冠 歌",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    },
+    {
+      "query": "卑南語 歌曲 Puyuma",
+      "max_results": 25,
+      "default_review_status": "candidate_needs_human_review"
+    }
+  ],
+  "required_fields": [
+    "video_id",
+    "title",
+    "channel_title",
+    "channel_id",
+    "url",
+    "published_at",
+    "description_snippet",
+    "duration",
+    "license",
+    "thumbnails",
+    "query"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "never_download_audio": true,
+  "never_store_lyrics": true,
+  "dedupe_keys": [
+    "video_id",
+    "normalized_title+channel_id",
+    "external_url"
+  ]
+}

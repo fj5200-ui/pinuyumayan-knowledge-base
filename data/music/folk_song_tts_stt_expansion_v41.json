@@ -1,0 +1,105 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "counts": {
+    "v41_music_candidates": 12
+  },
+  "candidates": [
+    {
+      "candidate_id": "music-v41-cand-001",
+      "title_zh": "YouTube metadata：卑南族歌謠查詢結果候選",
+      "work_type": "youtube_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-002",
+      "title_zh": "YouTube metadata：卑南族古調查詢結果候選",
+      "work_type": "youtube_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-003",
+      "title_zh": "YouTube metadata：南王部落歌謠查詢結果候選",
+      "work_type": "youtube_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-004",
+      "title_zh": "臺灣音樂館 metadata：卑南族館藏錄音候選",
+      "work_type": "archive_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-005",
+      "title_zh": "國家文化記憶庫 metadata：卑南族音樂候選",
+      "work_type": "archive_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-006",
+      "title_zh": "金曲獎 metadata：卑南族音樂人候選",
+      "work_type": "award_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-007",
+      "title_zh": "唱片發行資料：Damalagaw 大巴六九補欄候選",
+      "work_type": "release_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-008",
+      "title_zh": "唱片發行資料：南王姐妹花補欄候選",
+      "work_type": "release_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-009",
+      "title_zh": "唱片發行資料：Samingad 古調專輯補欄候選",
+      "work_type": "release_metadata",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-010",
+      "title_zh": "TTS/STT 非歌曲真人語句候選池",
+      "work_type": "speech_training_candidate",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-011",
+      "title_zh": "STT 方言評估 dev set 候選",
+      "work_type": "speech_eval_candidate",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    },
+    {
+      "candidate_id": "music-v41-cand-012",
+      "title_zh": "TTS 方言評估 test set 候選",
+      "work_type": "speech_eval_candidate",
+      "status": "candidate_needs_human_review",
+      "rights_status": "unknown",
+      "public_use": "metadata_only_after_review"
+    }
+  ]
+}

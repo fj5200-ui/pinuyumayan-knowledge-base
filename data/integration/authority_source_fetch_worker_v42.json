@@ -1,0 +1,23 @@
+{
+  "version": "v42",
+  "mode": "metadata_candidate_only",
+  "adapters": [
+    "taiwan_music_institute",
+    "national_culture_memory_bank",
+    "golden_melody_awards",
+    "record_label_metadata",
+    "taitung_local_sources"
+  ],
+  "never_fetch": [
+    "full_lyrics",
+    "audio_binary",
+    "video_binary",
+    "restricted_ritual_detail"
+  ],
+  "candidate_tables": [
+    "authority_source_fetch_runs_v42",
+    "authority_source_candidates_v42",
+    "authority_source_claim_candidates_v42"
+  ],
+  "review_required_before_public": true
+}

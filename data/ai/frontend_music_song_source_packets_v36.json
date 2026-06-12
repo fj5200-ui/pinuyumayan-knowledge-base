@@ -1,0 +1,166 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "packets": [
+    {
+      "packet_id": "v36-lu-senbao-song-catalog",
+      "title_zh": "陸森寶歌曲作品 metadata 候選",
+      "theme": "lu_senbao_song_catalog",
+      "claim_ids": [
+        "v36_lu_senbao_work_de66a711",
+        "v36_lu_senbao_work_f02d4b91",
+        "v36_lu_senbao_work_f0cbd350",
+        "v36_lu_senbao_work_a92f8f3d",
+        "v36_lu_senbao_work_f5b7dc70",
+        "v36_lu_senbao_work_bedc8f89",
+        "v36_lu_senbao_work_34dbd9e1",
+        "v36_lu_senbao_work_b372df92",
+        "v36_lu_senbao_work_82ddd7a2",
+        "v36_lu_senbao_work_eed2d5e8",
+        "v36_lu_senbao_work_532c049e",
+        "v36_lu_senbao_work_921da3db",
+        "v36_lu_senbao_work_9f123c4b",
+        "v36_lu_senbao_work_37f7ad4d",
+        "v36_lu_senbao_work_f45a2ff0",
+        "v36_lu_senbao_work_32f24507"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v36-tmi-archival-songs",
+      "title_zh": "臺灣音樂館卑南族歌謠典藏候選",
+      "theme": "archival_song_candidates",
+      "claim_ids": [
+        "v36_tmi_archive_4e3229bb",
+        "v36_tmi_archive_0d70f423",
+        "v36_tmi_archive_8a85973b",
+        "v36_tmi_archive_19fe225f"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "allowed_ai_use": "archive_metadata_summary_only",
+      "prohibited": [
+        "不得嵌入未審核音訊",
+        "不得公開敏感祭儀細節",
+        "不得重製歌詞或旋律"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v36-damalagaw-track-catalog",
+      "title_zh": "Damalagaw 大巴六九部落傳唱歌謠曲目候選",
+      "theme": "damalagaw_album_tracks",
+      "claim_ids": [
+        "v36_damalagaw_track_01",
+        "v36_damalagaw_track_02",
+        "v36_damalagaw_track_03",
+        "v36_damalagaw_track_04",
+        "v36_damalagaw_track_05",
+        "v36_damalagaw_track_06",
+        "v36_damalagaw_track_07",
+        "v36_damalagaw_track_08",
+        "v36_damalagaw_track_09",
+        "v36_damalagaw_track_10",
+        "v36_damalagaw_track_11",
+        "v36_damalagaw_track_12",
+        "v36_damalagaw_track_13",
+        "v36_damalagaw_track_14",
+        "v36_damalagaw_track_15",
+        "v36_damalagaw_track_16"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "allowed_ai_use": "album_track_metadata_only",
+      "prohibited": [
+        "不得複製曲目歌詞",
+        "不得提供下載",
+        "不得仿作部落傳唱歌謠"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v36-modern-puyuma-music-network",
+      "title_zh": "南王/卑南族當代音樂人物與作品候選",
+      "theme": "modern_music_network",
+      "claim_ids": [
+        "v36_chen_jiannian_ocean_album",
+        "v36_chen_jiannian_dadi_album",
+        "v36_chen_jiannian_shenhua_composer",
+        "v36_samingad_sun_wind_grassland_album",
+        "v36_samingad_wildfire_spring_album",
+        "v36_nanwang_sisters_album_production",
+        "v36_amei_damalagaw_music_director",
+        "v36_huang_meizhen_tamalakao_album",
+        "v36_panai_music_identity_candidate",
+        "v36_chen_yonglong_nanwang_candidate",
+        "v36_movie_long_time_no_respect_me_song"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate",
+        "wiki_ki_samingad_candidate",
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_ai_use": "biographical_and_discographic_metadata_only",
+      "prohibited": [
+        "不得把所有當代作品歸類為傳統古調",
+        "不得生成歌詞",
+        "不得使用未授權音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    }
+  ]
+}

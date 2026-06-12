@@ -1,0 +1,70 @@
+{
+  "version": "v32",
+  "search_smoke_queries": [
+    {
+      "q": "南王",
+      "expect": [
+        "community",
+        "vocabulary_or_knowledge"
+      ],
+      "must_not": [
+        "Beinan Site",
+        "卑南文化遺址"
+      ]
+    },
+    {
+      "q": "知本",
+      "expect": [
+        "community"
+      ],
+      "must_not": [
+        "Peinan Site"
+      ]
+    },
+    {
+      "q": "年齡階級",
+      "expect": [
+        "knowledge_card"
+      ]
+    },
+    {
+      "q": "會所",
+      "expect": [
+        "knowledge_card"
+      ]
+    },
+    {
+      "q": "Mugamut",
+      "expect": [
+        "ritual_public_summary"
+      ]
+    },
+    {
+      "q": "真人音檔",
+      "expect": [
+        "pronunciation_asset"
+      ]
+    }
+  ],
+  "forbidden_search_relations": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Beinan Site",
+    "Peinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "seo_checks": [
+    "title",
+    "description",
+    "canonical",
+    "og:title",
+    "og:description",
+    "og:image",
+    "article:published_time",
+    "sitemap_url",
+    "structured_data_article"
+  ],
+  "zero_result_workflow": "log_query_then_candidate_review_do_not_auto_publish"
+}

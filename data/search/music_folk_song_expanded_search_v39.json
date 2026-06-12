@@ -1,0 +1,51 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T12:35:00+08:00",
+  "description_zh": "v39 歌謠/歌曲/古調擴大搜尋設定。",
+  "public_facets": [
+    "artist_or_source",
+    "community_tags",
+    "work_type",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "review_status"
+  ],
+  "protected_facets": [
+    "ritual_related",
+    "shaman_related",
+    "mourning_related",
+    "ancestral_reference",
+    "not_for_public_detail"
+  ],
+  "seed_queries": [
+    "卑南族 歌謠 古調",
+    "南王 古調 卑南語",
+    "陸森寶 美麗的稻穗 懷念年祭",
+    "陳實 卑南族 歌謠",
+    "紀曉君 Samingad 古調",
+    "陳建年 南王 卑南族",
+    "陳永龍 南王 傳統音樂",
+    "Damalagaw 大巴六九 部落傳唱歌謠",
+    "黃美珍 Tamalakao 大巴六九",
+    "臺灣音樂館 卑南族 童謠 Mangednged",
+    "YouTube Puyuma song Pinuyumayan old tune"
+  ],
+  "blocked_relation_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "do_not_index": [
+    "full_lyrics",
+    "audio_download_url",
+    "video_download_url",
+    "unreviewed_sensitive_detail",
+    "ai_generated_old_tune_lyrics"
+  ]
+}

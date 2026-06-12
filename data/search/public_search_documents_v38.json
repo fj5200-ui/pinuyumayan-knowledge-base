@@ -1,0 +1,1449 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "count": 60,
+  "description_zh": "v38 歌謠/古調 metadata-only search documents；支援後台審核與主站安全摘要。",
+  "documents": [
+    {
+      "doc_id": "doc_music_v38_46dd5eba4af5",
+      "title_zh": "知本少年年祭之歌：館藏欄位補全候選",
+      "body_zh": "知本少年年祭之歌：館藏欄位補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_46dd5eba4af5"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "知本",
+        "少年年祭",
+        "館藏錄音",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_1551d8202910",
+      "title_zh": "南王童謠：兒童歌分類補全候選",
+      "body_zh": "南王童謠：兒童歌分類補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_1551d8202910"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "童謠",
+        "館藏錄音",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e2c82c96d8bf",
+      "title_zh": "Mangednged 頌讚之歌：曲式/語言欄位補全候選",
+      "body_zh": "Mangednged 頌讚之歌：曲式/語言欄位補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e2c82c96d8bf"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "頌讚",
+        "Mangednged",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_5cdee37f2e81",
+      "title_zh": "賓朗巫師之歌：敏感級別與公開摘要補全候選",
+      "body_zh": "賓朗巫師之歌：敏感級別與公開摘要補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_5cdee37f2e81"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "賓朗",
+        "巫師",
+        "館藏錄音",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_18d25ee651c9",
+      "title_zh": "懷念年祭：最後遺作脈絡補欄候選",
+      "body_zh": "懷念年祭：最後遺作脈絡補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_18d25ee651c9"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "年祭",
+        "陸森寶",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_edfd430ae676",
+      "title_zh": "陸森寶教會歌曲群：宗教歌曲分類補欄候選",
+      "body_zh": "陸森寶教會歌曲群：宗教歌曲分類補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_edfd430ae676"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "教會歌曲",
+        "陸森寶",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_acbd65443fa9",
+      "title_zh": "南王互助社歌：社群組織歌曲補欄候選",
+      "body_zh": "南王互助社歌：社群組織歌曲補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_acbd65443fa9"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "互助社",
+        "陸森寶",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_66b6f5e4315b",
+      "title_zh": "海祭：祭儀相關歌曲敏感邊界補欄候選",
+      "body_zh": "海祭：祭儀相關歌曲敏感邊界補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_66b6f5e4315b"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "海祭",
+        "公開摘要",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_b12ec3569402",
+      "title_zh": "曾修花/紀曉君傳唱脈絡：發音與古調教學 metadata 候選",
+      "body_zh": "曾修花/紀曉君傳唱脈絡：發音與古調教學 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_b12ec3569402"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "古調",
+        "傳承",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_7a9de13f308d",
+      "title_zh": "紀曉君早期專輯古調元素索引候選",
+      "body_zh": "紀曉君早期專輯古調元素索引候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_7a9de13f308d"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "古調",
+        "專輯",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_61647d0f2a65",
+      "title_zh": "紀曉君公開演出古調曲目 metadata 候選",
+      "body_zh": "紀曉君公開演出古調曲目 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_61647d0f2a65"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "古調",
+        "演出",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_7a636d271cc2",
+      "title_zh": "神話：作曲/演唱/獎項脈絡補欄候選",
+      "body_zh": "神話：作曲/演唱/獎項脈絡補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_7a636d271cc2"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "金曲獎",
+        "神話",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_521396b48978",
+      "title_zh": "陳建年南王家族音樂網絡補欄候選",
+      "body_zh": "陳建年南王家族音樂網絡補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_521396b48978"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "陸森寶家族",
+        "金曲獎",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e08dd12b49e5",
+      "title_zh": "南王姐妹花專輯製作脈絡補欄候選",
+      "body_zh": "南王姐妹花專輯製作脈絡補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e08dd12b49e5"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王姐妹花",
+        "製作",
+        "金曲獎",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_50a94aab1202",
+      "title_zh": "陳永龍傳唱原住民傳統音樂演出脈絡候選",
+      "body_zh": "陳永龍傳唱原住民傳統音樂演出脈絡候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_50a94aab1202"
+      ],
+      "source_ids": [
+        "wiki_chen_yonglong_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "傳統音樂",
+        "演出",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_af01f5f9b3df",
+      "title_zh": "陳永龍專輯與卑南音樂身份欄位補全候選",
+      "body_zh": "陳永龍專輯與卑南音樂身份欄位補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_af01f5f9b3df"
+      ],
+      "source_ids": [
+        "wiki_chen_yonglong_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "專輯",
+        "卑南族",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_771305615f10",
+      "title_zh": "Damalagaw 部落耆老創作索引補全候選",
+      "body_zh": "Damalagaw 部落耆老創作索引補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_771305615f10"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "大巴六九",
+        "耆老創作",
+        "傳唱歌謠",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_379a087c38d4",
+      "title_zh": "Damalagaw 古謠/傳唱歌謠曲目分類補全候選",
+      "body_zh": "Damalagaw 古謠/傳唱歌謠曲目分類補全候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_379a087c38d4"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "大巴六九",
+        "古謠",
+        "傳唱歌謠",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_16d2cf5acf54",
+      "title_zh": "巴拉冠相關歌謠：公共摘要與敏感邊界補欄候選",
+      "body_zh": "巴拉冠相關歌謠：公共摘要與敏感邊界補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_16d2cf5acf54"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "巴拉冠",
+        "部落傳唱",
+        "敏感摘要",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_b46bf238ffc8",
+      "title_zh": "除喪版歌謠：只做 metadata 與敏感標記候選",
+      "body_zh": "除喪版歌謠：只做 metadata 與敏感標記候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_b46bf238ffc8"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "除喪",
+        "大巴六九",
+        "敏感",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_89530b181fcb",
+      "title_zh": "YouTube 搜尋種子：南王 古調 卑南語 metadata 候選",
+      "body_zh": "YouTube 搜尋種子：南王 古調 卑南語 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_89530b181fcb"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "南王",
+        "古調",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_7fbe3d7e0487",
+      "title_zh": "YouTube 搜尋種子：卑南族 年祭 歌謠 metadata 候選",
+      "body_zh": "YouTube 搜尋種子：卑南族 年祭 歌謠 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_7fbe3d7e0487"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "年祭",
+        "歌謠",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e97aea501fb5",
+      "title_zh": "YouTube 搜尋種子：大巴六九 歌謠 metadata 候選",
+      "body_zh": "YouTube 搜尋種子：大巴六九 歌謠 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e97aea501fb5"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "大巴六九",
+        "歌謠",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_897abe989969",
+      "title_zh": "YouTube 搜尋種子：Samingad Puyuma old song metadata 候選",
+      "body_zh": "YouTube 搜尋種子：Samingad Puyuma old song metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_897abe989969"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "Samingad",
+        "old song",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_62e95be22623",
+      "title_zh": "YouTube 搜尋種子：陸森寶 美麗的稻穗/懷念年祭 metadata 候選",
+      "body_zh": "YouTube 搜尋種子：陸森寶 美麗的稻穗/懷念年祭 metadata 候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_62e95be22623"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "陸森寶",
+        "歌曲",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e4a1d6dfe17d",
+      "title_zh": "少年年祭歌謠群：公開摘要索引候選",
+      "body_zh": "少年年祭歌謠群：公開摘要索引候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e4a1d6dfe17d"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "少年年祭",
+        "歌謠群",
+        "公開摘要",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_5a4e9dcd545a",
+      "title_zh": "小米收穫/海祭歌謠群：公開摘要索引候選",
+      "body_zh": "小米收穫/海祭歌謠群：公開摘要索引候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_5a4e9dcd545a"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "小米收穫",
+        "海祭",
+        "歌謠群",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_3501a791dd62",
+      "title_zh": "婦女除草完工祭歌謠群：公開摘要索引候選",
+      "body_zh": "婦女除草完工祭歌謠群：公開摘要索引候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_3501a791dd62"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "除草完工祭",
+        "婦女",
+        "歌謠群",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_cea9b3ddd2af",
+      "title_zh": "大獵祭歌謠群：公開摘要索引候選",
+      "body_zh": "大獵祭歌謠群：公開摘要索引候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_cea9b3ddd2af"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "大獵祭",
+        "歌謠群",
+        "公開摘要",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e6ae4783764f",
+      "title_zh": "童謠/兒童歌群：部落與館藏對照候選",
+      "body_zh": "童謠/兒童歌群：部落與館藏對照候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e6ae4783764f"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "童謠",
+        "兒童歌",
+        "南王",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_b5de4364ab5a",
+      "title_zh": "頌讚歌群：Mangednged 與相關錄音對照候選",
+      "body_zh": "頌讚歌群：Mangednged 與相關錄音對照候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_b5de4364ab5a"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "頌讚",
+        "Mangednged",
+        "錄音",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_e2dde4142358",
+      "title_zh": "歌謠 metadata 與卑南語音檔語料分庫對照候選",
+      "body_zh": "歌謠 metadata 與卑南語音檔語料分庫對照候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_e2dde4142358"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "卑南語",
+        "歌謠",
+        "音檔分庫",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_d335b9dbbf25",
+      "title_zh": "歌謠權利人/授權狀態辨識候選",
+      "body_zh": "歌謠權利人/授權狀態辨識候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_d335b9dbbf25"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "授權",
+        "權利人",
+        "metadata",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_5555c3d9efb7",
+      "title_zh": "部落審核必要欄位候選",
+      "body_zh": "部落審核必要欄位候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_5555c3d9efb7"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "部落審核",
+        "敏感內容",
+        "公開摘要",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_df7472047c2c",
+      "title_zh": "AI Composer 音樂引用不得輸出完整歌詞檢查候選",
+      "body_zh": "AI Composer 音樂引用不得輸出完整歌詞檢查候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_df7472047c2c"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "AI Composer",
+        "歌詞",
+        "安全",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_8b00b1007cac",
+      "title_zh": "歌謠異名/版本 fingerprint 去重候選",
+      "body_zh": "歌謠異名/版本 fingerprint 去重候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_8b00b1007cac"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "版本",
+        "去重",
+        "異名",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_c425dbaeec4d",
+      "title_zh": "歌謠搜尋 community facet 補欄候選",
+      "body_zh": "歌謠搜尋 community facet 補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_c425dbaeec4d"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "搜尋",
+        "部落",
+        "facet",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_52b054f14fa8",
+      "title_zh": "歌謠搜尋 work_type facet 補欄候選",
+      "body_zh": "歌謠搜尋 work_type facet 補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_52b054f14fa8"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "搜尋",
+        "曲型",
+        "facet",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_85736cb1718f",
+      "title_zh": "歌謠搜尋 rights_status facet 補欄候選",
+      "body_zh": "歌謠搜尋 rights_status facet 補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_85736cb1718f"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "搜尋",
+        "授權",
+        "facet",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_f05d5a6070b3",
+      "title_zh": "歌謠搜尋 sensitivity facet 補欄候選",
+      "body_zh": "歌謠搜尋 sensitivity facet 補欄候選 已列為卑南族歌謠/古調資料庫的 metadata 候選，需補齊來源 URL、權利狀態、部落/人物關係與審核結果後，才可進入公開知識卡。",
+      "claim_ids": [
+        "music_v38_f05d5a6070b3"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠/古調 metadata 候選",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "搜尋",
+        "敏感標籤",
+        "facet",
+        "歌謠",
+        "古調",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_dab348a26499",
+      "title_zh": "歌謠治理規則：YouTube",
+      "body_zh": "YouTube Data API 只能抓影片 metadata，不可下載音訊或影片，也不可用 YouTube 音軌訓練 TTS、歌聲或音樂生成模型。",
+      "claim_ids": [
+        "music_v38_dab348a26499"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "YouTube",
+        "metadata",
+        "音樂版權"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_540491cbe904",
+      "title_zh": "歌謠治理規則：歌詞",
+      "body_zh": "歌謠/歌曲資料庫只可保存曲名、人物、來源、授權、審核狀態與公開摘要，不保存完整歌詞。",
+      "claim_ids": [
+        "music_v38_540491cbe904"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "歌詞",
+        "版權",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_c6dfee3aa731",
+      "title_zh": "歌謠治理規則：AI Composer",
+      "body_zh": "AI Composer 可以用歌謠 metadata 協助寫介紹文章，但不得生成仿古調歌詞或假冒傳統歌謠。",
+      "claim_ids": [
+        "music_v38_c6dfee3aa731"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "AI Composer",
+        "古調",
+        "防護"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_0a9378fbae30",
+      "title_zh": "歌謠治理規則：祭儀",
+      "body_zh": "少年年祭、大獵祭、海祭、除草完工祭等祭儀相關歌謠，只可建立公開摘要與審核 metadata，不提供操作細節。",
+      "claim_ids": [
+        "music_v38_0a9378fbae30"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "祭儀",
+        "歌謠",
+        "公開摘要"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_67e7d95c8637",
+      "title_zh": "歌謠治理規則：巫師",
+      "body_zh": "巫師相關歌謠或錄音屬高敏感候選，公開端只顯示 metadata 或不顯示，需由後台文化審核決定。",
+      "claim_ids": [
+        "music_v38_67e7d95c8637"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "high",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "巫師",
+        "敏感",
+        "審核"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_a8ff9d4bc4b0",
+      "title_zh": "歌謠治理規則：版本",
+      "body_zh": "同一歌謠的演出版本、YouTube 版本、館藏版本應以 variant 分組管理，避免重複建立獨立歌曲。",
+      "claim_ids": [
+        "music_v38_a8ff9d4bc4b0"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "版本",
+        "去重",
+        "variant"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_5598d731b052",
+      "title_zh": "歌謠治理規則：source packet",
+      "body_zh": "前端 AI source packet 只可提供 claim_ids/source_ids 與簡短摘要，不可包含歌詞全文或音訊下載連結。",
+      "claim_ids": [
+        "music_v38_5598d731b052"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "source packet",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_782f962de869",
+      "title_zh": "歌謠治理規則：授權",
+      "body_zh": "任何 YouTube 或唱片來源的歌曲候選，都必須標示 rights_status，未審核前不得作為公開音訊素材。",
+      "claim_ids": [
+        "music_v38_782f962de869"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "授權",
+        "YouTube",
+        "rights_status"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_7159061b78be",
+      "title_zh": "歌謠治理規則：臺灣音樂館",
+      "body_zh": "臺灣音樂館等館藏資料可作高價值候選來源，但必須確認公開欄位與授權條件後才可進入主站。",
+      "claim_ids": [
+        "music_v38_7159061b78be"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "臺灣音樂館",
+        "館藏",
+        "授權"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_8e4c28c32183",
+      "title_zh": "歌謠治理規則：部落審核",
+      "body_zh": "部落傳唱、耆老創作、除喪或巫師相關歌謠，除了來源審核外還需要部落/文化審核。",
+      "claim_ids": [
+        "music_v38_8e4c28c32183"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "部落審核",
+        "耆老創作",
+        "敏感"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_b5f57251315b",
+      "title_zh": "歌謠治理規則：禁止關聯",
+      "body_zh": "卑南文化遺址、卑南遺址、Beinan Site、Peinan Site 仍不得進入歌謠來源、搜尋同義詞、AI source packet 或 related content。",
+      "claim_ids": [
+        "music_v38_b5f57251315b"
+      ],
+      "source_ids": [
+        "forbidden_beinan_archaeology_relation"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "禁止關聯",
+        "卑南文化遺址",
+        "歌謠"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_d4074a187ed2",
+      "title_zh": "歌謠治理規則：搜尋",
+      "body_zh": "歌謠搜尋應支援 artist/community/work_type/rights_status/sensitivity/review_status facets，以利後台審核與主站呈現。",
+      "claim_ids": [
+        "music_v38_d4074a187ed2"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "搜尋",
+        "facet",
+        "審核"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_29f5b6d7c55a",
+      "title_zh": "歌謠治理規則：南王",
+      "body_zh": "南王部落音樂脈絡可作人物與作品關係索引，但仍須區分創作歌曲、古調演唱、部落傳唱與館藏錄音。",
+      "claim_ids": [
+        "music_v38_29f5b6d7c55a"
+      ],
+      "source_ids": [
+        "wiki_chen_jiannian_candidate",
+        "wiki_ji_xiaojun_samingad_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "南王",
+        "音樂脈絡",
+        "分類"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_253fa5e302ee",
+      "title_zh": "歌謠治理規則：Damalagaw",
+      "body_zh": "Damalagaw 相關歌謠資料需要區分部落古謠、耆老創作、專輯企劃與後續表演版本。",
+      "claim_ids": [
+        "music_v38_253fa5e302ee"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "Damalagaw",
+        "大巴六九",
+        "分類"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_d030cb9a6ff2",
+      "title_zh": "歌謠治理規則：陸森寶",
+      "body_zh": "陸森寶作品資料需要區分作品年表、教會歌曲、年祭相關作品、社群組織歌曲與後續演出版本。",
+      "claim_ids": [
+        "music_v38_d030cb9a6ff2"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "陸森寶",
+        "作品年表",
+        "分類"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_3f6d4c494f17",
+      "title_zh": "歌謠治理規則：館藏錄音",
+      "body_zh": "館藏錄音 metadata 應標記採錄者、採錄地、語言/方言、錄音年代與公開權利，不可只以影片標題作為史料依據。",
+      "claim_ids": [
+        "music_v38_3f6d4c494f17"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "館藏錄音",
+        "採錄者",
+        "metadata"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_f608546065c0",
+      "title_zh": "歌謠治理規則：表演者",
+      "body_zh": "歌謠候選若涉及表演者或耆老姓名，必須確認公開來源與拼寫，不可由 AI 自動推測族名或部落身分。",
+      "claim_ids": [
+        "music_v38_f608546065c0"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "表演者",
+        "族名",
+        "審核"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_06ffed69f717",
+      "title_zh": "歌謠治理規則：祭儀",
+      "body_zh": "祭儀相關歌名的中文翻譯、卑南語拼寫與羅馬字轉寫必須保留來源版本，不可由系統任意改譯。",
+      "claim_ids": [
+        "music_v38_06ffed69f717"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "medium",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "祭儀",
+        "翻譯",
+        "羅馬字"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_0682f99d993a",
+      "title_zh": "歌謠治理規則：播放清單",
+      "body_zh": "YouTube 播放清單只能作搜尋入口，不等於權威來源；每支影片仍需獨立審核頻道、權利與內容。",
+      "claim_ids": [
+        "music_v38_0682f99d993a"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "播放清單",
+        "YouTube",
+        "來源審核"
+      ]
+    },
+    {
+      "doc_id": "doc_music_v38_d5426c9299eb",
+      "title_zh": "歌謠治理規則：release channel",
+      "body_zh": "歌謠 metadata 可以先進 candidate release channel，通過權利與文化審核後才可進 public summary channel。",
+      "claim_ids": [
+        "music_v38_d5426c9299eb"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "facets": {
+        "category": "歌謠治理規則",
+        "sensitivity": "low",
+        "rights_status": "unknown_needs_review",
+        "version": "v38"
+      },
+      "search_keywords": [
+        "release channel",
+        "public summary",
+        "審核"
+      ]
+    }
+  ]
+}

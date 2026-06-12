@@ -1,0 +1,56 @@
+{
+  "version": "v32",
+  "mode": "enforce_by_default_for_internal_api",
+  "headers": [
+    "x-pinuyumayan-main-site-key",
+    "x-pinuyumayan-client-id",
+    "x-pinuyumayan-timestamp",
+    "x-pinuyumayan-nonce",
+    "x-pinuyumayan-signature"
+  ],
+  "canonical_string": [
+    "METHOD",
+    "PATH_WITH_QUERY",
+    "TIMESTAMP",
+    "NONCE",
+    "SHA256_BODY"
+  ],
+  "timestamp_skew_seconds": 300,
+  "nonce_ttl_seconds": 600,
+  "allowed_unsigned_paths": [
+    "/health",
+    "/ready",
+    "/api/public/*",
+    "/api/ops/*"
+  ],
+  "protected_prefixes": [
+    "/api/internal/"
+  ],
+  "report_only_escape_hatch": "HMAC_REPORT_ONLY=true",
+  "audit_events": [
+    "missing_signature",
+    "invalid_signature",
+    "replayed_nonce",
+    "timestamp_skew",
+    "unknown_client",
+    "scope_denied"
+  ],
+  "client_scopes": {
+    "main-site-production": [
+      "knowledge:read",
+      "article:validate",
+      "article:submit",
+      "sync:read",
+      "reports:write"
+    ],
+    "admin-dashboard": [
+      "ops:read",
+      "reports:read"
+    ],
+    "corpus-worker": [
+      "corpus:write",
+      "reports:write"
+    ]
+  },
+  "forbidden_relation_guardrail": "Beinan/Peinan archaeological-site terms remain excluded from source packets, AI composer materials and related search."
+}

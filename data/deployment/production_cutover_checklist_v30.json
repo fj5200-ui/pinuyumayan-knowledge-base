@@ -1,0 +1,166 @@
+{
+  "version": "v30",
+  "name": "Production Cutover Checklist / 正式上線切換檢查表",
+  "db_location": "user_vps",
+  "hard_rules": [
+    "production must use KNOWLEDGE_DATA_MODE=db",
+    "DISABLE_PRODUCTION_STATIC_FALLBACK=true",
+    "all /api/internal/* must require HMAC + nonce or be explicitly exempted in a signed exception register",
+    "AI provider keys must only exist in main-site server runtime, never browser bundles",
+    "Beinan/Peinan archaeological site terms must remain forbidden for Pinuyumayan culture source packets",
+    "synthetic public TTS remains disabled until model + human language review passes"
+  ],
+  "phases": [
+    {
+      "id": "phase_dns_tls",
+      "title": "DNS / TLS",
+      "checks": [
+        {
+          "id": "dns_kb_record",
+          "label": "kb.pinuyumayan.tw points to VPS public IP or reverse proxy",
+          "required": true
+        },
+        {
+          "id": "tls_valid",
+          "label": "HTTPS certificate valid for kb.pinuyumayan.tw",
+          "required": true
+        },
+        {
+          "id": "www_main_site_tls",
+          "label": "pinuyumayan.tw and www.pinuyumayan.tw HTTPS valid",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "phase_vps_runtime",
+      "title": "VPS runtime",
+      "checks": [
+        {
+          "id": "node_version",
+          "label": "Node.js runtime installed and matches backend/package.json engines or deployment baseline",
+          "required": true
+        },
+        {
+          "id": "mysql_private",
+          "label": "MySQL/MariaDB listens only localhost/private LAN/VPN, not public internet",
+          "required": true
+        },
+        {
+          "id": "systemd_enabled",
+          "label": "pinuyumayan backend systemd service enabled",
+          "required": true
+        },
+        {
+          "id": "nginx_proxy",
+          "label": "Nginx reverse proxy routes / to backend port",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "phase_security",
+      "title": "Security",
+      "checks": [
+        {
+          "id": "cors_locked",
+          "label": "ALLOWED_ORIGINS contains only production main-site origins plus explicit staging origins",
+          "required": true
+        },
+        {
+          "id": "hmac_enabled",
+          "label": "PINUYUMAYAN_HMAC_ENABLED=true",
+          "required": true
+        },
+        {
+          "id": "hmac_secret_set",
+          "label": "PINUYUMAYAN_HMAC_SECRET is strong and stored outside browser/public env",
+          "required": true
+        },
+        {
+          "id": "api_key_rotation_plan",
+          "label": "MAIN_SITE_API_KEY rotation plan exists",
+          "required": true
+        },
+        {
+          "id": "nonce_store",
+          "label": "nonce store DB/Redis enabled for internal requests",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "phase_data",
+      "title": "Data / backup",
+      "checks": [
+        {
+          "id": "migration_current",
+          "label": "All migrations through 0027 applied",
+          "required": true
+        },
+        {
+          "id": "backup_created",
+          "label": "Fresh DB backup created before cutover",
+          "required": true
+        },
+        {
+          "id": "restore_drill_recent",
+          "label": "Restore drill completed on staging DB",
+          "required": true
+        },
+        {
+          "id": "full_corpus_status_known",
+          "label": "Full corpus acceptance report exists; preview-only state must be visible if <1000 entries",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "phase_main_site",
+      "title": "Main site bridge",
+      "checks": [
+        {
+          "id": "main_site_env",
+          "label": "Main site has KB URL, client id, API key, HMAC secret and server-side AI key configured",
+          "required": true
+        },
+        {
+          "id": "kb_health_route",
+          "label": "Main site /api/kb/health returns ok",
+          "required": true
+        },
+        {
+          "id": "ai_compose_route",
+          "label": "Main site /api/ai/compose works server-side and never exposes AI key",
+          "required": true
+        },
+        {
+          "id": "draft_validate",
+          "label": "Draft validation call to KB succeeds with HMAC",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "phase_release",
+      "title": "Release / rollback",
+      "checks": [
+        {
+          "id": "rollback_script_tested",
+          "label": "Rollback script tested in staging",
+          "required": true
+        },
+        {
+          "id": "incident_contact",
+          "label": "Incident owner/contact and rollback decision point documented",
+          "required": true
+        },
+        {
+          "id": "monitoring_baseline",
+          "label": "Health/readiness/error/HMAC failure/search zero-result dashboards checked",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

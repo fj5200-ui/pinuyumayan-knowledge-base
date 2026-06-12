@@ -1,0 +1,832 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "description_zh": "卑南族歌曲/歌謠/古調 metadata 候選目錄；不含歌詞、不含音檔。",
+  "count": 42,
+  "items": [
+    {
+      "song_id": "lu_de66a7118a",
+      "title_zh": "卑南山",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1949",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_f02d4b91ae",
+      "title_zh": "散步歌",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1953",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_f0cbd35082",
+      "title_zh": "頌祭祖先",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1957",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_a92f8f3d93",
+      "title_zh": "美麗的稻穗",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1958",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_f5b7dc707d",
+      "title_zh": "思故鄉",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1958",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_bedc8f8903",
+      "title_zh": "優美的普悠瑪青年",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1958",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_34dbd9e14d",
+      "title_zh": "再見大家",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1961",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_b372df9271",
+      "title_zh": "祝福歌",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1961",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_82ddd7a23a",
+      "title_zh": "天主羔羊",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1963",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_eed2d5e83a",
+      "title_zh": "上主垂憐",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1963",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_532c049e00",
+      "title_zh": "卑南王",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1970",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_921da3db98",
+      "title_zh": "南王互助社歌",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1970",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_9f123c4bbe",
+      "title_zh": "蘭嶼之戀",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1971",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_37f7ad4d7a",
+      "title_zh": "神職晉鐸",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1972",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_f45a2ff078",
+      "title_zh": "海祭",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1985",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "lu_32f2450784",
+      "title_zh": "懷念年祭",
+      "artist_or_source": "陸森寶/Baliwakes Raera",
+      "work_type": "composed_song_candidate",
+      "year": "1988",
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "song_id": "damalagaw_01",
+      "title_zh": "來大巴六九",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_02",
+      "title_zh": "我們歌唱吧",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_03",
+      "title_zh": "歡聚泰安",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_04",
+      "title_zh": "姊姊親愛歌",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_05",
+      "title_zh": "部落出征古謠",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_06",
+      "title_zh": "歌舞泰安村",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_07",
+      "title_zh": "大巴六九歌謠",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_08",
+      "title_zh": "嗨那魯灣",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_09",
+      "title_zh": "篝火旁的獨吟",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_10",
+      "title_zh": "思念好友歌謠",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_11",
+      "title_zh": "父親回來了",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_12",
+      "title_zh": "懷想曲",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_13",
+      "title_zh": "巴拉冠之歌",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_14",
+      "title_zh": "傳唱歌謠",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_15",
+      "title_zh": "聚會 巴拉冠",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "damalagaw_16",
+      "title_zh": "呼喊之謠：除喪版",
+      "artist_or_source": "Damalagaw 大巴六九部落傳唱歌謠",
+      "work_type": "tribal_transmission_album_track_candidate",
+      "year": "2015",
+      "community_tags": [
+        "泰安",
+        "大巴六九",
+        "Damalagaw"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "tmi_4e3229bbcf",
+      "title_zh": "知本卑南族少年年祭之歌",
+      "artist_or_source": "呂炳川錄製",
+      "work_type": "archival_recording_candidate",
+      "year": null,
+      "community_tags": [
+        "知本",
+        "卑南族"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "rights_status": "archive_rights_unknown_needs_review",
+      "public_display": "metadata_only_summary",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_archive_review"
+    },
+    {
+      "song_id": "tmi_0d70f42352",
+      "title_zh": "南王卑南族童謠",
+      "artist_or_source": "呂炳川錄製",
+      "work_type": "archival_recording_candidate",
+      "year": null,
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "rights_status": "archive_rights_unknown_needs_review",
+      "public_display": "metadata_only_summary",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_archive_review"
+    },
+    {
+      "song_id": "tmi_8a85973b92",
+      "title_zh": "南王卑南族頌讚之歌（Mangednged）",
+      "artist_or_source": "呂炳川錄製",
+      "work_type": "archival_recording_candidate",
+      "year": null,
+      "community_tags": [
+        "南王",
+        "卑南族"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "rights_status": "archive_rights_unknown_needs_review",
+      "public_display": "metadata_only_summary",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_archive_review"
+    },
+    {
+      "song_id": "tmi_19fe225f90",
+      "title_zh": "卑南鄉賓朗村卑南族巫師之歌",
+      "artist_or_source": "呂炳川錄製",
+      "work_type": "archival_recording_candidate",
+      "year": null,
+      "community_tags": [
+        "賓朗",
+        "卑南族"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "rights_status": "archive_rights_unknown_needs_review",
+      "public_display": "metadata_only_summary",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_archive_review"
+    },
+    {
+      "song_id": "samingad_sun",
+      "title_zh": "太陽 風 草原的聲音",
+      "artist_or_source": "紀曉君/Samingad",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "samingad_wildfire",
+      "title_zh": "野火春風",
+      "artist_or_source": "紀曉君/Samingad",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "chen_ocean",
+      "title_zh": "海洋",
+      "artist_or_source": "陳建年",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "chen_dadi",
+      "title_zh": "大地",
+      "artist_or_source": "陳建年",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "huang_tamalakao",
+      "title_zh": "大巴六九",
+      "artist_or_source": "黃美珍",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    },
+    {
+      "song_id": "movie_rice",
+      "title_zh": "美麗的稻穗（電影主題曲版本候選）",
+      "artist_or_source": "陳建年",
+      "work_type": "modern_album_or_song_candidate",
+      "year": null,
+      "community_tags": [
+        "卑南族音樂候選"
+      ],
+      "source_ids": [
+        "secondary_music_metadata_candidate_v36"
+      ],
+      "rights_status": "unknown_needs_review",
+      "public_display": "metadata_only",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "review_status": "candidate_needs_rights_review"
+    }
+  ]
+}

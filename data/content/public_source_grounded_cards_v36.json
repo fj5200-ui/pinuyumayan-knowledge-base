@@ -1,0 +1,1120 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "count": 67,
+  "cards": [
+    {
+      "slug": "v36-v36-music-song-catalog-metadata-only",
+      "title_zh": "歌曲資料治理｜metadata",
+      "summary_zh": "v36 歌曲擴充僅保存作品名稱、人物/團體、候選來源、URL、發行/上傳年份、授權狀態與審核狀態，不保存完整歌詞、不下載音訊。",
+      "source_ids": [
+        "internal_music_rights_policy_v36"
+      ],
+      "claim_ids": [
+        "v36_music_song_catalog_metadata_only"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_e041e6d66daefe9a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-music-youtube-no-training",
+      "title_zh": "YouTube治理｜YouTube",
+      "summary_zh": "YouTube 影片只能作 metadata 與外部來源候選；未授權音軌不得納入真人發音、TTS、歌聲合成或模型訓練。",
+      "source_ids": [
+        "internal_music_rights_policy_v36"
+      ],
+      "claim_ids": [
+        "v36_music_youtube_no_training"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_94b999e710675b77",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-music-no-ai-lyrics-generation",
+      "title_zh": "AI Composer 音樂防護｜AI",
+      "summary_zh": "主站 AI Composer 可用歌曲 metadata 寫介紹文，但不得生成仿古調歌詞、仿部落傳唱歌謠、祭儀歌詞或完整歌曲文本。",
+      "source_ids": [
+        "internal_music_rights_policy_v36"
+      ],
+      "claim_ids": [
+        "v36_music_no_ai_lyrics_generation"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_7cfddc6080c7d97d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-music-public-embed-review",
+      "title_zh": "影音嵌入審核｜embed",
+      "summary_zh": "YouTube 或外部影音若要在主站嵌入，必須通過來源、授權、頻道可信度、敏感內容與禁止關聯檢查。",
+      "source_ids": [
+        "internal_music_rights_policy_v36"
+      ],
+      "claim_ids": [
+        "v36_music_public_embed_review"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_d43cbb108d6e36fe",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-music-ritual-song-summary-only",
+      "title_zh": "祭儀歌謠邊界｜祭儀",
+      "summary_zh": "涉及年祭、大獵祭、巫師祭、祖靈或生命祭儀的歌謠，只能建立公開摘要與來源候選，不提供操作流程、歌詞或教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021",
+        "internal_music_rights_policy_v36"
+      ],
+      "claim_ids": [
+        "v36_music_ritual_song_summary_only"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_019e40e35fe2e3ed",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-de66a711",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《卑南山》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1949；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_de66a711"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_c97e914b1c34d88c",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-f02d4b91",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《散步歌》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1953；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_f02d4b91"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_ce5857d604f3ff1b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-f0cbd350",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《頌祭祖先》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1957；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_f0cbd350"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_cf6891d19c014f65",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-a92f8f3d",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《美麗的稻穗》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1958；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_a92f8f3d"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_e47955117c6bc35c",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-f5b7dc70",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《思故鄉》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1958；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_f5b7dc70"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_115dfa0b6a940967",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-bedc8f89",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《優美的普悠瑪青年》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1958；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_bedc8f89"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_0d4c39885fd6ad76",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-34dbd9e1",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《再見大家》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1961；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_34dbd9e1"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_08aa49dd4a8f3549",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-b372df92",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《祝福歌》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1961；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_b372df92"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_817499ec8e76682c",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-82ddd7a2",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《天主羔羊》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1963；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_82ddd7a2"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_4f236185b1f6aff9",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-eed2d5e8",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《上主垂憐》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1963；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_eed2d5e8"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_e39941bf0e1bf2a3",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-532c049e",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《卑南王》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1970；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_532c049e"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_504bbb075b95cfa1",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-921da3db",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《南王互助社歌》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1970；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_921da3db"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_d9c80bf08e7d2e0a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-9f123c4b",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《蘭嶼之戀》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1971；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_9f123c4b"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_63946027c4be06c1",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-37f7ad4d",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《神職晉鐸》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1972；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_37f7ad4d"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_125871758ac0572b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-f45a2ff0",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《海祭》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1985；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_f45a2ff0"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_46fccb4cbf75eb12",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-lu-senbao-work-32f24507",
+      "title_zh": "陸森寶作品候選｜陸森寶",
+      "summary_zh": "《懷念年祭》可作陸森寶作品 metadata 候選，公開資料列出創作/整理年份為 1988；平台不得收錄歌詞或音源，只保存作品索引與來源候選。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_lu_senbao_candidate"
+      ],
+      "claim_ids": [
+        "v36_lu_senbao_work_32f24507"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_581807aab096ae10",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-tmi-archive-4e3229bb",
+      "title_zh": "臺灣音樂館典藏候選｜臺灣音樂館",
+      "summary_zh": "「知本卑南族少年年祭之歌」可列入卑南族歌謠典藏 metadata 候選；公開資料標示為 呂炳川錄製、臺灣音樂館典藏候選。涉及年祭或巫師語境時只能公開摘要。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "wiki_puyuma_song_reference_candidate"
+      ],
+      "claim_ids": [
+        "v36_tmi_archive_4e3229bb"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_archive_review",
+      "canonical_fingerprint": "claim_787f4e4a11788392",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-tmi-archive-0d70f423",
+      "title_zh": "臺灣音樂館典藏候選｜臺灣音樂館",
+      "summary_zh": "「南王卑南族童謠」可列入卑南族歌謠典藏 metadata 候選；公開資料標示為 呂炳川錄製、臺灣音樂館典藏候選。涉及年祭或巫師語境時只能公開摘要。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "wiki_puyuma_song_reference_candidate"
+      ],
+      "claim_ids": [
+        "v36_tmi_archive_0d70f423"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_archive_review",
+      "canonical_fingerprint": "claim_4ffab7bc40e264f7",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-tmi-archive-8a85973b",
+      "title_zh": "臺灣音樂館典藏候選｜臺灣音樂館",
+      "summary_zh": "「南王卑南族頌讚之歌（Mangednged）」可列入卑南族歌謠典藏 metadata 候選；公開資料標示為 呂炳川錄製、臺灣音樂館典藏候選。涉及年祭或巫師語境時只能公開摘要。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "wiki_puyuma_song_reference_candidate"
+      ],
+      "claim_ids": [
+        "v36_tmi_archive_8a85973b"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_archive_review",
+      "canonical_fingerprint": "claim_71a5c5730d59c845",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-tmi-archive-19fe225f",
+      "title_zh": "臺灣音樂館典藏候選｜臺灣音樂館",
+      "summary_zh": "「卑南鄉賓朗村卑南族巫師之歌」可列入卑南族歌謠典藏 metadata 候選；公開資料標示為 呂炳川錄製、臺灣音樂館典藏候選。涉及年祭或巫師語境時只能公開摘要。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "wiki_puyuma_song_reference_candidate"
+      ],
+      "claim_ids": [
+        "v36_tmi_archive_19fe225f"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_archive_review",
+      "canonical_fingerprint": "claim_2203e6b23a8db9f6",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-01",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「來大巴六九」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_01"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_32566a3996c8e05a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-02",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「我們歌唱吧」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_02"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_21bdf86b564d9fed",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-03",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「歡聚泰安」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_03"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_5e900d56f5e5628e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-04",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「姊姊親愛歌」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_04"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_fd21415f001412d8",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-05",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「部落出征古謠」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_05"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_09400170209d2c3a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-06",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「歌舞泰安村」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_06"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_5d9275083e5bc68b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-07",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「大巴六九歌謠」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_07"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_df4f2916b56f324e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-08",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「嗨那魯灣」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_08"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_0655327fc4c47b4d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-09",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「篝火旁的獨吟」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_09"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_20ede87710b2eb50",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-10",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「思念好友歌謠」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_10"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_c2b3a6fe1222f1d5",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-11",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「父親回來了」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_11"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_c70fb45f48cb5e3a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-12",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「懷想曲」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_12"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_1539356a5408f3d6",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-13",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「巴拉冠之歌」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_13"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_5da9f00b0d607fc4",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-14",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「傳唱歌謠」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_14"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_46341c74ee964cfd",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-15",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「聚會 巴拉冠」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_15"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_a60fd2c7cbf7587d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-damalagaw-track-16",
+      "title_zh": "Damalagaw曲目候選｜Damalagaw",
+      "summary_zh": "《Damalagaw大巴六九部落傳唱歌謠》曲目候選「呼喊之謠：除喪版」可作泰安/大巴六九部落歌謠 metadata；未審核前不得公開歌詞、音源或下載連結。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "damalagaw_release_metadata_candidate"
+      ],
+      "claim_ids": [
+        "v36_damalagaw_track_16"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_rights_review",
+      "canonical_fingerprint": "claim_f12bb556964d3d24",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-chen-jiannian-ocean-album",
+      "title_zh": "陳建年作品候選｜陳建年",
+      "summary_zh": "陳建年《海洋》可列入南王音樂人物與作品 metadata 候選；平台應標示其與南王、陸森寶家族脈絡的候選關聯，並另行審核授權。",
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "claim_ids": [
+        "v36_chen_jiannian_ocean_album"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_efcd726f742fa1dd",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-chen-jiannian-dadi-album",
+      "title_zh": "陳建年作品候選｜陳建年",
+      "summary_zh": "陳建年《大地》可列入作品候選，但主站只可顯示專輯/作品 metadata 與外部來源，不收錄歌詞。",
+      "source_ids": [
+        "wiki_chen_jiannian_candidate"
+      ],
+      "claim_ids": [
+        "v36_chen_jiannian_dadi_album"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_a98e7e708e0f1463",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-chen-jiannian-shenhua-composer",
+      "title_zh": "陳建年作品候選｜神話",
+      "summary_zh": "公開資料將〈神話〉與陳建年、紀曉君/Samingad 的音樂關聯列為候選線索；平台需保存為作品 metadata，不保存歌詞。",
+      "source_ids": [
+        "wiki_chen_jiannian_candidate",
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v36_chen_jiannian_shenhua_composer"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_de1e55d48e1ba51f",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-samingad-sun-wind-grassland-album",
+      "title_zh": "紀曉君作品候選｜紀曉君",
+      "summary_zh": "紀曉君/Samingad 1999 年專輯《太陽 風 草原的聲音》可作卑南族古謠/流行音樂連結 metadata 候選。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v36_samingad_sun_wind_grassland_album"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_42e1a49e6d56f458",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-samingad-wildfire-spring-album",
+      "title_zh": "紀曉君作品候選｜紀曉君",
+      "summary_zh": "紀曉君/Samingad 2001 年專輯《野火春風》可作作品 metadata 候選；不得收錄完整歌詞或音源。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v36_samingad_wildfire_spring_album"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_5a4cf0c44121c9aa",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-nanwang-sisters-album-production",
+      "title_zh": "南王姊妹花候選｜南王姊妹花",
+      "summary_zh": "南王姊妹花相關作品可列入南王音樂人物網絡候選；需審核演唱者、發行資訊與授權狀態。",
+      "source_ids": [
+        "wiki_chen_jiannian_candidate",
+        "movie_kano_music_candidate"
+      ],
+      "claim_ids": [
+        "v36_nanwang_sisters_album_production"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_a77fe8c8828f3ef2",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-amei-damalagaw-music-director",
+      "title_zh": "大巴六九專輯候選｜張惠妹",
+      "summary_zh": "公開資料指出張惠妹擔任《Damalagaw大巴六九部落傳唱歌謠》音樂總監/企劃統籌；平台可保存此專輯 metadata，但不得重製曲目內容。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "wiki_amei_music_candidate"
+      ],
+      "claim_ids": [
+        "v36_amei_damalagaw_music_director"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_1b1ce3815a10d670",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-huang-meizhen-tamalakao-album",
+      "title_zh": "當代歌曲候選｜黃美珍",
+      "summary_zh": "黃美珍《大巴六九》專輯名稱與泰安/大巴六九部落情感連結相關，可列入當代音樂候選；需與部落傳唱歌謠分欄。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate"
+      ],
+      "claim_ids": [
+        "v36_huang_meizhen_tamalakao_album"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_9e8ab3dda7568e3d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-panai-music-identity-candidate",
+      "title_zh": "當代歌手候選｜巴奈",
+      "summary_zh": "巴奈·庫穗具卑南族與阿美族家庭背景，可列入當代原住民音樂人物候選；不得將其所有作品自動歸類為卑南族傳統歌謠。",
+      "source_ids": [
+        "wiki_panai_candidate"
+      ],
+      "claim_ids": [
+        "v36_panai_music_identity_candidate"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_5b19190bc052f4a8",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-chen-yonglong-nanwang-candidate",
+      "title_zh": "當代歌手候選｜陳永龍",
+      "summary_zh": "陳永龍為臺東南王部落卑南族歌手候選，可列入當代原住民音樂人物與演出網絡 metadata。",
+      "source_ids": [
+        "wiki_chen_yonglong_candidate"
+      ],
+      "claim_ids": [
+        "v36_chen_yonglong_nanwang_candidate"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_ecec7fd52f56915f",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-movie-long-time-no-respect-me-song",
+      "title_zh": "影像歌曲候選｜美麗的稻穗",
+      "summary_zh": "電影《很久沒有敬我了妳》公開資料列出〈美麗的稻穗〉作主題曲，演唱者為陳建年；平台可建立作品跨媒介 metadata。",
+      "source_ids": [
+        "wiki_long_time_no_respect_me_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v36_movie_long_time_no_respect_me_song"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_b5404be9e6a0d62b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-01",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「陸森寶 美麗的稻穗」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_01"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_73e0e0d76f1434d6",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-02",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「陸森寶 懷念年祭」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_02"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_440bedf7b31cf14b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-03",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「陸森寶 卑南山」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_03"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_65858dd2a3a32221",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-04",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「南王卑南族童謠」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_04"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_4c582016611ab88d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-05",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「南王卑南族頌讚之歌 Mangednged」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_05"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_7d2ad95ab4fdfc3a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-06",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「知本卑南族少年年祭之歌」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_06"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_d4b877cbc0f0bf4a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-07",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「卑南鄉賓朗村卑南族巫師之歌」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_07"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_ae5d8ee6168b78b1",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-08",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「Damalagaw 大巴六九 來大巴六九」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_08"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_3d14b37860b785b7",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-09",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「Damalagaw 部落出征古謠」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_09"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_61ae2f2fc42e9907",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-10",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「Damalagaw 巴拉冠之歌」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_10"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_ab9a553a99300401",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-11",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「紀曉君 Samingad 南王不落」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_11"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_414300b9c2a8da10",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-12",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「紀曉君 神話 卑南語」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_12"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_1b82b70c6a86031f",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-13",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「陳建年 美麗的稻穗」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_13"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_bab65224e6362fe6",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-14",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「南王姊妹花 卑南族」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_14"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_b61c6ed76339d4f4",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v36-v36-youtube-query-seed-15",
+      "title_zh": "YouTube搜尋種子｜YouTube",
+      "summary_zh": "YouTube Data API 可使用搜尋種子「黃美珍 大巴六九 Tamalakao」抓取影片 metadata 候選；結果只能進審核佇列，不得自動公開或下載影音。",
+      "source_ids": [
+        "youtube_metadata_candidate_v36"
+      ],
+      "claim_ids": [
+        "v36_youtube_query_seed_15"
+      ],
+      "visibility": "public_candidate_summary",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "canonical_fingerprint": "claim_dcc469cf9a19c27e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    }
+  ]
+}

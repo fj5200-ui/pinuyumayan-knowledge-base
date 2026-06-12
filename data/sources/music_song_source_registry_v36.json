@@ -1,0 +1,82 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "goal_zh": "擴充卑南族歌曲、古調、典藏錄音、YouTube metadata 候選。所有歌曲只保存 metadata 與審核狀態，不保存歌詞、不下載音訊。",
+  "verified_sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan profile",
+      "publisher": "Council of Indigenous Peoples",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "allowed_use": "public_summary"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "source_id": "taiwan_music_institute_lu_senbao_candidate",
+      "title": "臺灣音樂館/臺灣音樂群像：陸森寶候選",
+      "source_class": "music_archival_authority",
+      "review_status": "candidate_needs_fetch",
+      "allowed_use": "candidate_metadata_only"
+    },
+    {
+      "source_id": "taiwan_music_institute_puyuma_song_candidates",
+      "title": "臺灣音樂館：卑南族歌謠錄音候選",
+      "source_class": "music_archival_authority",
+      "review_status": "candidate_needs_archive_review",
+      "allowed_use": "metadata_only_no_audio"
+    },
+    {
+      "source_id": "wiki_lu_senbao_music_candidate",
+      "title": "陸森寶公開資料候選",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "candidate_only"
+    },
+    {
+      "source_id": "wiki_ki_samingad_candidate",
+      "title": "紀曉君/Samingad 公開資料候選",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "candidate_only"
+    },
+    {
+      "source_id": "wiki_chen_jiannian_candidate",
+      "title": "陳建年公開資料候選",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "candidate_only"
+    },
+    {
+      "source_id": "wiki_damalagaw_album_candidate",
+      "title": "Damalagaw 大巴六九部落傳唱歌謠公開資料候選",
+      "source_class": "secondary_reference_candidate",
+      "review_status": "candidate_needs_authoritative_review",
+      "allowed_use": "candidate_only"
+    },
+    {
+      "source_id": "youtube_metadata_candidate_v36",
+      "title": "YouTube Metadata Candidate Sources v36",
+      "source_class": "video_platform_metadata",
+      "review_status": "candidate_needs_api_fetch_and_human_review",
+      "allowed_use": "metadata_url_only_no_audio_no_lyrics"
+    }
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "copyright_policy": [
+    "不抓歌詞",
+    "不下載音檔/影片",
+    "不把 YouTube 音訊納入 TTS 或歌聲模型訓練",
+    "只保存 metadata + source URL + review status",
+    "祭儀/祖靈/巫術相關歌謠只做公開摘要"
+  ]
+}

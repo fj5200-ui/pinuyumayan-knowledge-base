@@ -1,0 +1,37 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v34 Source Ingestion Worker / 多來源擷取實作版",
+  "priorities": [
+    {
+      "priority": 1,
+      "area": "真實來源擷取",
+      "task": "實作 source ingestion worker：對 TIPP、國家文化記憶庫、族語詞典、臺東地方來源做 fetch + parse + candidate write，不自動公開。"
+    },
+    {
+      "priority": 2,
+      "area": "候選審核 UI",
+      "task": "後台顯示來源候選、claim 候選、授權狀態、敏感標籤與卑南文化遺址禁止關聯結果。"
+    },
+    {
+      "priority": 3,
+      "area": "主站搜尋",
+      "task": "把 v33 public_search_documents 寫入 MySQL FULLTEXT / Meilisearch adapter，支援十社、族語、人物、祭儀公開摘要搜尋。"
+    },
+    {
+      "priority": 4,
+      "area": "AI Composer",
+      "task": "前端 AI Composer 使用 source packet 時記錄 packet usage，避免同 claim set 重複發文。"
+    },
+    {
+      "priority": 5,
+      "area": "VPS DB",
+      "task": "把 v33 candidate/source-search report 真寫入 VPS DB transaction，並接後台 live dashboard。"
+    },
+    {
+      "priority": 6,
+      "area": "語料",
+      "task": "在 VPS staging 實跑 full corpus；以 v29-v32 report contract 回填 >=1000 或失敗原因。"
+    }
+  ]
+}

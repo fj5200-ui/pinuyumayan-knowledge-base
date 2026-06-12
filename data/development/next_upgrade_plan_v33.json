@@ -1,0 +1,55 @@
+{
+  "version": "v33",
+  "name": "Live DB Transaction and Dashboard Binding",
+  "priorities": [
+    {
+      "priority": 1,
+      "area": "Live DB transaction",
+      "items": [
+        "Replace report-only POST handlers with DB inserts/transactions",
+        "Persist dry-run evidence, HMAC reports, corpus backfill reports and search/SEO reports"
+      ]
+    },
+    {
+      "priority": 2,
+      "area": "Admin dashboard live wiring",
+      "items": [
+        "Bind V32 panels to admin authenticated API",
+        "Add RBAC guards for ops, corpus and security panels"
+      ]
+    },
+    {
+      "priority": 3,
+      "area": "Main-site migration",
+      "items": [
+        "Move v25-v32 webapp files into the actual main-site repository",
+        "Run secret scan and connection test"
+      ]
+    },
+    {
+      "priority": 4,
+      "area": "HMAC enforcement",
+      "items": [
+        "Replace in-memory nonce store with VPS MySQL or Redis nonce store",
+        "Add key rotation window and scope checks"
+      ]
+    },
+    {
+      "priority": 5,
+      "area": "Corpus and search",
+      "items": [
+        "Run full corpus pipeline on VPS staging",
+        "Populate MySQL FULLTEXT index from DB rows",
+        "Tune zero-result workflow"
+      ]
+    },
+    {
+      "priority": 6,
+      "area": "True sources",
+      "items": [
+        "Add source adapters for TIPP/CIP/Culture sources into candidate queue only",
+        "Keep Beinan/Peinan archaeology blocklist active"
+      ]
+    }
+  ]
+}

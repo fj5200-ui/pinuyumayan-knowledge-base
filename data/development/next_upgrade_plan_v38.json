@@ -1,0 +1,60 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v38",
+  "priorities": [
+    {
+      "priority": 1,
+      "direction": "YouTube Data API worker 真實實作",
+      "tasks": [
+        "實際抓 video metadata 寫入 music_youtube_source_candidates_v37",
+        "不下載音訊/影片",
+        "命中卑南文化遺址相關詞直接阻擋",
+        "官方頻道優先排序"
+      ]
+    },
+    {
+      "priority": 2,
+      "direction": "音樂候選審核 UI",
+      "tasks": [
+        "顯示曲名、人物、縮圖、來源、權利狀態、敏感分類",
+        "approve 後才轉 public summary",
+        "reject/request_revision 寫 audit log"
+      ]
+    },
+    {
+      "priority": 3,
+      "direction": "MySQL FULLTEXT 音樂索引",
+      "tasks": [
+        "寫入 artist/community/work_type/rights_status facets",
+        "阻擋 forbidden relations",
+        "建立 zero-result workflow"
+      ]
+    },
+    {
+      "priority": 4,
+      "direction": "權威來源 fetch adapter",
+      "tasks": [
+        "臺灣音樂館、國家文化記憶庫、金曲獎、唱片發行資料 metadata 候選",
+        "只進候選區，不自動公開"
+      ]
+    },
+    {
+      "priority": 5,
+      "direction": "AI Composer 音樂防護正式落地",
+      "tasks": [
+        "草稿必須帶 claim_ids/source_ids",
+        "阻擋仿古調歌詞、無來源音樂史料",
+        "檢查同一 claim set 重複發文"
+      ]
+    },
+    {
+      "priority": 6,
+      "direction": "VPS DB transaction",
+      "tasks": [
+        "ingestion-report/review-report 寫入 VPS DB",
+        "後台 dashboard live API 顯示處理狀態"
+      ]
+    }
+  ]
+}

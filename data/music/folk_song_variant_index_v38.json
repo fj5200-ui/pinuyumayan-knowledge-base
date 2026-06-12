@@ -1,0 +1,78 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "description_zh": "歌謠/古調異名、版本與採錄/演出版本索引；只做 metadata，不保存歌詞或音訊。",
+  "rules": [
+    "同曲名但不同演出版本可建立 variant，但不得重複建立新 song identity。",
+    "祭儀、巫師、除喪相關項目只允許公開摘要與審核 metadata。",
+    "YouTube 來源只保存 videoId/title/channel/duration/thumbnail，不下載音訊或影片。"
+  ],
+  "variant_groups": [
+    {
+      "group_id": "variant_lu_beautiful_millet",
+      "canonical_title": "美麗的稻穗",
+      "variant_types": [
+        "陸森寶作品",
+        "演唱版本",
+        "電影/表演使用候選"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "review_status": "variant_index_needs_authoritative_review"
+    },
+    {
+      "group_id": "variant_lu_missing_annual_ritual",
+      "canonical_title": "懷念年祭",
+      "variant_types": [
+        "最後遺作脈絡",
+        "雲門音樂系列候選",
+        "表演版本候選"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "review_status": "variant_index_needs_authoritative_review"
+    },
+    {
+      "group_id": "variant_mangednged",
+      "canonical_title": "Mangednged / 南王卑南族頌讚之歌",
+      "variant_types": [
+        "館藏錄音",
+        "頌讚歌",
+        "拼寫異名"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "review_status": "variant_index_needs_authoritative_review"
+    },
+    {
+      "group_id": "variant_samingad_old_tune",
+      "canonical_title": "Samingad 古調演唱脈絡",
+      "variant_types": [
+        "專輯",
+        "現場演出",
+        "YouTube metadata 候選"
+      ],
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate",
+        "youtube_metadata_candidate"
+      ],
+      "review_status": "variant_index_needs_authoritative_review"
+    },
+    {
+      "group_id": "variant_damalagaw_old_songs",
+      "canonical_title": "Damalagaw 大巴六九部落傳唱歌謠",
+      "variant_types": [
+        "部落古謠",
+        "耆老創作",
+        "除喪版敏感項目"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "variant_index_needs_authoritative_review"
+    }
+  ]
+}

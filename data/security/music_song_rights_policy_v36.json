@@ -1,0 +1,31 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "rules": [
+    {
+      "rule_id": "no_lyrics_storage",
+      "severity": "block",
+      "description_zh": "不得保存完整歌詞或將歌詞提供給 AI 改寫。"
+    },
+    {
+      "rule_id": "no_youtube_audio_download",
+      "severity": "block",
+      "description_zh": "不得下載 YouTube 音訊或影片。"
+    },
+    {
+      "rule_id": "no_unlicensed_training",
+      "severity": "block",
+      "description_zh": "未授權歌曲、古調、YouTube 音源不得用於 TTS、歌聲合成或模型訓練。"
+    },
+    {
+      "rule_id": "ritual_song_summary_only",
+      "severity": "manual_review",
+      "description_zh": "祭儀、巫師、祖靈相關歌謠只能公開摘要。"
+    },
+    {
+      "rule_id": "beinan_site_forbidden_relation",
+      "severity": "block",
+      "description_zh": "卑南文化遺址/Beinan Site/Peinan Site 不得作為卑南族音樂來源。"
+    }
+  ]
+}

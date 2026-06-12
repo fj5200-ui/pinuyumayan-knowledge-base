@@ -1,0 +1,15 @@
+{
+  "version": "v43",
+  "public_tts_default": "disabled",
+  "public_stt_default": "disabled",
+  "must_pass": [
+    "license_status=approved",
+    "speaker_consent=approved",
+    "alignment=approved",
+    "human_review=approved",
+    "sensitivity!=restricted",
+    "not_youtube_audio",
+    "not_unlicensed_music"
+  ],
+  "failure_action": "keep internal candidate; do not expose in public API"
+}

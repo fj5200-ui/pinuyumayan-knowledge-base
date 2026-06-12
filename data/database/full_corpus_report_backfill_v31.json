@@ -1,0 +1,28 @@
+{
+  "version": "v31",
+  "title": "Full corpus report backfill workflow",
+  "truth_boundary": "ZIP preview still contains 80 entries. Thousand-scale status may only be claimed after VPS staging acceptance report shows total_entries >= 1000.",
+  "report_paths": [
+    "data/database/full_corpus_acceptance_report_v28.generated.json",
+    "data/database/full_corpus_acceptance_report_v29.generated.json",
+    "data/database/full_corpus_acceptance_report_v31.generated.json"
+  ],
+  "required_metrics": [
+    "total_entries",
+    "required_min_entries",
+    "audio_asset_count",
+    "audio_coverage_ratio",
+    "source_phon_coverage_ratio",
+    "dialect_distribution",
+    "license_findings",
+    "duplicate_findings",
+    "status"
+  ],
+  "db_tables": [
+    "full_corpus_execution_runs_v29",
+    "full_corpus_execution_findings_v29",
+    "corpus_reconciliation_runs",
+    "corpus_reconciliation_findings"
+  ],
+  "publish_rule": "only full_corpus_verified can be exposed to public channel"
+}

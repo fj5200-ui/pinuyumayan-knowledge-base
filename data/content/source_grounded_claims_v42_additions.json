@@ -1,0 +1,505 @@
+{
+  "version": "v42",
+  "claims": [
+    {
+      "claim_id": "v42-speech-music-claim-001",
+      "slug": "tts-stt-authorization-review",
+      "title": "Tts Stt Authorization Review",
+      "claim_text_zh": "TTS/STT 訓練資料必須先通過授權、來源、speaker、dialect、alignment 與敏感分級審核，未完成審核不得進入 train/dev/test。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "0fa0c5598f4cc9f7516f686e",
+      "canonical_fingerprint": "914ddf331d68ffa1cd3b939f"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-002",
+      "slug": "tts-dataset-split",
+      "title": "Tts Dataset Split",
+      "claim_text_zh": "TTS dataset split 需固定 train/dev/test 比例，並避免同 speaker 或同錄音來源同時大量洩漏到不同 split。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "544f4168223077b9f647ede0",
+      "canonical_fingerprint": "c288ad6d314f190ff1352181"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-003",
+      "slug": "stt-dataset-split",
+      "title": "Stt Dataset Split",
+      "claim_text_zh": "STT dataset split 需保存逐句音檔、轉寫、方言、speaker 標籤與資料來源，並可追蹤 WER/CER 評估結果。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "33247d1b4ab515f77b155ea8",
+      "canonical_fingerprint": "c4e7c8ff8876809722ee5459"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-004",
+      "slug": "audio-alignment-required",
+      "title": "Audio Alignment Required",
+      "claim_text_zh": "語音訓練資料需要逐句或短片段對齊，長篇未切分音檔不得直接進 TTS/STT 訓練。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "eb7c4a478a6a33e8f3f5e98e",
+      "canonical_fingerprint": "2868042cf7584f05133163a9"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-005",
+      "slug": "speaker-consent-gate",
+      "title": "Speaker Consent Gate",
+      "claim_text_zh": "speaker_consent_status 必須明確，未知或未授權的錄音只能進候選區，不得訓練或公開。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "ba21c5c89d9aeaeae2fb1cb6",
+      "canonical_fingerprint": "2679d93adec7991170efad75"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-006",
+      "slug": "youtube-metadata-only-training-block",
+      "title": "Youtube Metadata Only Training Block",
+      "claim_text_zh": "YouTube 只允許 metadata 擷取；YouTube 音訊不得下載、不得訓練 TTS/STT、不得做歌聲模型。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "low",
+      "dedupe_key": "27c55aad343904e7282719c1",
+      "canonical_fingerprint": "20ef47b7f9804f301d0eaad6"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-007",
+      "slug": "music-lyrics-guardrail",
+      "title": "Music Lyrics Guardrail",
+      "claim_text_zh": "音樂與歌謠資料庫只保存 metadata、來源與摘要，不保存完整歌詞或可重製作品內容。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "low",
+      "dedupe_key": "1c1448b00ea8928985f66846",
+      "canonical_fingerprint": "9ebc3db688cce4d3d3cb1ecb"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-008",
+      "slug": "mos-evaluation-gate",
+      "title": "Mos Evaluation Gate",
+      "claim_text_zh": "TTS 模型公開前需要 MOS 或等價人工聽感評估，未達門檻只能保留在內部研究狀態。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "08cd55987aded22c1ad51fb5",
+      "canonical_fingerprint": "7623198f7ea47ecea839db16"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-009",
+      "slug": "wer-cer-evaluation-gate",
+      "title": "Wer Cer Evaluation Gate",
+      "claim_text_zh": "STT 模型公開前需要 WER/CER 評估與族語人工檢查，未達門檻不得作為正式轉寫服務。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "06ee0459633bba87474d2943",
+      "canonical_fingerprint": "223a37703dc24279bd7b4f87"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-010",
+      "slug": "public-tts-disabled-until-approved",
+      "title": "Public Tts Disabled Until Approved",
+      "claim_text_zh": "公開合成 TTS 預設關閉；只有授權資料、模型評估與族語審核通過後才可開放。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "low",
+      "dedupe_key": "16fc6e7766c26d0731eb6583",
+      "canonical_fingerprint": "b89d20ca2f53dbc0fcfe8b6d"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-011",
+      "slug": "public-stt-disabled-until-approved",
+      "title": "Public Stt Disabled Until Approved",
+      "claim_text_zh": "公開 STT 預設關閉；歌曲、祭儀或敏感錄音不得自動轉寫公開。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "dedupe_key": "41da4349acc539d0031ab0a6",
+      "canonical_fingerprint": "e4db0fe5383359f0e048bfd5"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-012",
+      "slug": "music-search-facets",
+      "title": "Music Search Facets",
+      "claim_text_zh": "音樂搜尋需要 artist、community、work_type、rights_status、sensitivity、source_authority 等 facet。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "831d4bd9a6892b10db384fc4",
+      "canonical_fingerprint": "936b4c5aba3e5c952911bd29"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-013",
+      "slug": "authority-fetch-candidate-only",
+      "title": "Authority Fetch Candidate Only",
+      "claim_text_zh": "臺灣音樂館、國家文化記憶庫、金曲獎與唱片資料來源先進候選區，人工審核後才可公開摘要。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "f1bc59a0bcaa799f935871b9",
+      "canonical_fingerprint": "bdaf54378247771586f0383f"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-014",
+      "slug": "review-dashboard-live-db",
+      "title": "Review Dashboard Live Db",
+      "claim_text_zh": "後台 dashboard 需要直接讀取 VPS DB 的審核交易、dataset report、YouTube metadata report 與 FULLTEXT populate report。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "4652c16771cee660905abb67",
+      "canonical_fingerprint": "e14ecbf7d5f5ab5416e65517"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-015",
+      "slug": "hmac-required-for-reports",
+      "title": "Hmac Required For Reports",
+      "claim_text_zh": "dataset-report、evaluation-report、youtube-metadata-report、authority-fetch-report 等 internal API 都必須走 HMAC/nonce。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "916cd8c8e8e84d07927fda75",
+      "canonical_fingerprint": "aaac88fb031403968375efe3"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-016",
+      "slug": "forbidden-archaeology-relation-music",
+      "title": "Forbidden Archaeology Relation Music",
+      "claim_text_zh": "卑南文化遺址/Beinan Site/Peinan Site 不得進入音樂、歌謠、TTS/STT source packet 或搜尋同義詞。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "low",
+      "dedupe_key": "65c0013fac011b0261a7804d",
+      "canonical_fingerprint": "78b3d4aa67054d6cec1c696c"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-017",
+      "slug": "speech-release-channels",
+      "title": "Speech Release Channels",
+      "claim_text_zh": "語音資料需要 candidate、reviewed_authorized、train_ready、model_eval、public_approved 等 release channel。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "4ac9be680d35581c2f742faf",
+      "canonical_fingerprint": "3e11024f430f0c117b02662f"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-018",
+      "slug": "dataset-manifest-versioning",
+      "title": "Dataset Manifest Versioning",
+      "claim_text_zh": "TTS/STT manifest 需版本化，保存 input hash、split hash、created_at、reviewer 與品質門檻。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "b4457239be6ed9b934fbdd82",
+      "canonical_fingerprint": "336ddf7c8dba8eba93753d6f"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-019",
+      "slug": "audio-proxy-not-training-source",
+      "title": "Audio Proxy Not Training Source",
+      "claim_text_zh": "音檔 proxy 用於播放與快取，不等於訓練授權；訓練需另有 license_status 與 consent_status。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "b98956b95321f5a98a8569d0",
+      "canonical_fingerprint": "b50a0bb52a94f3e76517908c"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-020",
+      "slug": "stt-transcript-publication-gate",
+      "title": "Stt Transcript Publication Gate",
+      "claim_text_zh": "STT 產生的轉寫需二次人工審核後才能公開，尤其涉及祭儀、巫師、除喪或祖靈語境。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "medium",
+      "dedupe_key": "9b21582876e47effa40bac13",
+      "canonical_fingerprint": "d74071d205437dca0f59035f"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-021",
+      "slug": "ai-composer-music-claim-required",
+      "title": "Ai Composer Music Claim Required",
+      "claim_text_zh": "AI Composer 撰寫音樂文章時必須帶 claim_ids/source_ids，且不得生成仿古調歌詞或完整歌詞。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "public_summary_only",
+      "sensitivity": "low",
+      "dedupe_key": "e676c0b1b19c088be45b5a87",
+      "canonical_fingerprint": "378cd4bd56c254965b276d80"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-022",
+      "slug": "zero-result-music-log",
+      "title": "Zero Result Music Log",
+      "claim_text_zh": "音樂搜尋零結果應寫入 query log，供後台補來源候選與同義詞審核。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "b5c14b544ce7e61a9b92e3aa",
+      "canonical_fingerprint": "f524768513f9b05ea156170c"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-023",
+      "slug": "fulltext-music-index-refresh",
+      "title": "Fulltext Music Index Refresh",
+      "claim_text_zh": "FULLTEXT 音樂索引重建後需保存 row_count、checksum、blocked_term_count 與執行者。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "2b40f5c272ce4d7f76d383de",
+      "canonical_fingerprint": "e6f875954db6becf59b6c104"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-024",
+      "slug": "vps-transaction-audit",
+      "title": "Vps Transaction Audit",
+      "claim_text_zh": "VPS DB 寫入 ingestion/review/evaluation report 時需要 transaction_id、actor、client_id、request_hash 與 audit log。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "09b2ee5fe7716dc5b8d2ca8e",
+      "canonical_fingerprint": "4b9605f726bdcf0b711afcca"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-025",
+      "slug": "train-ready-zero-is-valid",
+      "title": "Train Ready Zero Is Valid",
+      "claim_text_zh": "在授權審核完成前，train_ready_items=0 是合格狀態；不得將候選資料冒充可訓練資料。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "ef7e0974b430f9f30253723a",
+      "canonical_fingerprint": "ff48dd1e09d2704f6be6e802"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-026",
+      "slug": "dialect-balance-report",
+      "title": "Dialect Balance Report",
+      "claim_text_zh": "TTS/STT dataset 需要方言分布報告，避免只偏向單一方言造成模型偏差。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "ed30793a569bb2ed81e050db",
+      "canonical_fingerprint": "b1c998752561a3cfd35503ea"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-027",
+      "slug": "sensitive-audio-redaction",
+      "title": "Sensitive Audio Redaction",
+      "claim_text_zh": "敏感音檔只允許公開摘要或內部審核 metadata，不公開原音、逐字轉寫或操作性內容。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "dee685e3e2c34a07029b6fbb",
+      "canonical_fingerprint": "9383d1f74a0e802d6b4391db"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-028",
+      "slug": "model-card-required",
+      "title": "Model Card Required",
+      "claim_text_zh": "任何 TTS/STT 模型若未來發布，必須附 model card：資料來源、授權、方言、限制、評估與禁止用途。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_formosanbank_epersonal_candidate_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "6810f0bf0c0a1a431f7775a5",
+      "canonical_fingerprint": "c8986a66fc32bb8734184e1c"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-029",
+      "slug": "rollback-for-model-release",
+      "title": "Rollback For Model Release",
+      "claim_text_zh": "語音模型若審核撤回或授權變更，必須支援下架、rollback、cache purge 與主站通知。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "ee42778d16942c3d3025326b",
+      "canonical_fingerprint": "0c5b5f3c33f22847f2f68fcd"
+    },
+    {
+      "claim_id": "v42-speech-music-claim-030",
+      "slug": "speech-music-separation",
+      "title": "Speech Music Separation",
+      "claim_text_zh": "族語學習語料、歌謠 metadata、歌曲候選與 STT/TTS 訓練資料必須分表與分 release channel 管理。",
+      "claim_type": "speech_music_governance",
+      "source_ids": [
+        "src_internal_tts_stt_policy_v42",
+        "src_formosanbank_epersonal_candidate_v42",
+        "src_music_metadata_policy_v42"
+      ],
+      "confidence": "policy_controlled",
+      "review_status": "approved_internal_policy",
+      "public_use": "admin_or_internal_ops",
+      "sensitivity": "low",
+      "dedupe_key": "34b8f33561e06c9846fcff49",
+      "canonical_fingerprint": "ecf0ca68fa6bc979fec5dd19"
+    }
+  ]
+}

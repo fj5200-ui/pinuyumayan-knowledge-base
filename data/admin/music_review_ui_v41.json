@@ -1,0 +1,36 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "panels": [
+    "candidate_video_metadata",
+    "song_catalog",
+    "rights_review",
+    "cultural_sensitivity",
+    "forbidden_relation_check",
+    "db_transaction_history"
+  ],
+  "actions": [
+    "approve_metadata_only",
+    "reject",
+    "request_more_source",
+    "mark_official",
+    "mark_third_party_upload",
+    "mark_rights_unknown",
+    "flag_sensitive",
+    "block_from_public"
+  ],
+  "fields": [
+    "title",
+    "artist",
+    "community",
+    "work_type",
+    "source_url",
+    "thumbnail_url",
+    "channel_title",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "youtube_official_status",
+    "review_notes"
+  ]
+}

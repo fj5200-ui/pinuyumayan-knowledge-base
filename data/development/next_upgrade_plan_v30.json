@@ -1,0 +1,42 @@
+{
+  "version": "v30",
+  "title": "Production Cutover + Main Site Move",
+  "priorities": [
+    {
+      "priority": "P0",
+      "item": "Run v29 on actual VPS staging",
+      "deliverable": "real acceptance report and DB search population report"
+    },
+    {
+      "priority": "P0",
+      "item": "Move main-site bridge files into production main site",
+      "deliverable": "main-site /api/kb/health and /api/ai/compose verified"
+    },
+    {
+      "priority": "P0",
+      "item": "Connect admin dashboard to DB-backed live APIs",
+      "deliverable": "login, corpus, search, HMAC, backup panels visible"
+    },
+    {
+      "priority": "P1",
+      "item": "Production cutover checklist",
+      "deliverable": "DNS, Nginx, systemd, backup, rollback, CORS, HMAC checked"
+    },
+    {
+      "priority": "P1",
+      "item": "Real source candidate ingestion",
+      "deliverable": "candidate queue only; no auto-public claims"
+    },
+    {
+      "priority": "P2",
+      "item": "Search and SEO tuning",
+      "deliverable": "fulltext relevance report, sitemap and article schedule dashboard"
+    }
+  ],
+  "non_negotiable_rules": [
+    "No Beinan/Peinan archaeological site relation as Pinuyumayan culture source",
+    "No backend-generated article body",
+    "No public synthetic TTS pretending to be real audio",
+    "No production static fallback without explicit error/audit"
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "count": 46,
+  "cards": [
+    {
+      "slug": "v34-v34-profile-contact-and-continuity",
+      "title_zh": "族群簡介｜族群簡介",
+      "summary_zh": "卑南族公開介紹同時呈現早期與外界接觸及持續維持傳統文化生活兩個面向，主站文章應避免把接觸史等同文化斷裂。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_profile_contact_and_continuity"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_36d3ba1bf3aa34fd",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-profile-age-hall-not-optional",
+      "title_zh": "社會制度｜年齡階級",
+      "summary_zh": "年齡階級與會所制度在卑南族公開介紹中是核心描述，不應在主站內容中被簡化成一般活動空間。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_profile_age_hall_not_optional"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_00865a8b9989c573",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-population-zh-versioned",
+      "title_zh": "人口版本治理｜人口",
+      "summary_zh": "原民會中文頁目前列示卑南族總人口 16,734；此數值應保存資料日期與來源版本，不能與英文舊頁人口混寫。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "claim_ids": [
+        "v34_population_zh_versioned"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e636dd658a8c06ba",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-population-en-historical",
+      "title_zh": "人口版本治理｜人口",
+      "summary_zh": "原民會英文頁保留 2020 年 1 月約 14,517 的舊人口描述，適合作為歷史版本而非最新人口。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_population_en_historical"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9f2df8d8989e82dd",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-name-nanwang-origin-boundary",
+      "title_zh": "族稱與命名｜Pinuyumayan",
+      "summary_zh": "原民會英文頁說明 Pinuyumayan 名稱脈絡與南王村名相關；平台需將族群名稱與單一部落名稱做欄位區分。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_name_nanwang_origin_boundary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_289e59e821fb8320",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-origin-bamboo-stone-summary",
+      "title_zh": "族群歷史摘要｜竹生",
+      "summary_zh": "公開介紹提到竹生與石生兩類起源來源；平台只保存公開摘要與來源，不擴寫神話細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_origin_bamboo_stone_summary"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bc1210be508cf8b6",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-pinadray-period-summary",
+      "title_zh": "族群歷史摘要｜Pinadray",
+      "summary_zh": "原民會英文頁提到卑南族在 17 世紀以前曾是強勢族群，並在 Pinadray 時期達高峰；主站應標示此為官方頁摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_pinadray_period_summary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_46d0d544232ac2af",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-sukaro-migration-summary",
+      "title_zh": "族群歷史摘要｜sukaro",
+      "summary_zh": "18 世紀部分族人遷往恆春半島的 sukaro 敘述，應作為遷移史候選主題並保留來源定位。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_sukaro_migration_summary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9810a7933805c4fa",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-japanese-period-eight-tribes-label",
+      "title_zh": "族群分類史｜八社",
+      "summary_zh": "原民會英文頁提到日治時期因八社而出現 ethnological label；平台可作分類史摘要，但不得用八社取代目前主站十社資料模型。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_japanese_period_eight_tribes_label"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0248cb3424971169",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-taitung-beinan-center",
+      "title_zh": "地理分布｜臺東市",
+      "summary_zh": "臺東市與卑南鄉被原民會英文頁描述為今日卑南族中心區域，主站地圖應以此作為主要分布基準。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_taitung_beinan_center"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_611f5244c6df45dd",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-chenggong-taimali-settlement",
+      "title_zh": "地理分布｜成功鎮",
+      "summary_zh": "原民會英文頁也提到部分卑南族人定居成功鎮與太麻里鄉，主站可列為延伸居住摘要而非十社核心。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_chenggong_taimali_settlement"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e30e852763c646df",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-major-tribes-source-list",
+      "title_zh": "部落資料｜十社",
+      "summary_zh": "原民會英文頁列出知本、建和、南王、寶桑、利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等主要部落；主站應保留羅馬拼寫與中文名對照。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_major_tribes_source_list"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_36b3831d59053342",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-urban-migration-context",
+      "title_zh": "族群現況｜城市發展",
+      "summary_zh": "原民會英文頁提到許多卑南族人離開東部到城市發展，主站社群功能可支持離鄉族人的連結情境。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_urban_migration_context"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5aa43ffcb673a92e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-millet-agriculture-origin",
+      "title_zh": "生業｜小米",
+      "summary_zh": "公開資料指出卑南族農業以小米開始；主站生業內容應把小米放在農業史摘要核心。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_millet_agriculture_origin"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_1370ca8da179ca70",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-rice-technology-pinadray",
+      "title_zh": "生業｜稻作",
+      "summary_zh": "原民會英文頁將稻作技術與設備引入和 Pinadray 時期農業高峰相連；平台應保存為來源摘要並避免過度推論。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_rice_technology_pinadray"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_584d908c1e56e734",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-cash-crop-shift-1960s",
+      "title_zh": "生業｜1960年代",
+      "summary_zh": "1960 年代以後轉向釋迦、檳榔等經濟作物的描述，可作為近現代生業變遷摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_cash_crop_shift_1960s"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_184016c5b4bd04cc",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-food-staple-group",
+      "title_zh": "飲食｜飲食",
+      "summary_zh": "傳統主食可摘要為小米、旱稻、甘藷與芋頭；主站飲食卡需與來源對應。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_food_staple_group"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2dd85b340b91e17c",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-food-protein-sources",
+      "title_zh": "飲食｜狩獵",
+      "summary_zh": "狩獵肉類、漁撈魚貝類在公開介紹中被列為蛋白質來源；主站只能做飲食史摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_food_protein_sources"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f4d582e22be33070",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-shellflower-leaf-food",
+      "title_zh": "飲食｜月桃",
+      "summary_zh": "月桃葉包裹糯米與鹹豬肉的食物描述可作為節慶飲食公開摘要，需保留 Alpinia zerumbet 學名。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_shellflower_leaf_food"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_47d962459cb50a16",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-betel-daily-and-ritual",
+      "title_zh": "飲食與祭儀摘要｜檳榔",
+      "summary_zh": "檳榔在公開介紹中兼具日常生活與祭儀供品意義；平台應以摘要呈現，不擴展祭儀操作。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_betel_daily_and_ritual"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bfe2fef867f2dabd",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-clothing-flax-material",
+      "title_zh": "服飾｜麻",
+      "summary_zh": "原民會英文頁提到卑南族以麻製作衣物；服飾知識卡應將材料、色彩、紋樣分欄。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_clothing_flax_material"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_432c2bc97c19f096",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-clothing-color-system",
+      "title_zh": "服飾｜紅黃綠",
+      "summary_zh": "紅、黃、綠與黑白菱形、十字繡等元素可作公開服飾摘要，適合主站設計系統參考。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_clothing_color_system"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_30499ac4ce52c15e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-clothing-social-status",
+      "title_zh": "服飾與社會｜服飾",
+      "summary_zh": "服飾在公開介紹中被描述為辨識性別、年齡與社會關係的方式；AI 文章不可把服飾只當裝飾。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_clothing_social_status"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b95a73abeadde63b",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-wreath-social-relation-metric",
+      "title_zh": "服飾與社會｜花環",
+      "summary_zh": "花環在公開介紹中與社群關係和友誼展現相關，可作為公開文化導覽摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_wreath_social_relation_metric"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d69aa7edf732816c",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-weaving-techniques-summary",
+      "title_zh": "工藝｜藤竹編",
+      "summary_zh": "藤竹編採用 entrelac、herringbone、hexagonal 等技法的描述可作工藝摘要；需避免自行翻譯成未查證族語術語。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_weaving_techniques_summary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a882bd84076aea62",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-weaving-tools-daily-life",
+      "title_zh": "工藝｜藤籃",
+      "summary_zh": "藤籃、藤袋、背籃、竹杯、煙斗、漁獵陷阱等可作日常器物索引候選，需逐項來源化。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_weaving_tools_daily_life"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_af6f840bde94f08e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-architecture-public-private",
+      "title_zh": "建築｜建築",
+      "summary_zh": "卑南族建築在公開介紹中分為公共與私人用途；主站資料模型可建立 public/private building_type。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_architecture_public_private"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_0485d7667e2857b9",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-family-house-layout-summary",
+      "title_zh": "建築｜家屋",
+      "summary_zh": "家屋為長方形、茅草屋頂、竹壁、長邊開門、短邊開窗等描述可作建築公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_family_house_layout_summary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e9dc5afe286b7879",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-house-size-status-guardrail",
+      "title_zh": "建築與社會｜家屋大小",
+      "summary_zh": "公開介紹提到家屋大小可反映社會地位；主站應只保留摘要，不對現代家庭做推測。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_house_size_status_guardrail"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_48cde8caf5b4e79b",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-dakuvan-age-range",
+      "title_zh": "會所制度｜Dakuvan",
+      "summary_zh": "Dakuvan 少年會所與 12–13 歲進入的公開描述可作年齡階級摘要，但不得生成訓練教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_dakuvan_age_range"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e8206ec7d3384abd",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-palakuan-age-range",
+      "title_zh": "會所制度｜Palakuan",
+      "summary_zh": "Palakuan 成年會所與 17–18 歲後續訓練的公開描述可作摘要，但不得把會所訓練轉成操作課程。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_palakuan_age_range"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d7b3ac551deb7406",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-music-poetic-lyrics",
+      "title_zh": "音樂歌謠｜音樂",
+      "summary_zh": "公開介紹說卑南族音樂節奏清楚、歌詞多敘事且富詩意；主站可作音樂導覽摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_music_poetic_lyrics"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9dfd9793463b443d",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-music-ritual-song-status-guardrail",
+      "title_zh": "音樂歌謠｜祭儀歌",
+      "summary_zh": "祭儀歌在公開介紹中依工作與身分分類，主站只做分類摘要，不提供祭儀歌詞或操作語境。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_music_ritual_song_status_guardrail"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_54073308442dc240",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-music-modern-artists-index",
+      "title_zh": "音樂歌謠｜音樂人",
+      "summary_zh": "公開介紹列出多位具影響力的卑南族音樂人；主站可建人物候選索引，但人物頁需另查來源與肖像授權。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_music_modern_artists_index"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e86768f42796607e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-dance-status-steps-guardrail",
+      "title_zh": "舞蹈｜舞蹈",
+      "summary_zh": "舞蹈公開介紹與性別、年齡及社會身分相關；平台只能做摘要，不生成儀式舞步教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_dance_status_steps_guardrail"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_7285f2cd99b063e6",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-language-north-south-influences",
+      "title_zh": "語言｜卑南語",
+      "summary_zh": "原民會英文頁提到卑南語因部落與位置不同而有差異，南部知本受排灣/魯凱語影響，北部受阿美語發音影響。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_language_north_south_influences"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_49748a69cc3e1358",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-language-taiwanese-contact",
+      "title_zh": "語言｜語言接觸",
+      "summary_zh": "因與漢人頻繁接觸，公開介紹也提到族人會說福佬話/臺語；主站語言頁可納入語言接觸摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_language_taiwanese_contact"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_125a85f6a64a8f99",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-social-roles-tripartite",
+      "title_zh": "社會角色｜政治領袖",
+      "summary_zh": "政治領袖、祭師與巫師在公開介紹中分屬不同專業角色；主站應分欄保存，不混成單一頭目概念。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_social_roles_tripartite"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_05dc0763d7695c1e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-matrilineality-transition",
+      "title_zh": "親屬制度｜母系",
+      "summary_zh": "公開介紹提到母系繼承與現代轉變；平台可建立「傳統／現代變遷」雙欄，不把任一描述絕對化。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_matrilineality_transition"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_f78cf704e7715f7e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-lineage-clan-taxonomy",
+      "title_zh": "親屬制度｜lineage",
+      "summary_zh": "Big Lineal Clan、Small Lineal Clan、Split Family 等公開描述可作親屬分類摘要，需保留英文術語來源。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_lineage_clan_taxonomy"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_da8b9441621e0982",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-zhiben-clan-example",
+      "title_zh": "親屬制度｜知本",
+      "summary_zh": "知本村三個 clan 共享祖先、chief 與會所的例子可作社會組織摘要，但需標為知本例子，不外推到所有部落。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_zhiben_clan_example"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_272a0e6a40f3ca32",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-cultural-revival-1991",
+      "title_zh": "文化復振｜1991",
+      "summary_zh": "1991 年知本、初鹿、南王等地建立新會所、青年會與文化協會的描述，可作文化復振時間軸候選。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_cultural_revival_1991"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_96ef2f1114842673",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-ritual-taxonomy-two-types",
+      "title_zh": "祭儀公開摘要｜農業祭儀",
+      "summary_zh": "公開資料將祭儀概分為農業祭儀與生命祭儀；平台應將其作為分類架構，而非程序說明。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_ritual_taxonomy_two_types"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3b4d34c06969b201",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-ritual-calendar-months",
+      "title_zh": "祭儀公開摘要｜祭儀月曆",
+      "summary_zh": "公開頁列出三月 Mugamut、四月 Ruvuwa’an、七月 Masarut、十二月年祭等月曆摘要，主站可做年表卡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_ritual_calendar_months"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_715b6fbb2a43791e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-joint-annual-ritual-1982",
+      "title_zh": "祭儀公開摘要｜1982",
+      "summary_zh": "1982 年後聯合年祭成為跨村社交流與族群情感凝聚的重要活動，主站可作公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v34_joint_annual_ritual_1982"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a433f64a7d47cce5",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v34-v34-beinan-site-negative-not-source",
+      "title_zh": "禁止關聯｜禁止關聯",
+      "summary_zh": "卑南文化遺址、Beinan Site、Peinan Site 只能作負向消歧，不能作卑南族文化知識來源、AI source packet 或 related content。",
+      "source_ids": [
+        "internal_forbidden_relation_policy_v34"
+      ],
+      "claim_ids": [
+        "v34_beinan_site_negative_not_source"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_0e4d3770466c20ea",
+      "forbidden_relation_checked": true
+    }
+  ]
+}

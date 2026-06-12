@@ -1,0 +1,22 @@
+{
+  "version": "v29",
+  "title": "VPS backup restore checksum drill",
+  "script": "deploy/vps-backup-restore-checksum-v29.sh",
+  "target_db_rule": "Restore into pinuyumayan_kb_restore or staging-only DB; never overwrite production.",
+  "checks": [
+    "critical table row count",
+    "checksum manifest",
+    "backup file sha256",
+    "restore DB isolation",
+    "operator confirmation"
+  ],
+  "critical_tables": [
+    "admin_users_v26",
+    "article_review_transactions_v26",
+    "kb_facts",
+    "content_items",
+    "puyuma_corpus_entries",
+    "search_index_documents_v27",
+    "full_corpus_execution_runs_v29"
+  ]
+}

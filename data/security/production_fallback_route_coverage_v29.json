@@ -1,0 +1,20 @@
+{
+  "version": "v29",
+  "policy": "Every DB-backed route must explicitly declare fallback behavior. Production DB mode must block silent static fallback.",
+  "covered_route_groups": [
+    "/api/public/knowledge/*",
+    "/api/public/content/*",
+    "/api/public/true-knowledge/*",
+    "/api/public/pronunciation/*",
+    "/api/admin/*",
+    "/api/internal/*",
+    "/api/ops/*"
+  ],
+  "coverage_result": "spec_ready_needs_runtime_route_audit",
+  "required_env": {
+    "NODE_ENV": "production",
+    "KNOWLEDGE_DATA_MODE": "db",
+    "DISABLE_PRODUCTION_STATIC_FALLBACK": "true"
+  },
+  "audit_table": "fallback_route_coverage_v29"
+}

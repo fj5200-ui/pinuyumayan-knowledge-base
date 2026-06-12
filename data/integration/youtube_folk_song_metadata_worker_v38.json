@@ -1,0 +1,42 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "description_zh": "YouTube/來源 metadata worker contract；只抓 metadata，不下載音訊/影片。",
+  "input": {
+    "query": "string",
+    "source_scope": [
+      "youtube",
+      "taiwan_music_institute",
+      "label_or_award_metadata"
+    ],
+    "max_results": "number"
+  },
+  "output_fields": [
+    "source_url",
+    "video_id",
+    "title",
+    "channel",
+    "published_at",
+    "duration",
+    "thumbnail_url",
+    "description_excerpt_max_200",
+    "rights_status",
+    "candidate_id",
+    "blocked_terms_found"
+  ],
+  "forbidden_actions": [
+    "download_audio",
+    "download_video",
+    "scrape_full_lyrics",
+    "train_model_from_audio"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ]
+}

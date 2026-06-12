@@ -1,0 +1,57 @@
+{
+  "version": "v32",
+  "dashboard": "Admin live dashboard binding map",
+  "panels": [
+    {
+      "id": "dry_run",
+      "title": "VPS dry-run evidence",
+      "api": "/api/ops/vps/v32/dry-run-backfill-plan",
+      "status_source": "vps_dry_run_backfill_runs_v32"
+    },
+    {
+      "id": "main_site_migration",
+      "title": "Main-site migration and secret scan",
+      "api": "/api/ops/main-site/v32/migration-secret-scan",
+      "status_source": "main_site_migration_evidence_v32"
+    },
+    {
+      "id": "hmac",
+      "title": "Internal API HMAC enforcement",
+      "api": "/api/ops/security/v32/hmac-enforcement",
+      "status_source": "hmac_enforcement_reports_v32"
+    },
+    {
+      "id": "corpus",
+      "title": "Full corpus backfill",
+      "api": "/api/admin/corpus/v32/full-corpus-backfill",
+      "status_source": "full_corpus_backfill_reports_v32"
+    },
+    {
+      "id": "search_seo",
+      "title": "Search and SEO validation",
+      "api": "/api/ops/search-seo/v32/validation-suite",
+      "status_source": "search_seo_validation_runs_v32"
+    },
+    {
+      "id": "fallback",
+      "title": "Production fallback enforcement",
+      "api": "/api/ops/fallback/v32/enforcement",
+      "status_source": "production_fallback_enforcement_events_v32"
+    }
+  ],
+  "display_rules": {
+    "red": [
+      "blocker",
+      "failed",
+      "missing_evidence"
+    ],
+    "yellow": [
+      "report_only",
+      "candidate_needs_review"
+    ],
+    "green": [
+      "passed",
+      "verified"
+    ]
+  }
+}

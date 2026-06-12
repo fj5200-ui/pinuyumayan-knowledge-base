@@ -1,0 +1,190 @@
+{
+  "version": "v35",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "count": 5,
+  "packets": [
+    {
+      "packet_id": "v35-music_overview",
+      "title_zh": "卑南族歌謠與樂舞入門",
+      "theme": "music_overview",
+      "claim_ids": [
+        "v35_music_cip_music_dance_public",
+        "v35_song_type_traditional_old_tune",
+        "v35_song_type_ritual_sensitive",
+        "v35_song_type_community_song",
+        "v35_song_metadata_schema",
+        "v35_youtube_channel_review",
+        "v35_youtube_no_audio_download",
+        "v35_youtube_embed_policy",
+        "v35_song_no_lyrics_policy",
+        "v35_music_ai_article_guardrail",
+        "v35_music_search_expand_queries",
+        "v35_music_public_cards_only_verified"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current",
+        "internal_music_rights_policy_v35"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v35-lu_senbao",
+      "title_zh": "陸森寶與卑南族歌謠傳承候選",
+      "theme": "lu_senbao",
+      "claim_ids": [
+        "v35_lu_senbao_music_educator_candidate",
+        "v35_lu_senbao_works_catalog_candidate",
+        "v35_lu_senbao_puyuma_classical_music_candidate",
+        "v35_lu_senbao_heritage_article_blueprint",
+        "v35_lu_senbao_youtube_query_seed"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v35-samingad",
+      "title_zh": "紀曉君/Samingad 與古謠傳唱候選",
+      "theme": "samingad",
+      "claim_ids": [
+        "v35_samingad_puyuma_old_tunes_candidate",
+        "v35_samingad_grandmother_transmission_candidate",
+        "v35_samingad_youtube_candidate",
+        "v35_samingad_article_blueprint",
+        "v35_youtube_exact_samingad_shenhua_candidate"
+      ],
+      "source_ids": [
+        "wiki_ki_samingad_candidate",
+        "youtube_metadata_candidate_v35"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v35-damalagaw",
+      "title_zh": "Damalagaw 大巴六九部落傳唱歌謠候選",
+      "theme": "damalagaw",
+      "claim_ids": [
+        "v35_damalagaw_album_candidate",
+        "v35_damalagaw_track_metadata_only",
+        "v35_damalagaw_youtube_query_seed",
+        "v35_damalagaw_community_context_candidate"
+      ],
+      "source_ids": [
+        "cip_community_candidates_v35",
+        "wiki_damalagaw_album_candidate"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    },
+    {
+      "packet_id": "v35-youtube_search",
+      "title_zh": "YouTube 歌謠/古調候選搜尋包",
+      "theme": "youtube_search",
+      "claim_ids": [
+        "v35_lu_senbao_youtube_query_seed",
+        "v35_damalagaw_youtube_query_seed",
+        "v35_youtube_query_01",
+        "v35_youtube_query_02",
+        "v35_youtube_query_03",
+        "v35_youtube_query_04",
+        "v35_youtube_query_05",
+        "v35_youtube_query_06"
+      ],
+      "source_ids": [
+        "cip_community_candidates_v35",
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_damalagaw_album_candidate",
+        "wiki_lu_senbao_music_candidate",
+        "youtube_metadata_candidate_v35"
+      ],
+      "allowed_ai_use": "draft_grounding_metadata_only",
+      "prohibited": [
+        "不得生成或改寫歌詞",
+        "不得宣稱候選影片已驗證",
+        "不得引用卑南文化遺址作為來源",
+        "不得下載/重製 YouTube 音源"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "卑南考古遺址",
+        "卑南文化公園",
+        "卑南遺址公園",
+        "Peinan Site",
+        "Beinan Site",
+        "Peinan Archaeological Site"
+      ],
+      "review_required": true
+    }
+  ]
+}

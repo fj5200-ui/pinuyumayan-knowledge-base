@@ -1,0 +1,36 @@
+{
+  "version": "v42",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v42",
+  "priorities": [
+    {
+      "priority": 1,
+      "direction": "VPS 真實 YouTube metadata run",
+      "detail_zh": "設定 YOUTUBE_API_KEY，在 VPS 跑 v41 worker，將 video metadata 寫入 music_youtube_metadata_candidates_v41。"
+    },
+    {
+      "priority": 2,
+      "direction": "TTS/STT 授權資料審核",
+      "detail_zh": "把候選音檔逐筆補 speaker、dialect、transcript alignment、license_status，產生 train/dev/test split。"
+    },
+    {
+      "priority": 3,
+      "direction": "後台審核 UI 真串 DB",
+      "detail_zh": "將 MusicTtsSttOpsDashboard 改為登入後台頁，串 music_review_transactions_v41。"
+    },
+    {
+      "priority": 4,
+      "direction": "音樂 FULLTEXT 查詢 API",
+      "detail_zh": "新增 /api/public/search/music，支援 artist/community/work_type/rights/sensitivity facets。"
+    },
+    {
+      "priority": 5,
+      "direction": "TTS/STT 評估報告",
+      "detail_zh": "新增 MOS/WER/CER 上傳與 dashboard，不通過品質門檻不得公開。"
+    },
+    {
+      "priority": 6,
+      "direction": "音樂權威來源實抓",
+      "detail_zh": "臺灣音樂館、國家文化記憶庫、金曲獎 metadata 實抓候選；不自動公開。"
+    }
+  ]
+}

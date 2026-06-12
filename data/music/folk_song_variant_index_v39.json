@@ -1,0 +1,87 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T12:35:00+08:00",
+  "description_zh": "v39 歌謠/古調異名、版本、來源權威與權利狀態索引。",
+  "rules": [
+    "同一作品不同演唱/錄音/YouTube 版本，只建 variant，不新建 canonical song。",
+    "YouTube metadata 不等於授權可使用；只保存 videoId/title/channel/duration/thumbnail。",
+    "祭儀、巫師、祖靈、除喪相關項目只允許公開摘要與後台審核欄位。",
+    "AI Composer 不得輸出完整歌詞或仿古調歌詞。"
+  ],
+  "variant_groups": [
+    {
+      "group_id": "v39_variant_lu_works",
+      "canonical_scope": "陸森寶作品群",
+      "canonical_titles": [
+        "卑南山",
+        "散步歌",
+        "頌祭祖先",
+        "美麗的稻穗",
+        "懷念年祭"
+      ],
+      "variant_policy": "same_work_different_version",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "review_status": "needs_authoritative_review"
+    },
+    {
+      "group_id": "v39_variant_chenshi_works",
+      "canonical_scope": "陳實採集/創作/傳唱作品群",
+      "canonical_titles": [
+        "待權威來源補欄"
+      ],
+      "variant_policy": "collector_composer_lineage",
+      "source_ids": [
+        "wiki_chenshi_music_educator_candidate"
+      ],
+      "review_status": "candidate_only"
+    },
+    {
+      "group_id": "v39_variant_samingad_old_tunes",
+      "canonical_scope": "紀曉君/Samingad 古調演唱群",
+      "canonical_titles": [
+        "專輯古調",
+        "公開演出",
+        "YouTube metadata 候選"
+      ],
+      "variant_policy": "performance_metadata_only",
+      "source_ids": [
+        "wiki_ji_xiaojun_samingad_candidate",
+        "youtube_metadata_candidate"
+      ],
+      "review_status": "needs_album_or_label_review"
+    },
+    {
+      "group_id": "v39_variant_damalagaw_tracks",
+      "canonical_scope": "Damalagaw 大巴六九傳唱歌謠曲目群",
+      "canonical_titles": [
+        "16 首曲目 metadata",
+        "敏感曲目邊界",
+        "獎項/製作 credit"
+      ],
+      "variant_policy": "album_track_metadata_only",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "needs_rights_and_community_review"
+    },
+    {
+      "group_id": "v39_variant_tmi_archive_recordings",
+      "canonical_scope": "臺灣音樂館卑南族館藏錄音群",
+      "canonical_titles": [
+        "知本少年年祭之歌",
+        "南王童謠",
+        "Mangednged",
+        "賓朗巫師之歌",
+        "陸森寶惜別晚會留言及歌聲"
+      ],
+      "variant_policy": "archive_metadata_only",
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "review_status": "needs_archive_rights_review"
+    }
+  ]
+}

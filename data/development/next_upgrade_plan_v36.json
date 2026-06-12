@@ -1,0 +1,57 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "title_zh": "v36：YouTube Data API 實際擷取 + 音樂候選審核 UI + DB transaction",
+  "priorities": [
+    {
+      "priority": 1,
+      "direction": "YouTube Data API worker",
+      "items": [
+        "用 API key 擷取 video metadata",
+        "寫入 music_youtube_source_candidates_v35",
+        "不下載音訊/影片"
+      ]
+    },
+    {
+      "priority": 2,
+      "direction": "後台音樂審核 UI",
+      "items": [
+        "顯示影片縮圖/標題/頻道/URL",
+        "標示是否官方/部落/個人上傳",
+        "approve/reject/request_source"
+      ]
+    },
+    {
+      "priority": 3,
+      "direction": "音樂搜尋索引",
+      "items": [
+        "把 v35 public music documents 寫入 MySQL FULLTEXT",
+        "新增 music facet"
+      ]
+    },
+    {
+      "priority": 4,
+      "direction": "來源權威補強",
+      "items": [
+        "補臺灣音樂館、國家文化記憶庫、金曲獎資料庫、唱片發行資料"
+      ]
+    },
+    {
+      "priority": 5,
+      "direction": "AI Composer 音樂防護",
+      "items": [
+        "阻擋 AI 生成仿古調歌詞",
+        "草稿必須帶 claim_ids/source_ids",
+        "同主題冷卻與去重"
+      ]
+    },
+    {
+      "priority": 6,
+      "direction": "千筆語料",
+      "items": [
+        "VPS staging 實跑 full corpus",
+        "語詞與歌謠分庫，避免混用 TTS/歌唱資料"
+      ]
+    }
+  ]
+}

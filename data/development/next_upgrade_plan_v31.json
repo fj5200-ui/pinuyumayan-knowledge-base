@@ -1,0 +1,41 @@
+{
+  "version": "v31",
+  "name": "Post-cutover Implementation / 上線後穩定化版",
+  "priorities": [
+    {
+      "priority": 1,
+      "title": "Production cutover dry-run",
+      "work": "在 VPS staging 跑 v30 checklist，產生 readiness report，未通過項目阻擋正式切換"
+    },
+    {
+      "priority": 2,
+      "title": "主站實際搬移驗收",
+      "work": "把 webapp/lib 和 app/api routes 搬到主站，測 /api/kb/health、/api/ai/compose、draft validate"
+    },
+    {
+      "priority": 3,
+      "title": "HMAC 全 internal API 實際攔截",
+      "work": "移除允許未簽章 internal route 的例外，nonce 寫 DB/Redis，失敗寫 audit"
+    },
+    {
+      "priority": 4,
+      "title": "VPS 千筆語料實跑",
+      "work": "在 VPS staging 跑 v29/v30 corpus pipeline，回填 acceptance report"
+    },
+    {
+      "priority": 5,
+      "title": "後台 live dashboard 真串",
+      "work": "串 admin auth、review action、HMAC failures、full corpus runs、search quality reports"
+    },
+    {
+      "priority": 6,
+      "title": "多來源候選實抓",
+      "work": "TIPP、文化部、臺東、博物館來源只進 candidate，不自動公開，並延續卑南遺址禁止關聯"
+    },
+    {
+      "priority": 7,
+      "title": "搜尋品質調整",
+      "work": "測十社、族語詞、祭儀公開摘要、真人音檔搜尋，建立 zero-result review workflow"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "v43",
+  "title": "TTS/STT live training workspace and music search DB implementation",
+  "items": [
+    {
+      "priority": 1,
+      "title": "VPS 真實授權審核",
+      "description": "補 license、speaker consent、alignment，產生 train_ready report。"
+    },
+    {
+      "priority": 2,
+      "title": "STT/TTS 模型實驗區",
+      "description": "建立 local training workspace；模型不自動公開。"
+    },
+    {
+      "priority": 3,
+      "title": "音樂搜尋 live DB",
+      "description": "/api/public/search/music 改讀 MySQL FULLTEXT 真表。"
+    },
+    {
+      "priority": 4,
+      "title": "權威來源實抓",
+      "description": "臺灣音樂館、國家文化記憶庫、金曲獎 metadata 寫入候選表。"
+    },
+    {
+      "priority": 5,
+      "title": "後台評估 UI",
+      "description": "MOS/WER/CER、dataset split、release gate 視覺化。"
+    },
+    {
+      "priority": 6,
+      "title": "主站整合",
+      "description": "歌謠/歌曲 metadata 頁與 TTS/STT 說明頁。"
+    }
+  ]
+}

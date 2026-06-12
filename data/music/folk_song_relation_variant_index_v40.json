@@ -1,0 +1,70 @@
+{
+  "version": "v40",
+  "generated_at": "2026-06-12T13:20:00+08:00",
+  "description_zh": "v40 歌謠/歌曲/古調版本、人物、部落、來源關係索引。",
+  "rules": [
+    "同一曲目不同演唱/錄音/YouTube 版本只建 variant，不重複建 canonical song。",
+    "YouTube metadata 不代表可授權使用音訊。",
+    "祭儀、巫師、除喪、祖靈相關內容只允許 metadata 公開摘要。",
+    "AI 不得生成仿古調歌詞或完整歌詞。"
+  ],
+  "relation_groups": [
+    {
+      "group_id": "v40_family_purepurepuan",
+      "title": "Purepurepuan / 南王家族歌謠傳唱網絡",
+      "people": [
+        "曾修花",
+        "紀曉君/Samingad",
+        "家家/Auli",
+        "陳建年/Pau-dull"
+      ],
+      "source_ids": [
+        "wiki_jiajia_candidate",
+        "wiki_ji_xiaojun_samingad_candidate",
+        "wiki_chen_jiannian_candidate"
+      ],
+      "review_status": "candidate_needs_authoritative_review"
+    },
+    {
+      "group_id": "v40_tamalakaw_damalagaw",
+      "title": "Tamalakaw / 大巴六九部落與 Damalagaw 專輯曲目關係",
+      "people": [
+        "張惠妹",
+        "張王玉妹",
+        "大巴六九耆老/族人候選"
+      ],
+      "source_ids": [
+        "wiki_tamalakaw_community_candidate",
+        "wiki_damalagaw_album_candidate"
+      ],
+      "review_status": "candidate_needs_rights_and_community_review"
+    },
+    {
+      "group_id": "v40_lu_senbao_work_groups",
+      "title": "陸森寶作品群：農作、年祭、教會、家族與館藏版本",
+      "people": [
+        "陸森寶",
+        "陳建年"
+      ],
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "review_status": "candidate_needs_archive_review"
+    },
+    {
+      "group_id": "v40_tmi_archive_sensitive",
+      "title": "臺灣音樂館卑南族館藏敏感分級群",
+      "items": [
+        "知本少年年祭之歌",
+        "南王童謠",
+        "Mangednged",
+        "賓朗巫師之歌"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "review_status": "rights_and_sensitivity_review_required"
+    }
+  ]
+}

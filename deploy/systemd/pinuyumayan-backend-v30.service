@@ -1,0 +1,14 @@
+[Unit]
+Description=Pinuyumayan Backend Knowledge DB API v30
+After=network.target mysql.service
+[Service]
+Type=simple
+WorkingDirectory=/opt/pinuyumayan-backend-database/backend
+EnvironmentFile=/opt/pinuyumayan-backend-database/.env
+ExecStart=/usr/bin/npm run start
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+[Install]
+WantedBy=multi-user.target

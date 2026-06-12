@@ -1,0 +1,857 @@
+{
+  "version": "v40",
+  "generated_at": "2026-06-12T13:20:00+08:00",
+  "count": 50,
+  "items": [
+    {
+      "review_id": "review_v40_42e95fd02c13",
+      "song_id": "v40_42e95fd02c13",
+      "title_zh": "家家 / Auli Purepurepuan 南王家族音樂脈絡候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_affb14937ff4",
+      "song_id": "v40_affb14937ff4",
+      "title_zh": "昊恩家家金曲演唱組合獎 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_2e430f59314f",
+      "song_id": "v40_2e430f59314f",
+      "title_zh": "家家個人專輯與南王家族音樂脈絡補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_ad968534bee2",
+      "song_id": "v40_ad968534bee2",
+      "title_zh": "Purepurepuan 家族古調/歌謠傳唱 lineage 候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_68e937774aed",
+      "song_id": "v40_68e937774aed",
+      "title_zh": "家家相關歌曲只保存 metadata 與來源，不保存歌詞規則",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_e269febadf78",
+      "song_id": "v40_e269febadf78",
+      "title_zh": "Damalagaw 大巴六九 張王玉妹詞曲/創作 credit 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_e312504ea49b",
+      "song_id": "v40_e312504ea49b",
+      "title_zh": "Damalagaw 大巴六九 陳柔錚製作 credit 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_6a6760ffcc1a",
+      "song_id": "v40_6a6760ffcc1a",
+      "title_zh": "Damalagaw 大巴六九 陳繁雄創作/歌舞泰安村 credit 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_996cabd47158",
+      "song_id": "v40_996cabd47158",
+      "title_zh": "Damalagaw 大巴六九 張惠妹企劃統籌 metadata 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d63364a982c2",
+      "song_id": "v40_d63364a982c2",
+      "title_zh": "Damalagaw 大巴六九 金曲獎最佳原住民語專輯入圍 metadata 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_307cb45d098c",
+      "song_id": "v40_307cb45d098c",
+      "title_zh": "Damalagaw 大巴六九 華語金曲獎年度最佳合輯 metadata 補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_3fc4fd0e9f42",
+      "song_id": "v40_3fc4fd0e9f42",
+      "title_zh": "Damalagaw 大巴六九 部落耆老創作分類補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_83955a8342eb",
+      "song_id": "v40_83955a8342eb",
+      "title_zh": "Damalagaw 大巴六九 古謠/傳唱歌謠/即興填詞分類補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d60f26d093aa",
+      "song_id": "v40_d60f26d093aa",
+      "title_zh": "Damalagaw 大巴六九 除喪版敏感分級補欄",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_81d28029098f",
+      "song_id": "v40_81d28029098f",
+      "title_zh": "Damalagaw 大巴六九 巴拉冠關聯曲目敏感摘要補欄",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_336aa902b9d4",
+      "song_id": "v40_336aa902b9d4",
+      "title_zh": "陸森寶教會歌曲作品群 metadata 補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_2237a4ddd364",
+      "song_id": "v40_2237a4ddd364",
+      "title_zh": "陸森寶農作與稻作意象歌曲群 metadata 補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_4bbb79e75674",
+      "song_id": "v40_4bbb79e75674",
+      "title_zh": "陸森寶年祭/祖先/海祭相關作品敏感摘要補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_80e5db8c3323",
+      "song_id": "v40_80e5db8c3323",
+      "title_zh": "陸森寶館藏錄音與惜別晚會 metadata 補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_136d018261d5",
+      "song_id": "v40_136d018261d5",
+      "title_zh": "陸森寶作品年代與版本差異校對任務候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_07ded5426e48",
+      "song_id": "v40_07ded5426e48",
+      "title_zh": "陸森寶作品部落演出版/合唱版 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_5d46ea677b92",
+      "song_id": "v40_5d46ea677b92",
+      "title_zh": "紀曉君古調專輯 metadata：不保存曲詞、不保存音源",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_75ef96aed162",
+      "song_id": "v40_75ef96aed162",
+      "title_zh": "曾修花傳唱教學脈絡補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_82f4923d0569",
+      "song_id": "v40_82f4923d0569",
+      "title_zh": "陳建年《海洋》獎項與南王音樂脈絡 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_dd3c3124508e",
+      "song_id": "v40_dd3c3124508e",
+      "title_zh": "陳建年製作《南王姐妹花同名專輯》獎項 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_8df4218a5bc8",
+      "song_id": "v40_8df4218a5bc8",
+      "title_zh": "陳永龍《日光‧雨中》《海岸線》《砂礫》專輯 metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_8eac741c362d",
+      "song_id": "v40_8eac741c362d",
+      "title_zh": "陳永龍與李泰祥、郭英男、陳建年、紀曉君等共同演出脈絡候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_ac065222d6ae",
+      "song_id": "v40_ac065222d6ae",
+      "title_zh": "黃美珍《大巴六九 / Tamalakao》故鄉情感與 MV metadata 候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_4e46bfb8046b",
+      "song_id": "v40_4e46bfb8046b",
+      "title_zh": "Tamalakaw / 大巴六九部落背景與歌曲資料關聯候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d6cd3aa44372",
+      "song_id": "v40_d6cd3aa44372",
+      "title_zh": "臺灣音樂館「知本卑南族少年年祭之歌」metadata 補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_3cda00c39643",
+      "song_id": "v40_3cda00c39643",
+      "title_zh": "臺灣音樂館「南王卑南族童謠」metadata 補欄候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d9a12e25bf38",
+      "song_id": "v40_d9a12e25bf38",
+      "title_zh": "臺灣音樂館「Mangednged 頌讚之歌」metadata 補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_efc4dcac6726",
+      "song_id": "v40_efc4dcac6726",
+      "title_zh": "臺灣音樂館「賓朗村巫師之歌」敏感摘要補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_c218fc5f38d1",
+      "song_id": "v40_c218fc5f38d1",
+      "title_zh": "臺灣音樂館陸森寶聲音/留言類館藏 metadata 補欄候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_800f90496581",
+      "song_id": "v40_800f90496581",
+      "title_zh": "臺灣音樂館館藏錄音權利審核模板候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_ff8d418fb39a",
+      "song_id": "v40_ff8d418fb39a",
+      "title_zh": "YouTube metadata worker：陸森寶作品搜尋種子補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_18b120f1dabf",
+      "song_id": "v40_18b120f1dabf",
+      "title_zh": "YouTube metadata worker：紀曉君古調搜尋種子補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_5247a29ee3fc",
+      "song_id": "v40_5247a29ee3fc",
+      "title_zh": "YouTube metadata worker：Damalagaw 大巴六九曲目搜尋種子補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d7994cfd575a",
+      "song_id": "v40_d7994cfd575a",
+      "title_zh": "YouTube metadata worker：南王部落歌謠搜尋種子補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_2e160d28738a",
+      "song_id": "v40_2e160d28738a",
+      "title_zh": "YouTube metadata worker：Tamalakaw / 大巴六九歌謠搜尋種子補欄",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_aecfb4bc44e8",
+      "song_id": "v40_aecfb4bc44e8",
+      "title_zh": "YouTube metadata worker：官方頻道/非官方上傳標記規則",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_9894572f1174",
+      "song_id": "v40_9894572f1174",
+      "title_zh": "YouTube metadata worker：縮圖、時長、發布日欄位規則",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_d2bf34f4b8ce",
+      "song_id": "v40_d2bf34f4b8ce",
+      "title_zh": "YouTube metadata worker：禁止下載音訊/影片 guardrail",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_9821db299b2a",
+      "song_id": "v40_9821db299b2a",
+      "title_zh": "音樂 FULLTEXT artist facet 寫入任務候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_1c1290efc0c8",
+      "song_id": "v40_1c1290efc0c8",
+      "title_zh": "音樂 FULLTEXT community facet 寫入任務候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_046501296660",
+      "song_id": "v40_046501296660",
+      "title_zh": "音樂 FULLTEXT rights_status facet 寫入任務候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_f9ee0b6ee0b7",
+      "song_id": "v40_f9ee0b6ee0b7",
+      "title_zh": "音樂 FULLTEXT sensitivity facet 寫入任務候選",
+      "priority": "high",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_b3c11f9eb74d",
+      "song_id": "v40_b3c11f9eb74d",
+      "title_zh": "AI Composer 音樂文章必帶 claim_ids/source_ids 檢查候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_9ddd53c5310a",
+      "song_id": "v40_9ddd53c5310a",
+      "title_zh": "music ingestion/review/youtube report 真寫 VPS DB 任務候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    },
+    {
+      "review_id": "review_v40_f1845bb1a868",
+      "song_id": "v40_f1845bb1a868",
+      "title_zh": "歌謠資料卑南文化遺址禁止關聯測試候選",
+      "priority": "normal",
+      "checks_required": [
+        "source_url",
+        "rights_status",
+        "official_channel_or_authority",
+        "community_review",
+        "no_lyrics",
+        "no_audio_download",
+        "forbidden_relation_check",
+        "sensitivity_label"
+      ],
+      "status": "pending"
+    }
+  ]
+}

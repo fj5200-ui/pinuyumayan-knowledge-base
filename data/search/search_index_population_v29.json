@@ -1,0 +1,29 @@
+{
+  "version": "v29",
+  "target_table": "search_index_documents_v27",
+  "sources": [
+    "kb_facts",
+    "content_items",
+    "puyuma_corpus_entries",
+    "puyuma_pronunciation_assets_v16",
+    "approved_articles"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "quality_gates": [
+    "only public/approved release channel",
+    "source_id required",
+    "no blocked license",
+    "no forbidden relation",
+    "dedupe document_key"
+  ],
+  "builder": "scripts/build_search_index_population_v29.py",
+  "internal_api": "POST /api/internal/search/v29/populate-db"
+}

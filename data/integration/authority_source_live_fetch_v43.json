@@ -1,0 +1,31 @@
+{
+  "version": "v43",
+  "mode": "candidate_only",
+  "adapters": [
+    {
+      "id": "taiwan_music_institute",
+      "name": "臺灣音樂館 metadata adapter",
+      "public_auto_release": false
+    },
+    {
+      "id": "national_culture_memory_bank",
+      "name": "國家文化記憶庫 metadata adapter",
+      "public_auto_release": false
+    },
+    {
+      "id": "gma_awards",
+      "name": "金曲獎 metadata adapter",
+      "public_auto_release": false
+    },
+    {
+      "id": "record_release_metadata",
+      "name": "唱片發行資料 metadata adapter",
+      "public_auto_release": false
+    }
+  ],
+  "output_tables": [
+    "authority_source_fetch_runs_v43",
+    "authority_source_candidates_v43",
+    "source_candidate_review_tasks_v43"
+  ]
+}

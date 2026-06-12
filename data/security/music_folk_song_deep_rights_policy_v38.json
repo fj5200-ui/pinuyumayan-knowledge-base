@@ -1,0 +1,20 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "description_zh": "v38 歌謠/古調權利與文化敏感政策。",
+  "rules": [
+    "metadata-only until rights reviewed",
+    "no full lyrics",
+    "no audio/video download",
+    "no training from YouTube or album audio",
+    "sensitive ritual/shaman/mourning songs require human/community review",
+    "AI Composer cannot generate old-tune lyrics"
+  ],
+  "public_release_conditions": [
+    "source verified",
+    "rights_status allowed or metadata-only",
+    "no forbidden archaeology relation",
+    "no sensitive operation details",
+    "human review approved"
+  ]
+}

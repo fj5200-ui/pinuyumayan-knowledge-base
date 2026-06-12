@@ -1,0 +1,40 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "description_zh": "v38 歌謠/古調擴大搜尋設定。",
+  "query_seeds": [
+    "卑南族 古調",
+    "卑南族 歌謠",
+    "卑南語 歌曲",
+    "南王 古調",
+    "南王 童謠",
+    "Damalagaw 歌謠",
+    "大巴六九 傳唱歌謠",
+    "陸森寶 懷念年祭",
+    "陸森寶 美麗的稻穗",
+    "Samingad Puyuma old song",
+    "紀曉君 古調",
+    "陳建年 南王 歌謠",
+    "臺灣音樂館 卑南族 歌謠",
+    "知本 少年年祭之歌",
+    "Mangednged 卑南族"
+  ],
+  "facets": [
+    "artist_or_source",
+    "community_tags",
+    "work_type",
+    "rights_status",
+    "review_status",
+    "sensitivity"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "metadata_only": true
+}

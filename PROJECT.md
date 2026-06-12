@@ -352,3 +352,120 @@ Key files:
 - `database/migrations/0025_vps_live_ops_search_fallback_v28.sql`
 - `docs/vps_live_ops_v28.md`
 - `data/development/next_upgrade_plan_v29.json`
+
+
+## v29 VPS Actual Ops / DB-backed live operations
+
+v29 turns the VPS staging plan into executable operational files. It does not claim to have run on the user VPS. Run `deploy/vps-run-full-corpus-v29.sh` on the VPS staging environment to produce a real >=1000 acceptance report or an explicit failure report. v29 also adds DB-backed full corpus run records, search index population runs, fallback route coverage audit, backup restore checksum reports, and source candidate human-review tables.
+
+Key files:
+- `deploy/vps-run-full-corpus-v29.sh`
+- `deploy/vps-backup-restore-checksum-v29.sh`
+- `scripts/verify_vps_env_v29.py`
+- `scripts/build_search_index_population_v29.py`
+- `backend/src/rest/vpsActualOpsV29Routes.ts`
+- `database/migrations/0026_vps_actual_ops_v29.sql`
+- `docs/vps_actual_ops_v29.md`
+- `data/development/next_upgrade_plan_v30.json`
+
+
+## v30 Production Cutover / 正式上線切換
+
+新增 DNS/TLS/Nginx/systemd/CORS/HMAC/DB backup/rollback/main-site acceptance/SEO/search quality 檢查層。DB 預設仍在 VPS，production 必須使用 `KNOWLEDGE_DATA_MODE=db` 並關閉靜默 static fallback。
+
+
+## v31 Production Dry-run / 正式上線演練層
+
+v31 將 v30 的正式切換 checklist 轉成可在 VPS staging 執行的 dry-run 報告流程。新增重點：
+
+- VPS production dry-run checklist 與 generated report schema
+- 主站搬移驗收規格與 secret scan 要求
+- `/api/internal/*` HMAC + nonce 覆蓋矩陣
+- full corpus acceptance report 回填流程，仍不把 80 筆 preview 假裝成千筆
+- 後台 live dashboard binding 規格
+- 搜尋品質與卑南文化遺址禁止關聯 smoke suite
+- v32 下一次完善方案
+
+v31 仍維持：DB 在 VPS、正式環境禁用靜默 static fallback、後端知識庫不生成文章正文、Beinan/Peinan archaeology terms 不得作為卑南族文化來源。
+
+## v32 VPS Dry-run Backfill + HMAC Enforcement
+
+- Adds VPS dry-run report backfill plan and generated-report ingestion flow.
+- Registers HMAC enforcement middleware for `/api/internal/*`.
+- Adds main-site secret scan policy so AI/HMAC/API secrets stay server-side.
+- Adds full corpus backfill contract; preview subset remains 80 and must not be claimed as 1000+.
+- Adds search/SEO validation suite and production static fallback enforcement policy.
+
+## v33 Expanded Source Search / 知識庫擴大搜尋
+
+- 新增多來源搜尋候選管線：TIPP、國家文化記憶庫、族語詞典、臺東地方來源、學術 metadata。
+- 新增 36 筆 verified/policy claims、public cards、search documents、frontend source packets。
+- 延續卑南文化遺址 / Beinan Site / Peinan Site 禁止關聯。
+- 候選來源不自動公開，需授權、去重、敏感內容與人工審核。
+
+
+## v34：擴大搜尋相關真實知識
+
+新增 46 筆 source-grounded claims、8 組多來源候選、v34 public cards/search documents/source packets，並延續卑南文化遺址/Beinan Site 禁止關聯治理。
+
+
+## v35：卑南族歌謠／古調／歌曲／YouTube 來源候選
+
+新增音樂與 YouTube metadata 候選管線。平台只保存來源 metadata、URL、頻道與審核狀態；不保存完整歌詞，不下載音訊/影片，不把 YouTube 音軌納入 TTS 或模型訓練。
+
+
+## v36 歌曲/歌謠 metadata 擴充
+
+- 新增 v36 songs/chant metadata catalog：42 筆候選。
+- 新增 v36 source-grounded claims：67 筆。
+- 只保存 metadata，不保存完整歌詞、不下載音檔、不拿未授權音源訓練 TTS。
+- 卑南文化遺址 / Beinan Site / Peinan Site 仍列為禁止關聯。
+
+
+## v37 music folk song catalog
+
+- 新增歌謠/古調/歌曲 metadata claims：54
+- 新增歌曲候選：32
+- 合併 claims：472
+- 不保存歌詞、不下載音訊、不做未授權訓練。
+
+
+## v38 歌謠／古調深度擴充
+- 新增 40 筆歌謠/古調 metadata 補欄候選，總 catalog 114 筆。
+- 新增 55 筆 claims，合併後 527 筆。
+- 延續 metadata-only：不保存完整歌詞、不下載音訊、不做未授權訓練。
+- 新增 v39 下一版開發方案。
+
+
+## v39 歌謠／歌曲／古調擴充
+
+- 新增歌謠/歌曲/古調 metadata 候選、來源登錄、權利政策、審核佇列與 AI source packets。
+- 僅保存 metadata，不保存完整歌詞、不下載音訊/影片、不做未授權 TTS/歌聲模型訓練。
+- 延續卑南文化遺址禁止關聯規則。
+
+
+## v40 歌曲／歌謠／古調擴充
+
+- 新增歌曲/歌謠/古調 metadata 候選、來源登錄、權利政策、YouTube metadata worker、審核佇列與 AI source packets。
+- 僅保存 metadata，不保存完整歌詞、不下載音訊/影片、不做未授權 TTS/歌聲模型訓練。
+- 延續卑南文化遺址禁止關聯規則。
+
+
+## v41 TTS/STT 訓練與音樂營運落地
+
+- 新增 TTS/STT 訓練治理與候選 manifest。
+- YouTube Data API worker 僅抓 metadata，不下載音訊/影片。
+- 完成 v40 下一步 1–6 項：worker、審核 UI、權威來源 adapter、MySQL FULLTEXT、AI 音樂防護、VPS DB transaction contract。
+- 公開合成 TTS 仍關閉；未授權音樂與 YouTube 音源不得訓練。
+
+## v42 TTS/STT 評估與音樂搜尋
+- 新增授權資料審核、train/dev/test split、MOS/WER/CER 評估報告 schema。
+- 新增 `/api/public/search/music` 與 MySQL FULLTEXT 音樂索引產生器。
+- YouTube/歌曲音源仍禁止下載、訓練與公開複製；只允許 metadata 候選。
+
+## v43 TTS/STT Live Music Ops
+
+- Adds licensed speech review, model experiment workspace, MOS/WER/CER dashboard and public release gates.
+- Adds music live DB search contract and authority-source metadata fetch contract.
+- Public TTS/STT remains disabled until authorization, consent, alignment and human review pass.
+- YouTube audio/video and complete lyrics remain blocked.

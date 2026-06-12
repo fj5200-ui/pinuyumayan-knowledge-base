@@ -1,0 +1,267 @@
+{
+  "version": "v33",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "purpose_zh": "擴大卑南族知識庫搜尋範圍；所有非官方或未解析來源先進候選區，人工審核後才可公開。",
+  "verified_sources": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan profile (English)",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "publisher": "Council of Indigenous Peoples, Taiwan",
+      "source_class": "official_government_profile",
+      "trust_level": "verified_official",
+      "allowed_use": "public_summary_and_source_grounding",
+      "notes_zh": "可支撐族稱、地理、十社/主要部落、生業、飲食、服飾、建築、音樂舞蹈、語言、社會制度與祭儀公開摘要。"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_zh_current",
+      "title": "原住民族委員會：卑南族中文族群簡介",
+      "url": "https://www.cip.gov.tw/zh-tw/index.html?cumid=367871808397303F4493DBDF516DA24A",
+      "publisher": "原住民族委員會",
+      "source_class": "official_government_profile",
+      "trust_level": "verified_official",
+      "allowed_use": "public_summary_and_population_versioning",
+      "notes_zh": "可支撐中文族群摘要、現行頁面人口數與年度慶典名稱；人口資料必須版本化，不與英文舊資料混用。"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "source_id": "tipp_pinuyumayan_history",
+      "title": "臺灣原住民族資訊資源網 TIPP：卑南族族群歷史",
+      "url": "https://www.tipp.apc.gov.tw/",
+      "publisher": "TIPP / 原住民族委員會相關資源",
+      "source_class": "history_ethnography",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "tipp_pinuyumayan_tribes",
+      "title": "臺灣原住民族資訊資源網 TIPP：卑南族部落介紹",
+      "url": "https://www.tipp.apc.gov.tw/",
+      "publisher": "TIPP / 原住民族委員會相關資源",
+      "source_class": "community_profiles",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "ilrd_puyuma_dictionary",
+      "title": "原住民族語言線上詞典 / 族語 E 樂園：卑南語",
+      "url": "https://e-dictionary.ilrdf.org.tw/",
+      "publisher": "原住民族語言研究發展基金會",
+      "source_class": "language_dictionary",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "formosanbank_puyuma_audio",
+      "title": "FormosanBank / ePark 卑南語音檔語料",
+      "url": "https://github.com/FormosanBank/FormosanBank",
+      "publisher": "FormosanBank project",
+      "source_class": "language_audio",
+      "review_status": "candidate_license_review",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "ncm_puyuma_music",
+      "title": "國家文化記憶庫：卑南族歌謠/音樂候選",
+      "url": "https://memory.culture.tw/",
+      "publisher": "文化部國家文化記憶庫",
+      "source_class": "music_culture",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "ncm_puyuma_photo",
+      "title": "國家文化記憶庫：卑南族影像/照片候選",
+      "url": "https://memory.culture.tw/",
+      "publisher": "文化部國家文化記憶庫",
+      "source_class": "photo_archive",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "moc_cultural_assets_exclusion",
+      "title": "文化部文化資產：卑南考古遺址排除規則",
+      "url": "https://nchdb.boch.gov.tw/",
+      "publisher": "文化部文化資產局",
+      "source_class": "forbidden_relation",
+      "review_status": "negative_disambiguation_only",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "nmp_beinan_site_exclusion",
+      "title": "國立臺灣史前文化博物館：卑南遺址/史前考古排除規則",
+      "url": "https://www.nmp.gov.tw/",
+      "publisher": "國立臺灣史前文化博物館",
+      "source_class": "forbidden_relation",
+      "review_status": "negative_disambiguation_only",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "taitung_indigenous_affairs",
+      "title": "臺東縣政府原住民族行政/文化活動候選",
+      "url": "https://www.taitung.gov.tw/",
+      "publisher": "臺東縣政府",
+      "source_class": "local_government",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "taitung_cultural_affairs",
+      "title": "臺東縣文化處公開資料候選",
+      "url": "https://www.ccl.ttct.edu.tw/",
+      "publisher": "臺東縣政府文化處",
+      "source_class": "local_culture",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "academia_sinica_ethnology",
+      "title": "中央研究院民族學研究所卑南族研究 metadata 候選",
+      "url": "https://www.ioe.sinica.edu.tw/",
+      "publisher": "中央研究院民族學研究所",
+      "source_class": "academic_metadata",
+      "review_status": "candidate_metadata_only",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "sinica_linguistics_puyuma",
+      "title": "中央研究院語言學研究所卑南語研究 metadata 候選",
+      "url": "https://www.ling.sinica.edu.tw/",
+      "publisher": "中央研究院語言學研究所",
+      "source_class": "linguistics_metadata",
+      "review_status": "candidate_metadata_only",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "national_library_puyuma_books",
+      "title": "國家圖書館卑南族出版品目錄候選",
+      "url": "https://www.ncl.edu.tw/",
+      "publisher": "國家圖書館",
+      "source_class": "bibliography",
+      "review_status": "candidate_metadata_only",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    },
+    {
+      "source_id": "community_public_pages",
+      "title": "部落/協會公開頁面候選，不自動公開",
+      "url": "manual_url_required",
+      "publisher": "community publishers",
+      "source_class": "community_public_source",
+      "review_status": "candidate_requires_owner_review",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "source_fetch",
+        "license_check",
+        "duplicate_check",
+        "forbidden_relation_check",
+        "human_review"
+      ],
+      "notes_zh": "候選來源不得直接進 public；需通過來源擷取、授權、去重、敏感內容與人工審核。"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "policy_zh": "卑南文化遺址/卑南遺址/Beinan Site/Peinan Site 屬史前考古或考古公園語境時，不得和卑南族文化知識庫自動關聯。",
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site",
+    "Beinan Archaeological Site"
+  ],
+  "allowed_buckets": [
+    "negative_disambiguation",
+    "not_related_note",
+    "admin_blocklist_audit"
+  ],
+  "blocked_buckets": [
+    "source_packet",
+    "knowledge_card",
+    "related_content",
+    "search_synonym",
+    "ai_article_source",
+    "public_claim"
+  ],
+  "audit_required": true,
+  "enforcement_surfaces": [
+    "expanded_source_search_v34",
+    "frontend_ai_source_packets_v34",
+    "public_search_documents_v34",
+    "source_candidate_review_v34"
+  ]
+}

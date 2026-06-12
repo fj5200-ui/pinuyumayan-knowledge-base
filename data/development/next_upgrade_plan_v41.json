@@ -1,0 +1,37 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:20:00+08:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v41",
+  "items": [
+    {
+      "priority": 1,
+      "area": "YouTube Data API worker 真寫 DB",
+      "content": "使用 API key 實抓 video metadata，寫入 music_youtube_candidates_v40；禁止下載音訊/影片。"
+    },
+    {
+      "priority": 2,
+      "area": "音樂審核 UI",
+      "content": "後台顯示縮圖、頻道、來源、權利狀態、敏感標籤、部落審核欄位。"
+    },
+    {
+      "priority": 3,
+      "area": "權威來源 adapter",
+      "content": "臺灣音樂館、國家文化記憶庫、金曲獎與唱片資料 metadata 進候選區。"
+    },
+    {
+      "priority": 4,
+      "area": "MySQL FULLTEXT 音樂索引",
+      "content": "artist/community/work_type/rights/sensitivity/source_authority/youtube_official_status facets 真寫 VPS DB。"
+    },
+    {
+      "priority": 5,
+      "area": "AI Composer 音樂防護",
+      "content": "阻擋仿古調歌詞、完整歌詞、無 claim_ids/source_ids 草稿與卑南文化遺址關聯污染。"
+    },
+    {
+      "priority": 6,
+      "area": "VPS DB transaction",
+      "content": "ingestion-report/review-report/youtube-metadata-report 改成 DB transaction 並回後台 dashboard。"
+    }
+  ]
+}

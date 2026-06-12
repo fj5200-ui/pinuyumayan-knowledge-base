@@ -1,0 +1,712 @@
+{
+  "version": "v35",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "count": 43,
+  "cards": [
+    {
+      "slug": "v35-v35-music-cip-music-dance-public",
+      "title_zh": "音樂與舞蹈｜音樂",
+      "summary_zh": "原民會公開頁將卑南族音樂與舞蹈列為族群文化介紹範圍，主站可建立「卑南族歌謠與樂舞」入口，但只能使用公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "claim_ids": [
+        "v35_music_cip_music_dance_public"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_21bee60a9d8e2201",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-cip-ritual-calendar-music-boundary",
+      "title_zh": "歌謠敏感邊界｜祭儀歌謠",
+      "summary_zh": "與年祭、大獵祭、生命祭儀、巫師祭等相關的歌曲或古調，只能作公開摘要與候選索引，不得提供操作步驟、完整歌詞或儀式教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "claim_ids": [
+        "v35_music_cip_ritual_calendar_music_boundary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_6dfb849a731b8b67",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-copyright-no-lyrics",
+      "title_zh": "音樂授權治理｜授權",
+      "summary_zh": "知識庫只保存歌曲標題、表演者、來源 URL、頻道、出版/上傳年份、授權狀態與審核狀態；不保存完整歌詞、不下載音檔、不重新散布 YouTube 影音。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_copyright_no_lyrics"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_535dfb6380c62e48",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-youtube-metadata-only",
+      "title_zh": "YouTube治理｜YouTube",
+      "summary_zh": "YouTube 來源在未確認授權前只能進 candidate queue；前台最多顯示外部連結與簡介，不應把影片音軌納入本平台 TTS 或語料訓練。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_youtube_metadata_only"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_b08553fc9b0aa3f4",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-beinan-site-not-music-source",
+      "title_zh": "禁止關聯｜禁止關聯",
+      "summary_zh": "卑南文化遺址、Beinan Site、Peinan Site 不得作為卑南族歌謠、古調或 YouTube 音樂來源，只能作負向消歧。",
+      "source_ids": [
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_beinan_site_not_music_source"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_c5e017da50655f9d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-lu-senbao-music-educator-candidate",
+      "title_zh": "卑南族音樂人物候選｜陸森寶",
+      "summary_zh": "陸森寶/Baliwakes Raera 是卑南族音樂歌謠與教育相關的重要人物候選，需以臺灣音樂館等權威來源複核後公開。",
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_lu_senbao_music_educator_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_071625fa5149e4fa",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-lu-senbao-works-catalog-candidate",
+      "title_zh": "卑南族音樂人物候選｜美麗的稻穗",
+      "summary_zh": "陸森寶作品清單候選包含《美麗的稻穗》、《懷念年祭》、《卑南山》等標題；知識庫只存作品 metadata，不存歌詞或音源。",
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_lu_senbao_works_catalog_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_48f04e2cea850e70",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-lu-senbao-puyuma-classical-music-candidate",
+      "title_zh": "卑南族音樂人物候選｜卑南族音樂",
+      "summary_zh": "陸森寶被多個公開資料描述為卑南族音樂/歌謠創作代表，但 v35 將此列為候選摘要，等待官方音樂館來源複核。",
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_lu_senbao_puyuma_classical_music_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_6414d20103859188",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-lu-senbao-heritage-article-blueprint",
+      "title_zh": "卑南族音樂人物候選｜文章素材",
+      "summary_zh": "主站可做「陸森寶與卑南族歌謠傳承」文章 blueprint，但必須引用權威來源並避免重製歌詞。",
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_lu_senbao_heritage_article_blueprint"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_68bb0e191ddf725b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-lu-senbao-youtube-query-seed",
+      "title_zh": "卑南族音樂人物候選｜YouTube查詢",
+      "summary_zh": "YouTube 擷取 worker 可搜尋「陸森寶 美麗的稻穗」「陸森寶 懷念年祭」「卑南山 陸森寶」，但結果只能進候選審核區。",
+      "source_ids": [
+        "taiwan_music_institute_lu_senbao_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_lu_senbao_youtube_query_seed"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_491c6e1c68e7060b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-samingad-puyuma-old-tunes-candidate",
+      "title_zh": "卑南族音樂人物候選｜紀曉君",
+      "summary_zh": "紀曉君/Samingad 的公開資料常與卑南族古謠、古調傳唱連結；v35 只建人物/作品候選索引，不收錄歌詞。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v35_samingad_puyuma_old_tunes_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_3ff03c6c9a43e63a",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-samingad-grandmother-transmission-candidate",
+      "title_zh": "卑南族音樂人物候選｜傳唱",
+      "summary_zh": "公開資料提到紀曉君的歌唱基礎與家族/祖母傳唱有關，需以正式訪談或授權來源複核。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v35_samingad_grandmother_transmission_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_87429b3f5e17b911",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-samingad-youtube-candidate",
+      "title_zh": "卑南族音樂人物候選｜YouTube查詢",
+      "summary_zh": "YouTube worker 可搜尋「紀曉君 卑南族 古謠」「Samingad Puyuma」「紀曉君 神話」，所有結果需標示 modern/song/traditional 分類。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v35_samingad_youtube_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_613ecc27da660d11",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-samingad-article-blueprint",
+      "title_zh": "卑南族音樂人物候選｜文章素材",
+      "summary_zh": "主站可做「從古謠傳唱到流行舞台：紀曉君與卑南歌聲」草稿素材，但須區分傳統古調與現代歌曲。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate"
+      ],
+      "claim_ids": [
+        "v35_samingad_article_blueprint"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_fc110087dd9bf102",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-damalagaw-album-candidate",
+      "title_zh": "部落歌謠候選｜Damalagaw",
+      "summary_zh": "《Damalagaw 大巴六九部落傳唱歌謠》可作泰安/大巴六九部落歌謠候選來源，但應先確認發行資訊、曲目授權與公開使用範圍。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "cip_community_candidates_v35"
+      ],
+      "claim_ids": [
+        "v35_damalagaw_album_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_b0d16204d18fb319",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-damalagaw-track-metadata-only",
+      "title_zh": "部落歌謠候選｜曲目",
+      "summary_zh": "Damalagaw 曲目可作 metadata 候選，例如部落出征古謠、巴拉冠之歌等標題，但平台不得收錄完整歌詞或音軌。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "cip_community_candidates_v35"
+      ],
+      "claim_ids": [
+        "v35_damalagaw_track_metadata_only"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_6ba233b601788f12",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-damalagaw-youtube-query-seed",
+      "title_zh": "部落歌謠候選｜YouTube查詢",
+      "summary_zh": "YouTube worker 可搜尋「Damalagaw 大巴六九部落傳唱歌謠」「大巴六九 部落出征古謠」「巴拉冠之歌 大巴六九」，結果不自動公開。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "cip_community_candidates_v35"
+      ],
+      "claim_ids": [
+        "v35_damalagaw_youtube_query_seed"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_2182a85e4c8e951e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-damalagaw-community-context-candidate",
+      "title_zh": "部落歌謠候選｜資料模型",
+      "summary_zh": "大巴六九/泰安與卑南族部落、部落歌謠和現代專輯之間的關聯應拆成部落資料、作品資料、YouTube metadata 三種表。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "cip_community_candidates_v35"
+      ],
+      "claim_ids": [
+        "v35_damalagaw_community_context_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_human_review",
+      "canonical_fingerprint": "claim_94a6033f5f7708b0",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-nawang-music-network-candidate",
+      "title_zh": "卑南族現代音樂候選｜南王",
+      "summary_zh": "南王/普悠瑪部落與多位卑南族音樂人、歌手的公開資料關聯可作「音樂人物網絡」候選，但需逐一核對來源。",
+      "source_ids": [
+        "wiki_nawang_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_nawang_music_network_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_e51da182c2cfb152",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-nawang-sisters-candidate",
+      "title_zh": "卑南族現代音樂候選｜南王姊妹花",
+      "summary_zh": "南王姊妹花可作卑南族/南王部落現代演唱團體候選索引；需補金曲獎或唱片資料來源。",
+      "source_ids": [
+        "wiki_nawang_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_nawang_sisters_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_7283d23c792cc72b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-chen-jian-nien-candidate",
+      "title_zh": "卑南族現代音樂候選｜陳建年",
+      "summary_zh": "陳建年與南王/卑南音樂脈絡相關的公開資料可進候選，但主站文章需避免未查證親屬與作品細節。",
+      "source_ids": [
+        "wiki_nawang_music_candidate"
+      ],
+      "claim_ids": [
+        "v35_chen_jian_nien_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_669c6de13b376464",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-jiajia-candidate",
+      "title_zh": "卑南族現代音樂候選｜家家",
+      "summary_zh": "家家/紀家盈與卑南族南王家族音樂脈絡相關的公開資料可進候選；需以藝人官方或唱片資料複核。",
+      "source_ids": [
+        "wiki_jiajia_candidate"
+      ],
+      "claim_ids": [
+        "v35_jiajia_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_fb885c8e441db412",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-panai-candidate",
+      "title_zh": "卑南族現代音樂候選｜巴奈",
+      "summary_zh": "巴奈·庫穗可作卑南族/阿美族混血音樂人候選索引；平台應標示族群脈絡，不簡化成單一族群代表。",
+      "source_ids": [
+        "wiki_panai_candidate"
+      ],
+      "claim_ids": [
+        "v35_panai_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_83b429f929a9eafe",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-hu-defu-candidate",
+      "title_zh": "卑南族現代音樂候選｜胡德夫",
+      "summary_zh": "胡德夫可作卑南族/排灣族混血音樂創作者與社會運動者候選；平台需標示混合身分與引用來源。",
+      "source_ids": [
+        "wiki_hu_defu_candidate"
+      ],
+      "claim_ids": [
+        "v35_hu_defu_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_authoritative_review",
+      "canonical_fingerprint": "claim_c5056ddf84b8ffb5",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-song-type-traditional-old-tune",
+      "title_zh": "歌謠資料治理｜分類",
+      "summary_zh": "資料模型需區分「古謠/古調」、「部落傳唱歌謠」、「陸森寶等創作歌曲」、「現代流行歌曲」、「祭儀相關歌曲」。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_song_type_traditional_old_tune"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_1797af936e6f3ac6",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-song-type-ritual-sensitive",
+      "title_zh": "歌謠資料治理｜祭儀歌謠",
+      "summary_zh": "凡與祭儀、祖靈、巫師、除喪、生命儀禮相關之歌曲，預設 sensitivity=medium/high，公開端只能顯示標題與摘要。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_song_type_ritual_sensitive"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_553956ef77552845",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-song-type-community-song",
+      "title_zh": "歌謠資料治理｜部落",
+      "summary_zh": "部落歌謠候選需連結 community_key，例如 Puyuma/Nanwang、Tamalakaw、Katratripul、Kasavakan 等，不得只用泛稱。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_song_type_community_song"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_6be5d248c1d3bc7b",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-song-metadata-schema",
+      "title_zh": "歌謠資料治理｜metadata",
+      "summary_zh": "歌曲/影片 metadata 應包含 title、performer、community、language、genre、source_url、platform、channel、license_status、review_status。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_song_metadata_schema"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_5675d723c585edc5",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-youtube-channel-review",
+      "title_zh": "歌謠資料治理｜YouTube頻道",
+      "summary_zh": "YouTube 頻道來源需標示 channel_id/channel_title、是否官方、是否部落/文化團體、是否個人上傳、是否可能侵權。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_youtube_channel_review"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_e9a69d043e477705",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-youtube-no-audio-download",
+      "title_zh": "歌謠資料治理｜YouTube",
+      "summary_zh": "YouTube 資料擷取 worker 不得下載音訊或影片；只可透過官方 API 或人工填寫保存 metadata。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_youtube_no_audio_download"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_997b9aa419be4b49",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-youtube-embed-policy",
+      "title_zh": "歌謠資料治理｜YouTube embed",
+      "summary_zh": "若主站要播放 YouTube，只能用 YouTube embed/外連，不代理串流、不切片、不另存檔。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_youtube_embed_policy"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_c6decbb129dc3bba",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-song-no-lyrics-policy",
+      "title_zh": "歌謠資料治理｜歌詞",
+      "summary_zh": "完整歌詞屬高風險版權與文化脈絡資料；平台只允許保存短摘要、主題、語言、來源與審核狀態。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_song_no_lyrics_policy"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_d9879c028b026a8d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-ai-article-guardrail",
+      "title_zh": "歌謠資料治理｜AI",
+      "summary_zh": "AI 發文可使用歌謠 metadata 與來源摘要，但不得創作「仿古調歌詞」、不得生成冒充傳統歌謠的新作品。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_ai_article_guardrail"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_1c7e941bd773b108",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-search-expand-queries",
+      "title_zh": "歌謠資料治理｜搜尋",
+      "summary_zh": "搜尋查詢應擴充中文、羅馬拼寫、部落名、人物名、作品名與 YouTube 關鍵字，但結果先進候選區。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_search_expand_queries"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_301f1a220749fd0d",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-public-cards-only-verified",
+      "title_zh": "歌謠資料治理｜公開卡",
+      "summary_zh": "公開知識卡只顯示 verified 或 public_summary_only 資料；候選影片、候選歌手資料只在後台審核區。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_public_cards_only_verified"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_cf900dbdb6ef1cdd",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-source-packet-article-use",
+      "title_zh": "歌謠資料治理｜AI source packet",
+      "summary_zh": "前端 AI source packet 可提供人物/部落/作品/YouTube 候選線索，但 draft validate 必須檢查引用與去重。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_source_packet_article_use"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_328863c86569a57e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-mir-policy",
+      "title_zh": "歌謠資料治理｜MIR",
+      "summary_zh": "未來若做音樂資訊檢索 MIR，只能使用授權音訊、公共領域資料或明確同意資料，不可擷取 YouTube 音軌訓練模型。",
+      "source_ids": [
+        "internal_music_rights_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_mir_policy"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_8a0f5a8c546a1d5f",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-youtube-exact-samingad-shenhua-candidate",
+      "title_zh": "YouTube影片候選｜紀曉君",
+      "summary_zh": "公開資料列出紀曉君《神話》YouTube 外部連結候選；此項屬現代歌曲/廣告主題曲候選，不得標示為傳統古調。",
+      "source_ids": [
+        "wiki_ki_samingad_candidate",
+        "youtube_metadata_candidate_v35"
+      ],
+      "claim_ids": [
+        "v35_youtube_exact_samingad_shenhua_candidate"
+      ],
+      "visibility": "public",
+      "review_status": "candidate_needs_url_validation",
+      "canonical_fingerprint": "claim_37bb025140db90f9",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-education-learning-set",
+      "title_zh": "歌謠搜尋與內容安全｜學習",
+      "summary_zh": "主站可建立「歌謠與古調入門」learning set，內容限音樂人物、部落、作品 metadata、公開摘要與外部連結。",
+      "source_ids": [
+        "internal_music_rights_policy_v35",
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_education_learning_set"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_fe7f8aae9a5cc162",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-review-required-for-sensitive-terms",
+      "title_zh": "歌謠搜尋與內容安全｜敏感詞",
+      "summary_zh": "含「巫師祭、祖靈、除喪、祭祖」等詞的歌謠候選自動進高敏感審核，不進 public cards。",
+      "source_ids": [
+        "internal_music_rights_policy_v35",
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_review_required_for_sensitive_terms"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_2af29f94480948b2",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-duplicate-policy",
+      "title_zh": "歌謠搜尋與內容安全｜去重",
+      "summary_zh": "同一 YouTube video_id、同一標題+頻道、同一作品名+表演者不得重複入庫。",
+      "source_ids": [
+        "internal_music_rights_policy_v35",
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_duplicate_policy"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_71fbd4ea0eb47920",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-main-site-search-filter",
+      "title_zh": "歌謠搜尋與內容安全｜搜尋facet",
+      "summary_zh": "主站搜尋可提供 music facet：古調、部落傳唱、創作歌曲、現代歌曲、YouTube候選、人物、部落。",
+      "source_ids": [
+        "internal_music_rights_policy_v35",
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_main_site_search_filter"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_ee8ca5d1d9006ebe",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    },
+    {
+      "slug": "v35-v35-music-no-beinan-site-synonym",
+      "title_zh": "歌謠搜尋與內容安全｜禁止同義詞",
+      "summary_zh": "搜尋同義詞不得把「卑南文化遺址」連到歌謠或古調；只可回覆「考古遺址非本平台歌謠來源」。",
+      "source_ids": [
+        "internal_music_rights_policy_v35",
+        "internal_forbidden_relation_policy_v35"
+      ],
+      "claim_ids": [
+        "v35_music_no_beinan_site_synonym"
+      ],
+      "visibility": "public",
+      "review_status": "policy_guardrail",
+      "canonical_fingerprint": "claim_60d8caa1cb8c161e",
+      "forbidden_relation_checked": true,
+      "copyright_safe": "metadata_only_no_lyrics_no_audio"
+    }
+  ]
+}

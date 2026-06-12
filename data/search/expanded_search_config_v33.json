@@ -1,0 +1,63 @@
+{
+  "version": "v33",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "goals": [
+    "擴大真實來源搜尋",
+    "避免卑南文化遺址污染卑南族知識庫",
+    "讓前端 AI Composer 可取得更細緻且可引用的 source packets"
+  ],
+  "queries": [
+    {
+      "query": "卑南族 原住民族委員會 年齡階級 會所",
+      "target": "official_profile",
+      "priority": "high"
+    },
+    {
+      "query": "Pinuyumayan CIP assembly hall age stratification",
+      "target": "official_profile",
+      "priority": "high"
+    },
+    {
+      "query": "卑南族 TIPP 族群歷史",
+      "target": "tipp_candidate",
+      "priority": "high"
+    },
+    {
+      "query": "卑南族 國家文化記憶庫 歌謠",
+      "target": "culture_memory_candidate",
+      "priority": "medium"
+    },
+    {
+      "query": "卑南語 線上詞典 南王 知本 建和 初鹿",
+      "target": "language_candidate",
+      "priority": "high"
+    },
+    {
+      "query": "卑南族 臺東縣政府 年祭 大獵祭",
+      "target": "local_government_candidate",
+      "priority": "medium"
+    },
+    {
+      "query": "卑南族 陸森寶 臺灣音樂館",
+      "target": "music_archive_candidate",
+      "priority": "medium"
+    },
+    {
+      "query": "卑南族 學術論文 Pinuyumayan Puyuma matrilineality",
+      "target": "academic_metadata",
+      "priority": "medium"
+    }
+  ],
+  "blocked_queries": [
+    "卑南文化遺址 卑南族 文化來源",
+    "Beinan Site Pinuyumayan culture source",
+    "Peinan archaeological site Puyuma tribe related"
+  ],
+  "forbidden_relation_policy": "若搜尋結果是卑南文化、卑南遺址、Beinan/Peinan archaeological site，只能放入 negative_disambiguation，不得放入 source packet、knowledge card、related content 或 AI 文章素材。",
+  "output_tables": [
+    "source_search_runs_v33",
+    "source_search_candidates_v33",
+    "source_candidate_findings_v33",
+    "source_ingestion_review_queue_v33"
+  ]
+}

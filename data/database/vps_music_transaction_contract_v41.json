@@ -1,0 +1,21 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "transaction_endpoints": [
+    "/api/internal/music-folk-song/v41/ingestion-report",
+    "/api/internal/music-folk-song/v41/review-report",
+    "/api/internal/music-folk-song/v41/youtube-metadata-report",
+    "/api/internal/speech-training/v41/dataset-report",
+    "/api/internal/search/music/v41/populate-fulltext"
+  ],
+  "tables": [
+    "music_ingestion_runs_v41",
+    "music_review_transactions_v41",
+    "music_youtube_metadata_runs_v41",
+    "music_youtube_metadata_candidates_v41",
+    "puyuma_speech_training_datasets_v41",
+    "music_fulltext_population_runs_v41"
+  ],
+  "hmac_required": true,
+  "nonce_required": true
+}

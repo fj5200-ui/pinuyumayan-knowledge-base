@@ -1,0 +1,44 @@
+{
+  "version": "v29",
+  "title": "Admin live dashboard with DB-backed panels",
+  "panels": [
+    {
+      "key": "vps_readiness",
+      "api": "GET /api/ops/vps/v29/readiness",
+      "visibility": "admin"
+    },
+    {
+      "key": "full_corpus_runs",
+      "api": "GET /api/admin/corpus/v29/runs",
+      "visibility": "admin"
+    },
+    {
+      "key": "search_population_runs",
+      "api": "GET /api/ops/search/v29/population-runs",
+      "visibility": "admin"
+    },
+    {
+      "key": "fallback_route_coverage",
+      "api": "GET /api/ops/fallback/v29/route-coverage",
+      "visibility": "security_admin"
+    },
+    {
+      "key": "backup_restore_checksum",
+      "api": "GET /api/ops/vps-db/v29/backup-restore-checksum",
+      "visibility": "ops_admin"
+    },
+    {
+      "key": "source_candidate_reviews",
+      "api": "GET /api/admin/source-candidates/v29/reviews",
+      "visibility": "content_admin"
+    }
+  ],
+  "must_warn": [
+    "full corpus total_entries < 1000",
+    "production static fallback route not covered",
+    "search_index_documents_v27 empty",
+    "backup restore drill older than 30 days",
+    "forbidden relation hit found",
+    "DB not reachable"
+  ]
+}

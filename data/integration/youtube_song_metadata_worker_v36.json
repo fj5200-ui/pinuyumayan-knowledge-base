@@ -1,0 +1,46 @@
+{
+  "version": "v36",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "worker_name": "youtube_song_metadata_worker_v36",
+  "purpose_zh": "使用 YouTube Data API 搜尋歌曲/古調 metadata 候選，只寫入 title/channel/url/published_at/duration/thumbnail/license/review_status，不下載音訊。",
+  "inputs": {
+    "query_seeds": [
+      "陸森寶 美麗的稻穗",
+      "陸森寶 懷念年祭",
+      "陸森寶 卑南山",
+      "南王卑南族童謠",
+      "南王卑南族頌讚之歌 Mangednged",
+      "知本卑南族少年年祭之歌",
+      "卑南鄉賓朗村卑南族巫師之歌",
+      "Damalagaw 大巴六九 來大巴六九",
+      "Damalagaw 部落出征古謠",
+      "Damalagaw 巴拉冠之歌",
+      "紀曉君 Samingad 南王不落",
+      "紀曉君 神話 卑南語",
+      "陳建年 美麗的稻穗",
+      "南王姊妹花 卑南族",
+      "黃美珍 大巴六九 Tamalakao"
+    ],
+    "max_results_per_query": 10
+  },
+  "outputs": [
+    "music_youtube_source_candidates_v36",
+    "music_song_review_queue_v36"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "must_not": [
+    "download_audio",
+    "store_lyrics",
+    "train_tts_from_youtube",
+    "auto_publish_candidates"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "goal_zh": "擴大卑南族相關真實知識搜尋範圍，但以候選審核區為預設，不讓未審核來源直接公開。",
+  "verified_source_registry": [
+    {
+      "source_id": "cip_pinuyumayan_profile_en_2021",
+      "title": "Council of Indigenous Peoples: Pinuyumayan profile (English)",
+      "url": "https://www.cip.gov.tw/en/tribe/grid-list/C9EB38FF61885E80D0636733C6861689/info.html?cumid=D0636733C6861689",
+      "publisher": "Council of Indigenous Peoples, Taiwan",
+      "trust_level": "verified_official",
+      "allowed_use": "public_summary_and_source_grounding",
+      "last_checked": "2026-06-12",
+      "evidence_lines": "L113-L216",
+      "notes_zh": "可支撐族稱、地理、主要部落、生業、飲食、服飾、建築、音樂舞蹈、語言、社會制度與祭儀公開摘要。"
+    },
+    {
+      "source_id": "cip_pinuyumayan_profile_zh_current",
+      "title": "原住民族委員會：卑南族中文族群簡介",
+      "url": "https://www.cip.gov.tw/zh-tw/index.html?cumid=367871808397303F4493DBDF516DA24A",
+      "publisher": "原住民族委員會",
+      "trust_level": "verified_official",
+      "allowed_use": "public_summary_and_population_versioning",
+      "last_checked": "2026-06-12",
+      "evidence_lines": "L587-L590",
+      "notes_zh": "可支撐中文族群摘要、人口版本與年度慶典名稱；人口數須版本化。"
+    }
+  ],
+  "candidate_source_registry": [
+    {
+      "source_id": "tipp_pinuyumayan_profile_candidate",
+      "title": "TIPP 臺灣原住民族資訊資源網：卑南族相關頁面候選",
+      "query_hints": [
+        "卑南族 族群歷史",
+        "卑南族 部落介紹",
+        "Pinuyumayan"
+      ],
+      "source_class": "ethnography_and_community_profiles",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "fetch",
+        "license",
+        "duplicate",
+        "forbidden_relation",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "ilrdf_puyuma_dictionary_candidate",
+      "title": "原住民族語言線上詞典 / 族語 E 樂園：卑南語候選",
+      "query_hints": [
+        "卑南語 詞典",
+        "南王卑南語",
+        "知本卑南語"
+      ],
+      "source_class": "language_dictionary",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "license",
+        "dialect_tag",
+        "audio_link_check",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "formosanbank_puyuma_audio_candidate",
+      "title": "FormosanBank / ePark 卑南語音檔語料候選",
+      "query_hints": [
+        "Nanwang_Puyuma",
+        "Zhiben_Puyuma",
+        "Xiqun_Puyuma",
+        "Jianhe_Puyuma"
+      ],
+      "source_class": "language_audio_corpus",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "license",
+        "audio_url",
+        "phon_coverage",
+        "dedupe",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "culture_memory_pinuyumayan_candidate",
+      "title": "國家文化記憶庫：卑南族候選",
+      "query_hints": [
+        "卑南族",
+        "南王",
+        "知本",
+        "建和",
+        "利嘉",
+        "寶桑"
+      ],
+      "source_class": "cultural_memory_metadata",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "license",
+        "metadata",
+        "forbidden_relation",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "taiwan_music_pinuyumayan_candidate",
+      "title": "臺灣音樂館 / 文化部典藏：卑南族歌謠候選",
+      "query_hints": [
+        "南王卑南族童謠",
+        "知本卑南族少年年祭之歌",
+        "Mangednged"
+      ],
+      "source_class": "music_archive_metadata",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "license",
+        "performer_context",
+        "audio_rights",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "taitung_local_pinuyumayan_candidate",
+      "title": "臺東縣政府 / 臺東縣文化處：卑南族活動與文化候選",
+      "query_hints": [
+        "卑南族 年祭",
+        "卑南族 部落",
+        "台東 卑南族 文化"
+      ],
+      "source_class": "local_government_events",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "recency",
+        "license",
+        "event_context",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "academia_sinica_puyuma_metadata_candidate",
+      "title": "中央研究院語言學 / 民族學相關 metadata 候選",
+      "query_hints": [
+        "Puyuma language",
+        "Pinuyumayan",
+        "Teng Puyuma grammar",
+        "Cauquelin Puyuma"
+      ],
+      "source_class": "academic_metadata",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "bibliographic_metadata",
+        "copyright",
+        "summary_only",
+        "human_review"
+      ]
+    },
+    {
+      "source_id": "community_public_pages_candidate",
+      "title": "部落/協會公開頁面候選",
+      "query_hints": [
+        "Katratripulr",
+        "Kasavakan",
+        "Puyuma Nanwang",
+        "Pinaski",
+        "Ulivelivek"
+      ],
+      "source_class": "community_public_page",
+      "review_status": "candidate_needs_fetch",
+      "public_use": "candidate_only_not_public",
+      "required_checks": [
+        "permission",
+        "community_context",
+        "sensitive_content",
+        "human_review"
+      ]
+    }
+  ],
+  "query_bundles": [
+    {
+      "bundle_id": "official_profiles",
+      "queries": [
+        "卑南族 原住民族委員會 年齡階級 會所",
+        "Pinuyumayan CIP profile rituals assembly hall"
+      ],
+      "default_visibility": "verified_public_after_source_match"
+    },
+    {
+      "bundle_id": "language_dictionary",
+      "queries": [
+        "卑南語 詞典 南王 知本",
+        "Puyuma language Nanwang Zhiben FormosanBank"
+      ],
+      "default_visibility": "candidate_review"
+    },
+    {
+      "bundle_id": "music_archives",
+      "queries": [
+        "南王卑南族童謠 臺灣音樂館",
+        "知本卑南族少年年祭之歌 呂炳川"
+      ],
+      "default_visibility": "candidate_review"
+    },
+    {
+      "bundle_id": "community_profiles",
+      "queries": [
+        "Katratripulr Kasavakan Pinaski Ulivelivek",
+        "知本 建和 下賓朗 初鹿 卑南族 部落"
+      ],
+      "default_visibility": "candidate_review"
+    },
+    {
+      "bundle_id": "local_government_events",
+      "queries": [
+        "臺東 卑南族 年祭 活動",
+        "台東縣 卑南族 文化 活動"
+      ],
+      "default_visibility": "candidate_review"
+    },
+    {
+      "bundle_id": "academic_metadata",
+      "queries": [
+        "Puyuma grammar Teng Stacy",
+        "Cauquelin Puyuma RoutledgeCurzon"
+      ],
+      "default_visibility": "metadata_only_candidate"
+    }
+  ],
+  "pipeline_stages": [
+    "search",
+    "fetch_metadata",
+    "forbidden_relation_filter",
+    "license_check",
+    "dedupe",
+    "claim_extraction_candidate",
+    "human_review",
+    "public_summary_release"
+  ],
+  "hard_block_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "notes_zh": "候選來源只能進 review queue；AI source packet 只使用 verified_source_public_summary claims。"
+}

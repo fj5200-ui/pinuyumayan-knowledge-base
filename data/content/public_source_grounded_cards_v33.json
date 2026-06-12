@@ -1,0 +1,487 @@
+{
+  "version": "v33",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "count": 32,
+  "cards": [
+    {
+      "slug": "v33-v33-profile-age-hall-core",
+      "title_zh": "社會制度｜年齡階級",
+      "summary_zh": "卑南族公開介紹可歸納出「年齡階級」與「會所制度」是理解其公共生活的重要骨架。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_profile_age_hall_core"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_101535d1f6a14f0f",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-profile-existing-rituals-summary",
+      "title_zh": "祭儀公開摘要｜Mugamut",
+      "summary_zh": "原民會英文頁列出 Mugamut、Masarut、Vasivas、Mangayau 等現存公開祭儀名稱；平台應只做公開摘要，不延伸為操作教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_profile_existing_rituals_summary"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5d5c4d1f9134d161",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-geo-name-boundary",
+      "title_zh": "族稱與命名｜Pinuyumayan",
+      "summary_zh": "Pinuyumayan 作為族群名稱需與南王/特定部落脈絡中的 Puyuma 使用分開處理，避免主站混用。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_geo_name_boundary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c07bd018fe91aa8b",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-origin-two-systems",
+      "title_zh": "族群歷史摘要｜竹生",
+      "summary_zh": "公開介紹提到卑南族起源敘事可見 bamboo-born 與 stone-born 兩類來源；平台只能摘要其存在，不生成神話細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_origin_two_systems"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8183c2cd6ec35afa",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-geo-center-taitung-plain",
+      "title_zh": "地理分布｜臺東平原",
+      "summary_zh": "臺東平原中的臺東市與卑南鄉是卑南族今日中心區域；資料模型應支援主聚落與外移人口兩種欄位。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_geo_center_taitung_plain"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_9d4306a14785379e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-geo-communities-source-list",
+      "title_zh": "卑南族十社｜十社",
+      "summary_zh": "原民會英文頁列出知本、建和、南王、寶桑、利嘉、泰安、上賓朗、下賓朗、初鹿、龍過脈等主要社群名稱，可作主站十社資料卡來源之一。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_geo_communities_source_list"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_690a1a6e17f1e837",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-industry-millet-origin",
+      "title_zh": "生業｜小米",
+      "summary_zh": "公開資料將小米農業列為卑南族早期農作的重要起點之一，可作生業主題卡的來源。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_industry_millet_origin"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_3e11f744b9f1aca7",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-industry-cash-crops",
+      "title_zh": "生業｜釋迦",
+      "summary_zh": "1960 年代以後作物轉向包含釋迦與檳榔等經濟作物；主站可用於現代生業變遷摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_industry_cash_crops"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_c6add6dd1a3c50fc",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-food-staples",
+      "title_zh": "飲食｜飲食",
+      "summary_zh": "傳統主食公開摘要包含小米、旱稻、甘藷與芋頭，應列為飲食主題的基本索引詞。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_food_staples"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_133e5b91d30ce24a",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-food-shellflower",
+      "title_zh": "飲食｜月桃",
+      "summary_zh": "月桃葉包裹的糯米/鹹豬肉類食物可作節慶飲食摘要，但不得臆造地方食譜或禁忌。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_food_shellflower"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_b3059c0a65a63f89",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-betel-life-ritual",
+      "title_zh": "飲食與祭儀摘要｜檳榔",
+      "summary_zh": "檳榔在日常生活與祭儀供品中均有重要性；公開內容應只描述其文化角色，不提供儀式操作。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_betel_life_ritual"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_56db9e5976860801",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-clothing-colors",
+      "title_zh": "服飾｜服飾",
+      "summary_zh": "傳統服飾色彩包含紅、黃、綠，並有黑白菱形紋與十字繡等裝飾；可支撐主站視覺設計與服飾知識卡。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_clothing_colors"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d8f5d3f0ca14cfeb",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-clothing-social-identity",
+      "title_zh": "服飾與社會關係｜服飾",
+      "summary_zh": "服飾可辨識性別與年齡階級，也呈現族內社會關係；主站應把服飾與社會制度連結。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_clothing_social_identity"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_e6eddcbcbb027749",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-wreath-social-relations",
+      "title_zh": "服飾與互動｜花環",
+      "summary_zh": "花環在祭儀與人際互動中具有辨識與關係象徵，可作公開導覽內容。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_wreath_social_relations"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_bfc5110bc9f7b5de",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-weaving-rattan-bamboo",
+      "title_zh": "工藝｜藤編",
+      "summary_zh": "藤竹編可產生日常工具，如藤籃、背籃、竹杯與漁獵工具；平台應以公開工藝摘要呈現。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_weaving_rattan_bamboo"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4d51244210c257d4",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-architecture-categories",
+      "title_zh": "建築｜建築",
+      "summary_zh": "傳統建築可分為家屋、會所與祖靈屋等類型；系統應區分 public/private building 與敏感場域。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_architecture_categories"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_ec8963c6e51c6a16",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-family-house-layout",
+      "title_zh": "建築｜家屋",
+      "summary_zh": "公開介紹描述家屋為長方形、茅草屋頂與竹牆，室內有沿牆床鋪與三石爐；主站可用作建築摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_family_house_layout"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d2567668e4ec3245",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-dakuvan-palakuan",
+      "title_zh": "會所制度｜Dakuvan",
+      "summary_zh": "卑南族會所依年齡階級有 Dakuvan 少年會所與 Palakuan 成年會所，應以教育/公共生活角度摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_dakuvan_palakuan"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2d267ced4c4ce974",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-music-story-rhythm",
+      "title_zh": "音樂｜音樂",
+      "summary_zh": "公開介紹稱卑南族音樂節奏清楚且歌詞常敘事，主站可作音樂導覽摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_music_story_rhythm"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_5d142f2be5700ced",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-music-modern-artists",
+      "title_zh": "音樂｜音樂人",
+      "summary_zh": "公開介紹列舉多位卑南族音樂人，主站人物資料應獨立建立來源與審核，不混入未查證傳記。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_music_modern_artists"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_73cc4c5133cd4dd5",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-dance-gender-age",
+      "title_zh": "舞蹈｜舞蹈",
+      "summary_zh": "公開介紹指出舞蹈呈現性別與年齡差異；主站應把舞蹈內容標成公開摘要而非祭儀教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_dance_gender_age"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_8ea0e025f7f57b4c",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-language-variation",
+      "title_zh": "語言｜卑南語",
+      "summary_zh": "卑南語因部落與地理位置有差異，知本南部語音受排灣語、魯凱語影響，北部受阿美語影響；語料庫應保存方言欄位。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_language_variation"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_afe679da6ac756e5",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-social-roles",
+      "title_zh": "社會角色｜政治領袖",
+      "summary_zh": "政治領袖、祭師與巫師在公開介紹中被分別描述為不同專業角色；平台應以角色摘要而非神秘化敘述呈現。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_social_roles"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_908ba40372c5461a",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-kinship-matrilineality-change",
+      "title_zh": "親屬制度｜母系",
+      "summary_zh": "公開介紹指出傳統母系與從妻居特徵，也說明現代社會影響下有轉變；主站應版本化呈現「傳統/今日」。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_kinship_matrilineality_change"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_fc08a928d68e2fd7",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-age-training-summary",
+      "title_zh": "年齡階級｜少年會所",
+      "summary_zh": "少年約 12–13 歲進入少年會所接受訓練，17–18 歲後進成年會所再訓練；主站可只做制度摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_age_training_summary"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_2ba181457e6dbc6f",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-1991-revitalization",
+      "title_zh": "文化復振｜1991",
+      "summary_zh": "公開介紹指出 1991 年知本、初鹿、南王等地興建新會所並成立青年/文化協會，可作文化復振時間軸候選。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_1991_revitalization"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_af94a475b6fa45c3",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-religion-public-boundary",
+      "title_zh": "信仰敏感邊界｜信仰",
+      "summary_zh": "信仰與靈相關內容只能以公開摘要和敏感標籤保存，不應讓 AI 產生操作性、禁忌或祖靈細節。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_religion_public_boundary"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_a4aac586dc98e1d5",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-ritual-two-types",
+      "title_zh": "祭儀分類｜農業祭儀",
+      "summary_zh": "公開介紹將祭儀分為農業祭儀與生命祭儀；平台可用此作高階分類，不產生儀式流程教學。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_ritual_two_types"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_57beee20f8d1432a",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-ritual-calendar-public",
+      "title_zh": "祭儀公開月曆｜祭儀月曆",
+      "summary_zh": "公開介紹列出三月 Mugamut、四月 Ruvuwa’an、七月 Masarut、十二月年祭；此月曆可作主站公開摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_ritual_calendar_public"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_26b3ce6747f39ceb",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-mangayaw-joint-1982",
+      "title_zh": "祭儀公開摘要｜1982",
+      "summary_zh": "1982 年後聯合年祭成為村社交流與族群情感凝聚的重要活動；主站可列為公開歷史摘要。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v33_mangayaw_joint_1982"
+      ],
+      "visibility": "public_summary_only",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_4609923e0f0b5a7e",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-chinese-current-population",
+      "title_zh": "人口資料版本｜人口",
+      "summary_zh": "原民會中文頁目前列出卑南族總人口 16,734；資料庫須保存頁面語言與擷取日期，不與英文頁 2020 人口混用。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "claim_ids": [
+        "v33_chinese_current_population"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_d856bc6c15bd244b",
+      "forbidden_relation_checked": true
+    },
+    {
+      "slug": "v33-v33-chinese-annual-events",
+      "title_zh": "年度慶典｜年度慶典",
+      "summary_zh": "原民會中文頁以小米鋤草完工慶、小米收穫祭、少年年祭與年祭作年度慶典摘要；中文文章可採這組名稱。",
+      "source_ids": [
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "claim_ids": [
+        "v33_chinese_annual_events"
+      ],
+      "visibility": "public",
+      "review_status": "verified_source_public_summary",
+      "canonical_fingerprint": "claim_20730fd132884396",
+      "forbidden_relation_checked": true
+    }
+  ]
+}

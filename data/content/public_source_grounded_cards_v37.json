@@ -1,0 +1,1015 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "count": 54,
+  "cards": [
+    {
+      "card_id": "card_v37_folk_song_metadata_only",
+      "title_zh": "歌謠資料治理：metadata",
+      "summary_zh": "v37 歌謠擴充只保存歌謠、古調、歌曲與專輯 metadata；不保存完整歌詞、不下載音訊、不重製影片。",
+      "source_ids": [
+        "internal_music_folk_song_rights_policy_v37"
+      ],
+      "claim_ids": [
+        "v37_folk_song_metadata_only"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_youtube_metadata_worker_only",
+      "title_zh": "YouTube治理：YouTube",
+      "summary_zh": "YouTube Data API worker 只能抓 title、channel、videoId、publishedAt、thumbnail、duration 等 metadata；不得抓音訊、影片或完整字幕/歌詞。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_youtube_metadata_worker_only"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_ai_no_old_song_imitation",
+      "title_zh": "AI Composer防護：AI",
+      "summary_zh": "前端 AI Composer 不得生成仿古調歌詞、仿部落傳唱歌詞或聲稱為傳統歌謠的新歌詞。",
+      "source_ids": [
+        "internal_music_folk_song_rights_policy_v37"
+      ],
+      "claim_ids": [
+        "v37_ai_no_old_song_imitation"
+      ],
+      "confidence": "policy",
+      "sensitivity": "medium",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_ritual_song_summary_only",
+      "title_zh": "文化敏感治理：祭儀",
+      "summary_zh": "少年年祭、大獵祭、巫師、祖靈、除喪等相關歌謠只能公開摘要與 metadata，需人工文化審核。",
+      "source_ids": [
+        "internal_music_folk_song_rights_policy_v37",
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v37_ritual_song_summary_only"
+      ],
+      "confidence": "policy",
+      "sensitivity": "medium",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_beinan_site_never_music_source",
+      "title_zh": "禁止關聯：禁止關聯",
+      "summary_zh": "卑南文化遺址、卑南遺址、Beinan Site、Peinan Site 不得作為卑南族歌謠、古調或歌曲來源。",
+      "source_ids": [
+        "internal_music_folk_song_rights_policy_v37"
+      ],
+      "claim_ids": [
+        "v37_beinan_site_never_music_source"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_official_channel_priority",
+      "title_zh": "來源審核：官方頻道",
+      "summary_zh": "YouTube 候選若來自官方頻道、唱片公司、文化機構或部落組織，排序高於不明轉載頻道，但仍需授權審核。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_official_channel_priority"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_archive_catalog_priority",
+      "title_zh": "來源審核：權威來源",
+      "summary_zh": "臺灣音樂館、國家文化記憶庫與金曲獎資料庫等權威 metadata 優先於一般二手資料。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "national_culture_memory_bank_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_archive_catalog_priority"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_facet_search",
+      "title_zh": "搜尋治理：搜尋",
+      "summary_zh": "歌謠搜尋索引需支援 artist、community、work_type、rights_status、review_status、ritual_sensitive 等 facets。",
+      "source_ids": [
+        "music_folk_song_search_config_v37"
+      ],
+      "claim_ids": [
+        "v37_music_facet_search"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_no_duplicate_song_candidates",
+      "title_zh": "去重治理：去重",
+      "summary_zh": "同一曲名、同一演唱者或同一 YouTube videoId 不得重複進入候選表；不同版本需標示 version_note。",
+      "source_ids": [
+        "music_folk_song_search_config_v37"
+      ],
+      "claim_ids": [
+        "v37_no_duplicate_song_candidates"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_release_channel",
+      "title_zh": "發布治理：release channel",
+      "summary_zh": "歌曲/歌謠資料須與族語語料分 release channel 管理，未審核音樂候選不得進 public。",
+      "source_ids": [
+        "music_folk_song_source_registry_v37"
+      ],
+      "claim_ids": [
+        "v37_music_release_channel"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "policy_guardrail",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_cf3b9aa103",
+      "title_zh": "歌謠/歌曲 metadata 候選：神話",
+      "summary_zh": "《神話》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_samingad_music_candidate",
+        "wiki_chen_jiannian_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_cf3b9aa103"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_d61de2c589",
+      "title_zh": "歌謠/歌曲 metadata 候選：紀曉君古調演唱候選",
+      "summary_zh": "《紀曉君古調演唱候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_samingad_music_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_d61de2c589"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_99edecbff6",
+      "title_zh": "歌謠/歌曲 metadata 候選：南王不落相關歌謠候選",
+      "summary_zh": "《南王不落相關歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_samingad_music_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_99edecbff6"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_8269183b78",
+      "title_zh": "歌謠/歌曲 metadata 候選：日光‧雨中",
+      "summary_zh": "《日光‧雨中》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_8269183b78"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_d2bffe656f",
+      "title_zh": "歌謠/歌曲 metadata 候選：海岸線",
+      "summary_zh": "《海岸線》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_d2bffe656f"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_db15e956c7",
+      "title_zh": "歌謠/歌曲 metadata 候選：砂礫",
+      "summary_zh": "《砂礫》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_db15e956c7"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_ca3773aa27",
+      "title_zh": "歌謠/歌曲 metadata 候選：美麗心民謠",
+      "summary_zh": "《美麗心民謠》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_ca3773aa27"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_d84e1ac9bd",
+      "title_zh": "歌謠/歌曲 metadata 候選：美麗心民謠 - 想念",
+      "summary_zh": "《美麗心民謠 - 想念》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_d84e1ac9bd"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_393167281d",
+      "title_zh": "歌謠/歌曲 metadata 候選：美麗心民謠 - 出發",
+      "summary_zh": "《美麗心民謠 - 出發》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_393167281d"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_474d2b7626",
+      "title_zh": "歌謠/歌曲 metadata 候選：南王姐妹花同名專輯",
+      "summary_zh": "《南王姐妹花同名專輯》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_chen_jiannian_music_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_474d2b7626"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_8d4f0f87e1",
+      "title_zh": "歌謠/歌曲 metadata 候選：無聲抗議",
+      "summary_zh": "《無聲抗議》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_8d4f0f87e1"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_23ea713949",
+      "title_zh": "歌謠/歌曲 metadata 候選：在你眼裡",
+      "summary_zh": "《在你眼裡》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_23ea713949"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_4fc02cacca",
+      "title_zh": "歌謠/歌曲 metadata 候選：小塵埃",
+      "summary_zh": "《小塵埃》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_4fc02cacca"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_ed170a4b98",
+      "title_zh": "歌謠/歌曲 metadata 候選：歸屬感",
+      "summary_zh": "《歸屬感》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_ed170a4b98"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_618744fdbf",
+      "title_zh": "歌謠/歌曲 metadata 候選：想讓你驕傲",
+      "summary_zh": "《想讓你驕傲》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_618744fdbf"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_69a93710b2",
+      "title_zh": "歌謠/歌曲 metadata 候選：陸森寶惜別晚會留言及歌聲",
+      "summary_zh": "《陸森寶惜別晚會留言及歌聲》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "claim_ids": [
+        "v37_song_69a93710b2"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_8fa18cb8f9",
+      "title_zh": "歌謠/歌曲 metadata 候選：回憶父親的歌：部落旋律候選",
+      "summary_zh": "《回憶父親的歌：部落旋律候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "national_culture_memory_bank_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_8fa18cb8f9"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_26e68294f6",
+      "title_zh": "歌謠/歌曲 metadata 候選：南王古謠教唱候選",
+      "summary_zh": "《南王古謠教唱候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "claim_ids": [
+        "v37_song_26e68294f6"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_2d8d6279a4",
+      "title_zh": "歌謠/歌曲 metadata 候選：巴拉冠相關歌謠候選",
+      "summary_zh": "《巴拉冠相關歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "wiki_damalagaw_album_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_2d8d6279a4"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_9538a5855a",
+      "title_zh": "歌謠/歌曲 metadata 候選：少年年祭歌謠候選",
+      "summary_zh": "《少年年祭歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_9538a5855a"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_bcb679d309",
+      "title_zh": "歌謠/歌曲 metadata 候選：大獵祭歌謠候選",
+      "summary_zh": "《大獵祭歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v37_song_bcb679d309"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_2790672fc2",
+      "title_zh": "歌謠/歌曲 metadata 候選：婦女除草完工祭歌謠候選",
+      "summary_zh": "《婦女除草完工祭歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "claim_ids": [
+        "v37_song_2790672fc2"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_1436641cd6",
+      "title_zh": "歌謠/歌曲 metadata 候選：海祭相關歌謠候選",
+      "summary_zh": "《海祭相關歌謠候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_1436641cd6"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_dd43191a6a",
+      "title_zh": "歌謠/歌曲 metadata 候選：家家卑南族音樂候選",
+      "summary_zh": "《家家卑南族音樂候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_dd43191a6a"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_ed08e7e366",
+      "title_zh": "歌謠/歌曲 metadata 候選：巴奈卑南族相關音樂候選",
+      "summary_zh": "《巴奈卑南族相關音樂候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "national_culture_memory_bank_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_ed08e7e366"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_a39ad9e2f0",
+      "title_zh": "歌謠/歌曲 metadata 候選：胡德夫南王音樂網絡候選",
+      "summary_zh": "《胡德夫南王音樂網絡候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "national_culture_memory_bank_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_a39ad9e2f0"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_7bd62d85c1",
+      "title_zh": "歌謠/歌曲 metadata 候選：張惠妹 Damalagaw 企劃候選",
+      "summary_zh": "《張惠妹 Damalagaw 企劃候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "golden_melody_awards_database_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_7bd62d85c1"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_ea54f5c869",
+      "title_zh": "歌謠/歌曲 metadata 候選：張王玉妹部落創作候選",
+      "summary_zh": "《張王玉妹部落創作候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_ea54f5c869"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_2d4e46d8cb",
+      "title_zh": "歌謠/歌曲 metadata 候選：大巴六九歌謠採集候選",
+      "summary_zh": "《大巴六九歌謠採集候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate",
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_song_2d4e46d8cb"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_73fef9f6aa",
+      "title_zh": "歌謠/歌曲 metadata 候選：臺灣音樂館卑南族錄音群候選",
+      "summary_zh": "《臺灣音樂館卑南族錄音群候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "taiwan_music_institute_puyuma_song_candidates",
+        "national_culture_memory_bank_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_73fef9f6aa"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_a8108c0487",
+      "title_zh": "歌謠/歌曲 metadata 候選：金曲獎卑南族音樂人候選",
+      "summary_zh": "《金曲獎卑南族音樂人候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "golden_melody_awards_database_candidate",
+        "wiki_chen_jiannian_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_song_a8108c0487"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_song_96a53ab15b",
+      "title_zh": "歌謠/歌曲 metadata 候選：YouTube 卑南語歌曲 playlist 候選",
+      "summary_zh": "《YouTube 卑南語歌曲 playlist 候選》已納入 v37 歌謠/歌曲 metadata 候選；目前只保存作品名稱、人物/來源、候選來源與審核狀態，不保存歌詞或音訊。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37",
+        "music_folk_song_source_registry_v37"
+      ],
+      "claim_ids": [
+        "v37_song_96a53ab15b"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_needs_authoritative_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_samingad_old_song_lineage",
+      "title_zh": "人物音樂脈絡：紀曉君",
+      "summary_zh": "紀曉君/Samingad 公開資料顯示其與南王部落、卑南族古謠演唱脈絡相關；v37 僅建立人物與表演 metadata 候選，不複製歌曲內容。",
+      "source_ids": [
+        "wiki_samingad_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_samingad_old_song_lineage"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_chen_jiannian_music_network",
+      "title_zh": "人物音樂脈絡：陳建年",
+      "summary_zh": "陳建年公開資料顯示其為卑南族歌手，與南王部落及陸森寶家族音樂脈絡相關；v37 用於人物/作品 metadata 候選。",
+      "source_ids": [
+        "wiki_chen_jiannian_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_chen_jiannian_music_network"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_chen_yonglong_traditional_performance",
+      "title_zh": "人物音樂脈絡：陳永龍",
+      "summary_zh": "陳永龍公開資料顯示其為臺東市南王部落卑南族歌手，曾傳唱原住民傳統音樂；v37 僅作人物與專輯 metadata 候選。",
+      "source_ids": [
+        "wiki_chen_yonglong_music_candidate"
+      ],
+      "claim_ids": [
+        "v37_chen_yonglong_traditional_performance"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_huang_meizhen_tamalakao_link",
+      "title_zh": "現代專輯候選：黃美珍",
+      "summary_zh": "黃美珍《大巴六九/Tamalakao》公開資料將專輯名稱連結至臺東卑南鄉泰安村部落名稱；v37 只建 metadata 候選。",
+      "source_ids": [
+        "wiki_huang_meizhen_tamalakao_candidate"
+      ],
+      "claim_ids": [
+        "v37_huang_meizhen_tamalakao_link"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_damalagaw_album_track_metadata",
+      "title_zh": "部落傳唱候選：Damalagaw",
+      "summary_zh": "Damalagaw 大巴六九部落傳唱歌謠公開資料列有多首曲目，v37 延續曲目 metadata 管理與授權審核。",
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "claim_ids": [
+        "v37_damalagaw_album_track_metadata"
+      ],
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_lu_senbao_archival_recording",
+      "title_zh": "典藏錄音候選：陸森寶",
+      "summary_zh": "陸森寶公開資料列出作品與典藏連結候選，v37 新增典藏錄音 metadata 審核管線，不保存音訊。",
+      "source_ids": [
+        "wiki_lu_senbao_music_candidate",
+        "taiwan_music_institute_puyuma_song_candidates"
+      ],
+      "claim_ids": [
+        "v37_lu_senbao_archival_recording"
+      ],
+      "confidence": "medium",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_ritual_song_not_training_data",
+      "title_zh": "音樂AI防護：TTS",
+      "summary_zh": "祭儀相關歌謠與古調即使 metadata 可查，也不得作為歌聲模型、TTS 或 AI 音樂生成訓練資料，除非取得明確授權與文化審核。",
+      "source_ids": [
+        "internal_music_folk_song_rights_policy_v37"
+      ],
+      "claim_ids": [
+        "v37_ritual_song_not_training_data"
+      ],
+      "confidence": "policy",
+      "sensitivity": "medium",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_youtube_playlist_candidate",
+      "title_zh": "YouTube候選：YouTube",
+      "summary_zh": "YouTube playlist 只能做外部來源候選與審核入口，不得內嵌未授權音訊，不得視為正式典藏。",
+      "source_ids": [
+        "youtube_data_api_metadata_worker_v37"
+      ],
+      "claim_ids": [
+        "v37_youtube_playlist_candidate"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_search_zero_result_workflow",
+      "title_zh": "搜尋治理：zero-result",
+      "summary_zh": "若主站搜尋不到歌謠結果，應記錄 zero-result query 並導入後台候選搜尋，而不是讓 AI 自編歌曲資訊。",
+      "source_ids": [
+        "music_folk_song_search_config_v37"
+      ],
+      "claim_ids": [
+        "v37_music_search_zero_result_workflow"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_candidate_versioning",
+      "title_zh": "版本治理：版本治理",
+      "summary_zh": "同一作品若有典藏版、現場版、翻唱版、MV 版或教唱版，必須以 version_type/version_note 分開，避免重複或混淆。",
+      "source_ids": [
+        "music_folk_song_search_config_v37"
+      ],
+      "claim_ids": [
+        "v37_music_candidate_versioning"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_source_packets_citation_required",
+      "title_zh": "AI文章引用：source packet",
+      "summary_zh": "音樂類 AI 文章素材包必須攜帶 source_ids/claim_ids；沒有來源的曲目、人物關係或部落歸屬不得寫成史實。",
+      "source_ids": [
+        "frontend_folk_song_source_packets_v37"
+      ],
+      "claim_ids": [
+        "v37_music_source_packets_citation_required"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    },
+    {
+      "card_id": "card_v37_music_candidate_not_public_until_review",
+      "title_zh": "審核流程：審核",
+      "summary_zh": "v37 新增歌謠候選預設不進 public release；需通過授權、來源、敏感性、去重與禁止關聯檢查後才可公開摘要。",
+      "source_ids": [
+        "music_folk_song_source_registry_v37"
+      ],
+      "claim_ids": [
+        "v37_music_candidate_not_public_until_review"
+      ],
+      "confidence": "policy",
+      "sensitivity": "low",
+      "review_status": "candidate_or_policy_review",
+      "visibility": "public_summary_or_candidate",
+      "no_lyrics": true,
+      "no_audio_download": true,
+      "forbidden_relation_checked": true
+    }
+  ]
+}

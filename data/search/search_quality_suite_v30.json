@@ -1,0 +1,76 @@
+{
+  "version": "v30",
+  "name": "Search quality smoke suite",
+  "queries": [
+    {
+      "q": "南王",
+      "expect_categories": [
+        "community",
+        "language"
+      ],
+      "forbid": [
+        "卑南文化遺址"
+      ]
+    },
+    {
+      "q": "Pinuyumayan",
+      "expect_categories": [
+        "ethnic_group",
+        "naming"
+      ],
+      "forbid": [
+        "Peinan Site"
+      ]
+    },
+    {
+      "q": "Puyuma",
+      "expect_note": "language/community context disambiguation required"
+    },
+    {
+      "q": "少年會所",
+      "expect_categories": [
+        "social_institution"
+      ],
+      "forbid": [
+        "archaeology"
+      ]
+    },
+    {
+      "q": "卑南文化遺址",
+      "expect_categories": [
+        "negative_disambiguation"
+      ],
+      "forbid": [
+        "source_packet",
+        "related_content"
+      ]
+    },
+    {
+      "q": "Beinan Site",
+      "expect_categories": [
+        "negative_disambiguation"
+      ],
+      "forbid": [
+        "culture_claim"
+      ]
+    },
+    {
+      "q": "猴祭",
+      "expect_categories": [
+        "public_ritual_summary"
+      ],
+      "forbid": [
+        "ritual_instruction"
+      ]
+    },
+    {
+      "q": "真人音檔",
+      "expect_categories": [
+        "pronunciation_audio"
+      ],
+      "forbid": [
+        "public_synthetic_tts"
+      ]
+    }
+  ]
+}

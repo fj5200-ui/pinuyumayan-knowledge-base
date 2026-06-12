@@ -1,0 +1,39 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "worker_name": "youtube_folk_song_metadata_worker_v37",
+  "purpose_zh": "用 YouTube Data API 抓候選影片 metadata，不下載音訊/影片，不保存歌詞。",
+  "allowed_fields": [
+    "videoId",
+    "title",
+    "channelId",
+    "channelTitle",
+    "publishedAt",
+    "description_excerpt_max_280",
+    "thumbnail_url",
+    "duration",
+    "liveBroadcastContent",
+    "viewCount_optional",
+    "likeCount_optional"
+  ],
+  "blocked_fields": [
+    "captions_full_text",
+    "lyrics",
+    "audio_stream",
+    "video_file",
+    "transcript_full_text"
+  ],
+  "blocked_terms": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "卑南遺址公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "output_table": "music_youtube_source_candidates_v37",
+  "review_required": true,
+  "hmac_required_for_ingestion_report": true
+}

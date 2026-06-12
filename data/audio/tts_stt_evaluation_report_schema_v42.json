@@ -1,0 +1,30 @@
+{
+  "version": "v42",
+  "tts_metrics": [
+    "mos",
+    "speaker_similarity",
+    "pronunciation_accuracy",
+    "reviewer_acceptance_rate"
+  ],
+  "stt_metrics": [
+    "wer",
+    "cer",
+    "dialect_breakdown",
+    "sensitive_content_false_publish_rate"
+  ],
+  "minimum_public_release_gate": {
+    "tts_mos_min": 4.0,
+    "stt_cer_max": 0.15,
+    "human_review_required": true,
+    "license_review_required": true
+  },
+  "report_fields": [
+    "model_id",
+    "dataset_version",
+    "split_hash",
+    "metric_values",
+    "reviewers",
+    "blocked_items",
+    "release_decision"
+  ]
+}

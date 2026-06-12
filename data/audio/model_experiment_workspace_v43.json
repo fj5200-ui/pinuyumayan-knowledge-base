@@ -1,0 +1,33 @@
+{
+  "version": "v43",
+  "workspace_paths": {
+    "datasets": "/opt/pinuyumayan/speech/datasets",
+    "experiments": "/opt/pinuyumayan/speech/experiments",
+    "model_cards": "/opt/pinuyumayan/speech/model-cards",
+    "reports": "/opt/pinuyumayan/speech/reports"
+  },
+  "models": [
+    {
+      "model_type": "tts",
+      "status": "experiment_only",
+      "public_release": "disabled",
+      "required_metrics": [
+        "MOS",
+        "speaker_similarity",
+        "pronunciation_review"
+      ]
+    },
+    {
+      "model_type": "stt",
+      "status": "experiment_only",
+      "public_release": "disabled",
+      "required_metrics": [
+        "WER",
+        "CER",
+        "dialect_breakdown",
+        "human_review"
+      ]
+    }
+  ],
+  "release_rule": "no model artifact can be public until license, consent, human review, MOS/WER/CER gates pass"
+}

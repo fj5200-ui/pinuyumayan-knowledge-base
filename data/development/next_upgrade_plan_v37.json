@@ -1,0 +1,59 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:15:00+08:00",
+  "title_zh": "下一次完善＆開發＆升級＆優化方案：v37",
+  "priorities": [
+    {
+      "priority": 1,
+      "direction": "YouTube Data API 真實 metadata worker",
+      "tasks": [
+        "用 API 抓 title/channel/videoId/publishedAt/thumbnail/duration",
+        "寫入 music_youtube_source_candidates_v36",
+        "禁止下載 audio/video",
+        "命中卑南文化遺址相關詞直接 block"
+      ]
+    },
+    {
+      "priority": 2,
+      "direction": "音樂審核 UI",
+      "tasks": [
+        "顯示歌曲 catalog、影片縮圖、來源、授權、敏感標籤",
+        "approve 後才進 public summary",
+        "reject/request_revision 寫 audit log"
+      ]
+    },
+    {
+      "priority": 3,
+      "direction": "音樂搜尋索引",
+      "tasks": [
+        "把 v36 music documents 寫入 MySQL FULLTEXT",
+        "新增 music facets: artist/community/work_type/rights_status"
+      ]
+    },
+    {
+      "priority": 4,
+      "direction": "權威來源補強",
+      "tasks": [
+        "實抓臺灣音樂館、國家文化記憶庫、金曲獎資料庫、唱片發行資料 metadata 候選",
+        "只進候選區"
+      ]
+    },
+    {
+      "priority": 5,
+      "direction": "AI Composer 音樂防護落地",
+      "tasks": [
+        "草稿必須帶 claim_ids/source_ids",
+        "阻擋仿古調歌詞",
+        "阻擋無來源音樂史料"
+      ]
+    },
+    {
+      "priority": 6,
+      "direction": "VPS 千筆語料",
+      "tasks": [
+        "實跑 full corpus",
+        "語詞資料與音樂資料分表/分 release channel 管理"
+      ]
+    }
+  ]
+}

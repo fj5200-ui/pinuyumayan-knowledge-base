@@ -1,0 +1,59 @@
+{
+  "version": "v30",
+  "name": "Main site production acceptance",
+  "tests": [
+    {
+      "id": "public_bootstrap",
+      "method": "GET",
+      "path": "/api/public/knowledge/bootstrap",
+      "expected": "200 and public-safe payload"
+    },
+    {
+      "id": "public_search",
+      "method": "GET",
+      "path": "/api/public/knowledge/search?q=南王",
+      "expected": "200 and no forbidden archaeology relation"
+    },
+    {
+      "id": "public_audio_manifest",
+      "method": "GET",
+      "path": "/api/public/audio/manifest",
+      "expected": "200 and real audio assets when available"
+    },
+    {
+      "id": "source_packets",
+      "method": "GET",
+      "path": "/api/public/ai-article/v21/source-packets",
+      "expected": "200 and no Beinan/Peinan archaeological source"
+    },
+    {
+      "id": "internal_delta_hmac",
+      "method": "GET",
+      "path": "/api/internal/main-site/knowledge/delta",
+      "expected": "401 without HMAC, 200 with valid HMAC"
+    },
+    {
+      "id": "draft_validate",
+      "method": "POST",
+      "path": "/api/internal/ai-article/client-draft/validate",
+      "expected": "citation/dedup/forbidden/sensitivity findings"
+    },
+    {
+      "id": "admin_login",
+      "method": "POST",
+      "path": "/api/admin/auth/v26/login",
+      "expected": "session token and audit log"
+    },
+    {
+      "id": "review_action",
+      "method": "POST",
+      "path": "/api/admin/articles/v26/review-action",
+      "expected": "transaction recorded"
+    }
+  ],
+  "forbidden_relation_assertions": [
+    "卑南文化遺址 must not appear as source packet",
+    "Beinan Site must not appear as related Pinuyumayan cultural content",
+    "Peinan Archaeological Site may only appear as negative_disambiguation"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "version": "v38",
+  "generated_at": "2026-06-12T11:45:00+08:00",
+  "count": 6,
+  "packets": [
+    {
+      "packet_id": "music_v38_fe4b6a4d3fb6",
+      "title_zh": "陸森寶作品脈絡",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_46dd5eba4af5",
+        "music_v38_1551d8202910",
+        "music_v38_e2c82c96d8bf",
+        "music_v38_5cdee37f2e81",
+        "music_v38_18d25ee651c9"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate",
+        "wiki_lu_senbao_music_candidate"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    },
+    {
+      "packet_id": "music_v38_c1281dc8458a",
+      "title_zh": "Samingad 古調演唱脈絡",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_897abe989969"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    },
+    {
+      "packet_id": "music_v38_c0d7a0af43c4",
+      "title_zh": "Damalagaw 部落傳唱歌謠",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_253fa5e302ee"
+      ],
+      "source_ids": [
+        "wiki_damalagaw_album_candidate"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    },
+    {
+      "packet_id": "music_v38_3181f40121e5",
+      "title_zh": "臺灣音樂館館藏錄音",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_7159061b78be"
+      ],
+      "source_ids": [
+        "taiwan_music_institute_archive_candidate"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    },
+    {
+      "packet_id": "music_v38_5c2c059a999d",
+      "title_zh": "YouTube metadata 候選",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_89530b181fcb",
+        "music_v38_7fbe3d7e0487",
+        "music_v38_e97aea501fb5",
+        "music_v38_897abe989969",
+        "music_v38_62e95be22623",
+        "music_v38_dab348a26499",
+        "music_v38_782f962de869"
+      ],
+      "source_ids": [
+        "youtube_metadata_candidate"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    },
+    {
+      "packet_id": "music_v38_c304eebd0a76",
+      "title_zh": "祭儀相關歌謠公開摘要",
+      "purpose": "frontend_ai_article_grounding_metadata_only",
+      "claim_ids": [
+        "music_v38_0a9378fbae30"
+      ],
+      "source_ids": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "guardrails": [
+        "不得輸出完整歌詞",
+        "不得下載或嵌入未授權音源",
+        "不得生成仿古調歌詞",
+        "敏感祭儀/巫師/除喪只允許公開摘要",
+        "不得關聯已列入 forbidden archaeology relation 的考古遺址詞彙"
+      ],
+      "review_status": "candidate_source_packet_needs_review"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": "v43",
+  "panels": [
+    "speech dataset review",
+    "TTS/STT evaluation",
+    "music candidate review",
+    "YouTube metadata candidates",
+    "authority source fetch runs",
+    "music search index",
+    "AI guardrail violations"
+  ],
+  "live_api_endpoints": [
+    "/api/admin/speech-training/v43/review-queue",
+    "/api/admin/speech-training/v43/evaluation-dashboard",
+    "/api/admin/music/v43/review-dashboard",
+    "/api/ops/search/music/v43/index-status"
+  ]
+}

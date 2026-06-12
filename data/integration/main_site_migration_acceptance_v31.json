@@ -1,0 +1,73 @@
+{
+  "version": "v31",
+  "title": "Main site migration acceptance",
+  "required_env": [
+    "NEXT_PUBLIC_KB_API_URL",
+    "PINUYUMAYAN_KB_API_URL",
+    "PINUYUMAYAN_MAIN_SITE_CLIENT_ID",
+    "PINUYUMAYAN_MAIN_SITE_API_KEY",
+    "PINUYUMAYAN_HMAC_SECRET",
+    "PINUYUMAYAN_HMAC_ENABLED",
+    "AI_PROVIDER",
+    "NEXT_PUBLIC_SITE_URL"
+  ],
+  "routes_to_migrate": [
+    {
+      "source": "webapp/app/api/ai/compose-v25/route.ts",
+      "target": "app/api/ai/compose/route.ts",
+      "server_only": true
+    },
+    {
+      "source": "webapp/app/api/kb/connection-check/route.ts",
+      "target": "app/api/kb/connection-check/route.ts",
+      "server_only": true
+    },
+    {
+      "source": "webapp/app/api/admin/articles/review-action/route.ts",
+      "target": "app/api/admin/articles/review-action/route.ts",
+      "server_only": true
+    },
+    {
+      "source": "webapp/lib/kbHmacClient.v25.ts",
+      "target": "src/lib/kbHmacClient.ts",
+      "server_only": true
+    },
+    {
+      "source": "webapp/components/AdminArticleReviewWorkbenchV25.tsx",
+      "target": "components/admin/AdminArticleReviewWorkbench.tsx",
+      "server_only": false
+    }
+  ],
+  "acceptance_tests": [
+    {
+      "id": "main.kb.health",
+      "method": "GET",
+      "path": "/api/kb/health",
+      "expected": "200 ok"
+    },
+    {
+      "id": "main.ai.compose.mock",
+      "method": "POST",
+      "path": "/api/ai/compose",
+      "expected": "draft returned in staging mock mode"
+    },
+    {
+      "id": "main.ai.validate",
+      "method": "POST",
+      "path": "/api/ai/validate-draft",
+      "expected": "backend citation/dedupe/sensitivity checks returned"
+    },
+    {
+      "id": "main.submit_review",
+      "method": "POST",
+      "path": "/api/ai/submit-review",
+      "expected": "review entry accepted"
+    },
+    {
+      "id": "main.no_browser_secret",
+      "method": "static_scan",
+      "path": ".next/static",
+      "expected": "no API key/HMAC/AI key string"
+    }
+  ]
+}

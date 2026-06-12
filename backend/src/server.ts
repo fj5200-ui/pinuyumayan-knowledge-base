@@ -6,6 +6,22 @@ import { registerArticleReviewDbV26Routes } from "./rest/articleReviewDbV26Route
 import { registerVpsDatabaseV26Routes } from "./rest/vpsDatabaseV26Routes";
 import { registerVpsStagingV27Routes } from "./rest/vpsStagingV27Routes";
 import { registerVpsLiveOpsV28Routes } from "./rest/vpsLiveOpsV28Routes";
+import { registerVpsActualOpsV29Routes } from "./rest/vpsActualOpsV29Routes";
+import { registerProductionCutoverV30Routes } from "./rest/productionCutoverV30Routes";
+import { registerProductionDryRunV31Routes } from "./rest/productionDryRunV31Routes";
+import { registerVpsDryRunBackfillV32Routes } from "./rest/vpsDryRunBackfillV32Routes";
+import { registerExpandedSourceSearchV33Routes } from "./rest/expandedSourceSearchV33Routes";
+import { registerExpandedTrueKnowledgeV34Routes } from "./rest/expandedTrueKnowledgeV34Routes";
+import { registerMusicYoutubeKnowledgeV35Routes } from "./rest/musicYoutubeKnowledgeV35Routes";
+import { registerMusicSongCatalogV36Routes } from "./rest/musicSongCatalogV36Routes";
+import { registerMusicFolkSongCatalogV37Routes } from "./rest/musicFolkSongCatalogV37Routes";
+import { registerMusicFolkSongDeepV38Routes } from "./rest/musicFolkSongDeepV38Routes";
+import { registerMusicFolkSongExpansionV39Routes } from "./rest/musicFolkSongExpansionV39Routes";
+import { registerMusicFolkSongExpansionV40Routes } from "./rest/musicFolkSongExpansionV40Routes";
+import { registerTtsSttMusicOpsV41Routes } from "./rest/ttsSttMusicOpsV41Routes";
+import { registerTtsSttEvalMusicSearchV42Routes } from "./rest/ttsSttEvalMusicSearchV42Routes";
+import { registerTtsSttLiveMusicV43Routes } from "./rest/ttsSttLiveMusicV43Routes";
+import { enforceInternalHmacV32 } from "./security/enforceInternalHmacV32";
 import "dotenv/config";
 import express from "express";
 import helmet from "helmet";
@@ -48,6 +64,7 @@ app.use(cors({ origin: env.corsOrigin === "*" ? true : env.corsOrigin.split(",")
 app.use(express.json({ limit: "2mb" }));
 app.use("/api/public", createMemoryRateLimit({ windowMs: 60_000, max: env.publicRateLimitPerMinute, keyPrefix: "public" }));
 app.use("/api/internal", createMemoryRateLimit({ windowMs: 60_000, max: env.internalRateLimitPerMinute, keyPrefix: "internal" }));
+app.use("/api/internal", enforceInternalHmacV32());
 setInterval(cleanupRateLimitBuckets, 60_000).unref();
 
 app.get("/health", (_req, res) => {
@@ -84,6 +101,21 @@ registerArticleReviewDbV26Routes(app);
 registerVpsDatabaseV26Routes(app);
 registerVpsStagingV27Routes(app);
 registerVpsLiveOpsV28Routes(app);
+registerVpsActualOpsV29Routes(app);
+registerProductionCutoverV30Routes(app);
+registerProductionDryRunV31Routes(app);
+registerVpsDryRunBackfillV32Routes(app);
+registerExpandedSourceSearchV33Routes(app);
+registerExpandedTrueKnowledgeV34Routes(app);
+registerMusicYoutubeKnowledgeV35Routes(app);
+registerMusicSongCatalogV36Routes(app);
+registerMusicFolkSongCatalogV37Routes(app);
+registerMusicFolkSongDeepV38Routes(app);
+registerMusicFolkSongExpansionV39Routes(app);
+registerMusicFolkSongExpansionV40Routes(app);
+registerTtsSttMusicOpsV41Routes(app);
+registerTtsSttEvalMusicSearchV42Routes(app);
+registerTtsSttLiveMusicV43Routes(app);
 
 app.use("/trpc", createExpressMiddleware({ router: appRouter, createContext }));
 

@@ -1,0 +1,28 @@
+{
+  "version": "v41",
+  "generated_at": "2026-06-12T13:45:00+08:00",
+  "tts_required_metrics": [
+    "MOS",
+    "pronunciation_error_rate",
+    "dialect_consistency_review",
+    "phoneme_error_notes",
+    "human_reviewer_notes"
+  ],
+  "stt_required_metrics": [
+    "WER",
+    "CER",
+    "dialect_grouped_WER",
+    "speaker_grouped_WER",
+    "OOV_rate",
+    "human_reviewer_notes"
+  ],
+  "blocking_findings": [
+    "license_not_approved",
+    "youtube_audio_detected",
+    "sensitive_ritual_or_shamanic_content",
+    "missing_transcript_alignment",
+    "missing_dialect_tag",
+    "duplicate_audio_hash"
+  ],
+  "current_status": "training_not_started_preview_candidates_only"
+}

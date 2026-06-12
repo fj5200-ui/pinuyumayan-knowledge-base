@@ -1,0 +1,192 @@
+{
+  "version": "v34",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "count": 8,
+  "candidates": [
+    {
+      "candidate_id": "v34_candidate_001",
+      "source_id": "tipp_pinuyumayan_profile_candidate",
+      "title": "TIPP 臺灣原住民族資訊資源網：卑南族相關頁面候選",
+      "source_class": "ethnography_and_community_profiles",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "卑南族 族群歷史",
+        "卑南族 部落介紹",
+        "Pinuyumayan"
+      ],
+      "required_checks": [
+        "fetch",
+        "license",
+        "duplicate",
+        "forbidden_relation",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    },
+    {
+      "candidate_id": "v34_candidate_002",
+      "source_id": "ilrdf_puyuma_dictionary_candidate",
+      "title": "原住民族語言線上詞典 / 族語 E 樂園：卑南語候選",
+      "source_class": "language_dictionary",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "卑南語 詞典",
+        "南王卑南語",
+        "知本卑南語"
+      ],
+      "required_checks": [
+        "license",
+        "dialect_tag",
+        "audio_link_check",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "high"
+    },
+    {
+      "candidate_id": "v34_candidate_003",
+      "source_id": "formosanbank_puyuma_audio_candidate",
+      "title": "FormosanBank / ePark 卑南語音檔語料候選",
+      "source_class": "language_audio_corpus",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "Nanwang_Puyuma",
+        "Zhiben_Puyuma",
+        "Xiqun_Puyuma",
+        "Jianhe_Puyuma"
+      ],
+      "required_checks": [
+        "license",
+        "audio_url",
+        "phon_coverage",
+        "dedupe",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "high"
+    },
+    {
+      "candidate_id": "v34_candidate_004",
+      "source_id": "culture_memory_pinuyumayan_candidate",
+      "title": "國家文化記憶庫：卑南族候選",
+      "source_class": "cultural_memory_metadata",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "卑南族",
+        "南王",
+        "知本",
+        "建和",
+        "利嘉",
+        "寶桑"
+      ],
+      "required_checks": [
+        "license",
+        "metadata",
+        "forbidden_relation",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    },
+    {
+      "candidate_id": "v34_candidate_005",
+      "source_id": "taiwan_music_pinuyumayan_candidate",
+      "title": "臺灣音樂館 / 文化部典藏：卑南族歌謠候選",
+      "source_class": "music_archive_metadata",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "南王卑南族童謠",
+        "知本卑南族少年年祭之歌",
+        "Mangednged"
+      ],
+      "required_checks": [
+        "license",
+        "performer_context",
+        "audio_rights",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    },
+    {
+      "candidate_id": "v34_candidate_006",
+      "source_id": "taitung_local_pinuyumayan_candidate",
+      "title": "臺東縣政府 / 臺東縣文化處：卑南族活動與文化候選",
+      "source_class": "local_government_events",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "卑南族 年祭",
+        "卑南族 部落",
+        "台東 卑南族 文化"
+      ],
+      "required_checks": [
+        "recency",
+        "license",
+        "event_context",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    },
+    {
+      "candidate_id": "v34_candidate_007",
+      "source_id": "academia_sinica_puyuma_metadata_candidate",
+      "title": "中央研究院語言學 / 民族學相關 metadata 候選",
+      "source_class": "academic_metadata",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "Puyuma language",
+        "Pinuyumayan",
+        "Teng Puyuma grammar",
+        "Cauquelin Puyuma"
+      ],
+      "required_checks": [
+        "bibliographic_metadata",
+        "copyright",
+        "summary_only",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    },
+    {
+      "candidate_id": "v34_candidate_008",
+      "source_id": "community_public_pages_candidate",
+      "title": "部落/協會公開頁面候選",
+      "source_class": "community_public_page",
+      "status": "candidate_needs_fetch_and_human_review",
+      "public_use": "candidate_only_not_public",
+      "query_hints": [
+        "Katratripulr",
+        "Kasavakan",
+        "Puyuma Nanwang",
+        "Pinaski",
+        "Ulivelivek"
+      ],
+      "required_checks": [
+        "permission",
+        "community_context",
+        "sensitive_content",
+        "human_review"
+      ],
+      "forbidden_relation_checked": false,
+      "license_status": "unknown_pending_review",
+      "review_priority": "medium"
+    }
+  ]
+}

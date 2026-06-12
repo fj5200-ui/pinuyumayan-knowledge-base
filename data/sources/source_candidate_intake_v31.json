@@ -1,0 +1,57 @@
+{
+  "version": "v31",
+  "mode": "candidate_only",
+  "candidate_sources": [
+    {
+      "key": "cip",
+      "name": "原住民族委員會",
+      "default_status": "verified_candidate",
+      "auto_public": false
+    },
+    {
+      "key": "tipp",
+      "name": "臺灣原住民族資訊資源網 TIPP",
+      "default_status": "candidate_needs_human_review",
+      "auto_public": false
+    },
+    {
+      "key": "moc_memory",
+      "name": "國家文化記憶庫/文化部相關公開資料",
+      "default_status": "candidate_needs_human_review",
+      "auto_public": false
+    },
+    {
+      "key": "taitung_local",
+      "name": "臺東縣地方公開資料",
+      "default_status": "candidate_needs_human_review",
+      "auto_public": false
+    },
+    {
+      "key": "museum_catalog",
+      "name": "博物館館藏/出版 metadata 候選",
+      "default_status": "candidate_needs_human_review",
+      "auto_public": false,
+      "note": "must exclude Beinan/Peinan archaeological site as Pinuyumayan cultural source"
+    }
+  ],
+  "blocked_relations": [
+    "卑南文化遺址",
+    "卑南遺址",
+    "卑南考古遺址",
+    "卑南文化公園",
+    "Peinan Site",
+    "Beinan Site",
+    "Peinan Archaeological Site"
+  ],
+  "required_fields": [
+    "source_url",
+    "source_title",
+    "publisher",
+    "retrieved_at",
+    "license_status",
+    "claim_text",
+    "confidence",
+    "review_status",
+    "sensitivity"
+  ]
+}

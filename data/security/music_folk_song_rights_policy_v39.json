@@ -1,0 +1,37 @@
+{
+  "version": "v39",
+  "generated_at": "2026-06-12T12:35:00+08:00",
+  "description_zh": "v39 歌謠/歌曲/古調權利與文化安全政策。",
+  "hard_blocks": [
+    "full_lyrics_storage",
+    "youtube_audio_download",
+    "youtube_video_download",
+    "unlicensed_tts_training",
+    "unlicensed_singing_voice_training",
+    "ai_old_tune_lyric_generation",
+    "unreviewed_ritual_instruction"
+  ],
+  "allowed_public_fields": [
+    "title_zh",
+    "artist_or_source",
+    "source_url",
+    "source_id",
+    "publisher_or_channel",
+    "work_type",
+    "community_tags",
+    "rights_status",
+    "review_status",
+    "short_summary",
+    "claim_ids"
+  ],
+  "requires_human_review": [
+    "ritual_related_song",
+    "shaman_related_song",
+    "mourning_related_song",
+    "ancestral_reference_song",
+    "community_sensitive_tag",
+    "unknown_rights_status"
+  ],
+  "youtube_policy": "metadata-only via official API; no download; no lyric scraping; no reuse beyond link/metadata unless rights permit.",
+  "ai_composer_policy": "AI may summarize metadata and source-grounded context; AI must not write lyrics in old-tune style or copy lyrics."
+}

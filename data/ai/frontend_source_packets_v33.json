@@ -1,0 +1,90 @@
+{
+  "version": "v33",
+  "generated_at": "2026-06-12T00:00:00+08:00",
+  "count": 3,
+  "packets": [
+    {
+      "packet_id": "v33_profile_and_names",
+      "title_zh": "族稱、地理與主要部落 source packet",
+      "claim_ids": [
+        "v33_geo_name_boundary",
+        "v33_geo_center_taitung_plain",
+        "v33_geo_communities_source_list",
+        "v33_chinese_current_population"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v33_lifeways",
+      "title_zh": "生業、飲食、服飾、工藝與建築 source packet",
+      "claim_ids": [
+        "v33_industry_millet_origin",
+        "v33_industry_cash_crops",
+        "v33_food_staples",
+        "v33_food_shellflower",
+        "v33_betel_life_ritual",
+        "v33_clothing_colors",
+        "v33_clothing_social_identity",
+        "v33_wreath_social_relations",
+        "v33_weaving_rattan_bamboo",
+        "v33_architecture_categories",
+        "v33_family_house_layout",
+        "v33_dakuvan_palakuan"
+      ],
+      "allowed_for_frontend_ai": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ]
+    },
+    {
+      "packet_id": "v33_social_music_ritual_summary",
+      "title_zh": "社會制度、音樂舞蹈、語言與祭儀公開摘要 source packet",
+      "claim_ids": [
+        "v33_profile_age_hall_core",
+        "v33_profile_existing_rituals_summary",
+        "v33_music_story_rhythm",
+        "v33_music_modern_artists",
+        "v33_dance_gender_age",
+        "v33_language_variation",
+        "v33_social_roles",
+        "v33_kinship_matrilineality_change",
+        "v33_age_training_summary",
+        "v33_1991_revitalization",
+        "v33_religion_public_boundary",
+        "v33_ritual_two_types",
+        "v33_ritual_calendar_public",
+        "v33_mangayaw_joint_1982",
+        "v33_chinese_annual_events"
+      ],
+      "allowed_for_frontend_ai": true,
+      "requires_human_review_before_publish": true,
+      "required_citations": [
+        "cip_pinuyumayan_profile_en_2021",
+        "cip_pinuyumayan_profile_zh_current"
+      ],
+      "blocked_terms": [
+        "卑南文化遺址",
+        "卑南遺址",
+        "Beinan Site",
+        "Peinan Site"
+      ],
+      "guardrail_zh": "祭儀與信仰只能摘要，不輸出流程、禁忌、祖靈/巫術細節或操作教學。"
+    }
+  ]
+}

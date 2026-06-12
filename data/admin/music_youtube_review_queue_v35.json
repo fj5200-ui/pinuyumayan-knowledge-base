@@ -1,0 +1,187 @@
+{
+  "version": "v35",
+  "generated_at": "2026-06-12T09:35:00+08:00",
+  "count": 15,
+  "items": [
+    {
+      "candidate_id": "ytq-v35-001",
+      "type": "youtube_query_seed",
+      "query": "卑南族 歌謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-002",
+      "type": "youtube_query_seed",
+      "query": "卑南族 古調",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-003",
+      "type": "youtube_query_seed",
+      "query": "卑南族 古謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-004",
+      "type": "youtube_query_seed",
+      "query": "南王部落 歌謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-005",
+      "type": "youtube_query_seed",
+      "query": "南王部落 古調",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-006",
+      "type": "youtube_query_seed",
+      "query": "南王姊妹花 卑南族",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-007",
+      "type": "youtube_query_seed",
+      "query": "陸森寶 美麗的稻穗",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-008",
+      "type": "youtube_query_seed",
+      "query": "陸森寶 懷念年祭",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-009",
+      "type": "youtube_query_seed",
+      "query": "紀曉君 卑南族 古謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-010",
+      "type": "youtube_query_seed",
+      "query": "Samingad Puyuma old song",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-011",
+      "type": "youtube_query_seed",
+      "query": "Damalagaw 大巴六九部落傳唱歌謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-012",
+      "type": "youtube_query_seed",
+      "query": "大巴六九 部落出征古謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-013",
+      "type": "youtube_query_seed",
+      "query": "卑南族 年祭 歌謠",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-014",
+      "type": "youtube_query_seed",
+      "query": "卑南族 巴拉冠 歌",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    },
+    {
+      "candidate_id": "ytq-v35-015",
+      "type": "youtube_query_seed",
+      "query": "卑南語 歌曲 Puyuma",
+      "review_status": "needs_youtube_api_fetch",
+      "risk_flags": [
+        "copyright_review_required",
+        "relation_review_required"
+      ],
+      "blocked_terms_checked": true,
+      "notes_zh": "先用 YouTube Data API 或人工搜尋取得 metadata；不得下載音訊或擷取歌詞。"
+    }
+  ]
+}

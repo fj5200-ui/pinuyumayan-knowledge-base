@@ -1,0 +1,30 @@
+{
+  "version": "v32",
+  "production_policy": {
+    "NODE_ENV": "production",
+    "KNOWLEDGE_DATA_MODE": "db",
+    "DISABLE_PRODUCTION_STATIC_FALLBACK": "true"
+  },
+  "rules": [
+    "In production, DB-backed routes must fail closed when database is unavailable.",
+    "Static JSON fallback is allowed only in development, or staging with warning event.",
+    "Fallback events must be logged with route, environment, fallback_file, and request_id."
+  ],
+  "route_classes": [
+    {
+      "class": "public_read",
+      "fallback_allowed_in_development": true,
+      "fallback_allowed_in_production": false
+    },
+    {
+      "class": "internal_write",
+      "fallback_allowed_in_development": false,
+      "fallback_allowed_in_production": false
+    },
+    {
+      "class": "ops_read",
+      "fallback_allowed_in_development": true,
+      "fallback_allowed_in_production": false
+    }
+  ]
+}

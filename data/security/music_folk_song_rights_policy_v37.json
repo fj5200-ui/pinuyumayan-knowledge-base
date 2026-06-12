@@ -1,0 +1,41 @@
+{
+  "version": "v37",
+  "generated_at": "2026-06-12T10:35:00+08:00",
+  "rules": [
+    {
+      "rule_id": "metadata_only_default",
+      "severity": "required",
+      "description_zh": "所有歌謠/歌曲候選預設只保存 metadata、來源 URL、審核狀態。"
+    },
+    {
+      "rule_id": "no_lyrics_storage",
+      "severity": "block",
+      "description_zh": "不得保存完整歌詞、逐字轉寫或提供 AI 改寫歌詞。"
+    },
+    {
+      "rule_id": "no_youtube_audio_download",
+      "severity": "block",
+      "description_zh": "不得下載 YouTube 音訊或影片。"
+    },
+    {
+      "rule_id": "no_unlicensed_training",
+      "severity": "block",
+      "description_zh": "未授權歌曲、古調、YouTube 音源不得用於 TTS、歌聲合成、音樂生成或模型訓練。"
+    },
+    {
+      "rule_id": "ritual_song_summary_only",
+      "severity": "manual_review",
+      "description_zh": "祭儀、巫師、祖靈、除喪相關歌謠只能公開摘要與 metadata。"
+    },
+    {
+      "rule_id": "beinan_site_forbidden_relation",
+      "severity": "block",
+      "description_zh": "卑南文化遺址/Beinan Site/Peinan Site 不得作為卑南族音樂來源或關聯內容。"
+    },
+    {
+      "rule_id": "ai_no_imitation_of_old_song",
+      "severity": "block",
+      "description_zh": "AI Composer 不得生成仿古調歌詞、仿部落耆老創作、或聲稱為傳統歌謠的新歌詞。"
+    }
+  ]
+}

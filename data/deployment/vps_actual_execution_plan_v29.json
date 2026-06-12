@@ -1,0 +1,28 @@
+{
+  "version": "v29",
+  "title": "VPS actual execution plan for full corpus and live ops",
+  "database_location": "User VPS MySQL/MariaDB is the default and authoritative runtime DB.",
+  "honest_boundary": "This package cannot run commands on the user VPS by itself; run deploy/vps-run-full-corpus-v29.sh on VPS staging.",
+  "preflight_required": [
+    "DATABASE_URL points to staging or restore-safe database",
+    "mysql client installed",
+    "python3 available",
+    "network can reach FormosanBank/ePark sources",
+    "backup completed before import",
+    "NODE_ENV is not production for first full-corpus test run"
+  ],
+  "commands": [
+    "python3 scripts/verify_vps_env_v29.py --database \"$DATABASE_URL\" --mode staging",
+    "./deploy/vps-db-backup-v26.sh",
+    "./deploy/vps-run-full-corpus-v29.sh --min-entries 1000 --database \"$DATABASE_URL\" --import-sql",
+    "python3 scripts/build_search_index_population_v29.py --database \"$DATABASE_URL\" --out data/search/search_population_report_v29.generated.json",
+    "./deploy/vps-backup-restore-checksum-v29.sh --database \"$DATABASE_URL\" --target-db pinuyumayan_kb_restore"
+  ],
+  "promotion_rules": {
+    "min_entries": 1000,
+    "forbidden_relation_hits": 0,
+    "license_blocker_count": 0,
+    "required_report": "data/database/full_corpus_acceptance_report_v29.generated.json",
+    "human_review_required": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": "v44",
+  "title": "VPS live training data review + music search DB implementation",
+  "items": [
+    {
+      "priority": 1,
+      "area": "VPS 真實授權審核",
+      "content": "對 80 筆 preview assets 補 license、speaker consent、alignment，產生 approved/rejected 報告"
+    },
+    {
+      "priority": 2,
+      "area": "Music search live DB",
+      "content": "/api/public/search/music/v43 改成實際查 MySQL FULLTEXT 表，不再只讀 JSON"
+    },
+    {
+      "priority": 3,
+      "area": "TTS/STT local experiment",
+      "content": "建立 train/dev/test dataset export script 與 model-card generator；模型仍不公開"
+    },
+    {
+      "priority": 4,
+      "area": "Authority source worker",
+      "content": "臺灣音樂館、文化記憶庫、金曲獎 metadata 寫入 candidate tables"
+    },
+    {
+      "priority": 5,
+      "area": "後台審核 UI",
+      "content": "串 speech review、music candidate review、evaluation reports 與 release gate"
+    },
+    {
+      "priority": 6,
+      "area": "主站頁面",
+      "content": "新增歌謠/歌曲 metadata 頁、音樂搜尋頁、TTS/STT 說明頁"
+    }
+  ]
+}
