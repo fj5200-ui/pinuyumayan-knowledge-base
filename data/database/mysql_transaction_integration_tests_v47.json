@@ -1,0 +1,47 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "MySQL transaction integration test plan for v46/v47 write paths",
+  "requires_database_url": true,
+  "script": "scripts/run_mysql_transaction_integration_tests_v47.py",
+  "semantics": {
+    "success": "COMMIT",
+    "failure": "ROLLBACK",
+    "idempotency": "same idempotency_key must not duplicate rows",
+    "audit": "speech_review_action_audit_v47 is append-only/immutable"
+  },
+  "test_cases": [
+    {
+      "case_id": "tx-v47-commit-review-action",
+      "endpoint": "/api/internal/speech-training/v47/review-action",
+      "expected": "committed_true_and_audit_row_created"
+    },
+    {
+      "case_id": "tx-v47-rollback-invalid-approve",
+      "endpoint": "/api/internal/speech-training/v47/review-action",
+      "expected": "rollback_no_queue_status_change_when_approve_missing_evidence"
+    },
+    {
+      "case_id": "tx-v47-idempotency-replay",
+      "endpoint": "/api/internal/speech-training/v47/review-action",
+      "expected": "second_request_ignored_or_returns_existing_action_hash"
+    },
+    {
+      "case_id": "tx-v47-immutable-audit-update",
+      "table": "speech_review_action_audit_v47",
+      "expected": "UPDATE_or_DELETE_rejected_by_trigger_or_policy"
+    },
+    {
+      "case_id": "tx-v47-query-log-write",
+      "endpoint": "/api/public/search/music/v43",
+      "expected": "search_writes_music_search_query_logs_v47_when_db_available"
+    },
+    {
+      "case_id": "tx-v47-authority-fetch-run",
+      "endpoint": "/api/internal/authority-sources/v47/live-fetch-run",
+      "expected": "candidate_snapshots_created_only_metadata_fields"
+    }
+  ],
+  "fallback_when_database_missing": "contract_only_database_url_missing",
+  "public_release_allowed": false
+}

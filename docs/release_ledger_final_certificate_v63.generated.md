@@ -1,0 +1,111 @@
+# release ledger 實機簽核與 final certificate 完成包
+
+```json
+{
+  "version": "v63",
+  "generated_at": "2026-06-13T21:10:00+08:00",
+  "title": "release ledger 實機簽核與 final certificate 完成包",
+  "certificate_id": "pinuyumayan-production-release-certificate-v63-final-certificate",
+  "summary": {
+    "checks": 6,
+    "ledger_schema_ready": true,
+    "final_certificate_can_be_written": false,
+    "real_vps_evidence_attached": false,
+    "final_certificate_state": "pending_real_vps_three_party_signoff_and_ledger_write",
+    "delete_allowed": false,
+    "append_only": true,
+    "certificate_pdf_json_required": true,
+    "dns_cloudflare_restore_rollback_required": true,
+    "thirty_minute_observation_required": true,
+    "three_party_signoff_required": true
+  },
+  "checks": [
+    {
+      "check_id": "v63-final-certificate-ledger-write",
+      "title": "final certificate PDF/JSON written to immutable release ledger",
+      "state": "pending_real_vps_three_party_signoff_and_ledger_write",
+      "required": [
+        "ledger_entry_id",
+        "previous_hash",
+        "current_hash",
+        "certificate_pdf_sha256",
+        "certificate_json_sha256",
+        "steward_signature_hash",
+        "auditor_signature_hash",
+        "operator_signature_hash"
+      ]
+    },
+    {
+      "check_id": "v63-dns-cloudflare-final-proof",
+      "title": "DNS and Cloudflare final production proof sealed",
+      "state": "pending_real_vps_three_party_signoff_and_ledger_write",
+      "required": [
+        "dns_records_hash",
+        "cloudflare_zone_snapshot_hash",
+        "tls_certificate_hash",
+        "waf_ruleset_hash"
+      ]
+    },
+    {
+      "check_id": "v63-restore-rollback-final-proof",
+      "title": "backup restore and rollback proof sealed",
+      "state": "pending_real_vps_three_party_signoff_and_ledger_write",
+      "required": [
+        "backup_snapshot_hash",
+        "restore_drill_log_hash",
+        "rollback_drill_log_hash",
+        "database_checksum_after_restore"
+      ]
+    },
+    {
+      "check_id": "v63-thirty-minute-observation",
+      "title": "30 minute post-release observation window sealed",
+      "state": "pending_real_vps_observation",
+      "required": [
+        "uptime_snapshot_hash",
+        "error_rate_report_hash",
+        "p95_latency_report_hash",
+        "synthetic_check_hash"
+      ]
+    },
+    {
+      "check_id": "v63-final-audit-sampling",
+      "title": "release evidence audit sample completed",
+      "state": "pending_real_vps_audit_sample",
+      "required": [
+        "sample_size",
+        "sampled_ledger_entries",
+        "audit_findings_hash",
+        "auditor_signature_hash"
+      ]
+    },
+    {
+      "check_id": "v63-final-certificate-status",
+      "title": "release certificate final status marked sealed",
+      "state": "blocked_until_all_real_evidence_passes",
+      "required": [
+        "final_status",
+        "sealed_at",
+        "sealed_by",
+        "final_certificate_hash_chain_head"
+      ]
+    }
+  ],
+  "ledger_policy": {
+    "append_only": true,
+    "update_allowed": false,
+    "delete_allowed": false,
+    "hash_algorithm": "sha256",
+    "requires_previous_hash": true,
+    "requires_three_party_signoff": true
+  },
+  "tables": [
+    "release_final_ledger_entries_v63",
+    "release_final_dns_cloudflare_evidence_v63",
+    "release_final_restore_rollback_evidence_v63",
+    "release_final_observation_windows_v63",
+    "release_final_audit_samples_v63",
+    "release_certificate_final_signoffs_v63"
+  ]
+}
+```

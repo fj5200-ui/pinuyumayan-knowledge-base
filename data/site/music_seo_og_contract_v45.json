@@ -1,0 +1,60 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "routes": [
+    {
+      "path": "/music/search",
+      "file": "webapp/app/music/search/page.tsx",
+      "seo": "static search landing metadata",
+      "sitemap": true
+    },
+    {
+      "path": "/music/[id]",
+      "file": "webapp/app/music/[id]/page.tsx",
+      "seo": "dynamic generateMetadata plus MusicRecording JSON-LD metadata only",
+      "sitemap": true
+    },
+    {
+      "path": "/music/[id]/opengraph-image",
+      "file": "webapp/app/music/[id]/opengraph-image.tsx",
+      "seo": "dynamic OG image; metadata only; no lyrics/audio"
+    },
+    {
+      "path": "/tts-stt",
+      "file": "webapp/app/tts-stt/page.tsx",
+      "seo": "public explanation; public models disabled",
+      "sitemap": true
+    }
+  ],
+  "json_ld": {
+    "music_detail_type": "MusicRecording",
+    "fields": [
+      "@context",
+      "@type",
+      "name",
+      "description",
+      "inLanguage",
+      "isAccessibleForFree",
+      "license",
+      "publisher"
+    ],
+    "prohibited_fields": [
+      "lyrics",
+      "audio",
+      "encoding",
+      "downloadUrl"
+    ]
+  },
+  "guard": {
+    "no_full_lyrics": true,
+    "no_audio_download": true,
+    "metadata_only": true,
+    "unreviewed_candidates_noindex": true
+  },
+  "og": {
+    "size": "1200x630",
+    "theme": "black/white/red/yellow/green",
+    "title_prefix": "Pinuyumayan Music Metadata"
+  },
+  "sitemap_output": "data/site/sitemap_music_v45.generated.xml"
+}

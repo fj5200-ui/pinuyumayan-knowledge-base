@@ -1,0 +1,37 @@
+export const ttsSttMusicV55Endpoints = {
+  review_center: "/api/admin/music-speech/v55/review-center",
+  signed_release_certificate: "/api/ops/vps/v55/signed-release-certificate",
+  legal_unblocked_dataset: "/api/admin/speech-training/v55/legal-unblocked-dataset",
+  rollout_100: "/api/ops/search/music/v55/rollout-100",
+  publication_cards: "/api/public/music/metadata/v55/publication-cards",
+  publish_takedown: "/api/ops/authority-sources/v55/publish-takedown",
+  governance_center: "/api/ops/speech-training/v55/governance-center",
+  operations_sop: "/api/ops/site/v55/operations-sop",
+  preflight_contract: "/api/ops/vps/v55/preflight-contract",
+  v56: "/api/ops/next-upgrade-plan/v56",
+  sign_release_certificate: "/api/internal/vps/v55/sign-release-certificate",
+  attach_signed_evidence: "/api/internal/vps/v55/attach-signed-evidence",
+  archive_certificate_pdf: "/api/internal/vps/v55/archive-certificate-pdf",
+  reopen_signed_certificate: "/api/internal/vps/v55/reopen-signed-certificate",
+  upload_real_evidence_file: "/api/internal/speech-training/v55/upload-real-evidence-file",
+  seal_asset_hash_chain: "/api/internal/speech-training/v55/seal-asset-hash-chain",
+  unblock_legal_asset: "/api/internal/speech-training/v55/unblock-legal-asset",
+  export_legal_train_dev_test: "/api/internal/speech-training/v55/export-legal-train-dev-test",
+  decide_rollout_100: "/api/internal/search/music/v55/decide-rollout-100",
+  record_rollout_100_metric: "/api/internal/search/music/v55/record-rollout-100-metric",
+  rollback_rollout_100: "/api/internal/search/music/v55/rollback-rollout-100",
+  publish_metadata_card: "/api/internal/authority-sources/v55/publish-metadata-card",
+  run_takedown_rehearsal: "/api/internal/authority-sources/v55/run-takedown-rehearsal",
+  record_source_drift: "/api/internal/authority-sources/v55/record-source-drift",
+  archive_governance_artifact: "/api/internal/speech-training/v55/archive-governance-artifact",
+  record_governance_download: "/api/internal/speech-training/v55/record-governance-download",
+  close_model_blocker: "/api/internal/speech-training/v55/close-model-blocker",
+  create_daily_sop_report: "/api/internal/site/v55/create-daily-sop-report",
+  create_weekly_sop_report: "/api/internal/site/v55/create-weekly-sop-report",
+  configure_alert_route: "/api/internal/site/v55/configure-alert-route",
+  record_live_monitor_sample: "/api/internal/site/v55/record-live-monitor-sample",
+} as const;
+
+export type TtsSttMusicV55EndpointKey = keyof typeof ttsSttMusicV55Endpoints;
+
+export async function fetchTtsSttMusicV55<T>(key: TtsSttMusicV55EndpointKey): Promise<T> { const res = await fetch(ttsSttMusicV55Endpoints[key]); if (!res.ok) throw new Error(`v55 endpoint failed: ${key}`); return res.json() as Promise<T>; }

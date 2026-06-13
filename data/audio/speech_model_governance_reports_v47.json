@@ -1,0 +1,133 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "Speech model governance report: WER/CER/MOS trends, model-card signoff history, lineage graph, blocked-release summaries",
+  "summary": {
+    "experiments": 3,
+    "public_release_allowed": false,
+    "authorized_train_assets": 0,
+    "blocked_assets": 80,
+    "two_person_rule_required": true
+  },
+  "trend_chart_contract": {
+    "metrics": [
+      "mos",
+      "wer",
+      "cer"
+    ],
+    "thresholds": {
+      "mos_minimum": 4.0,
+      "wer_maximum": 0.25,
+      "cer_maximum": 0.15,
+      "trend_window": "last_10_experiments"
+    },
+    "component": "webapp/components/MusicSpeechReviewCenterV47.tsx"
+  },
+  "lineage_graph": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "lineage_id": "dataset-lineage-v46-001",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "lineage_id": "dataset-lineage-v46-002",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "lineage_id": "dataset-lineage-v46-003",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    }
+  ],
+  "model_card_signoff_history": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "required_signoffs": [
+        "model_reviewer",
+        "data_governance_reviewer"
+      ],
+      "current_signoffs": [],
+      "status": "blocked_missing_authorized_dataset"
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "required_signoffs": [
+        "model_reviewer",
+        "data_governance_reviewer"
+      ],
+      "current_signoffs": [],
+      "status": "blocked_missing_authorized_dataset"
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "required_signoffs": [
+        "model_reviewer",
+        "data_governance_reviewer"
+      ],
+      "current_signoffs": [],
+      "status": "blocked_missing_authorized_dataset"
+    }
+  ],
+  "trends": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "candidate_version": "tts-candidate-v46.0.1",
+      "model_type": "tts",
+      "mos": 0,
+      "wer": null,
+      "cer": null,
+      "gate": "blocked_no_authorized_train_dev_test",
+      "publishable": false,
+      "blocked_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "candidate_version": "stt-candidate-v46.0.2",
+      "model_type": "stt",
+      "mos": null,
+      "wer": 1.0,
+      "cer": 1.0,
+      "gate": "blocked_no_authorized_train_dev_test",
+      "publishable": false,
+      "blocked_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "candidate_version": "alignment-candidate-v46.0.3",
+      "model_type": "alignment",
+      "mos": null,
+      "wer": 1.0,
+      "cer": 1.0,
+      "gate": "blocked_no_authorized_train_dev_test",
+      "publishable": false,
+      "blocked_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    }
+  ],
+  "write_endpoint": "/api/internal/speech-training/v47/model-governance-decision",
+  "tables": [
+    "speech_model_governance_reports_v47",
+    "speech_model_release_decisions_v46"
+  ]
+}

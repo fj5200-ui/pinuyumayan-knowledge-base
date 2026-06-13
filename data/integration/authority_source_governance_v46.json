@@ -1,0 +1,134 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "title": "Authority source collection governance: robots/ToS, ETag, retry queue, and candidate merge UI",
+  "source_version": "v45",
+  "fetch_policies": [
+    {
+      "adapter_id": "taiwan_music_institute",
+      "name": "臺灣音樂館",
+      "base_url": "https://tmi.openmuseum.tw/",
+      "robots_txt_url": "https://tmi.openmuseum.tw/robots.txt",
+      "tos_review_status": "needs_human_record",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 12,
+      "respect_retry_after_header": true,
+      "max_parallel_requests": 1,
+      "never_fetch": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false
+    },
+    {
+      "adapter_id": "national_culture_memory_bank",
+      "name": "國家文化記憶庫",
+      "base_url": "https://memory.culture.tw/",
+      "robots_txt_url": "https://memory.culture.tw/robots.txt",
+      "tos_review_status": "needs_human_record",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 10,
+      "respect_retry_after_header": true,
+      "max_parallel_requests": 1,
+      "never_fetch": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false
+    },
+    {
+      "adapter_id": "golden_melody_awards",
+      "name": "金曲獎",
+      "base_url": "https://gma.tavis.tw/",
+      "robots_txt_url": "https://gma.tavis.tw/robots.txt",
+      "tos_review_status": "needs_human_record",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 8,
+      "respect_retry_after_header": true,
+      "max_parallel_requests": 1,
+      "never_fetch": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false
+    }
+  ],
+  "retry_queue_seed": [
+    {
+      "retry_id": "auth-retry-v46-001",
+      "adapter_id": "taiwan_music_institute",
+      "status": "queued_manual_dry_run",
+      "attempt": 0,
+      "next_run_reason": "verify_robots_tos_etag_before_fetch",
+      "backoff_seconds": 0
+    },
+    {
+      "retry_id": "auth-retry-v46-002",
+      "adapter_id": "national_culture_memory_bank",
+      "status": "queued_manual_dry_run",
+      "attempt": 0,
+      "next_run_reason": "verify_robots_tos_etag_before_fetch",
+      "backoff_seconds": 0
+    },
+    {
+      "retry_id": "auth-retry-v46-003",
+      "adapter_id": "golden_melody_awards",
+      "status": "queued_manual_dry_run",
+      "attempt": 0,
+      "next_run_reason": "verify_robots_tos_etag_before_fetch",
+      "backoff_seconds": 0
+    }
+  ],
+  "candidate_merge_requests": [
+    {
+      "merge_request_id": "auth-merge-v46-001",
+      "adapter_id": "taiwan_music_institute",
+      "candidate_ids": [],
+      "merge_status": "needs_candidates",
+      "decision_required_by_role": "music_candidate_reviewer",
+      "public_auto_release": false
+    },
+    {
+      "merge_request_id": "auth-merge-v46-002",
+      "adapter_id": "national_culture_memory_bank",
+      "candidate_ids": [],
+      "merge_status": "needs_candidates",
+      "decision_required_by_role": "music_candidate_reviewer",
+      "public_auto_release": false
+    },
+    {
+      "merge_request_id": "auth-merge-v46-003",
+      "adapter_id": "golden_melody_awards",
+      "candidate_ids": [],
+      "merge_status": "needs_candidates",
+      "decision_required_by_role": "music_candidate_reviewer",
+      "public_auto_release": false
+    }
+  ],
+  "operator_actions": [
+    "record_robots_tos_review",
+    "retry_failed_fetch",
+    "force_dry_run",
+    "merge_duplicate_candidates",
+    "return_candidate_for_fix"
+  ],
+  "write_endpoint": "/api/internal/authority-sources/v46/retry-or-merge",
+  "tables": [
+    "authority_source_fetch_policies_v46",
+    "authority_source_retry_queue_v46",
+    "authority_source_candidate_merge_requests_v46"
+  ],
+  "public_auto_release": false
+}

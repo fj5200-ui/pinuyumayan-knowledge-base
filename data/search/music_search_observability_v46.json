@@ -1,0 +1,81 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "title": "Production music search observability dashboard contract",
+  "endpoint_under_observation": "/api/public/search/music/v43",
+  "query_log_endpoint": "/api/internal/search/music/v46/query-log",
+  "metrics": {
+    "query_count_24h": 0,
+    "zero_result_count_24h": 0,
+    "zero_result_rate": 0.0,
+    "p95_latency_ms": 0,
+    "p99_latency_ms": 0,
+    "top_facets": []
+  },
+  "regression_suite": {
+    "script": "scripts/build_music_search_observability_v46.py",
+    "required_cases": [
+      "synonym_expansion",
+      "romanization",
+      "facet_count",
+      "zero_result_suggestion",
+      "forbidden_term_block"
+    ]
+  },
+  "zero_result_dashboard": {
+    "group_by": [
+      "normalized_query",
+      "locale",
+      "referrer_path"
+    ],
+    "suggestion_policy": "show synonym-backed suggestions only; do not fabricate lyrics or audio"
+  },
+  "sample_events": [
+    {
+      "sample_id": "music-query-sample-v46-001",
+      "query": "卑南族 歌謠",
+      "hits": 2,
+      "latency_ms": 42,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-002",
+      "query": "Puyuma music",
+      "hits": 2,
+      "latency_ms": 49,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-003",
+      "query": "Samingad",
+      "hits": 2,
+      "latency_ms": 56,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-004",
+      "query": "南王 童謠",
+      "hits": 2,
+      "latency_ms": 63,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-005",
+      "query": "不存在查詢示例",
+      "hits": 0,
+      "latency_ms": 70,
+      "mode": "zero_result_expected"
+    }
+  ],
+  "tables": [
+    "music_search_query_logs_v46",
+    "music_search_zero_result_events_v46",
+    "music_search_facet_daily_stats_v46",
+    "music_search_latency_snapshots_v46"
+  ],
+  "privacy": {
+    "store_ip_hash_only": true,
+    "raw_user_agent_retention_days": 0,
+    "query_retention_days": 180
+  }
+}

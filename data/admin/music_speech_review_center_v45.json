@@ -1,0 +1,51 @@
+{
+  "version": "v45",
+  "title": "Music + Speech Production Review Center",
+  "component": "webapp/components/MusicSpeechReviewCenterV45.tsx",
+  "panels": [
+    {
+      "key": "formal_review_workflow",
+      "title": "Formal speech review workflow",
+      "endpoint": "/api/ops/speech-training/v45/review-workflow"
+    },
+    {
+      "key": "alignment_import",
+      "title": "Alignment import contract",
+      "endpoint": "/api/ops/speech-training/v45/governance-report"
+    },
+    {
+      "key": "music_search_quality",
+      "title": "Music search quality",
+      "endpoint": "/api/ops/search/music/v45/quality-contract"
+    },
+    {
+      "key": "authority_worker",
+      "title": "Authority source fetch worker",
+      "endpoint": "/api/ops/authority-sources/v45/fetch-worker-contract"
+    },
+    {
+      "key": "seo_og",
+      "title": "Music SEO / OG / sitemap",
+      "endpoint": "/api/ops/site/v45/sitemap-contract"
+    },
+    {
+      "key": "vps_preflight",
+      "title": "VPS preflight report center",
+      "endpoint": "/api/ops/vps/v45/preflight-contract"
+    }
+  ],
+  "actions": [
+    "approve_gate",
+    "reject_gate",
+    "return_for_fix",
+    "import_alignment_evidence",
+    "run_authority_fetch_dry_run",
+    "run_search_quality_suite",
+    "publish_sitemap_after_review"
+  ],
+  "safety_defaults": {
+    "hmac_required_for_write_actions": true,
+    "bulk_approve_disabled": true,
+    "public_release_requires_all_gates": true
+  }
+}

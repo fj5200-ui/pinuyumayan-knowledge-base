@@ -1,0 +1,38 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "VPS TTS/STT Music v50 preflight",
+  "steps": [
+    "validate v44-v50 contracts",
+    "validate site v47-v50",
+    "validate OpenAPI",
+    "build v50 cutover report",
+    "optional SQL import 0046",
+    "optional DB tests",
+    "optional cutover rehearsal",
+    "optional browser/CWV validation"
+  ],
+  "requires_env_when_import_sql": [
+    "DATABASE_URL"
+  ],
+  "optional_env": [
+    "RUN_DB_TESTS",
+    "RUN_CUTOVER_REHEARSAL",
+    "RUN_BROWSER_VALIDATION",
+    "AUTHORITY_FETCH_LIVE",
+    "CLOUDFLARE_ZONE_ID"
+  ],
+  "safe_defaults": {
+    "IMPORT_SQL": "0",
+    "RUN_DB_TESTS": "0",
+    "RUN_CUTOVER_REHEARSAL": "0",
+    "RUN_BROWSER_VALIDATION": "0",
+    "AUTHORITY_FETCH_LIVE": "0"
+  },
+  "release_allowed_without_real_cutover": false,
+  "artifacts": [
+    "data/deployment/production_cutover_v50.json",
+    "data/deployment/production_cutover_v50.generated.json",
+    "docs/model_governance_delivery_v50.generated.md"
+  ]
+}

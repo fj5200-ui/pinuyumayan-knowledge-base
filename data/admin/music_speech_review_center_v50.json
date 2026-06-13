@@ -1,0 +1,76 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "Music Speech Review Center v50",
+  "summary": {
+    "cutover_steps": 6,
+    "evidence_items": 80,
+    "search_synonym_tasks": 3,
+    "authority_publication_candidates": 3,
+    "model_blocked_assets": 80,
+    "site_routes": 7,
+    "public_release_allowed": false
+  },
+  "cards": [
+    {
+      "card_id": "production-cutover",
+      "title": "正式上線切換",
+      "status": "requires_real_vps_cutover",
+      "endpoint": "/api/ops/vps/v50/cutover-plan"
+    },
+    {
+      "card_id": "audit-evidence",
+      "title": "審核證據鏈完整化",
+      "status": "append_only_store_ready",
+      "endpoint": "/api/admin/speech-training/v50/evidence-store"
+    },
+    {
+      "card_id": "search-intelligence",
+      "title": "搜尋智慧化",
+      "status": "manual_review_required",
+      "endpoint": "/api/ops/search/music/v50/intelligence"
+    },
+    {
+      "card_id": "authority-publication",
+      "title": "權威資料 metadata-only 發布",
+      "status": "pending_rights_review",
+      "endpoint": "/api/ops/authority-sources/v50/metadata-publication"
+    },
+    {
+      "card_id": "model-governance-delivery",
+      "title": "模型治理交付",
+      "status": "blocked_until_evidence_passes",
+      "endpoint": "/api/ops/speech-training/v50/governance-delivery"
+    },
+    {
+      "card_id": "brand-completion",
+      "title": "前台品牌完成",
+      "status": "pending_browser_validation",
+      "endpoint": "/api/ops/site/v50/brand-completion"
+    }
+  ],
+  "tables": [
+    "production_cutover_runs_v50",
+    "production_cutover_health_checks_v50",
+    "production_cutover_dns_events_v50",
+    "production_rollback_rehearsals_v50",
+    "audit_evidence_store_v50",
+    "audit_evidence_signoffs_v50",
+    "audit_evidence_export_jobs_v50",
+    "music_search_synonym_review_tasks_v50",
+    "music_search_ltr_weights_v50",
+    "music_search_ab_tests_v50",
+    "music_search_intent_classifications_v50",
+    "authority_metadata_publication_queue_v50",
+    "authority_metadata_citation_formats_v50",
+    "authority_metadata_takedown_requests_v50",
+    "authority_source_change_notifications_v50",
+    "speech_model_governance_delivery_exports_v50",
+    "speech_model_version_diffs_v50",
+    "speech_model_release_blocker_closures_v50",
+    "site_brand_completion_routes_v50",
+    "site_browser_screenshot_validations_v50",
+    "site_seo_og_monitors_v50",
+    "site_core_web_vitals_runs_v50"
+  ]
+}

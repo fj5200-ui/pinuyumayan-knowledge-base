@@ -1,0 +1,29 @@
+{
+  "version": "v44",
+  "routes": [
+    {
+      "path": "/music/search",
+      "file": "webapp/app/music/search/page.tsx",
+      "data_endpoint": "/api/public/search/music/v43",
+      "purpose": "音樂搜尋頁"
+    },
+    {
+      "path": "/music/[id]",
+      "file": "webapp/app/music/[id]/page.tsx",
+      "data_endpoint": "/api/public/music/v44/metadata/:id",
+      "purpose": "歌謠/歌曲 metadata 詳情頁"
+    },
+    {
+      "path": "/tts-stt",
+      "file": "webapp/app/tts-stt/page.tsx",
+      "data_endpoint": "/api/public/speech/v44/tts-stt-info",
+      "purpose": "TTS/STT 說明頁"
+    }
+  ],
+  "seo": {
+    "og_ready": true,
+    "metadata_only_for_unreviewed_music": true,
+    "no_lyrics_or_audio_download": true
+  },
+  "ui_style": "red/yellow/green accents, glass cards, small rounded corners, dark/light compatible"
+}

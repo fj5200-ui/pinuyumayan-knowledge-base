@@ -1,0 +1,36 @@
+{
+  "version": "v47",
+  "title": "Production write rollout, UI action wiring, and external source operations",
+  "items": [
+    {
+      "priority": 1,
+      "area": "審核 UI 實操作",
+      "content": "把 v46 reviewer queue 的指派、證據附件、退回、reject、approve gate 全部接成後台可操作表單，加入角色權限與 HMAC nonce 前端橋接。"
+    },
+    {
+      "priority": 2,
+      "area": "MySQL 實寫驗收",
+      "content": "在 VPS 上跑 0042 migration 後，新增 transaction integration tests：成功 commit、錯誤 rollback、idempotency 重送、audit log 不可變。"
+    },
+    {
+      "priority": 3,
+      "area": "搜尋觀測上線",
+      "content": "把 /api/public/search/music/v43 實際寫入 v46 query log，建立 zero-result weekly report、熱門 facet 看板與 p95/p99 警戒。"
+    },
+    {
+      "priority": 4,
+      "area": "權威來源正式採集",
+      "content": "完成 robots/ToS 人工紀錄後，開啟 adapter 真實 fetch、ETag 快取、失敗重試、候選合併與審核工作流。"
+    },
+    {
+      "priority": 5,
+      "area": "模型治理報表",
+      "content": "把 WER/CER/MOS 趨勢圖接後台，加入模型卡簽核歷程、資料 lineage 圖與不可發布原因自動摘要。"
+    },
+    {
+      "priority": 6,
+      "area": "主站美化與轉換",
+      "content": "優化日間模式細節、搜尋卡片視覺、facet chip、推薦查詢、空結果導流，補 sitemap/OG 的部署後自動驗收。"
+    }
+  ]
+}

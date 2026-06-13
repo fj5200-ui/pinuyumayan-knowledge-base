@@ -1,0 +1,90 @@
+{
+  "version": "v59",
+  "generated_at": "2026-06-13T18:55:00+08:00",
+  "title": "metadata 稽核公開擴充",
+  "summary": {
+    "records": 6,
+    "metadata_only": true,
+    "public_audio_allowed": false,
+    "public_full_lyrics_allowed": false,
+    "citation_screenshots_complete": false,
+    "takedown_rehearsal_complete": false
+  },
+  "records": [
+    {
+      "record_id": "authority-metadata-expanded-v59-01",
+      "source": "臺灣音樂館",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    },
+    {
+      "record_id": "authority-metadata-expanded-v59-02",
+      "source": "國家文化記憶庫",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    },
+    {
+      "record_id": "authority-metadata-expanded-v59-03",
+      "source": "金曲獎",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    },
+    {
+      "record_id": "authority-metadata-expanded-v59-04",
+      "source": "文化部開放資料",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    },
+    {
+      "record_id": "authority-metadata-expanded-v59-05",
+      "source": "原住民族委員會公開資訊",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    },
+    {
+      "record_id": "authority-metadata-expanded-v59-06",
+      "source": "地方文化館公開資料",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_full_lyrics_allowed": false,
+      "citation_screenshot_state": "pending_real_browser_capture",
+      "takedown_rehearsal_state": "pending_real_rehearsal",
+      "source_drift_watch": true,
+      "audit_seal_state": "pending_real_evidence"
+    }
+  ],
+  "publication_guards": [
+    "citation_visible",
+    "source_url_hash",
+    "rights_statement_visible",
+    "no_audio_download",
+    "no_full_lyrics",
+    "takedown_button_available",
+    "source_drift_alert"
+  ]
+}

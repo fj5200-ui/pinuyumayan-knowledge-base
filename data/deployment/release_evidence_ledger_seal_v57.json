@@ -1,0 +1,86 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "實機 release evidence 實際入庫",
+  "summary": {
+    "ledger_ready": true,
+    "immutable_entries_expected": 6,
+    "real_vps_evidence_attached": false,
+    "release_certificate_sealed": false,
+    "production_release_certified": false
+  },
+  "checks": [
+    {
+      "check_id": "v57-release-pdf-json-ledger",
+      "name": "signed release PDF/JSON ingested into immutable ledger",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "signed_certificate_pdf_sha256",
+        "signed_certificate_json_sha256",
+        "ledger_entry_hash"
+      ]
+    },
+    {
+      "check_id": "v57-cloudflare-dns-ledger",
+      "name": "Cloudflare/DNS evidence written to immutable ledger",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "zone_id_hash",
+        "dns_record_hash",
+        "cutover_timestamp",
+        "ledger_entry_hash"
+      ]
+    },
+    {
+      "check_id": "v57-backup-restore-ledger",
+      "name": "backup restore drill result sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "backup_sha256",
+        "restore_log_sha256",
+        "row_count_diff",
+        "seal_hash"
+      ]
+    },
+    {
+      "check_id": "v57-rollback-ledger",
+      "name": "rollback rehearsal evidence sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "rollback_started_at",
+        "rollback_finished_at",
+        "health_after_rollback",
+        "seal_hash"
+      ]
+    },
+    {
+      "check_id": "v57-30m-observation-ledger",
+      "name": "30-minute production observation evidence sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "uptime_samples",
+        "error_rate_samples",
+        "p95_latency_samples",
+        "seal_hash"
+      ]
+    },
+    {
+      "check_id": "v57-ledger-chain-final-seal",
+      "name": "final append-only ledger chain sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "previous_hash",
+        "current_hash",
+        "signature",
+        "signed_by"
+      ]
+    }
+  ],
+  "immutability": {
+    "append_only": true,
+    "hash_chain_required": true,
+    "delete_allowed": false,
+    "signature_required": true,
+    "ledger_table": "release_evidence_ledger_entries_v57"
+  }
+}

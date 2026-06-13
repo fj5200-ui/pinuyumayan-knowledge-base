@@ -1,0 +1,64 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "Main site music UI polish: day-mode contrast, cards, facet chips, recommendations, empty-state conversion and deployed OG/sitemap validation",
+  "routes": [
+    {
+      "path": "/music/search",
+      "file": "webapp/app/music/search/page.tsx",
+      "status": "enhanced_v46_facets_recommendations_empty_state_contrast"
+    },
+    {
+      "path": "/music/[id]",
+      "file": "webapp/app/music/[id]/page.tsx",
+      "status": "metadata_guard_retained"
+    },
+    {
+      "path": "/music/[id]/opengraph-image",
+      "file": "webapp/app/music/[id]/opengraph-image.tsx",
+      "status": "v45_dynamic_og_retained"
+    }
+  ],
+  "day_mode_tokens": {
+    "page_bg": "bg-zinc-50",
+    "surface": "bg-white",
+    "text_primary": "text-zinc-950",
+    "text_muted": "text-zinc-700",
+    "link": "text-red-800",
+    "chip_bg": "bg-red-50",
+    "chip_text": "text-red-950",
+    "warning_bg": "bg-yellow-50",
+    "warning_text": "text-yellow-950",
+    "minimum_contrast": "WCAG AA"
+  },
+  "visual_upgrades": [
+    "hero glass card uses white/95 in day mode and zinc-950 in dark mode",
+    "facet chips have border + filled background; no yellow text on white",
+    "result cards add source/rights badges and metadata-only guard",
+    "empty-state shows safe suggested searches and explains no lyrics/audio downloads"
+  ],
+  "post_deploy_validation": {
+    "script": "scripts/validate_site_polish_v47.py",
+    "checks": [
+      "/music/search renders recommendation chips",
+      "/music/search has metadata-only rights notice",
+      "/music/[id]/opengraph-image reachable",
+      "sitemap contains music routes",
+      "day mode text contrast tokens present"
+    ],
+    "auto_submit_sitemap": false
+  },
+  "recommended_queries": [
+    "卑南族 歌謠",
+    "南王 卑南族",
+    "知本 卑南族 音樂",
+    "Samingad",
+    "Sangpuy",
+    "陳建年 金曲獎",
+    "Pinuyumayan music",
+    "卑南族 金曲獎"
+  ],
+  "tables": [
+    "main_site_polish_validations_v47"
+  ]
+}

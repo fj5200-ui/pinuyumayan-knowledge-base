@@ -1,0 +1,36 @@
+{
+  "version": "v54",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "正式發布封板",
+      "content": "把 v53 實機證據回填、DNS/Cloudflare、backup restore、30 分鐘觀測報告送出最後簽核，形成 production release certificate。"
+    },
+    {
+      "priority": 2,
+      "direction": "合法語音資料解封",
+      "content": "完成首批 20 筆真實 evidence 上傳與 native speaker review，輸出第一批 train/dev/test 並建立資料集版本號。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋排序正式切換",
+      "content": "取得 A/B 實測後，將 learning-to-rank、typo tolerance、intent routing 選擇性 rollout 至 50%/100%。"
+    },
+    {
+      "priority": 4,
+      "direction": "metadata 全站公開",
+      "content": "通過 rights review 的 metadata-only 卡片進入主站、搜尋索引、sitemap、OG，並定期監控 source drift。"
+    },
+    {
+      "priority": 5,
+      "direction": "模型治理報告封存",
+      "content": "在 VPS 產生正式 PDF、lineage DAG、簽核章與 release blocker closure，封存到後台治理中心。"
+    },
+    {
+      "priority": 6,
+      "direction": "營運監控自動化",
+      "content": "把 uptime、CWV、Lighthouse、OG、sitemap、錯誤率接入每日/每週報告與告警，形成正式營運節奏。"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": "v46",
+  "generated_from": "scripts/build_site_experience_v46.py",
+  "routes_checked": 3,
+  "recommended_queries": 6,
+  "contrast_guard_passed": true,
+  "og_guard_passed": true,
+  "sitemap_auto_submit_enabled": false
+}

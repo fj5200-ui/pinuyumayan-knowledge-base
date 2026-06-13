@@ -1,0 +1,2 @@
+-- v45 seed marker and contracts. Generated detail seeds are built by scripts/*_v45.py
+INSERT INTO vps_preflight_reports_v45 (report_id, status, checks_passed, checks_failed, report_json) VALUES ('v45-seed-marker', 'seeded_contracts_only', 0, 0, JSON_OBJECT('version','v45','note','Run deploy/vps-tts-stt-v45.sh to generate detailed seed files.')) ON DUPLICATE KEY UPDATE status=VALUES(status), report_json=VALUES(report_json);

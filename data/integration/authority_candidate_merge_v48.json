@@ -1,0 +1,82 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "權威來源候選合併 v48",
+  "source_version": "v47 fetch adapters",
+  "summary": {
+    "merge_groups": 3,
+    "candidate_auto_public": false,
+    "metadata_only": true,
+    "similarity_threshold": 0.82,
+    "requires_human_approve": true
+  },
+  "dedupe_keys": [
+    "normalized_title",
+    "source_url",
+    "authority_id",
+    "date_or_award_year",
+    "community",
+    "work_type"
+  ],
+  "merge_fields": [
+    "source_title",
+    "source_url",
+    "authority_name",
+    "rights_statement",
+    "summary_excerpt",
+    "citation",
+    "candidate_json"
+  ],
+  "merge_groups": [
+    {
+      "merge_group_id": "authority-merge-v48-001",
+      "adapter_id": "taiwan_music_institute",
+      "candidate_ids": [
+        "auth-candidate-v47-sample-1-a",
+        "auth-candidate-v47-sample-1-b"
+      ],
+      "similarity_score": 0.86,
+      "recommended_action": "manual_merge_metadata_only",
+      "citation_completeness": "needs_human_check",
+      "public_auto_release": false
+    },
+    {
+      "merge_group_id": "authority-merge-v48-002",
+      "adapter_id": "national_culture_memory_bank",
+      "candidate_ids": [
+        "auth-candidate-v47-sample-2-a",
+        "auth-candidate-v47-sample-2-b"
+      ],
+      "similarity_score": 0.9,
+      "recommended_action": "manual_merge_metadata_only",
+      "citation_completeness": "complete_metadata_fields_only",
+      "public_auto_release": false
+    },
+    {
+      "merge_group_id": "authority-merge-v48-003",
+      "adapter_id": "golden_melody_awards",
+      "candidate_ids": [
+        "auth-candidate-v47-sample-3-a",
+        "auth-candidate-v47-sample-3-b"
+      ],
+      "similarity_score": 0.94,
+      "recommended_action": "keep_separate_pending_rights_review",
+      "citation_completeness": "complete_metadata_fields_only",
+      "public_auto_release": false
+    }
+  ],
+  "review_actions": [
+    "manual_merge_metadata_only",
+    "reject_duplicate",
+    "keep_separate_pending_rights_review",
+    "return_for_source_citation"
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/authority-sources/v48/candidate-merge-dashboard",
+    "merge_decision": "/api/internal/authority-sources/v48/merge-decision"
+  },
+  "tables": [
+    "authority_candidate_merge_groups_v48",
+    "authority_candidate_merge_decisions_v48"
+  ]
+}

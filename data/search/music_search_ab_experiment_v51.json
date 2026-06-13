@@ -1,0 +1,138 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "音樂搜尋 A/B 實測與 query intent dashboard v51",
+  "source_version": "v50",
+  "summary": {
+    "ab_tests": 3,
+    "traffic_percent_default": 10,
+    "intent_dashboard_cards": 5,
+    "synonym_merge_requires_human_review": true,
+    "auto_apply_allowed": false,
+    "production_metrics_required": true
+  },
+  "ab_tests": [
+    {
+      "test_id": "search-ab-v51-001",
+      "name": "learning_to_rank_10_percent",
+      "traffic_percent": 10,
+      "variant_a": "fulltext_v43",
+      "variant_b": "ltr_v50_weights",
+      "primary_metric": "zero_result_recovery_rate",
+      "status": "ready_pending_real_traffic",
+      "guardrail": "p95_latency_ms <= 450"
+    },
+    {
+      "test_id": "search-ab-v51-002",
+      "name": "typo_tolerance_10_percent",
+      "traffic_percent": 10,
+      "variant_a": "strict_query",
+      "variant_b": "typo_tolerance_v50",
+      "primary_metric": "click_through_rate",
+      "status": "ready_pending_real_traffic",
+      "guardrail": "irrelevant_result_report_rate <= 0.02"
+    },
+    {
+      "test_id": "search-ab-v51-003",
+      "name": "intent_routing_dashboard",
+      "traffic_percent": 10,
+      "variant_a": "baseline_facets",
+      "variant_b": "intent_based_suggestions",
+      "primary_metric": "successful_refinement_rate",
+      "status": "ready_pending_real_traffic",
+      "guardrail": "no protected-term expansion"
+    }
+  ],
+  "intent_dashboard": [
+    {
+      "intent": "song_metadata",
+      "queries": [
+        "歌謠 metadata",
+        "卑南 歌曲"
+      ],
+      "dashboard_card": "metadata_search"
+    },
+    {
+      "intent": "romanization",
+      "queries": [
+        "pinaski",
+        "羅馬字"
+      ],
+      "dashboard_card": "romanization_search"
+    },
+    {
+      "intent": "festival_context",
+      "queries": [
+        "大獵祭 歌",
+        "祭儀歌"
+      ],
+      "dashboard_card": "cultural_context"
+    },
+    {
+      "intent": "tribe_context",
+      "queries": [
+        "南王 歌",
+        "部落歌謠"
+      ],
+      "dashboard_card": "community_context"
+    },
+    {
+      "intent": "zero_result_recovery",
+      "queries": [
+        "拼錯範例",
+        "異體詞"
+      ],
+      "dashboard_card": "zero_result_tasks"
+    }
+  ],
+  "synonym_merge_flow": [
+    {
+      "step": "collect_v49_v50_suggestions",
+      "status": "ready"
+    },
+    {
+      "step": "human_review",
+      "status": "required"
+    },
+    {
+      "step": "publish_to_synonym_dictionary",
+      "status": "blocked_until_approved"
+    },
+    {
+      "step": "regression_test",
+      "status": "required_before_release"
+    }
+  ],
+  "api_contracts": {
+    "record_ab_exposure": {
+      "method": "POST",
+      "path": "/api/internal/search/music/v51/record-ab-exposure",
+      "requires": [
+        "test_id",
+        "variant",
+        "query_hash",
+        "session_hash"
+      ]
+    },
+    "record_ab_metric": {
+      "method": "POST",
+      "path": "/api/internal/search/music/v51/record-ab-metric",
+      "requires": [
+        "test_id",
+        "variant",
+        "metric_name",
+        "metric_value"
+      ]
+    },
+    "merge_synonym_task": {
+      "method": "POST",
+      "path": "/api/internal/search/music/v51/merge-synonym-task",
+      "requires": [
+        "actor_id",
+        "task_id",
+        "decision",
+        "approved_terms"
+      ]
+    }
+  }
+}

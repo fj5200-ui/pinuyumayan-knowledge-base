@@ -1,0 +1,1 @@
+-- Generated v53 seed placeholder for authority_metadata_public_cards_v53

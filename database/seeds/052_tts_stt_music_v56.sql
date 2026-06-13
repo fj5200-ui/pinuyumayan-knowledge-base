@@ -1,0 +1,1 @@
+-- v56 aggregate seed loader placeholder. Run 052_* generated seed files after migration.

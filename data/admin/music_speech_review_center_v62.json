@@ -1,0 +1,13 @@
+{
+  "version": "v62",
+  "generated_at": "2026-06-13T20:40:00+08:00",
+  "panels": [
+    "final_ledger_write",
+    "dataset_immutable_release",
+    "search_weekly_backfill",
+    "metadata_public_evidence",
+    "governance_alert_delivery_audit",
+    "operations_delivery_seal_report"
+  ],
+  "safe_state": "all_real_world_actions_pending_until_evidence_attached"
+}

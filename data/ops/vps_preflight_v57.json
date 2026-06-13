@@ -1,0 +1,30 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "checks": [
+    "validate_tts_stt_music_v49",
+    "validate_tts_stt_music_v50",
+    "validate_tts_stt_music_v51",
+    "validate_tts_stt_music_v52",
+    "validate_tts_stt_music_v53",
+    "validate_tts_stt_music_v54",
+    "validate_tts_stt_music_v55",
+    "validate_tts_stt_music_v56",
+    "validate_tts_stt_music_v57",
+    "validate_site_operations_notifications_v57",
+    "openapi_contract",
+    "release_ledger_seal_report"
+  ],
+  "env_flags": [
+    "IMPORT_SQL",
+    "RUN_RELEASE_LEDGER_SEAL",
+    "RUN_LEGAL_TRAIN_DEV_TEST_EXPORT",
+    "RUN_SEARCH_2472_DECISION",
+    "RUN_OPS_REPORT_NOTIFICATIONS"
+  ],
+  "summary": {
+    "safe_without_database_url": true,
+    "mysql_import_optional": true,
+    "real_evidence_required_for_unblock": true
+  }
+}

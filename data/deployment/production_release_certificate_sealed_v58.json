@@ -1,0 +1,94 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T18:10:00+08:00",
+  "title": "正式 release certificate 完成封存",
+  "summary": {
+    "certificate_contract_ready": true,
+    "ledger_checks": 6,
+    "immutable_pdf_json_ready": true,
+    "real_vps_evidence_attached": false,
+    "production_release_certificate_sealed": false,
+    "delete_allowed": false,
+    "append_only": true
+  },
+  "certificate": {
+    "certificate_id": "pinuyumayan-production-release-certificate-v58",
+    "pdf_status": "pending_vps_render_and_signature",
+    "json_status": "contract_ready",
+    "hash_chain_required": true,
+    "three_party_signoff_required": true
+  },
+  "checks": [
+    {
+      "check_id": "v58-release-certificate-pdf-json-seal",
+      "name": "release certificate PDF/JSON hash chain sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "certificate_pdf_sha256",
+        "certificate_json_sha256",
+        "hash_chain_entry",
+        "signer_public_id"
+      ]
+    },
+    {
+      "check_id": "v58-cloudflare-dns-proof-seal",
+      "name": "Cloudflare/DNS proof sealed into immutable ledger",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "cloudflare_zone_hash",
+        "dns_record_hash",
+        "cutover_timestamp",
+        "evidence_screenshot_sha256"
+      ]
+    },
+    {
+      "check_id": "v58-backup-restore-proof-seal",
+      "name": "backup and restore proof sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "backup_file_sha256",
+        "restore_log_sha256",
+        "row_count_before",
+        "row_count_after"
+      ]
+    },
+    {
+      "check_id": "v58-rollback-proof-seal",
+      "name": "rollback rehearsal proof sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "rollback_plan_hash",
+        "rollback_result_hash",
+        "post_rollback_health_hash"
+      ]
+    },
+    {
+      "check_id": "v58-30m-observation-proof-seal",
+      "name": "30-minute observation proof sealed",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "uptime_samples_hash",
+        "latency_samples_hash",
+        "error_rate_samples_hash"
+      ]
+    },
+    {
+      "check_id": "v58-final-release-ledger-freeze",
+      "name": "final immutable release ledger freeze",
+      "status": "pending_real_vps_evidence",
+      "required_artifacts": [
+        "previous_hash",
+        "current_hash",
+        "signature",
+        "sealed_at"
+      ]
+    }
+  ],
+  "ledger_policy": {
+    "table": "release_certificate_immutable_seals_v58",
+    "append_only": true,
+    "hash_chain": true,
+    "signature_required": true,
+    "tamper_policy": "reject_and_alert"
+  }
+}

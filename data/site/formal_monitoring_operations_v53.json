@@ -1,0 +1,156 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "正式監控營運：uptime / Lighthouse / CWV / OG / sitemap / error-rate",
+  "source_version": "v52",
+  "summary": {
+    "routes": 7,
+    "uptime_required": true,
+    "daily_report_ready": true,
+    "weekly_report_ready": true,
+    "alert_notification_ready": true,
+    "requires_real_monitoring_endpoint": true,
+    "minimum_contrast": "WCAG AA"
+  },
+  "routes": [
+    {
+      "route_id": "site-monitor-v53-001",
+      "route_path": "/",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-002",
+      "route_path": "/music/search",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-003",
+      "route_path": "/music/song/puyuma-seed-001",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-004",
+      "route_path": "/culture",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-005",
+      "route_path": "/language",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-006",
+      "route_path": "/map",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    },
+    {
+      "route_id": "site-monitor-v53-007",
+      "route_path": "/tts-stt",
+      "uptime_probe": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "error_rate_threshold": 0.01,
+      "latency_p95_ms_budget": 800,
+      "daily_report": true,
+      "weekly_report": true,
+      "alert_channels": [
+        "email",
+        "dashboard"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "report_id": "ops-daily-v53",
+      "cadence": "daily",
+      "status": "ready_pending_live_data"
+    },
+    {
+      "report_id": "ops-weekly-v53",
+      "cadence": "weekly",
+      "status": "ready_pending_live_data"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/site/v53/formal-monitoring",
+    "/api/internal/site/v53/record-uptime-sample",
+    "/api/internal/site/v53/record-error-rate",
+    "/api/internal/site/v53/record-lighthouse-run",
+    "/api/internal/site/v53/create-ops-report",
+    "/api/internal/site/v53/send-alert-notification"
+  ]
+}

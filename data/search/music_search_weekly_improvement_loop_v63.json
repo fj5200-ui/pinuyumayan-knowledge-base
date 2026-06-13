@@ -1,0 +1,76 @@
+{
+  "version": "v63",
+  "generated_at": "2026-06-13T21:10:00+08:00",
+  "title": "搜尋週報與改善閉環正式營運",
+  "policy_id": "music-search-weekly-improvement-loop-v63",
+  "summary": {
+    "features": 3,
+    "weekly_report_backfill_ready": true,
+    "live_weekly_metrics_attached": false,
+    "sla_tasks_enabled": true,
+    "rollback_drill_ready": true,
+    "quality_regression_ready": true,
+    "improvement_loop_ready": true,
+    "production_policy_state": "pending_live_metrics_and_weekly_improvement_tasks"
+  },
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 24,
+      "rollback_drill": "monthly",
+      "quality_regression_required": true,
+      "weekly_improvement_task_required": true
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 24,
+      "rollback_drill": "monthly",
+      "quality_regression_required": true,
+      "weekly_improvement_task_required": true
+    },
+    {
+      "feature_key": "intent_routing",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 12,
+      "rollback_drill": "monthly",
+      "quality_regression_required": true,
+      "weekly_improvement_task_required": true
+    }
+  ],
+  "weekly_report_sections": [
+    "query_volume",
+    "zero_result_rate",
+    "top_anomaly_terms",
+    "facet_click_rate",
+    "p95_latency",
+    "p99_latency",
+    "rollback_drill_result",
+    "quality_regression_result",
+    "manual_improvement_tasks"
+  ],
+  "sla_rules": {
+    "zero_result_spike_hours": 12,
+    "p95_regression_hours": 12,
+    "bad_synonym_hours": 24,
+    "intent_misroute_hours": 12
+  },
+  "rollback_drill": {
+    "cadence": "monthly",
+    "requires_owner_signoff": true,
+    "must_preserve_previous_policy": true
+  },
+  "weekly_backfill_required_fields": [
+    "week_start",
+    "week_end",
+    "total_queries",
+    "zero_result_rate",
+    "p95_latency_ms",
+    "regression_passed",
+    "improvement_tasks_created"
+  ]
+}

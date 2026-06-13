@@ -1,0 +1,2894 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "title": "Reviewer queue with assignment, evidence attachments, SLA, templates, and RBAC",
+  "source_version": "v45",
+  "summary": {
+    "total_queue_items": 80,
+    "waiting_assignment": 80,
+    "assigned": 0,
+    "sla_breached": 0,
+    "bulk_approve_allowed": false,
+    "public_release_allowed": false
+  },
+  "roles": {
+    "speech_reviewer": [
+      "view_assigned",
+      "return_for_fix",
+      "upload_evidence",
+      "comment"
+    ],
+    "speech_lead_reviewer": [
+      "view_all",
+      "assign_reviewer",
+      "return_for_fix",
+      "reject_gate",
+      "approve_gate_after_all_evidence",
+      "override_sla"
+    ],
+    "music_candidate_reviewer": [
+      "view_music_candidates",
+      "merge_candidates",
+      "reject_candidate",
+      "return_candidate_for_fix"
+    ],
+    "admin": [
+      "view_all",
+      "audit_export",
+      "retry_worker",
+      "run_preflight"
+    ]
+  },
+  "return_reason_templates": [
+    {
+      "template_id": "license_evidence_missing",
+      "label": "授權證明缺漏",
+      "default_reason": "請補上可追溯的 license / 授權文件 URL、授權範圍與版本。",
+      "blocks_approval": true
+    },
+    {
+      "template_id": "speaker_consent_missing",
+      "label": "說話者同意缺漏",
+      "default_reason": "請補上 speaker consent、可使用範圍與撤回機制紀錄。",
+      "blocks_approval": true
+    },
+    {
+      "template_id": "alignment_below_threshold",
+      "label": "alignment 未達門檻",
+      "default_reason": "alignment score 未達 0.85，請重新 forced alignment 或補人工對齊證據。",
+      "blocks_approval": true
+    },
+    {
+      "template_id": "native_speaker_review_missing",
+      "label": "族語母語者審核缺漏",
+      "default_reason": "請補上 native speaker reviewer、方言/語音一致性註記。",
+      "blocks_approval": true
+    },
+    {
+      "template_id": "source_sensitivity_unclear",
+      "label": "敏感分級不明",
+      "default_reason": "請補來源敏感性分級與公開範圍說明。",
+      "blocks_approval": true
+    }
+  ],
+  "attachment_policy": {
+    "allowed_types": [
+      "application/pdf",
+      "image/png",
+      "image/jpeg",
+      "text/plain",
+      "application/json"
+    ],
+    "max_size_mb": 10,
+    "virus_scan_required": true,
+    "private_storage_required": true,
+    "public_url_for_evidence_forbidden": false
+  },
+  "write_endpoints": {
+    "assign_reviewer": "/api/internal/speech-training/v46/assign-reviewer",
+    "transactional_review_decision": "/api/internal/speech-training/v46/transactional-review-decision",
+    "transactional_alignment_import": "/api/internal/speech-training/v46/transactional-alignment-import"
+  },
+  "items": [
+    {
+      "queue_id": "speech-review-queue-v46-0001",
+      "asset_id": "pron-a93b397f4a7a5a9b",
+      "workflow_id": "speech-review-v45-0001",
+      "entry_id": "puyuma-audio-3273c95775ad",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0002",
+      "asset_id": "pron-661fec2aadaf53ad",
+      "workflow_id": "speech-review-v45-0002",
+      "entry_id": "puyuma-audio-7d98a0571a64",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0003",
+      "asset_id": "pron-da228ff74f512091",
+      "workflow_id": "speech-review-v45-0003",
+      "entry_id": "puyuma-audio-95ddd1e52a8c",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0004",
+      "asset_id": "pron-19a25c368eeb0fc5",
+      "workflow_id": "speech-review-v45-0004",
+      "entry_id": "puyuma-audio-658c87facd71",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0005",
+      "asset_id": "pron-cd95e42661f81187",
+      "workflow_id": "speech-review-v45-0005",
+      "entry_id": "puyuma-audio-b04e215f3e73",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0006",
+      "asset_id": "pron-9744f1ace8b30e6c",
+      "workflow_id": "speech-review-v45-0006",
+      "entry_id": "puyuma-audio-3459f9d2c9ba",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0007",
+      "asset_id": "pron-37e8831304bf3008",
+      "workflow_id": "speech-review-v45-0007",
+      "entry_id": "puyuma-audio-c906ef49ba1a",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0008",
+      "asset_id": "pron-98c4e8bd254a4c6b",
+      "workflow_id": "speech-review-v45-0008",
+      "entry_id": "puyuma-audio-f9f0a43ba400",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0009",
+      "asset_id": "pron-66944aec0c0ee7d8",
+      "workflow_id": "speech-review-v45-0009",
+      "entry_id": "puyuma-audio-8f66055d0da1",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0010",
+      "asset_id": "pron-7c9be2bc4d215fe0",
+      "workflow_id": "speech-review-v45-0010",
+      "entry_id": "puyuma-audio-f47948944915",
+      "queue_status": "waiting_assignment",
+      "priority": "P1",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0011",
+      "asset_id": "pron-885c6f1718ce5a8f",
+      "workflow_id": "speech-review-v45-0011",
+      "entry_id": "puyuma-audio-8ec78ce2da04",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0012",
+      "asset_id": "pron-33ec2205b8296ba1",
+      "workflow_id": "speech-review-v45-0012",
+      "entry_id": "puyuma-audio-ef6059f7c2a9",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0013",
+      "asset_id": "pron-4d10004a1bcd6592",
+      "workflow_id": "speech-review-v45-0013",
+      "entry_id": "puyuma-audio-24d9088a2fe3",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0014",
+      "asset_id": "pron-58977d35305e36e5",
+      "workflow_id": "speech-review-v45-0014",
+      "entry_id": "puyuma-audio-d261d50e56e0",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0015",
+      "asset_id": "pron-d5cad637d9cfd28c",
+      "workflow_id": "speech-review-v45-0015",
+      "entry_id": "puyuma-audio-b2abad192f8b",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0016",
+      "asset_id": "pron-2ff003babc0ee518",
+      "workflow_id": "speech-review-v45-0016",
+      "entry_id": "puyuma-audio-0df27f692e48",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0017",
+      "asset_id": "pron-b876d33aa5e17c61",
+      "workflow_id": "speech-review-v45-0017",
+      "entry_id": "puyuma-audio-7b7185613f33",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0018",
+      "asset_id": "pron-fe3cf5d7b809522b",
+      "workflow_id": "speech-review-v45-0018",
+      "entry_id": "puyuma-audio-3c05e63b6315",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0019",
+      "asset_id": "pron-e860a1d27728b6b2",
+      "workflow_id": "speech-review-v45-0019",
+      "entry_id": "puyuma-audio-38e4d63b1e3e",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0020",
+      "asset_id": "pron-93640b8654f9b32b",
+      "workflow_id": "speech-review-v45-0020",
+      "entry_id": "puyuma-audio-17126d46fe53",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0021",
+      "asset_id": "pron-3b6038afe3564bcd",
+      "workflow_id": "speech-review-v45-0021",
+      "entry_id": "puyuma-audio-5c9375318083",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0022",
+      "asset_id": "pron-f3e7e709f3f91b56",
+      "workflow_id": "speech-review-v45-0022",
+      "entry_id": "puyuma-audio-e393a3d0412b",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0023",
+      "asset_id": "pron-9971f63b73a9d058",
+      "workflow_id": "speech-review-v45-0023",
+      "entry_id": "puyuma-audio-ebf64aa99678",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0024",
+      "asset_id": "pron-55a52094b5c394c2",
+      "workflow_id": "speech-review-v45-0024",
+      "entry_id": "puyuma-audio-ecd06c07e0fd",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0025",
+      "asset_id": "pron-8cfb0b4863c40d7a",
+      "workflow_id": "speech-review-v45-0025",
+      "entry_id": "puyuma-audio-45dc39676f0e",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0026",
+      "asset_id": "pron-234aff26e31f2c5b",
+      "workflow_id": "speech-review-v45-0026",
+      "entry_id": "puyuma-audio-d8bf21308421",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0027",
+      "asset_id": "pron-62bd239c30b8aa21",
+      "workflow_id": "speech-review-v45-0027",
+      "entry_id": "puyuma-audio-94508008f8a6",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0028",
+      "asset_id": "pron-6dd78319e862303e",
+      "workflow_id": "speech-review-v45-0028",
+      "entry_id": "puyuma-audio-de7a5ff6d36d",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0029",
+      "asset_id": "pron-cc019b3818defc08",
+      "workflow_id": "speech-review-v45-0029",
+      "entry_id": "puyuma-audio-2d0099983af8",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0030",
+      "asset_id": "pron-5503ae16a5e7814e",
+      "workflow_id": "speech-review-v45-0030",
+      "entry_id": "puyuma-audio-1cdcfb554bb2",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0031",
+      "asset_id": "pron-dcad769f726bf930",
+      "workflow_id": "speech-review-v45-0031",
+      "entry_id": "puyuma-audio-dd1bff32ef72",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0032",
+      "asset_id": "pron-0ed2d8980e9a3581",
+      "workflow_id": "speech-review-v45-0032",
+      "entry_id": "puyuma-audio-23c2fbbf4341",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0033",
+      "asset_id": "pron-3acf36938fa297d5",
+      "workflow_id": "speech-review-v45-0033",
+      "entry_id": "puyuma-audio-7a6d8fcc6929",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0034",
+      "asset_id": "pron-0f6569097b5c4d91",
+      "workflow_id": "speech-review-v45-0034",
+      "entry_id": "puyuma-audio-27ad7b13ee68",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0035",
+      "asset_id": "pron-7f2adadbfcbdc5a0",
+      "workflow_id": "speech-review-v45-0035",
+      "entry_id": "puyuma-audio-96aa43762826",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0036",
+      "asset_id": "pron-3361557e7000469a",
+      "workflow_id": "speech-review-v45-0036",
+      "entry_id": "puyuma-audio-fba7d6ccb2ce",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0037",
+      "asset_id": "pron-8d30ad9299de7561",
+      "workflow_id": "speech-review-v45-0037",
+      "entry_id": "puyuma-audio-15e0e7223043",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0038",
+      "asset_id": "pron-f6c55239f374e447",
+      "workflow_id": "speech-review-v45-0038",
+      "entry_id": "puyuma-audio-c4005834c802",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0039",
+      "asset_id": "pron-e606727f501417a6",
+      "workflow_id": "speech-review-v45-0039",
+      "entry_id": "puyuma-audio-cb87557f60ad",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0040",
+      "asset_id": "pron-872a308aa4d9c2e0",
+      "workflow_id": "speech-review-v45-0040",
+      "entry_id": "puyuma-audio-96ee5840e608",
+      "queue_status": "waiting_assignment",
+      "priority": "P2",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0041",
+      "asset_id": "pron-5c96b4e69fc883de",
+      "workflow_id": "speech-review-v45-0041",
+      "entry_id": "puyuma-audio-3e8e95834aec",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0042",
+      "asset_id": "pron-cd4685469b8970bc",
+      "workflow_id": "speech-review-v45-0042",
+      "entry_id": "puyuma-audio-595e0d902d82",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0043",
+      "asset_id": "pron-8aa09e041e263363",
+      "workflow_id": "speech-review-v45-0043",
+      "entry_id": "puyuma-audio-f720172af555",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0044",
+      "asset_id": "pron-57581ceacc1924e2",
+      "workflow_id": "speech-review-v45-0044",
+      "entry_id": "puyuma-audio-40cee4a7b4a2",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0045",
+      "asset_id": "pron-6f0a39612fc84e8a",
+      "workflow_id": "speech-review-v45-0045",
+      "entry_id": "puyuma-audio-f3b81e5909b4",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0046",
+      "asset_id": "pron-17fedfd8e064636e",
+      "workflow_id": "speech-review-v45-0046",
+      "entry_id": "puyuma-audio-c1f05d8abee4",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0047",
+      "asset_id": "pron-7200aceff7e59c94",
+      "workflow_id": "speech-review-v45-0047",
+      "entry_id": "puyuma-audio-c05c1fa52c34",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0048",
+      "asset_id": "pron-8bfd30f5f3a23b75",
+      "workflow_id": "speech-review-v45-0048",
+      "entry_id": "puyuma-audio-977400f1160f",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0049",
+      "asset_id": "pron-71472a3696e57c08",
+      "workflow_id": "speech-review-v45-0049",
+      "entry_id": "puyuma-audio-6b36c9270538",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0050",
+      "asset_id": "pron-25e487f93475c5c5",
+      "workflow_id": "speech-review-v45-0050",
+      "entry_id": "puyuma-audio-15e8eef74423",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0051",
+      "asset_id": "pron-21c8cba544d3b592",
+      "workflow_id": "speech-review-v45-0051",
+      "entry_id": "puyuma-audio-c460026f7431",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0052",
+      "asset_id": "pron-ebb7306ecd1de1f8",
+      "workflow_id": "speech-review-v45-0052",
+      "entry_id": "puyuma-audio-354ee90bdf89",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0053",
+      "asset_id": "pron-378e05e01531f74a",
+      "workflow_id": "speech-review-v45-0053",
+      "entry_id": "puyuma-audio-352af7943610",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0054",
+      "asset_id": "pron-c3714607aa21ff67",
+      "workflow_id": "speech-review-v45-0054",
+      "entry_id": "puyuma-audio-7fbfd8c8045d",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0055",
+      "asset_id": "pron-a12260f942a48c41",
+      "workflow_id": "speech-review-v45-0055",
+      "entry_id": "puyuma-audio-0aa5dc53e189",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0056",
+      "asset_id": "pron-3841de352440315d",
+      "workflow_id": "speech-review-v45-0056",
+      "entry_id": "puyuma-audio-75abd617e2fb",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0057",
+      "asset_id": "pron-8178165d471633cc",
+      "workflow_id": "speech-review-v45-0057",
+      "entry_id": "puyuma-audio-9f9593e40ba5",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0058",
+      "asset_id": "pron-403bb09d4b2825cc",
+      "workflow_id": "speech-review-v45-0058",
+      "entry_id": "puyuma-audio-7dd92ece8811",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0059",
+      "asset_id": "pron-eea5e0732184f80a",
+      "workflow_id": "speech-review-v45-0059",
+      "entry_id": "puyuma-audio-2c6e26ed604f",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0060",
+      "asset_id": "pron-d807e787c3307ac0",
+      "workflow_id": "speech-review-v45-0060",
+      "entry_id": "puyuma-audio-03d14c86fc63",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0061",
+      "asset_id": "pron-ef1947b83cb69206",
+      "workflow_id": "speech-review-v45-0061",
+      "entry_id": "puyuma-audio-7701493ee98e",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0062",
+      "asset_id": "pron-61ea7ade9379f18e",
+      "workflow_id": "speech-review-v45-0062",
+      "entry_id": "puyuma-audio-860909877825",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0063",
+      "asset_id": "pron-f393fe3ffedb6c47",
+      "workflow_id": "speech-review-v45-0063",
+      "entry_id": "puyuma-audio-edee4dfae2bd",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0064",
+      "asset_id": "pron-80383c9a92118dc3",
+      "workflow_id": "speech-review-v45-0064",
+      "entry_id": "puyuma-audio-210031b89cc3",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0065",
+      "asset_id": "pron-0a875e842d68062f",
+      "workflow_id": "speech-review-v45-0065",
+      "entry_id": "puyuma-audio-f1d5aade55f4",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0066",
+      "asset_id": "pron-65ab96ddc1c78fa8",
+      "workflow_id": "speech-review-v45-0066",
+      "entry_id": "puyuma-audio-fbd737e6a151",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0067",
+      "asset_id": "pron-6f52bca48773dd08",
+      "workflow_id": "speech-review-v45-0067",
+      "entry_id": "puyuma-audio-db1c8c2cc14d",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0068",
+      "asset_id": "pron-d47c2cdd7832eae8",
+      "workflow_id": "speech-review-v45-0068",
+      "entry_id": "puyuma-audio-467fd1dc336b",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0069",
+      "asset_id": "pron-e6d7aa3a3d433e95",
+      "workflow_id": "speech-review-v45-0069",
+      "entry_id": "puyuma-audio-7b1988cb4900",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0070",
+      "asset_id": "pron-c1320a917e92fac2",
+      "workflow_id": "speech-review-v45-0070",
+      "entry_id": "puyuma-audio-2f0f94868666",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0071",
+      "asset_id": "pron-9a68ab5439d1e642",
+      "workflow_id": "speech-review-v45-0071",
+      "entry_id": "puyuma-audio-d0e05f7b87fb",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0072",
+      "asset_id": "pron-ef5c1a33ad1a3604",
+      "workflow_id": "speech-review-v45-0072",
+      "entry_id": "puyuma-audio-1800952f0787",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0073",
+      "asset_id": "pron-ed773dc335203902",
+      "workflow_id": "speech-review-v45-0073",
+      "entry_id": "puyuma-audio-dadf0ecf1ef9",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0074",
+      "asset_id": "pron-d4f2ef9b2f12374d",
+      "workflow_id": "speech-review-v45-0074",
+      "entry_id": "puyuma-audio-b682d7bcb672",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0075",
+      "asset_id": "pron-a4b17dd587707751",
+      "workflow_id": "speech-review-v45-0075",
+      "entry_id": "puyuma-audio-c30fc2b1df19",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0076",
+      "asset_id": "pron-c4dcc7a6e12b5161",
+      "workflow_id": "speech-review-v45-0076",
+      "entry_id": "puyuma-audio-3cdd1df18621",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0077",
+      "asset_id": "pron-1b15de953f78edbd",
+      "workflow_id": "speech-review-v45-0077",
+      "entry_id": "puyuma-audio-01e26c7a1e43",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0078",
+      "asset_id": "pron-efd41d25577e179c",
+      "workflow_id": "speech-review-v45-0078",
+      "entry_id": "puyuma-audio-9e7e1ddf559f",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0079",
+      "asset_id": "pron-53498e15f18c91a4",
+      "workflow_id": "speech-review-v45-0079",
+      "entry_id": "puyuma-audio-4ae65b5d013c",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0080",
+      "asset_id": "pron-ae3f50c7e3909686",
+      "workflow_id": "speech-review-v45-0080",
+      "entry_id": "puyuma-audio-eccf97d43a0f",
+      "queue_status": "waiting_assignment",
+      "priority": "P3",
+      "assigned_reviewer_id": null,
+      "allowed_roles": [
+        "speech_reviewer",
+        "speech_lead_reviewer"
+      ],
+      "sla": {
+        "starts_at": null,
+        "due_hours_after_assignment": 72,
+        "breach_policy": "escalate_to_speech_lead_reviewer"
+      },
+      "evidence_required": [
+        "license_url",
+        "speaker_consent_url",
+        "alignment_report_url",
+        "native_speaker_review_note"
+      ],
+      "return_reason_templates": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ],
+      "bulk_actions_allowed": [
+        "assign",
+        "return_for_fix"
+      ],
+      "bulk_approve_allowed": false,
+      "public_release_allowed": false
+    }
+  ]
+}

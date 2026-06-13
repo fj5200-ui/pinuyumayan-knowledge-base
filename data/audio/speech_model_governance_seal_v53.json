@@ -1,0 +1,63 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "模型治理封板與報告中心",
+  "source_version": "v52",
+  "summary": {
+    "watermarked_pdf_ready": false,
+    "renderer_install_required_on_vps": true,
+    "lineage_graph_ready": true,
+    "version_diff_ready": true,
+    "signoff_sections": 4,
+    "open_blockers": 1,
+    "public_model_release_allowed": false
+  },
+  "signoff_sections": [
+    {
+      "section_id": "data-rights",
+      "title": "資料權利與同意",
+      "status": "blocked_pending_evidence"
+    },
+    {
+      "section_id": "dataset-lineage",
+      "title": "Dataset lineage DAG",
+      "status": "draft_generated"
+    },
+    {
+      "section_id": "metrics-version-diff",
+      "title": "WER/CER/MOS 與版本差異",
+      "status": "draft_generated"
+    },
+    {
+      "section_id": "release-decision",
+      "title": "Release blocker closure",
+      "status": "blocked"
+    }
+  ],
+  "lineage_graph": {
+    "nodes": 6,
+    "edges": 5,
+    "artifact_path": "data/audio/speech_model_lineage_graph_v53.json",
+    "contains_blocked_asset_notice": true
+  },
+  "version_diff": {
+    "from_version": "v52",
+    "to_version": "v53",
+    "diff_status": "draft",
+    "release_impact": "no_public_model_release"
+  },
+  "release_blockers": [
+    {
+      "blocker_id": "model-blocker-v53-001",
+      "reason": "首批 20 筆仍未完成真實 license、speaker consent、alignment、native speaker review",
+      "status": "open"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/speech-training/v53/model-seal",
+    "/api/internal/speech-training/v53/render-governance-pdf",
+    "/api/internal/speech-training/v53/record-signoff-section",
+    "/api/internal/speech-training/v53/record-lineage-dag",
+    "/api/internal/speech-training/v53/close-release-blocker"
+  ]
+}

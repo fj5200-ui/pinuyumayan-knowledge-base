@@ -1,0 +1,407 @@
+{
+  "version": "v63",
+  "generated_at": "2026-06-13T21:10:00+08:00",
+  "title": "dataset v58.0 immutable release 正式輸出 gate",
+  "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+  "summary": {
+    "candidate_assets": 20,
+    "train_rows": 0,
+    "dev_rows": 0,
+    "test_rows": 0,
+    "blocked_rows": 20,
+    "immutable_release_ready": false,
+    "real_output_ready": false,
+    "manifest_ready": true,
+    "model_card_ready": true,
+    "checksums_ready": false,
+    "real_evidence_required": true,
+    "dataset_release_state": "blocked_until_real_evidence_native_review_and_steward_signoff"
+  },
+  "split_plan": {
+    "train": 16,
+    "dev": 2,
+    "test": 2,
+    "speaker_leakage_guard": "required_before_real_output",
+    "dataset_hash_lock_required": true,
+    "immutable_version_required": true
+  },
+  "assets": [
+    {
+      "asset_id": "speech-preview-001",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-002",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-003",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-004",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-005",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-006",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-007",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-008",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-009",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-010",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-011",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-012",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-013",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-014",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-015",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-016",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "train",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-017",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "dev",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-018",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "dev",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-019",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "test",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    },
+    {
+      "asset_id": "speech-preview-020",
+      "dataset_version": "pinuyumayan-speech-v58.0-immutable-release-v63",
+      "target_split": "test",
+      "legal_state": "pending_real_evidence_upload_native_review_and_dataset_steward_signoff",
+      "export_state": "blocked",
+      "training_allowed": false,
+      "required_evidence": [
+        "license_file_hash",
+        "speaker_consent_hash",
+        "alignment_file_hash",
+        "native_speaker_review_hash",
+        "virus_scan_receipt_hash",
+        "steward_signoff_hash"
+      ],
+      "checksum_state": "pending_real_audio_and_text_hashes",
+      "immutable_freeze_state": "blocked_until_real_evidence_passes"
+    }
+  ],
+  "export_artifacts": [
+    "train.jsonl",
+    "dev.jsonl",
+    "test.jsonl",
+    "blocked_report.jsonl",
+    "dataset_manifest.json",
+    "model_card.md",
+    "checksums.sha256"
+  ],
+  "real_output_guards": [
+    "no_synthetic_unlock",
+    "no_training_without_license",
+    "no_training_without_consent",
+    "no_training_without_alignment",
+    "no_training_without_native_speaker_review",
+    "no_dataset_freeze_without_checksums"
+  ]
+}

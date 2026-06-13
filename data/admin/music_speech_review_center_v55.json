@@ -1,0 +1,35 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T15:00:00+08:00",
+  "title": "Music / Speech Governance Center v55",
+  "cards": [
+    {
+      "title": "Release certificate 實簽",
+      "data": "data/deployment/production_release_certificate_signed_v55.json"
+    },
+    {
+      "title": "20 筆合法語音解封",
+      "data": "data/security/legal_speech_unblocked_dataset_v55.json"
+    },
+    {
+      "title": "搜尋 100% rollout",
+      "data": "data/search/music_search_100_rollout_v55.json"
+    },
+    {
+      "title": "metadata 發布 / 撤稿演練",
+      "data": "data/integration/authority_metadata_publish_takedown_v55.json"
+    },
+    {
+      "title": "模型治理封存中心",
+      "data": "data/audio/speech_model_governance_archive_center_v55.json"
+    },
+    {
+      "title": "營運監控 SOP",
+      "data": "data/site/operations_monitoring_sop_v55.json"
+    }
+  ],
+  "summary": {
+    "ready_for_vps_execution": true,
+    "requires_real_evidence": true
+  }
+}

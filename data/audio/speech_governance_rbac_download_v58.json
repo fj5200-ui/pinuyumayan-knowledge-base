@@ -1,0 +1,164 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T18:10:00+08:00",
+  "title": "治理中心下載權限完成",
+  "summary": {
+    "artifact_slots": 6,
+    "permission_tests": 6,
+    "rbac_enabled": true,
+    "download_watermark_required": true,
+    "audit_export_ready": true,
+    "public_model_release_allowed": false
+  },
+  "artifacts": [
+    {
+      "artifact_id": "gov-watermarked-pdf-v58",
+      "type": "watermarked_pdf",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_state": "pending_vps_render",
+      "watermark_required": true
+    },
+    {
+      "artifact_id": "gov-lineage-dag-v58",
+      "type": "lineage_dag",
+      "rbac_roles": [
+        "governance_admin",
+        "speech_reviewer",
+        "system_auditor"
+      ],
+      "download_state": "contract_ready",
+      "watermark_required": true
+    },
+    {
+      "artifact_id": "gov-version-diff-v58",
+      "type": "version_diff",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_state": "contract_ready",
+      "watermark_required": true
+    },
+    {
+      "artifact_id": "gov-signoff-stamp-v58",
+      "type": "signoff_stamp",
+      "rbac_roles": [
+        "governance_admin"
+      ],
+      "download_state": "pending_real_signoff",
+      "watermark_required": true
+    },
+    {
+      "artifact_id": "gov-audit-export-v58",
+      "type": "audit_export",
+      "rbac_roles": [
+        "system_auditor"
+      ],
+      "download_state": "contract_ready",
+      "watermark_required": true
+    },
+    {
+      "artifact_id": "gov-blocker-closure-v58",
+      "type": "blocker_closure",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_state": "pending_blocker_close",
+      "watermark_required": true
+    }
+  ],
+  "permission_tests": [
+    {
+      "test_id": "perm-gov-watermarked-pdf-v58",
+      "artifact_id": "gov-watermarked-pdf-v58",
+      "expected_allowed_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    },
+    {
+      "test_id": "perm-gov-lineage-dag-v58",
+      "artifact_id": "gov-lineage-dag-v58",
+      "expected_allowed_roles": [
+        "governance_admin",
+        "speech_reviewer",
+        "system_auditor"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    },
+    {
+      "test_id": "perm-gov-version-diff-v58",
+      "artifact_id": "gov-version-diff-v58",
+      "expected_allowed_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    },
+    {
+      "test_id": "perm-gov-signoff-stamp-v58",
+      "artifact_id": "gov-signoff-stamp-v58",
+      "expected_allowed_roles": [
+        "governance_admin"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    },
+    {
+      "test_id": "perm-gov-audit-export-v58",
+      "artifact_id": "gov-audit-export-v58",
+      "expected_allowed_roles": [
+        "system_auditor"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    },
+    {
+      "test_id": "perm-gov-blocker-closure-v58",
+      "artifact_id": "gov-blocker-closure-v58",
+      "expected_allowed_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "expected_denied_roles": [
+        "anonymous",
+        "viewer"
+      ],
+      "audit_log_required": true
+    }
+  ],
+  "download_policy": {
+    "reason_required": true,
+    "watermark_contains": [
+      "actor_id",
+      "artifact_id",
+      "timestamp",
+      "request_hash"
+    ],
+    "audit_every_download": true,
+    "export_requires_governance_role": true
+  }
+}

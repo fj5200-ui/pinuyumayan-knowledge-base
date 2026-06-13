@@ -1,0 +1,80 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T18:10:00+08:00",
+  "title": "metadata 發布證據完成審計",
+  "summary": {
+    "records": 3,
+    "metadata_only": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "audit_sealed": false,
+    "sitemap_og_ready": true
+  },
+  "records": [
+    {
+      "record_id": "authority-audit-seal-v58-01",
+      "source": "臺灣音樂館",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_state": "pending_rights_review_or_live_screenshot",
+      "evidence_required": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log",
+        "audit_seal_hash"
+      ],
+      "audit_sealed": false,
+      "citation_visible_required": true,
+      "takedown_rehearsal_required": true
+    },
+    {
+      "record_id": "authority-audit-seal-v58-02",
+      "source": "國家文化記憶庫",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_state": "pending_rights_review_or_live_screenshot",
+      "evidence_required": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log",
+        "audit_seal_hash"
+      ],
+      "audit_sealed": false,
+      "citation_visible_required": true,
+      "takedown_rehearsal_required": true
+    },
+    {
+      "record_id": "authority-audit-seal-v58-03",
+      "source": "金曲獎",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_state": "pending_rights_review_or_live_screenshot",
+      "evidence_required": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log",
+        "audit_seal_hash"
+      ],
+      "audit_sealed": false,
+      "citation_visible_required": true,
+      "takedown_rehearsal_required": true
+    }
+  ],
+  "guards": [
+    "metadata_only_publication",
+    "no_audio_download",
+    "no_full_lyrics",
+    "citation_visible",
+    "source_drift_watch",
+    "takedown_rehearsal_evidence"
+  ]
+}

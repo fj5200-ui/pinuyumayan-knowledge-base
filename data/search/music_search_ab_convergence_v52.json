@@ -1,0 +1,111 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "搜尋 A/B 收斂與預設排序候選",
+  "source_version": "v51",
+  "summary": {
+    "ab_tests": 3,
+    "traffic_percent": 10,
+    "convergence_requires_real_metrics": true,
+    "auto_rollout_allowed": false,
+    "default_variant_locked": "fulltext_v43",
+    "intent_dashboard_ready": true
+  },
+  "ab_tests": [
+    {
+      "test_id": "search-ab-v52-001",
+      "source_test_id": "search-ab-v51-001",
+      "name": "learning_to_rank_10_percent",
+      "traffic_percent": 10,
+      "decision_window_days": 14,
+      "minimum_sessions": 500,
+      "primary_metric": "zero_result_recovery_rate",
+      "guardrail": "p95_latency_ms <= 450",
+      "current_sample_size": 0,
+      "decision": "pending_real_traffic",
+      "rollout_allowed": false
+    },
+    {
+      "test_id": "search-ab-v52-002",
+      "source_test_id": "search-ab-v51-002",
+      "name": "typo_tolerance_10_percent",
+      "traffic_percent": 10,
+      "decision_window_days": 14,
+      "minimum_sessions": 500,
+      "primary_metric": "click_through_rate",
+      "guardrail": "irrelevant_result_report_rate <= 0.02",
+      "current_sample_size": 0,
+      "decision": "pending_real_traffic",
+      "rollout_allowed": false
+    },
+    {
+      "test_id": "search-ab-v52-003",
+      "source_test_id": "search-ab-v51-003",
+      "name": "intent_routing_dashboard",
+      "traffic_percent": 10,
+      "decision_window_days": 14,
+      "minimum_sessions": 500,
+      "primary_metric": "successful_refinement_rate",
+      "guardrail": "no protected-term expansion",
+      "current_sample_size": 0,
+      "decision": "pending_real_traffic",
+      "rollout_allowed": false
+    }
+  ],
+  "decision_rules": [
+    {
+      "rule_id": "ab-converge-v52-001",
+      "condition": "zero_result_recovery_rate improves >= 8% and p95_latency_ms <= 450",
+      "decision": "promote_variant_after_human_approval"
+    },
+    {
+      "rule_id": "ab-converge-v52-002",
+      "condition": "error_rate > 1% or p95_latency_ms > 450",
+      "decision": "rollback_variant"
+    },
+    {
+      "rule_id": "ab-converge-v52-003",
+      "condition": "sample_size < 500",
+      "decision": "continue_observation"
+    }
+  ],
+  "synonym_review_tasks": [
+    {
+      "task_id": "synonym-review-v52-001",
+      "terms": [
+        "歌謠",
+        "歌曲",
+        "古調"
+      ],
+      "status": "pending_editor_review",
+      "auto_apply_allowed": false
+    },
+    {
+      "task_id": "synonym-review-v52-002",
+      "terms": [
+        "Pinuyumayan",
+        "卑南族",
+        "Puyuma"
+      ],
+      "status": "pending_editor_review",
+      "auto_apply_allowed": false
+    },
+    {
+      "task_id": "synonym-review-v52-003",
+      "terms": [
+        "TTS",
+        "語音合成",
+        "發音"
+      ],
+      "status": "pending_editor_review",
+      "auto_apply_allowed": false
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/search/music/v52/ab-convergence",
+    "/api/internal/search/music/v52/record-convergence-metric",
+    "/api/internal/search/music/v52/decide-ab-test",
+    "/api/internal/search/music/v52/rollout-search-variant",
+    "/api/internal/search/music/v52/rollback-search-variant"
+  ]
+}

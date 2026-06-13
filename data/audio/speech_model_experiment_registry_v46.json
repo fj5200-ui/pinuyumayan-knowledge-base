@@ -1,0 +1,109 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "title": "Speech model experiment registry with lineage, reviewer signoff, trend metrics, and blocked release explanation",
+  "summary": {
+    "experiments": 3,
+    "public_release_allowed": false,
+    "blocked_dataset_assets": 80,
+    "train_dev_test_assets": 0
+  },
+  "metric_trends": {
+    "mos_minimum": 4.0,
+    "wer_maximum": 0.25,
+    "cer_maximum": 0.15,
+    "trend_window": "last_10_experiments"
+  },
+  "model_card_review": {
+    "reviewer_signoff_required": true,
+    "two_person_rule_for_public_release": true,
+    "public_release_default": false
+  },
+  "items": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "model_type": "tts",
+      "candidate_version": "tts-candidate-v46.0.1",
+      "baseline_version": "tts-baseline-v45.0",
+      "dataset_lineage_id": "dataset-lineage-v46-001",
+      "dataset_split": {
+        "train": 0,
+        "dev": 0,
+        "test": 0,
+        "blocked": 80
+      },
+      "metrics": {
+        "mos": 0,
+        "wer": null,
+        "cer": null
+      },
+      "release_gate": "blocked_no_authorized_train_dev_test",
+      "reviewer_signoff_required": true,
+      "public_release_allowed": false,
+      "not_publishable_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "model_type": "stt",
+      "candidate_version": "stt-candidate-v46.0.2",
+      "baseline_version": "stt-baseline-v45.0",
+      "dataset_lineage_id": "dataset-lineage-v46-002",
+      "dataset_split": {
+        "train": 0,
+        "dev": 0,
+        "test": 0,
+        "blocked": 80
+      },
+      "metrics": {
+        "mos": null,
+        "wer": 1.0,
+        "cer": 1.0
+      },
+      "release_gate": "blocked_no_authorized_train_dev_test",
+      "reviewer_signoff_required": true,
+      "public_release_allowed": false,
+      "not_publishable_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "model_type": "alignment",
+      "candidate_version": "alignment-candidate-v46.0.3",
+      "baseline_version": "alignment-baseline-v45.0",
+      "dataset_lineage_id": "dataset-lineage-v46-003",
+      "dataset_split": {
+        "train": 0,
+        "dev": 0,
+        "test": 0,
+        "blocked": 80
+      },
+      "metrics": {
+        "mos": null,
+        "wer": 1.0,
+        "cer": 1.0
+      },
+      "release_gate": "blocked_no_authorized_train_dev_test",
+      "reviewer_signoff_required": true,
+      "public_release_allowed": false,
+      "not_publishable_reasons": [
+        "authorized_dataset_empty",
+        "speaker_consent_missing",
+        "alignment_missing"
+      ]
+    }
+  ],
+  "write_endpoint": "/api/internal/speech-training/v46/model-experiment-decision",
+  "tables": [
+    "speech_model_experiment_registry_v46",
+    "speech_dataset_lineage_v46",
+    "speech_model_metric_trends_v46",
+    "speech_model_release_decisions_v46"
+  ]
+}

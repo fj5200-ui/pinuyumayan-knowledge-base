@@ -1,0 +1,13 @@
+{
+  "version": "v64",
+  "generated_at": "2026-06-13T21:25:00+08:00",
+  "panels": [
+    "release_certificate_final_seal",
+    "dataset_real_output_gate",
+    "search_quality_improvement_loop",
+    "metadata_public_audit_closure",
+    "governance_download_audit_report",
+    "operations_notification_rhythm"
+  ],
+  "safe_state": "real_world_completion_requires_vps_evidence_legal_attachments_and_live_notification_credentials"
+}

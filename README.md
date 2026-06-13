@@ -469,3 +469,93 @@ v31 仍維持：DB 在 VPS、正式環境禁用靜默 static fallback、後端�
 - Adds music live DB search contract and authority-source metadata fetch contract.
 - Public TTS/STT remains disabled until authorization, consent, alignment and human review pass.
 - YouTube audio/video and complete lyrics remain blocked.
+
+## v44 VPS 真實授權審核 + 音樂搜尋 DB + TTS/STT 匯出
+
+本版新增：
+
+- `data/audio/speech_asset_authorization_v44.json`：80 筆 preview assets 逐筆補 license、speaker consent、alignment 欄位；未通過前全部 blocked。
+- `/api/public/search/music/v43`：改為 MySQL FULLTEXT 優先查 `music_search_documents_v43`，無 DB 時才 JSON fallback。
+- `scripts/export_tts_stt_dataset_v44.py`：輸出 train/dev/test/blocked JSONL 與 model card。
+- `scripts/authority_source_candidate_worker_v44.py`：臺灣音樂館、國家文化記憶庫、金曲獎 metadata candidate worker。
+- `webapp/components/MusicSpeechReviewCenterV44.tsx` 與主站 `/music/search`、`/music/[id]`、`/tts-stt` 頁面範本。
+
+驗收與 VPS dry-run：
+
+```bash
+python3 scripts/validate_tts_stt_music_v44.py
+./deploy/vps-tts-stt-v44.sh
+```
+
+套用 SQL：
+
+```bash
+IMPORT_SQL=1 DATABASE_URL="$DATABASE_URL" ./deploy/vps-tts-stt-v44.sh
+```
+
+## v51 實機封板與品牌效能驗收
+
+- 新增 0047_tts_stt_music_v51.sql。
+- 新增 VPS cutover seal、實物 evidence upload、搜尋 A/B、權威 metadata live publication、模型治理 PDF renderer、Lighthouse/CWV 驗收。
+- 80 筆 TTS/STT preview assets 在證據鏈完成前仍 blocked；不公開音訊與完整歌詞。
+- 執行 ./deploy/vps-tts-stt-v51.sh 進行本地/部署前驗收。
+
+
+## v52 更新
+- 新增實機上線執行包、證據鏈開通、搜尋 A/B 收斂、權威 metadata 發布、模型治理簽核與品牌效能監控。
+- 80 筆 preview assets 仍維持 blocked，必須完成證據鏈後才可訓練或公開。
+
+
+### v55
+
+Formal release certificate package, legal speech unlock package, search 100% rollout controls, metadata publication/takedown rehearsal, governance archive center and operations SOP.
+
+
+## v56
+
+Adds immutable release evidence ingestion, legal speech real export gates, post-rollout search monitoring, public metadata evidence records, governance download audit and recurring operations cadence.
+
+
+## v58
+
+Adds release certificate sealed evidence, dataset v58.0 legal export gates, formal search configuration, authority metadata audit seals, governance RBAC downloads, and live operations delivery contracts.
+
+
+## v59
+
+Adds post-seal release validation, dataset v58.0 freeze gates, production search policy operations, expanded metadata audit publication, governance download hardening, and operations notification closed-loop contracts.
+
+
+## v60 Final Seal / Dataset Freeze / Operations Delivery
+
+- 新增 final sealed release certificate contract。
+- 新增 dataset v58.0 immutable freeze gate。
+- 新增搜尋週報/SLA、metadata 來源擴充、治理下載告警閉環、營運通知實送。
+- 無真實 VPS evidence 或真實授權附件前，train/dev/test 保持 0。
+
+
+## v61 Final Landing / Dataset Real Output / Operations Seal
+
+- 新增 final ledger 實機封板落地合約。
+- 新增 dataset v58.0 真正產出 gate。
+- 新增搜尋週報營運、metadata 公開擴充、治理下載告警實測、營運通知封板。
+- 無真實 VPS evidence 或真實授權附件前，train/dev/test 保持 0。
+
+
+## v62 更新
+- 最終 release ledger 實寫包
+- dataset v58.0 immutable release gate
+- 搜尋週報回填與 SLA 改善任務
+- metadata 公開證據與稽核封存
+- 治理告警實送驗證
+- 營運通知封板報告
+
+
+## v63 更新摘要
+
+- release ledger final certificate 完成包
+- dataset v58.0 immutable release gate
+- 搜尋週報與改善閉環
+- metadata 公開證據審計
+- 治理下載告警真實稽核
+- 營運通知封板營運節奏

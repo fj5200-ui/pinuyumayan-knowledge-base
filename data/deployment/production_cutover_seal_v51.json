@@ -1,0 +1,134 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "VPS 實機切換封板報告 v51",
+  "source_version": "v50",
+  "summary": {
+    "staging_rehearsal_required": true,
+    "production_rehearsal_required": true,
+    "health_dns_rollback_backup_evidence_required": true,
+    "cloudflare_cutover_evidence_required": true,
+    "database_restore_drill_required": true,
+    "sealed_release_allowed_without_real_vps_run": false,
+    "public_release_allowed": false,
+    "minimum_required_evidence_items": 12,
+    "seal_status": "pending_real_vps_evidence"
+  },
+  "seal_checklist": [
+    {
+      "check_id": "seal-v51-001",
+      "name": "staging_blue_green_rehearsal",
+      "required_evidence": [
+        "staging_url",
+        "git_sha",
+        "artifact_sha256",
+        "health_200",
+        "ready_200"
+      ],
+      "status": "pending_real_vps_run"
+    },
+    {
+      "check_id": "seal-v51-002",
+      "name": "production_backup_restore_drill",
+      "required_evidence": [
+        "backup_id",
+        "restore_target",
+        "checksum",
+        "restore_elapsed_seconds"
+      ],
+      "status": "pending_real_vps_run"
+    },
+    {
+      "check_id": "seal-v51-003",
+      "name": "database_migration_checksum",
+      "required_evidence": [
+        "0047_checksum",
+        "seed_checksum",
+        "row_counts"
+      ],
+      "status": "pending_real_vps_run"
+    },
+    {
+      "check_id": "seal-v51-004",
+      "name": "cloudflare_dns_cutover_rehearsal",
+      "required_evidence": [
+        "zone_id",
+        "record_id",
+        "old_target",
+        "new_target",
+        "ttl_seconds"
+      ],
+      "status": "pending_real_vps_run"
+    },
+    {
+      "check_id": "seal-v51-005",
+      "name": "rollback_rehearsal",
+      "required_evidence": [
+        "rollback_artifact_sha256",
+        "rollback_duration_seconds",
+        "service_status"
+      ],
+      "status": "pending_real_vps_run"
+    },
+    {
+      "check_id": "seal-v51-006",
+      "name": "post_cutover_monitoring_window",
+      "required_evidence": [
+        "30_min_health_window",
+        "error_rate",
+        "p95_latency_ms"
+      ],
+      "status": "pending_real_vps_run"
+    }
+  ],
+  "evidence_report_template": {
+    "report_id": "cutover-seal-v51-template",
+    "requires_actor_id": true,
+    "requires_hmac": true,
+    "append_only": true,
+    "status_values": [
+      "pending",
+      "passed",
+      "failed",
+      "blocked"
+    ],
+    "release_gate": "all checklist items passed + backup restore drill passed + rollback rehearsal passed"
+  },
+  "api_contracts": {
+    "record_cutover_seal": {
+      "method": "POST",
+      "path": "/api/internal/vps/v51/record-cutover-seal",
+      "requires": [
+        "actor_id",
+        "seal_id",
+        "environment",
+        "status",
+        "evidence_hash",
+        "idempotency_key"
+      ]
+    },
+    "record_restore_drill": {
+      "method": "POST",
+      "path": "/api/internal/vps/v51/record-restore-drill",
+      "requires": [
+        "actor_id",
+        "drill_id",
+        "backup_id",
+        "result",
+        "duration_seconds",
+        "idempotency_key"
+      ]
+    },
+    "record_cutover_observation": {
+      "method": "POST",
+      "path": "/api/internal/vps/v51/record-cutover-observation",
+      "requires": [
+        "actor_id",
+        "observation_id",
+        "metric_name",
+        "metric_value",
+        "status"
+      ]
+    }
+  }
+}

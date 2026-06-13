@@ -1,0 +1,1 @@
+INSERT IGNORE INTO speech_model_governance_delivery_exports_v50 (export_id, actor_id, export_format, status, artifact_path, watermark, export_json) VALUES ('model-governance-v50-contract', 'system_seed', 'pdf', 'contract_only_requires_renderer_on_vps', 'exports/model_governance_report_v50.pdf', 'BLOCKED - evidence incomplete', CAST('{"blocked_assets":80}' AS JSON));

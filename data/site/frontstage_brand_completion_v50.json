@@ -1,0 +1,233 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "前台品牌完成與瀏覽器驗收 v50",
+  "source_version": "v49",
+  "summary": {
+    "routes_total": 7,
+    "formal_design_system_applied": true,
+    "browser_screenshot_validation_ready": true,
+    "core_web_vitals_real_run_required": true,
+    "seo_og_monitor_ready": true,
+    "minimum_contrast": "WCAG AA",
+    "public_release_allowed_without_browser_run": false
+  },
+  "brand_system": {
+    "name": "卑南族文化綜合平台",
+    "english_name": "Pinuyumayan",
+    "primary_color": "pinuyumayan-red",
+    "secondary_colors": [
+      "ritual-yellow",
+      "mountain-green"
+    ],
+    "style": [
+      "glassmorphism",
+      "soft_shadow",
+      "small_radius",
+      "refined_motion",
+      "day_night_mode"
+    ],
+    "forbidden_labels": [
+      "legacy_cn_forbidden_label",
+      "legacy_en_ten_communities_label"
+    ]
+  },
+  "route_brand_validations": [
+    {
+      "route_path": "/",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/culture",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/language",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/music/search",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/music/[id]",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/map",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/tts-stt",
+      "day_mode": "pass_contract_pending_browser",
+      "night_mode": "pass_contract_pending_browser",
+      "screenshot_required": true,
+      "og_required": true,
+      "sitemap_required": true,
+      "cwv_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    }
+  ],
+  "seo_og_monitors": [
+    {
+      "monitor_id": "seo-og-v50-001",
+      "route_path": "/",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-002",
+      "route_path": "/culture",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-003",
+      "route_path": "/language",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-004",
+      "route_path": "/music/search",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-005",
+      "route_path": "/music/[id]",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-006",
+      "route_path": "/map",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    },
+    {
+      "monitor_id": "seo-og-v50-007",
+      "route_path": "/tts-stt",
+      "checks": [
+        "title",
+        "description",
+        "og:image",
+        "json_ld",
+        "canonical",
+        "sitemap"
+      ],
+      "status": "pending_post_deploy"
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/site/v50/brand-completion",
+    "record_browser_screenshot": "/api/internal/site/v50/record-browser-screenshot",
+    "record_cwv_run": "/api/internal/site/v50/record-cwv-run",
+    "record_seo_og_monitor": "/api/internal/site/v50/record-seo-og-monitor"
+  },
+  "tables": [
+    "site_brand_completion_routes_v50",
+    "site_browser_screenshot_validations_v50",
+    "site_seo_og_monitors_v50",
+    "site_core_web_vitals_runs_v50"
+  ]
+}

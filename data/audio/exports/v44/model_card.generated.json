@@ -1,0 +1,31 @@
+{
+  "version": "v44",
+  "model_family": "puyuma_tts_stt_experiment",
+  "public_release_allowed": false,
+  "dataset_input": "data/audio/speech_asset_authorization_v44.json",
+  "dataset_counts": {
+    "train": 0,
+    "dev": 0,
+    "test": 0,
+    "blocked_candidates": 80
+  },
+  "training_ready": 0,
+  "blocked_candidates": 80,
+  "rights_gates": {
+    "license_required": true,
+    "speaker_consent_required": true,
+    "alignment_required": true,
+    "native_speaker_review_required": true
+  },
+  "prohibited_uses": [
+    "public synthetic voice release before review",
+    "YouTube/audio/video download for training",
+    "song, lyric or ceremonial audio training without explicit license"
+  ],
+  "evaluation_required_before_release": [
+    "MOS for TTS",
+    "WER for STT",
+    "CER for STT",
+    "human review"
+  ]
+}

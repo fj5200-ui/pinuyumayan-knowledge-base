@@ -1,0 +1,93 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "模型治理正式交付與 PDF renderer v51",
+  "source_version": "v50",
+  "summary": {
+    "pdf_renderer_install_required": true,
+    "watermarked_pdf_required": true,
+    "signoff_stamp_ready": true,
+    "lineage_graph_render_required": true,
+    "version_diff_report_required": true,
+    "public_release_allowed": false,
+    "blocked_assets": 80
+  },
+  "renderer": {
+    "engine_options": [
+      "playwright_pdf",
+      "weasyprint",
+      "wkhtmltopdf"
+    ],
+    "preferred_engine": "playwright_pdf",
+    "input_markdown": "docs/model_governance_delivery_v50.generated.md",
+    "output_pdf": "exports/model_governance_report_v51.pdf",
+    "watermark": "BLOCKED - evidence incomplete"
+  },
+  "signoff_stamps": [
+    {
+      "role": "speech_review_lead",
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "legal_reviewer",
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "native_speaker_reviewer",
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "model_owner",
+      "status": "pending_real_signoff"
+    }
+  ],
+  "version_comparison": {
+    "from": "v50-governance-delivery",
+    "to": "v51-pdf-renderer",
+    "diff_sections": [
+      "renderer",
+      "watermark",
+      "lineage_graph",
+      "signoff_stamp",
+      "release_blockers"
+    ]
+  },
+  "release_blockers": [
+    {
+      "blocker_id": "model-blocker-v51-001",
+      "reason": "80 preview assets lack complete license/consent/alignment evidence",
+      "status": "open"
+    }
+  ],
+  "api_contracts": {
+    "render_governance_pdf_v51": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v51/render-governance-pdf",
+      "requires": [
+        "actor_id",
+        "renderer",
+        "watermark",
+        "idempotency_key"
+      ]
+    },
+    "record_signoff_stamp": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v51/record-signoff-stamp",
+      "requires": [
+        "actor_id",
+        "role",
+        "decision",
+        "stamp_hash"
+      ]
+    },
+    "record_model_version_comparison": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v51/record-model-version-comparison",
+      "requires": [
+        "from_version",
+        "to_version",
+        "diff_hash"
+      ]
+    }
+  }
+}

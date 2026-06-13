@@ -1,0 +1,23 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T18:10:00+08:00",
+  "checks": [
+    "validate_tts_stt_music_v49_to_v58",
+    "validate_site_operations_delivery_v58",
+    "openapi_contract",
+    "release_certificate_seal_report"
+  ],
+  "env_flags": [
+    "IMPORT_SQL",
+    "RUN_RELEASE_CERTIFICATE_SEAL",
+    "RUN_LEGAL_DATASET_V58_EXPORT",
+    "RUN_SEARCH_FORMAL_CONFIG_DECISION",
+    "RUN_GOVERNANCE_RBAC_AUDIT",
+    "RUN_OPS_LIVE_DELIVERY"
+  ],
+  "summary": {
+    "safe_without_database_url": true,
+    "real_vps_required_for_final_seal": true,
+    "real_evidence_required_for_dataset_export": true
+  }
+}

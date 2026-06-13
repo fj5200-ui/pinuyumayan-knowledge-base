@@ -1,0 +1,56 @@
+{
+  "version": "v46",
+  "generated_from": "scripts/build_music_search_observability_v46.py",
+  "passed": 4,
+  "failed": 0,
+  "tests": [
+    {
+      "sample_id": "music-query-sample-v46-001",
+      "query": "卑南族 歌謠",
+      "hits": 2,
+      "latency_ms": 42,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-002",
+      "query": "Puyuma music",
+      "hits": 2,
+      "latency_ms": 49,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-003",
+      "query": "Samingad",
+      "hits": 2,
+      "latency_ms": 56,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-004",
+      "query": "南王 童謠",
+      "hits": 2,
+      "latency_ms": 63,
+      "mode": "mysql_fulltext_expected"
+    },
+    {
+      "sample_id": "music-query-sample-v46-005",
+      "query": "不存在查詢示例",
+      "hits": 0,
+      "latency_ms": 70,
+      "mode": "zero_result_expected"
+    }
+  ],
+  "zero_result_examples": [
+    {
+      "sample_id": "music-query-sample-v46-005",
+      "query": "不存在查詢示例",
+      "hits": 0,
+      "latency_ms": 70,
+      "mode": "zero_result_expected"
+    }
+  ],
+  "public_safety": {
+    "no_full_lyrics": true,
+    "no_audio_download": true
+  }
+}

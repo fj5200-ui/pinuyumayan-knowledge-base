@@ -1,0 +1,36 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "正式 release certificate 完成封存",
+      "content": "在真實 VPS 將 release evidence ledger seal 完成簽章，輸出不可變 PDF/JSON、hash chain、備份還原與 30 分鐘觀測封存報告。"
+    },
+    {
+      "priority": 2,
+      "direction": "首批 train/dev/test 真實落地",
+      "content": "完成 20 筆真實 evidence 後輸出 train/dev/test、checksum、manifest、blocked report、model card，並建立 dataset v58.0。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋 100% 結果營運化",
+      "content": "根據 v57 24/72 小時決策，將 learning-to-rank/typo/intent routing 固化為正式設定或回復舊排序。"
+    },
+    {
+      "priority": 4,
+      "direction": "metadata 發布證據完成審計",
+      "content": "完成 sitemap/OG ping、citation 截圖、source drift 與 takedown rehearsal evidence seal，讓 metadata-only 公開卡片可稽核。"
+    },
+    {
+      "priority": 5,
+      "direction": "治理中心下載權限完成",
+      "content": "治理中心 artifacts 支援 RBAC、download watermark、audit export、權限測試與下載紀錄查詢。"
+    },
+    {
+      "priority": 6,
+      "direction": "營運報告通知實送",
+      "content": "Email、LINE、後台通知完成實送，將每日/每週營運報告納入正式 SOP 與告警升級流程。"
+    }
+  ]
+}

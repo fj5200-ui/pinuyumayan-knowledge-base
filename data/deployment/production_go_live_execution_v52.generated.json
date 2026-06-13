@@ -1,0 +1,9 @@
+{
+  "version": "v52",
+  "source": "data/deployment/production_go_live_execution_v52.json",
+  "step_count": 6,
+  "ready_count": 6,
+  "release_allowed": false,
+  "reason": "real VPS execution and 30 minute observation evidence are still required",
+  "source_sha256": "8d4d6a3e0bb7d7a0074ddfef5f75aa2f760baebd20a15879676cd2713357c748"
+}

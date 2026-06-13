@@ -1,0 +1,148 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "音樂搜尋品質自動優化 v49",
+  "source_version": "v48",
+  "summary": {
+    "synonym_suggestions": 3,
+    "zero_result_tasks": 3,
+    "regression_tests": 4,
+    "auto_apply_allowed": false,
+    "manual_review_required": true,
+    "query_log_source": "music_search_query_logs_v47/v48"
+  },
+  "synonym_suggestions": [
+    {
+      "suggestion_id": "syn-v49-001",
+      "source_query": "卑南 婚禮歌",
+      "suggested_terms": [
+        "卑南 婚禮歌",
+        "卑南 婚禮歌 歌謠",
+        "卑南 婚禮歌 metadata"
+      ],
+      "confidence": 0.66,
+      "status": "pending_review",
+      "auto_apply_allowed": false
+    },
+    {
+      "suggestion_id": "syn-v49-002",
+      "source_query": "pinaski 羅馬字",
+      "suggested_terms": [
+        "pinaski 羅馬字",
+        "pinaski 羅馬字 歌謠",
+        "pinaski 羅馬字 metadata"
+      ],
+      "confidence": 0.7,
+      "status": "pending_review",
+      "auto_apply_allowed": false
+    },
+    {
+      "suggestion_id": "syn-v49-003",
+      "source_query": "大獵祭 歌",
+      "suggested_terms": [
+        "大獵祭 歌",
+        "大獵祭 歌 歌謠",
+        "大獵祭 歌 metadata"
+      ],
+      "confidence": 0.74,
+      "status": "pending_review",
+      "auto_apply_allowed": false
+    }
+  ],
+  "zero_result_candidate_tasks": [
+    {
+      "task_id": "zero-task-v49-001",
+      "query": "卑南 婚禮歌",
+      "count": 7,
+      "recommended_action": "create_candidate_or_synonym",
+      "owner": "search_curator",
+      "status": "open"
+    },
+    {
+      "task_id": "zero-task-v49-002",
+      "query": "pinaski 羅馬字",
+      "count": 5,
+      "recommended_action": "create_candidate_or_synonym",
+      "owner": "search_curator",
+      "status": "open"
+    },
+    {
+      "task_id": "zero-task-v49-003",
+      "query": "大獵祭 歌",
+      "count": 4,
+      "recommended_action": "create_candidate_or_synonym",
+      "owner": "search_curator",
+      "status": "open"
+    }
+  ],
+  "facet_sorting_rules": [
+    {
+      "facet": "community",
+      "sort": "click_weight_then_alpha"
+    },
+    {
+      "facet": "source_type",
+      "sort": "authority_weight"
+    },
+    {
+      "facet": "period",
+      "sort": "chronological"
+    }
+  ],
+  "regression_tests": [
+    {
+      "case_id": "music-regression-v49-001",
+      "query": "卑南族 歌謠",
+      "expected_min_results": 1,
+      "expected_facets": [
+        "source_type",
+        "community",
+        "period"
+      ],
+      "status": "pending_run"
+    },
+    {
+      "case_id": "music-regression-v49-002",
+      "query": "南王 音樂",
+      "expected_min_results": 1,
+      "expected_facets": [
+        "source_type",
+        "community",
+        "period"
+      ],
+      "status": "pending_run"
+    },
+    {
+      "case_id": "music-regression-v49-003",
+      "query": "知本 歌謠",
+      "expected_min_results": 1,
+      "expected_facets": [
+        "source_type",
+        "community",
+        "period"
+      ],
+      "status": "pending_run"
+    },
+    {
+      "case_id": "music-regression-v49-004",
+      "query": "祭儀 歌謠",
+      "expected_min_results": 1,
+      "expected_facets": [
+        "source_type",
+        "community",
+        "period"
+      ],
+      "status": "pending_run"
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/search/music/v49/auto-optimization",
+    "apply_synonym": "/api/internal/search/music/v49/apply-synonym-suggestion",
+    "record_regression": "/api/internal/search/music/v49/record-regression-run"
+  },
+  "tables": [
+    "music_search_synonym_suggestions_v49",
+    "music_search_zero_result_tasks_v49",
+    "music_search_regression_runs_v49"
+  ]
+}

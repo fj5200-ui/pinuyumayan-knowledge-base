@@ -1,0 +1,63 @@
+{
+  "version": "v47",
+  "title": "Music + Speech Production Control Center v47",
+  "component": "webapp/components/MusicSpeechReviewCenterV47.tsx",
+  "panels": [
+    {
+      "key": "review_action_ui",
+      "title": "可操作審核隊列 / 表單 / HMAC nonce",
+      "endpoint": "/api/ops/speech-training/v47/review-action-ui"
+    },
+    {
+      "key": "transaction_tests",
+      "title": "MySQL transaction integration tests",
+      "endpoint": "/api/ops/database/v47/transaction-tests"
+    },
+    {
+      "key": "search_observability",
+      "title": "實接 query log / zero-result weekly report",
+      "endpoint": "/api/ops/search/music/v47/observability-dashboard"
+    },
+    {
+      "key": "authority_adapters",
+      "title": "權威來源正式採集 adapter",
+      "endpoint": "/api/ops/authority-sources/v47/fetch-adapters"
+    },
+    {
+      "key": "model_governance",
+      "title": "模型治理趨勢 / lineage / signoff",
+      "endpoint": "/api/ops/speech-training/v47/governance-report"
+    },
+    {
+      "key": "site_polish",
+      "title": "主站日間模式與搜尋轉換優化",
+      "endpoint": "/api/ops/site/v47/polish-contract"
+    },
+    {
+      "key": "vps_preflight",
+      "title": "VPS v47 preflight",
+      "endpoint": "/api/ops/vps/v47/preflight-contract"
+    }
+  ],
+  "write_actions": [
+    "issue_hmac_nonce",
+    "assign_reviewer",
+    "upload_evidence_record",
+    "return_for_fix",
+    "reject_gate",
+    "approve_gate",
+    "import_alignment",
+    "run_transaction_test",
+    "log_search_query",
+    "run_authority_live_fetch",
+    "review_authority_candidate",
+    "model_governance_decision"
+  ],
+  "safety_defaults": {
+    "hmac_required_for_write_actions": true,
+    "bulk_approve_disabled": true,
+    "database_transaction_required_for_production": true,
+    "public_release_requires_all_gates": true,
+    "metadata_only_authority_fetch": true
+  }
+}

@@ -1,0 +1,2 @@
+-- v52 generated seed marker
+INSERT IGNORE INTO speech_model_release_blockers_v52 (blocker_id, actor_id, blocker_status, reason, blocker_json) VALUES ('048_model_signoff_v52', 'system-seed', 'open', 'seed blocker placeholder', CAST('{"source": "database/seeds/048_model_signoff_v52.generated.sql", "version": "v52", "summary": {"pdf_renderer_required": true, "watermark_required": true, "lineage_graph_required": true, "version_diff_required": true, "signoff_required": true, "blocked_assets": 80, "eligible_training_assets": 0, "public_release_allowed": false}}' AS JSON));

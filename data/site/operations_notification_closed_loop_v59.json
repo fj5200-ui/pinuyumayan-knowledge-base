@@ -1,0 +1,184 @@
+{
+  "version": "v59",
+  "generated_at": "2026-06-13T18:55:00+08:00",
+  "title": "營運通知正式閉環",
+  "summary": {
+    "routes": 7,
+    "channels": [
+      "email",
+      "line",
+      "admin_notification"
+    ],
+    "closed_loop_jobs": 6,
+    "ack_enabled": true,
+    "escalation_enabled": true,
+    "retrospective_enabled": true,
+    "real_delivery_verified": false
+  },
+  "routes": [
+    {
+      "route": "/",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/culture",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/language",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/music/search",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/music/[id]",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/map",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    },
+    {
+      "route": "/tts-stt",
+      "checks": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "alert_ack_required": true,
+      "close_required": true
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "ops-closed-loop-daily-email-v59",
+      "cadence": "daily",
+      "channel": "email",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": false,
+      "weekly_improvement_task_enabled": false
+    },
+    {
+      "job_id": "ops-closed-loop-daily-line-v59",
+      "cadence": "daily",
+      "channel": "line",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": false,
+      "weekly_improvement_task_enabled": false
+    },
+    {
+      "job_id": "ops-closed-loop-daily-admin_notification-v59",
+      "cadence": "daily",
+      "channel": "admin_notification",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": false,
+      "weekly_improvement_task_enabled": false
+    },
+    {
+      "job_id": "ops-closed-loop-weekly-email-v59",
+      "cadence": "weekly",
+      "channel": "email",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": true,
+      "weekly_improvement_task_enabled": true
+    },
+    {
+      "job_id": "ops-closed-loop-weekly-line-v59",
+      "cadence": "weekly",
+      "channel": "line",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": true,
+      "weekly_improvement_task_enabled": true
+    },
+    {
+      "job_id": "ops-closed-loop-weekly-admin_notification-v59",
+      "cadence": "weekly",
+      "channel": "admin_notification",
+      "delivery_state": "pending_real_credentials",
+      "ack_required": true,
+      "escalation_enabled": true,
+      "close_required": true,
+      "retrospective_required": true,
+      "weekly_improvement_task_enabled": true
+    }
+  ],
+  "review_cycle": {
+    "weekly_retrospective_owner": "ops_admin",
+    "improvement_task_board": "operations_improvements",
+    "stale_ack_escalation_minutes": 30
+  }
+}

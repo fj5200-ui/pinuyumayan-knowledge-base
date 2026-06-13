@@ -1,0 +1,110 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T15:00:00+08:00",
+  "title": "Production release certificate real-signature package",
+  "certificate_id": "prod-release-cert-v55-contract",
+  "mode": "real_signature_package_not_executed_in_this_environment",
+  "checks": [
+    {
+      "check_key": "health_api",
+      "label": "API health/readiness",
+      "required_evidence": [
+        "/health",
+        "/api/readiness"
+      ],
+      "status": "awaiting_vps_evidence",
+      "evidence_hash_required": true
+    },
+    {
+      "check_key": "cloudflare_dns",
+      "label": "DNS / Cloudflare cutover",
+      "required_evidence": [
+        "A/AAAA/CNAME snapshot",
+        "Cloudflare proxy status",
+        "TLS status"
+      ],
+      "status": "awaiting_vps_evidence",
+      "evidence_hash_required": true
+    },
+    {
+      "check_key": "backup_restore",
+      "label": "Backup restore drill",
+      "required_evidence": [
+        "backup manifest",
+        "restore checksum",
+        "restore duration"
+      ],
+      "status": "awaiting_vps_evidence",
+      "evidence_hash_required": true
+    },
+    {
+      "check_key": "rollback",
+      "label": "Rollback rehearsal",
+      "required_evidence": [
+        "previous release id",
+        "rollback command output",
+        "post-rollback health"
+      ],
+      "status": "awaiting_vps_evidence",
+      "evidence_hash_required": true
+    },
+    {
+      "check_key": "observation_30m",
+      "label": "30-minute observation",
+      "required_evidence": [
+        "error rate",
+        "latency p95/p99",
+        "uptime samples"
+      ],
+      "status": "awaiting_vps_evidence",
+      "evidence_hash_required": true
+    },
+    {
+      "check_key": "three_party_signoff",
+      "label": "三方簽核",
+      "required_evidence": [
+        "ops signoff",
+        "content signoff",
+        "security signoff"
+      ],
+      "status": "awaiting_signoff",
+      "evidence_hash_required": true
+    }
+  ],
+  "signature_roles": [
+    {
+      "role": "ops_owner",
+      "required": true,
+      "status": "pending"
+    },
+    {
+      "role": "content_owner",
+      "required": true,
+      "status": "pending"
+    },
+    {
+      "role": "security_owner",
+      "required": true,
+      "status": "pending"
+    }
+  ],
+  "immutable_outputs": [
+    {
+      "format": "json",
+      "path": "data/deployment/production_release_certificate_signed_v55.json"
+    },
+    {
+      "format": "pdf",
+      "path": "docs/production_release_certificate_signed_v55.generated.pdf",
+      "status": "renderer_required_on_vps"
+    }
+  ],
+  "summary": {
+    "vps_evidence_attached": false,
+    "release_certificate_signed": false,
+    "production_release_allowed": false,
+    "certificate_pdf_allowed": false,
+    "reason": "awaiting real VPS health/DNS/backup/rollback/30-minute observation and three-party signoff evidence"
+  },
+  "certificate_hash": "c754b6b6ec6294a8aad710c0db6c818bcd25d66209b73d167e3fe99bae509332"
+}

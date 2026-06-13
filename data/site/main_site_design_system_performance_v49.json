@@ -1,0 +1,158 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "主站正式設計系統與效能驗收 v49",
+  "source_version": "v48",
+  "summary": {
+    "routes_total": 7,
+    "design_system_tokens_ready": true,
+    "core_web_vitals_budget_ready": true,
+    "og_screenshot_validation_ready": true,
+    "sitemap_ping_ready": true,
+    "minimum_contrast": "WCAG AA",
+    "day_mode_contrast_fixed": true
+  },
+  "design_system": {
+    "brand_tokens": {
+      "primary": "pinuyumayan-red",
+      "accent_yellow": "ritual-yellow",
+      "accent_green": "mountain-green",
+      "surface_day": "warm-white",
+      "surface_night": "obsidian"
+    },
+    "component_families": [
+      "hero",
+      "content_card",
+      "music_card",
+      "culture_card",
+      "language_card",
+      "facet_chip",
+      "metadata_badge",
+      "review_status_badge"
+    ],
+    "accessibility": [
+      "focus_ring_visible",
+      "reduced_motion_safe",
+      "AA_text_contrast",
+      "non_color_status_labels"
+    ]
+  },
+  "route_validations": [
+    {
+      "route_path": "/",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/music/search",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/music/[id]",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/tts-stt",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/culture",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/language",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    },
+    {
+      "route_path": "/admin/music-speech",
+      "day_mode": "pass_pending_browser_verify",
+      "night_mode": "pass_pending_browser_verify",
+      "og_screenshot": "pending_post_deploy",
+      "sitemap": "included",
+      "core_web_vitals_budget": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      }
+    }
+  ],
+  "performance_budgets": {
+    "home": {
+      "LCP_ms": 2500,
+      "INP_ms": 200,
+      "CLS": 0.1
+    },
+    "music_search": {
+      "LCP_ms": 2500,
+      "INP_ms": 200,
+      "CLS": 0.1
+    },
+    "culture": {
+      "LCP_ms": 2600,
+      "INP_ms": 200,
+      "CLS": 0.1
+    },
+    "language": {
+      "LCP_ms": 2600,
+      "INP_ms": 200,
+      "CLS": 0.1
+    }
+  },
+  "endpoints": {
+    "dashboard": "/api/ops/site/v49/design-system-performance",
+    "record_performance": "/api/internal/site/v49/record-performance-validation",
+    "record_og": "/api/internal/site/v49/record-og-screenshot-validation"
+  },
+  "tables": [
+    "site_design_system_tokens_v49",
+    "site_performance_validation_runs_v49",
+    "site_og_screenshot_validations_v49"
+  ]
+}

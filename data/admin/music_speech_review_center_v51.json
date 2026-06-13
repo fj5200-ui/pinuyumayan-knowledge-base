@@ -1,0 +1,72 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "Music Speech Review Center v51",
+  "summary": {
+    "cutover_seal_checks": 6,
+    "evidence_uploads": 80,
+    "search_ab_tests": 3,
+    "authority_metadata_cards": 3,
+    "model_blocked_assets": 80,
+    "site_routes": 7,
+    "public_release_allowed": false
+  },
+  "cards": [
+    {
+      "card_id": "cutover-seal",
+      "title": "實機切換封板",
+      "status": "pending_real_vps_evidence",
+      "endpoint": "/api/ops/vps/v51/cutover-seal"
+    },
+    {
+      "card_id": "evidence-upload",
+      "title": "審核證據鏈實物上傳",
+      "status": "blocked_until_real_upload",
+      "endpoint": "/api/admin/speech-training/v51/evidence-upload"
+    },
+    {
+      "card_id": "search-ab",
+      "title": "搜尋 A/B 實測",
+      "status": "ready_pending_real_traffic",
+      "endpoint": "/api/ops/search/music/v51/ab-experiment"
+    },
+    {
+      "card_id": "authority-live-publish",
+      "title": "權威 metadata 上架",
+      "status": "pending_rights_approval",
+      "endpoint": "/api/ops/authority-sources/v51/live-publication"
+    },
+    {
+      "card_id": "model-pdf-renderer",
+      "title": "模型治理 PDF renderer",
+      "status": "renderer_required_on_vps",
+      "endpoint": "/api/ops/speech-training/v51/governance-renderer"
+    },
+    {
+      "card_id": "brand-performance",
+      "title": "品牌驗收與效能實測",
+      "status": "pending_lighthouse_cwv",
+      "endpoint": "/api/ops/site/v51/brand-performance"
+    }
+  ],
+  "tables": [
+    "production_cutover_seal_reports_v51",
+    "production_cutover_restore_drills_v51",
+    "production_cutover_observations_v51",
+    "audit_evidence_uploads_v51",
+    "audit_evidence_attachment_scans_v51",
+    "audit_evidence_chain_seals_v51",
+    "music_search_ab_exposures_v51",
+    "music_search_ab_metrics_v51",
+    "music_search_synonym_merges_v51",
+    "authority_metadata_live_publications_v51",
+    "authority_metadata_source_notices_v51",
+    "authority_metadata_card_hides_v51",
+    "speech_model_governance_pdf_renders_v51",
+    "speech_model_governance_signoff_stamps_v51",
+    "speech_model_version_comparisons_v51",
+    "site_lighthouse_runs_v51",
+    "site_contrast_fixes_v51",
+    "site_og_sitemap_pings_v51"
+  ]
+}

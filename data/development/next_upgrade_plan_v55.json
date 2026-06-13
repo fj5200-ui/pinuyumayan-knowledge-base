@@ -1,0 +1,36 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "正式 release certificate 實簽",
+      "content": "將 v54 release certificate 的 health、DNS/Cloudflare、backup restore、rollback、30 分鐘觀測與三方簽核在 VPS 實機完成，產出不可變 PDF/JSON 證書。"
+    },
+    {
+      "priority": 2,
+      "direction": "首批 20 筆合法語音真正解封",
+      "content": "上傳真實 license、speaker consent、alignment、native speaker review，通過掃描與 hash chain 後輸出第一版 train/dev/test。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋排序 100% rollout",
+      "content": "根據 v54 50% 指標決定 learning-to-rank、typo tolerance、intent routing 是否升到 100%，並保留一鍵 rollback。"
+    },
+    {
+      "priority": 4,
+      "direction": "metadata 公開與撤稿演練",
+      "content": "完成 rights review 後公開 metadata-only 卡片到主站、搜尋索引、sitemap、OG，並做 source drift 與 takedown 演練。"
+    },
+    {
+      "priority": 5,
+      "direction": "模型治理封存中心",
+      "content": "將水印 PDF、lineage DAG、版本差異、簽核章與 blocker closure 存入治理中心，建立可下載與審計路徑。"
+    },
+    {
+      "priority": 6,
+      "direction": "營運監控正式節奏",
+      "content": "每日/每週報告自動產出，接 uptime、CWV、Lighthouse、OG、sitemap、錯誤率與告警，形成正式營運 SOP。"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "v60",
+  "generated_at": "2026-06-13T19:20:00+08:00",
+  "title": "Music Speech Governance Center v60",
+  "panels": [
+    "release final seal",
+    "dataset immutable freeze",
+    "search weekly SLA",
+    "metadata source expansion",
+    "governance download alert closure",
+    "operations real delivery"
+  ],
+  "data_sources": [
+    "data/deployment/release_certificate_final_seal_v60.json",
+    "data/security/legal_speech_dataset_immutable_freeze_v60.json",
+    "data/search/music_search_weekly_sla_v60.json",
+    "data/integration/authority_metadata_source_expansion_v60.json",
+    "data/audio/speech_governance_download_alert_closure_v60.json",
+    "data/site/operations_notification_real_delivery_v60.json"
+  ],
+  "blocking_status": {
+    "production_final_sealed": false,
+    "dataset_v58_immutable_frozen": false,
+    "real_ops_delivery_verified": false
+  }
+}

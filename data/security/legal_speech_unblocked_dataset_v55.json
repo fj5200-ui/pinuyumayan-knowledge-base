@@ -1,0 +1,383 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T15:00:00+08:00",
+  "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+  "assets": [
+    {
+      "asset_id": "speech-preview-001",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-002",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-003",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-004",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-005",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-006",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-007",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-008",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-009",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-010",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-011",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-012",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-013",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-014",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "train",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-015",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "dev",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-016",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "dev",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-017",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "dev",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-018",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "test",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-019",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "test",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    },
+    {
+      "asset_id": "speech-preview-020",
+      "dataset_version": "pinuyumayan-speech-v55.0-legal-unlock-contract",
+      "speaker_split": "test",
+      "required_evidence": {
+        "license": "pending_real_upload",
+        "speaker_consent": "pending_real_upload",
+        "alignment": "pending_real_upload",
+        "native_speaker_review": "pending_real_upload",
+        "virus_scan": "pending",
+        "hash_chain": "pending"
+      },
+      "release_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "block_reason": "真實 license / speaker consent / alignment / native speaker review 尚未上傳完成"
+    }
+  ],
+  "split_plan": {
+    "train_candidates": 14,
+    "dev_candidates": 3,
+    "test_candidates": 3,
+    "train_rows": 0,
+    "dev_rows": 0,
+    "test_rows": 0
+  },
+  "export_artifacts": [
+    {
+      "name": "train.jsonl",
+      "rows": 0
+    },
+    {
+      "name": "dev.jsonl",
+      "rows": 0
+    },
+    {
+      "name": "test.jsonl",
+      "rows": 0
+    },
+    {
+      "name": "blocked_candidates.jsonl",
+      "rows": 20
+    }
+  ],
+  "summary": {
+    "candidate_count": 20,
+    "legally_unblocked_count": 0,
+    "dataset_export_allowed": false,
+    "train_rows": 0,
+    "dev_rows": 0,
+    "test_rows": 0,
+    "public_release_allowed": false,
+    "reason": "缺少真實授權附件與實機掃描簽核，因此 v55 僅提供解封執行包與資料集版本閘門"
+  }
+}

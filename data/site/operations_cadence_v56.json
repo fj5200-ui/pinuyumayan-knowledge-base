@@ -1,0 +1,133 @@
+{
+  "version": "v56",
+  "generated_at": "2026-06-13T16:00:00+08:00",
+  "title": "營運 SOP 週期化",
+  "summary": {
+    "daily_jobs": 7,
+    "weekly_jobs": 7,
+    "alert_routes": 5,
+    "minimum_contrast": "WCAG AA",
+    "live_monitoring_attached": false
+  },
+  "monitors": [
+    {
+      "route": "/",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/culture",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/language",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/music/search",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/music/[id]",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/map",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    },
+    {
+      "route": "/tts-stt",
+      "cadence": "daily_core_weekly_lighthouse",
+      "status": "scheduled_contract_only",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "minimum_contrast": "WCAG AA"
+    }
+  ],
+  "cadence": [
+    {
+      "job": "daily_uptime_error_report",
+      "time": "09:00 Asia/Taipei"
+    },
+    {
+      "job": "weekly_lighthouse_cwv_report",
+      "time": "Monday 09:30 Asia/Taipei"
+    },
+    {
+      "job": "weekly_sitemap_og_check",
+      "time": "Monday 10:00 Asia/Taipei"
+    }
+  ],
+  "alerts": [
+    "uptime_down",
+    "p95_latency_high",
+    "cwv_regression",
+    "og_failure",
+    "sitemap_ping_failure"
+  ]
+}

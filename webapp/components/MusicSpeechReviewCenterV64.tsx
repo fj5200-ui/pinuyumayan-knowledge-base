@@ -1,0 +1,15 @@
+export function MusicSpeechReviewCenterV64() {
+  const cards = [
+    ["release certificate final seal", "final ledger、DNS/Cloudflare、restore/rollback、30 分鐘觀測與三方簽核仍需真實 VPS evidence"],
+    ["dataset v58.0 real output gate", "20 筆候選必須完成 license / consent / alignment / 母語者 review 才能輸出 train/dev/test"],
+    ["搜尋改善閉環落地", "weekly metrics、SLA、rollback drill、品質回歸與人工改善任務"],
+    ["metadata 公開稽核完成", "metadata-only、citation screenshot、sitemap/OG ping、source drift、takedown rehearsal"],
+    ["治理下載審計報告", "RBAC、水印、異常下載告警、ack/close、audit export signoff"],
+    ["營運通知封板節奏", "Email / LINE / 後台通知實送、ack、升級、關閉與 weekly review"],
+  ];
+  return <section className="space-y-4 rounded-3xl border border-red-200 bg-white p-6 text-slate-950 shadow-sm dark:border-red-900/40 dark:bg-slate-950 dark:text-slate-50">
+    <header><p className="text-sm font-semibold text-red-700 dark:text-red-300">Pinuyumayan v64</p><h2 className="text-2xl font-bold">Music / Speech Final Seal Center</h2><p className="text-sm text-slate-700 dark:text-slate-300">v64 進一步收斂 final seal、dataset real output、搜尋改善、metadata 稽核、治理下載審計與營運節奏；沒有真實 evidence 時仍保持 pending / blocked。</p></header>
+    <div className="grid gap-3 md:grid-cols-2">{cards.map(([title,body]) => <article key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-900"><h3 className="font-semibold">{title}</h3><p className="mt-1 text-sm text-slate-700 dark:text-slate-300">{body}</p></article>)}</div>
+  </section>;
+}
+export default MusicSpeechReviewCenterV64;

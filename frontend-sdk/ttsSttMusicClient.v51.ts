@@ -1,0 +1,31 @@
+export const ttsSttMusicV51Endpoints = {
+  reviewCenter: "/api/admin/music-speech/v51/review-center",
+  cutoverSeal: "/api/ops/vps/v51/cutover-seal",
+  recordCutoverSeal: "/api/internal/vps/v51/record-cutover-seal",
+  recordRestoreDrill: "/api/internal/vps/v51/record-restore-drill",
+  recordCutoverObservation: "/api/internal/vps/v51/record-cutover-observation",
+  evidenceUpload: "/api/admin/speech-training/v51/evidence-upload",
+  uploadEvidenceAttachment: "/api/internal/speech-training/v51/upload-evidence-attachment",
+  recordAttachmentScan: "/api/internal/speech-training/v51/record-attachment-scan",
+  sealEvidenceChain: "/api/internal/speech-training/v51/seal-evidence-chain",
+  searchAbExperiment: "/api/ops/search/music/v51/ab-experiment",
+  recordAbExposure: "/api/internal/search/music/v51/record-ab-exposure",
+  recordAbMetric: "/api/internal/search/music/v51/record-ab-metric",
+  mergeSynonymTask: "/api/internal/search/music/v51/merge-synonym-task",
+  authorityLivePublication: "/api/ops/authority-sources/v51/live-publication",
+  publishMetadataCard: "/api/internal/authority-sources/v51/publish-metadata-card",
+  recordSourceChangeNotice: "/api/internal/authority-sources/v51/record-source-change-notice",
+  hideMetadataCard: "/api/internal/authority-sources/v51/hide-metadata-card",
+  governanceRenderer: "/api/ops/speech-training/v51/governance-renderer",
+  renderGovernancePdf: "/api/internal/speech-training/v51/render-governance-pdf",
+  recordSignoffStamp: "/api/internal/speech-training/v51/record-signoff-stamp",
+  recordModelVersionComparison: "/api/internal/speech-training/v51/record-model-version-comparison",
+  brandPerformance: "/api/ops/site/v51/brand-performance",
+  recordLighthouseRun: "/api/internal/site/v51/record-lighthouse-run",
+  recordContrastFix: "/api/internal/site/v51/record-contrast-fix",
+  recordOgSitemapPing: "/api/internal/site/v51/record-og-sitemap-ping",
+  preflightContract: "/api/ops/vps/v51/preflight-contract",
+  nextUpgradePlan: "/api/ops/next-upgrade-plan/v52"
+} as const;
+
+export type TtsSttMusicV51Endpoint = keyof typeof ttsSttMusicV51Endpoints;

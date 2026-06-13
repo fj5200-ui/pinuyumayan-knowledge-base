@@ -1,0 +1,126 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "主站視覺完成度 v48",
+  "source_version": "v47 site polish",
+  "summary": {
+    "routes_audited": 7,
+    "day_night_tokens_unified": true,
+    "minimum_contrast": "WCAG AA",
+    "sitemap_ping_contract_ready": true,
+    "core_web_vitals_preflight_ready": true,
+    "metadata_only_guard": true
+  },
+  "design_tokens": {
+    "day": {
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "text": "#17120f",
+      "muted": "#5f5347",
+      "accent": "#b42318"
+    },
+    "night": {
+      "bg": "#0f0b09",
+      "surface": "#1b1511",
+      "text": "#fff8ee",
+      "muted": "#d6c7b8",
+      "accent": "#f7c948"
+    },
+    "tribal_palette": [
+      "red",
+      "yellow",
+      "green",
+      "black",
+      "white"
+    ]
+  },
+  "component_upgrades": [
+    "unified card radius/shadow",
+    "accessible chip focus state",
+    "metadata-only music cards",
+    "empty-state cultural guidance",
+    "admin workbench contrast tokens"
+  ],
+  "route_audits": [
+    {
+      "route_path": "/",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": true,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/music/search",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": true,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/music/[id]",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": true,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/tts-stt",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": true,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/culture",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": false,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/language",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": false,
+      "sitemap_ready": true,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    },
+    {
+      "route_path": "/admin/music-speech",
+      "day_mode_contrast": "WCAG AA target",
+      "night_mode_contrast": "WCAG AA target",
+      "og_ready": false,
+      "sitemap_ready": false,
+      "core_web_vitals_preflight": "pending_vps_url",
+      "status": "contract_ready"
+    }
+  ],
+  "post_deploy_checks": [
+    "dynamic OG HTTP 200",
+    "sitemap XML includes music/TTS-STT routes",
+    "no audio download links",
+    "no full lyrics output",
+    "LCP/CLS/INP preflight"
+  ],
+  "endpoints": {
+    "audit": "/api/ops/site/v48/visual-completion",
+    "record": "/api/internal/site/v48/visual-audit-record",
+    "sitemap_ping": "/api/internal/site/v48/sitemap-ping-record"
+  },
+  "tables": [
+    "site_visual_audit_results_v48",
+    "site_sitemap_ping_runs_v48",
+    "core_web_vitals_preflight_v48"
+  ]
+}

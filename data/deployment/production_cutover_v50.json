@@ -1,0 +1,172 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "正式上線切換與 rollback rehearsal v50",
+  "source_version": "v49",
+  "summary": {
+    "deployment_modes": [
+      "blue_green",
+      "rolling"
+    ],
+    "health_checks_required": true,
+    "cloudflare_cutover_required": true,
+    "rollback_rehearsal_required": true,
+    "release_allowed_without_vps_run": false,
+    "public_release_allowed": false,
+    "database_backup_required": true,
+    "minimum_healthy_minutes_before_cutover": 30
+  },
+  "environments": [
+    {
+      "env": "blue",
+      "role": "candidate",
+      "health_endpoint": "/health",
+      "readiness_endpoint": "/ready",
+      "traffic_weight": 0
+    },
+    {
+      "env": "green",
+      "role": "current_or_fallback",
+      "health_endpoint": "/health",
+      "readiness_endpoint": "/ready",
+      "traffic_weight": 100
+    }
+  ],
+  "cutover_steps": [
+    {
+      "step_id": "v50-cutover-001",
+      "name": "pre_cutover_backup",
+      "owner": "ops_lead",
+      "required_evidence": [
+        "backup_id",
+        "checksum",
+        "restore_target"
+      ],
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-002",
+      "name": "deploy_candidate_blue",
+      "owner": "ops_lead",
+      "required_evidence": [
+        "git_sha",
+        "artifact_sha256",
+        "systemd_status"
+      ],
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-003",
+      "name": "run_health_readiness",
+      "owner": "qa_ops",
+      "required_evidence": [
+        "health_200",
+        "ready_200",
+        "api_smoke"
+      ],
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-004",
+      "name": "cloudflare_dns_cutover",
+      "owner": "dns_admin",
+      "required_evidence": [
+        "zone_id",
+        "record_id",
+        "ttl",
+        "before_after_ip"
+      ],
+      "status": "manual_approval_required"
+    },
+    {
+      "step_id": "v50-cutover-005",
+      "name": "traffic_shift",
+      "owner": "ops_lead",
+      "required_evidence": [
+        "weight_before",
+        "weight_after",
+        "error_rate"
+      ],
+      "status": "manual_approval_required"
+    },
+    {
+      "step_id": "v50-cutover-006",
+      "name": "rollback_rehearsal",
+      "owner": "ops_lead",
+      "required_evidence": [
+        "rollback_command",
+        "duration_seconds",
+        "result"
+      ],
+      "status": "pending_vps_run"
+    }
+  ],
+  "health_checks": [
+    {
+      "check_id": "health_api",
+      "path": "/health",
+      "expected_status": 200,
+      "severity": "required"
+    },
+    {
+      "check_id": "ready_api",
+      "path": "/ready",
+      "expected_status": 200,
+      "severity": "required"
+    },
+    {
+      "check_id": "openapi_v50",
+      "path": "/api/public/openapi.json",
+      "expected_status": 200,
+      "severity": "required"
+    },
+    {
+      "check_id": "music_search_smoke",
+      "path": "/api/public/search/music/v43?q=卑南族%20歌謠",
+      "expected_status": 200,
+      "severity": "required"
+    },
+    {
+      "check_id": "admin_review_center",
+      "path": "/api/admin/music-speech/v50/review-center",
+      "expected_status": 200,
+      "severity": "required"
+    }
+  ],
+  "cloudflare_cutover_contract": {
+    "requires": [
+      "zone_id",
+      "dns_record_id",
+      "old_value",
+      "new_value",
+      "ttl_seconds",
+      "change_ticket",
+      "approver_id"
+    ],
+    "raw_secret_storage_allowed": false
+  },
+  "rollback_rehearsal": {
+    "requires": [
+      "backup_id",
+      "previous_artifact_sha256",
+      "rollback_command",
+      "database_restore_command",
+      "duration_seconds",
+      "result"
+    ],
+    "max_target_minutes": 15
+  },
+  "endpoints": {
+    "dashboard": "/api/ops/vps/v50/cutover-plan",
+    "record_cutover_run": "/api/internal/vps/v50/record-cutover-run",
+    "record_health_check": "/api/internal/vps/v50/record-health-check",
+    "record_dns_cutover": "/api/internal/vps/v50/record-dns-cutover",
+    "record_rollback_rehearsal": "/api/internal/vps/v50/record-rollback-rehearsal"
+  },
+  "tables": [
+    "production_cutover_runs_v50",
+    "production_cutover_health_checks_v50",
+    "production_cutover_dns_events_v50",
+    "production_rollback_rehearsals_v50"
+  ]
+}

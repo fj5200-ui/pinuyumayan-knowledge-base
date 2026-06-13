@@ -1,8 +1,8 @@
 {
   "project": "pinuyumayan-backend-database",
   "project_key": "pinuyumayan-backend-database",
-  "version": "v41",
-  "generated_at": "2026-06-12T13:45:00+08:00",
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
   "status": "backend_database_project_not_skill_package",
   "target_stack": [
     "Node.js 20+",
@@ -22,7 +22,10 @@
     "preview_vocabulary_audio_entries": 80,
     "full_corpus_source_candidates": 66,
     "v41_tts_stt_music_claims": 25,
-    "merged_claims_v41": 672
+    "merged_claims_v41": 672,
+    "v44_speech_authorization_assets": 80,
+    "v44_authority_source_candidates": 10,
+    "v44_music_search_seed_documents": 12
   },
   "architecture_layers": [
     "database",
@@ -36,6 +39,11 @@
       "version": "v41",
       "name": "TTS/STT training + music ops implementation",
       "summary": "Metadata-only YouTube worker, music review UI, authority adapters, FULLTEXT builder, AI music guardrails, VPS DB transaction contract, TTS/STT training governance."
+    },
+    {
+      "version": "v44",
+      "name": "VPS speech authorization + MySQL music search + TTS/STT export",
+      "summary": "True authorization review fields for 80 preview assets, MySQL FULLTEXT search on /api/public/search/music/v43, TTS/STT export/model card generator, authority source metadata candidates, review center UI and main-site page contracts."
     }
   ],
   "non_goals": [
@@ -55,7 +63,9 @@
     "public_vocabulary_audio_api",
     "related_knowledge_pull_service",
     "vps_systemd_nginx_runbook",
-    "v35 music/youtube metadata candidate search; no lyrics/audio storage"
+    "v35 music/youtube metadata candidate search; no lyrics/audio storage",
+    "v44 VPS authorization review, music FULLTEXT DB search, TTS/STT export, authority candidate worker, review UI, main-site music pages",
+    "v50 production cutover, immutable evidence store, search intelligence, authority metadata publication, model governance delivery, frontstage brand completion"
   ],
   "main_site_integration": {
     "public_base_paths": [
@@ -217,12 +227,16 @@
   ],
   "latest_package": "pinuyumayan-backend-database-governance-runtime-v12.zip",
   "project_version": "v15",
-  "latest_upgrade": "performance_security_search_optimization_v14",
+  "latest_upgrade": "v51: real VPS cutover seal, evidence upload, search A/B experiment, authority metadata live publication, model PDF renderer, brand performance validation",
   "validation_scripts": [
-    "scripts/validate_upgrade_optimization_v14.py"
+    "scripts/validate_upgrade_optimization_v14.py",
+    "scripts/validate_tts_stt_music_v51.py",
+    "scripts/validate_site_brand_performance_v51.py",
+    "scripts/build_production_cutover_seal_report_v51.py"
   ],
   "migrations": [
-    "database/migrations/0011_performance_security_search_v14.sql"
+    "database/migrations/0011_performance_security_search_v14.sql",
+    "database/migrations/0047_tts_stt_music_v51.sql"
   ],
   "description": "卑南族文化綜合平台後端資料庫服務；v15 adds SLO, contract testing, corpus reconciliation, payload snapshots and scoped admin grants.",
   "preview_vocabulary_entries": 80,
@@ -251,8 +265,8 @@
     "next_plan": "data/development/next_upgrade_plan_v23.json"
   },
   "artifact": "pinuyumayan-backend-database-main-site-deployable-v25.zip",
-  "openapi_paths": 112,
-  "latest_version": "v43",
+  "openapi_paths": 522,
+  "latest_version": "v52",
   "v26": "VPS DB Production Core: DB-backed admin auth, HMAC nonce, article review transactions, VPS database deployment.",
   "important_files_v26": [
     "database/migrations/0023_vps_db_production_core_v26.sql",
@@ -294,6 +308,17 @@
       "openapi_paths_after": 373,
       "public_tts_enabled": false,
       "public_stt_enabled": false
+    },
+    "v45": {
+      "name": "Production review workflow, music search quality, authority worker dry-run, SEO/OG, VPS preflight",
+      "generated_at": "2026-06-12T15:45:00+08:00",
+      "speech_review_assets": 80,
+      "synonym_groups": 12,
+      "authority_candidates": 9,
+      "sitemap_urls": 14,
+      "openapi_paths_after": 397,
+      "public_tts_enabled": false,
+      "public_stt_enabled": false
     }
   },
   "artifacts": {
@@ -307,6 +332,12 @@
       "merged_claims": 296,
       "openapi_paths": 222,
       "generated_at": "2026-06-12T00:00:00+08:00"
+    },
+    {
+      "version": "v45",
+      "name": "pinuyumayan-backend-database-tts-stt-music-v45",
+      "artifact": "pinuyumayan-backend-database-tts-stt-music-v45.zip",
+      "generated_at": "2026-06-12T15:45:00+08:00"
     }
   ],
   "v36": {
@@ -357,6 +388,46 @@
       "generated_at": "2026-06-12T13:20:00+08:00",
       "artifact": "pinuyumayan-backend-database-folk-song-v40.zip",
       "notes": "Metadata-only expansion for songs, folk songs and old tunes; YouTube worker contract and rights guardrails."
+    },
+    {
+      "version": "v45",
+      "name": "TTS/STT + music production governance",
+      "generated_at": "2026-06-12T15:45:00+08:00",
+      "openapi_paths": 397,
+      "notes": "Formal review decisions/audit log contracts, v45 music search quality layer, scheduled authority source dry-run worker, TTS/STT governance, dynamic music SEO/OG, VPS preflight center."
+    },
+    {
+      "version": "v51",
+      "date": "2026-06-13",
+      "summary": "實機切換封板、證據鏈實物上傳、搜尋 A/B 實測、權威 metadata 上架、模型治理 PDF renderer、品牌效能驗收"
     }
-  ]
+  ],
+  "upgrade_history": [
+    {
+      "version": "v47",
+      "generated_at": "2026-06-12T17:47:00+08:00",
+      "summary": "Operational review actions, transaction tests, wired search query logs, authority adapters, model governance reports and site polish."
+    }
+  ],
+  "milestones": [
+    {
+      "version": "v48",
+      "generated_at": "2026-06-12T22:48:00+08:00",
+      "summary": "VPS DB validation, review workbench, search analytics, authority merge, model visualization, site visual completion"
+    }
+  ],
+  "v52": {
+    "zip": "pinuyumayan-backend-database-tts-stt-music-v52.zip",
+    "openapi_paths_expected_min": 555
+  },
+  "v60": {
+    "openapi_paths": 833,
+    "created_at": "2026-06-13T19:20:00+08:00",
+    "zip": "pinuyumayan-backend-database-tts-stt-music-v60.zip"
+  },
+  "v61": {
+    "openapi_paths": 872,
+    "created_at": "2026-06-13T19:55:00+08:00",
+    "zip": "pinuyumayan-backend-database-tts-stt-music-v61.zip"
+  }
 }

@@ -1,0 +1,134 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "實機上線執行包與 30 分鐘觀測封板",
+  "source_version": "v51",
+  "summary": {
+    "execution_steps": 6,
+    "requires_real_vps": true,
+    "requires_staging_and_production": true,
+    "requires_30_minute_observation": true,
+    "requires_cloudflare_dns_evidence": true,
+    "requires_backup_restore_drill": true,
+    "release_allowed_without_real_execution": false,
+    "public_release_allowed": false,
+    "seal_status": "ready_for_vps_execution_not_yet_run"
+  },
+  "execution_steps": [
+    {
+      "step_id": "go-live-v52-001",
+      "name": "staging_cutover_execution",
+      "description": "VPS staging blue-green/rolling cutover command pack",
+      "required_evidence": [
+        "health_200",
+        "ready_200",
+        "version endpoint",
+        "artifact sha256"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 1,
+      "evidence_bundle_hash": "79b4de7ee014c888e3fe22e2880c7b95f41819acda06d84ce9aa74d528319ecc"
+    },
+    {
+      "step_id": "go-live-v52-002",
+      "name": "production_cutover_execution",
+      "description": "Production cutover evidence package",
+      "required_evidence": [
+        "pre/post DNS",
+        "Cloudflare tunnel",
+        "TLS",
+        "origin health"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 2,
+      "evidence_bundle_hash": "7d9112ff51c7b125d8b5431ed24b3a535d4c545c63399152f1b257ce9b6abc9c"
+    },
+    {
+      "step_id": "go-live-v52-003",
+      "name": "rollback_execution",
+      "description": "Rollback runbook proof",
+      "required_evidence": [
+        "rollback command",
+        "restored artifact",
+        "database snapshot id"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 3,
+      "evidence_bundle_hash": "ddb9daf5a71f91162433bd16c58092676a2e5518dd45e4b5695d1abd89fb76ca"
+    },
+    {
+      "step_id": "go-live-v52-004",
+      "name": "backup_restore_execution",
+      "description": "Backup restore drill evidence",
+      "required_evidence": [
+        "restore checksum",
+        "row count parity",
+        "duration seconds"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 4,
+      "evidence_bundle_hash": "8345fd2652cfca6b79f8c4d85f1001e38aebc28ca829e08c81dd5d54bc117b3a"
+    },
+    {
+      "step_id": "go-live-v52-005",
+      "name": "thirty_minute_observation",
+      "description": "30 minute post-cutover observation",
+      "required_evidence": [
+        "5 minute health samples",
+        "p95 latency",
+        "error rate"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 5,
+      "evidence_bundle_hash": "2a9aab888053dcbc275f180af66f4725da6f8a1fe49ae58ecc4e0bf8b46745dd"
+    },
+    {
+      "step_id": "go-live-v52-006",
+      "name": "seal_report_export",
+      "description": "Final seal report export",
+      "required_evidence": [
+        "operator signoff",
+        "evidence bundle sha256",
+        "release decision"
+      ],
+      "status": "ready_for_real_vps_execution",
+      "release_blocking": true,
+      "order": 6,
+      "evidence_bundle_hash": "15a183a91c72c7a9dd5a1f44c974031c75e0bdcbfebbd079bfe6b63bde26acb5"
+    }
+  ],
+  "command_pack": [
+    {
+      "name": "preflight",
+      "command": "./deploy/vps-tts-stt-v52.sh",
+      "environment": "staging"
+    },
+    {
+      "name": "sql_import",
+      "command": "IMPORT_SQL=1 DATABASE_URL=\"$DATABASE_URL\" ./deploy/vps-tts-stt-v52.sh",
+      "environment": "staging"
+    },
+    {
+      "name": "go_live_execution",
+      "command": "RUN_GO_LIVE_EXECUTION=1 DATABASE_URL=\"$DATABASE_URL\" ./deploy/vps-tts-stt-v52.sh",
+      "environment": "production"
+    },
+    {
+      "name": "observation",
+      "command": "RUN_30_MIN_OBSERVATION=1 ./deploy/vps-tts-stt-v52.sh",
+      "environment": "production"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/vps/v52/go-live-execution",
+    "/api/internal/vps/v52/record-go-live-step",
+    "/api/internal/vps/v52/record-rollback-evidence",
+    "/api/internal/vps/v52/record-observation-sample",
+    "/api/internal/vps/v52/seal-release-report"
+  ]
+}

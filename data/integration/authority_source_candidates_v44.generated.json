@@ -1,0 +1,306 @@
+{
+  "version": "v44",
+  "count": 10,
+  "candidates": [
+    {
+      "candidate_id": "auth-src-v44-1b278afb086f4d22acdc156f",
+      "adapter_id": "taiwan_music_institute",
+      "source_title": "臺灣音樂館 metadata candidate: 卑南族 歌謠",
+      "source_url": null,
+      "publisher": "臺灣音樂館",
+      "query_hint": "卑南族 歌謠",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-ce46211ab817ec83371c7d8b",
+      "adapter_id": "taiwan_music_institute",
+      "source_title": "臺灣音樂館 metadata candidate: 南王卑南族童謠",
+      "source_url": null,
+      "publisher": "臺灣音樂館",
+      "query_hint": "南王卑南族童謠",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-007b8554749af6e001c6f33b",
+      "adapter_id": "taiwan_music_institute",
+      "source_title": "臺灣音樂館 metadata candidate: 知本卑南族少年年祭之歌",
+      "source_url": null,
+      "publisher": "臺灣音樂館",
+      "query_hint": "知本卑南族少年年祭之歌",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-6ff699986345aac7b8e7ac67",
+      "adapter_id": "taiwan_music_institute",
+      "source_title": "臺灣音樂館 metadata candidate: Mangednged",
+      "source_url": null,
+      "publisher": "臺灣音樂館",
+      "query_hint": "Mangednged",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-b047ff2b00cc6b11cc6fbc95",
+      "adapter_id": "national_culture_memory_bank",
+      "source_title": "國家文化記憶庫 metadata candidate: 卑南族 歌謠",
+      "source_url": null,
+      "publisher": "國家文化記憶庫",
+      "query_hint": "卑南族 歌謠",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-62efc1657832da1b18bc2632",
+      "adapter_id": "national_culture_memory_bank",
+      "source_title": "國家文化記憶庫 metadata candidate: 卑南族 音樂",
+      "source_url": null,
+      "publisher": "國家文化記憶庫",
+      "query_hint": "卑南族 音樂",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-c2c9228a181b611167ea78b6",
+      "adapter_id": "national_culture_memory_bank",
+      "source_title": "國家文化記憶庫 metadata candidate: 南王 卑南族",
+      "source_url": null,
+      "publisher": "國家文化記憶庫",
+      "query_hint": "南王 卑南族",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-218b490e89b5db8a42e6cffc",
+      "adapter_id": "golden_melody_awards",
+      "source_title": "金曲獎 metadata candidate: 卑南族 音樂人",
+      "source_url": null,
+      "publisher": "金曲獎",
+      "query_hint": "卑南族 音樂人",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-831ef5525cc04b95f379158c",
+      "adapter_id": "golden_melody_awards",
+      "source_title": "金曲獎 metadata candidate: 原住民語專輯 卑南",
+      "source_url": null,
+      "publisher": "金曲獎",
+      "query_hint": "原住民語專輯 卑南",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    },
+    {
+      "candidate_id": "auth-src-v44-aaa06671a48d085e56cc7daf",
+      "adapter_id": "golden_melody_awards",
+      "source_title": "金曲獎 metadata candidate: 陳建年 金曲獎",
+      "source_url": null,
+      "publisher": "金曲獎",
+      "query_hint": "陳建年 金曲獎",
+      "rights_status": "unknown_pending_review",
+      "sensitivity": "metadata_only_review_required",
+      "review_status": "candidate_needs_human_review",
+      "public_auto_release": false,
+      "blocked_terms": [],
+      "candidate_json": {
+        "metadata_only": true,
+        "never_fetch": [
+          "audio_binary",
+          "video_binary",
+          "full_lyrics",
+          "restricted_ritual_detail",
+          "private_person_data"
+        ],
+        "required_checks": [
+          "dedupe",
+          "source_url",
+          "license",
+          "rights",
+          "human_review"
+        ]
+      }
+    }
+  ]
+}

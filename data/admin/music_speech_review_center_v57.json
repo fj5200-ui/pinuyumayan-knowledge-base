@@ -1,0 +1,19 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "Music Speech Governance Center v57",
+  "sections": [
+    "release evidence ledger seal",
+    "legal train/dev/test export",
+    "search 24/72 decision",
+    "authority publication evidence archive",
+    "governance audit query",
+    "operations report notifications"
+  ],
+  "summary": {
+    "release_certified": false,
+    "dataset_export_allowed": false,
+    "public_audio_allowed": false,
+    "openapi_paths_expected_minimum": 723
+  }
+}

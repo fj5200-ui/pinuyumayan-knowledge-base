@@ -1,0 +1,95 @@
+{
+  "version": "v59",
+  "generated_at": "2026-06-13T18:55:00+08:00",
+  "title": "實機封存完成後驗證",
+  "summary": {
+    "second_verification_checks": 6,
+    "real_vps_evidence_attached": false,
+    "release_certificate_finally_sealed": false,
+    "audit_sampling_ready": true,
+    "immutable_ledger_append_only": true,
+    "delete_allowed": false
+  },
+  "certificate_id": "pinuyumayan-production-release-certificate-v59-postseal",
+  "checks": [
+    {
+      "check_id": "v59-restore-sample-audit",
+      "title": "restore evidence second verification",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "backup_restore_log",
+        "row_count_diff",
+        "sample_query_result_hash",
+        "auditor_signoff"
+      ]
+    },
+    {
+      "check_id": "v59-rollback-sample-audit",
+      "title": "rollback evidence second verification",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "rollback_log_hash",
+        "post_rollback_health_hash",
+        "rollback_duration_seconds",
+        "auditor_signoff"
+      ]
+    },
+    {
+      "check_id": "v59-dns-cloudflare-sample-audit",
+      "title": "DNS and Cloudflare cutover second verification",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "dns_record_snapshot",
+        "cloudflare_zone_snapshot",
+        "tls_result",
+        "auditor_signoff"
+      ]
+    },
+    {
+      "check_id": "v59-observation-sample-audit",
+      "title": "30-minute observation sample audit",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "uptime_sample_hash",
+        "p95_latency_sample_hash",
+        "error_rate_sample_hash",
+        "auditor_signoff"
+      ]
+    },
+    {
+      "check_id": "v59-hash-chain-sample-audit",
+      "title": "immutable ledger hash-chain sample audit",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "sampled_entries",
+        "previous_hash",
+        "current_hash",
+        "signature_verification"
+      ]
+    },
+    {
+      "check_id": "v59-certificate-immutability-check",
+      "title": "release certificate immutable PDF/JSON verification",
+      "status": "pending_real_vps_sample",
+      "required": [
+        "certificate_pdf_sha256",
+        "certificate_json_sha256",
+        "ledger_entry_hash",
+        "download_audit_hash"
+      ]
+    }
+  ],
+  "sampling_policy": {
+    "minimum_sample_rate": "100% for release-critical evidence",
+    "auditor_role": "system_auditor",
+    "failure_action": "block_final_release_and_open_corrective_task"
+  },
+  "evidence_tables": [
+    "release_certificate_postseal_validations_v59",
+    "release_restore_audit_samples_v59",
+    "release_rollback_audit_samples_v59",
+    "release_dns_cloudflare_audit_samples_v59",
+    "release_observation_audit_samples_v59",
+    "release_hash_chain_audit_samples_v59"
+  ]
+}

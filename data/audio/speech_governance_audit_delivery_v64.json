@@ -1,0 +1,199 @@
+{
+  "version": "v64",
+  "generated_at": "2026-06-13T21:25:00+08:00",
+  "title": "治理中心下載審計報告、RBAC、水印與異常下載閉環",
+  "summary": {
+    "artifacts": 10,
+    "rbac_tests_ready": true,
+    "watermark_receipts_ready": true,
+    "abnormal_alerts_ready": true,
+    "ack_close_required": true,
+    "weekly_audit_ready": true,
+    "real_alert_delivery_attached": false,
+    "audit_report_ready": true,
+    "ack_close_verified": false,
+    "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+    "download_audit_report_required": true
+  },
+  "artifacts": [
+    {
+      "artifact_id": "governance-watermarked_pdf-v64",
+      "type": "watermarked_pdf",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-lineage_dag-v64",
+      "type": "lineage_dag",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-version_diff-v64",
+      "type": "version_diff",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-signoff_stamp-v64",
+      "type": "signoff_stamp",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-model_card_archive-v64",
+      "type": "model_card_archive",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-dataset_manifest-v64",
+      "type": "dataset_manifest",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-blocked_report-v64",
+      "type": "blocked_report",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-release_certificate-v64",
+      "type": "release_certificate",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-audit_export-v64",
+      "type": "audit_export",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    },
+    {
+      "artifact_id": "governance-download_receipt-v64",
+      "type": "download_receipt",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_allowed_after_permission_check": true,
+      "watermark_verification_required": true,
+      "abnormal_download_alert_required": true,
+      "ack_required": true,
+      "close_required": true,
+      "audit_export_signoff_required": true,
+      "live_test_state": "pending_real_rbac_watermark_alert_ack_close_and_audit_report",
+      "download_audit_report_required": true
+    }
+  ],
+  "alert_scenarios": [
+    "excessive_download_volume",
+    "role_mismatch",
+    "watermark_missing",
+    "audit_export_without_signoff"
+  ],
+  "audit_export_policy": {
+    "requires_signoff": true,
+    "immutable_export_log": true,
+    "weekly_review_required": true
+  }
+}

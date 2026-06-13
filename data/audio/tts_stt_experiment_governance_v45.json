@@ -1,0 +1,48 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "title": "TTS/STT experiment governance, split-leakage checks, and model-card release review",
+  "dataset_state": {
+    "preview_candidates": 80,
+    "approved_for_experiment": 0,
+    "approved_for_public_training": 0,
+    "blocked_until_review": 80,
+    "public_tts_enabled": false,
+    "public_stt_enabled": false
+  },
+  "alignment_import_contract": "data/audio/speech_alignment_import_contract_v45.json",
+  "split_policy": {
+    "split_ratio": {
+      "train": 0.8,
+      "dev": 0.1,
+      "test": 0.1
+    },
+    "stratify_by": [
+      "dialect_code",
+      "speaker_id_or_anonymous_code"
+    ],
+    "hard_blocks": [
+      "same_asset_cross_split",
+      "same_speaker_train_and_test_until_reviewed",
+      "duplicate_transcript_across_eval_split"
+    ]
+  },
+  "metric_thresholds": {
+    "tts_mos_min": 4.0,
+    "stt_wer_max": 0.25,
+    "stt_cer_max": 0.15
+  },
+  "model_card_release_review": {
+    "requires_dataset_export_id": true,
+    "requires_license_summary": true,
+    "requires_bias_and_limitations": true,
+    "requires_public_release_vote": true,
+    "default_public_release_allowed": false
+  },
+  "db_tables": [
+    "speech_alignment_imports_v45",
+    "speech_split_leakage_reports_v45",
+    "speech_eval_comparisons_v45",
+    "speech_model_card_reviews_v45"
+  ]
+}

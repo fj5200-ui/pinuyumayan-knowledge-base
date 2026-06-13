@@ -1,0 +1,89 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "權威 metadata 正式發布與撤稿流程",
+  "source_version": "v51",
+  "summary": {
+    "metadata_cards": 3,
+    "metadata_only": true,
+    "citation_required": true,
+    "search_index_queue_ready": true,
+    "takedown_flow_ready": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "auto_publish_allowed": false
+  },
+  "publication_cards": [
+    {
+      "publication_id": "authority-live-v52-001",
+      "source_publication_id": "authority-live-v51-001",
+      "route_path": "/music/song/authority-live-v52-001",
+      "citation_score": 85,
+      "rights_status": "pending_rights_approval",
+      "publish_status": "ready_to_publish_after_rights_approval",
+      "search_index_status": "queued_metadata_only",
+      "citation_required": true,
+      "source_notice_enabled": true,
+      "takedown_enabled": true,
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-live-v52-002",
+      "source_publication_id": "authority-live-v51-002",
+      "route_path": "/music/song/authority-live-v52-002",
+      "citation_score": 86,
+      "rights_status": "pending_rights_approval",
+      "publish_status": "ready_to_publish_after_rights_approval",
+      "search_index_status": "queued_metadata_only",
+      "citation_required": true,
+      "source_notice_enabled": true,
+      "takedown_enabled": true,
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-live-v52-003",
+      "source_publication_id": "authority-live-v51-003",
+      "route_path": "/music/song/authority-live-v52-003",
+      "citation_score": 89,
+      "rights_status": "pending_rights_approval",
+      "publish_status": "ready_to_publish_after_rights_approval",
+      "search_index_status": "queued_metadata_only",
+      "citation_required": true,
+      "source_notice_enabled": true,
+      "takedown_enabled": true,
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    }
+  ],
+  "citation_policy": {
+    "format": "title, source_name, source_url_or_reference, accessed_at, rights_statement",
+    "minimum_score": 85,
+    "display_on_card": true
+  },
+  "release_queue": [
+    {
+      "queue_id": "authority-release-v52-001",
+      "publication_id": "authority-live-v52-001",
+      "status": "blocked_until_rights_approval"
+    },
+    {
+      "queue_id": "authority-release-v52-002",
+      "publication_id": "authority-live-v52-002",
+      "status": "blocked_until_rights_approval"
+    },
+    {
+      "queue_id": "authority-release-v52-003",
+      "publication_id": "authority-live-v52-003",
+      "status": "blocked_until_rights_approval"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/authority-sources/v52/public-release",
+    "/api/internal/authority-sources/v52/approve-metadata-release",
+    "/api/internal/authority-sources/v52/index-metadata-card",
+    "/api/internal/authority-sources/v52/record-source-drift",
+    "/api/internal/authority-sources/v52/takedown-metadata-card"
+  ]
+}

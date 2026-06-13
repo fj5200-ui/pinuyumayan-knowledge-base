@@ -1,0 +1,116 @@
+{
+  "version": "v62",
+  "generated_at": "2026-06-13T20:40:00+08:00",
+  "title": "營運通知封板報告與實送閉環",
+  "summary": {
+    "routes": 7,
+    "jobs": 6,
+    "email_live_send_complete": false,
+    "line_live_send_complete": false,
+    "admin_notification_complete": false,
+    "ack_close_loop_ready": true,
+    "weekly_improvement_ready": true,
+    "delivery_seal_report_ready": true,
+    "real_send_evidence_required": true
+  },
+  "routes": [
+    "/",
+    "/culture",
+    "/language",
+    "/music/search",
+    "/music/[id]",
+    "/map",
+    "/tts-stt"
+  ],
+  "jobs": [
+    {
+      "job_id": "ops-delivery-seal-daily-email-v62",
+      "cadence": "daily",
+      "channel": "email",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true
+    },
+    {
+      "job_id": "ops-delivery-seal-daily-line-v62",
+      "cadence": "daily",
+      "channel": "line",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true
+    },
+    {
+      "job_id": "ops-delivery-seal-daily-admin_notification-v62",
+      "cadence": "daily",
+      "channel": "admin_notification",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true
+    },
+    {
+      "job_id": "ops-delivery-seal-weekly-email-v62",
+      "cadence": "weekly",
+      "channel": "email",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true
+    },
+    {
+      "job_id": "ops-delivery-seal-weekly-line-v62",
+      "cadence": "weekly",
+      "channel": "line",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true
+    },
+    {
+      "job_id": "ops-delivery-seal-weekly-admin_notification-v62",
+      "cadence": "weekly",
+      "channel": "admin_notification",
+      "delivery_state": "pending_real_credentials_live_send_and_ack_close",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true
+    }
+  ],
+  "metrics": [
+    "uptime",
+    "cwv",
+    "lighthouse",
+    "og",
+    "sitemap",
+    "error_rate",
+    "search_zero_result",
+    "api_p95",
+    "db_health"
+  ],
+  "closure_policy": {
+    "requires_ack": true,
+    "requires_escalation_for_unacked_minutes": 30,
+    "requires_close_reason": true,
+    "weekly_review_required": true
+  }
+}

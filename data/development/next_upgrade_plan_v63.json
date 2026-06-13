@@ -1,0 +1,36 @@
+{
+  "version": "v63",
+  "generated_at": "2026-06-13T20:40:00+08:00",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "release ledger 實機簽核完成",
+      "content": "在真實 VPS 將 v62 final ledger 實寫證據、三方簽核、Cloudflare/DNS、restore/rollback 與 30 分鐘觀測封存成 final certificate。"
+    },
+    {
+      "priority": 2,
+      "direction": "dataset v58.0 immutable release",
+      "content": "完成 20 筆真實 evidence 後正式輸出 train/dev/test、checksum、manifest、blocked report、model card，凍結 immutable dataset release。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋週報與改善閉環",
+      "content": "將真實 weekly metrics 回填，建立異常詞 SLA、人工改善任務、rollback drill 與搜尋品質回歸測試閉環。"
+    },
+    {
+      "priority": 4,
+      "direction": "metadata 公開證據審計",
+      "content": "完成更多 metadata-only 卡片 rights review、citation 截圖、sitemap/OG ping、source drift 與 takedown evidence seal。"
+    },
+    {
+      "priority": 5,
+      "direction": "治理下載告警真實稽核",
+      "content": "完成 RBAC、水印驗證、異常下載告警、ack/close、audit export signoff 與週報審計。"
+    },
+    {
+      "priority": 6,
+      "direction": "營運通知封板營運",
+      "content": "Email、LINE、後台通知完成真實實送、ack、升級、關閉、回顧與每週改善任務，形成可稽核營運節奏。"
+    }
+  ]
+}

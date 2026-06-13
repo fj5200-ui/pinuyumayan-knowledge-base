@@ -1,0 +1,12 @@
+{
+  "version": "v46",
+  "generated_from": "scripts/build_speech_model_registry_v46.py",
+  "experiment_count": 3,
+  "public_release_allowed": false,
+  "release_blockers": [
+    "authorized_dataset_empty",
+    "speaker_consent_missing",
+    "alignment_missing"
+  ],
+  "asset_count": 80
+}

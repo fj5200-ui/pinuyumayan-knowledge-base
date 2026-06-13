@@ -1,0 +1,59 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "治理中心審計查詢上線",
+  "summary": {
+    "artifact_slots": 6,
+    "downloadable_now": 0,
+    "audit_export_ready": true,
+    "public_model_release_allowed": false
+  },
+  "artifacts": [
+    {
+      "artifact_id": "gov-pdf-v57",
+      "type": "watermarked_pdf",
+      "download_state": "pending_vps_render",
+      "audit_required": true
+    },
+    {
+      "artifact_id": "lineage-dag-v57",
+      "type": "lineage_dag",
+      "download_state": "pending_vps_render",
+      "audit_required": true
+    },
+    {
+      "artifact_id": "version-diff-v57",
+      "type": "version_diff",
+      "download_state": "contract_ready",
+      "audit_required": true
+    },
+    {
+      "artifact_id": "signoff-stamp-v57",
+      "type": "signature_stamp",
+      "download_state": "pending_real_signoff",
+      "audit_required": true
+    },
+    {
+      "artifact_id": "blocker-closure-v57",
+      "type": "release_blocker_closure",
+      "download_state": "pending_blocker_close",
+      "audit_required": true
+    },
+    {
+      "artifact_id": "audit-export-v57",
+      "type": "audit_export",
+      "download_state": "contract_ready",
+      "audit_required": true
+    }
+  ],
+  "permissions": {
+    "roles": [
+      "governance_admin",
+      "speech_reviewer",
+      "system_auditor"
+    ],
+    "audit_every_download": true,
+    "watermark_required": true,
+    "export_requires_reason": true
+  }
+}

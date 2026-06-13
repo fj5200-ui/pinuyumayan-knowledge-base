@@ -1,0 +1,52 @@
+{
+  "version": "v44",
+  "mode": "metadata_candidate_only",
+  "script": "scripts/authority_source_candidate_worker_v44.py",
+  "adapters": [
+    {
+      "adapter_id": "taiwan_music_institute",
+      "name": "臺灣音樂館",
+      "query_hints": [
+        "卑南族 歌謠",
+        "南王卑南族童謠",
+        "知本卑南族少年年祭之歌",
+        "Mangednged"
+      ],
+      "candidate_table": "authority_source_candidates_v44"
+    },
+    {
+      "adapter_id": "national_culture_memory_bank",
+      "name": "國家文化記憶庫",
+      "query_hints": [
+        "卑南族 歌謠",
+        "卑南族 音樂",
+        "南王 卑南族"
+      ],
+      "candidate_table": "authority_source_candidates_v44"
+    },
+    {
+      "adapter_id": "golden_melody_awards",
+      "name": "金曲獎",
+      "query_hints": [
+        "卑南族 音樂人",
+        "原住民語專輯 卑南",
+        "陳建年 金曲獎"
+      ],
+      "candidate_table": "authority_source_candidates_v44"
+    }
+  ],
+  "never_fetch": [
+    "audio_binary",
+    "video_binary",
+    "full_lyrics",
+    "restricted_ritual_detail",
+    "private_person_data"
+  ],
+  "write_tables": [
+    "authority_source_fetch_runs_v44",
+    "authority_source_candidates_v44",
+    "music_candidate_reviews_v44"
+  ],
+  "review_required_before_public": true,
+  "dedupe_key": "sha256(adapter_id + source_url + source_title)"
+}

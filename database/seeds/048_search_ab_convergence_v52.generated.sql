@@ -1,0 +1,2 @@
+-- v52 generated seed marker
+INSERT IGNORE INTO music_search_ab_convergence_metrics_v52 (metric_id, test_id, variant, sample_size, metric_json) VALUES ('048_search_ab_convergence_v52', 'seed-test', 'seed-variant', 0, CAST('{"source": "database/seeds/048_search_ab_convergence_v52.generated.sql", "version": "v52", "summary": {"ab_tests": 3, "traffic_percent": 10, "convergence_requires_real_metrics": true, "auto_rollout_allowed": false, "default_variant_locked": "fulltext_v43", "intent_dashboard_ready": true}}' AS JSON));

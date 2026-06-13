@@ -1,0 +1,155 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "音樂搜尋智慧化 v50",
+  "source_version": "v49",
+  "summary": {
+    "synonym_review_tasks": 3,
+    "ltr_features": 8,
+    "ab_tests": 2,
+    "intent_classes": 5,
+    "typo_tolerance_enabled": true,
+    "manual_review_required": true,
+    "auto_apply_allowed": false
+  },
+  "synonym_review_tasks": [
+    {
+      "task_id": "syn-review-v50-001",
+      "source_suggestion_id": "syn-v49-001",
+      "query": "卑南 婚禮歌",
+      "decision": "pending_human_review",
+      "candidate_terms": [
+        "卑南婚禮歌",
+        "婚禮歌謠",
+        "結婚歌 metadata"
+      ],
+      "auto_apply_allowed": false
+    },
+    {
+      "task_id": "syn-review-v50-002",
+      "source_suggestion_id": "syn-v49-002",
+      "query": "pinaski 羅馬字",
+      "decision": "pending_human_review",
+      "candidate_terms": [
+        "pinaski",
+        "Pinaski",
+        "羅馬字歌謠"
+      ],
+      "auto_apply_allowed": false
+    },
+    {
+      "task_id": "syn-review-v50-003",
+      "source_suggestion_id": "syn-v49-003",
+      "query": "大獵祭 歌",
+      "decision": "pending_human_review",
+      "candidate_terms": [
+        "大獵祭歌謠",
+        "mangayaw related metadata",
+        "祭儀歌 metadata"
+      ],
+      "auto_apply_allowed": false
+    }
+  ],
+  "learning_to_rank": {
+    "features": [
+      "fulltext_score",
+      "authority_weight",
+      "citation_score",
+      "community_match",
+      "romanization_match",
+      "facet_click_rate",
+      "zero_result_recovery",
+      "metadata_completeness"
+    ],
+    "default_weights": {
+      "fulltext_score": 0.32,
+      "authority_weight": 0.18,
+      "citation_score": 0.14,
+      "community_match": 0.1,
+      "romanization_match": 0.08,
+      "facet_click_rate": 0.08,
+      "zero_result_recovery": 0.05,
+      "metadata_completeness": 0.05
+    }
+  },
+  "ab_tests": [
+    {
+      "test_id": "music-search-ab-v50-001",
+      "variant_a": "fulltext_baseline",
+      "variant_b": "ltr_weighted",
+      "traffic_percent": 10,
+      "status": "draft_requires_approval"
+    },
+    {
+      "test_id": "music-search-ab-v50-002",
+      "variant_a": "strict_query",
+      "variant_b": "typo_tolerant_query",
+      "traffic_percent": 10,
+      "status": "draft_requires_approval"
+    }
+  ],
+  "intent_classification": [
+    {
+      "intent": "song_metadata_lookup",
+      "examples": [
+        "歌謠 metadata",
+        "歌曲資料"
+      ],
+      "routing": "music_search_documents_v43"
+    },
+    {
+      "intent": "community_filter",
+      "examples": [
+        "南王 歌",
+        "知本 歌謠"
+      ],
+      "routing": "facet_community"
+    },
+    {
+      "intent": "romanization_lookup",
+      "examples": [
+        "pinaski",
+        "Puyuma song romanization"
+      ],
+      "routing": "romanization_dictionary"
+    },
+    {
+      "intent": "authority_source_lookup",
+      "examples": [
+        "臺灣音樂館 卑南",
+        "文化記憶庫 卑南歌"
+      ],
+      "routing": "authority_candidate_tables"
+    },
+    {
+      "intent": "restricted_audio_or_lyrics_request",
+      "examples": [
+        "下載音訊",
+        "完整歌詞"
+      ],
+      "routing": "rights_guard_no_audio_no_lyrics"
+    }
+  ],
+  "typo_tolerance": {
+    "max_edit_distance": 1,
+    "enable_for": [
+      "romanization",
+      "known_community_names"
+    ],
+    "disable_for": [
+      "restricted_audio_or_lyrics_request"
+    ]
+  },
+  "endpoints": {
+    "dashboard": "/api/ops/search/music/v50/intelligence",
+    "review_synonym": "/api/internal/search/music/v50/review-synonym-task",
+    "record_ab_test": "/api/internal/search/music/v50/record-ab-test",
+    "record_intent": "/api/internal/search/music/v50/record-intent-classification"
+  },
+  "tables": [
+    "music_search_synonym_review_tasks_v50",
+    "music_search_ltr_weights_v50",
+    "music_search_ab_tests_v50",
+    "music_search_intent_classifications_v50"
+  ]
+}

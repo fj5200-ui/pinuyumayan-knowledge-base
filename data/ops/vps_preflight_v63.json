@@ -1,0 +1,13 @@
+{
+  "version": "v63",
+  "generated_at": "2026-06-13T21:10:00+08:00",
+  "checks": [
+    "validate_tts_stt_music_v63",
+    "validate_site_operations_audit_rhythm_v63",
+    "validate_openapi_contract",
+    "build_final_certificate_report_v63"
+  ],
+  "sql_migration": "database/migrations/0059_tts_stt_music_v63.sql",
+  "requires_real_vps_for_final_completion": true,
+  "real_vps_completed": false
+}

@@ -1,0 +1,31 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "Music/Speech Governance Center v53",
+  "cards": [
+    {
+      "name": "實機證據回填",
+      "endpoint": "/api/ops/vps/v53/evidence-backfill"
+    },
+    {
+      "name": "首批合法語音資料",
+      "endpoint": "/api/admin/speech-training/v53/legal-batch"
+    },
+    {
+      "name": "搜尋排序升級",
+      "endpoint": "/api/ops/search/music/v53/ranking-upgrade"
+    },
+    {
+      "name": "metadata 公開發布",
+      "endpoint": "/api/ops/authority-sources/v53/publication"
+    },
+    {
+      "name": "模型治理封板",
+      "endpoint": "/api/ops/speech-training/v53/model-seal"
+    },
+    {
+      "name": "正式監控營運",
+      "endpoint": "/api/ops/site/v53/formal-monitoring"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+export const ttsSttMusicV50Endpoints = {
+  reviewCenter: "/api/admin/music-speech/v50/review-center",
+  cutoverPlan: "/api/ops/vps/v50/cutover-plan",
+  recordCutoverRun: "/api/internal/vps/v50/record-cutover-run",
+  recordHealthCheck: "/api/internal/vps/v50/record-health-check",
+  recordDnsCutover: "/api/internal/vps/v50/record-dns-cutover",
+  recordRollbackRehearsal: "/api/internal/vps/v50/record-rollback-rehearsal",
+  evidenceStore: "/api/admin/speech-training/v50/evidence-store",
+  recordEvidence: "/api/internal/speech-training/v50/record-evidence",
+  signoffEvidence: "/api/internal/speech-training/v50/signoff-evidence",
+  exportEvidence: "/api/internal/speech-training/v50/export-evidence",
+  searchIntelligence: "/api/ops/search/music/v50/intelligence",
+  reviewSynonymTask: "/api/internal/search/music/v50/review-synonym-task",
+  recordAbTest: "/api/internal/search/music/v50/record-ab-test",
+  recordIntentClassification: "/api/internal/search/music/v50/record-intent-classification",
+  metadataPublication: "/api/ops/authority-sources/v50/metadata-publication",
+  publishMetadataOnly: "/api/internal/authority-sources/v50/publish-metadata-only",
+  recordSourceNotification: "/api/internal/authority-sources/v50/record-source-notification",
+  takedownRequest: "/api/internal/authority-sources/v50/takedown-request",
+  governanceDelivery: "/api/ops/speech-training/v50/governance-delivery",
+  renderGovernancePdf: "/api/internal/speech-training/v50/render-governance-pdf",
+  recordVersionDiff: "/api/internal/speech-training/v50/record-version-diff",
+  closeReleaseBlocker: "/api/internal/speech-training/v50/close-release-blocker",
+  brandCompletion: "/api/ops/site/v50/brand-completion",
+  recordBrowserScreenshot: "/api/internal/site/v50/record-browser-screenshot",
+  recordCwvRun: "/api/internal/site/v50/record-cwv-run",
+  recordSeoOgMonitor: "/api/internal/site/v50/record-seo-og-monitor",
+  preflightContract: "/api/ops/vps/v50/preflight-contract",
+  nextUpgradePlan: "/api/ops/next-upgrade-plan/v51"
+} as const;
+
+export type TtsSttMusicV50Endpoint = keyof typeof ttsSttMusicV50Endpoints;

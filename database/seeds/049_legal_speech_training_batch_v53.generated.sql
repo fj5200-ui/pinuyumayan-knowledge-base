@@ -1,0 +1,1 @@
+-- Generated v53 seed placeholder for legal_speech_asset_approvals_v53
