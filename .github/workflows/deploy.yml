@@ -31,7 +31,7 @@ jobs:
 
             echo "=== 2. Install backend dependencies ==="
             cd backend
-            npm ci
+            npm install --legacy-peer-deps
 
             echo "=== 3. Run database migrations ==="
             npm run db:migrate 2>/dev/null || true
