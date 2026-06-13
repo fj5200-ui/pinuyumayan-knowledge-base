@@ -1,4 +1,5 @@
 import { router } from "./init";
+export { publicProcedure } from "./init";
 import { communitiesRouter } from "../modules/communities/router";
 import { factsRouter } from "../modules/facts/router";
 import { vocabularyRouter } from "../modules/vocabulary/router";

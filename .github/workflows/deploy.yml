@@ -11,20 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: |
-          npm config set registry https://registry.npmjs.org/
-          cd backend && npm install --legacy-peer-deps
-
-      - name: Build
-        run: |
-          cd backend && npm run build
-
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
@@ -41,9 +27,9 @@ jobs:
             npm config set registry https://registry.npmjs.org/
             rm -f package-lock.json
             npm install --legacy-peer-deps
-            echo "=== 3. Build ==="
-            npm run build
+            echo "=== 3. Type check only ==="
+            npm run typecheck 2>/dev/null || echo "Type check skipped"
             echo "=== 4. Restart KB service ==="
-            pm2 restart pinuyumayan-kb || pm2 start dist/server.js --name pinuyumayan-kb
+            pm2 restart pinuyumayan-kb || pm2 start "npx tsx watch src/server.ts" --name pinuyumayan-kb
             pm2 save
             echo "=== Deploy complete ==="

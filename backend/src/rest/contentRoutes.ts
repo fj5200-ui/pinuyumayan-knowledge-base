@@ -15,7 +15,7 @@ export function registerContentRoutes(app: Express) {
     ok(res, data);
   }));
 
-  app.get("/api/public/content/items/:slug(*)", asyncRoute(async (req, res) => {
+  app.get("/api/public/content/items/:slug", asyncRoute(async (req, res) => {
     const ctx = await createContext();
     const data = await getContentItemBySlug(ctx.db, req.params.slug);
     ok(res, data, data.ok ? 200 : 404);

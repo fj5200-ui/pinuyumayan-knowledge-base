@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { router, publicProcedure } from "../../trpc/root";
+import { router, publicProcedure } from "../../trpc/init";
 
 export const dataQualityRouter = router({
   runGate: publicProcedure

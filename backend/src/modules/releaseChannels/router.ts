@@ -1,4 +1,4 @@
-import { router, publicProcedure } from "../../trpc/root";
+import { router, publicProcedure } from "../../trpc/init";
 import { listReleaseChannels } from "./service";
 
 export const releaseChannelsRouter = router({

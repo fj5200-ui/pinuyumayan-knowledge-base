@@ -1,4 +1,4 @@
-import { router, publicProcedure } from "../../trpc/root";
+import { router, publicProcedure } from "../../trpc/init";
 
 export const adminSecurityRouter = router({
   sessions: publicProcedure.query(async () => {
