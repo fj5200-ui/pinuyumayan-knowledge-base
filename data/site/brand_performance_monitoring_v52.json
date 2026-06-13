@@ -1,0 +1,210 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "正式品牌效能監控與截圖證據",
+  "source_version": "v51",
+  "summary": {
+    "routes_total": 7,
+    "browser_screenshots_required": true,
+    "lighthouse_required": true,
+    "cwv_required": true,
+    "og_monitor_required": true,
+    "sitemap_ping_required": true,
+    "minimum_contrast": "WCAG AA",
+    "public_release_allowed_without_real_browser_run": false
+  },
+  "routes": [
+    {
+      "route_path": "/",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/culture",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/language",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/music/search",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/music/song/metadata-demo",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/map",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    },
+    {
+      "route_path": "/tts-stt",
+      "monitoring_status": "ready_pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      },
+      "lighthouse_thresholds": {
+        "performance": 90,
+        "accessibility": 95,
+        "seo": 95,
+        "best_practices": 90
+      },
+      "cwv_thresholds": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1
+      },
+      "screenshot_required": true,
+      "og_validation_required": true,
+      "sitemap_ping_required": true,
+      "contrast": "WCAG AA required"
+    }
+  ],
+  "monitoring_schedule": {
+    "post_deploy_minutes": [
+      0,
+      5,
+      15,
+      30
+    ],
+    "daily_lighthouse": true,
+    "weekly_screenshot_diff": true
+  },
+  "api_contracts": [
+    "/api/ops/site/v52/performance-monitoring",
+    "/api/internal/site/v52/record-lighthouse-cwv",
+    "/api/internal/site/v52/record-browser-screenshot",
+    "/api/internal/site/v52/record-og-check",
+    "/api/internal/site/v52/record-sitemap-ping"
+  ]
+}

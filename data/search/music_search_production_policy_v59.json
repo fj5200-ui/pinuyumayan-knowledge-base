@@ -1,0 +1,65 @@
+{
+  "version": "v59",
+  "generated_at": "2026-06-13T18:55:00+08:00",
+  "title": "搜尋正式設定營運",
+  "summary": {
+    "features": 3,
+    "production_policy_ready": true,
+    "live_24_72_metrics_attached": false,
+    "quality_weekly_report_ready": true,
+    "rollback_drill_ready": true,
+    "human_sla_enabled": true
+  },
+  "policy_id": "music-search-production-policy-v59",
+  "baseline_policy": "music-search-baseline-v43-fulltext",
+  "candidate_policy": "music-search-intelligent-v58",
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "production_state": "formal_policy_pending_live_24_72_review",
+      "default_action": "hold_or_keep_if_metrics_pass",
+      "sla_hours_for_anomaly_task": 24,
+      "rollback_drill_required": true
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "production_state": "formal_policy_pending_live_24_72_review",
+      "default_action": "hold_or_keep_if_zero_result_recovery_passes",
+      "sla_hours_for_anomaly_task": 24,
+      "rollback_drill_required": true
+    },
+    {
+      "feature_key": "intent_routing",
+      "production_state": "formal_policy_pending_live_24_72_review",
+      "default_action": "hold_or_keep_if_intent_accuracy_passes",
+      "sla_hours_for_anomaly_task": 12,
+      "rollback_drill_required": true
+    }
+  ],
+  "quality_report": {
+    "cadence": "weekly",
+    "metrics": [
+      "zero_result_rate",
+      "p95_latency",
+      "p99_latency",
+      "facet_click_rate",
+      "intent_accuracy",
+      "typo_recovery_rate"
+    ],
+    "owner_role": "search_admin"
+  },
+  "anomaly_task_rules": [
+    {
+      "trigger": "zero_result_rate_delta_pct >= 20",
+      "sla_hours": 24
+    },
+    {
+      "trigger": "p95_latency_delta_pct >= 25",
+      "sla_hours": 12
+    },
+    {
+      "trigger": "intent_accuracy_drop_pct >= 8",
+      "sla_hours": 12
+    }
+  ]
+}

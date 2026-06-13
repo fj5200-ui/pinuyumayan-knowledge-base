@@ -1,0 +1,61 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T15:00:00+08:00",
+  "publication_cards": [
+    {
+      "card_id": "authority-card-v55-01",
+      "source_name": "臺灣音樂館",
+      "title": "卑南族歌謠 metadata-only card 1",
+      "publication_state": "rights_review_required",
+      "metadata_only": true,
+      "audio_publication_allowed": false,
+      "lyrics_publication_allowed": false,
+      "citation_ready": false,
+      "sitemap_ready": false,
+      "og_ready": false,
+      "takedown_drill_status": "not_run"
+    },
+    {
+      "card_id": "authority-card-v55-02",
+      "source_name": "國家文化記憶庫",
+      "title": "卑南族歌謠 metadata-only card 2",
+      "publication_state": "rights_review_required",
+      "metadata_only": true,
+      "audio_publication_allowed": false,
+      "lyrics_publication_allowed": false,
+      "citation_ready": false,
+      "sitemap_ready": false,
+      "og_ready": false,
+      "takedown_drill_status": "not_run"
+    },
+    {
+      "card_id": "authority-card-v55-03",
+      "source_name": "金曲獎",
+      "title": "卑南族歌謠 metadata-only card 3",
+      "publication_state": "rights_review_required",
+      "metadata_only": true,
+      "audio_publication_allowed": false,
+      "lyrics_publication_allowed": false,
+      "citation_ready": false,
+      "sitemap_ready": false,
+      "og_ready": false,
+      "takedown_drill_status": "not_run"
+    }
+  ],
+  "rehearsal_steps": [
+    "publish metadata-only card",
+    "index in music search",
+    "sitemap/OG ping",
+    "source drift check",
+    "takedown rehearsal",
+    "restore hidden card after rehearsal"
+  ],
+  "summary": {
+    "metadata_cards": 3,
+    "public_cards_allowed": false,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "takedown_rehearsal_complete": false,
+    "rights_review_required": true
+  }
+}

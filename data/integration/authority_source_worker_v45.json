@@ -1,0 +1,62 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "mode": "scheduled_metadata_fetch_with_dry_run_first",
+  "script": "scripts/authority_source_fetch_worker_v45.py",
+  "adapters": [
+    {
+      "adapter_id": "taiwan_music_institute",
+      "name": "臺灣音樂館",
+      "base_url": "https://tmi.openmuseum.tw/",
+      "rate_limit_per_minute": 12,
+      "queries": [
+        "卑南族 歌謠",
+        "南王卑南族童謠",
+        "Mangednged"
+      ]
+    },
+    {
+      "adapter_id": "national_culture_memory_bank",
+      "name": "國家文化記憶庫",
+      "base_url": "https://memory.culture.tw/",
+      "rate_limit_per_minute": 10,
+      "queries": [
+        "卑南族 歌謠",
+        "卑南族 音樂",
+        "南王 卑南族"
+      ]
+    },
+    {
+      "adapter_id": "golden_melody_awards",
+      "name": "金曲獎",
+      "base_url": "https://gma.tavis.tw/",
+      "rate_limit_per_minute": 8,
+      "queries": [
+        "卑南族 音樂人",
+        "原住民語專輯 卑南",
+        "陳建年 金曲獎"
+      ]
+    }
+  ],
+  "run_controls": {
+    "dry_run_default": true,
+    "dedupe_key": "sha256(adapter_id + canonical_url + title)",
+    "max_candidates_per_run": 50,
+    "retry_policy": "3 attempts with exponential backoff",
+    "blocked_terms_guard": true
+  },
+  "write_tables": [
+    "authority_source_adapter_state_v45",
+    "authority_source_worker_runs_v45",
+    "authority_source_candidates_v45",
+    "music_candidate_reviews_v45"
+  ],
+  "never_fetch": [
+    "audio_binary",
+    "video_binary",
+    "full_lyrics",
+    "restricted_ritual_detail",
+    "private_person_data"
+  ],
+  "review_required_before_public": true
+}

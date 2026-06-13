@@ -1,0 +1,8 @@
+-- v51 site performance seed
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-001', 'system-seed', '/', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-002', 'system-seed', '/culture', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/culture'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-003', 'system-seed', '/language', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/language'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-004', 'system-seed', '/music/search', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/music/search'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-005', 'system-seed', '/music/song/metadata-demo', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/music/song/metadata-demo'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-006', 'system-seed', '/map', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/map'));
+INSERT IGNORE INTO site_lighthouse_runs_v51 (run_id, actor_id, route_path, lcp_ms, inp_ms, cls, status, run_json) VALUES ('lh-v51-007', 'system-seed', '/tts-stt', 0, 0, 0, 'pending_real_lighthouse', JSON_OBJECT('route','/tts-stt'));

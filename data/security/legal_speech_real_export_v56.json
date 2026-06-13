@@ -1,0 +1,401 @@
+{
+  "version": "v56",
+  "generated_at": "2026-06-13T16:00:00+08:00",
+  "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+  "summary": {
+    "candidate_assets": 20,
+    "train_rows": 0,
+    "dev_rows": 0,
+    "test_rows": 0,
+    "blocked_rows": 20,
+    "dataset_export_allowed": false,
+    "model_card_generated": true,
+    "manifest_generated": true
+  },
+  "split_plan": {
+    "train_candidate_count": 16,
+    "dev_candidate_count": 2,
+    "test_candidate_count": 2,
+    "speaker_leakage_guard": "required"
+  },
+  "assets": [
+    {
+      "asset_id": "speech-preview-001",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-002",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-003",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-004",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-005",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-006",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-007",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-008",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-009",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-010",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-011",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-012",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-013",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-014",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-015",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-016",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "train",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-017",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "dev",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-018",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "dev",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-019",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "test",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    },
+    {
+      "asset_id": "speech-preview-020",
+      "dataset_version": "pinuyumayan-speech-v56.0-real-export-gate",
+      "speaker_split": "test",
+      "evidence_state": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_state": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "export_allowed": false,
+      "blocked_reason": "缺少真實授權附件或母語者審核，不能進入 train/dev/test"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact": "dataset_manifest.json",
+      "status": "generated_contract_only"
+    },
+    {
+      "artifact": "blocked_report.jsonl",
+      "status": "generated_contract_only"
+    },
+    {
+      "artifact": "model_card.md",
+      "status": "generated_contract_only"
+    },
+    {
+      "artifact": "train/dev/test jsonl",
+      "status": "blocked_until_real_evidence"
+    }
+  ]
+}

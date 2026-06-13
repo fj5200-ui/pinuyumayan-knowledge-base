@@ -1,0 +1,81 @@
+{
+  "version": "v62",
+  "generated_at": "2026-06-13T20:40:00+08:00",
+  "title": "搜尋週報正式回填與改善任務",
+  "policy_id": "music-search-weekly-metrics-backfill-v62",
+  "summary": {
+    "features": 3,
+    "weekly_report_contract_ready": true,
+    "sla_tasks_enabled": true,
+    "rollback_drill_contract_ready": true,
+    "quality_regression_ready": true,
+    "live_weekly_metrics_attached": false,
+    "improvement_task_queue_ready": true,
+    "production_policy_state": "pending_live_weekly_metrics_backfill"
+  },
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 24,
+      "rollback_drill": "monthly",
+      "weekly_improvement_task_required": true
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 24,
+      "rollback_drill": "monthly",
+      "weekly_improvement_task_required": true
+    },
+    {
+      "feature_key": "intent_routing",
+      "state": "pending_live_weekly_metrics_backfill",
+      "weekly_report_required": true,
+      "sla_hours": 12,
+      "rollback_drill": "monthly",
+      "weekly_improvement_task_required": true
+    }
+  ],
+  "weekly_report_sections": [
+    "query_volume",
+    "zero_result_terms",
+    "top_facets",
+    "p95_p99_latency",
+    "intent_accuracy",
+    "typo_recovery_rate",
+    "rollback_drill_status",
+    "manual_improvement_tasks"
+  ],
+  "sla_rules": [
+    {
+      "trigger": "zero_result_rate_delta_pct >= 20",
+      "sla_hours": 24,
+      "owner": "search_admin"
+    },
+    {
+      "trigger": "p95_latency_delta_pct >= 25",
+      "sla_hours": 12,
+      "owner": "ops_admin"
+    },
+    {
+      "trigger": "intent_accuracy_drop_pct >= 8",
+      "sla_hours": 12,
+      "owner": "search_admin"
+    }
+  ],
+  "rollback_drill": {
+    "cadence": "monthly",
+    "requires_postmortem": true,
+    "requires_restore_policy_hash": true
+  },
+  "weekly_backfill_required_fields": [
+    "query_volume_hash",
+    "zero_result_terms_hash",
+    "p95_latency_hash",
+    "intent_accuracy_hash",
+    "manual_task_batch_hash"
+  ]
+}

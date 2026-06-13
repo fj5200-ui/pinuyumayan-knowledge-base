@@ -1,0 +1,191 @@
+-- Pinuyumayan TTS/STT Music v55: signed release certificate package, legal dataset unlock package, 100% rollout, publication/takedown, governance center and ops SOP
+-- Generated 2026-06-13
+
+CREATE TABLE IF NOT EXISTS production_release_signed_certificates_v55 (
+  certificate_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  certificate_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS production_release_signed_evidence_v55 (
+  evidence_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  evidence_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS production_release_signed_pdf_artifacts_v55 (
+  pdf_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  pdf_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS production_release_signed_reopen_v55 (
+  reopen_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  reopen_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS legal_speech_real_evidence_files_v55 (
+  file_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  file_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS legal_speech_hash_chain_seals_v55 (
+  seal_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  seal_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS legal_speech_unblock_decisions_v55 (
+  decision_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  decision_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS legal_speech_dataset_split_exports_v55 (
+  export_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  export_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS music_search_rollout_100_decisions_v55 (
+  decision_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  decision_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS music_search_rollout_100_metrics_v55 (
+  metric_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  metric_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS music_search_rollout_100_rollbacks_v55 (
+  rollback_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  rollback_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS authority_metadata_public_cards_v55 (
+  card_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  metadata_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS authority_metadata_takedown_rehearsals_v55 (
+  rehearsal_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  rehearsal_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS authority_metadata_source_drift_v55 (
+  drift_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  drift_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS speech_model_governance_center_artifacts_v55 (
+  artifact_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  artifact_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS speech_model_governance_audit_downloads_v55 (
+  download_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  download_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS speech_model_governance_blocker_closure_v55 (
+  closure_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  closure_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS site_ops_daily_reports_v55 (
+  report_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  report_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS site_ops_weekly_reports_v55 (
+  report_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  report_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS site_ops_alert_routes_v55 (
+  alert_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  alert_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS site_ops_live_monitor_samples_v55 (
+  sample_id VARCHAR(96) PRIMARY KEY,
+  actor_id VARCHAR(96) NOT NULL DEFAULT 'system',
+  status VARCHAR(64) NOT NULL DEFAULT 'recorded',
+  sample_json JSON NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

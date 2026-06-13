@@ -1,0 +1,33 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "purpose": "Import forced-alignment evidence safely before a speech item can enter train/dev/test.",
+  "accepted_formats": [
+    "jsonl",
+    "csv"
+  ],
+  "required_columns": [
+    "asset_id",
+    "transcript_text",
+    "start_ms",
+    "end_ms",
+    "word_or_phone",
+    "confidence",
+    "aligner_version",
+    "reviewer_id"
+  ],
+  "minimum_confidence": 0.85,
+  "speaker_leakage_checks": [
+    "same_speaker_not_in_multiple_eval_splits",
+    "same_asset_not_in_multiple_splits",
+    "duplicate_transcript_cross_split_flagged"
+  ],
+  "reject_if": [
+    "missing_license_evidence",
+    "missing_speaker_consent",
+    "confidence_below_threshold",
+    "asset_not_in_authorization_table"
+  ],
+  "write_table": "speech_alignment_imports_v45",
+  "public_release_allowed": false
+}

@@ -1,0 +1,251 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "營運報告自動寄送",
+  "summary": {
+    "routes": 7,
+    "report_jobs": 6,
+    "channels": [
+      "email",
+      "line",
+      "admin_notification"
+    ],
+    "live_delivery_attached": false,
+    "minimum_contrast": "WCAG AA"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/culture",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/language",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/music/search",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/music/[id]",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/map",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    },
+    {
+      "route": "/tts-stt",
+      "checks": [
+        "uptime",
+        "error_rate",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap"
+      ],
+      "alertable": true
+    }
+  ],
+  "report_jobs": [
+    {
+      "report_id": "ops-daily-email-v57",
+      "cadence": "daily",
+      "channel": "email",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    },
+    {
+      "report_id": "ops-daily-line-v57",
+      "cadence": "daily",
+      "channel": "line",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    },
+    {
+      "report_id": "ops-daily-admin_notification-v57",
+      "cadence": "daily",
+      "channel": "admin_notification",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    },
+    {
+      "report_id": "ops-weekly-email-v57",
+      "cadence": "weekly",
+      "channel": "email",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    },
+    {
+      "report_id": "ops-weekly-line-v57",
+      "cadence": "weekly",
+      "channel": "line",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    },
+    {
+      "report_id": "ops-weekly-admin_notification-v57",
+      "cadence": "weekly",
+      "channel": "admin_notification",
+      "status": "scheduled_contract_only",
+      "metrics": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate"
+      ],
+      "routes": [
+        "/",
+        "/culture",
+        "/language",
+        "/music/search",
+        "/music/[id]",
+        "/map",
+        "/tts-stt"
+      ]
+    }
+  ],
+  "alert_policy": {
+    "ack_required": true,
+    "escalate_after_minutes": 30,
+    "channels": [
+      "email",
+      "line",
+      "admin_notification"
+    ]
+  }
+}

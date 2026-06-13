@@ -1,0 +1,74 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "音樂搜尋排序升級與 A/B 收斂決策",
+  "source_version": "v52",
+  "summary": {
+    "experiments": 3,
+    "default_rollout_allowed": false,
+    "requires_live_traffic_metrics": true,
+    "manual_approval_required": true,
+    "rollback_ready": true
+  },
+  "ranking_decisions": [
+    {
+      "decision_id": "ranking-v53-ltr-001",
+      "feature": "learning_to_rank",
+      "variant": "ltr_v1",
+      "observed_uplift_pct": 0.0,
+      "decision": "hold_pending_live_ab_metrics",
+      "rollout_percent": 0,
+      "rollback_plan": "restore_fulltext_baseline"
+    },
+    {
+      "decision_id": "ranking-v53-typo-001",
+      "feature": "typo_tolerance",
+      "variant": "edit_distance_1",
+      "observed_uplift_pct": 0.0,
+      "decision": "hold_pending_live_ab_metrics",
+      "rollout_percent": 0,
+      "rollback_plan": "disable_typo_expansion"
+    },
+    {
+      "decision_id": "ranking-v53-intent-001",
+      "feature": "intent_routing",
+      "variant": "music_metadata_intent",
+      "observed_uplift_pct": 0.0,
+      "decision": "hold_pending_live_ab_metrics",
+      "rollout_percent": 0,
+      "rollback_plan": "route_all_queries_to_v43_fulltext"
+    }
+  ],
+  "regression_tests": [
+    {
+      "query": "南王 卑南 歌謠",
+      "expected_facets": [
+        "dialect",
+        "source"
+      ],
+      "must_not_return_audio_download": true
+    },
+    {
+      "query": "Puyuma song",
+      "expected_facets": [
+        "language",
+        "rights_status"
+      ],
+      "must_not_return_audio_download": true
+    },
+    {
+      "query": "malikasaw",
+      "expected_facets": [
+        "romanization"
+      ],
+      "must_not_return_audio_download": true
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/search/music/v53/ranking-upgrade",
+    "/api/internal/search/music/v53/record-ranking-metric",
+    "/api/internal/search/music/v53/approve-ranking-rollout",
+    "/api/internal/search/music/v53/rollback-ranking-rollout",
+    "/api/internal/search/music/v53/create-synonym-merge-task"
+  ]
+}

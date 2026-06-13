@@ -1,0 +1,101 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "權威資料 metadata-only 發布與撤稿流程 v50",
+  "source_version": "v49",
+  "summary": {
+    "publication_candidates": 3,
+    "metadata_only_publish_supported": true,
+    "citation_format_required": true,
+    "source_change_notifications_enabled": true,
+    "takedown_workflow_enabled": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "auto_publish_allowed": false
+  },
+  "publication_queue": [
+    {
+      "publication_id": "authority-pub-v50-001",
+      "candidate_id": "authority-merge-v48-001",
+      "citation_score": 83,
+      "status": "pending_rights_review",
+      "publish_mode": "metadata_only",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-pub-v50-002",
+      "candidate_id": "authority-merge-v48-002",
+      "citation_score": 86,
+      "status": "needs_source_fix",
+      "publish_mode": "metadata_only",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-pub-v50-003",
+      "candidate_id": "authority-merge-v48-003",
+      "citation_score": 89,
+      "status": "pending_rights_review",
+      "publish_mode": "metadata_only",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    }
+  ],
+  "citation_formats": [
+    {
+      "format_id": "citation-v50-default",
+      "style": "Pinuyumayan metadata citation",
+      "required_fields": [
+        "source_title",
+        "institution",
+        "source_url",
+        "accessed_at",
+        "rights_statement",
+        "candidate_id"
+      ],
+      "template": "{source_title}. {institution}. Accessed {accessed_at}. Rights: {rights_statement}. Candidate: {candidate_id}."
+    }
+  ],
+  "source_change_notifications": [
+    {
+      "notification_id": "source-change-v50-001",
+      "source": "臺灣音樂館",
+      "status": "monitor_ready_requires_live_tos_review"
+    },
+    {
+      "notification_id": "source-change-v50-002",
+      "source": "國家文化記憶庫",
+      "status": "monitor_ready_requires_live_tos_review"
+    },
+    {
+      "notification_id": "source-change-v50-003",
+      "source": "金曲獎",
+      "status": "monitor_ready_requires_live_tos_review"
+    }
+  ],
+  "takedown_workflow": {
+    "states": [
+      "received",
+      "triaged",
+      "hidden_from_public",
+      "source_rechecked",
+      "resolved",
+      "appealed"
+    ],
+    "hide_within_hours": 24,
+    "raw_audio_or_lyrics_storage": "not_allowed"
+  },
+  "endpoints": {
+    "dashboard": "/api/ops/authority-sources/v50/metadata-publication",
+    "publish_metadata_only": "/api/internal/authority-sources/v50/publish-metadata-only",
+    "record_source_notification": "/api/internal/authority-sources/v50/record-source-notification",
+    "takedown_request": "/api/internal/authority-sources/v50/takedown-request"
+  },
+  "tables": [
+    "authority_metadata_publication_queue_v50",
+    "authority_metadata_citation_formats_v50",
+    "authority_metadata_takedown_requests_v50",
+    "authority_source_change_notifications_v50"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "模型治理簽核與水印 PDF 封存",
+  "source_version": "v51",
+  "summary": {
+    "pdf_renderer_required": true,
+    "watermark_required": true,
+    "lineage_graph_required": true,
+    "version_diff_required": true,
+    "signoff_required": true,
+    "blocked_assets": 80,
+    "eligible_training_assets": 0,
+    "public_release_allowed": false
+  },
+  "renderer": {
+    "engine": "playwright-or-weasyprint-on-vps",
+    "output": "exports/model_governance_report_v52.pdf",
+    "watermark": "Pinuyumayan governance draft - not for public model release",
+    "status": "ready_pending_vps_renderer_install"
+  },
+  "signoff_workflow": [
+    {
+      "role": "speech_review_lead",
+      "required": true,
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "cultural_language_reviewer",
+      "required": true,
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "data_protection_reviewer",
+      "required": true,
+      "status": "pending_real_signoff"
+    },
+    {
+      "role": "release_manager",
+      "required": true,
+      "status": "pending_real_signoff"
+    }
+  ],
+  "release_blockers": [
+    {
+      "blocker_id": "model-blocker-v52-001",
+      "reason": "No real evidence chain uploads have been sealed; all 80 preview assets remain blocked",
+      "status": "open"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/speech-training/v52/model-signoff",
+    "/api/internal/speech-training/v52/render-watermarked-pdf",
+    "/api/internal/speech-training/v52/record-lineage-graph",
+    "/api/internal/speech-training/v52/record-version-diff",
+    "/api/internal/speech-training/v52/close-model-blocker"
+  ]
+}

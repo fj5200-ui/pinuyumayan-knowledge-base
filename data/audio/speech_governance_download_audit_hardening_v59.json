@@ -1,0 +1,115 @@
+{
+  "version": "v59",
+  "generated_at": "2026-06-13T18:55:00+08:00",
+  "title": "治理下載審計強化",
+  "summary": {
+    "artifacts": 6,
+    "rbac_test_report_ready": true,
+    "watermark_verification_ready": true,
+    "abnormal_download_alert_ready": true,
+    "audit_export_signoff_ready": true
+  },
+  "artifacts": [
+    {
+      "artifact_id": "governance-watermarked_pdf-v59",
+      "type": "watermarked_pdf",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    },
+    {
+      "artifact_id": "governance-lineage_dag-v59",
+      "type": "lineage_dag",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor",
+        "speech_reviewer"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    },
+    {
+      "artifact_id": "governance-version_diff-v59",
+      "type": "version_diff",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    },
+    {
+      "artifact_id": "governance-signoff_stamp-v59",
+      "type": "signoff_stamp",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    },
+    {
+      "artifact_id": "governance-audit_export-v59",
+      "type": "audit_export",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    },
+    {
+      "artifact_id": "governance-blocker_closure-v59",
+      "type": "blocker_closure",
+      "rbac_roles": [
+        "governance_admin",
+        "system_auditor"
+      ],
+      "download_watermark_required": true,
+      "watermark_verification_state": "contract_ready",
+      "abnormal_download_alert_state": "enabled_contract",
+      "audit_export_signoff_required": true
+    }
+  ],
+  "abnormal_download_rules": [
+    {
+      "rule_id": "burst-download",
+      "condition": "more_than_5_downloads_per_actor_per_hour",
+      "action": "alert_and_require_ack"
+    },
+    {
+      "rule_id": "denied-role-download",
+      "condition": "denied_role_attempt",
+      "action": "block_and_log"
+    },
+    {
+      "rule_id": "unknown-ip-download",
+      "condition": "new_ip_for_privileged_artifact",
+      "action": "step_up_review"
+    }
+  ],
+  "audit_export_policy": {
+    "requires_reason": true,
+    "requires_signoff": true,
+    "watermark_contains": [
+      "actor_id",
+      "artifact_id",
+      "timestamp",
+      "request_hash",
+      "ip_hash"
+    ]
+  }
+}

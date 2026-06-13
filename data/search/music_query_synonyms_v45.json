@@ -1,0 +1,116 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "items": [
+    {
+      "canonical": "卑南族",
+      "aliases": [
+        "Pinuyumayan",
+        "Puyuma",
+        "Beinan",
+        "Puyuma people",
+        "pinuyumayan"
+      ],
+      "boost": 1.2
+    },
+    {
+      "canonical": "南王",
+      "aliases": [
+        "Puyuma",
+        "Nanwang",
+        "南王部落"
+      ],
+      "boost": 1.15
+    },
+    {
+      "canonical": "知本",
+      "aliases": [
+        "Katratripulr",
+        "Zhiben",
+        "知本部落"
+      ],
+      "boost": 1.1
+    },
+    {
+      "canonical": "建和",
+      "aliases": [
+        "Kasavakan",
+        "Jianhe",
+        "射馬干部落"
+      ],
+      "boost": 1.1
+    },
+    {
+      "canonical": "利嘉",
+      "aliases": [
+        "Likavung",
+        "Rikavung",
+        "利嘉部落"
+      ],
+      "boost": 1.1
+    },
+    {
+      "canonical": "少年猴祭",
+      "aliases": [
+        "Mangednged",
+        "猴祭",
+        "Mangayaw"
+      ],
+      "boost": 1.2
+    },
+    {
+      "canonical": "大獵祭",
+      "aliases": [
+        "Mangayaw",
+        "年祭",
+        "大狩獵祭"
+      ],
+      "boost": 1.2
+    },
+    {
+      "canonical": "陳建年",
+      "aliases": [
+        "Purdur",
+        "Chen Chien-nien",
+        "Chen Jian-nian"
+      ],
+      "boost": 1.25
+    },
+    {
+      "canonical": "紀曉君",
+      "aliases": [
+        "Samingad",
+        "Chi Hsiao-Chun",
+        "Ji Xiaojun"
+      ],
+      "boost": 1.25
+    },
+    {
+      "canonical": "桑梅絹",
+      "aliases": [
+        "Sangpuy",
+        "Sangpuy Katatepan Mavaliyw"
+      ],
+      "boost": 1.25
+    },
+    {
+      "canonical": "歌謠",
+      "aliases": [
+        "folk song",
+        "song",
+        "music",
+        "歌曲"
+      ],
+      "boost": 1.05
+    },
+    {
+      "canonical": "童謠",
+      "aliases": [
+        "children song",
+        "nursery song",
+        "兒歌"
+      ],
+      "boost": 1.05
+    }
+  ]
+}

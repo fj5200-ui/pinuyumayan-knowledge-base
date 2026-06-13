@@ -1,0 +1,101 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "權威來源引用完整度與 metadata-only 發布 v49",
+  "source_version": "v48",
+  "summary": {
+    "candidates_scored": 3,
+    "metadata_only_approve_supported": true,
+    "rights_diff_required": true,
+    "source_change_monitor_enabled": true,
+    "auto_public_allowed": false
+  },
+  "scoring_weights": {
+    "source_url": 20,
+    "source_title": 15,
+    "rights_statement": 20,
+    "collector_or_performer": 10,
+    "date_or_period": 10,
+    "institution": 15,
+    "dedupe_key": 10
+  },
+  "citation_scores": [
+    {
+      "candidate_id": "authority-merge-v48-001",
+      "citation_score": 83,
+      "rights_statement_score": 76,
+      "metadata_completeness_score": 78,
+      "publish_recommendation": "metadata_only_pending_rights",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    },
+    {
+      "candidate_id": "authority-merge-v48-002",
+      "citation_score": 86,
+      "rights_statement_score": 80,
+      "metadata_completeness_score": 81,
+      "publish_recommendation": "needs_source_fix",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    },
+    {
+      "candidate_id": "authority-merge-v48-003",
+      "citation_score": 89,
+      "rights_statement_score": 84,
+      "metadata_completeness_score": 84,
+      "publish_recommendation": "metadata_only_pending_rights",
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false
+    }
+  ],
+  "rights_statement_diffs": [
+    {
+      "diff_id": "rights-diff-v49-001",
+      "candidate_id": "authority-merge-v48-001",
+      "old_statement": "unknown_or_preview",
+      "new_statement": "metadata-only; no audio/no lyrics download",
+      "review_required": true
+    },
+    {
+      "diff_id": "rights-diff-v49-002",
+      "candidate_id": "authority-merge-v48-002",
+      "old_statement": "unknown_or_preview",
+      "new_statement": "metadata-only; no audio/no lyrics download",
+      "review_required": true
+    },
+    {
+      "diff_id": "rights-diff-v49-003",
+      "candidate_id": "authority-merge-v48-003",
+      "old_statement": "unknown_or_preview",
+      "new_statement": "metadata-only; no audio/no lyrics download",
+      "review_required": true
+    }
+  ],
+  "source_change_monitors": [
+    {
+      "monitor_id": "taiwan-music-institute-v49",
+      "source": "臺灣音樂館",
+      "status": "manual_tos_review_required"
+    },
+    {
+      "monitor_id": "culture-memory-v49",
+      "source": "國家文化記憶庫",
+      "status": "etag_ready"
+    },
+    {
+      "monitor_id": "golden-melody-v49",
+      "source": "金曲獎",
+      "status": "metadata_monitor_ready"
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/authority-sources/v49/citation-completeness",
+    "approve_metadata_only": "/api/internal/authority-sources/v49/approve-metadata-only",
+    "source_change_event": "/api/internal/authority-sources/v49/source-change-event"
+  },
+  "tables": [
+    "authority_citation_completeness_scores_v49",
+    "authority_rights_statement_diffs_v49",
+    "authority_source_change_events_v49"
+  ]
+}

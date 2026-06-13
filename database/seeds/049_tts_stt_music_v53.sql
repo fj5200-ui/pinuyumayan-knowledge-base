@@ -1,0 +1,1 @@
+INSERT IGNORE INTO production_evidence_backfill_checks_v53 (check_id, environment, status, evidence_hash, check_json) VALUES ('go-live-evidence-v53-bootstrap','staging','waiting_real_vps_evidence','bootstrap',JSON_OBJECT('version','v53'));

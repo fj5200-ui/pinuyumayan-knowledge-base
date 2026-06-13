@@ -1,0 +1,410 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "首批 train/dev/test 正式產生流程",
+  "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+  "summary": {
+    "candidate_assets": 20,
+    "train_rows": 0,
+    "dev_rows": 0,
+    "test_rows": 0,
+    "blocked_rows": 20,
+    "dataset_export_allowed": false,
+    "checksums_generated": false,
+    "model_card_ready": true
+  },
+  "split_plan": {
+    "train_candidates": 16,
+    "dev_candidates": 2,
+    "test_candidates": 2,
+    "speaker_leakage_guard": "required_before_export"
+  },
+  "assets": [
+    {
+      "asset_id": "speech-preview-001",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-002",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-003",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-004",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-005",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-006",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-007",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-008",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-009",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-010",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-011",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-012",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-013",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-014",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-015",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-016",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "train",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-017",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "dev",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-018",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "dev",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-019",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "test",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    },
+    {
+      "asset_id": "speech-preview-020",
+      "dataset_version": "pinuyumayan-speech-v57.0-train-dev-test-gate",
+      "target_split": "test",
+      "evidence_status": {
+        "license": "pending_real_file",
+        "speaker_consent": "pending_real_file",
+        "alignment": "pending_real_file",
+        "native_speaker_review": "pending_real_file",
+        "virus_scan": "pending",
+        "hash_chain": "pending",
+        "reviewer_signoff": "pending"
+      },
+      "export_status": "blocked_until_real_evidence",
+      "training_allowed": false,
+      "checksum": "pending_after_export",
+      "blocked_reason": "尚未上傳並驗證真實授權、speaker consent、alignment 與母語者審核，不能產生正式訓練資料"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact": "train.jsonl",
+      "status": "blocked_until_real_evidence"
+    },
+    {
+      "artifact": "dev.jsonl",
+      "status": "blocked_until_real_evidence"
+    },
+    {
+      "artifact": "test.jsonl",
+      "status": "blocked_until_real_evidence"
+    },
+    {
+      "artifact": "dataset_manifest.json",
+      "status": "contract_ready"
+    },
+    {
+      "artifact": "blocked_report.jsonl",
+      "status": "contract_ready"
+    },
+    {
+      "artifact": "model_card.md",
+      "status": "contract_ready"
+    }
+  ]
+}

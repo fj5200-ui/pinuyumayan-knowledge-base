@@ -1,0 +1,2 @@
+-- generated v64 seed contract
+-- {"version": "v64", "rows": "contract_data_in_json_files"}

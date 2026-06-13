@@ -1,0 +1,67 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "title": "Main site music search experience upgrade: facets UI, recommendations, empty-state guidance, day-mode contrast, OG validation and sitemap submission",
+  "routes": [
+    {
+      "path": "/music/search",
+      "file": "webapp/app/music/search/page.tsx",
+      "status": "enhanced_v46_facets_recommendations_empty_state_contrast"
+    },
+    {
+      "path": "/music/[id]",
+      "file": "webapp/app/music/[id]/page.tsx",
+      "status": "metadata_guard_retained"
+    },
+    {
+      "path": "/music/[id]/opengraph-image",
+      "file": "webapp/app/music/[id]/opengraph-image.tsx",
+      "status": "v45_dynamic_og_retained"
+    }
+  ],
+  "facets_ui": {
+    "fields": [
+      "artist",
+      "community",
+      "work_type",
+      "rights_status",
+      "sensitivity",
+      "source_authority",
+      "youtube_official_status"
+    ],
+    "show_counts": true,
+    "empty_counts_hidden": true
+  },
+  "recommended_queries": [
+    "卑南族 歌謠",
+    "南王 卑南族",
+    "知本 卑南族 音樂",
+    "Samingad",
+    "Sangpuy",
+    "陳建年 金曲獎"
+  ],
+  "empty_state": {
+    "show_suggestions": true,
+    "show_rights_notice": true,
+    "show_no_lyrics_audio_guard": true
+  },
+  "day_mode_contrast": {
+    "minimum_text_contrast": "WCAG AA",
+    "avoid_yellow_text_on_white": true,
+    "cards_use_white_surface_zinc_950_text": true,
+    "warning_blocks_use_yellow_950_text_on_yellow_50": true
+  },
+  "og_validation": {
+    "script": "scripts/build_site_experience_v46.py",
+    "required_size": "1200x630",
+    "json_ld_no_lyrics_audio": true
+  },
+  "sitemap_submission": {
+    "manual_default": true,
+    "endpoints": [
+      "Google Search Console manual submission",
+      "Bing Webmaster Tools manual submission"
+    ],
+    "auto_submit_enabled": false
+  }
+}

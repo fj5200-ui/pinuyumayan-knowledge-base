@@ -1,0 +1,131 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "VPS 實機證據回填與封板報告中心",
+  "source_version": "v52",
+  "summary": {
+    "backfill_checks": 6,
+    "requires_real_vps": true,
+    "requires_cloudflare_dns_evidence": true,
+    "requires_backup_restore_drill": true,
+    "requires_30_min_observation": true,
+    "downloadable_report_ready": true,
+    "real_evidence_attached": false,
+    "release_allowed_without_real_evidence": false,
+    "seal_status": "ready_for_real_evidence_backfill"
+  },
+  "checks": [
+    {
+      "check_id": "go-live-evidence-v53-001",
+      "name": "vps-staging-health",
+      "environment": "staging",
+      "required_evidence": [
+        "health",
+        "200",
+        "ready",
+        "200",
+        "version",
+        "sha"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "afa8a19d05901a436833f22ccbbf363786e92ef1df97232e3f2d40207459e389"
+    },
+    {
+      "check_id": "go-live-evidence-v53-002",
+      "name": "vps-production-health",
+      "environment": "production",
+      "required_evidence": [
+        "health",
+        "200",
+        "ready",
+        "200",
+        "version",
+        "sha"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "c7ec2b04fca2d10f055ea49a6fc5291b6f89b917ef5a060c95851e65d9a26680"
+    },
+    {
+      "check_id": "go-live-evidence-v53-003",
+      "name": "cloudflare-dns-cutover",
+      "environment": "production",
+      "required_evidence": [
+        "dns",
+        "a",
+        "cname",
+        "proxy",
+        "status",
+        "screenshot"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "54fffbd50969107617efaaa69b504caf6c66f0ee800fb7ac248e7b65af481bf1"
+    },
+    {
+      "check_id": "go-live-evidence-v53-004",
+      "name": "backup-restore-drill",
+      "environment": "production",
+      "required_evidence": [
+        "backup",
+        "sha",
+        "restore",
+        "sha",
+        "row",
+        "count"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "d5eea727fc4aac8ec82e2cda6374c3af21b4be7b4d650ce0d9d4f8e515119409"
+    },
+    {
+      "check_id": "go-live-evidence-v53-005",
+      "name": "rollback-dry-run",
+      "environment": "staging",
+      "required_evidence": [
+        "previous",
+        "artifact",
+        "restore",
+        "health"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "b4e6d047582868590bd8002982d81012a0386bb1ac207ca698923fa83a61fba2"
+    },
+    {
+      "check_id": "go-live-evidence-v53-006",
+      "name": "thirty-minute-observation",
+      "environment": "production",
+      "required_evidence": [
+        "30",
+        "minute",
+        "error",
+        "rate",
+        "latency",
+        "samples"
+      ],
+      "status": "waiting_real_vps_evidence",
+      "blocking": true,
+      "evidence_hash": "a0c1d215b108486aa593793713b9c421962d04dd1dc391a2a0aa40ce30feaa60"
+    }
+  ],
+  "download_artifacts": [
+    {
+      "name": "封板報告 JSON",
+      "path": "data/deployment/production_evidence_backfill_report_v53.generated.json"
+    },
+    {
+      "name": "封板報告 Markdown",
+      "path": "docs/production_evidence_backfill_report_v53.generated.md"
+    }
+  ],
+  "api_contracts": [
+    "/api/ops/vps/v53/evidence-backfill",
+    "/api/internal/vps/v53/record-health-evidence",
+    "/api/internal/vps/v53/record-dns-evidence",
+    "/api/internal/vps/v53/record-backup-restore-evidence",
+    "/api/internal/vps/v53/record-observation-window",
+    "/api/internal/vps/v53/seal-backfill-report"
+  ]
+}

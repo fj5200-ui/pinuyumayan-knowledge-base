@@ -1,0 +1,62 @@
+{
+  "version": "v50",
+  "generated_from": "scripts/build_production_cutover_report_v50.py",
+  "release_allowed": false,
+  "migration_checksum": "25ebef6c7c768af05f21922701767afad05f2f2025d7cf1538bd574daa20f7a7",
+  "seed_checksum": "906a96b507e4d37d7de2a60ae6715d2ff4188bd0e7b24f19986ffcc8bd52af56",
+  "checks": [
+    {
+      "check_id": "health_api",
+      "status": "pending_real_vps_run",
+      "severity": "required"
+    },
+    {
+      "check_id": "ready_api",
+      "status": "pending_real_vps_run",
+      "severity": "required"
+    },
+    {
+      "check_id": "openapi_v50",
+      "status": "pending_real_vps_run",
+      "severity": "required"
+    },
+    {
+      "check_id": "music_search_smoke",
+      "status": "pending_real_vps_run",
+      "severity": "required"
+    },
+    {
+      "check_id": "admin_review_center",
+      "status": "pending_real_vps_run",
+      "severity": "required"
+    }
+  ],
+  "cutover_steps": [
+    {
+      "step_id": "v50-cutover-001",
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-002",
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-003",
+      "status": "pending_vps_run"
+    },
+    {
+      "step_id": "v50-cutover-004",
+      "status": "manual_approval_required"
+    },
+    {
+      "step_id": "v50-cutover-005",
+      "status": "manual_approval_required"
+    },
+    {
+      "step_id": "v50-cutover-006",
+      "status": "pending_vps_run"
+    }
+  ],
+  "rollback_rehearsal_required": true,
+  "cloudflare_cutover_required": true
+}

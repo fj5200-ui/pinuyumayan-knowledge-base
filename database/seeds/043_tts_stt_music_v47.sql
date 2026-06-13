@@ -1,0 +1,3 @@
+-- v47 seed loader notes
+-- Import generated seed files after running database/migrations/0043_tts_stt_music_v47.sql.
+-- Generated files keep public release disabled and authority fetch metadata-only.

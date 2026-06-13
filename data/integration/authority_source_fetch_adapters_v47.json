@@ -1,0 +1,121 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "Authority source live-fetch adapters with robots/ToS gate, ETag cache, retry queue, candidate snapshots and review workflow",
+  "source_version": "v46",
+  "live_fetch_default_enabled": false,
+  "requires_human_robots_tos_record": true,
+  "adapters": [
+    {
+      "adapter_id": "taiwan_music_institute",
+      "name": "臺灣音樂館",
+      "base_url": "https://tmi.openmuseum.tw/",
+      "robots_txt_url": "https://tmi.openmuseum.tw/robots.txt",
+      "tos_review_status": "record_required_before_live_fetch",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 10,
+      "live_fetch_env_gate": "AUTHORITY_FETCH_LIVE=1",
+      "fetch_mode": "metadata_only_candidate_snapshot",
+      "allowed_fields": [
+        "source_title",
+        "source_url",
+        "creator_or_artist",
+        "community",
+        "work_type",
+        "event_year",
+        "award_or_collection",
+        "summary_excerpt_under_200_chars",
+        "rights_statement",
+        "authority_name"
+      ],
+      "forbidden_fields": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false,
+      "review_endpoint": "/api/internal/authority-sources/v47/candidate-review"
+    },
+    {
+      "adapter_id": "national_culture_memory_bank",
+      "name": "國家文化記憶庫",
+      "base_url": "https://memory.culture.tw/",
+      "robots_txt_url": "https://memory.culture.tw/robots.txt",
+      "tos_review_status": "record_required_before_live_fetch",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 10,
+      "live_fetch_env_gate": "AUTHORITY_FETCH_LIVE=1",
+      "fetch_mode": "metadata_only_candidate_snapshot",
+      "allowed_fields": [
+        "source_title",
+        "source_url",
+        "creator_or_artist",
+        "community",
+        "work_type",
+        "event_year",
+        "award_or_collection",
+        "summary_excerpt_under_200_chars",
+        "rights_statement",
+        "authority_name"
+      ],
+      "forbidden_fields": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false,
+      "review_endpoint": "/api/internal/authority-sources/v47/candidate-review"
+    },
+    {
+      "adapter_id": "golden_melody_awards",
+      "name": "金曲獎",
+      "base_url": "https://gma.tavis.tw/",
+      "robots_txt_url": "https://gma.tavis.tw/robots.txt",
+      "tos_review_status": "record_required_before_live_fetch",
+      "etag_enabled": true,
+      "if_modified_since_enabled": true,
+      "rate_limit_per_minute": 8,
+      "live_fetch_env_gate": "AUTHORITY_FETCH_LIVE=1",
+      "fetch_mode": "metadata_only_candidate_snapshot",
+      "allowed_fields": [
+        "source_title",
+        "source_url",
+        "creator_or_artist",
+        "community",
+        "work_type",
+        "event_year",
+        "award_or_collection",
+        "summary_excerpt_under_200_chars",
+        "rights_statement",
+        "authority_name"
+      ],
+      "forbidden_fields": [
+        "audio_binary",
+        "video_binary",
+        "full_lyrics",
+        "restricted_ritual_detail",
+        "private_person_data"
+      ],
+      "candidate_auto_public": false,
+      "review_endpoint": "/api/internal/authority-sources/v47/candidate-review"
+    }
+  ],
+  "candidate_review_actions": [
+    "return_for_fix",
+    "reject_candidate",
+    "merge_candidates",
+    "approve_metadata_candidate_only"
+  ],
+  "tables": [
+    "authority_source_fetch_runs_v47",
+    "authority_source_candidate_snapshots_v47",
+    "authority_source_retry_queue_v46",
+    "authority_source_candidate_merge_requests_v46"
+  ]
+}

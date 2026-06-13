@@ -1,0 +1,31 @@
+{
+  "version": "v54",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "Music/Speech Governance Center v54",
+  "cards": [
+    {
+      "name": "正式發布封板",
+      "endpoint": "/api/ops/vps/v54/release-certificate"
+    },
+    {
+      "name": "合法語音資料解封",
+      "endpoint": "/api/admin/speech-training/v54/dataset-release"
+    },
+    {
+      "name": "搜尋排序正式切換",
+      "endpoint": "/api/ops/search/music/v54/ranking-rollout"
+    },
+    {
+      "name": "metadata 全站公開",
+      "endpoint": "/api/ops/authority-sources/v54/site-publication"
+    },
+    {
+      "name": "模型治理報告封存",
+      "endpoint": "/api/ops/speech-training/v54/governance-archive"
+    },
+    {
+      "name": "營運監控自動化",
+      "endpoint": "/api/ops/site/v54/operations-automation"
+    }
+  ]
+}

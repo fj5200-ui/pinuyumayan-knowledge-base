@@ -1,0 +1,141 @@
+{
+  "version": "v45",
+  "tests": [
+    {
+      "query": "Pinuyumayan 歌謠",
+      "expected_alias_expansion": [
+        "卑南族",
+        "歌謠"
+      ],
+      "min_hits_static": 1,
+      "test_id": "music-search-quality-v45-001",
+      "expanded_terms": [
+        "Pinuyumayan 歌謠",
+        "卑南族",
+        "Pinuyumayan",
+        "Puyuma",
+        "Beinan",
+        "Puyuma people",
+        "歌謠",
+        "folk song",
+        "song",
+        "music",
+        "歌曲"
+      ],
+      "static_hit_count": 12,
+      "static_hit_ids": [
+        "search-v43-tts-stt-live-claim-001",
+        "search-v43-tts-stt-live-claim-002",
+        "search-v43-tts-stt-live-claim-003",
+        "search-v43-tts-stt-live-claim-004",
+        "search-v43-tts-stt-live-claim-005",
+        "search-v43-tts-stt-live-claim-006",
+        "search-v43-tts-stt-live-claim-007",
+        "search-v43-tts-stt-live-claim-008",
+        "search-v43-tts-stt-live-claim-009",
+        "search-v43-tts-stt-live-claim-010"
+      ],
+      "status": "pass"
+    },
+    {
+      "query": "Puyuma music",
+      "expected_alias_expansion": [
+        "卑南族",
+        "歌謠"
+      ],
+      "min_hits_static": 1,
+      "test_id": "music-search-quality-v45-002",
+      "expanded_terms": [
+        "Puyuma music",
+        "卑南族",
+        "Pinuyumayan",
+        "Puyuma",
+        "Beinan",
+        "Puyuma people",
+        "南王",
+        "Nanwang",
+        "南王部落",
+        "歌謠",
+        "folk song",
+        "song",
+        "music",
+        "歌曲"
+      ],
+      "static_hit_count": 12,
+      "static_hit_ids": [
+        "search-v43-tts-stt-live-claim-001",
+        "search-v43-tts-stt-live-claim-002",
+        "search-v43-tts-stt-live-claim-003",
+        "search-v43-tts-stt-live-claim-004",
+        "search-v43-tts-stt-live-claim-005",
+        "search-v43-tts-stt-live-claim-006",
+        "search-v43-tts-stt-live-claim-007",
+        "search-v43-tts-stt-live-claim-008",
+        "search-v43-tts-stt-live-claim-009",
+        "search-v43-tts-stt-live-claim-010"
+      ],
+      "status": "pass"
+    },
+    {
+      "query": "南王 童謠",
+      "expected_alias_expansion": [
+        "南王",
+        "童謠"
+      ],
+      "min_hits_static": 0,
+      "test_id": "music-search-quality-v45-003",
+      "expanded_terms": [
+        "南王 童謠",
+        "南王",
+        "Puyuma",
+        "Nanwang",
+        "南王部落",
+        "童謠",
+        "children song",
+        "nursery song",
+        "兒歌"
+      ],
+      "static_hit_count": 0,
+      "static_hit_ids": [],
+      "status": "pass"
+    },
+    {
+      "query": "陳建年 金曲獎",
+      "expected_alias_expansion": [
+        "陳建年"
+      ],
+      "min_hits_static": 0,
+      "test_id": "music-search-quality-v45-004",
+      "expanded_terms": [
+        "陳建年 金曲獎",
+        "陳建年",
+        "Purdur",
+        "Chen Chien-nien",
+        "Chen Jian-nian"
+      ],
+      "static_hit_count": 0,
+      "static_hit_ids": [],
+      "status": "pass"
+    },
+    {
+      "query": "Mangednged",
+      "expected_alias_expansion": [
+        "少年猴祭"
+      ],
+      "min_hits_static": 0,
+      "test_id": "music-search-quality-v45-005",
+      "expanded_terms": [
+        "Mangednged",
+        "少年猴祭",
+        "猴祭",
+        "Mangayaw"
+      ],
+      "static_hit_count": 0,
+      "static_hit_ids": [],
+      "status": "pass"
+    }
+  ],
+  "passed": 5,
+  "needs_review": 0,
+  "doc_count": 12
+}

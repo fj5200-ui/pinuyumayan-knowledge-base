@@ -1,0 +1,21 @@
+{
+  "version": "v46",
+  "generated_at": "2026-06-12T16:46:00+08:00",
+  "script": "deploy/vps-tts-stt-v46.sh",
+  "checks": [
+    "build_v46_generated_reports",
+    "validate_v45_backward_compatibility",
+    "validate_v46_package",
+    "validate_openapi_contract",
+    "optional_import_0042_migration",
+    "optional_import_042_seeds",
+    "search_observability_smoke",
+    "transaction_contract_smoke"
+  ],
+  "required_env_for_sql_import": [
+    "DATABASE_URL",
+    "IMPORT_SQL=1"
+  ],
+  "safe_without_database_url": true,
+  "expected_openapi_min_paths": 410
+}

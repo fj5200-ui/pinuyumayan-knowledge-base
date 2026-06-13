@@ -1,0 +1,2984 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "Speech Review Workbench Live API v49",
+  "source_version": "v48",
+  "summary": {
+    "items_total": 80,
+    "real_api_bound": true,
+    "bulk_progress_enabled": true,
+    "attachment_scan_required": true,
+    "history_drawer_enabled": true,
+    "role_visibility_enforced": true,
+    "bulk_approve_allowed": false,
+    "public_release_allowed": false
+  },
+  "filters": [
+    {
+      "key": "status",
+      "type": "multi_select"
+    },
+    {
+      "key": "assigned_reviewer",
+      "type": "multi_select"
+    },
+    {
+      "key": "attachment_scan_status",
+      "type": "multi_select"
+    },
+    {
+      "key": "sla_status",
+      "type": "multi_select"
+    },
+    {
+      "key": "evidence_missing",
+      "type": "boolean"
+    }
+  ],
+  "api_contracts": {
+    "workbench_action": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v49/workbench-action",
+      "requires": [
+        "actor_id",
+        "queue_id",
+        "action_type",
+        "idempotency_key"
+      ],
+      "allowed_actions": [
+        "assign",
+        "upload_evidence",
+        "return_for_fix",
+        "reject",
+        "approve_gate",
+        "import_alignment"
+      ]
+    },
+    "attachment_scan_status": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v49/attachment-scan-status",
+      "requires": [
+        "actor_id",
+        "queue_id",
+        "attachment_id",
+        "scan_status"
+      ]
+    },
+    "batch_progress": {
+      "method": "POST",
+      "path": "/api/internal/speech-training/v49/batch-progress",
+      "requires": [
+        "actor_id",
+        "batch_id",
+        "processed_count",
+        "failed_count"
+      ]
+    }
+  },
+  "batch_progress_states": [
+    "queued",
+    "running",
+    "partial_failure",
+    "failed",
+    "completed",
+    "rolled_back"
+  ],
+  "history_drawer_fields": [
+    "event_id",
+    "queue_id",
+    "asset_id",
+    "actor_id",
+    "event_type",
+    "request_hash",
+    "created_at",
+    "event_json"
+  ],
+  "items": [
+    {
+      "queue_id": "speech-review-queue-v46-0001",
+      "asset_id": "pron-a93b397f4a7a5a9b",
+      "display_order": 1,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0002",
+      "asset_id": "pron-661fec2aadaf53ad",
+      "display_order": 2,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0003",
+      "asset_id": "pron-da228ff74f512091",
+      "display_order": 3,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0004",
+      "asset_id": "pron-19a25c368eeb0fc5",
+      "display_order": 4,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0005",
+      "asset_id": "pron-cd95e42661f81187",
+      "display_order": 5,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0006",
+      "asset_id": "pron-9744f1ace8b30e6c",
+      "display_order": 6,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0007",
+      "asset_id": "pron-37e8831304bf3008",
+      "display_order": 7,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0008",
+      "asset_id": "pron-98c4e8bd254a4c6b",
+      "display_order": 8,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0009",
+      "asset_id": "pron-66944aec0c0ee7d8",
+      "display_order": 9,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0010",
+      "asset_id": "pron-7c9be2bc4d215fe0",
+      "display_order": 10,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0011",
+      "asset_id": "pron-885c6f1718ce5a8f",
+      "display_order": 11,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0012",
+      "asset_id": "pron-33ec2205b8296ba1",
+      "display_order": 12,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0013",
+      "asset_id": "pron-4d10004a1bcd6592",
+      "display_order": 13,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0014",
+      "asset_id": "pron-58977d35305e36e5",
+      "display_order": 14,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0015",
+      "asset_id": "pron-d5cad637d9cfd28c",
+      "display_order": 15,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0016",
+      "asset_id": "pron-2ff003babc0ee518",
+      "display_order": 16,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0017",
+      "asset_id": "pron-b876d33aa5e17c61",
+      "display_order": 17,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0018",
+      "asset_id": "pron-fe3cf5d7b809522b",
+      "display_order": 18,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0019",
+      "asset_id": "pron-e860a1d27728b6b2",
+      "display_order": 19,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0020",
+      "asset_id": "pron-93640b8654f9b32b",
+      "display_order": 20,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0021",
+      "asset_id": "pron-3b6038afe3564bcd",
+      "display_order": 21,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0022",
+      "asset_id": "pron-f3e7e709f3f91b56",
+      "display_order": 22,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0023",
+      "asset_id": "pron-9971f63b73a9d058",
+      "display_order": 23,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0024",
+      "asset_id": "pron-55a52094b5c394c2",
+      "display_order": 24,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0025",
+      "asset_id": "pron-8cfb0b4863c40d7a",
+      "display_order": 25,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0026",
+      "asset_id": "pron-234aff26e31f2c5b",
+      "display_order": 26,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0027",
+      "asset_id": "pron-62bd239c30b8aa21",
+      "display_order": 27,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0028",
+      "asset_id": "pron-6dd78319e862303e",
+      "display_order": 28,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0029",
+      "asset_id": "pron-cc019b3818defc08",
+      "display_order": 29,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0030",
+      "asset_id": "pron-5503ae16a5e7814e",
+      "display_order": 30,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0031",
+      "asset_id": "pron-dcad769f726bf930",
+      "display_order": 31,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0032",
+      "asset_id": "pron-0ed2d8980e9a3581",
+      "display_order": 32,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0033",
+      "asset_id": "pron-3acf36938fa297d5",
+      "display_order": 33,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0034",
+      "asset_id": "pron-0f6569097b5c4d91",
+      "display_order": 34,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0035",
+      "asset_id": "pron-7f2adadbfcbdc5a0",
+      "display_order": 35,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0036",
+      "asset_id": "pron-3361557e7000469a",
+      "display_order": 36,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0037",
+      "asset_id": "pron-8d30ad9299de7561",
+      "display_order": 37,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0038",
+      "asset_id": "pron-f6c55239f374e447",
+      "display_order": 38,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0039",
+      "asset_id": "pron-e606727f501417a6",
+      "display_order": 39,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0040",
+      "asset_id": "pron-872a308aa4d9c2e0",
+      "display_order": 40,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0041",
+      "asset_id": "pron-5c96b4e69fc883de",
+      "display_order": 41,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0042",
+      "asset_id": "pron-cd4685469b8970bc",
+      "display_order": 42,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0043",
+      "asset_id": "pron-8aa09e041e263363",
+      "display_order": 43,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0044",
+      "asset_id": "pron-57581ceacc1924e2",
+      "display_order": 44,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0045",
+      "asset_id": "pron-6f0a39612fc84e8a",
+      "display_order": 45,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0046",
+      "asset_id": "pron-17fedfd8e064636e",
+      "display_order": 46,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0047",
+      "asset_id": "pron-7200aceff7e59c94",
+      "display_order": 47,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0048",
+      "asset_id": "pron-8bfd30f5f3a23b75",
+      "display_order": 48,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0049",
+      "asset_id": "pron-71472a3696e57c08",
+      "display_order": 49,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0050",
+      "asset_id": "pron-25e487f93475c5c5",
+      "display_order": 50,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0051",
+      "asset_id": "pron-21c8cba544d3b592",
+      "display_order": 51,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0052",
+      "asset_id": "pron-ebb7306ecd1de1f8",
+      "display_order": 52,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0053",
+      "asset_id": "pron-378e05e01531f74a",
+      "display_order": 53,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0054",
+      "asset_id": "pron-c3714607aa21ff67",
+      "display_order": 54,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0055",
+      "asset_id": "pron-a12260f942a48c41",
+      "display_order": 55,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0056",
+      "asset_id": "pron-3841de352440315d",
+      "display_order": 56,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0057",
+      "asset_id": "pron-8178165d471633cc",
+      "display_order": 57,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0058",
+      "asset_id": "pron-403bb09d4b2825cc",
+      "display_order": 58,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0059",
+      "asset_id": "pron-eea5e0732184f80a",
+      "display_order": 59,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0060",
+      "asset_id": "pron-d807e787c3307ac0",
+      "display_order": 60,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0061",
+      "asset_id": "pron-ef1947b83cb69206",
+      "display_order": 61,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0062",
+      "asset_id": "pron-61ea7ade9379f18e",
+      "display_order": 62,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0063",
+      "asset_id": "pron-f393fe3ffedb6c47",
+      "display_order": 63,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0064",
+      "asset_id": "pron-80383c9a92118dc3",
+      "display_order": 64,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0065",
+      "asset_id": "pron-0a875e842d68062f",
+      "display_order": 65,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0066",
+      "asset_id": "pron-65ab96ddc1c78fa8",
+      "display_order": 66,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0067",
+      "asset_id": "pron-6f52bca48773dd08",
+      "display_order": 67,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0068",
+      "asset_id": "pron-d47c2cdd7832eae8",
+      "display_order": 68,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0069",
+      "asset_id": "pron-e6d7aa3a3d433e95",
+      "display_order": 69,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0070",
+      "asset_id": "pron-c1320a917e92fac2",
+      "display_order": 70,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0071",
+      "asset_id": "pron-9a68ab5439d1e642",
+      "display_order": 71,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0072",
+      "asset_id": "pron-ef5c1a33ad1a3604",
+      "display_order": 72,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0073",
+      "asset_id": "pron-ed773dc335203902",
+      "display_order": 73,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0074",
+      "asset_id": "pron-d4f2ef9b2f12374d",
+      "display_order": 74,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0075",
+      "asset_id": "pron-a4b17dd587707751",
+      "display_order": 75,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0076",
+      "asset_id": "pron-c4dcc7a6e12b5161",
+      "display_order": 76,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0077",
+      "asset_id": "pron-1b15de953f78edbd",
+      "display_order": 77,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0078",
+      "asset_id": "pron-efd41d25577e179c",
+      "display_order": 78,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "unassigned",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0079",
+      "asset_id": "pron-53498e15f18c91a4",
+      "display_order": 79,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_a",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    },
+    {
+      "queue_id": "speech-review-queue-v46-0080",
+      "asset_id": "pron-ae3f50c7e3909686",
+      "display_order": 80,
+      "status": "waiting_assignment",
+      "assigned_reviewer": "reviewer_b",
+      "role_visibility": [
+        "super_admin",
+        "speech_review_lead",
+        "assigned_reviewer"
+      ],
+      "actions_enabled": [
+        "assign",
+        "return_for_fix",
+        "reject",
+        "approve_gate_if_all_evidence_passed",
+        "upload_evidence",
+        "import_alignment"
+      ],
+      "attachment_scan_status": "not_uploaded",
+      "history_events_count": 0,
+      "retry_policy": {
+        "max_retries": 3,
+        "retry_backoff_seconds": [
+          15,
+          60,
+          300
+        ]
+      },
+      "public_release_allowed": false,
+      "api_binding": {
+        "action_endpoint": "/api/internal/speech-training/v49/workbench-action",
+        "attachment_scan_endpoint": "/api/internal/speech-training/v49/attachment-scan-status",
+        "batch_progress_endpoint": "/api/internal/speech-training/v49/batch-progress"
+      }
+    }
+  ],
+  "tables": [
+    "speech_review_workbench_live_views_v49",
+    "speech_review_workbench_live_actions_v49",
+    "speech_review_attachment_scan_jobs_v49",
+    "speech_review_batch_progress_v49"
+  ]
+}

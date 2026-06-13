@@ -1,0 +1,20 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "v52 VPS preflight contract",
+  "checks": [
+    "validate_tts_stt_music_v49",
+    "validate_tts_stt_music_v50",
+    "validate_tts_stt_music_v51",
+    "validate_tts_stt_music_v52",
+    "validate_site_brand_performance_v51",
+    "validate_site_performance_monitoring_v52",
+    "validate_openapi_contract",
+    "build_production_go_live_report_v52"
+  ],
+  "sql_migration": "database/migrations/0048_tts_stt_music_v52.sql",
+  "seed_manifest": "database/seeds/048_tts_stt_music_v52.sql",
+  "requires_database_url_for_import": true,
+  "requires_real_vps_for_go_live_execution": true,
+  "public_release_allowed": false
+}

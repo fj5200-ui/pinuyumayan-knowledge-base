@@ -1,0 +1,149 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "模型治理可視化 v48",
+  "source_version": "v47 model governance reports",
+  "summary": {
+    "experiments": 3,
+    "blocked_assets": 80,
+    "authorized_train_assets": 0,
+    "public_release_allowed": false,
+    "pdf_export_contract_defined": true,
+    "markdown_export_ready": true
+  },
+  "dashboards": [
+    "WER/CER/MOS trend",
+    "lineage DAG",
+    "model-card signoff timeline",
+    "blocked-release reason summary"
+  ],
+  "lineage_dag": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "lineage_id": "dataset-lineage-v46-001",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "lineage_id": "dataset-lineage-v46-002",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "lineage_id": "dataset-lineage-v46-003",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    }
+  ],
+  "visual_reports": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "chart_type": "wer_cer_mos_trend",
+      "status": "blocked_public_release",
+      "metrics": {
+        "experiment_id": "speech-exp-v46-001",
+        "candidate_version": "tts-candidate-v46.0.1",
+        "model_type": "tts",
+        "mos": 0,
+        "wer": null,
+        "cer": null,
+        "gate": "blocked_no_authorized_train_dev_test",
+        "publishable": false,
+        "blocked_reasons": [
+          "authorized_dataset_empty",
+          "speaker_consent_missing",
+          "alignment_missing"
+        ]
+      },
+      "export_formats": [
+        "json",
+        "markdown"
+      ],
+      "public_release_allowed": false
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "chart_type": "wer_cer_mos_trend",
+      "status": "blocked_public_release",
+      "metrics": {
+        "experiment_id": "speech-exp-v46-002",
+        "candidate_version": "stt-candidate-v46.0.2",
+        "model_type": "stt",
+        "mos": null,
+        "wer": 1.0,
+        "cer": 1.0,
+        "gate": "blocked_no_authorized_train_dev_test",
+        "publishable": false,
+        "blocked_reasons": [
+          "authorized_dataset_empty",
+          "speaker_consent_missing",
+          "alignment_missing"
+        ]
+      },
+      "export_formats": [
+        "json",
+        "markdown"
+      ],
+      "public_release_allowed": false
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "chart_type": "wer_cer_mos_trend",
+      "status": "blocked_public_release",
+      "metrics": {
+        "experiment_id": "speech-exp-v46-003",
+        "candidate_version": "alignment-candidate-v46.0.3",
+        "model_type": "alignment",
+        "mos": null,
+        "wer": 1.0,
+        "cer": 1.0,
+        "gate": "blocked_no_authorized_train_dev_test",
+        "publishable": false,
+        "blocked_reasons": [
+          "authorized_dataset_empty",
+          "speaker_consent_missing",
+          "alignment_missing"
+        ]
+      },
+      "export_formats": [
+        "json",
+        "markdown"
+      ],
+      "public_release_allowed": false
+    }
+  ],
+  "blocked_release_reasons": [
+    "license_missing",
+    "speaker_consent_missing",
+    "alignment_not_verified",
+    "native_speaker_review_missing"
+  ],
+  "export_artifacts": [
+    {
+      "artifact_id": "model-governance-v48-md",
+      "format": "markdown",
+      "path": "docs/model_governance_report_v48.generated.md"
+    },
+    {
+      "artifact_id": "model-governance-v48-pdf-contract",
+      "format": "pdf_contract",
+      "path": "data/audio/speech_model_visualization_v48.json"
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/speech-training/v48/model-visualization",
+    "export": "/api/internal/speech-training/v48/export-governance-artifact"
+  },
+  "tables": [
+    "speech_model_visualization_reports_v48",
+    "speech_model_export_artifacts_v48"
+  ]
+}

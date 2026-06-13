@@ -1,0 +1,19 @@
+{
+  "version": "v58",
+  "generated_at": "2026-06-13T18:10:00+08:00",
+  "title": "Music Speech Governance Center v58",
+  "sections": [
+    "release certificate sealed evidence",
+    "dataset v58.0 export gate",
+    "search formal config decision",
+    "authority metadata audit seal",
+    "governance RBAC download",
+    "operations live delivery"
+  ],
+  "summary": {
+    "release_certificate_sealed": false,
+    "dataset_export_allowed": false,
+    "public_audio_allowed": false,
+    "openapi_paths_expected_minimum": 757
+  }
+}

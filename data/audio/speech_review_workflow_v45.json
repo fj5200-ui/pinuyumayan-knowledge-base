@@ -1,0 +1,2758 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "title": "Formal speech review workflow with immutable audit trail",
+  "source_version": "v44",
+  "summary": {
+    "total_assets": 80,
+    "pending_human_review": 80,
+    "approved_for_train_dev_test": 0,
+    "public_tts_enabled": false,
+    "public_stt_enabled": false
+  },
+  "decision_states": [
+    "pending_human_review",
+    "approved_gate",
+    "rejected_gate",
+    "returned_for_fix",
+    "superseded_by_new_evidence"
+  ],
+  "db_tables": [
+    "speech_review_decisions_v45",
+    "speech_review_audit_log_v45",
+    "speech_alignment_imports_v45"
+  ],
+  "internal_endpoints": {
+    "review_decision": "/api/internal/speech-training/v45/review-decision",
+    "alignment_import": "/api/internal/speech-training/v45/alignment-import"
+  },
+  "security": {
+    "hmac_required": true,
+    "nonce_required": true,
+    "reviewer_identity_required": true,
+    "append_only_audit_log": true,
+    "bulk_approve_disabled": true
+  },
+  "items": [
+    {
+      "workflow_id": "speech-review-v45-0001",
+      "asset_id": "pron-a93b397f4a7a5a9b",
+      "entry_id": "puyuma-audio-3273c95775ad",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0002",
+      "asset_id": "pron-661fec2aadaf53ad",
+      "entry_id": "puyuma-audio-7d98a0571a64",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0003",
+      "asset_id": "pron-da228ff74f512091",
+      "entry_id": "puyuma-audio-95ddd1e52a8c",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0004",
+      "asset_id": "pron-19a25c368eeb0fc5",
+      "entry_id": "puyuma-audio-658c87facd71",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0005",
+      "asset_id": "pron-cd95e42661f81187",
+      "entry_id": "puyuma-audio-b04e215f3e73",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0006",
+      "asset_id": "pron-9744f1ace8b30e6c",
+      "entry_id": "puyuma-audio-3459f9d2c9ba",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0007",
+      "asset_id": "pron-37e8831304bf3008",
+      "entry_id": "puyuma-audio-c906ef49ba1a",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0008",
+      "asset_id": "pron-98c4e8bd254a4c6b",
+      "entry_id": "puyuma-audio-f9f0a43ba400",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0009",
+      "asset_id": "pron-66944aec0c0ee7d8",
+      "entry_id": "puyuma-audio-8f66055d0da1",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0010",
+      "asset_id": "pron-7c9be2bc4d215fe0",
+      "entry_id": "puyuma-audio-f47948944915",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0011",
+      "asset_id": "pron-885c6f1718ce5a8f",
+      "entry_id": "puyuma-audio-8ec78ce2da04",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0012",
+      "asset_id": "pron-33ec2205b8296ba1",
+      "entry_id": "puyuma-audio-ef6059f7c2a9",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0013",
+      "asset_id": "pron-4d10004a1bcd6592",
+      "entry_id": "puyuma-audio-24d9088a2fe3",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0014",
+      "asset_id": "pron-58977d35305e36e5",
+      "entry_id": "puyuma-audio-d261d50e56e0",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0015",
+      "asset_id": "pron-d5cad637d9cfd28c",
+      "entry_id": "puyuma-audio-b2abad192f8b",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0016",
+      "asset_id": "pron-2ff003babc0ee518",
+      "entry_id": "puyuma-audio-0df27f692e48",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0017",
+      "asset_id": "pron-b876d33aa5e17c61",
+      "entry_id": "puyuma-audio-7b7185613f33",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0018",
+      "asset_id": "pron-fe3cf5d7b809522b",
+      "entry_id": "puyuma-audio-3c05e63b6315",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0019",
+      "asset_id": "pron-e860a1d27728b6b2",
+      "entry_id": "puyuma-audio-38e4d63b1e3e",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0020",
+      "asset_id": "pron-93640b8654f9b32b",
+      "entry_id": "puyuma-audio-17126d46fe53",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0021",
+      "asset_id": "pron-3b6038afe3564bcd",
+      "entry_id": "puyuma-audio-5c9375318083",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0022",
+      "asset_id": "pron-f3e7e709f3f91b56",
+      "entry_id": "puyuma-audio-e393a3d0412b",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0023",
+      "asset_id": "pron-9971f63b73a9d058",
+      "entry_id": "puyuma-audio-ebf64aa99678",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0024",
+      "asset_id": "pron-55a52094b5c394c2",
+      "entry_id": "puyuma-audio-ecd06c07e0fd",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0025",
+      "asset_id": "pron-8cfb0b4863c40d7a",
+      "entry_id": "puyuma-audio-45dc39676f0e",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0026",
+      "asset_id": "pron-234aff26e31f2c5b",
+      "entry_id": "puyuma-audio-d8bf21308421",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0027",
+      "asset_id": "pron-62bd239c30b8aa21",
+      "entry_id": "puyuma-audio-94508008f8a6",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0028",
+      "asset_id": "pron-6dd78319e862303e",
+      "entry_id": "puyuma-audio-de7a5ff6d36d",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0029",
+      "asset_id": "pron-cc019b3818defc08",
+      "entry_id": "puyuma-audio-2d0099983af8",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0030",
+      "asset_id": "pron-5503ae16a5e7814e",
+      "entry_id": "puyuma-audio-1cdcfb554bb2",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0031",
+      "asset_id": "pron-dcad769f726bf930",
+      "entry_id": "puyuma-audio-dd1bff32ef72",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0032",
+      "asset_id": "pron-0ed2d8980e9a3581",
+      "entry_id": "puyuma-audio-23c2fbbf4341",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0033",
+      "asset_id": "pron-3acf36938fa297d5",
+      "entry_id": "puyuma-audio-7a6d8fcc6929",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0034",
+      "asset_id": "pron-0f6569097b5c4d91",
+      "entry_id": "puyuma-audio-27ad7b13ee68",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0035",
+      "asset_id": "pron-7f2adadbfcbdc5a0",
+      "entry_id": "puyuma-audio-96aa43762826",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0036",
+      "asset_id": "pron-3361557e7000469a",
+      "entry_id": "puyuma-audio-fba7d6ccb2ce",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0037",
+      "asset_id": "pron-8d30ad9299de7561",
+      "entry_id": "puyuma-audio-15e0e7223043",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0038",
+      "asset_id": "pron-f6c55239f374e447",
+      "entry_id": "puyuma-audio-c4005834c802",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0039",
+      "asset_id": "pron-e606727f501417a6",
+      "entry_id": "puyuma-audio-cb87557f60ad",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0040",
+      "asset_id": "pron-872a308aa4d9c2e0",
+      "entry_id": "puyuma-audio-96ee5840e608",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0041",
+      "asset_id": "pron-5c96b4e69fc883de",
+      "entry_id": "puyuma-audio-3e8e95834aec",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0042",
+      "asset_id": "pron-cd4685469b8970bc",
+      "entry_id": "puyuma-audio-595e0d902d82",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0043",
+      "asset_id": "pron-8aa09e041e263363",
+      "entry_id": "puyuma-audio-f720172af555",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0044",
+      "asset_id": "pron-57581ceacc1924e2",
+      "entry_id": "puyuma-audio-40cee4a7b4a2",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0045",
+      "asset_id": "pron-6f0a39612fc84e8a",
+      "entry_id": "puyuma-audio-f3b81e5909b4",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0046",
+      "asset_id": "pron-17fedfd8e064636e",
+      "entry_id": "puyuma-audio-c1f05d8abee4",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0047",
+      "asset_id": "pron-7200aceff7e59c94",
+      "entry_id": "puyuma-audio-c05c1fa52c34",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0048",
+      "asset_id": "pron-8bfd30f5f3a23b75",
+      "entry_id": "puyuma-audio-977400f1160f",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0049",
+      "asset_id": "pron-71472a3696e57c08",
+      "entry_id": "puyuma-audio-6b36c9270538",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0050",
+      "asset_id": "pron-25e487f93475c5c5",
+      "entry_id": "puyuma-audio-15e8eef74423",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0051",
+      "asset_id": "pron-21c8cba544d3b592",
+      "entry_id": "puyuma-audio-c460026f7431",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0052",
+      "asset_id": "pron-ebb7306ecd1de1f8",
+      "entry_id": "puyuma-audio-354ee90bdf89",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0053",
+      "asset_id": "pron-378e05e01531f74a",
+      "entry_id": "puyuma-audio-352af7943610",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0054",
+      "asset_id": "pron-c3714607aa21ff67",
+      "entry_id": "puyuma-audio-7fbfd8c8045d",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0055",
+      "asset_id": "pron-a12260f942a48c41",
+      "entry_id": "puyuma-audio-0aa5dc53e189",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0056",
+      "asset_id": "pron-3841de352440315d",
+      "entry_id": "puyuma-audio-75abd617e2fb",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0057",
+      "asset_id": "pron-8178165d471633cc",
+      "entry_id": "puyuma-audio-9f9593e40ba5",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0058",
+      "asset_id": "pron-403bb09d4b2825cc",
+      "entry_id": "puyuma-audio-7dd92ece8811",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0059",
+      "asset_id": "pron-eea5e0732184f80a",
+      "entry_id": "puyuma-audio-2c6e26ed604f",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0060",
+      "asset_id": "pron-d807e787c3307ac0",
+      "entry_id": "puyuma-audio-03d14c86fc63",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0061",
+      "asset_id": "pron-ef1947b83cb69206",
+      "entry_id": "puyuma-audio-7701493ee98e",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0062",
+      "asset_id": "pron-61ea7ade9379f18e",
+      "entry_id": "puyuma-audio-860909877825",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0063",
+      "asset_id": "pron-f393fe3ffedb6c47",
+      "entry_id": "puyuma-audio-edee4dfae2bd",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0064",
+      "asset_id": "pron-80383c9a92118dc3",
+      "entry_id": "puyuma-audio-210031b89cc3",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0065",
+      "asset_id": "pron-0a875e842d68062f",
+      "entry_id": "puyuma-audio-f1d5aade55f4",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0066",
+      "asset_id": "pron-65ab96ddc1c78fa8",
+      "entry_id": "puyuma-audio-fbd737e6a151",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0067",
+      "asset_id": "pron-6f52bca48773dd08",
+      "entry_id": "puyuma-audio-db1c8c2cc14d",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0068",
+      "asset_id": "pron-d47c2cdd7832eae8",
+      "entry_id": "puyuma-audio-467fd1dc336b",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0069",
+      "asset_id": "pron-e6d7aa3a3d433e95",
+      "entry_id": "puyuma-audio-7b1988cb4900",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0070",
+      "asset_id": "pron-c1320a917e92fac2",
+      "entry_id": "puyuma-audio-2f0f94868666",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0071",
+      "asset_id": "pron-9a68ab5439d1e642",
+      "entry_id": "puyuma-audio-d0e05f7b87fb",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0072",
+      "asset_id": "pron-ef5c1a33ad1a3604",
+      "entry_id": "puyuma-audio-1800952f0787",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0073",
+      "asset_id": "pron-ed773dc335203902",
+      "entry_id": "puyuma-audio-dadf0ecf1ef9",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0074",
+      "asset_id": "pron-d4f2ef9b2f12374d",
+      "entry_id": "puyuma-audio-b682d7bcb672",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0075",
+      "asset_id": "pron-a4b17dd587707751",
+      "entry_id": "puyuma-audio-c30fc2b1df19",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0076",
+      "asset_id": "pron-c4dcc7a6e12b5161",
+      "entry_id": "puyuma-audio-3cdd1df18621",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0077",
+      "asset_id": "pron-1b15de953f78edbd",
+      "entry_id": "puyuma-audio-01e26c7a1e43",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0078",
+      "asset_id": "pron-efd41d25577e179c",
+      "entry_id": "puyuma-audio-9e7e1ddf559f",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0079",
+      "asset_id": "pron-53498e15f18c91a4",
+      "entry_id": "puyuma-audio-4ae65b5d013c",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    },
+    {
+      "workflow_id": "speech-review-v45-0080",
+      "asset_id": "pron-ae3f50c7e3909686",
+      "entry_id": "puyuma-audio-eccf97d43a0f",
+      "current_review_status": "blocked_until_license_consent_alignment",
+      "decision_state": "pending_human_review",
+      "gate_status": {
+        "license": "blocked",
+        "speaker_consent": "blocked",
+        "alignment": "blocked",
+        "native_speaker_review": "blocked"
+      },
+      "allowed_decisions": [
+        "approve_gate",
+        "reject_gate",
+        "return_for_fix"
+      ],
+      "required_reviewer_fields": [
+        "reviewer_id",
+        "decision",
+        "decision_reason",
+        "evidence_url",
+        "timestamp"
+      ],
+      "hmac_internal_endpoint_required": true,
+      "bulk_approve_allowed": false,
+      "audit_log_required": true,
+      "recommended_next_action": "return_for_fix",
+      "blocked_reasons": [
+        "license_evidence_missing",
+        "speaker_consent_missing",
+        "forced_alignment_missing"
+      ]
+    }
+  ]
+}

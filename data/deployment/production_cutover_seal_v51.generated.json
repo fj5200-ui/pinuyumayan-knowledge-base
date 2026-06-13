@@ -1,0 +1,10 @@
+{
+  "version": "v51",
+  "source": "data/deployment/production_cutover_seal_v51.json",
+  "check_count": 6,
+  "passed_count": 0,
+  "pending_count": 6,
+  "release_allowed": false,
+  "reason": "real VPS staging/production cutover evidence is still required",
+  "source_sha256": "57d6084197c31c4a3af280f5d693d5caec1cf65cbffef48231e14c3709d5cc99"
+}

@@ -1,0 +1,85 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "搜尋 24/72 小時結果決策",
+  "summary": {
+    "decisions": 3,
+    "anomaly_tasks": 3,
+    "rollout_100_default_enabled": false,
+    "rollback_ready": true,
+    "live_metrics_attached": false
+  },
+  "decisions": [
+    {
+      "window": "24h",
+      "decision_state": "pending_live_metrics",
+      "required_metrics": [
+        "zero_result_rate",
+        "p95_latency_ms",
+        "search_error_rate",
+        "complaint_count"
+      ],
+      "default_action": "hold_100_percent_rollout_until_metrics_attached",
+      "rollback_threshold": {
+        "zero_result_rate_delta_pct": 20,
+        "p95_latency_delta_pct": 25
+      }
+    },
+    {
+      "window": "72h",
+      "decision_state": "pending_live_metrics",
+      "required_metrics": [
+        "query_success_rate",
+        "facet_click_rate",
+        "intent_route_accuracy",
+        "typo_recovery_rate"
+      ],
+      "default_action": "hold_or_rollback_if_drop_detected",
+      "rollback_threshold": {
+        "query_success_rate_drop_pct": 10,
+        "critical_incidents": 1
+      }
+    },
+    {
+      "window": "weekly",
+      "decision_state": "pending_live_metrics",
+      "required_metrics": [
+        "top_zero_result_terms",
+        "manual_synonym_task_quality",
+        "rollback_incident_count"
+      ],
+      "default_action": "create_human_tasks_for_anomaly_terms",
+      "rollback_threshold": {
+        "critical_incidents": 1
+      }
+    }
+  ],
+  "anomaly_terms": [
+    {
+      "term": "pakelang",
+      "task_state": "pending_if_zero_result_spike"
+    },
+    {
+      "term": "malikasaw",
+      "task_state": "pending_if_intent_misroute"
+    },
+    {
+      "term": "puyuma song",
+      "task_state": "pending_if_low_ctr"
+    }
+  ],
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "v57_action": "decide_keep_or_rollback_after_24_72h"
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "v57_action": "decide_keep_or_rollback_after_24_72h"
+    },
+    {
+      "feature_key": "intent_routing",
+      "v57_action": "decide_keep_or_rollback_after_24_72h"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "version": "v55",
+  "generated_at": "2026-06-13T15:00:00+08:00",
+  "cadence": {
+    "daily_report": "09:00 Asia/Taipei",
+    "weekly_report": "Monday 09:30 Asia/Taipei",
+    "alert_channels": [
+      "email",
+      "dashboard",
+      "webhook_optional"
+    ]
+  },
+  "monitors": [
+    {
+      "route_path": "/",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/music/search",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/music/[id]",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/culture",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/language",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/map",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    },
+    {
+      "route_path": "/tts-stt",
+      "uptime_slo": "99.5%",
+      "lighthouse_budget": {
+        "performance": 85,
+        "accessibility": 90,
+        "seo": 90
+      },
+      "cwv_budget": {
+        "lcp_ms": 2500,
+        "inp_ms": 200,
+        "cls": 0.1
+      },
+      "og_required": true,
+      "sitemap_required": true,
+      "status": "contract_ready_requires_live_run"
+    }
+  ],
+  "reports": [
+    {
+      "report_type": "daily",
+      "sections": [
+        "uptime",
+        "CWV",
+        "Lighthouse",
+        "OG",
+        "sitemap",
+        "error_rate",
+        "search_quality"
+      ]
+    },
+    {
+      "report_type": "weekly",
+      "sections": [
+        "trend",
+        "incident summary",
+        "source drift",
+        "review backlog",
+        "release blockers"
+      ]
+    }
+  ],
+  "summary": {
+    "routes": 7,
+    "automation_contract_ready": true,
+    "live_monitoring_enabled": false,
+    "minimum_contrast": "WCAG AA"
+  }
+}

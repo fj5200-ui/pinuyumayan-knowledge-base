@@ -1,0 +1,164 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "品牌驗收與 Lighthouse/CWV 效能實測 v51",
+  "source_version": "v50",
+  "summary": {
+    "routes_total": 7,
+    "browser_screenshots_required": true,
+    "lighthouse_required": true,
+    "cwv_required": true,
+    "contrast_remediation_tracking": true,
+    "minimum_contrast": "WCAG AA",
+    "public_release_allowed_without_real_browser_run": false
+  },
+  "routes": [
+    {
+      "route_path": "/",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/culture",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/language",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/music/search",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/music/song/metadata-demo",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/map",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    },
+    {
+      "route_path": "/tts-stt",
+      "browser_screenshot_required": true,
+      "lighthouse_required": true,
+      "cwv_required": true,
+      "day_mode_contrast": "pending_real_browser_run",
+      "night_mode_contrast": "pending_real_browser_run",
+      "budgets": {
+        "LCP_ms": 2500,
+        "INP_ms": 200,
+        "CLS": 0.1,
+        "JS_kb_initial": 220
+      }
+    }
+  ],
+  "remediation_tasks": [
+    {
+      "task_id": "contrast-v51-001",
+      "route_path": "/music/search",
+      "issue": "day-mode secondary text contrast must be verified on real screenshot",
+      "status": "pending_browser_evidence"
+    },
+    {
+      "task_id": "cwv-v51-001",
+      "route_path": "/",
+      "issue": "LCP image priority and OG preview must be verified",
+      "status": "pending_lighthouse"
+    }
+  ],
+  "api_contracts": {
+    "record_lighthouse_run": {
+      "method": "POST",
+      "path": "/api/internal/site/v51/record-lighthouse-run",
+      "requires": [
+        "actor_id",
+        "route_path",
+        "lcp_ms",
+        "inp_ms",
+        "cls",
+        "status"
+      ]
+    },
+    "record_contrast_fix": {
+      "method": "POST",
+      "path": "/api/internal/site/v51/record-contrast-fix",
+      "requires": [
+        "actor_id",
+        "route_path",
+        "mode",
+        "before_ratio",
+        "after_ratio"
+      ]
+    },
+    "record_og_sitemap_ping": {
+      "method": "POST",
+      "path": "/api/internal/site/v51/record-og-sitemap-ping",
+      "requires": [
+        "actor_id",
+        "route_path",
+        "og_ok",
+        "sitemap_ok"
+      ]
+    }
+  }
+}

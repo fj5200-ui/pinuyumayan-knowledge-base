@@ -1,0 +1,98 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "VPS MySQL 實機 DB 驗收報告 contract",
+  "source_version": "v47",
+  "database_url_required_for_real_run": true,
+  "summary": {
+    "checks_total": 8,
+    "checks_contract_ready": 5,
+    "checks_pending_vps_run": 2,
+    "manual_gate_required": 1,
+    "safe_to_import_without_public_release": true,
+    "public_release_allowed": false
+  },
+  "run_modes": {
+    "contract_only": "no DATABASE_URL; validates expected tables and reports only",
+    "vps_live": "DATABASE_URL + IMPORT_SQL=1 + RUN_DB_TESTS=1; records v48 db report"
+  },
+  "required_tables_v47": [
+    "speech_review_action_audit_v47",
+    "music_search_query_logs_v47",
+    "authority_source_candidate_snapshots_v47",
+    "speech_model_governance_reports_v47"
+  ],
+  "required_tables_v48": [
+    "vps_db_validation_reports_v48",
+    "vps_db_validation_check_results_v48",
+    "speech_review_workbench_views_v48",
+    "music_search_daily_metrics_v48",
+    "authority_candidate_merge_groups_v48",
+    "speech_model_visualization_reports_v48",
+    "site_visual_audit_results_v48"
+  ],
+  "checks": [
+    {
+      "check_id": "migration-0043-present",
+      "name": "0043 migration applied",
+      "status": "pending_vps_run",
+      "expected": "all v47 tables exist",
+      "command": "SHOW TABLES LIKE ..."
+    },
+    {
+      "check_id": "migration-0044-present",
+      "name": "0044 migration applied",
+      "status": "pending_vps_run",
+      "expected": "all v48 tables exist",
+      "command": "SHOW TABLES LIKE ..."
+    },
+    {
+      "check_id": "transaction-commit",
+      "name": "commit path",
+      "status": "contract_ready",
+      "expected": "successful review action commits audit row",
+      "case_id": "tx-commit-review-action"
+    },
+    {
+      "check_id": "transaction-rollback",
+      "name": "rollback path",
+      "status": "contract_ready",
+      "expected": "invalid alignment rolls back queue/audit writes",
+      "case_id": "tx-rollback-alignment-score"
+    },
+    {
+      "check_id": "idempotency",
+      "name": "idempotency replay",
+      "status": "contract_ready",
+      "expected": "duplicate idempotency key does not create duplicate audit rows",
+      "case_id": "tx-idempotency-review-action"
+    },
+    {
+      "check_id": "audit-immutable",
+      "name": "audit immutability",
+      "status": "contract_ready",
+      "expected": "audit row cannot be overwritten by repeated write",
+      "case_id": "tx-audit-immutable"
+    },
+    {
+      "check_id": "query-log-write",
+      "name": "search query log write",
+      "status": "contract_ready",
+      "expected": "v43 search records into v47/v48 analytics pipeline",
+      "case_id": "search-log-aggregate"
+    },
+    {
+      "check_id": "authority-fetch",
+      "name": "authority metadata fetch",
+      "status": "manual_gate_required",
+      "expected": "metadata-only candidates require merge review before public use",
+      "case_id": "authority-fetch-merge"
+    }
+  ],
+  "report_endpoint": "/api/ops/vps/v48/db-validation-report",
+  "run_endpoint": "/api/internal/vps/v48/run-db-validation",
+  "tables": [
+    "vps_db_validation_reports_v48",
+    "vps_db_validation_check_results_v48"
+  ]
+}

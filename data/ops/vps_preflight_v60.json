@@ -1,0 +1,19 @@
+{
+  "version": "v60",
+  "generated_at": "2026-06-13T19:20:00+08:00",
+  "checks": [
+    "validate_tts_stt_music_v60",
+    "validate_site_operations_real_delivery_v60",
+    "build_final_seal_report_v60",
+    "openapi contract",
+    "package validator"
+  ],
+  "optional_real_vps_flags": [
+    "RUN_FINAL_SEAL_VALIDATION",
+    "RUN_DATASET_IMMUTABLE_FREEZE",
+    "RUN_SEARCH_WEEKLY_SLA",
+    "RUN_AUTHORITY_SOURCE_EXPANSION",
+    "RUN_GOVERNANCE_ALERT_CLOSURE",
+    "RUN_OPS_REAL_DELIVERY"
+  ]
+}

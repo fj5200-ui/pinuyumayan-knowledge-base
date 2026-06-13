@@ -1,0 +1,69 @@
+{
+  "version": "v56",
+  "generated_at": "2026-06-13T16:00:00+08:00",
+  "title": "搜尋 100% 切換後監控",
+  "summary": {
+    "rollout_100_enabled_by_contract": false,
+    "monitoring_windows": 3,
+    "auto_rollback_ready": true,
+    "live_metrics_attached": false
+  },
+  "windows": [
+    {
+      "window": "24h",
+      "status": "pending_live_metrics",
+      "watch": [
+        "zero_result_rate",
+        "p95_latency_ms",
+        "search_error_rate",
+        "rollout_complaints"
+      ],
+      "rollback_threshold": {
+        "zero_result_rate_delta_pct": 20,
+        "p95_latency_delta_pct": 25
+      }
+    },
+    {
+      "window": "72h",
+      "status": "pending_live_metrics",
+      "watch": [
+        "query_success_rate",
+        "facet_click_rate",
+        "intent_route_accuracy",
+        "typo_recovery_rate"
+      ],
+      "rollback_threshold": {
+        "query_success_rate_drop_pct": 10
+      }
+    },
+    {
+      "window": "weekly",
+      "status": "pending_live_metrics",
+      "watch": [
+        "top_zero_result_terms",
+        "synonym_candidate_quality",
+        "manual_rollback_incidents"
+      ],
+      "rollback_threshold": {
+        "critical_incidents": 1
+      }
+    }
+  ],
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "state": "monitor_after_100_percent",
+      "default_allowed": false
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "state": "monitor_after_100_percent",
+      "default_allowed": false
+    },
+    {
+      "feature_key": "intent_routing",
+      "state": "monitor_after_100_percent",
+      "default_allowed": false
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "endpoint": "/api/public/search/music/v43",
+  "enhancement_mode": "v45_query_expansion_ranking_facets_suggestions",
+  "query_expansion_source": "data/search/music_query_synonyms_v45.json",
+  "ranking_weights": {
+    "title_exact": 8.0,
+    "title_fulltext": 5.0,
+    "artist_or_person": 4.0,
+    "community": 3.0,
+    "source_authority": 2.0,
+    "body_fulltext": 1.0,
+    "review_status_approved_public": 2.0,
+    "metadata_only_penalty": -0.2
+  },
+  "facet_fields": [
+    "artist",
+    "community",
+    "work_type",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "youtube_official_status"
+  ],
+  "zero_result_suggestions": [
+    "卑南族 歌謠",
+    "南王 卑南族",
+    "知本 卑南族 音樂",
+    "陳建年 卑南族",
+    "Samingad",
+    "Sangpuy"
+  ],
+  "quality_tests": [
+    {
+      "query": "Pinuyumayan 歌謠",
+      "expected_alias_expansion": [
+        "卑南族",
+        "歌謠"
+      ],
+      "min_hits_static": 1
+    },
+    {
+      "query": "Puyuma music",
+      "expected_alias_expansion": [
+        "卑南族",
+        "歌謠"
+      ],
+      "min_hits_static": 1
+    },
+    {
+      "query": "南王 童謠",
+      "expected_alias_expansion": [
+        "南王",
+        "童謠"
+      ],
+      "min_hits_static": 0
+    },
+    {
+      "query": "陳建年 金曲獎",
+      "expected_alias_expansion": [
+        "陳建年"
+      ],
+      "min_hits_static": 0
+    },
+    {
+      "query": "Mangednged",
+      "expected_alias_expansion": [
+        "少年猴祭"
+      ],
+      "min_hits_static": 0
+    }
+  ],
+  "public_safety": {
+    "metadata_only_for_unreviewed_candidates": true,
+    "no_full_lyrics": true,
+    "no_audio_download": true,
+    "forbidden_relation_terms_blocked": true
+  }
+}

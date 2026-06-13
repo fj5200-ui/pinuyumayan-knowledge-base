@@ -1,0 +1,254 @@
+{
+  "version": "v45",
+  "url_count": 14,
+  "artifact_count": 12,
+  "sitemap": "data/site/sitemap_music_v45.generated.xml",
+  "guard": {
+    "no_full_lyrics": true,
+    "no_audio_download": true,
+    "metadata_only": true,
+    "unreviewed_candidates_noindex": true
+  },
+  "artifacts": [
+    {
+      "artifact_id": "seo-v45-196af63eedf2fdf2",
+      "route_path": "/music/search-v43-tts-stt-live-claim-001",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Licensed Speech Review",
+        "description": "TTS/STT 訓練資料必須先通過授權、來源、speaker、dialect、alignment 與敏感分級審核，未完成審核不得進入 train/dev/test。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-1e12614f880175af",
+      "route_path": "/music/search-v43-tts-stt-live-claim-002",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Train Dev Test Split",
+        "description": "TTS/STT 資料集切分必須以 speaker 與 dialect 分層，避免同一說話人同一句話同時落入訓練集與測試集。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-be54dd40073c95ae",
+      "route_path": "/music/search-v43-tts-stt-live-claim-003",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Local Model Experiment Workspace",
+        "description": "模型實驗區只能輸出 internal experiment artifacts，任何 TTS/STT 模型未通過 MOS、WER、CER 與人工審核前不得公開。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-f2707c1a5248bfa1",
+      "route_path": "/music/search-v43-tts-stt-live-claim-004",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Tts Release Gate",
+        "description": "TTS 公開前必須通過真人發音優先、授權可公開、MOS 門檻、族語審核與敏感內容限制。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-e1ecb4888e4eabcf",
+      "route_path": "/music/search-v43-tts-stt-live-claim-005",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Stt Release Gate",
+        "description": "STT 公開前必須通過授權轉寫、WER/CER 門檻、方言標籤與敏感內容遮蔽規則。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-d029c42d4f131c28",
+      "route_path": "/music/search-v43-tts-stt-live-claim-006",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Youtube Audio Training Block",
+        "description": "YouTube 只允許抓 metadata；影片、音訊、歌詞不得下載、不得保存、不得用於 TTS/STT 或歌聲模型訓練。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-ed5326d311489e92",
+      "route_path": "/music/search-v43-tts-stt-live-claim-007",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Music Live Db Search",
+        "description": "音樂搜尋 API 應讀取 VPS DB FULLTEXT 索引，並支援 artist、community、work_type、rights_status、sensitivity facets。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-25d9ab0b18728778",
+      "route_path": "/music/search-v43-tts-stt-live-claim-008",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Authority Source Candidate Only",
+        "description": "臺灣音樂館、國家文化記憶庫、金曲獎與唱片資料先進候選表，不經人工審核不得自動公開。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-68ca84af4c326a43",
+      "route_path": "/music/search-v43-tts-stt-live-claim-009",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Music Review Db Transaction",
+        "description": "音樂候選審核動作必須寫入 DB transaction 與 audit log，包含審核者、理由、權利狀態與敏感標籤。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-74bbae50465b0145",
+      "route_path": "/music/search-v43-tts-stt-live-claim-010",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Speech Review Db Transaction",
+        "description": "TTS/STT dataset review 必須寫入 DB transaction，保留 dataset hash、reviewer、gate result 與 release channel。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-b3e73dab8b026558",
+      "route_path": "/music/search-v43-tts-stt-live-claim-011",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Beinan Site Block Music",
+        "description": "卑南文化遺址、Beinan Site、Peinan Site 只能作負向消歧，不能進入音樂來源、AI source packet 或 related content。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    },
+    {
+      "artifact_id": "seo-v45-2034cacaed02cc12",
+      "route_path": "/music/search-v43-tts-stt-live-claim-012",
+      "artifact_type": "json_ld_music_metadata",
+      "artifact_json": {
+        "@context": "https://schema.org",
+        "@type": "MusicRecording",
+        "name": "Ai Composer Music No Lyrics",
+        "description": "AI Composer 音樂文章草稿必須帶 claim_ids/source_ids，且不得產生完整歌詞、仿古調歌詞或無來源音樂史料。",
+        "inLanguage": "zh-Hant",
+        "isAccessibleForFree": true,
+        "license": "metadata_only_review_required",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pinuyumayan"
+        }
+      },
+      "no_lyrics": true,
+      "no_audio_download": true
+    }
+  ]
+}

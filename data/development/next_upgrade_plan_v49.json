@@ -1,0 +1,37 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "下一次完善＆開發＆升級＆優化方案：v49",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "VPS 上線收斂",
+      "content": "把 v48 DB 驗收報告接成部署後自動產物，加入 migration checksum、seed checksum、備份還原演練與失敗回復 runbook。"
+    },
+    {
+      "priority": 2,
+      "direction": "審核工作台資料實接",
+      "content": "把 workbench filter、history drawer、附件掃描狀態與角色可見性接到真實 API，加入批次作業進度與失敗重試。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋品質自動優化",
+      "content": "用 v48 daily/weekly analytics 自動產生 synonym 建議、zero-result candidate task、facet 排序與搜尋回歸測試。"
+    },
+    {
+      "priority": 4,
+      "direction": "權威來源引用完整度",
+      "content": "候選合併後加入引用完整度 scoring、權利聲明差異比對、人工 approve metadata-only 發布與來源異動監控。"
+    },
+    {
+      "priority": 5,
+      "direction": "模型治理匯出",
+      "content": "完成模型治理 Markdown/PDF 匯出、簽核章節、lineage DAG 視覺化與 release blocker 自動摘要。"
+    },
+    {
+      "priority": 6,
+      "direction": "前台視覺與效能",
+      "content": "把首頁、音樂、文化、族語頁面統一成正式設計系統，補 Core Web Vitals 實測、OG 截圖驗收與 sitemap ping。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "VPS v47 preflight: UI actions, transaction tests, query log wiring, source adapters, model governance, site polish",
+  "checks": [
+    "validate_tts_stt_music_v44.py",
+    "validate_tts_stt_music_v45.py",
+    "validate_tts_stt_music_v46.py",
+    "validate_tts_stt_music_v47.py",
+    "validate_openapi_contract.py",
+    "validate_site_polish_v47.py"
+  ],
+  "optional_database_checks": [
+    "IMPORT_SQL=1 applies 0043 migration",
+    "RUN_DB_TESTS=1 runs scripts/run_mysql_transaction_integration_tests_v47.py"
+  ],
+  "expected_openapi_min_paths": 425,
+  "safe_defaults": {
+    "authority_live_fetch_default": false,
+    "public_release_allowed": false,
+    "bulk_approve_allowed": false
+  }
+}

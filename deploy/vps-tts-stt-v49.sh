@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT_DIR"
+echo "== Pinuyumayan TTS/STT Music v49 preflight =="
+python3 scripts/validate_tts_stt_music_v44.py
+python3 scripts/validate_tts_stt_music_v45.py
+python3 scripts/validate_tts_stt_music_v46.py
+python3 scripts/validate_tts_stt_music_v47.py
+python3 scripts/validate_tts_stt_music_v48.py
+python3 scripts/validate_tts_stt_music_v49.py
+python3 scripts/validate_site_polish_v47.py
+python3 scripts/validate_site_visual_completion_v48.py
+python3 scripts/validate_site_design_performance_v49.py
+python3 scripts/validate_openapi_contract.py
+python3 scripts/build_vps_release_validation_report_v49.py
+if [[ "${IMPORT_SQL:-0}" == "1" ]]; then
+  if [[ -z "${DATABASE_URL:-}" ]]; then
+    echo "IMPORT_SQL=1 but DATABASE_URL is missing" >&2
+    exit 1
+  fi
+  echo "Importing v49 migration and seed SQL into MySQL via DATABASE_URL"
+  mysql "$DATABASE_URL" < database/migrations/0045_tts_stt_music_v49.sql
+  for f in database/seeds/045_*.sql; do
+    mysql "$DATABASE_URL" < "$f"
+  done
+else
+  echo "SQL import skipped. Set IMPORT_SQL=1 and DATABASE_URL to apply 0045 migration/seeds."
+fi
+if [[ "${RUN_DB_TESTS:-0}" == "1" ]]; then
+  python3 scripts/run_mysql_transaction_integration_tests_v47.py
+  python3 scripts/run_mysql_transaction_integration_tests_v49.py
+  python3 scripts/build_vps_release_validation_report_v49.py
+fi
+if [[ "${RUN_BACKUP_RESTORE_DRILL:-0}" == "1" ]]; then
+  python3 scripts/run_mysql_transaction_integration_tests_v49.py
+else
+  echo "Backup/restore drill skipped. Set RUN_BACKUP_RESTORE_DRILL=1 on VPS staging to record it."
+fi
+echo "v49 preflight OK"

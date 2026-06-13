@@ -1,0 +1,37 @@
+{
+  "version": "v64",
+  "generated_at": "2026-06-13T21:10:00+08:00",
+  "title": "下一次完善＆開發＆升級＆優化方案：v64",
+  "items": [
+    {
+      "priority": 1,
+      "direction": "release certificate 實機 final seal",
+      "content": "把 v63 final certificate、DNS/Cloudflare、restore/rollback、30 分鐘觀測與三方簽核在真實 VPS 寫入不可變 ledger，產生 final sealed PDF/JSON。"
+    },
+    {
+      "priority": 2,
+      "direction": "dataset v58.0 immutable release 真正輸出",
+      "content": "完成 20 筆真實授權、speaker consent、alignment、母語者審查後輸出 train/dev/test、checksum、manifest、blocked report、model card。"
+    },
+    {
+      "priority": 3,
+      "direction": "搜尋改善閉環落地",
+      "content": "把週報 metrics 回填成異常詞 SLA、人工改善任務、rollback drill 與回歸測試，形成每週搜尋品質節奏。"
+    },
+    {
+      "priority": 4,
+      "direction": "metadata 公開稽核完成",
+      "content": "公開通過 rights review 的 metadata-only 卡片，封存 citation 截圖、sitemap/OG ping、source drift 與撤稿演練證據。"
+    },
+    {
+      "priority": 5,
+      "direction": "治理下載審計報告",
+      "content": "完成 RBAC、水印、異常下載告警、ack/close、audit export signoff 與週報審計報告。"
+    },
+    {
+      "priority": 6,
+      "direction": "營運通知封板節奏",
+      "content": "Email、LINE、後台通知實送後納入 ack、升級、關閉、回顧與每週改善任務，形成可稽核營運節奏。"
+    }
+  ]
+}

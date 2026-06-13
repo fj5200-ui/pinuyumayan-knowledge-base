@@ -1,0 +1,131 @@
+{
+  "version": "v50",
+  "generated_at": "2026-06-13T11:20:00+08:00",
+  "title": "模型治理交付：PDF、簽核章、版本比較與 blocker 關閉 v50",
+  "source_version": "v49",
+  "summary": {
+    "pdf_renderer_contract_ready": true,
+    "signoff_stamp_required": true,
+    "lineage_graph_ready": true,
+    "version_diff_ready": true,
+    "release_blocker_closure_supported": true,
+    "blocked_assets": 80,
+    "public_release_allowed": false
+  },
+  "pdf_renderer": {
+    "input_markdown": "docs/model_governance_report_v49.generated.md",
+    "output_pdf": "exports/model_governance_report_v50.pdf",
+    "status": "contract_only_requires_renderer_on_vps",
+    "watermark": "BLOCKED - evidence incomplete"
+  },
+  "signoff_stamp": {
+    "required_roles": [
+      "speech_review_lead",
+      "legal_reviewer",
+      "native_speaker_reviewer",
+      "model_owner"
+    ],
+    "minimum_signoffs": 4,
+    "status": "blocked_until_evidence_store_passes"
+  },
+  "lineage_graph": {
+    "nodes": [
+      {
+        "id": "preview_assets_v43",
+        "type": "source",
+        "blocked": 80
+      },
+      {
+        "id": "authorization_v44",
+        "type": "gate",
+        "blocked": 80
+      },
+      {
+        "id": "workflow_v45",
+        "type": "review",
+        "blocked": 80
+      },
+      {
+        "id": "registry_v46",
+        "type": "experiment_registry",
+        "blocked": 80
+      },
+      {
+        "id": "governance_v50",
+        "type": "delivery",
+        "blocked": 80
+      }
+    ],
+    "edges": [
+      [
+        "preview_assets_v43",
+        "authorization_v44"
+      ],
+      [
+        "authorization_v44",
+        "workflow_v45"
+      ],
+      [
+        "workflow_v45",
+        "registry_v46"
+      ],
+      [
+        "registry_v46",
+        "governance_v50"
+      ]
+    ]
+  },
+  "version_diffs": [
+    {
+      "diff_id": "model-diff-v50-001",
+      "from_version": "v49",
+      "to_version": "v50",
+      "change": "add_pdf_renderer_contract_and_signoff_stamp",
+      "risk": "low"
+    },
+    {
+      "diff_id": "model-diff-v50-002",
+      "from_version": "speech-exp-v46-001",
+      "to_version": "speech-exp-v46-002",
+      "change": "no_training_data_change_all_blocked",
+      "risk": "none"
+    }
+  ],
+  "release_blocker_closure": [
+    {
+      "blocker_id": "blocker-v49-001",
+      "reason": "license_missing",
+      "closure_status": "not_closable_until_evidence_complete",
+      "affected_assets": 80
+    },
+    {
+      "blocker_id": "blocker-v49-002",
+      "reason": "speaker_consent_missing",
+      "closure_status": "not_closable_until_evidence_complete",
+      "affected_assets": 80
+    },
+    {
+      "blocker_id": "blocker-v49-003",
+      "reason": "alignment_not_verified",
+      "closure_status": "not_closable_until_evidence_complete",
+      "affected_assets": 80
+    },
+    {
+      "blocker_id": "blocker-v49-004",
+      "reason": "native_speaker_review_missing",
+      "closure_status": "not_closable_until_evidence_complete",
+      "affected_assets": 80
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/speech-training/v50/governance-delivery",
+    "render_pdf": "/api/internal/speech-training/v50/render-governance-pdf",
+    "record_version_diff": "/api/internal/speech-training/v50/record-version-diff",
+    "close_blocker": "/api/internal/speech-training/v50/close-release-blocker"
+  },
+  "tables": [
+    "speech_model_governance_delivery_exports_v50",
+    "speech_model_version_diffs_v50",
+    "speech_model_release_blocker_closures_v50"
+  ]
+}

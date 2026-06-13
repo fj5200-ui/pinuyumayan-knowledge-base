@@ -1,0 +1,98 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "模型治理匯出與 release blocker 摘要 v49",
+  "source_version": "v48",
+  "summary": {
+    "markdown_export_ready": true,
+    "pdf_export_contract_ready": true,
+    "lineage_dag_nodes": 0,
+    "blocked_assets": 80,
+    "public_release_allowed": false,
+    "model_card_signoff_required": true
+  },
+  "export_formats": [
+    {
+      "format": "markdown",
+      "path": "docs/model_governance_report_v49.generated.md",
+      "status": "generated"
+    },
+    {
+      "format": "pdf",
+      "path": "exports/model_governance_report_v49.pdf",
+      "status": "contract_only_requires_pdf_renderer"
+    }
+  ],
+  "signoff_sections": [
+    "dataset_lineage",
+    "license_consent_alignment",
+    "evaluation_metrics",
+    "release_blockers",
+    "security_privacy",
+    "reviewer_approvals"
+  ],
+  "lineage_dag": [
+    {
+      "experiment_id": "speech-exp-v46-001",
+      "lineage_id": "dataset-lineage-v46-001",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-002",
+      "lineage_id": "dataset-lineage-v46-002",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    },
+    {
+      "experiment_id": "speech-exp-v46-003",
+      "lineage_id": "dataset-lineage-v46-003",
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "blocked": 80
+    }
+  ],
+  "release_blocker_summary": [
+    {
+      "blocker_id": "blocker-v49-001",
+      "reason": "license_missing",
+      "affected_assets": 80,
+      "auto_unblock_allowed": false,
+      "required_action": "human_review_and_evidence"
+    },
+    {
+      "blocker_id": "blocker-v49-002",
+      "reason": "speaker_consent_missing",
+      "affected_assets": 80,
+      "auto_unblock_allowed": false,
+      "required_action": "human_review_and_evidence"
+    },
+    {
+      "blocker_id": "blocker-v49-003",
+      "reason": "alignment_not_verified",
+      "affected_assets": 80,
+      "auto_unblock_allowed": false,
+      "required_action": "human_review_and_evidence"
+    },
+    {
+      "blocker_id": "blocker-v49-004",
+      "reason": "native_speaker_review_missing",
+      "affected_assets": 80,
+      "auto_unblock_allowed": false,
+      "required_action": "human_review_and_evidence"
+    }
+  ],
+  "endpoints": {
+    "dashboard": "/api/ops/speech-training/v49/governance-export",
+    "export": "/api/internal/speech-training/v49/export-model-governance"
+  },
+  "tables": [
+    "speech_model_governance_exports_v49",
+    "speech_model_release_blocker_summaries_v49"
+  ]
+}

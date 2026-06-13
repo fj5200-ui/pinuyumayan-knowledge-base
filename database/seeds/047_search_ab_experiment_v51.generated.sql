@@ -1,0 +1,4 @@
+-- v51 search A/B seed
+INSERT IGNORE INTO music_search_ab_metrics_v51 (metric_id, test_id, variant, metric_name, metric_value, metric_json) VALUES ('metric-search-ab-v51-001', 'search-ab-v51-001', 'pending', 'zero_result_recovery_rate', 0, JSON_OBJECT('status','ready_pending_real_traffic'));
+INSERT IGNORE INTO music_search_ab_metrics_v51 (metric_id, test_id, variant, metric_name, metric_value, metric_json) VALUES ('metric-search-ab-v51-002', 'search-ab-v51-002', 'pending', 'click_through_rate', 0, JSON_OBJECT('status','ready_pending_real_traffic'));
+INSERT IGNORE INTO music_search_ab_metrics_v51 (metric_id, test_id, variant, metric_name, metric_value, metric_json) VALUES ('metric-search-ab-v51-003', 'search-ab-v51-003', 'pending', 'successful_refinement_rate', 0, JSON_OBJECT('status','ready_pending_real_traffic'));

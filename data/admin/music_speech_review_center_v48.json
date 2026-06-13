@@ -1,0 +1,49 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "Music Speech Review Center v48",
+  "cards": [
+    {
+      "id": "vps-db-validation",
+      "title": "VPS DB 驗收",
+      "endpoint": "/api/ops/vps/v48/db-validation-report",
+      "status": "pending_vps_live_run"
+    },
+    {
+      "id": "review-workbench",
+      "title": "審核工作台",
+      "endpoint": "/api/admin/music-speech/v48/workbench",
+      "status": "actionable_contract"
+    },
+    {
+      "id": "search-analytics",
+      "title": "搜尋分析",
+      "endpoint": "/api/ops/search/music/v48/analytics-dashboard",
+      "status": "dashboard_ready"
+    },
+    {
+      "id": "authority-merge",
+      "title": "權威候選合併",
+      "endpoint": "/api/ops/authority-sources/v48/candidate-merge-dashboard",
+      "status": "manual_review_required"
+    },
+    {
+      "id": "model-visualization",
+      "title": "模型治理可視化",
+      "endpoint": "/api/ops/speech-training/v48/model-visualization",
+      "status": "public_release_blocked"
+    },
+    {
+      "id": "site-visual",
+      "title": "主站視覺驗收",
+      "endpoint": "/api/ops/site/v48/visual-completion",
+      "status": "contract_ready"
+    }
+  ],
+  "safety_defaults": {
+    "bulk_approve_allowed": false,
+    "public_release_allowed": false,
+    "metadata_only_guard": true
+  },
+  "next_plan_endpoint": "/api/ops/next-upgrade-plan/v49"
+}

@@ -1,0 +1,50 @@
+{
+  "version": "v44",
+  "title": "Music + Speech Review Center",
+  "component": "webapp/components/MusicSpeechReviewCenterV44.tsx",
+  "panels": [
+    {
+      "key": "speech_authorization",
+      "title": "Speech review",
+      "endpoint": "/api/ops/speech-training/v44/authorized-review"
+    },
+    {
+      "key": "dataset_export",
+      "title": "TTS/STT export contract",
+      "endpoint": "/api/ops/speech-training/v44/export-contract"
+    },
+    {
+      "key": "music_candidates",
+      "title": "Music candidate review",
+      "endpoint": "/api/admin/music-speech/v44/review-center"
+    },
+    {
+      "key": "authority_worker",
+      "title": "Authority source worker",
+      "endpoint": "/api/ops/authority-sources/v44/worker-contract"
+    },
+    {
+      "key": "evaluation_reports",
+      "title": "Evaluation reports",
+      "endpoint": "/api/ops/speech-training/v43/evaluation-dashboard"
+    },
+    {
+      "key": "release_gate",
+      "title": "Release gate",
+      "endpoint": "/api/ops/speech-training/v43/release-gate"
+    }
+  ],
+  "actions": [
+    "approve_license_evidence",
+    "reject_license_evidence",
+    "mark_consent_verified",
+    "mark_alignment_verified",
+    "approve_music_candidate_metadata",
+    "reject_music_candidate_metadata",
+    "request_re_evaluation"
+  ],
+  "safety_defaults": {
+    "public_release_requires_all_gates": true,
+    "bulk_approve_disabled": true
+  }
+}

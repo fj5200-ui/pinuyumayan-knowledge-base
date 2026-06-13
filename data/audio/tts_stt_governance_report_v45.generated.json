@@ -1,0 +1,17 @@
+{
+  "version": "v45",
+  "asset_count": 80,
+  "unique_speaker_codes": 4,
+  "approved_for_export": 0,
+  "leakage_found": false,
+  "speaker_overlap_count": 0,
+  "asset_overlap_count": 0,
+  "duplicate_transcript_count": 0,
+  "public_release_allowed": false,
+  "thresholds": {
+    "tts_mos_min": 4.0,
+    "stt_wer_max": 0.25,
+    "stt_cer_max": 0.15
+  },
+  "recommendation": "do_not_release_until_license_consent_alignment_pass"
+}

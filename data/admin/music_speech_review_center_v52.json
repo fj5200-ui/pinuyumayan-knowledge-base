@@ -1,0 +1,72 @@
+{
+  "version": "v52",
+  "generated_at": "2026-06-13T12:00:00+08:00",
+  "title": "Music / Speech v52 上線治理中心",
+  "summary": {
+    "go_live_steps": 6,
+    "evidence_chain_assets": 80,
+    "search_ab_tests": 3,
+    "authority_metadata_cards": 3,
+    "model_blocked_assets": 80,
+    "site_routes": 7,
+    "public_release_allowed": false
+  },
+  "cards": [
+    {
+      "card_id": "go-live-execution",
+      "title": "實機上線執行",
+      "status": "ready_for_vps_execution",
+      "endpoint": "/api/ops/vps/v52/go-live-execution"
+    },
+    {
+      "card_id": "evidence-chain",
+      "title": "審核證據鏈開通",
+      "status": "blocked_until_real_uploads",
+      "endpoint": "/api/admin/speech-training/v52/evidence-chain"
+    },
+    {
+      "card_id": "ab-convergence",
+      "title": "搜尋 A/B 收斂",
+      "status": "pending_real_traffic",
+      "endpoint": "/api/ops/search/music/v52/ab-convergence"
+    },
+    {
+      "card_id": "metadata-release",
+      "title": "權威 metadata 發布",
+      "status": "blocked_until_rights_approval",
+      "endpoint": "/api/ops/authority-sources/v52/public-release"
+    },
+    {
+      "card_id": "model-signoff",
+      "title": "模型治理簽核",
+      "status": "blocked_until_evidence_chain",
+      "endpoint": "/api/ops/speech-training/v52/model-signoff"
+    },
+    {
+      "card_id": "brand-monitoring",
+      "title": "品牌效能監控",
+      "status": "ready_pending_browser_run",
+      "endpoint": "/api/ops/site/v52/performance-monitoring"
+    }
+  ],
+  "tables": [
+    "production_go_live_steps_v52",
+    "production_go_live_observations_v52",
+    "production_release_seals_v52",
+    "audit_evidence_slots_v52",
+    "audit_evidence_scans_v52",
+    "audit_training_batches_v52",
+    "music_search_ab_convergence_metrics_v52",
+    "music_search_variant_decisions_v52",
+    "music_search_variant_rollouts_v52",
+    "authority_metadata_release_approvals_v52",
+    "authority_metadata_index_jobs_v52",
+    "authority_metadata_takedowns_v52",
+    "speech_model_watermarked_pdfs_v52",
+    "speech_model_lineage_graphs_v52",
+    "speech_model_release_blockers_v52",
+    "site_lighthouse_cwv_runs_v52",
+    "site_browser_screenshots_v52",
+    "site_og_sitemap_checks_v52"
+  ]
+}

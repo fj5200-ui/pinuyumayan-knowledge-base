@@ -1,0 +1,46 @@
+{
+  "version": "v44",
+  "generated_at": "2026-06-12T14:40:00+08:00",
+  "script": "scripts/export_tts_stt_dataset_v44.py",
+  "inputs": [
+    "data/audio/speech_asset_authorization_v44.json"
+  ],
+  "outputs": [
+    "data/audio/exports/v44/train.jsonl",
+    "data/audio/exports/v44/dev.jsonl",
+    "data/audio/exports/v44/test.jsonl",
+    "data/audio/exports/v44/blocked_candidates.jsonl",
+    "data/audio/exports/v44/model_card.generated.json",
+    "data/audio/exports/v44/model_card.generated.md"
+  ],
+  "split_policy": {
+    "train": 0.8,
+    "dev": 0.1,
+    "test": 0.1
+  },
+  "export_gate": {
+    "requires_review_status": [
+      "approved_for_experiment",
+      "approved_for_public_training"
+    ],
+    "requires_license_status": [
+      "approved_for_training",
+      "approved_public_domain",
+      "approved_archive_permission"
+    ],
+    "requires_speaker_consent_status": [
+      "approved",
+      "archive_permission_documented"
+    ],
+    "requires_alignment_status": [
+      "aligned_verified"
+    ],
+    "public_release_default": false
+  },
+  "privacy_and_rights": {
+    "no_audio_download": true,
+    "jsonl_contains_remote_url_only": true,
+    "no_youtube_audio": true,
+    "no_song_or_lyrics_training_without_explicit_license": true
+  }
+}

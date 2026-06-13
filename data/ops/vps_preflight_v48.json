@@ -1,0 +1,29 @@
+{
+  "version": "v48",
+  "generated_at": "2026-06-12T22:48:00+08:00",
+  "title": "VPS preflight v48",
+  "script": "deploy/vps-tts-stt-v48.sh",
+  "checks": [
+    "validate v44",
+    "validate v45",
+    "validate v46",
+    "validate v47",
+    "validate v48",
+    "site visual completion v48",
+    "openapi contract",
+    "optional SQL import 0044",
+    "optional DB tests/report"
+  ],
+  "import_sql": {
+    "env": "IMPORT_SQL=1",
+    "requires": "DATABASE_URL",
+    "migration": "database/migrations/0044_tts_stt_music_v48.sql",
+    "seeds_glob": "database/seeds/044_*.sql"
+  },
+  "db_tests": {
+    "env": "RUN_DB_TESTS=1",
+    "script": "scripts/build_vps_db_validation_report_v48.py",
+    "output": "data/database/vps_db_validation_report_v48.generated.json"
+  },
+  "success_message": "v48 preflight OK"
+}

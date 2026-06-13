@@ -1,0 +1,55 @@
+{
+  "version": "v45",
+  "generated_at": "2026-06-12T15:45:00+08:00",
+  "script": "deploy/vps-tts-stt-v45.sh",
+  "checks": [
+    {
+      "key": "migration_0041_exists",
+      "kind": "file",
+      "target": "database/migrations/0041_tts_stt_music_v45.sql"
+    },
+    {
+      "key": "speech_review_seed",
+      "kind": "script",
+      "target": "scripts/build_speech_review_workflow_seed_v45.py"
+    },
+    {
+      "key": "music_search_quality",
+      "kind": "script",
+      "target": "scripts/build_music_search_quality_v45.py"
+    },
+    {
+      "key": "authority_worker_dry_run",
+      "kind": "script",
+      "target": "scripts/authority_source_fetch_worker_v45.py --dry-run"
+    },
+    {
+      "key": "tts_stt_governance",
+      "kind": "script",
+      "target": "scripts/build_tts_stt_governance_report_v45.py"
+    },
+    {
+      "key": "seo_sitemap",
+      "kind": "script",
+      "target": "scripts/build_site_seo_artifacts_v45.py"
+    },
+    {
+      "key": "openapi_contract",
+      "kind": "script",
+      "target": "scripts/validate_openapi_contract.py"
+    },
+    {
+      "key": "v45_validator",
+      "kind": "script",
+      "target": "scripts/validate_tts_stt_music_v45.py"
+    }
+  ],
+  "import_sql_order": [
+    "0041_tts_stt_music_v45.sql",
+    "041_speech_review_workflow_v45.generated.sql",
+    "041_music_search_quality_v45.generated.sql",
+    "041_authority_source_worker_v45.generated.sql",
+    "041_tts_stt_governance_v45.generated.sql",
+    "041_site_seo_v45.generated.sql"
+  ]
+}

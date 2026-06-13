@@ -1,0 +1,7 @@
+-- v46 search observability fixture seed
+INSERT IGNORE INTO music_search_query_logs_v46 (log_id, query_text, normalized_query, result_count, latency_ms, mode, suggestions_json) VALUES ('music-query-sample-v46-001', '卑南族 歌謠', '卑南族 歌謠', 2, 42, 'mysql_fulltext_expected', CAST('[]' AS JSON));
+INSERT IGNORE INTO music_search_query_logs_v46 (log_id, query_text, normalized_query, result_count, latency_ms, mode, suggestions_json) VALUES ('music-query-sample-v46-002', 'Puyuma music', 'puyuma music', 2, 49, 'mysql_fulltext_expected', CAST('[]' AS JSON));
+INSERT IGNORE INTO music_search_query_logs_v46 (log_id, query_text, normalized_query, result_count, latency_ms, mode, suggestions_json) VALUES ('music-query-sample-v46-003', 'Samingad', 'samingad', 2, 56, 'mysql_fulltext_expected', CAST('[]' AS JSON));
+INSERT IGNORE INTO music_search_query_logs_v46 (log_id, query_text, normalized_query, result_count, latency_ms, mode, suggestions_json) VALUES ('music-query-sample-v46-004', '南王 童謠', '南王 童謠', 2, 63, 'mysql_fulltext_expected', CAST('[]' AS JSON));
+INSERT IGNORE INTO music_search_query_logs_v46 (log_id, query_text, normalized_query, result_count, latency_ms, mode, suggestions_json) VALUES ('music-query-sample-v46-005', '不存在查詢示例', '不存在查詢示例', 0, 70, 'zero_result_expected', CAST('[]' AS JSON));
+INSERT IGNORE INTO music_search_zero_result_events_v46 (event_id, query_text, normalized_query, suggestions_json) VALUES ('music-query-sample-v46-005-zero', '不存在查詢示例', '不存在查詢示例', CAST('["卑南族 歌謠", "Puyuma music"]' AS JSON));

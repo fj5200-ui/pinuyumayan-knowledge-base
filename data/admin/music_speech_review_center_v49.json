@@ -1,0 +1,72 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "Music Speech Review Center v49",
+  "summary": {
+    "workbench_items": 80,
+    "deployment_checks": 10,
+    "search_suggestions": 3,
+    "authority_scores": 3,
+    "model_blocked_assets": 80,
+    "site_routes": 7,
+    "public_release_allowed": false
+  },
+  "cards": [
+    {
+      "card_id": "vps-release",
+      "title": "VPS 上線收斂",
+      "status": "requires_real_vps_run",
+      "endpoint": "/api/ops/vps/v49/release-validation-report"
+    },
+    {
+      "card_id": "review-workbench",
+      "title": "審核工作台資料實接",
+      "status": "api_contract_ready",
+      "endpoint": "/api/admin/music-speech/v49/live-workbench"
+    },
+    {
+      "card_id": "search-optimization",
+      "title": "搜尋品質自動優化",
+      "status": "manual_review_required",
+      "endpoint": "/api/ops/search/music/v49/auto-optimization"
+    },
+    {
+      "card_id": "authority-citation",
+      "title": "權威來源引用完整度",
+      "status": "metadata_only_pending_review",
+      "endpoint": "/api/ops/authority-sources/v49/citation-completeness"
+    },
+    {
+      "card_id": "model-governance",
+      "title": "模型治理匯出",
+      "status": "blocked_until_evidence_passes",
+      "endpoint": "/api/ops/speech-training/v49/governance-export"
+    },
+    {
+      "card_id": "site-performance",
+      "title": "主站視覺與效能",
+      "status": "post_deploy_validation_ready",
+      "endpoint": "/api/ops/site/v49/design-system-performance"
+    }
+  ],
+  "tables": [
+    "vps_release_validation_runs_v49",
+    "vps_release_validation_checks_v49",
+    "vps_backup_restore_drills_v49",
+    "speech_review_workbench_live_views_v49",
+    "speech_review_workbench_live_actions_v49",
+    "speech_review_attachment_scan_jobs_v49",
+    "speech_review_batch_progress_v49",
+    "music_search_synonym_suggestions_v49",
+    "music_search_zero_result_tasks_v49",
+    "music_search_regression_runs_v49",
+    "authority_citation_completeness_scores_v49",
+    "authority_rights_statement_diffs_v49",
+    "authority_source_change_events_v49",
+    "speech_model_governance_exports_v49",
+    "speech_model_release_blocker_summaries_v49",
+    "site_design_system_tokens_v49",
+    "site_performance_validation_runs_v49",
+    "site_og_screenshot_validations_v49"
+  ]
+}

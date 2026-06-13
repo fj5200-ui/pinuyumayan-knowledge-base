@@ -1,0 +1,34 @@
+{
+  "version": "v49",
+  "generated_at": "2026-06-12T23:05:00+08:00",
+  "title": "VPS TTS/STT Music v49 preflight",
+  "steps": [
+    "validate v44-v49 contracts",
+    "validate site v47-v49",
+    "validate OpenAPI",
+    "build release validation report",
+    "optional SQL import 0045",
+    "optional DB tests",
+    "optional backup restore drill"
+  ],
+  "requires_env_when_import_sql": [
+    "DATABASE_URL"
+  ],
+  "optional_env": [
+    "RUN_DB_TESTS",
+    "RUN_BACKUP_RESTORE_DRILL",
+    "AUTHORITY_FETCH_LIVE"
+  ],
+  "safe_defaults": {
+    "IMPORT_SQL": "0",
+    "RUN_DB_TESTS": "0",
+    "RUN_BACKUP_RESTORE_DRILL": "0",
+    "AUTHORITY_FETCH_LIVE": "0"
+  },
+  "release_allowed_without_real_vps_run": false,
+  "artifacts": [
+    "data/database/vps_release_validation_report_v49.json",
+    "data/database/vps_release_validation_report_v49.generated.json",
+    "docs/model_governance_report_v49.generated.md"
+  ]
+}

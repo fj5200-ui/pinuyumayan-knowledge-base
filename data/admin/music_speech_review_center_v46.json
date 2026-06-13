@@ -1,0 +1,59 @@
+{
+  "version": "v46",
+  "title": "Music + Speech Production Control Center v46",
+  "component": "webapp/components/MusicSpeechReviewCenterV46.tsx",
+  "panels": [
+    {
+      "key": "reviewer_queue",
+      "title": "Reviewer queue / SLA / RBAC",
+      "endpoint": "/api/ops/speech-training/v46/reviewer-queue"
+    },
+    {
+      "key": "transaction_contract",
+      "title": "MySQL transaction write contract",
+      "endpoint": "/api/ops/speech-training/v46/reviewer-queue"
+    },
+    {
+      "key": "search_observability",
+      "title": "Music search observability",
+      "endpoint": "/api/ops/search/music/v46/observability-dashboard"
+    },
+    {
+      "key": "authority_governance",
+      "title": "Authority source governance",
+      "endpoint": "/api/ops/authority-sources/v46/fetch-governance"
+    },
+    {
+      "key": "experiment_registry",
+      "title": "Model experiment registry",
+      "endpoint": "/api/ops/speech-training/v46/experiment-registry"
+    },
+    {
+      "key": "site_experience",
+      "title": "Main site music experience",
+      "endpoint": "/api/ops/site/v46/experience-contract"
+    },
+    {
+      "key": "vps_preflight",
+      "title": "VPS v46 preflight",
+      "endpoint": "/api/ops/vps/v46/preflight-contract"
+    }
+  ],
+  "actions": [
+    "assign_reviewer",
+    "upload_evidence",
+    "transactional_review_decision",
+    "transactional_alignment_import",
+    "log_search_query",
+    "retry_authority_worker",
+    "merge_candidates",
+    "model_experiment_decision",
+    "run_v46_preflight"
+  ],
+  "safety_defaults": {
+    "hmac_required_for_write_actions": true,
+    "bulk_approve_disabled": true,
+    "db_transaction_required_for_production": true,
+    "public_release_requires_all_gates": true
+  }
+}

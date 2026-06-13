@@ -1,0 +1,1 @@
+INSERT IGNORE INTO production_cutover_runs_v50 (run_id, deployment_mode, status, traffic_weight, release_allowed, run_json) VALUES ('cutover-v50-dry-run', 'blue_green', 'pending_vps_run', 0, FALSE, CAST('{"dry_run":true}' AS JSON));

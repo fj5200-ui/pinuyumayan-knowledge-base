@@ -1,0 +1,73 @@
+{
+  "version": "v53",
+  "generated_at": "2026-06-13T14:00:00+08:00",
+  "title": "權威 metadata 公開發布與撤稿測試",
+  "source_version": "v52",
+  "summary": {
+    "publication_cards": 3,
+    "metadata_only": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "indexed_public_cards": 0,
+    "requires_rights_approval": true,
+    "takedown_flow_ready": true
+  },
+  "publication_cards": [
+    {
+      "publication_id": "authority-public-card-v53-001",
+      "title": "南王卑南語歌謠 metadata card",
+      "route_path": "/music/metadata/authority-v53-001",
+      "rights_review_status": "pending_real_rights_approval",
+      "citation_score": 0.0,
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "index_status": "draft_hidden_until_rights_approval",
+      "source_drift_monitoring": true,
+      "takedown_ready": true
+    },
+    {
+      "publication_id": "authority-public-card-v53-002",
+      "title": "卑南族音樂人物 metadata card",
+      "route_path": "/music/metadata/authority-v53-002",
+      "rights_review_status": "pending_real_rights_approval",
+      "citation_score": 0.0,
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "index_status": "draft_hidden_until_rights_approval",
+      "source_drift_monitoring": true,
+      "takedown_ready": true
+    },
+    {
+      "publication_id": "authority-public-card-v53-003",
+      "title": "金曲獎卑南族相關 metadata card",
+      "route_path": "/music/metadata/authority-v53-003",
+      "rights_review_status": "pending_real_rights_approval",
+      "citation_score": 0.0,
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "index_status": "draft_hidden_until_rights_approval",
+      "source_drift_monitoring": true,
+      "takedown_ready": true
+    }
+  ],
+  "citation_policy": {
+    "required_fields": [
+      "source_name",
+      "source_url_or_catalog_id",
+      "retrieved_at",
+      "rights_statement",
+      "metadata_only_notice"
+    ],
+    "show_no_audio_no_lyrics_notice": true
+  },
+  "api_contracts": [
+    "/api/public/music/metadata/v53/cards",
+    "/api/ops/authority-sources/v53/publication",
+    "/api/internal/authority-sources/v53/publish-metadata-card",
+    "/api/internal/authority-sources/v53/record-source-change",
+    "/api/internal/authority-sources/v53/test-takedown-flow"
+  ]
+}

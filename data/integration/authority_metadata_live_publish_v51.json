@@ -1,0 +1,96 @@
+{
+  "version": "v51",
+  "generated_at": "2026-06-13T11:40:00+08:00",
+  "title": "權威 metadata 上架與主站卡片發布 v51",
+  "source_version": "v50",
+  "summary": {
+    "metadata_cards": 3,
+    "metadata_only": true,
+    "citation_required": true,
+    "source_change_notification_required": true,
+    "takedown_button_required": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "auto_publish_allowed": false
+  },
+  "publication_cards": [
+    {
+      "publication_id": "authority-live-v51-001",
+      "source_publication_id": "authority-pub-v50-001",
+      "route_path": "/music/song/authority-live-v51-001",
+      "citation_score": 83,
+      "rights_status": "pending_final_approval",
+      "publish_status": "blocked_until_rights_approved",
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-live-v51-002",
+      "source_publication_id": "authority-pub-v50-002",
+      "route_path": "/music/song/authority-live-v51-002",
+      "citation_score": 86,
+      "rights_status": "needs_source_fix",
+      "publish_status": "blocked_until_source_fix",
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    },
+    {
+      "publication_id": "authority-live-v51-003",
+      "source_publication_id": "authority-pub-v50-003",
+      "route_path": "/music/song/authority-live-v51-003",
+      "citation_score": 89,
+      "rights_status": "pending_final_approval",
+      "publish_status": "blocked_until_rights_approved",
+      "audio_allowed": false,
+      "lyrics_allowed": false
+    }
+  ],
+  "citation_policy": {
+    "display_fields": [
+      "title",
+      "institution",
+      "source_url",
+      "accessed_at",
+      "rights_statement",
+      "candidate_id"
+    ],
+    "hide_fields_when_missing": false,
+    "fail_publish_when_citation_incomplete": true
+  },
+  "search_index_policy": {
+    "index_metadata_only": true,
+    "index_audio_transcript": false,
+    "index_full_lyrics": false,
+    "requires_rights_approval": true
+  },
+  "api_contracts": {
+    "publish_metadata_card": {
+      "method": "POST",
+      "path": "/api/internal/authority-sources/v51/publish-metadata-card",
+      "requires": [
+        "actor_id",
+        "publication_id",
+        "citation_complete",
+        "rights_approved"
+      ]
+    },
+    "record_source_change_notice": {
+      "method": "POST",
+      "path": "/api/internal/authority-sources/v51/record-source-change-notice",
+      "requires": [
+        "source_id",
+        "event_type",
+        "detected_at"
+      ]
+    },
+    "hide_metadata_card": {
+      "method": "POST",
+      "path": "/api/internal/authority-sources/v51/hide-metadata-card",
+      "requires": [
+        "actor_id",
+        "publication_id",
+        "reason"
+      ]
+    }
+  }
+}

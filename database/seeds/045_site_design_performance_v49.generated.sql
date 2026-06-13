@@ -1,0 +1,6 @@
+-- generated v49 seed
+INSERT IGNORE INTO site_design_system_tokens_v49 (token_id, token_group, token_name, token_value, token_json) VALUES ('site-token-v49-primary', 'brand', 'primary', 'pinuyumayan-red', CAST('{"token": "primary", "value": "pinuyumayan-red"}' AS JSON));
+INSERT IGNORE INTO site_design_system_tokens_v49 (token_id, token_group, token_name, token_value, token_json) VALUES ('site-token-v49-accent_yellow', 'brand', 'accent_yellow', 'ritual-yellow', CAST('{"token": "accent_yellow", "value": "ritual-yellow"}' AS JSON));
+INSERT IGNORE INTO site_design_system_tokens_v49 (token_id, token_group, token_name, token_value, token_json) VALUES ('site-token-v49-accent_green', 'brand', 'accent_green', 'mountain-green', CAST('{"token": "accent_green", "value": "mountain-green"}' AS JSON));
+INSERT IGNORE INTO site_design_system_tokens_v49 (token_id, token_group, token_name, token_value, token_json) VALUES ('site-token-v49-surface_day', 'brand', 'surface_day', 'warm-white', CAST('{"token": "surface_day", "value": "warm-white"}' AS JSON));
+INSERT IGNORE INTO site_design_system_tokens_v49 (token_id, token_group, token_name, token_value, token_json) VALUES ('site-token-v49-surface_night', 'brand', 'surface_night', 'obsidian', CAST('{"token": "surface_night", "value": "obsidian"}' AS JSON));

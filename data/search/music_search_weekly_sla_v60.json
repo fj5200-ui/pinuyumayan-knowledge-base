@@ -1,0 +1,73 @@
+{
+  "version": "v60",
+  "generated_at": "2026-06-13T19:20:00+08:00",
+  "title": "搜尋政策週報與 SLA",
+  "policy_id": "music-search-production-policy-v60",
+  "summary": {
+    "features": 3,
+    "weekly_quality_report_ready": true,
+    "human_sla_enabled": true,
+    "rollback_drill_ready": true,
+    "regression_tests_ready": true,
+    "live_metrics_attached": false
+  },
+  "features": [
+    {
+      "feature_key": "learning_to_rank",
+      "policy_state": "production_policy_enabled_after_v58_metrics_or_rollback",
+      "weekly_sla_hours": 24,
+      "regression_required": true,
+      "rollback_drill_required": true
+    },
+    {
+      "feature_key": "typo_tolerance",
+      "policy_state": "production_policy_enabled_after_v58_metrics_or_rollback",
+      "weekly_sla_hours": 24,
+      "regression_required": true,
+      "rollback_drill_required": true
+    },
+    {
+      "feature_key": "intent_routing",
+      "policy_state": "production_policy_enabled_after_v58_metrics_or_rollback",
+      "weekly_sla_hours": 12,
+      "regression_required": true,
+      "rollback_drill_required": true
+    }
+  ],
+  "quality_weekly_report": {
+    "cadence": "weekly",
+    "metrics": [
+      "zero_result_rate",
+      "p95_latency",
+      "p99_latency",
+      "intent_accuracy",
+      "typo_recovery_rate",
+      "facet_click_rate",
+      "result_ctr"
+    ],
+    "owner_role": "search_admin",
+    "requires_review": true
+  },
+  "sla_rules": [
+    {
+      "trigger": "zero_result_rate_delta_pct >= 20",
+      "sla_hours": 24,
+      "task_type": "zero_result_review"
+    },
+    {
+      "trigger": "p95_latency_delta_pct >= 25",
+      "sla_hours": 12,
+      "task_type": "performance_regression"
+    },
+    {
+      "trigger": "intent_accuracy_drop_pct >= 8",
+      "sla_hours": 12,
+      "task_type": "intent_routing_review"
+    }
+  ],
+  "rollback_policy": {
+    "one_click_rollback": true,
+    "requires_reason": true,
+    "requires_post_rollback_report": true
+  }
+}

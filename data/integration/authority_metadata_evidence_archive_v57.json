@@ -1,0 +1,69 @@
+{
+  "version": "v57",
+  "generated_at": "2026-06-13T17:20:00+08:00",
+  "title": "metadata 發布證據封存",
+  "summary": {
+    "publication_evidence_records": 3,
+    "metadata_only": true,
+    "public_audio_allowed": false,
+    "public_lyrics_allowed": false,
+    "evidence_sealed": false
+  },
+  "publication_evidence": [
+    {
+      "publication_id": "authority-public-evidence-v57-01",
+      "source": "臺灣音樂館",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_status": "pending_rights_approval_and_real_screenshot",
+      "evidence_slots": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log"
+      ],
+      "evidence_sealed": false
+    },
+    {
+      "publication_id": "authority-public-evidence-v57-02",
+      "source": "國家文化記憶庫",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_status": "pending_rights_approval_and_real_screenshot",
+      "evidence_slots": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log"
+      ],
+      "evidence_sealed": false
+    },
+    {
+      "publication_id": "authority-public-evidence-v57-03",
+      "source": "金曲獎",
+      "metadata_only": true,
+      "public_audio_allowed": false,
+      "public_lyrics_allowed": false,
+      "publication_status": "pending_rights_approval_and_real_screenshot",
+      "evidence_slots": [
+        "sitemap_ping",
+        "og_ping",
+        "citation_screenshot",
+        "source_drift_snapshot",
+        "takedown_rehearsal_log"
+      ],
+      "evidence_sealed": false
+    }
+  ],
+  "guards": [
+    "no_audio_download",
+    "no_full_lyrics",
+    "citation_visible",
+    "source_drift_watch",
+    "takedown_rehearsal_required"
+  ]
+}

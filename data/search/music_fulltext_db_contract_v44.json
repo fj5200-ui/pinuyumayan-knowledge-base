@@ -1,0 +1,44 @@
+{
+  "version": "v44",
+  "endpoint": "/api/public/search/music/v43",
+  "implementation": "mysql_fulltext_first_static_fallback_only_when_database_unavailable",
+  "table": "music_search_documents_v43",
+  "fulltext_index": "ft_music_search_v43",
+  "query_fields": [
+    "title",
+    "artist",
+    "community",
+    "work_type",
+    "summary",
+    "source_title",
+    "romanized_terms",
+    "body"
+  ],
+  "filters": [
+    "artist",
+    "community",
+    "work_type",
+    "rights_status",
+    "sensitivity",
+    "source_authority",
+    "youtube_official_status"
+  ],
+  "public_visibility_gate": {
+    "public_visible": true,
+    "allowed_review_status": [
+      "approved_public",
+      "metadata_public",
+      "candidate_summary_public"
+    ],
+    "blocked_terms": [
+      "卑南文化遺址",
+      "卑南遺址",
+      "卑南考古遺址",
+      "卑南文化公園",
+      "Peinan Site",
+      "Beinan Site",
+      "Peinan Archaeological Site"
+    ]
+  },
+  "fallback_policy": "If DATABASE_URL is missing or table is absent, return JSON preview with mode=json_static_fallback_database_unavailable and db_required_for_production=true."
+}

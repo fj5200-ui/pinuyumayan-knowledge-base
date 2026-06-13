@@ -1,0 +1,9 @@
+{
+  "version": "v46",
+  "generated_from": "scripts/build_authority_source_governance_v46.py",
+  "policy_count": 3,
+  "retry_queue_count": 3,
+  "merge_request_count": 3,
+  "public_auto_release": false,
+  "robots_tos_review_required": true
+}

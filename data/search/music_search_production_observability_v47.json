@@ -1,0 +1,99 @@
+{
+  "version": "v47",
+  "generated_at": "2026-06-12T17:47:00+08:00",
+  "title": "Production wired music search observability: query log, zero-result weekly report, top facets, p95/p99 alerts",
+  "endpoint_under_observation": "/api/public/search/music/v43",
+  "query_log_endpoint": "/api/internal/search/music/v47/query-log",
+  "v43_search_route_writes_query_log": true,
+  "metrics": {
+    "query_count_24h": 0,
+    "zero_result_count_24h": 0,
+    "zero_result_rate": 0.0,
+    "p95_latency_alert_ms": 800,
+    "p99_latency_alert_ms": 1500,
+    "top_facet_window_days": 7
+  },
+  "alert_rules": [
+    {
+      "rule_id": "music-search-p95-v47",
+      "metric": "p95_latency_ms",
+      "operator": ">",
+      "threshold": 800,
+      "severity": "warning"
+    },
+    {
+      "rule_id": "music-search-zero-rate-v47",
+      "metric": "zero_result_rate",
+      "operator": ">",
+      "threshold": 0.35,
+      "severity": "review_needed"
+    }
+  ],
+  "weekly_zero_result_report": {
+    "enabled": true,
+    "group_by": [
+      "normalized_query",
+      "locale",
+      "referrer_path"
+    ],
+    "minimum_count": 3,
+    "output_table": "music_search_weekly_zero_result_reports_v47"
+  },
+  "privacy": {
+    "store_ip_hash_only": true,
+    "raw_user_agent_retention_days": 0,
+    "query_retention_days": 180
+  },
+  "sample_logs": [
+    {
+      "sample_id": "music-query-log-v47-001",
+      "query_text": "卑南族 歌謠",
+      "normalized_query": "卑南族 歌謠",
+      "result_count": 2,
+      "latency_ms": 42,
+      "write_path": "/api/public/search/music/v43 -> music_search_query_logs_v47",
+      "zero_result": false
+    },
+    {
+      "sample_id": "music-query-log-v47-002",
+      "query_text": "Puyuma music",
+      "normalized_query": "puyuma music",
+      "result_count": 2,
+      "latency_ms": 49,
+      "write_path": "/api/public/search/music/v43 -> music_search_query_logs_v47",
+      "zero_result": false
+    },
+    {
+      "sample_id": "music-query-log-v47-003",
+      "query_text": "Samingad",
+      "normalized_query": "samingad",
+      "result_count": 2,
+      "latency_ms": 56,
+      "write_path": "/api/public/search/music/v43 -> music_search_query_logs_v47",
+      "zero_result": false
+    },
+    {
+      "sample_id": "music-query-log-v47-004",
+      "query_text": "南王 童謠",
+      "normalized_query": "南王 童謠",
+      "result_count": 2,
+      "latency_ms": 63,
+      "write_path": "/api/public/search/music/v43 -> music_search_query_logs_v47",
+      "zero_result": false
+    },
+    {
+      "sample_id": "music-query-log-v47-005",
+      "query_text": "不存在查詢示例",
+      "normalized_query": "不存在查詢示例",
+      "result_count": 0,
+      "latency_ms": 70,
+      "write_path": "/api/public/search/music/v43 -> music_search_query_logs_v47",
+      "zero_result": true
+    }
+  ],
+  "tables": [
+    "music_search_query_logs_v47",
+    "music_search_weekly_zero_result_reports_v47",
+    "music_search_alert_rules_v47"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v56",
+  "generated_at": "2026-06-13T16:00:00+08:00",
+  "checks": [
+    "validate_tts_stt_music_v49",
+    "validate_tts_stt_music_v50",
+    "validate_tts_stt_music_v51",
+    "validate_tts_stt_music_v52",
+    "validate_tts_stt_music_v53",
+    "validate_tts_stt_music_v54",
+    "validate_tts_stt_music_v55",
+    "validate_tts_stt_music_v56",
+    "validate_site_operations_cadence_v56",
+    "openapi_contract",
+    "release_evidence_ingest_report"
+  ],
+  "env_flags": [
+    "IMPORT_SQL",
+    "RUN_RELEASE_EVIDENCE_INGEST",
+    "RUN_LEGAL_REAL_EXPORT",
+    "RUN_POST_ROLLOUT_MONITORING",
+    "RUN_OPS_CADENCE"
+  ],
+  "summary": {
+    "safe_without_database_url": true,
+    "mysql_import_optional": true
+  }
+}

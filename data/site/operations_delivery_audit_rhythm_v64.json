@@ -1,0 +1,121 @@
+{
+  "version": "v64",
+  "generated_at": "2026-06-13T21:25:00+08:00",
+  "title": "營運通知封板節奏、實送、ack、升級、關閉與週改善",
+  "summary": {
+    "routes": 7,
+    "jobs": 6,
+    "email_live_send_complete": false,
+    "line_live_send_complete": false,
+    "admin_notification_complete": false,
+    "ack_close_loop_ready": true,
+    "weekly_improvement_ready": true,
+    "delivery_seal_report_ready": true,
+    "real_send_evidence_required": true,
+    "rhythm_state": "pending_real_email_line_admin_delivery_ack_close_review"
+  },
+  "routes": [
+    "/",
+    "/culture",
+    "/language",
+    "/music/search",
+    "/music/[id]",
+    "/map",
+    "/tts-stt"
+  ],
+  "jobs": [
+    {
+      "job_id": "ops-delivery-daily-email-v64",
+      "cadence": "daily",
+      "channel": "email",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    },
+    {
+      "job_id": "ops-delivery-daily-line-v64",
+      "cadence": "daily",
+      "channel": "line",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    },
+    {
+      "job_id": "ops-delivery-daily-admin-v64",
+      "cadence": "daily",
+      "channel": "admin",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": false,
+      "improvement_task_required": false,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    },
+    {
+      "job_id": "ops-delivery-weekly-email-v64",
+      "cadence": "weekly",
+      "channel": "email",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    },
+    {
+      "job_id": "ops-delivery-weekly-line-v64",
+      "cadence": "weekly",
+      "channel": "line",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    },
+    {
+      "job_id": "ops-delivery-weekly-admin-v64",
+      "cadence": "weekly",
+      "channel": "admin",
+      "delivery_state": "pending_real_email_line_admin_delivery_ack_close_review",
+      "ack_required": true,
+      "escalation_required": true,
+      "close_required": true,
+      "review_required": true,
+      "improvement_task_required": true,
+      "seal_report_required": true,
+      "weekly_rhythm_required": true
+    }
+  ],
+  "metrics": [
+    "uptime",
+    "error_rate",
+    "p95_latency",
+    "CWV",
+    "Lighthouse",
+    "OG",
+    "sitemap"
+  ],
+  "closure_policy": {
+    "ack_required": true,
+    "escalation_required": true,
+    "close_required": true,
+    "weekly_review_required": true
+  }
+}
