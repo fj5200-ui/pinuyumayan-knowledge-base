@@ -16,6 +16,15 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          cd backend && npm install --legacy-peer-deps
+
+      - name: Build
+        run: |
+          cd backend && npm run build
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.0
         with:
@@ -25,20 +34,16 @@ jobs:
           script: |
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
-
             echo "=== 1. Pull latest code ==="
             git pull origin master
-
-            echo "=== 2. Install backend dependencies ==="
+            echo "=== 2. Install dependencies ==="
             cd backend
+            npm config set registry https://registry.npmjs.org/
+            rm -f package-lock.json
             npm install --legacy-peer-deps
-
-            echo "=== 3. Run database migrations ==="
-            npm run db:migrate 2>/dev/null || true
-
+            echo "=== 3. Build ==="
+            npm run build
             echo "=== 4. Restart KB service ==="
-            pm2 restart pinuyumayan-kb || pm2 start "npm run dev" --name pinuyumayan-kb --cwd ${{ secrets.DEPLOY_PATH }}/backend
+            pm2 restart pinuyumayan-kb || pm2 start dist/server.js --name pinuyumayan-kb
             pm2 save
-
             echo "=== Deploy complete ==="
-
