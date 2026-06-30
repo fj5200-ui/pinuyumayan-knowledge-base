@@ -4,26 +4,51 @@
 
 ## 範圍
 
-- 只檢查卑南族 `Puyuma` 相關音檔。
-- 主要對照目標為第二個 Drive 資料夾 `1o_iEc2dbet-cENHLjv86R_b67M0TlakZ`。
-- repo 內主要對照來源為 `data/puyuma_full_corpus.json`。
+- Drive 根目錄：`1mdzXxD5XQAVLIAdrD5xy3iRI7B3XnlUo`
+- 目標來源資料夾：`ePark`、`ILRDF_Dicts`、`NTU_Paiwan_ASR`
+- repo 對照來源：`data/puyuma_full_corpus.json`
+- 本次只看卑南族 / `Puyuma` 相關詞彙音檔
 
 ## 驗證結果
 
-- `data/puyuma_full_corpus.json` 中，`Nanwang` + `ILRDF字典` 共 `7073` 筆。
-- 這 `7073` 筆的 `audio_file` 皆唯一，範圍從 `Puyuma_0.mp3` 到 `Puyuma_7072.mp3`。
-- 其中有 `999` 筆帶有 `drive_id`，且 `drive_id` 也皆唯一。
-- 驗證到的尾段檔案可直接對上詞彙內容，例如：
-  - `Puyuma_7059.mp3` -> `auka ku i drenan mateka dra kawi i wawai nay muka i Malray?`
-  - `Puyuma_7064.mp3` -> `langetriu idru na walark na matulas!`
-  - `Puyuma_7072.mp3` -> `yayaran i babalu mu dinsiya!`
+- corpus 總筆數：`34124`
+- 帶 `drive_id` 的筆數：`7209`
+- `drive_id` 去重後的唯一音檔數：`6776`
+- 重複引用的 `drive_id` 數：`433`
+
+## 分類對應
+
+| 類別 | 總筆數 | 帶 `drive_id` | unique `drive_id` | row 覆蓋率 |
+| --- | ---: | ---: | ---: | ---: |
+| 情境族語 | 3701 | 1000 | 1000 | 27.0% |
+| 閱讀書寫 | 3327 | 1000 | 1000 | 30.1% |
+| 族語短文 | 648 | 488 | 488 | 75.3% |
+| 句型篇高中 | 3457 | 2096 | 2005 | 60.6% |
+| 句型篇國中 | 2404 | 1380 | 1380 | 57.4% |
+| 圖畫故事 | 246 | 246 | 246 | 100.0% |
+| ILRDF字典 | 7073 | 999 | 999 | 14.1% |
+
+## 來源分組
+
+- ePark-like：`7676` 筆總語料，`2488` 筆帶 `drive_id`，約 `32.4%`
+- NTU-like：`6107` 筆總語料，`3722` 筆帶 `drive_id`，約 `60.9%`
+- ILRDF：`7073` 筆總語料，`999` 筆帶 `drive_id`，約 `14.1%`
+
+## 代表性核對
+
+- `Puyuma_6058.mp3` -> `對不起，請問：「你為什麼名叫Iring(男)，有什麼典故嗎？」`
+- `Puyuma_7059.mp3` -> `我要去山上砍木材，Malray(男)會願意去嗎？`
+- `Puyuma_7064.mp3` -> `打那個頑皮孩子的臀部！`
+- `Puyuma_7072.mp3` -> `把腳踏車排列在庭院！`
 
 ## 完成度判讀
 
-- 若以「這次已驗證到的 Puyuma Drive 音檔子集」來算，對照結果可視為 `100%`。
-- 若以 repo 內整個 `Nanwang` + `ILRDF字典` 全量 `7073` 筆來算，目前只有 `999/7073` 約 `14.1%` 有 Drive 對應資料。
+- 若以「整份卑南族 corpus rows」計，完成度是 `7209/34124 = 21.1%`
+- 若以「可追蹤的唯一音檔」計，目前已整理出 `6776` 個唯一 `drive_id`，且它們都能對回 repo 的卑南族詞彙條目
+- 若以 `Nanwang / ILRDF字典` 子集合單看，則是 `999/7073 = 14.1%`
 
 ## 結論
 
-- 你提供的卑南族 `Puyuma` 音檔，repo 內可以確定對應到同一套卑南語詞彙資料。
-- 但 repo 的全量卑南語料不等於 Drive 已對應音檔全量，兩者要分開看。
+- 這次再次對應後，卑南族音檔的 Drive / repo 對照已經整理成完整的可追蹤集合。
+- 但如果你的完成度 기준是整份卑南族語料 rows，還不是 100%，目前是 `21.1%`。
+- 如果你要的是「已能確定對到 Drive 音檔的卑南族條目」，那一批已整理完成。
