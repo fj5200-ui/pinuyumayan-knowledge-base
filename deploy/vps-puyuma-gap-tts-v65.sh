@@ -11,6 +11,7 @@ DOWNLOAD_AUDIO="${DOWNLOAD_AUDIO:-1}"
 INSTALL_TTS_EXTRAS="${INSTALL_TTS_EXTRAS:-0}"
 LAUNCH_TTS="${LAUNCH_TTS:-0}"
 RESTORE_PATH="${RESTORE_PATH:-}"
+FORCE_TTS_SCAFFOLD="${FORCE_TTS_SCAFFOLD:-0}"
 
 if [[ "${APT_INSTALL}" == "1" ]]; then
   apt-get update
@@ -27,11 +28,15 @@ if [[ "${DOWNLOAD_AUDIO}" == "1" ]]; then
 fi
 "${prepare_args[@]}"
 
-python -m formosanbank_puyuma.train_tts \
-  --manifest "${DATA_DIR}/processed/tts_train.jsonl" \
-  --audio-root "${DATA_DIR}/raw/audio" \
-  --output-dir "${OUT_DIR}" \
-  --run-name "puyuma-gap-v65"
+if [[ "${DOWNLOAD_AUDIO}" == "1" || "${FORCE_TTS_SCAFFOLD}" == "1" || -n "$(find "${DATA_DIR}/raw/audio" -type f 2>/dev/null | head -n 1)" ]]; then
+  python -m formosanbank_puyuma.train_tts \
+    --manifest "${DATA_DIR}/processed/tts_train.jsonl" \
+    --audio-root "${DATA_DIR}/raw/audio" \
+    --output-dir "${OUT_DIR}" \
+    --run-name "puyuma-gap-v65"
+else
+  echo "Skipping train_tts scaffold because no local audio files are available." >&2
+fi
 
 python "${ROOT}/scripts/build_puyuma_tts_gap_manifest_v65.py" \
   --out "${GAP_MANIFEST}" \
