@@ -8,6 +8,7 @@ from .pipeline import (
     compute_summary,
     dedupe_records,
     download_sources,
+    audio_source_exists,
     format_summary_markdown,
     load_jsonl,
     load_records_from_xml_root,
@@ -113,7 +114,12 @@ def cmd_download(args: argparse.Namespace) -> int:
     return 0
 
 
-def _prepare_manifest_rows(records, *, no_dedupe: bool) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+def _prepare_manifest_rows(
+    records,
+    *,
+    no_dedupe: bool,
+    audio_root: Path | None = None,
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     translation_records = list(records)
     tts_records = list(records)
     if not no_dedupe:
@@ -121,6 +127,8 @@ def _prepare_manifest_rows(records, *, no_dedupe: bool) -> tuple[list[dict[str, 
         tts_records, _ = dedupe_records(tts_records, key_fn=tts_dedupe_key)
     translation_rows = [translation_row(record) for record in translation_records if record.target_text and record.source_text]
     tts_rows = [tts_row(record) for record in tts_records if record.audio_file and record.source_text]
+    if audio_root is not None:
+        tts_rows = [row for row in tts_rows if audio_source_exists(audio_root, row)]
     return translation_rows, tts_rows
 
 
@@ -140,7 +148,11 @@ def cmd_prepare(args: argparse.Namespace) -> int:
     summary = compute_summary(records)
     write_text(processed_dir / "summary.md", format_summary_markdown(summary))
     write_jsonl([record.to_dict() for record in records], processed_dir / "puyuma_examples.jsonl")
-    translation_rows, tts_rows = _prepare_manifest_rows(records, no_dedupe=args.no_dedupe)
+    translation_rows, tts_rows = _prepare_manifest_rows(
+        records,
+        no_dedupe=args.no_dedupe,
+        audio_root=audio_root if args.download_audio else None,
+    )
     split_translation = split_rows(
         translation_rows,
         key_fn=lambda row: _row_text(row.get("source_text")) + "\u241f" + _row_text(row.get("target_text")),

@@ -6,6 +6,7 @@ import json
 import os
 import re
 import shutil
+import sys
 import tempfile
 import unicodedata
 import urllib.error
@@ -174,7 +175,11 @@ def download_sources(
                 if not record.audio_file:
                     continue
                 audio_dest = audio_dir / record.audio_file
-                download_file(source_audio_url(source, record.audio_file), audio_dest, overwrite=overwrite)
+                try:
+                    download_file(source_audio_url(source, record.audio_file), audio_dest, overwrite=overwrite)
+                except RuntimeError as exc:
+                    print(str(exc), file=sys.stderr)
+                    continue
 
     return downloaded_records
 
@@ -525,6 +530,14 @@ def materialize_ljspeech_dataset(
             writer.writerow([audio_file, text, normalized_text])
 
     return metadata_path
+
+
+def audio_source_exists(audio_root: Path, row: Mapping[str, object]) -> bool:
+    try:
+        _resolve_audio_source(audio_root, row)
+        return True
+    except (FileNotFoundError, ValueError):
+        return False
 
 
 def _resolve_audio_source(audio_root: Path, row: Mapping[str, object]) -> Path:
