@@ -41,9 +41,13 @@ def tokenize(text: str) -> list[str]:
 def to_ipa(text: str) -> dict:
     mapping = dict(G2P_RULES)
     phonemes = tokenize(text)
+    if not phonemes and text.strip():
+        phonemes = [text.strip()]
     ipa = [mapping.get(p, p) for p in phonemes]
     value = ' '.join([x for x in ipa if x != ' '])
     value = re.sub(r'\s+', ' ', value).strip()
+    if not value and text.strip():
+        value = text.strip()
     return {
         'phoneme_sequence': phonemes,
         'ipa': value,
