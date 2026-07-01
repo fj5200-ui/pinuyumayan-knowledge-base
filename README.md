@@ -1,7 +1,8 @@
-# FormosanBank Puyuma TTS
+# Pinuyumayan Knowledge Base
 
-這個專案把 FormosanBank 裡的卑南族（Puyuma）語料與音檔整理成可重跑的資料管線，目標是同時支援：
+這個專案把 FormosanBank 與其他卑南族（Pinuyumayan / Puyuma）來源整理成可重跑的知識庫與資料管線，目標是同時支援：
 
+- 語料 / 音檔鏡像與缺檔檢查
 - 翻譯資料集抽取與切分
 - TTS 訓練資料準備
 - 翻譯模型微調
@@ -94,5 +95,5 @@ tests/
 
 ## 備註
 
-- 這個 repo 預設是研究用途與資料準備工具。
+- 這個 repo 預設是研究用途、語料整理與音檔鏡像工具。
 - 如果你要正式訓練，請先確認你要使用的 Coqui TTS / Transformers 版本與授權條款。
