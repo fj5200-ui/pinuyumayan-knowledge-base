@@ -1,0 +1,7 @@
+external/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+training/formosanbank-puyuma-tts/.venv/
+training/formosanbank-puyuma-tts/data/
+training/formosanbank-puyuma-tts/runs/
