@@ -18,8 +18,52 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--speaker-map-json", type=Path, default=None)
     parser.add_argument("--speaker-idx", type=str, default=None)
     parser.add_argument("--language", type=str, default=None)
+    parser.add_argument("--device", type=str, default=None)
+    parser.add_argument("--with-vc", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
     return parser
+
+
+def _speaker_wav_for_row(
+    *,
+    dialect: str,
+    speaker_map: dict[str, str],
+    fallback_speaker_wav: Path | None,
+) -> str | None:
+    if speaker_map:
+        return speaker_map.get(dialect)
+    if fallback_speaker_wav is not None:
+        return str(fallback_speaker_wav)
+    return None
+
+
+def _synthesize_row(
+    tts,
+    *,
+    text: str,
+    file_path: Path,
+    speaker_wav: str | None,
+    speaker_idx: str | None,
+    language: str | None,
+    with_vc: bool,
+) -> None:
+    if with_vc:
+        if not speaker_wav:
+            raise ValueError("Voice-conversion synthesis requires speaker_wav")
+        tts.tts_with_vc_to_file(
+            text,
+            speaker_wav=speaker_wav,
+            file_path=str(file_path),
+        )
+        return
+
+    tts.tts_to_file(
+        text=text,
+        file_path=str(file_path),
+        speaker_wav=speaker_wav,
+        speaker=speaker_idx,
+        language=language,
+    )
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -45,6 +89,8 @@ def main(argv: list[str] | None = None) -> int:
         tts = TTS(model_name=args.model_name)
     else:
         raise SystemExit("Provide --model-path/--config-path for a trained checkpoint, or --model-name for a pretrained model")
+    if args.device:
+        tts = tts.to(args.device)
     generated: list[dict[str, object]] = []
 
     for row in rows:
@@ -54,13 +100,19 @@ def main(argv: list[str] | None = None) -> int:
         if not text or not entry_id:
             continue
         out_path = args.output_dir / f"{entry_id}.wav"
-        speaker_wav = speaker_map.get(dialect) if speaker_map else (str(args.speaker_wav) if args.speaker_wav else None)
-        tts.tts_to_file(
+        speaker_wav = _speaker_wav_for_row(
+            dialect=dialect,
+            speaker_map=speaker_map,
+            fallback_speaker_wav=args.speaker_wav,
+        )
+        _synthesize_row(
+            tts,
             text=text,
-            file_path=str(out_path),
+            file_path=out_path,
             speaker_wav=speaker_wav,
-            speaker=args.speaker_idx,
+            speaker_idx=args.speaker_idx,
             language=args.language,
+            with_vc=args.with_vc,
         )
         generated.append(
             {
@@ -70,6 +122,7 @@ def main(argv: list[str] | None = None) -> int:
                 "output_path": str(out_path),
                 "public_release_allowed": False,
                 "native_review_required": True,
+                "synthesis_mode": "tts_with_vc" if args.with_vc else "tts_to_file",
             }
         )
 

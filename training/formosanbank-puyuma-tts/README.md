@@ -106,6 +106,25 @@ python -m formosanbank_puyuma.synthesize_gaps `
   --config-path <config.json>
 ```
 
+如果你不做 fine-tune，而是要直接用 CPU 走「文字生成 + 聲線轉換」補 19 筆，可改用單語模型搭配 `--with-vc`：
+
+```bash
+python -m formosanbank_puyuma.synthesize_gaps \
+  --manifest ../../data/audio/puyuma_tts_gap_manifest_v65.jsonl \
+  --output-dir runs/gap_fill_cpu_direct \
+  --model-name tts_models/pyu/fairseq/vits \
+  --speaker-map-json ../../data/audio/puyuma_tts_speaker_map_v65.generated.json \
+  --with-vc \
+  --device cpu \
+  --limit 19
+```
+
+說明：
+
+- `--with-vc` 會改走 `tts_with_vc_to_file()`，可讓單語 TTS 模型透過參考音檔轉成目標說話者音色。
+- `--speaker-map-json` 建議先用 `../../scripts/build_puyuma_tts_speaker_map_v65.py` 生成，讓各方言優先套用對應參考音檔。
+- 這條路徑仍屬私有補音，不可標記成已驗證真人原始音檔。
+
 ## Repo 結構
 
 ```text
