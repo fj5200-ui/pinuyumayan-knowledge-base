@@ -25,7 +25,7 @@
 - `puyuma-audio-45cc164b6a3808` | `Xiqun_Puyuma` | `文化篇` | `aramawana` | `但是`
 - `puyuma-audio-4aff499ea1b98d` | `Xiqun_Puyuma` | `文化篇` | `matungatung` | `打瞌睡`
 - `puyuma-audio-4c637ca3348f09` | `Xiqun_Puyuma` | `文化篇` | `masalralretrap` | `相撞`
-- `puyuma-audio-58c4bc34af01cc` | `Xiqun_Puyuma` | `文化篇` | `seme&rsquo;era` | `重視`
+- `puyuma-audio-58c4bc34af01cc` | `Xiqun_Puyuma` | `文化篇` | `seme’era` | `重視`
 - `puyuma-audio-ebf4ec237bb48a` | `Xiqun_Puyuma` | `文化篇` | `mulitrung` | `圍成圈`
 - `puyuma-audio-d036fb65a24a52` | `Xiqun_Puyuma` | `生活會話篇` | `nu kemazu mu, kadika uwa mu.` | `那麼，快去吧。`
 - `puyuma-audio-2576a2fe7d4414` | `Zhiben_Puyuma` | `文化篇` | `muasalr` | `改變`

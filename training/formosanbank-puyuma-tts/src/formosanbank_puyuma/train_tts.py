@@ -20,8 +20,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--use-phonemes", action="store_true")
     parser.add_argument("--phoneme-language", type=str, default="en-us")
     parser.add_argument("--allow-copy", action="store_true")
+    parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument("--eval-batch-size", type=int, default=16)
+    parser.add_argument("--num-loader-workers", type=int, default=4)
+    parser.add_argument("--num-eval-loader-workers", type=int, default=2)
     parser.add_argument("--launch", action="store_true")
     parser.add_argument("--restore-path", type=Path, default=None)
+    parser.add_argument("--continue-path", type=Path, default=None)
     return parser
 
 
@@ -49,13 +54,15 @@ def main(argv: list[str] | None = None) -> int:
         text_cleaner=args.text_cleaner,
         use_phonemes=args.use_phonemes,
         phoneme_language=args.phoneme_language,
+        batch_size=args.batch_size,
+        eval_batch_size=args.eval_batch_size,
+        num_loader_workers=args.num_loader_workers,
+        num_eval_loader_workers=args.num_eval_loader_workers,
     )
     write_text(config_path, json.dumps(config, ensure_ascii=False, indent=2))
     _write_run_notes(dataset_dir, metadata_path, config_path, args)
 
     if args.launch:
-        if args.restore_path is None:
-            raise SystemExit("--restore-path is required when --launch is set")
         try:
             import subprocess
             import sys
@@ -68,9 +75,11 @@ def main(argv: list[str] | None = None) -> int:
             "TTS.bin.train_tts",
             "--config_path",
             str(config_path),
-            "--restore_path",
-            str(args.restore_path),
         ]
+        if args.continue_path is not None:
+            command.extend(["--continue_path", str(args.continue_path)])
+        elif args.restore_path is not None:
+            command.extend(["--restore_path", str(args.restore_path)])
         subprocess.run(command, check=True)
     else:
         print(json.dumps({"dataset_dir": str(dataset_dir), "config_path": str(config_path)}, ensure_ascii=False, indent=2))
@@ -89,15 +98,19 @@ def _build_config(
     text_cleaner: str,
     use_phonemes: bool,
     phoneme_language: str,
+    batch_size: int,
+    eval_batch_size: int,
+    num_loader_workers: int,
+    num_eval_loader_workers: int,
 ) -> dict[str, object]:
     return {
         "run_name": run_name,
         "output_path": str(output_dir / run_name),
         "model": model,
-        "batch_size": 32,
-        "eval_batch_size": 16,
-        "num_loader_workers": 4,
-        "num_eval_loader_workers": 2,
+        "batch_size": batch_size,
+        "eval_batch_size": eval_batch_size,
+        "num_loader_workers": num_loader_workers,
+        "num_eval_loader_workers": num_eval_loader_workers,
         "run_eval": True,
         "test_delay_epochs": -1,
         "epochs": epochs,
@@ -133,13 +146,15 @@ def _write_run_notes(dataset_dir: Path, metadata_path: Path, config_path: Path, 
         f"- metadata_path: `{metadata_path}`",
         f"- config_path: `{config_path}`",
         f"- restore_path: `{args.restore_path}`",
+        f"- continue_path: `{args.continue_path}`",
         "",
         "Recommended launch command:",
         "",
         "```powershell",
-        f"python -m TTS.bin.train_tts --config_path \"{config_path}\" --restore_path \"<pretrained-model>\"",
+        f"python -m TTS.bin.train_tts --config_path \"{config_path}\"",
         "```",
         "",
+        "Add `--restore_path <pretrained-model>` for fine-tuning or `--continue_path <run-folder>` to resume a previous run.",
         "If the chosen Coqui version requires different config keys, adjust `config.json` before launch.",
     ]
     write_text(dataset_dir / "README.md", "\n".join(notes) + "\n")

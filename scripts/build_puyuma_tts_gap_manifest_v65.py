@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import sys
 from collections import Counter
@@ -58,7 +59,8 @@ def build_gap_manifest(
         category = entry.get("category", {}) if isinstance(entry.get("category"), dict) else {}
         tts = entry.get("tts", {}) if isinstance(entry.get("tts"), dict) else {}
 
-        tts_text = str(tts.get("tts_text") or text.get("puyuma_form") or "").strip()
+        tts_text = html.unescape(str(tts.get("tts_text") or text.get("puyuma_form") or "").strip())
+        zh_tw = html.unescape(str(text.get("zh_tw", "")))
         manifest_rows.append(
             {
                 "entry_id": entry_id,
@@ -68,7 +70,7 @@ def build_gap_manifest(
                 "website_category_key": str(category.get("website_category_key", "")),
                 "text": tts_text,
                 "normalized_text": tts_text,
-                "zh_tw": str(text.get("zh_tw", "")),
+                "zh_tw": zh_tw,
                 "existing_public_audio_url": str(audio.get("url") or gap.get("public_url") or ""),
                 "expected_hf_relative_path": str(gap.get("hf_relative_path", "")),
                 "source_path": str(source.get("source_path", "")),
