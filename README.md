@@ -1,21 +1,56 @@
 # 卑南族知識庫 (Pinuyumayan Knowledge Base)
 
-本專案致力於整合卑南族 (Pinuyumayan) 的語言語料與文化知識，提供研究、學習與應用開發的基礎資料。
+本專案整理卑南族語言語料、音檔對照與文化知識，供研究、學習與網站應用使用。
 
-## 核心內容
-- **/data**: 包含 34,124 筆卑南族語料，整合自 ePark, ILRDF 與總統府道歉文。包含 IPA、中文字義、細分類及音檔對應。
-- **/culture**: 卑南族文化知識深度報告，涵蓋會所制度、大獵祭、花環文化等。
-- **/reports**: 提供語料統計與精細化分類的 PDF 報告。
-- **/scripts**: 用於語料解析與音檔配對的處理腳本。
+## 最終成果
 
-## 語料統計
-- **總語料筆數**: 34,124 筆
-- **成功配對音檔**: 7,209 筆 (對應 Google Drive)
-- **涵蓋方言**: 南王、知本、建和、西群
-- **細分類**: 36 種語法與生活主題分類
+- 完整卑南語語料輸出：`46,395` 筆
+- 涵蓋方言：`南王`、`知本`、`西群`、`建和`
+- strict validator：`全綠`
+- 本地展開音檔包：`46,376 / 46,395`，完成度 `99.9590%`
+- 唯一音檔 URL 本地可用：`41,194 / 41,213`，完成度 `99.9539%`
+- 最終 ZIP 音檔包大小：`1,164,660,775` bytes（約 `1.165 GB`）
+- 仍有 `19` 筆為上游缺檔，已確認不在公開 HF、公開 Drive、原始公開 Klokah URL 中
 
-## 聯絡與貢獻
-本專案由 Manus AI 協助整理完成。
+## 專案內容
+
+- `data/`
+  - 卑南族知識庫主資料與既有整理成果
+- `culture/`
+  - 卑南族文化知識報告
+- `scripts/`
+  - 語料建置、音檔重寫、鏡像下載、驗證腳本
+- `reports/`
+  - Drive 音檔對照稽核報告
+- `docs/`
+  - 最終 release 報告與操作說明
+
+## 重要文件
+
+- 最終音檔包 release 報告：
+  - [docs/puyuma_audio_package_release_v66.generated.md](docs/puyuma_audio_package_release_v66.generated.md)
+- 初始 Drive 稽核報告：
+  - [reports/drive_puyuma_audio_audit_2026-06-30.md](reports/drive_puyuma_audio_audit_2026-06-30.md)
+
+## 驗證命令
+
+```bash
+python scripts/validate_full_puyuma_corpus_output.py ../artifacts/puyuma_full_corpus.json --min-entries 1000 --require-all-dialects --require-source-phon
+python -m unittest tests.test_rewrite_puyuma_audio_to_hf
+```
+
+## 目前狀態
+
+- Hugging Face 重寫與完整鏡像流程已完成
+- 先前缺的 `7` 筆翻譯已補齊
+- punctuation-only placeholder rows 已修正，不再卡 strict validator
+- `19` 筆永久缺檔已整理成缺口報告，等待私有來源或備份補源
+
+## 備註
+
+- 大型音檔快取、展開目錄與 ZIP 包屬於本地 artifacts，不納入 git
+- 若要追到 `100%`，需要補齊那 `19` 筆缺失音檔的非公開來源
 
 ---
-最後更新日期: 2026-06-25
+
+最後更新日期：`2026-06-30`
