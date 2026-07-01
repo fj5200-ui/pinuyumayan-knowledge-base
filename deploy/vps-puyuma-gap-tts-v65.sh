@@ -6,6 +6,8 @@ TRAIN_DIR="${ROOT}/training/formosanbank-puyuma-tts"
 DATA_DIR="${PUYUMA_TTS_DATA_DIR:-${TRAIN_DIR}/data}"
 OUT_DIR="${PUYUMA_TTS_OUTPUT_DIR:-${TRAIN_DIR}/runs/tts}"
 GAP_MANIFEST="${PUYUMA_GAP_MANIFEST:-${ROOT}/data/audio/puyuma_tts_gap_manifest_v65.jsonl}"
+CORPUS_ARTIFACT="${PUYUMA_CORPUS_ARTIFACT:-${ROOT}/../artifacts/puyuma_full_corpus_hf_audio.json}"
+GAP_ARTIFACT="${PUYUMA_GAP_ARTIFACT:-${ROOT}/../artifacts/puyuma_audio_source_gap_report.json}"
 APT_INSTALL="${APT_INSTALL:-1}"
 DOWNLOAD_AUDIO="${DOWNLOAD_AUDIO:-1}"
 INSTALL_TTS_EXTRAS="${INSTALL_TTS_EXTRAS:-0}"
@@ -38,10 +40,16 @@ else
   echo "Skipping train_tts scaffold because no local audio files are available." >&2
 fi
 
-python "${ROOT}/scripts/build_puyuma_tts_gap_manifest_v65.py" \
-  --out "${GAP_MANIFEST}" \
-  --summary "${ROOT}/data/audio/puyuma_tts_gap_manifest_v65.generated.json" \
-  --doc "${ROOT}/docs/puyuma_tts_gap_fill_v65.generated.md"
+if [[ -f "${CORPUS_ARTIFACT}" && -f "${GAP_ARTIFACT}" ]]; then
+  python "${ROOT}/scripts/build_puyuma_tts_gap_manifest_v65.py" \
+    --corpus "${CORPUS_ARTIFACT}" \
+    --gaps "${GAP_ARTIFACT}" \
+    --out "${GAP_MANIFEST}" \
+    --summary "${ROOT}/data/audio/puyuma_tts_gap_manifest_v65.generated.json" \
+    --doc "${ROOT}/docs/puyuma_tts_gap_fill_v65.generated.md"
+else
+  echo "Using committed gap manifest because local artifacts are unavailable." >&2
+fi
 
 if [[ "${LAUNCH_TTS}" == "1" ]]; then
   if [[ -z "${RESTORE_PATH}" ]]; then
