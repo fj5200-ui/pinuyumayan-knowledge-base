@@ -1,1 +1,81 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pinuyumayan.tw/contracts/language-entry-v1.schema.json",
+  "title": "Pinuyumayan Language Entry v1",
+  "type": "object",
+  "required": ["id", "type", "language", "text", "source", "sensitivity", "review_status"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 190},
+    "type": {"enum": ["word", "phrase", "sentence", "paragraph", "sentence_audio"]},
+    "language": {
+      "type": "object",
+      "required": ["language_key", "dialect_code", "dialect_name", "dialect_zh"],
+      "properties": {
+        "language_key": {"const": "puyuma"},
+        "dialect_code": {"type": "string", "minLength": 1, "maxLength": 40},
+        "dialect_name": {"type": "string", "minLength": 1, "maxLength": 120},
+        "dialect_zh": {"type": "string", "minLength": 1, "maxLength": 120}
+      },
+      "additionalProperties": true
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "website_category_key": {"type": "string", "maxLength": 120},
+        "website_category_label_zh": {"type": "string", "maxLength": 160}
+      },
+      "additionalProperties": true
+    },
+    "text": {
+      "type": "object",
+      "required": ["puyuma_form"],
+      "properties": {
+        "puyuma_form": {"type": "string", "minLength": 1},
+        "zh_tw": {"type": ["string", "null"]},
+        "en": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "url": {"type": ["string", "null"]},
+        "mime_type": {"type": "string"},
+        "storage_mode": {"type": "string"},
+        "local_mirror": {"type": ["string", "null"]},
+        "is_synthetic": {"type": "boolean"},
+        "playback_enabled": {"type": "boolean"},
+        "license_review_status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "ipa": {
+      "type": "object",
+      "properties": {
+        "value": {"type": ["string", "null"]},
+        "source_phon": {"type": ["string", "null"]},
+        "status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "g2p": {"type": "object"},
+    "tts": {"type": "object"},
+    "source": {
+      "type": "object",
+      "required": ["source_id", "repository", "commit", "source_path"],
+      "properties": {
+        "source_id": {"type": "string"},
+        "repository": {"type": "string"},
+        "commit": {"type": "string"},
+        "source_path": {"type": "string"},
+        "source_row": {"type": ["integer", "null"]},
+        "source_format": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "sensitivity": {"enum": ["public", "medium", "high"]},
+    "review_status": {"type": "string"},
+    "visibility": {"enum": ["PUBLIC", "MEMBER_ONLY", "COMMUNITY_ONLY", "ARCHIVE_ONLY"]}
+  },
+  "additionalProperties": true
+}
