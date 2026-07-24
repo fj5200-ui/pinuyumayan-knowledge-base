@@ -1,0 +1,103 @@
+name: Build Puyuma language release v1
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: Release version, for example 2026.07.24
+        required: true
+        type: string
+      publish_release:
+        description: Publish files as a GitHub Release
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline requirements
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Build and validate full corpus source
+        run: |
+          python scripts/build_full_puyuma_web_vocabulary.py --download
+          SOURCE=""
+          for candidate in \
+            artifacts/puyuma_full_corpus.json \
+            ../artifacts/puyuma_full_corpus.json \
+            artifacts/puyuma_full_corpus_hf_audio.json \
+            ../artifacts/puyuma_full_corpus_hf_audio.json; do
+            if [ -f "$candidate" ]; then SOURCE="$candidate"; break; fi
+          done
+          if [ -z "$SOURCE" ]; then
+            echo "No validated full-corpus artifact was produced." >&2
+            exit 1
+          fi
+          python scripts/validate_full_puyuma_corpus_output.py "$SOURCE" --min-entries 1000 --require-all-dialects --require-source-phon
+          echo "CORPUS_SOURCE=$SOURCE" >> "$GITHUB_ENV"
+
+      - name: Prepare optional signing key
+        env:
+          RELEASE_PRIVATE_KEY_PEM: ${{ secrets.PUYUMA_RELEASE_PRIVATE_KEY_PEM }}
+        run: |
+          if [ -n "$RELEASE_PRIVATE_KEY_PEM" ]; then
+            umask 077
+            printf '%s\n' "$RELEASE_PRIVATE_KEY_PEM" > "$RUNNER_TEMP/puyuma-release-private.pem"
+            echo "SIGNING_ARGS=--private-key $RUNNER_TEMP/puyuma-release-private.pem --key-id puyuma-release-v1" >> "$GITHUB_ENV"
+          else
+            echo "SIGNING_ARGS=" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build deterministic release
+        run: |
+          OUTPUT="dist/puyuma-release/${{ inputs.release_version }}"
+          python scripts/build_puyuma_language_release_v1.py \
+            --input "$CORPUS_SOURCE" \
+            --output-dir "$OUTPUT" \
+            --release-version "${{ inputs.release_version }}" \
+            --repository "$GITHUB_REPOSITORY" \
+            --commit "$GITHUB_SHA" \
+            $SIGNING_ARGS
+          cp schemas/puyuma-language-entry-v1.schema.json "$OUTPUT/"
+          cp schemas/puyuma-language-release-manifest-v1.schema.json "$OUTPUT/"
+          python -m json.tool "$OUTPUT/manifest.json" >/dev/null
+          sha256sum -c "$OUTPUT/checksums.sha256"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: puyuma-language-release-${{ inputs.release_version }}
+          path: dist/puyuma-release/${{ inputs.release_version }}
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish GitHub Release
+        if: ${{ inputs.publish_release }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="puyuma-language-${{ inputs.release_version }}"
+          OUTPUT="dist/puyuma-release/${{ inputs.release_version }}"
+          gh release create "$TAG" \
+            "$OUTPUT/manifest.json" \
+            "$OUTPUT/puyuma-corpus.jsonl.gz" \
+            "$OUTPUT/checksums.sha256" \
+            "$OUTPUT/puyuma-language-entry-v1.schema.json" \
+            "$OUTPUT/puyuma-language-release-manifest-v1.schema.json" \
+            --title "Puyuma language release ${{ inputs.release_version }}" \
+            --notes "Validated full-corpus release. Human-recorded and synthetic audio metadata remain explicitly separated; license and linguistic review status are preserved."
